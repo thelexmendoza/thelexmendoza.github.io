@@ -81,46 +81,46 @@
     font-display: swap;
 }
 @theme {
-        /*Montserrat*/
-        --font-montserrat: 'Montserrat', sans-serif;
+    /* Montserrat */
+    --font-montserrat: 'Montserrat', sans-serif;
 
-        --allbrands-black: #000000;
-        --allbrands-white: #FFFFFF;
+    /* Colores principales - CON PREFIJO --color- */
+    --color-allbrands-black: #000000;
+    --color-allbrands-white: #FFFFFF;
 
-        /*Lex Mendoza*/
-        --lex-primary: #5ABFA6;
-        --lex-secondary: #4F9D92;
-        --lex-accent: #80FFDF;
-        --lex-dark: #264552;
+    /* Lex Mendoza */
+    --color-lex-primary: #5ABFA6;
+    --color-lex-secondary: #4F9D92;
+    --color-lex-accent: #80FFDF;
+    --color-lex-dark: #264552;
 
+    /* BMW & BMW Motorrad */
+    --color-bmw-gray-light: #D6D6D6;
+    --color-bmw-gray-dark: #6F6F6F;
+    --color-bmw-blue: #0B66B0;
+    --color-bmw-dark-blue: #003D78;
+    --color-bmw-red: #E32716;
 
-        /*BMMW & BMW Motorrad*/
-        --bmw-gray-light: #D6D6D6;
-        --bmw-gray-dark: #6F6F6F;
-        --bmw-blue: #0B66B0;
-        --bmw-dark-blue: #003D78;
-        --bmw-red: #E32716;
+    /* MINI Big Love */
+    --color-mini-yellow: #FDC501;
+    --color-mini-orange: #FF4A00;
+    --color-mini-mint: #00DEB5;
+    --color-mini-pink: #FF95D5;
+    --color-mini-blue: #545DF1;
+    --color-mini-electric: #CDC300;
+    --color-mini-jcw-red: #CC0000;
 
-        /*MINI Big Love*/
-        --mini-yellow: #FDC501;
-        --mini-orange: #FF4A00;
-        --mini-mint: #00DEB5;
-        --mini-pink: #FF95D5;
-        --mini-blue: #545DF1;
-        --mini-electric: #CDC300;
-        --mini-jcw-red: #CC0000;
+    /* ETiC'S Live */
+    --color-etics-green: #678A27;
+    --color-etics-dark-green: #364814;
+    --color-etics-black: #121212;
 
-        /*ETiC'S Live*/
-        --etics-green: #678A27;
-        --etics-dark-green: #364814;
-        --etics-black: #121212;
+    /* Motoland */
+    --color-motoland-orange: #FF6118;
+    --color-motoland-dark-orange: #973C12;
+    --color-motoland-black: #1C1C1C;
 
-        /*Motoland*/
-        --motoland-orange: #FF6118;
-        --motoland-dark-orange: #973C12;
-        --motoland-black: #1C1C1C;
-
-        /*Psicología Práctica*/
-        --psi-pink: #E22176;
-        --psi-purple: #282262;
+    /* Psicología Práctica */
+    --color-psi-pink: #E22176;
+    --color-psi-purple: #282262;
 }
