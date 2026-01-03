@@ -1,17 +1,15 @@
 {
   "name": "thelexmendoza.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Página personal y de portafolio.",
   "main": "index.js",
   "scripts": {
-    "build:styles": "npx @tailwindcss/cli -i ./input.css -o ./assets/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.17.0",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "bootstrap": "^5.3.8"
   }
 }

@@ -4,137 +4,152 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Diseñador Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./assets/output.css" rel="stylesheet" />
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
   </head>
-  <body class="font-montserrat">
-    <div class="container mx-auto p-6">
-      <header class="h-[100dvh] flex flex-col justify-center py-16" id="inicio">
-        <h1 class="text-7xl font-normal tracking-wider text-lex-primary hover:text-lex-secondary">
+  <body>
+    <div class="container py-4">
+      <header class="header-height d-flex flex-column justify-content-center py-5" id="inicio">
+        <h1 class="display-custom text-lex-primary">
           ¿BUSCAS DISEÑADOR?
         </h1>
-        <p class="text-lg text-subtext-light dark:text-subtext-dark mt-2">
+        <p class="fs-5 text-subtext-light mt-2">
           Has llegado al lugar correcto.
         </p>
       </header>
-        <section class="flex flex-col md:flex-row items-start mb-16 h-2/4" id="acerca-de-mi">
-          <div class="w-24 h-24 rounded-full bg-gray-300 dark:bg-gray-700 mr-8 mb-4 md:mb-0 flex-shrink-0"></div>
-          <div>
-            <p class="text-sm text-subtext-light dark:text-subtext-dark">Alejandro "Lex" Mendoza</p>
-            <h2 class="text-3xl md:text-4xl font-black tracking-tighter my-2">
-              DISEÑADOR DIGITAL
-            </h2>
-            <p class="text-base text-subtext-light dark:text-subtext-dark leading-relaxed">
-              Con gran background de trabajo por proyecto en Diseño Gráfico, con práctica en muchas disciplinas creativas. Creo en las relaciones cliente-diseñador, en diseños limpios y funcionales, con el plotwist de cuidar los detalles. Una experiencia en sí sola.
-            </p>
-          </div>
-        </section>
-        <section id="proyectos text-center">
-          <h3 class="text-5xl font-bold tracking-wider text-center mb-12 mt-12 uppercase">Proyectos</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mb-8">
-            <!-- Card 1 -->
-            <a class="p-10 shadow-lg min-h-[300px] overflow-hidden flex flex-col justify-between bg-gradient-to-br from-bmw-dark-blue to-bmw-blue hover:scale-105 hover:contrast-125 transition delay-150 duration-300 ease-in w-full" href="#" target="_blank" rel="noopener noreferrer">
-              <div class="">
-                <h4 class="text-2xl text-allbrands-white tracking-wider uppercase mb-2">Euromotors MTY</h4>
-                <p class="text-base text-allbrands-white">Dealer oficial de BMW, MINI & BMW Motorrad.</p>
-              </div>
-              <div class="">
-                <p class="font-semibold text-sm text-allbrands-white tracking-wider">Community Manager, Fotógrafo, Publicista, Diseñador.</p>
-                <p class="text-xs text-allbrands-white mt-3">Nov 2019 - Abr 2020 | Abr 2021 - Abr 2023</p>
-              </div>
-            </a>
-            <!-- Card 2 -->
-            <a class="p-10 shadow-lg min-h-[300px] overflow-hidden flex flex-col justify-between bg-gradient-to-br from-etics-dark-green to-etics-green hover:scale-105 hover:contrast-125 transition delay-150 duration-300 ease-in w-full" href="#" target="_blank" rel="noopener noreferrer">
-              <div class="">
-                <h4 class="text-2xl text-allbrands-white tracking-wider uppercase mb-2">Etic's Live</h4>
-                <p class="text-base text-allbrands-white">Prensa musical digital independiente en el corazón de Monterrey.</p>
-              </div>
-              <div class="">
-                <p class="font-semibold text-sm text-allbrands-white tracking-wider">Editor de video, Videografo, Fotógrafo, Diseñador.</p>
-                <p class="text-xs text-allbrands-white mt-3">Feb 2011 - Actualidad.</p>
-              </div>
-            </a>
-            <!-- Card 3 -->
-            <a class="p-10 shadow-lg min-h-[300px] overflow-hidden flex flex-col justify-between bg-gradient-to-br from-motoland-dark-orange to-motoland-orange hover:scale-105 hover:contrast-125 transition delay-150 duration-300 ease-in w-full" href="#" target="_blank" rel="noopener noreferrer">
-              <div class="">
-                <h4 class="text-2xl text-allbrands-white tracking-wider uppercase mb-2">Motoland Driving School</h4>
-                <p class="text-base text-allbrands-white">Escuela de motociclismo de nivel principiante a competitivo.</p>
-              </div>
-              <div class="">
-                <p class="font-semibold text-sm text-allbrands-white tracking-wider">Community Manager, Fotógrafo, Publicista, Diseñador.</p>
-                <p class="text-xs text-allbrands-white mt-3">Sep 2023 - Dic 2023.</p>
-              </div>
-            </a>
-            <!-- Card 4 -->
-            <a class="p-10 shadow-lg min-h-[300px] overflow-hidden flex flex-col justify-between bg-gradient-to-br from-psi-purple to-psi-pink hover:scale-105 hover:contrast-125 transition delay-150 duration-300 ease-in w-full" href="#" target="_blank" rel="noopener noreferrer">
-              <div class="">
-                <h4 class="text-2xl text-allbrands-white tracking-wider uppercase mb-2">Daniel Abrego</h4>
-                <p class="text-base text-allbrands-white">Psicólogo y divulgador en Youtube sobre el autonocimiento y la autocrítica.</p>
-              </div>
-              <div class="">
-                <p class="font-semibold text-sm text-allbrands-white tracking-wider">Diseñador.</p>
-                <p class="text-xs text-allbrands-white mt-3">Nov 2022 - Actualidad.</p>
-              </div>
-            </a>
-            <!-- Card 5 -->
-            <a class="p-10 shadow-lg min-h-[300px] overflow-hidden flex flex-col justify-between bg-gradient-to-br from-lex-secondary to-lex-primary hover:scale-105 hover:contrast-125 transition delay-150 duration-300 ease-in w-full" href="#" target="_blank" rel="noopener noreferrer">
-              <div class="">
-                <h4 class="text-2xl text-allbrands-white tracking-wider uppercase mb-2">Trabajos Independientes</h4>
-                <p class="text-base text-allbrands-white">Diversos proyectos abordados a lo largo de mi carrera.</p>
-              </div>
-              <div class="">
-                <p class="font-semibold text-sm text-allbrands-white tracking-wider">Fotógrafo, Videógrafo, Publicista, Diseñador.</p>
-                <p class="text-xs text-allbrands-white mt-3">Desde 2019.</p>
-              </div>
-            </a>
-            <!-- Card 6 -->
-            <a class="p-10 shadow-lg min-h-[300px] overflow-hidden flex flex-col justify-between bg-gradient-to-br from-lex-secondary to-lex-primary hover:scale-105 hover:contrast-125 transition delay-150 duration-300 ease-in w-full" href="#" target="_blank" rel="noopener noreferrer">
-              <div class="">
-                <h4 class="text-2xl text-allbrands-white tracking-wider uppercase mb-2">Los días tempranos</h4>
-                <p class="text-base text-allbrands-white">Mis inicios durante y al graduarme de la facultad.</p>
-              </div>
-              <div class="">
-                <p class="font-semibold text-sm text-allbrands-white tracking-wider">Fotógrafo, Videógrafo, Publicista, Diseñador.</p>
-                <p class="text-xs text-allbrands-white mt-3">Desde 2011 hasta 2015.</p>
-              </div>
-            </a>
-          </div>
-        </section>
-        <footer class="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700" id="contacto">
-          <h2 class="text-3xl md:text-4xl font-black tracking-tighter text-text-light dark:text-text-dark">
-            ¿NECESITAS UNA PROPUESTA O IMPRESIÓN? ¡HABLEMOS!
+      <section class="d-flex flex-column flex-md-row align-items-start mb-5" id="acerca-de-mi">
+        <div class="avatar-circle me-4 mb-4 mb-md-0 flex-shrink-0"></div>
+        <div>
+          <p class="small text-subtext-light">Alejandro "Lex" Mendoza</p>
+          <h2 class="display-5 fw-black my-2" style="letter-spacing: -0.05em;">
+            DISEÑADOR DIGITAL
           </h2>
-          <p class="text-base text-subtext-light dark:text-subtext-dark mt-2 mb-6">
-            Contáctame por estos medios, cuéntame tus ideas y planes, hagámoslo una realidad.
+          <p class="text-subtext-light lh-lg">
+            Con gran background de trabajo por proyecto en Diseño Gráfico, con práctica en muchas disciplinas creativas. Creo en las relaciones cliente-diseñador, en diseños limpios y funcionales, con el plotwist de cuidar los detalles. Una experiencia en sí sola.
           </p>
-          <div class="flex space-x-4 mb-8">
-            <a href="#" class="text-subtext-light dark:text-subtext-dark hover:text-text-light dark:hover:text-text-dark">
-              <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 1.83.504 3.552 1.39 5.025L2.2 21.8l4.905-1.183A9.932 9.932 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zM8.995 7.624c.22-.44.733-1.104 1.054-1.145.32-.04.603.01.814.05.21.04.422.09.583.15.202.07.414.16.596.28.21.14.412.3.594.48s.324.39.466.56c.14.17.27.35.38.52.17.27.31.57.42.88.11.31.18.64.22.99.04.35.04.7.02 1.05-.02.35-.06.69-.12.98-.06.29-.14.56-.25.81-.11.25-.25.48-.41.69-.16.21-.35.4-.56.56s-.44.3-.69.41c-.25.11-.52.2-.81.25-.29.06-.63.1-.98.12-.35.02-.7.02-1.05.02-.35 0-.7-.01-1.05-.04-.35-.03-.69-.09-.99-.18-.3-.09-.59-.21-.88-.36s-.56-.34-.82-.56c-.26-.22-.5-.48-.71-.77s-.39-.63-.53-.98c-.14-.35-.24-.73-.29-1.12s-.06-1.02-.02-1.25c.04-.23.11-.46.22-.67.11-.21.25-.4.41-.56s.35-.3.56-.41c.21-.11.44-.2.69-.25s.52-.09.81-.12c.29-.03.58-.04.85-.04h.1z" fill-rule="evenodd"/>
-              </svg>
-            </a>
-            <a href="#" class="text-subtext-light dark:text-subtext-dark hover:text-text-light dark:hover:text-text-dark">
-              <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 15.5v-5h-2v-3h2V9.5c0-1.65 1.35-3 3-3h2.5v3H14.5c-.28 0-.5.22-.5.5v1.5h3l-.5 3h-2.5v5h-3z"/>
-              </svg>
-            </a>
-            <a href="#" class="text-subtext-light dark:text-subtext-dark hover:text-text-light dark:hover:text-text-dark">
-              <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.8 9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H8v-5H5l7-7 7 7h-3v5z"/>
-              </svg>
-            </a>
-            <a href="#" class="text-subtext-light dark:text-subtext-dark hover:text-text-light dark:hover:text-text-dark">
-              <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.5 18.5h-3v-9h3v9zm-1.5-10.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM18.5 18.5h-3v-4.74c0-1.42-.4-2.38-1.76-2.38-1.12 0-1.66.75-1.93 1.47-.1.25-.12.6-.12.95v4.7h-3s.04-8.17 0-9h3v1.33h.04c.4-.7 1.36-1.73 3.03-1.73 2.2 0 3.82 1.44 3.82 4.51V18.5z"/>
-              </svg>
+        </div>
+      </section>
+      <section id="proyectos" class="text-center">
+        <h3 class="display-4 fw-bold text-uppercase text-center mb-5 mt-5" style="letter-spacing: 0.1em;">Proyectos</h3>
+        <div class="row g-2 mb-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a class="card card-project gradient-bmw text-decoration-none p-4 d-flex flex-column justify-content-between h-100" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <h4 class="h4 text-allbrands-white text-uppercase mb-2" style="letter-spacing: 0.05em;">Euromotors MTY</h4>
+                <p class="text-allbrands-white">Dealer oficial de BMW, MINI & BMW Motorrad.</p>
+              </div>
+              <div class="mt-auto">
+                <p class="fw-semibold small text-allbrands-white" style="letter-spacing: 0.05em;">Community Manager, Fotógrafo, Publicista, Diseñador.</p>
+                <p class="text-allbrands-white mt-3" style="font-size: 0.75rem;">Nov 2019 - Abr 2020 | Abr 2021 - Abr 2023</p>
+              </div>
             </a>
           </div>
-          <div class="text-xs text-subtext-light dark:text-subtext-dark space-x-4">
-            <span>Lex Mendoza 2024</span>
-            <a class="hover:underline" href="#">Aviso de privacidad</a>
-            <a class="hover:underline" href="#">Términos y condiciones</a>
-            <a class="hover:underline" href="#">Condiciones generales de contratación</a>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a class="card card-project gradient-etics text-decoration-none p-4 d-flex flex-column justify-content-between h-100" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <h4 class="h4 text-allbrands-white text-uppercase mb-2" style="letter-spacing: 0.05em;">Etic's Live</h4>
+                <p class="text-allbrands-white">Prensa musical digital independiente en el corazón de Monterrey.</p>
+              </div>
+              <div class="mt-auto">
+                <p class="fw-semibold small text-allbrands-white" style="letter-spacing: 0.05em;">Editor de video, Videografo, Fotógrafo, Diseñador.</p>
+                <p class="text-allbrands-white mt-3" style="font-size: 0.75rem;">Feb 2011 - Actualidad.</p>
+              </div>
+            </a>
           </div>
-        </footer>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a class="card card-project gradient-motoland text-decoration-none p-4 d-flex flex-column justify-content-between h-100" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <h4 class="h4 text-allbrands-white text-uppercase mb-2" style="letter-spacing: 0.05em;">Motoland Driving School</h4>
+                <p class="text-allbrands-white">Escuela de motociclismo de nivel principiante a competitivo.</p>
+              </div>
+              <div class="mt-auto">
+                <p class="fw-semibold small text-allbrands-white" style="letter-spacing: 0.05em;">Community Manager, Fotógrafo, Publicista, Diseñador.</p>
+                <p class="text-allbrands-white mt-3" style="font-size: 0.75rem;">Sep 2023 - Dic 2023.</p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a class="card card-project gradient-psi text-decoration-none p-4 d-flex flex-column justify-content-between h-100" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <h4 class="h4 text-allbrands-white text-uppercase mb-2" style="letter-spacing: 0.05em;">Daniel Abrego</h4>
+                <p class="text-allbrands-white">Psicólogo y divulgador en Youtube sobre el autonocimiento y la autocrítica.</p>
+              </div>
+              <div class="mt-auto">
+                <p class="fw-semibold small text-allbrands-white" style="letter-spacing: 0.05em;">Diseñador.</p>
+                <p class="text-allbrands-white mt-3" style="font-size: 0.75rem;">Nov 2022 - Actualidad.</p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a class="card card-project gradient-lex text-decoration-none p-4 d-flex flex-column justify-content-between h-100" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <h4 class="h4 text-allbrands-white text-uppercase mb-2" style="letter-spacing: 0.05em;">Trabajos Independientes</h4>
+                <p class="text-allbrands-white">Diversos proyectos abordados a lo largo de mi carrera.</p>
+              </div>
+              <div class="mt-auto">
+                <p class="fw-semibold small text-allbrands-white" style="letter-spacing: 0.05em;">Fotógrafo, Videógrafo, Publicista, Diseñador.</p>
+                <p class="text-allbrands-white mt-3" style="font-size: 0.75rem;">Desde 2019.</p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <a class="card card-project gradient-lex text-decoration-none p-4 d-flex flex-column justify-content-between h-100" href="#" target="_blank" rel="noopener noreferrer">
+              <div>
+                <h4 class="h4 text-allbrands-white text-uppercase mb-2" style="letter-spacing: 0.05em;">Los días tempranos</h4>
+                <p class="text-allbrands-white">Mis inicios durante y al graduarme de la facultad.</p>
+              </div>
+              <div class="mt-auto">
+                <p class="fw-semibold small text-allbrands-white" style="letter-spacing: 0.05em;">Fotógrafo, Videógrafo, Publicista, Diseñador.</p>
+                <p class="text-allbrands-white mt-3" style="font-size: 0.75rem;">Desde 2011 hasta 2015.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="mt-5 pt-4 border-top" id="contacto">
+        <h2 class="display-5 fw-black" style="letter-spacing: -0.05em;">
+          ¿NECESITAS UNA PROPUESTA O IMPRESIÓN? ¡HABLEMOS!
+        </h2>
+        <p class="text-subtext-light mt-2 mb-4">
+          Contáctame por estos medios, cuéntame tus ideas y planes, hagámoslo una realidad.
+        </p>
+        <div class="d-flex gap-3 mb-4">
+          <a href="#" class="text-subtext-light text-decoration-none">
+            <svg aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 1.83.504 3.552 1.39 5.025L2.2 21.8l4.905-1.183A9.932 9.932 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zM8.995 7.624c.22-.44.733-1.104 1.054-1.145.32-.04.603.01.814.05.21.04.422.09.583.15.202.07.414.16.596.28.21.14.412.3.594.48s.324.39.466.56c.14.17.27.35.38.52.17.27.31.57.42.88.11.31.18.64.22.99.04.35.04.7.02 1.05-.02.35-.06.69-.12.98-.06.29-.14.56-.25.81-.11.25-.25.48-.41.69-.16.21-.35.4-.56.56s-.44.3-.69.41c-.25.11-.52.2-.81.25-.29.06-.63.1-.98.12-.35.02-.7.02-1.05.02-.35 0-.7-.01-1.05-.04-.35-.03-.69-.09-.99-.18-.3-.09-.59-.21-.88-.36s-.56-.34-.82-.56c-.26-.22-.5-.48-.71-.77s-.39-.63-.53-.98c-.14-.35-.24-.73-.29-1.12s-.06-1.02-.02-1.25c.04-.23.11-.46.22-.67.11-.21.25-.4.41-.56s.35-.3.56-.41c.21-.11.44-.2.69-.25s.52-.09.81-.12c.29-.03.58-.04.85-.04h.1z" fill-rule="evenodd"/>
+            </svg>
+          </a>
+          <a href="#" class="text-subtext-light text-decoration-none">
+            <svg aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 15.5v-5h-2v-3h2V9.5c0-1.65 1.35-3 3-3h2.5v3H14.5c-.28 0-.5.22-.5.5v1.5h3l-.5 3h-2.5v5h-3z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-subtext-light text-decoration-none">
+            <svg aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.8 9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H8v-5H5l7-7 7 7h-3v5z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-subtext-light text-decoration-none">
+            <svg aria-hidden="true" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.5 18.5h-3v-9h3v9zm-1.5-10.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zM18.5 18.5h-3v-4.74c0-1.42-.4-2.38-1.76-2.38-1.12 0-1.66.75-1.93 1.47-.1.25-.12.6-.12.95v4.7h-3s.04-8.17 0-9h3v1.33h.04c.4-.7 1.36-1.73 3.03-1.73 2.2 0 3.82 1.44 3.82 4.51V18.5z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="small text-subtext-light d-flex gap-3 flex-wrap">
+          <span>Lex Mendoza 2024</span>
+          <a class="text-decoration-none text-subtext-light" href="#">Aviso de privacidad</a>
+          <a class="text-decoration-none text-subtext-light" href="#">Términos y condiciones</a>
+          <a class="text-decoration-none text-subtext-light" href="#">Condiciones generales de contratación</a>
+        </div>
+      </footer>
     </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
