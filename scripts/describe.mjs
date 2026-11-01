@@ -40,7 +40,8 @@ export function describeName(file) {
   }
 
   const bare = strip(name);
-  if (!bare || /^\d+$/.test(bare) || /^[a-f0-9]{8,}$/.test(bare) || /^[a-z]{1,4}\d{3,}$/.test(bare.replace(/\s/g, '')) || GENERIC.test(bare)) return '';
+  // Descargas de redes ("284262625_2527..._n"), nombres de una a tres letras y capturas de WhatsApp tampoco describen nada.
+  if (!bare || /^\d+$/.test(bare) || /^(\d+ )+n$/.test(bare) || /^[a-z]{1,3}$/.test(bare) || /^(download|whats ?app image|imagen de whats ?app)\b/.test(bare) || /^[a-f0-9]{8,}$/.test(bare) || /^[a-z]{1,4}\d{3,}$/.test(bare.replace(/\s/g, '')) || GENERIC.test(bare)) return '';
   // El "Webinar 2025" de una fecha suelta ya no aporta: se quita un ano al final.
   return name.replace(/\s(19|20)\d{2}$/, '').trim();
 }

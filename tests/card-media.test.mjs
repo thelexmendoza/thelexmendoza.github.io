@@ -22,8 +22,8 @@ test('la tarjeta de Valtre trae cinco imagenes de VALKYRIA decorativas y sin tex
   assert.match(card, /data-media/);
 });
 
-test('solo las tarjetas con imagenes (Valtre y CiiSA | PSW) cambian al pasar el cursor', () => {
-  assert.equal((home.match(/c-case-card__media/g) ?? []).length, 2);
+test('solo las tarjetas con imagenes (Valtre, CiiSA | PSW y Daniel Ábrego) cambian al pasar el cursor', () => {
+  assert.equal((home.match(/c-case-card__media/g) ?? []).length, 3);
 });
 
 test('al pasar el cursor, al enfocar o al llegar al centro en movil, aparece la imagen con su velo', () => {
@@ -164,4 +164,18 @@ test('la tarjeta no cambia de alto al activarse: lo que el contenido pierde lo r
   assert.match(css, /\.c-case-card\[data-media\]\s*\{[^}]*--lift:\s*0\.7/);
   assert.match(css, /\.c-case-card\[data-media\] > \.c-case-card__title\s*\{[^}]*margin-block-start:\s*calc\(var\(--bar-h\) \* var\(--lift\) \* var\(--peek\)\)/);
   assert.match(css, /\.c-case-card\[data-media\]\s*\{[^}]*padding-block-end:\s*calc\(var\(--bar-h\) \* \(1 - var\(--lift\)\) \* var\(--peek\)\)/);
+});
+
+test('la tarjeta de Daniel Ábrego abre su caso y repite el fondo del hero (imagenes del caso) en el mismo orden', () => {
+  const card = home.match(/<a class="c-case-card" data-case="daniel"[\s\S]*?<\/a>/)[0];
+  assert.match(card, /href="casos\/daniel-abrego\/"/);
+  assert.doesNotMatch(card, /Próximamente|aria-disabled|data-soon/);
+  assert.match(card, /<span class="c-case-card__line c-case-card__title"><span class="c-case-card__word">Daniel Ábrego<\/span><\/span>/);
+  assert.match(card, /class="c-case-card__cta">Ver caso →/);
+  assert.doesNotMatch(card, /data-bar=/, 'sus etiquetas son largas y se parten en dos lineas: lleva la barra de dos lineas');
+  const data = JSON.parse(fs.readFileSync('data/casos/daniel-abrego.json', 'utf8'));
+  const media = card.match(/<span class="c-case-card__media"[\s\S]*?\n {16}<\/span>/)[0];
+  const count = data.card.media.length === 5 ? '' : ` data-count="${data.card.media.length}"`;
+  assert.equal(media, `<span class="c-case-card__media" aria-hidden="true"${count}>\n${renderCardMedia(data.card.media)}\n                </span>`);
+  assert.ok(fs.existsSync('casos/daniel-abrego/index.html'));
 });
