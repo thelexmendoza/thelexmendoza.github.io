@@ -34,17 +34,21 @@ $cases: (
     @include case-vars(map.get($by-theme, light));
   }
 
+  // `data-case` va en <html> (pagina de caso) o en un elemento interno (tarjeta de la home).
   @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"])[data-case="#{$name}"] {
+    :root:not([data-theme="light"])[data-case="#{$name}"],
+    :root:not([data-theme="light"]) [data-case="#{$name}"] {
       @include case-vars(map.get($by-theme, dark));
     }
   }
 
-  [data-theme="dark"][data-case="#{$name}"] {
+  [data-theme="dark"][data-case="#{$name}"],
+  [data-theme="dark"] [data-case="#{$name}"] {
     @include case-vars(map.get($by-theme, dark));
   }
 
-  [data-theme="light"][data-case="#{$name}"] {
+  [data-theme="light"][data-case="#{$name}"],
+  [data-theme="light"] [data-case="#{$name}"] {
     @include case-vars(map.get($by-theme, light));
   }
 }

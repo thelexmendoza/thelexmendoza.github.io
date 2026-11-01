@@ -45,3 +45,38 @@ test('un enlace rotado con aria-disabled y "Proximamente" se acepta', () => {
 test('index.html no tiene problemas', () => {
   assert.deepEqual(checkHtml('index.html'), []);
 });
+
+test('un enlace a un ancla inexistente se reporta', () => {
+  const bad = good.replace('<h1>', '<a href="#nada">x</a><h1>');
+  assert.match(checkHtml(write('anchor.html', bad)).join('\n'), /#nada/);
+});
+
+test('un enlace a un ancla existente se acepta', () => {
+  const ok = good.replace('<h1>', '<a href="#aqui">x</a><h1 id="aqui">');
+  assert.deepEqual(checkHtml(write('anchor-ok.html', ok)), []);
+});
+
+test('la home enlaza los seis casos y el plan', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  for (const href of ['casos/valtre/', 'casos/ciisa-web/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/', 'plan/']) {
+    assert.ok(html.includes(`href="${href}"`), `falta el enlace a ${href}`);
+  }
+});
+
+test('cada tarjeta de caso declara su paleta con data-case', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  for (const name of ['valtre', 'ciisa', 'bmw', 'daniel', 'etics', 'moto']) {
+    assert.ok(html.includes(`data-case="${name}"`), `falta data-case="${name}"`);
+  }
+});
+
+test('el contacto usa el WhatsApp y el correo de Lex', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.match(html, /href="https:\/\/wa\.me\/528129043592/);
+  assert.match(html, /href="mailto:lex\.mendozaleon@gmail\.com"/);
+});
+
+test('la home no contiene precios', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.doesNotMatch(html, /\$\s?\d/);
+});

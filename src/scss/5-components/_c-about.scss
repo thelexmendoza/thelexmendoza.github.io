@@ -1,0 +1,15 @@
+@use "../1-tools/functions" as fn;
+
+.c-about {
+  align-items: center;
+  gap: var(--space-5);
+
+  // Avatar provisional hasta que lleguen las fotos.
+  &__avatar {
+    inline-size: min(100%, #{fn.rem(233)});
+    aspect-ratio: 1;
+    justify-self: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gradient-a), var(--gradient-b));
+  }
+}

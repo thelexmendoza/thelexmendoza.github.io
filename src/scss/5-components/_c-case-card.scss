@@ -1,0 +1,77 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+.c-case-list {
+  padding: 0;
+  list-style: none;
+  // Seis casos: tres columnas en escritorio (3 x 2), no cuatro mas dos.
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, #{fn.rem(336)}), 1fr));
+
+  // Cada tarjeta consulta el ancho de su propia celda, no el de la pantalla.
+  &__item {
+    container-type: inline-size;
+  }
+}
+
+.c-case-card {
+  display: grid;
+  align-content: space-between;
+  gap: var(--space-2);
+  block-size: 100%;
+  min-block-size: fn.rem(233);
+  padding: var(--space-4);
+  border: 1px solid var(--color-text-muted);
+  border-inline-start: 8px solid var(--color-accent);
+  background: var(--color-bg);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  @include m.touch-target;
+
+  @include m.on-hover {
+    border-color: var(--color-accent);
+  }
+
+  &__tags {
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-family: f.$font-condensed;
+    font-size: var(--step-2);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    overflow-wrap: break-word;
+  }
+
+  &__text {
+    color: var(--color-text-muted);
+  }
+
+  &__soon {
+    justify-self: start;
+    padding: 0 var(--space-1);
+    border: 1px solid var(--color-text-muted);
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+  }
+
+  &[aria-disabled="true"] {
+    cursor: not-allowed;
+  }
+}
+
+@container (min-width: 21rem) {
+  .c-case-card {
+    padding: var(--space-5);
+  }
+}

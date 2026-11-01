@@ -17,7 +17,7 @@ const contrast = (a, b) => {
 };
 
 const block = (selector) => {
-  const match = css.match(new RegExp(`(?:^|\\n)\\s*${selector}\\s*\\{([^}]*)\\}`));
+  const match = css.match(new RegExp(`(?:^|\\n)\\s*${selector}\\s*(?:,[^{]*)?\\{([^}]*)\\}`));
   assert.ok(match, `no existe el bloque ${selector}`);
   return Object.fromEntries([...match[1].matchAll(/(--[\w-]+):\s*([^;]+);/g)].map((m) => [m[1], m[2].trim()]));
 };
@@ -52,4 +52,9 @@ for (const name of ['bmw', 'daniel', 'etics', 'moto']) {
 test('sin JavaScript el tema sigue la preferencia del sistema', () => {
   assert.match(css, /@media \(prefers-color-scheme: dark\)/);
   assert.match(css, /:root:not\(\[data-theme="?light"?\]\)/);
+});
+
+test('las tarjetas dentro de la pagina tambien reciben la paleta del caso en oscuro', () => {
+  assert.match(css, /\[data-theme="?dark"?\] \[data-case="?bmw"?\]/);
+  assert.match(css, /:root:not\(\[data-theme="?light"?\]\) \[data-case="?bmw"?\]/);
 });

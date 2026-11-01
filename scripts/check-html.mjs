@@ -20,8 +20,14 @@ export function checkHtml(filePath) {
     if (!/\balt=/i.test(img)) problems.push(`Imagen sin alt: ${img.slice(0, 60)}`);
   }
 
+  const ids = new Set([...html.matchAll(/\bid="([^"]+)"/gi)].map((m) => m[1]));
+
   for (const anchor of html.match(/<a\b[^>]*>[\s\S]*?<\/a>/gi) ?? []) {
     const href = anchor.match(/\bhref="([^"]*)"/i)?.[1];
+    if (href && href.length > 1 && href.startsWith('#')) {
+      if (!ids.has(href.slice(1))) problems.push(`Ancla sin destino: ${href}`);
+      continue;
+    }
     if (!href || href.startsWith('#') || isExternal(href)) continue;
     const comingSoon = /aria-disabled="true"/i.test(anchor) && /pr[óo]ximamente/i.test(anchor);
     if (comingSoon) continue;
