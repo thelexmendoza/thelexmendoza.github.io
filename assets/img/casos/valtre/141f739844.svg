@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.03 90.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #7f5af0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Main">
+    <g>
+      <g>
+        <polygon class="cls-1" points="31.18 62.83 31.18 79.4 16.34 88.68 16.34 71.98 31.18 62.83"/>
+        <polygon class="cls-1" points="1.5 62.83 1.5 79.4 16.34 88.68 16.34 71.98 1.5 62.83"/>
+        <polygon class="cls-1" points="1.5 62.83 16.34 71.98 31.18 62.71 16.34 53.43 1.5 62.83"/>
+      </g>
+      <g>
+        <polygon class="cls-1" points="60.85 62.83 60.85 79.4 46.01 88.68 46.01 71.98 60.85 62.83"/>
+        <polygon class="cls-1" points="31.18 62.83 31.18 79.4 46.01 88.68 46.01 71.98 31.18 62.83"/>
+        <polygon class="cls-1" points="31.18 62.83 46.01 71.98 60.85 62.71 46.01 53.43 31.18 62.83"/>
+      </g>
+      <g>
+        <polygon class="cls-1" points="60.85 10.9 60.85 27.47 46.01 36.74 46.01 20.05 60.85 10.9"/>
+        <polygon class="cls-1" points="31.18 10.9 31.18 27.47 46.01 36.74 46.01 20.05 31.18 10.9"/>
+        <polygon class="cls-1" points="31.18 10.9 46.01 20.05 60.85 10.78 46.01 1.5 31.18 10.9"/>
+      </g>
+      <g>
+        <polygon class="cls-1" points="90.53 62.83 90.53 79.4 75.69 88.68 75.69 71.98 90.53 62.83"/>
+        <polygon class="cls-1" points="60.85 62.83 60.85 79.4 75.69 88.68 75.69 71.98 60.85 62.83"/>
+        <polygon class="cls-1" points="60.85 62.83 75.69 71.98 90.53 62.71 75.69 53.43 60.85 62.83"/>
+      </g>
+      <g>
+        <polygon class="cls-1" points="46.01 36.86 46.01 53.44 31.18 62.71 31.18 46.02 46.01 36.86"/>
+        <polygon class="cls-1" points="16.34 36.86 16.34 53.44 31.18 62.71 31.18 46.02 16.34 36.86"/>
+        <polygon class="cls-1" points="16.34 36.86 31.18 46.02 46.01 36.74 31.18 27.47 16.34 36.86"/>
+      </g>
+      <g>
+        <polygon class="cls-1" points="75.69 36.86 75.69 53.44 60.85 62.71 60.85 46.02 75.69 36.86"/>
+        <polygon class="cls-1" points="46.01 36.86 46.01 53.44 60.85 62.71 60.85 46.02 46.01 36.86"/>
+        <polygon class="cls-1" points="46.01 36.86 60.85 46.02 75.69 36.74 60.85 27.47 46.01 36.86"/>
+      </g>
+    </g>
+  </g>
+</svg>

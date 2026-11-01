@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 82.9 79.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_33-2);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_33-3);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_33);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_33" data-name="Degradado sin nombre 33" x1="41.45" y1="92.35" x2="41.45" y2="-65.85" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#0f75bc"/>
+      <stop offset=".13" stop-color="#098ab2"/>
+      <stop offset=".22" stop-color="#04a1a8"/>
+      <stop offset=".3" stop-color="#01afa2"/>
+      <stop offset=".37" stop-color="#00b4a0"/>
+      <stop offset=".4" stop-color="#1ebcab"/>
+      <stop offset=".46" stop-color="#58cec1"/>
+      <stop offset=".53" stop-color="#8bddd4"/>
+      <stop offset=".59" stop-color="#b5e9e3"/>
+      <stop offset=".65" stop-color="#d5f2ef"/>
+      <stop offset=".71" stop-color="#ecf9f8"/>
+      <stop offset=".76" stop-color="#fafdfd"/>
+      <stop offset=".81" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_33-2" data-name="Degradado sin nombre 33" x1="41.45" x2="41.45" xlink:href="#Degradado_sin_nombre_33"/>
+    <linearGradient id="Degradado_sin_nombre_33-3" data-name="Degradado sin nombre 33" x1="41.45" x2="41.45" xlink:href="#Degradado_sin_nombre_33"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <path class="cls-3" d="M50.46,61.27c0,.99-.81,1.8-1.8,1.8h-14.42c-.99,0-1.8-.81-1.8-1.8v-3.6H3.6v18.02c0,1.99,1.61,3.6,3.6,3.6h68.48c1.99,0,3.6-1.61,3.6-3.6v-18.02h-28.83v3.6Z"/>
+      <path class="cls-1" d="M79.29,14.42H3.6c-1.99,0-3.6,1.61-3.6,3.6v34.24c0,.99.81,1.8,1.8,1.8h30.64v-3.6c0-.99.81-1.8,1.8-1.8h14.42c.99,0,1.8.81,1.8,1.8v3.6h30.64c.99,0,1.8-.81,1.8-1.8V18.02c0-1.99-1.61-3.6-3.6-3.6Z"/>
+      <path class="cls-2" d="M30.64,3.6h21.63v7.21h3.6V1.8c0-.99-.81-1.8-1.8-1.8h-25.23c-.99,0-1.8.81-1.8,1.8v9.01h3.6V3.6Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 58.85 50.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_48);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_48-3);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_48-4);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_48-2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_48" data-name="Degradado sin nombre 48" x1="26.61" y1="21.63" x2="-2.92" y2="37.16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f75bc"/>
+      <stop offset=".5" stop-color="#7f5af0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_48-2" data-name="Degradado sin nombre 48" x1="26.83" y1="25.17" x2="3.42" y2="1.52" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-3" data-name="Degradado sin nombre 48" x1="4.91" y1="3.1" x2="52.81" y2="51" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-4" data-name="Degradado sin nombre 48" x1="46.09" y1="50.41" x2="46.09" y2="8.16" xlink:href="#Degradado_sin_nombre_48"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <path class="cls-1" d="M0,26.28c0,6,2.43,11.42,6.36,15.35l15.35-15.35H0Z"/>
+      <path class="cls-5" d="M1.81,21.71h21.71s0-21.71,0-21.71C11.53,0,1.81,9.72,1.81,21.71Z"/>
+      <path class="cls-3" d="M13,41.89c3.93,3.93,9.36,6.36,15.35,6.36,11.99,0,21.71-9.72,21.71-21.71,0-11.99-9.72-21.71-21.71-21.71v21.71s-15.35,15.35-15.35,15.35Z"/>
+      <g>
+        <path class="cls-2" d="M46.09,22.23c-6.35,0-11.97,1.7-11.97,3.99v19.95c0,2.29,5.62,3.99,11.97,3.99s11.97-1.7,11.97-3.99v-19.95c0-2.29-5.62-3.99-11.97-3.99Z"/>
+        <path class="cls-4" d="M46.09,21.44c-6.34,0-12.76,1.64-12.76,4.78v19.95c0,3.14,6.42,4.78,12.76,4.78s12.76-1.64,12.76-4.78v-19.95c0-3.14-6.42-4.78-12.76-4.78ZM57.26,36.2c0,1.3-4.35,3.2-11.18,3.2s-11.18-1.89-11.18-3.2v-7.55c2.29,1.55,6.75,2.35,11.18,2.35s8.88-.8,11.18-2.35v7.55ZM46.09,23.03c6.82,0,11.18,1.89,11.18,3.2s-4.35,3.2-11.18,3.2-11.18-1.89-11.18-3.2,4.35-3.2,11.18-3.2ZM46.09,49.37c-6.82,0-11.18-1.89-11.18-3.2v-7.55c2.29,1.55,6.75,2.35,11.18,2.35s8.88-.8,11.18-2.35v7.55c0,1.3-4.35,3.2-11.18,3.2Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

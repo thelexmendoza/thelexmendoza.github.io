@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.66 59.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #7f5af0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Main">
+    <g>
+      <g>
+        <polygon class="cls-1" points="43.25 16.53 1 16.53 1 7.76 22.12 1 43.25 7.76 43.25 16.53"/>
+        <rect class="cls-1" x="1" y="40.44" width="42.25" height="6.87"/>
+        <g>
+          <g>
+            <rect class="cls-1" x="1.47" y="25.7" width="12.78" height="5.56" transform="translate(36.34 20.62) rotate(90)"/>
+            <rect class="cls-1" x="5.08" y="15.14" width="5.56" height="8.34" transform="translate(27.17 11.44) rotate(90)"/>
+            <rect class="cls-1" x="5.08" y="33.48" width="5.56" height="8.34" transform="translate(45.52 29.79) rotate(90)"/>
+          </g>
+          <g>
+            <rect class="cls-1" x="15.73" y="25.7" width="12.78" height="5.56" transform="translate(50.6 6.36) rotate(90)"/>
+            <rect class="cls-1" x="19.34" y="15.14" width="5.56" height="8.34" transform="translate(41.43 -2.82) rotate(90)"/>
+            <rect class="cls-1" x="19.34" y="33.48" width="5.56" height="8.34" transform="translate(59.78 15.53) rotate(90)"/>
+          </g>
+          <g>
+            <rect class="cls-1" x="29.99" y="25.7" width="12.78" height="5.56" transform="translate(64.87 -7.9) rotate(90)"/>
+            <rect class="cls-1" x="33.6" y="15.14" width="5.56" height="8.34" transform="translate(55.69 -17.08) rotate(90)"/>
+            <rect class="cls-1" x="33.6" y="33.48" width="5.56" height="8.34" transform="translate(74.04 1.27) rotate(90)"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <path class="cls-1" d="M29.32,31.93v21.95c0,2.52,6.18,4.39,13.17,4.39s13.17-1.87,13.17-4.39v-21.95"/>
+        <path class="cls-1" d="M55.66,42.91c0,2.52-6.18,4.39-13.17,4.39s-13.17-1.87-13.17-4.39"/>
+        <path class="cls-1" d="M55.66,31.93c0,2.52-6.18,4.39-13.17,4.39s-13.17-1.87-13.17-4.39,6.18-4.39,13.17-4.39,13.17,1.87,13.17,4.39Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

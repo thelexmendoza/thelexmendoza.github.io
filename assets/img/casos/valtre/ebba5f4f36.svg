@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 51.51 46.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_48);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_48-6);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_48-3);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_48-4);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_48-7);
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_48-2);
+      }
+
+      .cls-7 {
+        fill: url(#Degradado_sin_nombre_48-5);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_48" data-name="Degradado sin nombre 48" x1="-11.58" y1="41.74" x2="52.04" y2="-21.88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f75bc"/>
+      <stop offset=".5" stop-color="#7f5af0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_48-2" data-name="Degradado sin nombre 48" x1="8.01" y1="61.33" x2="71.63" y2="-2.29" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-3" data-name="Degradado sin nombre 48" x1="-15.16" y1="38.15" x2="48.46" y2="-25.46" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-4" data-name="Degradado sin nombre 48" x1="-6.59" y1="46.73" x2="57.03" y2="-16.89" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-5" data-name="Degradado sin nombre 48" x1="15.5" y1="68.82" x2="79.12" y2="5.2" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-6" data-name="Degradado sin nombre 48" x1="8.43" y1="61.75" x2="72.05" y2="-1.87" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-7" data-name="Degradado sin nombre 48" x1="-1.8" y1="51.52" x2="61.82" y2="-12.1" xlink:href="#Degradado_sin_nombre_48"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <path class="cls-1" d="M5.75,20.67c2.07,0,3.75,1.68,3.75,3.75s-1.68,3.75-3.75,3.75-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75M5.75,18.67c-3.17,0-5.75,2.57-5.75,5.75s2.57,5.75,5.75,5.75,5.75-2.57,5.75-5.75-2.57-5.75-5.75-5.75h0Z"/>
+      <path class="cls-6" d="M28.74,36.85c2.07,0,3.75,1.68,3.75,3.75s-1.68,3.75-3.75,3.75-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75M28.74,34.85c-3.17,0-5.75,2.57-5.75,5.75s2.57,5.75,5.75,5.75,5.75-2.57,5.75-5.75-2.57-5.75-5.75-5.75h0Z"/>
+      <path class="cls-3" d="M17.24,2c2.07,0,3.75,1.68,3.75,3.75s-1.68,3.75-3.75,3.75-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75M17.24,0c-3.17,0-5.75,2.57-5.75,5.75s2.57,5.75,5.75,5.75,5.75-2.57,5.75-5.75S20.42,0,17.24,0h0Z"/>
+      <path class="cls-4" d="M19.36,17.03c2.07,0,3.75,1.68,3.75,3.75s-1.68,3.75-3.75,3.75-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75M19.36,15.03c-3.17,0-5.75,2.57-5.75,5.75s2.57,5.75,5.75,5.75,5.75-2.57,5.75-5.75-2.57-5.75-5.75-5.75h0Z"/>
+      <path class="cls-7" d="M45.77,34.81c2.07,0,3.75,1.68,3.75,3.75s-1.68,3.75-3.75,3.75-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75M45.77,32.81c-3.17,0-5.75,2.57-5.75,5.75s2.57,5.75,5.75,5.75,5.75-2.57,5.75-5.75-2.57-5.75-5.75-5.75h0Z"/>
+      <path class="cls-2" d="M45.77,20.67c2.07,0,3.75,1.68,3.75,3.75s-1.68,3.75-3.75,3.75-3.75-1.68-3.75-3.75,1.68-3.75,3.75-3.75M45.77,18.67c-3.17,0-5.75,2.57-5.75,5.75s2.57,5.75,5.75,5.75,5.75-2.57,5.75-5.75-2.57-5.75-5.75-5.75h0Z"/>
+      <path class="cls-5" d="M39.61,12.49l-2.21-4.25-4.25,2.21-.87,2.75,3.05-1.59C26.87,36.55,4.06,39.58,3.82,39.61c-.55.07-.94.56-.87,1.11.06.51.49.88.99.88.04,0,.08,0,.12,0,.25-.03,24.27-3.18,33.16-29.31l1.53,2.95.87-2.75Z"/>
+    </g>
+  </g>
+</svg>

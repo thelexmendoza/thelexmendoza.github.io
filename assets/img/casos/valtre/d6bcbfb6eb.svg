@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.24 43.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #005f89;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #005f89;
+      }
+    </style>
+  </defs>
+  <g id="Main">
+    <g>
+      <circle class="cls-2" cx="18.52" cy="22.55" r="17.52"/>
+      <circle class="cls-2" cx="18.52" cy="22.55" r="10.79"/>
+      <circle class="cls-3" cx="18.52" cy="22.55" r="5.19"/>
+      <g>
+        <line class="cls-1" x1="19.5" y1="22.55" x2="33.27" y2="8.78"/>
+        <polygon class="cls-3" points="32.63 8.71 31.38 4.02 32.18 3.22 33.44 7.91 34.24 7.1 32.99 2.41 33.79 1.61 35.05 6.3 35.85 5.5 34.6 .8 35.4 0 36.66 4.69 37.48 3.87 38.18 4.57 37.36 5.39 42.05 6.65 41.24 7.45 36.55 6.2 35.75 7 40.44 8.26 39.63 9.06 34.94 7.8 34.14 8.61 38.83 9.87 38.02 10.67 33.33 9.41 32.63 8.71"/>
+      </g>
+      <rect class="cls-2" x="28.57" y="26.46" width="15.67" height="15.67"/>
+      <polyline class="cls-2" points="32.57 34.3 35.4 37.12 41.04 31.47"/>
+    </g>
+  </g>
+</svg>

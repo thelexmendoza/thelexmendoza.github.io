@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 38.83 39.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_50-2);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_48);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_52-2);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_48-3);
+      }
+
+      .cls-6 {
+        fill: url(#Degradado_sin_nombre_48-4);
+      }
+
+      .cls-7 {
+        fill: url(#Degradado_sin_nombre_50);
+      }
+
+      .cls-8 {
+        fill: url(#Degradado_sin_nombre_52);
+      }
+
+      .cls-9 {
+        fill: url(#Degradado_sin_nombre_52-3);
+      }
+
+      .cls-10 {
+        fill: url(#Degradado_sin_nombre_48-2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_48" data-name="Degradado sin nombre 48" x1="13.04" y1="29.59" x2="13.04" y2="-13.56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f75bc"/>
+      <stop offset=".5" stop-color="#7f5af0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_52" data-name="Degradado sin nombre 52" x1="22.71" y1="42.39" x2="22.71" y2="16.11" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7f5af0"/>
+      <stop offset=".13" stop-color="#8a68f1"/>
+      <stop offset=".38" stop-color="#a78df4"/>
+      <stop offset=".73" stop-color="#d5cafa"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_48-2" data-name="Degradado sin nombre 48" x1="26.06" y1="40.66" x2="-14.76" y2="11.07" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_50" data-name="Degradado sin nombre 50" x1="7.46" y1="27.91" x2="45.87" y2="27.91" gradientUnits="userSpaceOnUse">
+      <stop offset=".55" stop-color="#7f5af0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_52-2" data-name="Degradado sin nombre 52" x1="35.61" y1="42.39" x2="35.61" y2="16.11" xlink:href="#Degradado_sin_nombre_52"/>
+    <linearGradient id="Degradado_sin_nombre_48-3" data-name="Degradado sin nombre 48" x1="30.5" y1="34.53" x2="-10.32" y2="4.94" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_52-3" data-name="Degradado sin nombre 52" x1="29.16" x2="29.16" xlink:href="#Degradado_sin_nombre_52"/>
+    <linearGradient id="Degradado_sin_nombre_48-4" data-name="Degradado sin nombre 48" x1="33.65" y1="30.2" x2="-7.18" y2=".61" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_50-2" data-name="Degradado sin nombre 50" y1="16.63" y2="16.63" xlink:href="#Degradado_sin_nombre_50"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <g>
+        <path class="cls-3" d="M13.04.81C6.55.81.81,2.54.81,4.89v20.38c0,2.34,5.74,4.08,12.23,4.08s12.23-1.73,12.23-4.08V4.89c0-2.34-5.74-4.08-12.23-4.08Z"/>
+        <path class="cls-2" d="M13.04,0C6.56,0,0,1.68,0,4.88v20.38c0,3.21,6.56,4.88,13.04,4.88s13.04-1.68,13.04-4.88V4.88c0-3.21-6.56-4.88-13.04-4.88ZM24.45,15.07c0,1.33-4.45,3.27-11.42,3.27s-11.42-1.93-11.42-3.27v-7.71c2.34,1.58,6.89,2.4,11.42,2.4s9.07-.82,11.42-2.4v7.71ZM13.04,1.62c6.97,0,11.42,1.93,11.42,3.27s-4.45,3.27-11.42,3.27S1.62,6.22,1.62,4.88,6.07,1.62,13.04,1.62ZM13.04,28.53c-6.97,0-11.42-1.93-11.42-3.27v-7.71c2.34,1.58,6.89,2.4,11.42,2.4s9.07-.82,11.42-2.4v7.71c0,1.33-4.45,3.27-11.42,3.27Z"/>
+      </g>
+      <polygon class="cls-8" points="25.93 27.97 25.93 35.17 19.48 39.2 19.48 31.94 25.93 27.97"/>
+      <polygon class="cls-10" points="13.04 27.97 13.04 35.17 19.48 39.2 19.48 31.94 13.04 27.97"/>
+      <polygon class="cls-7" points="13.04 27.97 19.48 31.94 25.93 27.91 19.48 23.88 13.04 27.97"/>
+      <polygon class="cls-4" points="38.83 27.97 38.83 35.17 32.38 39.2 32.38 31.94 38.83 27.97"/>
+      <polygon class="cls-5" points="25.93 27.97 25.93 35.17 32.38 39.2 32.38 31.94 25.93 27.97"/>
+      <polygon class="cls-7" points="25.93 27.97 32.38 31.94 38.83 27.91 32.38 23.88 25.93 27.97"/>
+      <polygon class="cls-9" points="32.38 16.68 32.38 23.88 25.93 27.91 25.93 20.66 32.38 16.68"/>
+      <polygon class="cls-6" points="19.48 16.68 19.48 23.88 25.93 27.91 25.93 20.66 19.48 16.68"/>
+      <polygon class="cls-1" points="19.48 16.68 25.93 20.66 32.38 16.63 25.93 12.6 19.48 16.68"/>
+    </g>
+  </g>
+</svg>

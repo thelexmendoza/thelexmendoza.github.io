@@ -1,0 +1,4764 @@
+{
+  "slug": "valtre",
+  "key": "valtre",
+  "title": "Valtre",
+  "eyebrow": "identidad y contenido",
+  "meta": "2024–2026 · Diseñador multimedia",
+  "summary": "Valtre es una empresa de tecnología. Durante año y medio me encargué de cómo se ve y cómo se comunica: el rebranding completo, la identidad de cada Centro de Excelencia, los materiales comerciales, el contenido para redes y los eventos, hasta llegar a VALKYRIA, un agente de IA para QA.",
+  "teaser": {
+    "chapter": "valkyria",
+    "text": "Al final: VALKYRIA, un agente de IA para QA, con su identidad y su campaña."
+  },
+  "chapters": [
+    {
+      "id": "identidad",
+      "title": "Identidad",
+      "eyebrow": "una marca, muchos centros",
+      "text": [
+        "Lideré el rebranding completo de la compañía y construí desde cero la identidad de los Centros de Excelencia: cada uno con su propia personalidad, todos dentro de la misma familia visual.",
+        "Aquí está el sistema: los iconos de Software Solutions y AI Labs en una sola hoja, los logotipos y los materiales de cada centro."
+      ],
+      "groups": [
+        {
+          "kind": "iconos",
+          "topic": "Software Solutions y AI Labs",
+          "items": [
+            {
+              "id": "6e55ce63cb",
+              "src": "assets/img/casos/valtre/6e55ce63cb.svg",
+              "full": "assets/img/casos/valtre/6e55ce63cb.svg",
+              "width": 576,
+              "height": 576,
+              "alt": "Software Solutions y AI Labs: 1 Definición De Perfil"
+            },
+            {
+              "id": "88e2e9e524",
+              "src": "assets/img/casos/valtre/88e2e9e524.svg",
+              "full": "assets/img/casos/valtre/88e2e9e524.svg",
+              "width": 576,
+              "height": 576,
+              "alt": "Software Solutions y AI Labs: 2 RespuestÁgil"
+            },
+            {
+              "id": "2b8e9791c1",
+              "src": "assets/img/casos/valtre/2b8e9791c1.svg",
+              "full": "assets/img/casos/valtre/2b8e9791c1.svg",
+              "width": 576,
+              "height": 576,
+              "alt": "Software Solutions y AI Labs: 3 Filtro Técnico"
+            },
+            {
+              "id": "24ecaa1a71",
+              "src": "assets/img/casos/valtre/24ecaa1a71.svg",
+              "full": "assets/img/casos/valtre/24ecaa1a71.svg",
+              "width": 576,
+              "height": 576,
+              "alt": "Software Solutions y AI Labs: 4 On Board"
+            },
+            {
+              "id": "2b9e1de195",
+              "src": "assets/img/casos/valtre/2b9e1de195.svg",
+              "full": "assets/img/casos/valtre/2b9e1de195.svg",
+              "width": 576,
+              "height": 576,
+              "alt": "Software Solutions y AI Labs: 5 end To End Con CSM"
+            },
+            {
+              "id": "667c4840bf",
+              "src": "assets/img/casos/valtre/667c4840bf.svg",
+              "full": "assets/img/casos/valtre/667c4840bf.svg",
+              "width": 560,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: AI Labs Icon"
+            },
+            {
+              "id": "0dc79aea37",
+              "src": "assets/img/casos/valtre/0dc79aea37.svg",
+              "full": "assets/img/casos/valtre/0dc79aea37.svg",
+              "width": 148,
+              "height": 134,
+              "alt": "Software Solutions y AI Labs: AI Labs Icon"
+            },
+            {
+              "id": "c473ae81b0",
+              "src": "assets/img/casos/valtre/c473ae81b0.svg",
+              "full": "assets/img/casos/valtre/c473ae81b0.svg",
+              "width": 146,
+              "height": 121,
+              "alt": "Software Solutions y AI Labs: Ai Labs Big Brother Icon"
+            },
+            {
+              "id": "8b09f50737",
+              "src": "assets/img/casos/valtre/8b09f50737.svg",
+              "full": "assets/img/casos/valtre/8b09f50737.svg",
+              "width": 96,
+              "height": 99,
+              "alt": "Software Solutions y AI Labs: AI Labs Chatbot Icon"
+            },
+            {
+              "id": "1f7c2e2c7c",
+              "src": "assets/img/casos/valtre/1f7c2e2c7c.svg",
+              "full": "assets/img/casos/valtre/1f7c2e2c7c.svg",
+              "width": 123,
+              "height": 112,
+              "alt": "Software Solutions y AI Labs: Ai Labs Data Science Icon"
+            },
+            {
+              "id": "09e60ef211",
+              "src": "assets/img/casos/valtre/09e60ef211.svg",
+              "full": "assets/img/casos/valtre/09e60ef211.svg",
+              "width": 104,
+              "height": 104,
+              "alt": "Software Solutions y AI Labs: Ai Labs Facial Icon"
+            },
+            {
+              "id": "6cfc4c17e9",
+              "src": "assets/img/casos/valtre/6cfc4c17e9.svg",
+              "full": "assets/img/casos/valtre/6cfc4c17e9.svg",
+              "width": 143,
+              "height": 121,
+              "alt": "Software Solutions y AI Labs: Ai Labs Heart Icon"
+            },
+            {
+              "id": "e295969cd2",
+              "src": "assets/img/casos/valtre/e295969cd2.svg",
+              "full": "assets/img/casos/valtre/e295969cd2.svg",
+              "width": 111,
+              "height": 108,
+              "alt": "Software Solutions y AI Labs: AI Labs ID Icon"
+            },
+            {
+              "id": "d2e81c9161",
+              "src": "assets/img/casos/valtre/d2e81c9161.svg",
+              "full": "assets/img/casos/valtre/d2e81c9161.svg",
+              "width": 133,
+              "height": 127,
+              "alt": "Software Solutions y AI Labs: Ai Labs IMG Icon"
+            },
+            {
+              "id": "309b212e97",
+              "src": "assets/img/casos/valtre/309b212e97.svg",
+              "full": "assets/img/casos/valtre/309b212e97.svg",
+              "width": 136,
+              "height": 136,
+              "alt": "Software Solutions y AI Labs: AI Labs ML DL Icon"
+            },
+            {
+              "id": "20d3e76d58",
+              "src": "assets/img/casos/valtre/20d3e76d58.svg",
+              "full": "assets/img/casos/valtre/20d3e76d58.svg",
+              "width": 94,
+              "height": 143,
+              "alt": "Software Solutions y AI Labs: Ai Labs MP Icon"
+            },
+            {
+              "id": "d60f698d57",
+              "src": "assets/img/casos/valtre/d60f698d57.svg",
+              "full": "assets/img/casos/valtre/d60f698d57.svg",
+              "width": 124,
+              "height": 125,
+              "alt": "Software Solutions y AI Labs: AI Labs OCR NLP Icon"
+            },
+            {
+              "id": "9d10e9513a",
+              "src": "assets/img/casos/valtre/9d10e9513a.svg",
+              "full": "assets/img/casos/valtre/9d10e9513a.svg",
+              "width": 123,
+              "height": 133,
+              "alt": "Software Solutions y AI Labs: AI Labs RAG Icon"
+            },
+            {
+              "id": "566f9475b0",
+              "src": "assets/img/casos/valtre/566f9475b0.svg",
+              "full": "assets/img/casos/valtre/566f9475b0.svg",
+              "width": 109,
+              "height": 108,
+              "alt": "Software Solutions y AI Labs: AI Labs RPA Icon"
+            },
+            {
+              "id": "2d067e1db4",
+              "src": "assets/img/casos/valtre/2d067e1db4.svg",
+              "full": "assets/img/casos/valtre/2d067e1db4.svg",
+              "width": 142,
+              "height": 121,
+              "alt": "Software Solutions y AI Labs: Ai Labs UX Icon"
+            },
+            {
+              "id": "6663509741",
+              "src": "assets/img/casos/valtre/6663509741.svg",
+              "full": "assets/img/casos/valtre/6663509741.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Bac End Card"
+            },
+            {
+              "id": "aa31d0e747",
+              "src": "assets/img/casos/valtre/aa31d0e747.svg",
+              "full": "assets/img/casos/valtre/aa31d0e747.svg",
+              "width": 149,
+              "height": 139,
+              "alt": "Software Solutions y AI Labs: Bac End Icon"
+            },
+            {
+              "id": "b2be4f05b9",
+              "src": "assets/img/casos/valtre/b2be4f05b9.svg",
+              "full": "assets/img/casos/valtre/b2be4f05b9.svg",
+              "width": 242,
+              "height": 253,
+              "alt": "Software Solutions y AI Labs: CDM Back End 1 Ad Hoc Icon"
+            },
+            {
+              "id": "ae6c1f8e45",
+              "src": "assets/img/casos/valtre/ae6c1f8e45.svg",
+              "full": "assets/img/casos/valtre/ae6c1f8e45.svg",
+              "width": 210,
+              "height": 257,
+              "alt": "Software Solutions y AI Labs: CDM Back End 2 Definido Icon"
+            },
+            {
+              "id": "b454d745ac",
+              "src": "assets/img/casos/valtre/b454d745ac.svg",
+              "full": "assets/img/casos/valtre/b454d745ac.svg",
+              "width": 303,
+              "height": 303,
+              "alt": "Software Solutions y AI Labs: CDM Back End 3 Iterativo Icon"
+            },
+            {
+              "id": "e465a37d39",
+              "src": "assets/img/casos/valtre/e465a37d39.svg",
+              "full": "assets/img/casos/valtre/e465a37d39.svg",
+              "width": 595,
+              "height": 378,
+              "alt": "Software Solutions y AI Labs: CDM Back End 4 Optimizado Icon"
+            },
+            {
+              "id": "aa961accc8",
+              "src": "assets/img/casos/valtre/aa961accc8.svg",
+              "full": "assets/img/casos/valtre/aa961accc8.svg",
+              "width": 657,
+              "height": 653,
+              "alt": "Software Solutions y AI Labs: CDM Back End 5 Escalable Icon"
+            },
+            {
+              "id": "46d0f3494f",
+              "src": "assets/img/casos/valtre/46d0f3494f.svg",
+              "full": "assets/img/casos/valtre/46d0f3494f.svg",
+              "width": 287,
+              "height": 287,
+              "alt": "Software Solutions y AI Labs: CDM Definido Icon"
+            },
+            {
+              "id": "a1a1b69487",
+              "src": "assets/img/casos/valtre/a1a1b69487.svg",
+              "full": "assets/img/casos/valtre/a1a1b69487.svg",
+              "width": 216,
+              "height": 159,
+              "alt": "Software Solutions y AI Labs: CDM Desktop 1 Ad Hoc Icon"
+            },
+            {
+              "id": "90dca3e981",
+              "src": "assets/img/casos/valtre/90dca3e981.svg",
+              "full": "assets/img/casos/valtre/90dca3e981.svg",
+              "width": 305,
+              "height": 218,
+              "alt": "Software Solutions y AI Labs: CDM Desktop 2 Definido Icon"
+            },
+            {
+              "id": "4d9e2bf989",
+              "src": "assets/img/casos/valtre/4d9e2bf989.svg",
+              "full": "assets/img/casos/valtre/4d9e2bf989.svg",
+              "width": 514,
+              "height": 457,
+              "alt": "Software Solutions y AI Labs: CDM Desktop 4 Optimizado Icon"
+            },
+            {
+              "id": "3431ea0e95",
+              "src": "assets/img/casos/valtre/3431ea0e95.svg",
+              "full": "assets/img/casos/valtre/3431ea0e95.svg",
+              "width": 509,
+              "height": 545,
+              "alt": "Software Solutions y AI Labs: CDM Desktop 5 Innovador Icon"
+            },
+            {
+              "id": "25446d75ce",
+              "src": "assets/img/casos/valtre/25446d75ce.svg",
+              "full": "assets/img/casos/valtre/25446d75ce.svg",
+              "width": 177,
+              "height": 162,
+              "alt": "Software Solutions y AI Labs: CDM EC 1 Inicial Icon"
+            },
+            {
+              "id": "c01edb1087",
+              "src": "assets/img/casos/valtre/c01edb1087.svg",
+              "full": "assets/img/casos/valtre/c01edb1087.svg",
+              "width": 325,
+              "height": 303,
+              "alt": "Software Solutions y AI Labs: CDM EC 2 Funcional Icon"
+            },
+            {
+              "id": "c28daa131d",
+              "src": "assets/img/casos/valtre/c28daa131d.svg",
+              "full": "assets/img/casos/valtre/c28daa131d.svg",
+              "width": 477,
+              "height": 415,
+              "alt": "Software Solutions y AI Labs: CDM EC 3 Escalabilidad Icon"
+            },
+            {
+              "id": "034671bd8d",
+              "src": "assets/img/casos/valtre/034671bd8d.svg",
+              "full": "assets/img/casos/valtre/034671bd8d.svg",
+              "width": 556,
+              "height": 537,
+              "alt": "Software Solutions y AI Labs: CDM EC 4 Personalización Icon"
+            },
+            {
+              "id": "c7827fab5a",
+              "src": "assets/img/casos/valtre/c7827fab5a.svg",
+              "full": "assets/img/casos/valtre/c7827fab5a.svg",
+              "width": 594,
+              "height": 471,
+              "alt": "Software Solutions y AI Labs: CDM EC 5 Optimización Icon"
+            },
+            {
+              "id": "797cd991fe",
+              "src": "assets/img/casos/valtre/797cd991fe.svg",
+              "full": "assets/img/casos/valtre/797cd991fe.svg",
+              "width": 377,
+              "height": 378,
+              "alt": "Software Solutions y AI Labs: CDM Gestionado Icon"
+            },
+            {
+              "id": "860fdf84e4",
+              "src": "assets/img/casos/valtre/860fdf84e4.svg",
+              "full": "assets/img/casos/valtre/860fdf84e4.svg",
+              "width": 107,
+              "height": 107,
+              "alt": "Software Solutions y AI Labs: CDM Inicial Icon"
+            },
+            {
+              "id": "f484bba5c3",
+              "src": "assets/img/casos/valtre/f484bba5c3.svg",
+              "full": "assets/img/casos/valtre/f484bba5c3.svg",
+              "width": 125,
+              "height": 184,
+              "alt": "Software Solutions y AI Labs: CDM Mobile 1 1Ad Hoc Icon"
+            },
+            {
+              "id": "92961d3840",
+              "src": "assets/img/casos/valtre/92961d3840.svg",
+              "full": "assets/img/casos/valtre/92961d3840.svg",
+              "width": 153,
+              "height": 230,
+              "alt": "Software Solutions y AI Labs: CDM Mobile 2 Definido Icon"
+            },
+            {
+              "id": "e94886f652",
+              "src": "assets/img/casos/valtre/e94886f652.svg",
+              "full": "assets/img/casos/valtre/e94886f652.svg",
+              "width": 514,
+              "height": 457,
+              "alt": "Software Solutions y AI Labs: CDM Mobile 4 Optimizado Icon"
+            },
+            {
+              "id": "b289ea1720",
+              "src": "assets/img/casos/valtre/b289ea1720.svg",
+              "full": "assets/img/casos/valtre/b289ea1720.svg",
+              "width": 509,
+              "height": 545,
+              "alt": "Software Solutions y AI Labs: CDM Mobile 5 Innovador"
+            },
+            {
+              "id": "0b685313b9",
+              "src": "assets/img/casos/valtre/0b685313b9.svg",
+              "full": "assets/img/casos/valtre/0b685313b9.svg",
+              "width": 458,
+              "height": 459,
+              "alt": "Software Solutions y AI Labs: CDM Optimizado Icon"
+            },
+            {
+              "id": "afdc186885",
+              "src": "assets/img/casos/valtre/afdc186885.svg",
+              "full": "assets/img/casos/valtre/afdc186885.svg",
+              "width": 213,
+              "height": 193,
+              "alt": "Software Solutions y AI Labs: CDM POS 1 Inicial Icon"
+            },
+            {
+              "id": "9b0292c01d",
+              "src": "assets/img/casos/valtre/9b0292c01d.svg",
+              "full": "assets/img/casos/valtre/9b0292c01d.svg",
+              "width": 282,
+              "height": 279,
+              "alt": "Software Solutions y AI Labs: CDM POS 2 Operativo Icon"
+            },
+            {
+              "id": "9a0b00714d",
+              "src": "assets/img/casos/valtre/9a0b00714d.svg",
+              "full": "assets/img/casos/valtre/9a0b00714d.svg",
+              "width": 518,
+              "height": 350,
+              "alt": "Software Solutions y AI Labs: CDM POS 3 Digitalizado Icon"
+            },
+            {
+              "id": "3043c55923",
+              "src": "assets/img/casos/valtre/3043c55923.svg",
+              "full": "assets/img/casos/valtre/3043c55923.svg",
+              "width": 522,
+              "height": 495,
+              "alt": "Software Solutions y AI Labs: CDM POS 4 Automatizado Icon"
+            },
+            {
+              "id": "70c4880516",
+              "src": "assets/img/casos/valtre/70c4880516.svg",
+              "full": "assets/img/casos/valtre/70c4880516.svg",
+              "width": 594,
+              "height": 471,
+              "alt": "Software Solutions y AI Labs: CDM POS 5 Optimizado Icon"
+            },
+            {
+              "id": "6b2ae787d7",
+              "src": "assets/img/casos/valtre/6b2ae787d7.svg",
+              "full": "assets/img/casos/valtre/6b2ae787d7.svg",
+              "width": 118,
+              "height": 118,
+              "alt": "Software Solutions y AI Labs: CDM QA 1 Inicial Icon"
+            },
+            {
+              "id": "6b085f586f",
+              "src": "assets/img/casos/valtre/6b085f586f.svg",
+              "full": "assets/img/casos/valtre/6b085f586f.svg",
+              "width": 246,
+              "height": 253,
+              "alt": "Software Solutions y AI Labs: CDM QA 2 Definido Icon"
+            },
+            {
+              "id": "750e365f85",
+              "src": "assets/img/casos/valtre/750e365f85.svg",
+              "full": "assets/img/casos/valtre/750e365f85.svg",
+              "width": 473,
+              "height": 287,
+              "alt": "Software Solutions y AI Labs: CDM QA 3 Controlado Icon"
+            },
+            {
+              "id": "2fe48edd28",
+              "src": "assets/img/casos/valtre/2fe48edd28.svg",
+              "full": "assets/img/casos/valtre/2fe48edd28.svg",
+              "width": 553,
+              "height": 378,
+              "alt": "Software Solutions y AI Labs: CDM QA 4 Optimizado Icon"
+            },
+            {
+              "id": "f209bbc234",
+              "src": "assets/img/casos/valtre/f209bbc234.svg",
+              "full": "assets/img/casos/valtre/f209bbc234.svg",
+              "width": 458,
+              "height": 459,
+              "alt": "Software Solutions y AI Labs: CDM QA 5 Innovador Icon"
+            },
+            {
+              "id": "3672d25ea0",
+              "src": "assets/img/casos/valtre/3672d25ea0.svg",
+              "full": "assets/img/casos/valtre/3672d25ea0.svg",
+              "width": 243,
+              "height": 197,
+              "alt": "Software Solutions y AI Labs: CDM Web 1 Ad Hoc Icon"
+            },
+            {
+              "id": "40dcb51142",
+              "src": "assets/img/casos/valtre/40dcb51142.svg",
+              "full": "assets/img/casos/valtre/40dcb51142.svg",
+              "width": 300,
+              "height": 260,
+              "alt": "Software Solutions y AI Labs: CDM Web 2 Definido Icon"
+            },
+            {
+              "id": "35fa4dc1a7",
+              "src": "assets/img/casos/valtre/35fa4dc1a7.svg",
+              "full": "assets/img/casos/valtre/35fa4dc1a7.svg",
+              "width": 514,
+              "height": 457,
+              "alt": "Software Solutions y AI Labs: CDM Web 4 Optimizado Icon"
+            },
+            {
+              "id": "fe08be7d4a",
+              "src": "assets/img/casos/valtre/fe08be7d4a.svg",
+              "full": "assets/img/casos/valtre/fe08be7d4a.svg",
+              "width": 509,
+              "height": 545,
+              "alt": "Software Solutions y AI Labs: CDM Web 5 Innovador Icon"
+            },
+            {
+              "id": "2a5e765251",
+              "src": "assets/img/casos/valtre/2a5e765251.svg",
+              "full": "assets/img/casos/valtre/2a5e765251.svg",
+              "width": 206,
+              "height": 152,
+              "alt": "Software Solutions y AI Labs: Desktop App Icon"
+            },
+            {
+              "id": "a3867407aa",
+              "src": "assets/img/casos/valtre/a3867407aa.svg",
+              "full": "assets/img/casos/valtre/a3867407aa.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: e Commerce Card"
+            },
+            {
+              "id": "d03142c33c",
+              "src": "assets/img/casos/valtre/d03142c33c.svg",
+              "full": "assets/img/casos/valtre/d03142c33c.svg",
+              "width": 155,
+              "height": 142,
+              "alt": "Software Solutions y AI Labs: e Commerce Icon"
+            },
+            {
+              "id": "57da5e41b9",
+              "src": "assets/img/casos/valtre/57da5e41b9.svg",
+              "full": "assets/img/casos/valtre/57da5e41b9.svg",
+              "width": 1029,
+              "height": 1247,
+              "alt": "Software Solutions y AI Labs: Equipo Centralizado"
+            },
+            {
+              "id": "9ffa0cda46",
+              "src": "assets/img/casos/valtre/9ffa0cda46.svg",
+              "full": "assets/img/casos/valtre/9ffa0cda46.svg",
+              "width": 1008,
+              "height": 1125,
+              "alt": "Software Solutions y AI Labs: Fábrica de PMS"
+            },
+            {
+              "id": "9b04c4733e",
+              "src": "assets/img/casos/valtre/9b04c4733e.svg",
+              "full": "assets/img/casos/valtre/9b04c4733e.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Analítica"
+            },
+            {
+              "id": "1eb65dc3a3",
+              "src": "assets/img/casos/valtre/1eb65dc3a3.svg",
+              "full": "assets/img/casos/valtre/1eb65dc3a3.svg",
+              "width": 940,
+              "height": 1404,
+              "alt": "Software Solutions y AI Labs: Ficha CA"
+            },
+            {
+              "id": "e4e31dd1f8",
+              "src": "assets/img/casos/valtre/e4e31dd1f8.svg",
+              "full": "assets/img/casos/valtre/e4e31dd1f8.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Consultoría"
+            },
+            {
+              "id": "c37ac875f6",
+              "src": "assets/img/casos/valtre/c37ac875f6.svg",
+              "full": "assets/img/casos/valtre/c37ac875f6.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Data Integrations"
+            },
+            {
+              "id": "483d7e1654",
+              "src": "assets/img/casos/valtre/483d7e1654.svg",
+              "full": "assets/img/casos/valtre/483d7e1654.svg",
+              "width": 888,
+              "height": 1404,
+              "alt": "Software Solutions y AI Labs: Ficha Fd S"
+            },
+            {
+              "id": "ea6163e90b",
+              "src": "assets/img/casos/valtre/ea6163e90b.svg",
+              "full": "assets/img/casos/valtre/ea6163e90b.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Gestión"
+            },
+            {
+              "id": "ef9b65c041",
+              "src": "assets/img/casos/valtre/ef9b65c041.svg",
+              "full": "assets/img/casos/valtre/ef9b65c041.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha PMO"
+            },
+            {
+              "id": "8e1b19cce6",
+              "src": "assets/img/casos/valtre/8e1b19cce6.svg",
+              "full": "assets/img/casos/valtre/8e1b19cce6.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Professional Training"
+            },
+            {
+              "id": "ec0ee4240c",
+              "src": "assets/img/casos/valtre/ec0ee4240c.svg",
+              "full": "assets/img/casos/valtre/ec0ee4240c.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Pure Storage"
+            },
+            {
+              "id": "dfff8af12b",
+              "src": "assets/img/casos/valtre/dfff8af12b.svg",
+              "full": "assets/img/casos/valtre/dfff8af12b.svg",
+              "width": 940,
+              "height": 1404,
+              "alt": "Software Solutions y AI Labs: Ficha SA"
+            },
+            {
+              "id": "3b62126653",
+              "src": "assets/img/casos/valtre/3b62126653.svg",
+              "full": "assets/img/casos/valtre/3b62126653.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Software Solutions"
+            },
+            {
+              "id": "68ccc261db",
+              "src": "assets/img/casos/valtre/68ccc261db.svg",
+              "full": "assets/img/casos/valtre/68ccc261db.svg",
+              "width": 888,
+              "height": 1404,
+              "alt": "Software Solutions y AI Labs: Ficha SP"
+            },
+            {
+              "id": "be51236e30",
+              "src": "assets/img/casos/valtre/be51236e30.svg",
+              "full": "assets/img/casos/valtre/be51236e30.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: Ficha Support"
+            },
+            {
+              "id": "32459aff93",
+              "src": "assets/img/casos/valtre/32459aff93.svg",
+              "full": "assets/img/casos/valtre/32459aff93.svg",
+              "width": 1049,
+              "height": 1257,
+              "alt": "Software Solutions y AI Labs: Implementación POS"
+            },
+            {
+              "id": "0115c5f28b",
+              "src": "assets/img/casos/valtre/0115c5f28b.svg",
+              "full": "assets/img/casos/valtre/0115c5f28b.svg",
+              "width": 560,
+              "height": 556,
+              "alt": "Software Solutions y AI Labs: Mobile App Card"
+            },
+            {
+              "id": "93d82a4cdf",
+              "src": "assets/img/casos/valtre/93d82a4cdf.svg",
+              "full": "assets/img/casos/valtre/93d82a4cdf.svg",
+              "width": 560,
+              "height": 556,
+              "alt": "Software Solutions y AI Labs: Mobile App Card"
+            },
+            {
+              "id": "71e40e26a1",
+              "src": "assets/img/casos/valtre/71e40e26a1.svg",
+              "full": "assets/img/casos/valtre/71e40e26a1.svg",
+              "width": 172,
+              "height": 148,
+              "alt": "Software Solutions y AI Labs: Mobile App Icon"
+            },
+            {
+              "id": "46710c9df7",
+              "src": "assets/img/casos/valtre/46710c9df7.svg",
+              "full": "assets/img/casos/valtre/46710c9df7.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: POS Card"
+            },
+            {
+              "id": "dfebacecf3",
+              "src": "assets/img/casos/valtre/dfebacecf3.svg",
+              "full": "assets/img/casos/valtre/dfebacecf3.svg",
+              "width": 190,
+              "height": 145,
+              "alt": "Software Solutions y AI Labs: POS Icon"
+            },
+            {
+              "id": "d643707384",
+              "src": "assets/img/casos/valtre/d643707384.svg",
+              "full": "assets/img/casos/valtre/d643707384.svg",
+              "width": 1012,
+              "height": 1064,
+              "alt": "Software Solutions y AI Labs: Proceso De Servicio"
+            },
+            {
+              "id": "844ee35a15",
+              "src": "assets/img/casos/valtre/844ee35a15.svg",
+              "full": "assets/img/casos/valtre/844ee35a15.svg",
+              "width": 114,
+              "height": 114,
+              "alt": "Software Solutions y AI Labs: Product Backlog Icon"
+            },
+            {
+              "id": "101f9989ca",
+              "src": "assets/img/casos/valtre/101f9989ca.svg",
+              "full": "assets/img/casos/valtre/101f9989ca.svg",
+              "width": 556,
+              "height": 560,
+              "alt": "Software Solutions y AI Labs: QA Card"
+            },
+            {
+              "id": "d5d05d2b7e",
+              "src": "assets/img/casos/valtre/d5d05d2b7e.svg",
+              "full": "assets/img/casos/valtre/d5d05d2b7e.svg",
+              "width": 145,
+              "height": 130,
+              "alt": "Software Solutions y AI Labs: QA Icon"
+            },
+            {
+              "id": "72227f6959",
+              "src": "assets/img/casos/valtre/72227f6959.svg",
+              "full": "assets/img/casos/valtre/72227f6959.svg",
+              "width": 154,
+              "height": 157,
+              "alt": "Software Solutions y AI Labs: QA Pruebas Aceptación Icon"
+            },
+            {
+              "id": "9f9f7ca5fc",
+              "src": "assets/img/casos/valtre/9f9f7ca5fc.svg",
+              "full": "assets/img/casos/valtre/9f9f7ca5fc.svg",
+              "width": 159,
+              "height": 153,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Carga Icon"
+            },
+            {
+              "id": "7e0641c8fb",
+              "src": "assets/img/casos/valtre/7e0641c8fb.svg",
+              "full": "assets/img/casos/valtre/7e0641c8fb.svg",
+              "width": 159,
+              "height": 157,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Compatibilidad Icon"
+            },
+            {
+              "id": "02e5d152f6",
+              "src": "assets/img/casos/valtre/02e5d152f6.svg",
+              "full": "assets/img/casos/valtre/02e5d152f6.svg",
+              "width": 152,
+              "height": 160,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Estrés Icon"
+            },
+            {
+              "id": "2adf1cd6c3",
+              "src": "assets/img/casos/valtre/2adf1cd6c3.svg",
+              "full": "assets/img/casos/valtre/2adf1cd6c3.svg",
+              "width": 157,
+              "height": 159,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Exploración Icon"
+            },
+            {
+              "id": "af35361243",
+              "src": "assets/img/casos/valtre/af35361243.svg",
+              "full": "assets/img/casos/valtre/af35361243.svg",
+              "width": 147,
+              "height": 167,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Integración Icon"
+            },
+            {
+              "id": "ca7c18aacf",
+              "src": "assets/img/casos/valtre/ca7c18aacf.svg",
+              "full": "assets/img/casos/valtre/ca7c18aacf.svg",
+              "width": 157,
+              "height": 190,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Regresión Icon"
+            },
+            {
+              "id": "a9a9faf754",
+              "src": "assets/img/casos/valtre/a9a9faf754.svg",
+              "full": "assets/img/casos/valtre/a9a9faf754.svg",
+              "width": 139,
+              "height": 159,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Seguridad Icon"
+            },
+            {
+              "id": "fd91bda4a8",
+              "src": "assets/img/casos/valtre/fd91bda4a8.svg",
+              "full": "assets/img/casos/valtre/fd91bda4a8.svg",
+              "width": 152,
+              "height": 159,
+              "alt": "Software Solutions y AI Labs: QA Pruebas De Usabilidad Icon"
+            },
+            {
+              "id": "ed3b6f7a37",
+              "src": "assets/img/casos/valtre/ed3b6f7a37.svg",
+              "full": "assets/img/casos/valtre/ed3b6f7a37.svg",
+              "width": 157,
+              "height": 159,
+              "alt": "Software Solutions y AI Labs: QA Pruebas Unitarias Icon"
+            },
+            {
+              "id": "cc0e3018c4",
+              "src": "assets/img/casos/valtre/cc0e3018c4.svg",
+              "full": "assets/img/casos/valtre/cc0e3018c4.svg",
+              "width": 124,
+              "height": 104,
+              "alt": "Software Solutions y AI Labs: Scrum Agile"
+            },
+            {
+              "id": "3506c6a03c",
+              "src": "assets/img/casos/valtre/3506c6a03c.svg",
+              "full": "assets/img/casos/valtre/3506c6a03c.svg",
+              "width": 433,
+              "height": 371,
+              "alt": "Software Solutions y AI Labs: Software Solutions Icon"
+            },
+            {
+              "id": "ad3675879d",
+              "src": "assets/img/casos/valtre/ad3675879d.svg",
+              "full": "assets/img/casos/valtre/ad3675879d.svg",
+              "width": 108,
+              "height": 108,
+              "alt": "Software Solutions y AI Labs: Sprint Backlog Icon"
+            },
+            {
+              "id": "27c128da80",
+              "src": "assets/img/casos/valtre/27c128da80.svg",
+              "full": "assets/img/casos/valtre/27c128da80.svg",
+              "width": 108,
+              "height": 134,
+              "alt": "Software Solutions y AI Labs: Sprint Planning Icon"
+            },
+            {
+              "id": "5f4bcfd59e",
+              "src": "assets/img/casos/valtre/5f4bcfd59e.svg",
+              "full": "assets/img/casos/valtre/5f4bcfd59e.svg",
+              "width": 115,
+              "height": 142,
+              "alt": "Software Solutions y AI Labs: Sprint Task Icon"
+            },
+            {
+              "id": "0662e41712",
+              "src": "assets/img/casos/valtre/0662e41712.svg",
+              "full": "assets/img/casos/valtre/0662e41712.svg",
+              "width": 560,
+              "height": 556,
+              "alt": "Software Solutions y AI Labs: Web App Card"
+            },
+            {
+              "id": "b64ee20df8",
+              "src": "assets/img/casos/valtre/b64ee20df8.svg",
+              "full": "assets/img/casos/valtre/b64ee20df8.svg",
+              "width": 163,
+              "height": 152,
+              "alt": "Software Solutions y AI Labs: Web App Icon"
+            },
+            {
+              "id": "99dd1ebb10",
+              "src": "assets/img/casos/valtre/99dd1ebb10-icon.webp",
+              "full": "assets/img/casos/valtre/99dd1ebb10-icon.webp",
+              "width": 256,
+              "height": 254,
+              "alt": "Software Solutions y AI Labs: Desktop App Card"
+            },
+            {
+              "id": "9102163352",
+              "src": "assets/img/casos/valtre/9102163352-icon.webp",
+              "full": "assets/img/casos/valtre/9102163352-icon.webp",
+              "width": 256,
+              "height": 288,
+              "alt": "Software Solutions y AI Labs: Mapa Cobertura Geográfica Front"
+            },
+            {
+              "id": "80e92f9a27",
+              "src": "assets/img/casos/valtre/80e92f9a27-icon.webp",
+              "full": "assets/img/casos/valtre/80e92f9a27-icon.webp",
+              "width": 256,
+              "height": 192,
+              "alt": "Software Solutions y AI Labs: Mapa Estructura Gorganizacional Front"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "Iconos comunes",
+          "items": [
+            {
+              "id": "d34d85bfd2",
+              "src": "assets/img/casos/valtre/d34d85bfd2.svg",
+              "full": "assets/img/casos/valtre/d34d85bfd2.svg",
+              "width": 332,
+              "height": 317,
+              "alt": "Iconos comunes: Cybersecurity Areas de cliente"
+            },
+            {
+              "id": "d653103d6d",
+              "src": "assets/img/casos/valtre/d653103d6d.svg",
+              "full": "assets/img/casos/valtre/d653103d6d.svg",
+              "width": 383,
+              "height": 377,
+              "alt": "Iconos comunes: Cybersecurity El Co E actúa como un respaldo estratégic"
+            },
+            {
+              "id": "c8b4bc0bac",
+              "src": "assets/img/casos/valtre/c8b4bc0bac.svg",
+              "full": "assets/img/casos/valtre/c8b4bc0bac.svg",
+              "width": 368,
+              "height": 361,
+              "alt": "Iconos comunes: Cybersecurity Flexibilidad y escalabilidad"
+            },
+            {
+              "id": "943c214ebe",
+              "src": "assets/img/casos/valtre/943c214ebe.svg",
+              "full": "assets/img/casos/valtre/943c214ebe.svg",
+              "width": 345,
+              "height": 383,
+              "alt": "Iconos comunes: Cybersecurity Programa de Talento Emergente"
+            },
+            {
+              "id": "7582d8f156",
+              "src": "assets/img/casos/valtre/7582d8f156.svg",
+              "full": "assets/img/casos/valtre/7582d8f156.svg",
+              "width": 395,
+              "height": 292,
+              "alt": "Iconos comunes: Cybersecurity Respaldo técnico y metodológico colectivo"
+            },
+            {
+              "id": "f130d02426",
+              "src": "assets/img/casos/valtre/f130d02426.svg",
+              "full": "assets/img/casos/valtre/f130d02426.svg",
+              "width": 386,
+              "height": 389,
+              "alt": "Iconos comunes: Cybersecurity Visibilidad y transparencia en los resultados"
+            },
+            {
+              "id": "4bf1ec9fdb",
+              "src": "assets/img/casos/valtre/4bf1ec9fdb.svg",
+              "full": "assets/img/casos/valtre/4bf1ec9fdb.svg",
+              "width": 332,
+              "height": 317,
+              "alt": "Iconos comunes: Data Areas de cliente"
+            },
+            {
+              "id": "7322868110",
+              "src": "assets/img/casos/valtre/7322868110.svg",
+              "full": "assets/img/casos/valtre/7322868110.svg",
+              "width": 383,
+              "height": 377,
+              "alt": "Iconos comunes: Data El Co E actúa como un respaldo estratégic"
+            },
+            {
+              "id": "141f739844",
+              "src": "assets/img/casos/valtre/141f739844.svg",
+              "full": "assets/img/casos/valtre/141f739844.svg",
+              "width": 368,
+              "height": 361,
+              "alt": "Iconos comunes: Data Flexibilidad y escalabilidad"
+            },
+            {
+              "id": "7bee42fe67",
+              "src": "assets/img/casos/valtre/7bee42fe67.svg",
+              "full": "assets/img/casos/valtre/7bee42fe67.svg",
+              "width": 345,
+              "height": 383,
+              "alt": "Iconos comunes: Data Programa de Talento Emergente"
+            },
+            {
+              "id": "49d51d1dde",
+              "src": "assets/img/casos/valtre/49d51d1dde.svg",
+              "full": "assets/img/casos/valtre/49d51d1dde.svg",
+              "width": 395,
+              "height": 292,
+              "alt": "Iconos comunes: Data Respaldo técnico y metodológico colectivo"
+            },
+            {
+              "id": "96483dd622",
+              "src": "assets/img/casos/valtre/96483dd622.svg",
+              "full": "assets/img/casos/valtre/96483dd622.svg",
+              "width": 386,
+              "height": 389,
+              "alt": "Iconos comunes: Data Visibilidad y transparencia en los resultados"
+            },
+            {
+              "id": "13076271eb",
+              "src": "assets/img/casos/valtre/13076271eb.svg",
+              "full": "assets/img/casos/valtre/13076271eb.svg",
+              "width": 332,
+              "height": 317,
+              "alt": "Iconos comunes: Enterprise Areas de cliente"
+            },
+            {
+              "id": "3676afd736",
+              "src": "assets/img/casos/valtre/3676afd736.svg",
+              "full": "assets/img/casos/valtre/3676afd736.svg",
+              "width": 383,
+              "height": 377,
+              "alt": "Iconos comunes: Enterprise El Co E actúa como un respaldo estratégic"
+            },
+            {
+              "id": "0de4df631f",
+              "src": "assets/img/casos/valtre/0de4df631f.svg",
+              "full": "assets/img/casos/valtre/0de4df631f.svg",
+              "width": 368,
+              "height": 361,
+              "alt": "Iconos comunes: Enterprise Flexibilidad y escalabilidad"
+            },
+            {
+              "id": "884f601f84",
+              "src": "assets/img/casos/valtre/884f601f84.svg",
+              "full": "assets/img/casos/valtre/884f601f84.svg",
+              "width": 345,
+              "height": 383,
+              "alt": "Iconos comunes: Enterprise Programa de Talento Emergente"
+            },
+            {
+              "id": "6655b5a533",
+              "src": "assets/img/casos/valtre/6655b5a533.svg",
+              "full": "assets/img/casos/valtre/6655b5a533.svg",
+              "width": 395,
+              "height": 292,
+              "alt": "Iconos comunes: Enterprise Respaldo técnico y metodológico colectivo"
+            },
+            {
+              "id": "534a189f0d",
+              "src": "assets/img/casos/valtre/534a189f0d.svg",
+              "full": "assets/img/casos/valtre/534a189f0d.svg",
+              "width": 386,
+              "height": 389,
+              "alt": "Iconos comunes: Enterprise Visibilidad y transparencia en los resultados"
+            },
+            {
+              "id": "5debb19fe0",
+              "src": "assets/img/casos/valtre/5debb19fe0.svg",
+              "full": "assets/img/casos/valtre/5debb19fe0.svg",
+              "width": 332,
+              "height": 317,
+              "alt": "Iconos comunes: ITSM Areas de cliente"
+            },
+            {
+              "id": "f824925f04",
+              "src": "assets/img/casos/valtre/f824925f04.svg",
+              "full": "assets/img/casos/valtre/f824925f04.svg",
+              "width": 383,
+              "height": 377,
+              "alt": "Iconos comunes: ITSM El Co E actúa como un respaldo estratégic"
+            },
+            {
+              "id": "e0d6872ee3",
+              "src": "assets/img/casos/valtre/e0d6872ee3.svg",
+              "full": "assets/img/casos/valtre/e0d6872ee3.svg",
+              "width": 368,
+              "height": 361,
+              "alt": "Iconos comunes: ITSM Flexibilidad y escalabilidad"
+            },
+            {
+              "id": "6ae81ed129",
+              "src": "assets/img/casos/valtre/6ae81ed129.svg",
+              "full": "assets/img/casos/valtre/6ae81ed129.svg",
+              "width": 345,
+              "height": 383,
+              "alt": "Iconos comunes: ITSM Programa de Talento Emergente"
+            },
+            {
+              "id": "00efafcb65",
+              "src": "assets/img/casos/valtre/00efafcb65.svg",
+              "full": "assets/img/casos/valtre/00efafcb65.svg",
+              "width": 395,
+              "height": 292,
+              "alt": "Iconos comunes: ITSM Respaldo técnico y metodológico colectivo"
+            },
+            {
+              "id": "a331a76d0f",
+              "src": "assets/img/casos/valtre/a331a76d0f.svg",
+              "full": "assets/img/casos/valtre/a331a76d0f.svg",
+              "width": 386,
+              "height": 389,
+              "alt": "Iconos comunes: ITSM Visibilidad y transparencia en los resultados"
+            },
+            {
+              "id": "60868cba7a",
+              "src": "assets/img/casos/valtre/60868cba7a.svg",
+              "full": "assets/img/casos/valtre/60868cba7a.svg",
+              "width": 332,
+              "height": 317,
+              "alt": "Iconos comunes: Project Areas de cliente"
+            },
+            {
+              "id": "b15b7f2a87",
+              "src": "assets/img/casos/valtre/b15b7f2a87.svg",
+              "full": "assets/img/casos/valtre/b15b7f2a87.svg",
+              "width": 383,
+              "height": 377,
+              "alt": "Iconos comunes: Project El Co E actúa como un respaldo estratégic"
+            },
+            {
+              "id": "6835bf3e91",
+              "src": "assets/img/casos/valtre/6835bf3e91.svg",
+              "full": "assets/img/casos/valtre/6835bf3e91.svg",
+              "width": 368,
+              "height": 361,
+              "alt": "Iconos comunes: Project Flexibilidad y escalabilidad"
+            },
+            {
+              "id": "29b4d4e3dd",
+              "src": "assets/img/casos/valtre/29b4d4e3dd.svg",
+              "full": "assets/img/casos/valtre/29b4d4e3dd.svg",
+              "width": 345,
+              "height": 383,
+              "alt": "Iconos comunes: Project Programa de Talento Emergente"
+            },
+            {
+              "id": "5eb8a3f318",
+              "src": "assets/img/casos/valtre/5eb8a3f318.svg",
+              "full": "assets/img/casos/valtre/5eb8a3f318.svg",
+              "width": 395,
+              "height": 292,
+              "alt": "Iconos comunes: Project Respaldo técnico y metodológico colectivo"
+            },
+            {
+              "id": "3a6c9c3590",
+              "src": "assets/img/casos/valtre/3a6c9c3590.svg",
+              "full": "assets/img/casos/valtre/3a6c9c3590.svg",
+              "width": 386,
+              "height": 389,
+              "alt": "Iconos comunes: Project Visibilidad y transparencia en los resultados"
+            },
+            {
+              "id": "5fe57c7112",
+              "src": "assets/img/casos/valtre/5fe57c7112.svg",
+              "full": "assets/img/casos/valtre/5fe57c7112.svg",
+              "width": 332,
+              "height": 317,
+              "alt": "Iconos comunes: Software Areas de cliente"
+            },
+            {
+              "id": "a55400eb03",
+              "src": "assets/img/casos/valtre/a55400eb03.svg",
+              "full": "assets/img/casos/valtre/a55400eb03.svg",
+              "width": 383,
+              "height": 377,
+              "alt": "Iconos comunes: Software El Co E actúa como un respaldo estratégico"
+            },
+            {
+              "id": "6757d99e06",
+              "src": "assets/img/casos/valtre/6757d99e06.svg",
+              "full": "assets/img/casos/valtre/6757d99e06.svg",
+              "width": 386,
+              "height": 389,
+              "alt": "Iconos comunes: Software Visibilidad y transparencia en los resultados"
+            },
+            {
+              "id": "be854514c7",
+              "src": "assets/img/casos/valtre/be854514c7.svg",
+              "full": "assets/img/casos/valtre/be854514c7.svg",
+              "width": 368,
+              "height": 361,
+              "alt": "Iconos comunes: Software Flexibilidad y escalabilidad"
+            },
+            {
+              "id": "b2878e5aab",
+              "src": "assets/img/casos/valtre/b2878e5aab.svg",
+              "full": "assets/img/casos/valtre/b2878e5aab.svg",
+              "width": 345,
+              "height": 383,
+              "alt": "Iconos comunes: Software Programa de Talento Emergente"
+            },
+            {
+              "id": "9bb5280f7b",
+              "src": "assets/img/casos/valtre/9bb5280f7b.svg",
+              "full": "assets/img/casos/valtre/9bb5280f7b.svg",
+              "width": 395,
+              "height": 292,
+              "alt": "Iconos comunes: Software Respaldo técnico y metodológico colectivo"
+            },
+            {
+              "id": "d4e6dff468",
+              "src": "assets/img/casos/valtre/d4e6dff468.svg",
+              "full": "assets/img/casos/valtre/d4e6dff468.svg",
+              "width": 512,
+              "height": 512,
+              "alt": "Iconos comunes: AMS Icon x"
+            },
+            {
+              "id": "e894aa46f6",
+              "src": "assets/img/casos/valtre/e894aa46f6.svg",
+              "full": "assets/img/casos/valtre/e894aa46f6.svg",
+              "width": 256,
+              "height": 256,
+              "alt": "Iconos comunes: Back End Icon x"
+            },
+            {
+              "id": "6b3132a1fe",
+              "src": "assets/img/casos/valtre/6b3132a1fe.svg",
+              "full": "assets/img/casos/valtre/6b3132a1fe.svg",
+              "width": 384,
+              "height": 384,
+              "alt": "Iconos comunes: Back End Icon x"
+            },
+            {
+              "id": "b21fd0c53f",
+              "src": "assets/img/casos/valtre/b21fd0c53f.svg",
+              "full": "assets/img/casos/valtre/b21fd0c53f.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "Iconos comunes: Co E IPA Icon x 48"
+            },
+            {
+              "id": "e587574b03",
+              "src": "assets/img/casos/valtre/e587574b03.svg",
+              "full": "assets/img/casos/valtre/e587574b03.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "Iconos comunes: IPA IA Icon x 48"
+            },
+            {
+              "id": "caef110e68",
+              "src": "assets/img/casos/valtre/caef110e68.svg",
+              "full": "assets/img/casos/valtre/caef110e68.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "Iconos comunes: IPA ML Icon x"
+            },
+            {
+              "id": "86e0812171",
+              "src": "assets/img/casos/valtre/86e0812171.svg",
+              "full": "assets/img/casos/valtre/86e0812171.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "Iconos comunes: IPA NLP Icon x"
+            },
+            {
+              "id": "9d11f366ef",
+              "src": "assets/img/casos/valtre/9d11f366ef.svg",
+              "full": "assets/img/casos/valtre/9d11f366ef.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "Iconos comunes: IPA Proces Mining Icon x"
+            },
+            {
+              "id": "bdae5c7b4a",
+              "src": "assets/img/casos/valtre/bdae5c7b4a.svg",
+              "full": "assets/img/casos/valtre/bdae5c7b4a.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "Iconos comunes: IPA RPA Icon x 48"
+            },
+            {
+              "id": "e28bf946bb",
+              "src": "assets/img/casos/valtre/e28bf946bb.svg",
+              "full": "assets/img/casos/valtre/e28bf946bb.svg",
+              "width": 1024,
+              "height": 1024,
+              "alt": "Iconos comunes: POS Icon x 256"
+            },
+            {
+              "id": "84442d2718",
+              "src": "assets/img/casos/valtre/84442d2718.svg",
+              "full": "assets/img/casos/valtre/84442d2718.svg",
+              "width": 64,
+              "height": 64,
+              "alt": "Iconos comunes: QA Icon x 16"
+            },
+            {
+              "id": "bd927fe847",
+              "src": "assets/img/casos/valtre/bd927fe847.svg",
+              "full": "assets/img/casos/valtre/bd927fe847.svg",
+              "width": 256,
+              "height": 256,
+              "alt": "Iconos comunes: QA Icon x"
+            },
+            {
+              "id": "415fdbf0a4",
+              "src": "assets/img/casos/valtre/415fdbf0a4.svg",
+              "full": "assets/img/casos/valtre/415fdbf0a4.svg",
+              "width": 171,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Agilizar Evaluaciones"
+            },
+            {
+              "id": "e5e3a3b311",
+              "src": "assets/img/casos/valtre/e5e3a3b311.svg",
+              "full": "assets/img/casos/valtre/e5e3a3b311.svg",
+              "width": 200,
+              "height": 178,
+              "alt": "Iconos comunes: SDS Agilizar Evaluaciones"
+            },
+            {
+              "id": "66c809984b",
+              "src": "assets/img/casos/valtre/66c809984b.svg",
+              "full": "assets/img/casos/valtre/66c809984b.svg",
+              "width": 168,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Agilizar Evaluaciones"
+            },
+            {
+              "id": "c3ef50ef03",
+              "src": "assets/img/casos/valtre/c3ef50ef03.svg",
+              "full": "assets/img/casos/valtre/c3ef50ef03.svg",
+              "width": 214,
+              "height": 169,
+              "alt": "Iconos comunes: SDS entregar más valor"
+            },
+            {
+              "id": "b84526c2a3",
+              "src": "assets/img/casos/valtre/b84526c2a3.svg",
+              "full": "assets/img/casos/valtre/b84526c2a3.svg",
+              "width": 128,
+              "height": 206,
+              "alt": "Iconos comunes: SDS Externalización de Desarrollo"
+            },
+            {
+              "id": "e042afe6e2",
+              "src": "assets/img/casos/valtre/e042afe6e2.svg",
+              "full": "assets/img/casos/valtre/e042afe6e2.svg",
+              "width": 173,
+              "height": 128,
+              "alt": "Iconos comunes: SDS Externalización de Desarrollo"
+            },
+            {
+              "id": "4eb2f42e5e",
+              "src": "assets/img/casos/valtre/4eb2f42e5e.svg",
+              "full": "assets/img/casos/valtre/4eb2f42e5e.svg",
+              "width": 164,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Fomentar la innovación"
+            },
+            {
+              "id": "25fe9bdad2",
+              "src": "assets/img/casos/valtre/25fe9bdad2.svg",
+              "full": "assets/img/casos/valtre/25fe9bdad2.svg",
+              "width": 147,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Mejora de Calidad y seguridad"
+            },
+            {
+              "id": "c814e63d63",
+              "src": "assets/img/casos/valtre/c814e63d63.svg",
+              "full": "assets/img/casos/valtre/c814e63d63.svg",
+              "width": 147,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Mejora de Calidad y seguridad"
+            },
+            {
+              "id": "f571b617a1",
+              "src": "assets/img/casos/valtre/f571b617a1.svg",
+              "full": "assets/img/casos/valtre/f571b617a1.svg",
+              "width": 145,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Pilar Innovación"
+            },
+            {
+              "id": "2c2d9b2a24",
+              "src": "assets/img/casos/valtre/2c2d9b2a24.svg",
+              "full": "assets/img/casos/valtre/2c2d9b2a24.svg",
+              "width": 176,
+              "height": 177,
+              "alt": "Iconos comunes: SDS Pilar Mejora Continua"
+            },
+            {
+              "id": "cb430ebeb5",
+              "src": "assets/img/casos/valtre/cb430ebeb5.svg",
+              "full": "assets/img/casos/valtre/cb430ebeb5.svg",
+              "width": 168,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Pilar Mejores Practicas"
+            },
+            {
+              "id": "e8d15f8d19",
+              "src": "assets/img/casos/valtre/e8d15f8d19.svg",
+              "full": "assets/img/casos/valtre/e8d15f8d19.svg",
+              "width": 147,
+              "height": 168,
+              "alt": "Iconos comunes: SDS Pilar Seguridady Calidad"
+            },
+            {
+              "id": "d32098af0b",
+              "src": "assets/img/casos/valtre/d32098af0b.svg",
+              "full": "assets/img/casos/valtre/d32098af0b.svg",
+              "width": 168,
+              "height": 169,
+              "alt": "Iconos comunes: SDS Proceso de Ingeniería Estandarizado"
+            },
+            {
+              "id": "a8991a58ff",
+              "src": "assets/img/casos/valtre/a8991a58ff.svg",
+              "full": "assets/img/casos/valtre/a8991a58ff.svg",
+              "width": 154,
+              "height": 169,
+              "alt": "Iconos comunes: SDS Programa de Talentos"
+            },
+            {
+              "id": "98d7393984",
+              "src": "assets/img/casos/valtre/98d7393984.svg",
+              "full": "assets/img/casos/valtre/98d7393984.svg",
+              "width": 153,
+              "height": 163,
+              "alt": "Iconos comunes: SDS Reducir el costo"
+            },
+            {
+              "id": "0cda7f36cf",
+              "src": "assets/img/casos/valtre/0cda7f36cf-icon.webp",
+              "full": "assets/img/casos/valtre/0cda7f36cf-icon.webp",
+              "width": 122,
+              "height": 117,
+              "alt": "Iconos comunes: Ingeniero de Datos"
+            },
+            {
+              "id": "46ab027abe",
+              "src": "assets/img/casos/valtre/46ab027abe.svg",
+              "full": "assets/img/casos/valtre/46ab027abe.svg",
+              "width": 208,
+              "height": 148,
+              "alt": "Iconos comunes: Rol Arch Soft Sec Dev"
+            },
+            {
+              "id": "47d05de442",
+              "src": "assets/img/casos/valtre/47d05de442.svg",
+              "full": "assets/img/casos/valtre/47d05de442.svg",
+              "width": 139,
+              "height": 141,
+              "alt": "Iconos comunes: Rol Automate Taster QA"
+            },
+            {
+              "id": "31857f4462",
+              "src": "assets/img/casos/valtre/31857f4462.svg",
+              "full": "assets/img/casos/valtre/31857f4462.svg",
+              "width": 207,
+              "height": 139,
+              "alt": "Iconos comunes: Rol Back End Dev"
+            },
+            {
+              "id": "890b0171d8",
+              "src": "assets/img/casos/valtre/890b0171d8.svg",
+              "full": "assets/img/casos/valtre/890b0171d8.svg",
+              "width": 160,
+              "height": 130,
+              "alt": "Iconos comunes: Rol Business Analyst Dev"
+            },
+            {
+              "id": "198df71e0e",
+              "src": "assets/img/casos/valtre/198df71e0e.svg",
+              "full": "assets/img/casos/valtre/198df71e0e.svg",
+              "width": 181,
+              "height": 162,
+              "alt": "Iconos comunes: Rol Engineer Infracstucture Dev"
+            },
+            {
+              "id": "6d7b527405",
+              "src": "assets/img/casos/valtre/6d7b527405.svg",
+              "full": "assets/img/casos/valtre/6d7b527405.svg",
+              "width": 167,
+              "height": 156,
+              "alt": "Iconos comunes: Rol Full Stack Dev"
+            },
+            {
+              "id": "04a1de8122",
+              "src": "assets/img/casos/valtre/04a1de8122.svg",
+              "full": "assets/img/casos/valtre/04a1de8122.svg",
+              "width": 123,
+              "height": 131,
+              "alt": "Iconos comunes: Rol Integration Engineer Dev"
+            },
+            {
+              "id": "c14364d555",
+              "src": "assets/img/casos/valtre/c14364d555.svg",
+              "full": "assets/img/casos/valtre/c14364d555.svg",
+              "width": 139,
+              "height": 139,
+              "alt": "Iconos comunes: Rol Manual Tester QA"
+            },
+            {
+              "id": "68a6ea3feb",
+              "src": "assets/img/casos/valtre/68a6ea3feb.svg",
+              "full": "assets/img/casos/valtre/68a6ea3feb.svg",
+              "width": 145,
+              "height": 139,
+              "alt": "Iconos comunes: Rol UX UI Dev"
+            },
+            {
+              "id": "47326a999f",
+              "src": "assets/img/casos/valtre/47326a999f-icon.webp",
+              "full": "assets/img/casos/valtre/47326a999f-icon.webp",
+              "width": 133,
+              "height": 130,
+              "alt": "Iconos comunes: Compromise Icon"
+            },
+            {
+              "id": "0d6b70276d",
+              "src": "assets/img/casos/valtre/0d6b70276d-icon.webp",
+              "full": "assets/img/casos/valtre/0d6b70276d-icon.webp",
+              "width": 140,
+              "height": 140,
+              "alt": "Iconos comunes: QA Icon"
+            },
+            {
+              "id": "321ab2937a",
+              "src": "assets/img/casos/valtre/321ab2937a-icon.webp",
+              "full": "assets/img/casos/valtre/321ab2937a-icon.webp",
+              "width": 150,
+              "height": 185,
+              "alt": "Iconos comunes: Sprint Tipme Icon"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "CoE: Data & Analytics",
+          "items": [
+            {
+              "id": "c776b25e61",
+              "src": "assets/img/casos/valtre/c776b25e61.svg",
+              "full": "assets/img/casos/valtre/c776b25e61.svg",
+              "width": 173,
+              "height": 153,
+              "alt": "CoE: Data & Analytics: Advanced Analytics"
+            },
+            {
+              "id": "eaa6faff64",
+              "src": "assets/img/casos/valtre/eaa6faff64.svg",
+              "full": "assets/img/casos/valtre/eaa6faff64.svg",
+              "width": 246,
+              "height": 175,
+              "alt": "CoE: Data & Analytics: Análisis descriptivo Gradient"
+            },
+            {
+              "id": "8ab5241b6d",
+              "src": "assets/img/casos/valtre/8ab5241b6d.svg",
+              "full": "assets/img/casos/valtre/8ab5241b6d.svg",
+              "width": 250,
+              "height": 179,
+              "alt": "CoE: Data & Analytics: Análisis descriptivo"
+            },
+            {
+              "id": "ebba5f4f36",
+              "src": "assets/img/casos/valtre/ebba5f4f36.svg",
+              "full": "assets/img/casos/valtre/ebba5f4f36.svg",
+              "width": 206,
+              "height": 185,
+              "alt": "CoE: Data & Analytics: Análisis predictivo Gradient"
+            },
+            {
+              "id": "14d0d757e9",
+              "src": "assets/img/casos/valtre/14d0d757e9.svg",
+              "full": "assets/img/casos/valtre/14d0d757e9.svg",
+              "width": 206,
+              "height": 185,
+              "alt": "CoE: Data & Analytics: Análisis predictivo"
+            },
+            {
+              "id": "f9bb20a68c",
+              "src": "assets/img/casos/valtre/f9bb20a68c.svg",
+              "full": "assets/img/casos/valtre/f9bb20a68c.svg",
+              "width": 168,
+              "height": 172,
+              "alt": "CoE: Data & Analytics: Análisis prescriptivo Gradient"
+            },
+            {
+              "id": "38c8e73529",
+              "src": "assets/img/casos/valtre/38c8e73529.svg",
+              "full": "assets/img/casos/valtre/38c8e73529.svg",
+              "width": 176,
+              "height": 180,
+              "alt": "CoE: Data & Analytics: Análisis prescriptivo"
+            },
+            {
+              "id": "7938c20522",
+              "src": "assets/img/casos/valtre/7938c20522.svg",
+              "full": "assets/img/casos/valtre/7938c20522.svg",
+              "width": 271,
+              "height": 230,
+              "alt": "CoE: Data & Analytics: Analítica Avanzada Gradient"
+            },
+            {
+              "id": "afdf96d506",
+              "src": "assets/img/casos/valtre/afdf96d506.svg",
+              "full": "assets/img/casos/valtre/afdf96d506.svg",
+              "width": 205,
+              "height": 210,
+              "alt": "CoE: Data & Analytics: Aprendizaje automático Gradient"
+            },
+            {
+              "id": "bee07e8ebe",
+              "src": "assets/img/casos/valtre/bee07e8ebe.svg",
+              "full": "assets/img/casos/valtre/bee07e8ebe.svg",
+              "width": 205,
+              "height": 210,
+              "alt": "CoE: Data & Analytics: Aprendizaje automático"
+            },
+            {
+              "id": "816a2bc918",
+              "src": "assets/img/casos/valtre/816a2bc918.svg",
+              "full": "assets/img/casos/valtre/816a2bc918.svg",
+              "width": 235,
+              "height": 204,
+              "alt": "CoE: Data & Analytics: Business Intelligence Gradient"
+            },
+            {
+              "id": "429acf0d6c",
+              "src": "assets/img/casos/valtre/429acf0d6c.svg",
+              "full": "assets/img/casos/valtre/429acf0d6c.svg",
+              "width": 177,
+              "height": 152,
+              "alt": "CoE: Data & Analytics: Business Intelligence"
+            },
+            {
+              "id": "7a2eabeea8",
+              "src": "assets/img/casos/valtre/7a2eabeea8.svg",
+              "full": "assets/img/casos/valtre/7a2eabeea8.svg",
+              "width": 311,
+              "height": 222,
+              "alt": "CoE: Data & Analytics: Co E Data & Analytics Solutions Gradient"
+            },
+            {
+              "id": "277f6da2f7",
+              "src": "assets/img/casos/valtre/277f6da2f7.svg",
+              "full": "assets/img/casos/valtre/277f6da2f7.svg",
+              "width": 447,
+              "height": 312,
+              "alt": "CoE: Data & Analytics: Co E Data & Analytics Solutions"
+            },
+            {
+              "id": "38e52628ea",
+              "src": "assets/img/casos/valtre/38e52628ea.svg",
+              "full": "assets/img/casos/valtre/38e52628ea.svg",
+              "width": 274,
+              "height": 236,
+              "alt": "CoE: Data & Analytics: Dashboard de información"
+            },
+            {
+              "id": "5e56a9cc03",
+              "src": "assets/img/casos/valtre/5e56a9cc03.svg",
+              "full": "assets/img/casos/valtre/5e56a9cc03.svg",
+              "width": 155,
+              "height": 157,
+              "alt": "CoE: Data & Analytics: Data Architecture Gradient"
+            },
+            {
+              "id": "9c15bc64cb",
+              "src": "assets/img/casos/valtre/9c15bc64cb.svg",
+              "full": "assets/img/casos/valtre/9c15bc64cb.svg",
+              "width": 161,
+              "height": 155,
+              "alt": "CoE: Data & Analytics: Data Architecture"
+            },
+            {
+              "id": "4a9abaae8a",
+              "src": "assets/img/casos/valtre/4a9abaae8a.svg",
+              "full": "assets/img/casos/valtre/4a9abaae8a.svg",
+              "width": 241,
+              "height": 237,
+              "alt": "CoE: Data & Analytics: Eficiencia operativa Gradient"
+            },
+            {
+              "id": "29ae88ddcb",
+              "src": "assets/img/casos/valtre/29ae88ddcb.svg",
+              "full": "assets/img/casos/valtre/29ae88ddcb.svg",
+              "width": 241,
+              "height": 237,
+              "alt": "CoE: Data & Analytics: Eficiencia operativa"
+            },
+            {
+              "id": "2c915e56fa",
+              "src": "assets/img/casos/valtre/2c915e56fa.svg",
+              "full": "assets/img/casos/valtre/2c915e56fa.svg",
+              "width": 222,
+              "height": 202,
+              "alt": "CoE: Data & Analytics: Evangelización de gobierno de datos Gradient"
+            },
+            {
+              "id": "e21b7394e1",
+              "src": "assets/img/casos/valtre/e21b7394e1.svg",
+              "full": "assets/img/casos/valtre/e21b7394e1.svg",
+              "width": 266,
+              "height": 242,
+              "alt": "CoE: Data & Analytics: Evangelización de gobierno de datos"
+            },
+            {
+              "id": "8ad436a0c5",
+              "src": "assets/img/casos/valtre/8ad436a0c5.svg",
+              "full": "assets/img/casos/valtre/8ad436a0c5.svg",
+              "width": 241,
+              "height": 237,
+              "alt": "CoE: Data & Analytics: Gestión continua de datos Gradient"
+            },
+            {
+              "id": "731cb1f9df",
+              "src": "assets/img/casos/valtre/731cb1f9df.svg",
+              "full": "assets/img/casos/valtre/731cb1f9df.svg",
+              "width": 241,
+              "height": 237,
+              "alt": "CoE: Data & Analytics: Gestión continua de datos"
+            },
+            {
+              "id": "2b6d090921",
+              "src": "assets/img/casos/valtre/2b6d090921.svg",
+              "full": "assets/img/casos/valtre/2b6d090921.svg",
+              "width": 226,
+              "height": 234,
+              "alt": "CoE: Data & Analytics: Gobernabilidad de datos Gradient"
+            },
+            {
+              "id": "5d0248e46a",
+              "src": "assets/img/casos/valtre/5d0248e46a.svg",
+              "full": "assets/img/casos/valtre/5d0248e46a.svg",
+              "width": 227,
+              "height": 237,
+              "alt": "CoE: Data & Analytics: Gobernabilidad de datos"
+            },
+            {
+              "id": "b4a55eaf6c",
+              "src": "assets/img/casos/valtre/b4a55eaf6c.svg",
+              "full": "assets/img/casos/valtre/b4a55eaf6c.svg",
+              "width": 218,
+              "height": 200,
+              "alt": "CoE: Data & Analytics: Ingesta procesamiento de datos Gradient"
+            },
+            {
+              "id": "eb0375ab24",
+              "src": "assets/img/casos/valtre/eb0375ab24.svg",
+              "full": "assets/img/casos/valtre/eb0375ab24.svg",
+              "width": 218,
+              "height": 200,
+              "alt": "CoE: Data & Analytics: Ingesta procesamiento de datos"
+            },
+            {
+              "id": "745d0ec1a2",
+              "src": "assets/img/casos/valtre/745d0ec1a2.svg",
+              "full": "assets/img/casos/valtre/745d0ec1a2.svg",
+              "width": 192,
+              "height": 214,
+              "alt": "CoE: Data & Analytics: Integración de datos Gradient"
+            },
+            {
+              "id": "8abe194547",
+              "src": "assets/img/casos/valtre/8abe194547.svg",
+              "full": "assets/img/casos/valtre/8abe194547.svg",
+              "width": 192,
+              "height": 214,
+              "alt": "CoE: Data & Analytics: Integración de datos"
+            },
+            {
+              "id": "e154e1bbb3",
+              "src": "assets/img/casos/valtre/e154e1bbb3.svg",
+              "full": "assets/img/casos/valtre/e154e1bbb3.svg",
+              "width": 190,
+              "height": 212,
+              "alt": "CoE: Data & Analytics: Integración"
+            },
+            {
+              "id": "8696d40180",
+              "src": "assets/img/casos/valtre/8696d40180.svg",
+              "full": "assets/img/casos/valtre/8696d40180.svg",
+              "width": 351,
+              "height": 224,
+              "alt": "CoE: Data & Analytics: Intercambio de información de distintas fuentes Gradient"
+            },
+            {
+              "id": "721a792261",
+              "src": "assets/img/casos/valtre/721a792261.svg",
+              "full": "assets/img/casos/valtre/721a792261.svg",
+              "width": 356,
+              "height": 228,
+              "alt": "CoE: Data & Analytics: Intercambio de información de distintas fuentes"
+            },
+            {
+              "id": "01e7b411c3",
+              "src": "assets/img/casos/valtre/01e7b411c3.svg",
+              "full": "assets/img/casos/valtre/01e7b411c3.svg",
+              "width": 227,
+              "height": 201,
+              "alt": "CoE: Data & Analytics: Limpieza de datos Gradient"
+            },
+            {
+              "id": "2cbf60da43",
+              "src": "assets/img/casos/valtre/2cbf60da43.svg",
+              "full": "assets/img/casos/valtre/2cbf60da43.svg",
+              "width": 231,
+              "height": 205,
+              "alt": "CoE: Data & Analytics: Limpieza de datos"
+            },
+            {
+              "id": "19a4e56c85",
+              "src": "assets/img/casos/valtre/19a4e56c85.svg",
+              "full": "assets/img/casos/valtre/19a4e56c85.svg",
+              "width": 244,
+              "height": 257,
+              "alt": "CoE: Data & Analytics: Mejora de la toma de decisiones Gradient"
+            },
+            {
+              "id": "ae199d1155",
+              "src": "assets/img/casos/valtre/ae199d1155.svg",
+              "full": "assets/img/casos/valtre/ae199d1155.svg",
+              "width": 252,
+              "height": 273,
+              "alt": "CoE: Data & Analytics: Mejora de la toma de decisiones"
+            },
+            {
+              "id": "37d6b2133b",
+              "src": "assets/img/casos/valtre/37d6b2133b.svg",
+              "full": "assets/img/casos/valtre/37d6b2133b.svg",
+              "width": 238,
+              "height": 230,
+              "alt": "CoE: Data & Analytics: Minería de datos Gradient"
+            },
+            {
+              "id": "f363527615",
+              "src": "assets/img/casos/valtre/f363527615.svg",
+              "full": "assets/img/casos/valtre/f363527615.svg",
+              "width": 242,
+              "height": 210,
+              "alt": "CoE: Data & Analytics: Minería de datos"
+            },
+            {
+              "id": "438f698d5c",
+              "src": "assets/img/casos/valtre/438f698d5c.svg",
+              "full": "assets/img/casos/valtre/438f698d5c.svg",
+              "width": 149,
+              "height": 139,
+              "alt": "CoE: Data & Analytics: Móvil"
+            },
+            {
+              "id": "553bf2815f",
+              "src": "assets/img/casos/valtre/553bf2815f.svg",
+              "full": "assets/img/casos/valtre/553bf2815f.svg",
+              "width": 220,
+              "height": 236,
+              "alt": "CoE: Data & Analytics: Organización basada en datos Gradient"
+            },
+            {
+              "id": "61942443d8",
+              "src": "assets/img/casos/valtre/61942443d8.svg",
+              "full": "assets/img/casos/valtre/61942443d8.svg",
+              "width": 227,
+              "height": 243,
+              "alt": "CoE: Data & Analytics: Organización basada en datos"
+            },
+            {
+              "id": "006b52fa91",
+              "src": "assets/img/casos/valtre/006b52fa91.svg",
+              "full": "assets/img/casos/valtre/006b52fa91.svg",
+              "width": 301,
+              "height": 215,
+              "alt": "CoE: Data & Analytics: Prevención o remediación de inconsistencia de datos. Gradien"
+            },
+            {
+              "id": "77d213d821",
+              "src": "assets/img/casos/valtre/77d213d821.svg",
+              "full": "assets/img/casos/valtre/77d213d821.svg",
+              "width": 305,
+              "height": 219,
+              "alt": "CoE: Data & Analytics: Prevención o remediación de inconsistencia de datos"
+            },
+            {
+              "id": "da756a45c1",
+              "src": "assets/img/casos/valtre/da756a45c1.svg",
+              "full": "assets/img/casos/valtre/da756a45c1.svg",
+              "width": 311,
+              "height": 214,
+              "alt": "CoE: Data & Analytics: Principios de diseño de un patrimonio de datos moderno Gradient"
+            },
+            {
+              "id": "471dfa786f",
+              "src": "assets/img/casos/valtre/471dfa786f.svg",
+              "full": "assets/img/casos/valtre/471dfa786f.svg",
+              "width": 319,
+              "height": 222,
+              "alt": "CoE: Data & Analytics: Principios de diseño de un patrimonio de datos moderno"
+            },
+            {
+              "id": "7ca15f25b9",
+              "src": "assets/img/casos/valtre/7ca15f25b9.svg",
+              "full": "assets/img/casos/valtre/7ca15f25b9.svg",
+              "width": 219,
+              "height": 189,
+              "alt": "CoE: Data & Analytics: Programa de gobierno, políticas y normas Gradient"
+            },
+            {
+              "id": "3dc5b974c9",
+              "src": "assets/img/casos/valtre/3dc5b974c9.svg",
+              "full": "assets/img/casos/valtre/3dc5b974c9.svg",
+              "width": 227,
+              "height": 197,
+              "alt": "CoE: Data & Analytics: Programa de gobierno, políticas y normas"
+            },
+            {
+              "id": "9db9f7c122",
+              "src": "assets/img/casos/valtre/9db9f7c122.svg",
+              "full": "assets/img/casos/valtre/9db9f7c122.svg",
+              "width": 214,
+              "height": 219,
+              "alt": "CoE: Data & Analytics: Transformación de datos Gradient"
+            },
+            {
+              "id": "b14dadfdd1",
+              "src": "assets/img/casos/valtre/b14dadfdd1.svg",
+              "full": "assets/img/casos/valtre/b14dadfdd1.svg",
+              "width": 214,
+              "height": 219,
+              "alt": "CoE: Data & Analytics: Transformación de datos"
+            },
+            {
+              "id": "c1988f77df",
+              "src": "assets/img/casos/valtre/c1988f77df.svg",
+              "full": "assets/img/casos/valtre/c1988f77df.svg",
+              "width": 142,
+              "height": 148,
+              "alt": "CoE: Data & Analytics: Web"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "CoE: Project Delivery",
+          "items": [
+            {
+              "id": "19803a4e3f",
+              "src": "assets/img/casos/valtre/19803a4e3f.svg",
+              "full": "assets/img/casos/valtre/19803a4e3f.svg",
+              "width": 128,
+              "height": 128,
+              "alt": "CoE: Project Delivery: 32 shopping cart"
+            },
+            {
+              "id": "e339005256",
+              "src": "assets/img/casos/valtre/e339005256.svg",
+              "full": "assets/img/casos/valtre/e339005256.svg",
+              "width": 192,
+              "height": 192,
+              "alt": "CoE: Project Delivery: 48 shopping cart"
+            },
+            {
+              "id": "c35fa24ebb",
+              "src": "assets/img/casos/valtre/c35fa24ebb-icon.webp",
+              "full": "assets/img/casos/valtre/c35fa24ebb-icon.webp",
+              "width": 111,
+              "height": 111,
+              "alt": "CoE: Project Delivery: Análisis y doc. de procesos de negocio"
+            },
+            {
+              "id": "46dfa4ffab",
+              "src": "assets/img/casos/valtre/46dfa4ffab-icon.webp",
+              "full": "assets/img/casos/valtre/46dfa4ffab-icon.webp",
+              "width": 255,
+              "height": 190,
+              "alt": "CoE: Project Delivery: Profesionalizar la gestión del proyecto"
+            },
+            {
+              "id": "4b95e7e9d0",
+              "src": "assets/img/casos/valtre/4b95e7e9d0.svg",
+              "full": "assets/img/casos/valtre/4b95e7e9d0.svg",
+              "width": 339,
+              "height": 355,
+              "alt": "CoE: Project Delivery: Co E Project Delivery"
+            },
+            {
+              "id": "4a593db1b5",
+              "src": "assets/img/casos/valtre/4a593db1b5.svg",
+              "full": "assets/img/casos/valtre/4a593db1b5.svg",
+              "width": 160,
+              "height": 168,
+              "alt": "CoE: Project Delivery: Diseño metodológico para gestión eficiente de proyectos"
+            },
+            {
+              "id": "8e3797aef1",
+              "src": "assets/img/casos/valtre/8e3797aef1.svg",
+              "full": "assets/img/casos/valtre/8e3797aef1.svg",
+              "width": 160,
+              "height": 163,
+              "alt": "CoE: Project Delivery: Evaluación del nivel de madurez en agilidad"
+            },
+            {
+              "id": "01ade2424e",
+              "src": "assets/img/casos/valtre/01ade2424e.svg",
+              "full": "assets/img/casos/valtre/01ade2424e.svg",
+              "width": 250,
+              "height": 238,
+              "alt": "CoE: Project Delivery: Impulsar y enriquecer la metodología de gestión del cliente"
+            },
+            {
+              "id": "93d88a476e",
+              "src": "assets/img/casos/valtre/93d88a476e.svg",
+              "full": "assets/img/casos/valtre/93d88a476e.svg",
+              "width": 190,
+              "height": 178,
+              "alt": "CoE: Project Delivery: Incrementar la tasa de éxito de los proyectos"
+            },
+            {
+              "id": "47f8f322f1",
+              "src": "assets/img/casos/valtre/47f8f322f1.svg",
+              "full": "assets/img/casos/valtre/47f8f322f1.svg",
+              "width": 158,
+              "height": 170,
+              "alt": "CoE: Project Delivery: PMO As A Service"
+            },
+            {
+              "id": "5ee0f8fe38",
+              "src": "assets/img/casos/valtre/5ee0f8fe38.svg",
+              "full": "assets/img/casos/valtre/5ee0f8fe38.svg",
+              "width": 205,
+              "height": 234,
+              "alt": "CoE: Project Delivery: Proporcionar visibilidad del alcance y progreso de los proyectos"
+            },
+            {
+              "id": "ad42e50a49",
+              "src": "assets/img/casos/valtre/ad42e50a49.svg",
+              "full": "assets/img/casos/valtre/ad42e50a49.svg",
+              "width": 147,
+              "height": 147,
+              "alt": "CoE: Project Delivery: Recurso"
+            },
+            {
+              "id": "a4a8ce769f",
+              "src": "assets/img/casos/valtre/a4a8ce769f.svg",
+              "full": "assets/img/casos/valtre/a4a8ce769f.svg",
+              "width": 167,
+              "height": 167,
+              "alt": "CoE: Project Delivery: Servicio administrado de gestión de proyectos"
+            },
+            {
+              "id": "183049fee8",
+              "src": "assets/img/casos/valtre/183049fee8.svg",
+              "full": "assets/img/casos/valtre/183049fee8.svg",
+              "width": 190,
+              "height": 193,
+              "alt": "CoE: Project Delivery: Servicio Especializado de Gestión"
+            },
+            {
+              "id": "eacf71c4d7",
+              "src": "assets/img/casos/valtre/eacf71c4d7.svg",
+              "full": "assets/img/casos/valtre/eacf71c4d7.svg",
+              "width": 167,
+              "height": 170,
+              "alt": "CoE: Project Delivery: Servicio especializado de PM's, SM's y Business Process Analyst"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "CoE: Ciberseguridad",
+          "items": [
+            {
+              "id": "8f8ffd8298",
+              "src": "assets/img/casos/valtre/8f8ffd8298-icon.webp",
+              "full": "assets/img/casos/valtre/8f8ffd8298-icon.webp",
+              "width": 256,
+              "height": 256,
+              "alt": "CoE: Ciberseguridad: Card Coe Cybersecurity"
+            },
+            {
+              "id": "1d319f0eb3",
+              "src": "assets/img/casos/valtre/1d319f0eb3-icon.webp",
+              "full": "assets/img/casos/valtre/1d319f0eb3-icon.webp",
+              "width": 221,
+              "height": 143,
+              "alt": "CoE: Ciberseguridad: Cumple con la norma ISO 27001 y PCI"
+            },
+            {
+              "id": "6acabc82e8",
+              "src": "assets/img/casos/valtre/6acabc82e8-icon.webp",
+              "full": "assets/img/casos/valtre/6acabc82e8-icon.webp",
+              "width": 106,
+              "height": 121,
+              "alt": "CoE: Ciberseguridad: Defensa de profundidad"
+            },
+            {
+              "id": "e373a9b74c",
+              "src": "assets/img/casos/valtre/e373a9b74c-icon.webp",
+              "full": "assets/img/casos/valtre/e373a9b74c-icon.webp",
+              "width": 105,
+              "height": 121,
+              "alt": "CoE: Ciberseguridad: Mitigación e Identificación de Superficie de ataque"
+            },
+            {
+              "id": "18cbf05237",
+              "src": "assets/img/casos/valtre/18cbf05237-icon.webp",
+              "full": "assets/img/casos/valtre/18cbf05237-icon.webp",
+              "width": 138,
+              "height": 138,
+              "alt": "CoE: Ciberseguridad: Pruebas de seguridad"
+            },
+            {
+              "id": "9bbdcd46c7",
+              "src": "assets/img/casos/valtre/9bbdcd46c7-icon.webp",
+              "full": "assets/img/casos/valtre/9bbdcd46c7-icon.webp",
+              "width": 80,
+              "height": 96,
+              "alt": "CoE: Ciberseguridad: Recursos profesionales de alto valor"
+            },
+            {
+              "id": "5946f81093",
+              "src": "assets/img/casos/valtre/5946f81093-icon.webp",
+              "full": "assets/img/casos/valtre/5946f81093-icon.webp",
+              "width": 188,
+              "height": 111,
+              "alt": "CoE: Ciberseguridad: Semillero de talento"
+            },
+            {
+              "id": "746231cf21",
+              "src": "assets/img/casos/valtre/746231cf21.svg",
+              "full": "assets/img/casos/valtre/746231cf21.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Análisis de B Recha"
+            },
+            {
+              "id": "d80a5c1093",
+              "src": "assets/img/casos/valtre/d80a5c1093.svg",
+              "full": "assets/img/casos/valtre/d80a5c1093.svg",
+              "width": 219,
+              "height": 191,
+              "alt": "CoE: Ciberseguridad: Arquitectura de Ciberseguridad y Defensa de profundidad"
+            },
+            {
+              "id": "930520831f",
+              "src": "assets/img/casos/valtre/930520831f.svg",
+              "full": "assets/img/casos/valtre/930520831f.svg",
+              "width": 155,
+              "height": 149,
+              "alt": "CoE: Ciberseguridad: Clasificación y protección de datos y com"
+            },
+            {
+              "id": "066cfbabf6",
+              "src": "assets/img/casos/valtre/066cfbabf6.svg",
+              "full": "assets/img/casos/valtre/066cfbabf6.svg",
+              "width": 344,
+              "height": 394,
+              "alt": "CoE: Ciberseguridad: Co E Cybersecurity"
+            },
+            {
+              "id": "8f0e26555c",
+              "src": "assets/img/casos/valtre/8f0e26555c.svg",
+              "full": "assets/img/casos/valtre/8f0e26555c.svg",
+              "width": 177,
+              "height": 171,
+              "alt": "CoE: Ciberseguridad: Controlar acceso a información confidencial"
+            },
+            {
+              "id": "b42e59bee3",
+              "src": "assets/img/casos/valtre/b42e59bee3.svg",
+              "full": "assets/img/casos/valtre/b42e59bee3.svg",
+              "width": 171,
+              "height": 165,
+              "alt": "CoE: Ciberseguridad: Coorrelación de Ataques"
+            },
+            {
+              "id": "6a1dd21415",
+              "src": "assets/img/casos/valtre/6a1dd21415.svg",
+              "full": "assets/img/casos/valtre/6a1dd21415.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Desarrollo Seguro"
+            },
+            {
+              "id": "ad18689dd6",
+              "src": "assets/img/casos/valtre/ad18689dd6.svg",
+              "full": "assets/img/casos/valtre/ad18689dd6.svg",
+              "width": 155,
+              "height": 161,
+              "alt": "CoE: Ciberseguridad: Detectar ataques de phishing"
+            },
+            {
+              "id": "6e33fb0182",
+              "src": "assets/img/casos/valtre/6e33fb0182.svg",
+              "full": "assets/img/casos/valtre/6e33fb0182.svg",
+              "width": 183,
+              "height": 185,
+              "alt": "CoE: Ciberseguridad: Detectar intentos de robo de datos"
+            },
+            {
+              "id": "75ae90d4db",
+              "src": "assets/img/casos/valtre/75ae90d4db.svg",
+              "full": "assets/img/casos/valtre/75ae90d4db.svg",
+              "width": 241,
+              "height": 168,
+              "alt": "CoE: Ciberseguridad: Equipos expertos que brindan asesoría permanente"
+            },
+            {
+              "id": "1d653c28d7",
+              "src": "assets/img/casos/valtre/1d653c28d7.svg",
+              "full": "assets/img/casos/valtre/1d653c28d7.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Evita demandas legales"
+            },
+            {
+              "id": "9fe5fc876c",
+              "src": "assets/img/casos/valtre/9fe5fc876c.svg",
+              "full": "assets/img/casos/valtre/9fe5fc876c.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Evita pérdidas económicas y de credibilidad"
+            },
+            {
+              "id": "bbc7f948fd",
+              "src": "assets/img/casos/valtre/bbc7f948fd.svg",
+              "full": "assets/img/casos/valtre/bbc7f948fd.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Identificar amenazas internas y externas"
+            },
+            {
+              "id": "758ae039b6",
+              "src": "assets/img/casos/valtre/758ae039b6.svg",
+              "full": "assets/img/casos/valtre/758ae039b6.svg",
+              "width": 195,
+              "height": 165,
+              "alt": "CoE: Ciberseguridad: Identificar patrones que indiquen ataques"
+            },
+            {
+              "id": "522b284372",
+              "src": "assets/img/casos/valtre/522b284372.svg",
+              "full": "assets/img/casos/valtre/522b284372.svg",
+              "width": 168,
+              "height": 163,
+              "alt": "CoE: Ciberseguridad: Permite un flujo eficiente de la información"
+            },
+            {
+              "id": "54d1bb2035",
+              "src": "assets/img/casos/valtre/54d1bb2035.svg",
+              "full": "assets/img/casos/valtre/54d1bb2035.svg",
+              "width": 167,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Prevenir ataques de ransomware"
+            },
+            {
+              "id": "be3f9b7825",
+              "src": "assets/img/casos/valtre/be3f9b7825.svg",
+              "full": "assets/img/casos/valtre/be3f9b7825.svg",
+              "width": 177,
+              "height": 177,
+              "alt": "CoE: Ciberseguridad: Prevenir ataques"
+            },
+            {
+              "id": "7655ba2179",
+              "src": "assets/img/casos/valtre/7655ba2179.svg",
+              "full": "assets/img/casos/valtre/7655ba2179.svg",
+              "width": 177,
+              "height": 177,
+              "alt": "CoE: Ciberseguridad: Prevenir filtración de datos"
+            },
+            {
+              "id": "b7d4f6f0d0",
+              "src": "assets/img/casos/valtre/b7d4f6f0d0.svg",
+              "full": "assets/img/casos/valtre/b7d4f6f0d0.svg",
+              "width": 180,
+              "height": 168,
+              "alt": "CoE: Ciberseguridad: Programa de concientización y evangelización de seguridad de la información"
+            },
+            {
+              "id": "274a10b4ab",
+              "src": "assets/img/casos/valtre/274a10b4ab.svg",
+              "full": "assets/img/casos/valtre/274a10b4ab.svg",
+              "width": 185,
+              "height": 178,
+              "alt": "CoE: Ciberseguridad: Programa de gobierno, políticas y normas de seguridad de la información"
+            },
+            {
+              "id": "ca317aa13e",
+              "src": "assets/img/casos/valtre/ca317aa13e.svg",
+              "full": "assets/img/casos/valtre/ca317aa13e.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Protege la reputación de la empresa"
+            },
+            {
+              "id": "8b82b0c0a1",
+              "src": "assets/img/casos/valtre/8b82b0c0a1.svg",
+              "full": "assets/img/casos/valtre/8b82b0c0a1.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Proteger los activos digitales y datos de una empresa"
+            },
+            {
+              "id": "78ca837ae8",
+              "src": "assets/img/casos/valtre/78ca837ae8.svg",
+              "full": "assets/img/casos/valtre/78ca837ae8.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Recurso"
+            },
+            {
+              "id": "cfe6c178f1",
+              "src": "assets/img/casos/valtre/cfe6c178f1.svg",
+              "full": "assets/img/casos/valtre/cfe6c178f1.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Seguridad de la información"
+            },
+            {
+              "id": "79e22c954a",
+              "src": "assets/img/casos/valtre/79e22c954a.svg",
+              "full": "assets/img/casos/valtre/79e22c954a.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Ciberseguridad: Simulación de Ingeniería Social"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "CoE: ITSM & Governance",
+          "items": [
+            {
+              "id": "e76efcbfad",
+              "src": "assets/img/casos/valtre/e76efcbfad-icon.webp",
+              "full": "assets/img/casos/valtre/e76efcbfad-icon.webp",
+              "width": 103,
+              "height": 114,
+              "alt": "CoE: ITSM & Governance: Coaching y Entrenamiento Especializado"
+            },
+            {
+              "id": "5b257c6162",
+              "src": "assets/img/casos/valtre/5b257c6162-icon.webp",
+              "full": "assets/img/casos/valtre/5b257c6162-icon.webp",
+              "width": 127,
+              "height": 123,
+              "alt": "CoE: ITSM & Governance: Diseño y Mejora de Procesos de TI"
+            },
+            {
+              "id": "00cbfd5540",
+              "src": "assets/img/casos/valtre/00cbfd5540-icon.webp",
+              "full": "assets/img/casos/valtre/00cbfd5540-icon.webp",
+              "width": 101,
+              "height": 100,
+              "alt": "CoE: ITSM & Governance: Field Services"
+            },
+            {
+              "id": "e517b7ca42",
+              "src": "assets/img/casos/valtre/e517b7ca42-icon.webp",
+              "full": "assets/img/casos/valtre/e517b7ca42-icon.webp",
+              "width": 125,
+              "height": 125,
+              "alt": "CoE: ITSM & Governance: Gestion de Incidentes"
+            },
+            {
+              "id": "1235140142",
+              "src": "assets/img/casos/valtre/1235140142-icon.webp",
+              "full": "assets/img/casos/valtre/1235140142-icon.webp",
+              "width": 125,
+              "height": 125,
+              "alt": "CoE: ITSM & Governance: Gestion de Problemas"
+            },
+            {
+              "id": "3f32fc412c",
+              "src": "assets/img/casos/valtre/3f32fc412c-icon.webp",
+              "full": "assets/img/casos/valtre/3f32fc412c-icon.webp",
+              "width": 131,
+              "height": 127,
+              "alt": "CoE: ITSM & Governance: Gobierno de TI & Cumplimiento"
+            },
+            {
+              "id": "3e4b455185",
+              "src": "assets/img/casos/valtre/3e4b455185-icon.webp",
+              "full": "assets/img/casos/valtre/3e4b455185-icon.webp",
+              "width": 127,
+              "height": 124,
+              "alt": "CoE: ITSM & Governance: Habilitación de Cambios"
+            },
+            {
+              "id": "cb2dd54079",
+              "src": "assets/img/casos/valtre/cb2dd54079-icon.webp",
+              "full": "assets/img/casos/valtre/cb2dd54079-icon.webp",
+              "width": 185,
+              "height": 168,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Análisis D Brecha"
+            },
+            {
+              "id": "19ce86b6bf",
+              "src": "assets/img/casos/valtre/19ce86b6bf-icon.webp",
+              "full": "assets/img/casos/valtre/19ce86b6bf-icon.webp",
+              "width": 171,
+              "height": 169,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Cierre"
+            },
+            {
+              "id": "4f9b7b45bb",
+              "src": "assets/img/casos/valtre/4f9b7b45bb-icon.webp",
+              "full": "assets/img/casos/valtre/4f9b7b45bb-icon.webp",
+              "width": 182,
+              "height": 168,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Diagnósticoy Evaluación"
+            },
+            {
+              "id": "85757431a0",
+              "src": "assets/img/casos/valtre/85757431a0-icon.webp",
+              "full": "assets/img/casos/valtre/85757431a0-icon.webp",
+              "width": 146,
+              "height": 173,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA entregables"
+            },
+            {
+              "id": "0422b6307a",
+              "src": "assets/img/casos/valtre/0422b6307a-icon.webp",
+              "full": "assets/img/casos/valtre/0422b6307a-icon.webp",
+              "width": 183,
+              "height": 169,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Exploración"
+            },
+            {
+              "id": "965c05e998",
+              "src": "assets/img/casos/valtre/965c05e998-icon.webp",
+              "full": "assets/img/casos/valtre/965c05e998-icon.webp",
+              "width": 173,
+              "height": 173,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Marcos"
+            },
+            {
+              "id": "a714652d8b",
+              "src": "assets/img/casos/valtre/a714652d8b-icon.webp",
+              "full": "assets/img/casos/valtre/a714652d8b-icon.webp",
+              "width": 166,
+              "height": 169,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Recomendaciones"
+            },
+            {
+              "id": "cc6a90ef0b",
+              "src": "assets/img/casos/valtre/cc6a90ef0b-icon.webp",
+              "full": "assets/img/casos/valtre/cc6a90ef0b-icon.webp",
+              "width": 138,
+              "height": 169,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Valtre"
+            },
+            {
+              "id": "f827940fd6",
+              "src": "assets/img/casos/valtre/f827940fd6-icon.webp",
+              "full": "assets/img/casos/valtre/f827940fd6-icon.webp",
+              "width": 182,
+              "height": 169,
+              "alt": "CoE: ITSM & Governance: ITSM Ey DA Valtre"
+            },
+            {
+              "id": "fc6922aaa5",
+              "src": "assets/img/casos/valtre/fc6922aaa5-icon.webp",
+              "full": "assets/img/casos/valtre/fc6922aaa5-icon.webp",
+              "width": 140,
+              "height": 137,
+              "alt": "CoE: ITSM & Governance: Observabilidad & Monitoreo"
+            },
+            {
+              "id": "f3910e8617",
+              "src": "assets/img/casos/valtre/f3910e8617-icon.webp",
+              "full": "assets/img/casos/valtre/f3910e8617-icon.webp",
+              "width": 117,
+              "height": 112,
+              "alt": "CoE: ITSM & Governance: Servicios de Consultoria en Procesos"
+            },
+            {
+              "id": "cef0ec232b",
+              "src": "assets/img/casos/valtre/cef0ec232b.svg",
+              "full": "assets/img/casos/valtre/cef0ec232b.svg",
+              "width": 365,
+              "height": 265,
+              "alt": "CoE: ITSM & Governance: Co E ITSM & Governance"
+            },
+            {
+              "id": "0afc2a6400",
+              "src": "assets/img/casos/valtre/0afc2a6400.svg",
+              "full": "assets/img/casos/valtre/0afc2a6400.svg",
+              "width": 218,
+              "height": 160,
+              "alt": "CoE: ITSM & Governance: Evaluación y Diagnóstico ITSM"
+            },
+            {
+              "id": "30c130d132",
+              "src": "assets/img/casos/valtre/30c130d132.svg",
+              "full": "assets/img/casos/valtre/30c130d132.svg",
+              "width": 195,
+              "height": 161,
+              "alt": "CoE: ITSM & Governance: Implementación y Configuración de Herramientas ITSM"
+            },
+            {
+              "id": "d778698319",
+              "src": "assets/img/casos/valtre/d778698319.svg",
+              "full": "assets/img/casos/valtre/d778698319.svg",
+              "width": 154,
+              "height": 148,
+              "alt": "CoE: ITSM & Governance: Mesa de ayuda administrada Soporte L1, Nivel"
+            },
+            {
+              "id": "8cc048aa12",
+              "src": "assets/img/casos/valtre/8cc048aa12.svg",
+              "full": "assets/img/casos/valtre/8cc048aa12.svg",
+              "width": 241,
+              "height": 184,
+              "alt": "CoE: ITSM & Governance: Release Management"
+            },
+            {
+              "id": "27771fea86",
+              "src": "assets/img/casos/valtre/27771fea86.svg",
+              "full": "assets/img/casos/valtre/27771fea86.svg",
+              "width": 149,
+              "height": 170,
+              "alt": "CoE: ITSM & Governance: Servicio de Soporte"
+            },
+            {
+              "id": "22fef9e55c",
+              "src": "assets/img/casos/valtre/22fef9e55c.svg",
+              "full": "assets/img/casos/valtre/22fef9e55c.svg",
+              "width": 191,
+              "height": 191,
+              "alt": "CoE: ITSM & Governance: Soporte a la Operacion de Servicios"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "CoE: Software Solutions",
+          "items": [
+            {
+              "id": "7a40148a9f",
+              "src": "assets/img/casos/valtre/7a40148a9f-icon.webp",
+              "full": "assets/img/casos/valtre/7a40148a9f-icon.webp",
+              "width": 87,
+              "height": 103,
+              "alt": "CoE: Software Solutions: Arquitectura de soluciones"
+            },
+            {
+              "id": "907d047053",
+              "src": "assets/img/casos/valtre/907d047053-icon.webp",
+              "full": "assets/img/casos/valtre/907d047053-icon.webp",
+              "width": 104,
+              "height": 100,
+              "alt": "CoE: Software Solutions: Assessment"
+            },
+            {
+              "id": "cf870e66ae",
+              "src": "assets/img/casos/valtre/cf870e66ae-icon.webp",
+              "full": "assets/img/casos/valtre/cf870e66ae-icon.webp",
+              "width": 94,
+              "height": 94,
+              "alt": "CoE: Software Solutions: Autom. de procesos con RPA"
+            },
+            {
+              "id": "791e28f4aa",
+              "src": "assets/img/casos/valtre/791e28f4aa-icon.webp",
+              "full": "assets/img/casos/valtre/791e28f4aa-icon.webp",
+              "width": 79,
+              "height": 88,
+              "alt": "CoE: Software Solutions: Capacitaciones tecnológicas"
+            },
+            {
+              "id": "cf8cdd0371",
+              "src": "assets/img/casos/valtre/cf8cdd0371-icon.webp",
+              "full": "assets/img/casos/valtre/cf8cdd0371-icon.webp",
+              "width": 111,
+              "height": 106,
+              "alt": "CoE: Software Solutions: Experiencia especializada y soporte continuo"
+            },
+            {
+              "id": "d5a97ff9b3",
+              "src": "assets/img/casos/valtre/d5a97ff9b3-icon.webp",
+              "full": "assets/img/casos/valtre/d5a97ff9b3-icon.webp",
+              "width": 96,
+              "height": 97,
+              "alt": "CoE: Software Solutions: Fábrica de Software"
+            },
+            {
+              "id": "1e9650bb67",
+              "src": "assets/img/casos/valtre/1e9650bb67-icon.webp",
+              "full": "assets/img/casos/valtre/1e9650bb67-icon.webp",
+              "width": 149,
+              "height": 122,
+              "alt": "CoE: Software Solutions: Innovación y adopción de tecnologías de vanguardia"
+            },
+            {
+              "id": "c3f2a4f112",
+              "src": "assets/img/casos/valtre/c3f2a4f112-icon.webp",
+              "full": "assets/img/casos/valtre/c3f2a4f112-icon.webp",
+              "width": 142,
+              "height": 142,
+              "alt": "CoE: Software Solutions: Mayor eficiencia y optimización de costos"
+            },
+            {
+              "id": "cb5ecb0a23",
+              "src": "assets/img/casos/valtre/cb5ecb0a23.svg",
+              "full": "assets/img/casos/valtre/cb5ecb0a23.svg",
+              "width": 152,
+              "height": 128,
+              "alt": "CoE: Software Solutions: Agile Software Development Chapter"
+            },
+            {
+              "id": "7e3f5ecf5c",
+              "src": "assets/img/casos/valtre/7e3f5ecf5c.svg",
+              "full": "assets/img/casos/valtre/7e3f5ecf5c.svg",
+              "width": 148,
+              "height": 133,
+              "alt": "CoE: Software Solutions: AI Labs"
+            },
+            {
+              "id": "4fc7b65acd",
+              "src": "assets/img/casos/valtre/4fc7b65acd.svg",
+              "full": "assets/img/casos/valtre/4fc7b65acd.svg",
+              "width": 170,
+              "height": 138,
+              "alt": "CoE: Software Solutions: Back End Development"
+            },
+            {
+              "id": "a73f2bef68",
+              "src": "assets/img/casos/valtre/a73f2bef68.svg",
+              "full": "assets/img/casos/valtre/a73f2bef68.svg",
+              "width": 117,
+              "height": 136,
+              "alt": "CoE: Software Solutions: Brain Storming Or UX Analysis"
+            },
+            {
+              "id": "1f9a94c883",
+              "src": "assets/img/casos/valtre/1f9a94c883.svg",
+              "full": "assets/img/casos/valtre/1f9a94c883.svg",
+              "width": 347,
+              "height": 294,
+              "alt": "CoE: Software Solutions: Co E Software Development Solutions"
+            },
+            {
+              "id": "1f785221de",
+              "src": "assets/img/casos/valtre/1f785221de.svg",
+              "full": "assets/img/casos/valtre/1f785221de.svg",
+              "width": 138,
+              "height": 136,
+              "alt": "CoE: Software Solutions: Co E de Desarrollo de Software"
+            },
+            {
+              "id": "9e3ad1c3e9",
+              "src": "assets/img/casos/valtre/9e3ad1c3e9.svg",
+              "full": "assets/img/casos/valtre/9e3ad1c3e9.svg",
+              "width": 143,
+              "height": 105,
+              "alt": "CoE: Software Solutions: Desktop App"
+            },
+            {
+              "id": "34c68ecd7c",
+              "src": "assets/img/casos/valtre/34c68ecd7c.svg",
+              "full": "assets/img/casos/valtre/34c68ecd7c.svg",
+              "width": 137,
+              "height": 125,
+              "alt": "CoE: Software Solutions: e Commerce"
+            },
+            {
+              "id": "ee7d9b4253",
+              "src": "assets/img/casos/valtre/ee7d9b4253.svg",
+              "full": "assets/img/casos/valtre/ee7d9b4253.svg",
+              "width": 121,
+              "height": 124,
+              "alt": "CoE: Software Solutions: Evaluaciones técnicas al personal"
+            },
+            {
+              "id": "e16d868c88",
+              "src": "assets/img/casos/valtre/e16d868c88.svg",
+              "full": "assets/img/casos/valtre/e16d868c88.svg",
+              "width": 127,
+              "height": 127,
+              "alt": "CoE: Software Solutions: Migración de aplicaciones a la nube"
+            },
+            {
+              "id": "ee410feafb",
+              "src": "assets/img/casos/valtre/ee410feafb.svg",
+              "full": "assets/img/casos/valtre/ee410feafb.svg",
+              "width": 130,
+              "height": 112,
+              "alt": "CoE: Software Solutions: Mobile App"
+            },
+            {
+              "id": "064b1488b5",
+              "src": "assets/img/casos/valtre/064b1488b5.svg",
+              "full": "assets/img/casos/valtre/064b1488b5.svg",
+              "width": 155,
+              "height": 118,
+              "alt": "CoE: Software Solutions: Point of sale"
+            },
+            {
+              "id": "ef99ef71e7",
+              "src": "assets/img/casos/valtre/ef99ef71e7.svg",
+              "full": "assets/img/casos/valtre/ef99ef71e7.svg",
+              "width": 130,
+              "height": 130,
+              "alt": "CoE: Software Solutions: QA As A Service"
+            },
+            {
+              "id": "e9fdad246a",
+              "src": "assets/img/casos/valtre/e9fdad246a.svg",
+              "full": "assets/img/casos/valtre/e9fdad246a.svg",
+              "width": 145,
+              "height": 146,
+              "alt": "CoE: Software Solutions: Revisión de código seguro"
+            },
+            {
+              "id": "3298a2472c",
+              "src": "assets/img/casos/valtre/3298a2472c.svg",
+              "full": "assets/img/casos/valtre/3298a2472c.svg",
+              "width": 127,
+              "height": 127,
+              "alt": "CoE: Software Solutions: Software Development End to End"
+            },
+            {
+              "id": "42b104195c",
+              "src": "assets/img/casos/valtre/42b104195c.svg",
+              "full": "assets/img/casos/valtre/42b104195c.svg",
+              "width": 136,
+              "height": 140,
+              "alt": "CoE: Software Solutions: UI UX Chapter"
+            },
+            {
+              "id": "a72abfac26",
+              "src": "assets/img/casos/valtre/a72abfac26.svg",
+              "full": "assets/img/casos/valtre/a72abfac26.svg",
+              "width": 126,
+              "height": 118,
+              "alt": "CoE: Software Solutions: Web App"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "CoE: Enterprise Solutions",
+          "items": [
+            {
+              "id": "7b7e3cb3f4",
+              "src": "assets/img/casos/valtre/7b7e3cb3f4.svg",
+              "full": "assets/img/casos/valtre/7b7e3cb3f4.svg",
+              "width": 168,
+              "height": 117,
+              "alt": "CoE: Enterprise Solutions: Ahorro en Costos"
+            },
+            {
+              "id": "ccf88f579d",
+              "src": "assets/img/casos/valtre/ccf88f579d.svg",
+              "full": "assets/img/casos/valtre/ccf88f579d.svg",
+              "width": 169,
+              "height": 156,
+              "alt": "CoE: Enterprise Solutions: Automatización de tareas"
+            },
+            {
+              "id": "1d210a711d",
+              "src": "assets/img/casos/valtre/1d210a711d.svg",
+              "full": "assets/img/casos/valtre/1d210a711d.svg",
+              "width": 184,
+              "height": 204,
+              "alt": "CoE: Enterprise Solutions: Capacitación"
+            },
+            {
+              "id": "295b2bf445",
+              "src": "assets/img/casos/valtre/295b2bf445.svg",
+              "full": "assets/img/casos/valtre/295b2bf445.svg",
+              "width": 411,
+              "height": 453,
+              "alt": "CoE: Enterprise Solutions: Co E Enterprise Solutions Services"
+            },
+            {
+              "id": "2071559a6f",
+              "src": "assets/img/casos/valtre/2071559a6f.svg",
+              "full": "assets/img/casos/valtre/2071559a6f.svg",
+              "width": 183,
+              "height": 158,
+              "alt": "CoE: Enterprise Solutions: Competitividad en el mercado"
+            },
+            {
+              "id": "6bc92b3933",
+              "src": "assets/img/casos/valtre/6bc92b3933.svg",
+              "full": "assets/img/casos/valtre/6bc92b3933.svg",
+              "width": 175,
+              "height": 160,
+              "alt": "CoE: Enterprise Solutions: Consultoría"
+            },
+            {
+              "id": "89cb934ff9",
+              "src": "assets/img/casos/valtre/89cb934ff9.svg",
+              "full": "assets/img/casos/valtre/89cb934ff9.svg",
+              "width": 209,
+              "height": 181,
+              "alt": "CoE: Enterprise Solutions: Desarrollo"
+            },
+            {
+              "id": "dabec4a109",
+              "src": "assets/img/casos/valtre/dabec4a109.svg",
+              "full": "assets/img/casos/valtre/dabec4a109.svg",
+              "width": 190,
+              "height": 159,
+              "alt": "CoE: Enterprise Solutions: Escalabilidad"
+            },
+            {
+              "id": "8fb3feb9cb",
+              "src": "assets/img/casos/valtre/8fb3feb9cb.svg",
+              "full": "assets/img/casos/valtre/8fb3feb9cb.svg",
+              "width": 221,
+              "height": 190,
+              "alt": "CoE: Enterprise Solutions: Estrategias de marketing"
+            },
+            {
+              "id": "e2db7d1564",
+              "src": "assets/img/casos/valtre/e2db7d1564.svg",
+              "full": "assets/img/casos/valtre/e2db7d1564.svg",
+              "width": 203,
+              "height": 189,
+              "alt": "CoE: Enterprise Solutions: Gestión de compras"
+            },
+            {
+              "id": "dd30703a7e",
+              "src": "assets/img/casos/valtre/dd30703a7e.svg",
+              "full": "assets/img/casos/valtre/dd30703a7e.svg",
+              "width": 235,
+              "height": 156,
+              "alt": "CoE: Enterprise Solutions: Gestión de inventario"
+            },
+            {
+              "id": "2766c2cd88",
+              "src": "assets/img/casos/valtre/2766c2cd88.svg",
+              "full": "assets/img/casos/valtre/2766c2cd88.svg",
+              "width": 207,
+              "height": 170,
+              "alt": "CoE: Enterprise Solutions: Gestión de la cadena de suministro"
+            },
+            {
+              "id": "523b1eefe8",
+              "src": "assets/img/casos/valtre/523b1eefe8.svg",
+              "full": "assets/img/casos/valtre/523b1eefe8.svg",
+              "width": 216,
+              "height": 167,
+              "alt": "CoE: Enterprise Solutions: Gestión de Recursos Humanos"
+            },
+            {
+              "id": "d8e0dd90a9",
+              "src": "assets/img/casos/valtre/d8e0dd90a9.svg",
+              "full": "assets/img/casos/valtre/d8e0dd90a9.svg",
+              "width": 184,
+              "height": 165,
+              "alt": "CoE: Enterprise Solutions: Gestión de ventas"
+            },
+            {
+              "id": "98d626eb69",
+              "src": "assets/img/casos/valtre/98d626eb69.svg",
+              "full": "assets/img/casos/valtre/98d626eb69.svg",
+              "width": 181,
+              "height": 152,
+              "alt": "CoE: Enterprise Solutions: Gestión Financiera"
+            },
+            {
+              "id": "c09cb8825b",
+              "src": "assets/img/casos/valtre/c09cb8825b.svg",
+              "full": "assets/img/casos/valtre/c09cb8825b.svg",
+              "width": 180,
+              "height": 180,
+              "alt": "CoE: Enterprise Solutions: Implementación, actualización y soporte de Soluciones ERP"
+            },
+            {
+              "id": "4437587252",
+              "src": "assets/img/casos/valtre/4437587252.svg",
+              "full": "assets/img/casos/valtre/4437587252.svg",
+              "width": 218,
+              "height": 151,
+              "alt": "CoE: Enterprise Solutions: Innovación en gestión financiera"
+            },
+            {
+              "id": "d923c23179",
+              "src": "assets/img/casos/valtre/d923c23179.svg",
+              "full": "assets/img/casos/valtre/d923c23179.svg",
+              "width": 140,
+              "height": 174,
+              "alt": "CoE: Enterprise Solutions: Integración de Procesos"
+            },
+            {
+              "id": "27208399c2",
+              "src": "assets/img/casos/valtre/27208399c2.svg",
+              "full": "assets/img/casos/valtre/27208399c2.svg",
+              "width": 160,
+              "height": 160,
+              "alt": "CoE: Enterprise Solutions: Reducción del error humano"
+            },
+            {
+              "id": "270c616b3d",
+              "src": "assets/img/casos/valtre/270c616b3d.svg",
+              "full": "assets/img/casos/valtre/270c616b3d.svg",
+              "width": 140,
+              "height": 160,
+              "alt": "CoE: Enterprise Solutions: Seguridad de Datos"
+            },
+            {
+              "id": "dcc20efdcf",
+              "src": "assets/img/casos/valtre/dcc20efdcf.svg",
+              "full": "assets/img/casos/valtre/dcc20efdcf.svg",
+              "width": 135,
+              "height": 164,
+              "alt": "CoE: Enterprise Solutions: Servicio especializado"
+            },
+            {
+              "id": "d6bcbfb6eb",
+              "src": "assets/img/casos/valtre/d6bcbfb6eb.svg",
+              "full": "assets/img/casos/valtre/d6bcbfb6eb.svg",
+              "width": 181,
+              "height": 173,
+              "alt": "CoE: Enterprise Solutions: Toma de decisiones mejorada"
+            }
+          ]
+        },
+        {
+          "kind": "logos",
+          "topic": "Logotipos",
+          "items": [
+            {
+              "id": "7b71ba8273",
+              "src": "assets/img/casos/valtre/7b71ba8273-640.webp",
+              "full": "assets/img/casos/valtre/7b71ba8273-1200.webp",
+              "width": 640,
+              "height": 161,
+              "alt": "Logotipos: LinkedIn Banner"
+            },
+            {
+              "id": "c9df7cd650",
+              "src": "assets/img/casos/valtre/c9df7cd650-640.webp",
+              "full": "assets/img/casos/valtre/c9df7cd650-1200.webp",
+              "width": 640,
+              "height": 161,
+              "alt": "Logotipos: LinkedIn Banner"
+            },
+            {
+              "id": "0c6d592801",
+              "src": "assets/img/casos/valtre/0c6d592801-640.webp",
+              "full": "assets/img/casos/valtre/0c6d592801-1200.webp",
+              "width": 640,
+              "height": 161,
+              "alt": "Logotipos: LinkedIn Banner"
+            },
+            {
+              "id": "5e67f398ab",
+              "src": "assets/img/casos/valtre/5e67f398ab-640.webp",
+              "full": "assets/img/casos/valtre/5e67f398ab-1200.webp",
+              "width": 640,
+              "height": 161,
+              "alt": "Logotipos: LinkedIn Profile Banner"
+            },
+            {
+              "id": "d50c823740",
+              "src": "assets/img/casos/valtre/d50c823740-640.webp",
+              "full": "assets/img/casos/valtre/d50c823740-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back Black"
+            },
+            {
+              "id": "cd08ef5fdf",
+              "src": "assets/img/casos/valtre/cd08ef5fdf-640.webp",
+              "full": "assets/img/casos/valtre/cd08ef5fdf-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back Black Solutions"
+            },
+            {
+              "id": "09487e906f",
+              "src": "assets/img/casos/valtre/09487e906f-640.webp",
+              "full": "assets/img/casos/valtre/09487e906f-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back Blue"
+            },
+            {
+              "id": "9d1e30d44b",
+              "src": "assets/img/casos/valtre/9d1e30d44b-640.webp",
+              "full": "assets/img/casos/valtre/9d1e30d44b-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back Blue Solutions"
+            },
+            {
+              "id": "f1c04f8342",
+              "src": "assets/img/casos/valtre/f1c04f8342-640.webp",
+              "full": "assets/img/casos/valtre/f1c04f8342-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back Green"
+            },
+            {
+              "id": "7ea97c2855",
+              "src": "assets/img/casos/valtre/7ea97c2855-640.webp",
+              "full": "assets/img/casos/valtre/7ea97c2855-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back Green Solutions"
+            },
+            {
+              "id": "09896bb596",
+              "src": "assets/img/casos/valtre/09896bb596-640.webp",
+              "full": "assets/img/casos/valtre/09896bb596-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back White"
+            },
+            {
+              "id": "fc31d02994",
+              "src": "assets/img/casos/valtre/fc31d02994-640.webp",
+              "full": "assets/img/casos/valtre/fc31d02994-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Logotipos: Valtre Meeting Back White Solutions"
+            },
+            {
+              "id": "4abd6783c0",
+              "src": "assets/img/casos/valtre/4abd6783c0-640.webp",
+              "full": "assets/img/casos/valtre/4abd6783c0-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Logotipos: Valtre Profile Black1"
+            },
+            {
+              "id": "70b3bca634",
+              "src": "assets/img/casos/valtre/70b3bca634-640.webp",
+              "full": "assets/img/casos/valtre/70b3bca634-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Logotipos: Valtre Profile Black2"
+            },
+            {
+              "id": "e296285fcb",
+              "src": "assets/img/casos/valtre/e296285fcb-640.webp",
+              "full": "assets/img/casos/valtre/e296285fcb-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Logotipos: Valtre Profile Blue1"
+            },
+            {
+              "id": "5c3e73872a",
+              "src": "assets/img/casos/valtre/5c3e73872a-640.webp",
+              "full": "assets/img/casos/valtre/5c3e73872a-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Logotipos: Valtre Profile Blue1"
+            },
+            {
+              "id": "6c7a8bcd6d",
+              "src": "assets/img/casos/valtre/6c7a8bcd6d-640.webp",
+              "full": "assets/img/casos/valtre/6c7a8bcd6d-1200.webp",
+              "width": 640,
+              "height": 293,
+              "alt": "Logotipos: Valtre Logo Monocromo",
+              "tone": "dark"
+            },
+            {
+              "id": "78cc48dfa5",
+              "src": "assets/img/casos/valtre/78cc48dfa5-640.webp",
+              "full": "assets/img/casos/valtre/78cc48dfa5-1200.webp",
+              "width": 640,
+              "height": 293,
+              "alt": "Logotipos: Valtre Logo RGB Blanco",
+              "tone": "light"
+            },
+            {
+              "id": "83d9b66703",
+              "src": "assets/img/casos/valtre/83d9b66703-640.webp",
+              "full": "assets/img/casos/valtre/83d9b66703-1200.webp",
+              "width": 640,
+              "height": 292,
+              "alt": "Logotipos: Valtre Logo RGB New",
+              "tone": "dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "comercial",
+      "title": "Comercial",
+      "eyebrow": "una hoja por centro",
+      "text": [
+        "Diseñé los brochures y una one-page por cada Centro de Excelencia, para que el equipo comercial pudiera explicar cada servicio en una sola hoja."
+      ],
+      "groups": [
+        {
+          "kind": "disenos",
+          "topic": "Brochures y one-pages",
+          "items": [
+            {
+              "id": "1f64d475aa",
+              "src": "assets/img/casos/valtre/1f64d475aa-640.webp",
+              "full": "assets/img/casos/valtre/1f64d475aa-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Brochures y one-pages",
+              "caption": "Brochure con el mapa de servicios de los Centros de Excelencia"
+            },
+            {
+              "id": "9ce05b66d6",
+              "src": "assets/img/casos/valtre/9ce05b66d6-640.webp",
+              "full": "assets/img/casos/valtre/9ce05b66d6-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page General"
+            },
+            {
+              "id": "099079255f",
+              "src": "assets/img/casos/valtre/099079255f-640.webp",
+              "full": "assets/img/casos/valtre/099079255f-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page ITSM & Governance New Client"
+            },
+            {
+              "id": "18dd64756c",
+              "src": "assets/img/casos/valtre/18dd64756c-640.webp",
+              "full": "assets/img/casos/valtre/18dd64756c-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page ITSM & Governance Old Client"
+            },
+            {
+              "id": "aa2b3b237b",
+              "src": "assets/img/casos/valtre/aa2b3b237b-640.webp",
+              "full": "assets/img/casos/valtre/aa2b3b237b-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page ITSM & Governance Old Client"
+            },
+            {
+              "id": "f3c595057b",
+              "src": "assets/img/casos/valtre/f3c595057b-640.webp",
+              "full": "assets/img/casos/valtre/f3c595057b-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Middleware, Data & Analytics New Client"
+            },
+            {
+              "id": "772d23eae9",
+              "src": "assets/img/casos/valtre/772d23eae9-640.webp",
+              "full": "assets/img/casos/valtre/772d23eae9-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Middleware, Data & Analytics Old Client"
+            },
+            {
+              "id": "c23ed13829",
+              "src": "assets/img/casos/valtre/c23ed13829-640.webp",
+              "full": "assets/img/casos/valtre/c23ed13829-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Middleware, Data & Analytics Old Client"
+            },
+            {
+              "id": "27138da32e",
+              "src": "assets/img/casos/valtre/27138da32e-640.webp",
+              "full": "assets/img/casos/valtre/27138da32e-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Project Delivery New Client"
+            },
+            {
+              "id": "23fb4a4f30",
+              "src": "assets/img/casos/valtre/23fb4a4f30-640.webp",
+              "full": "assets/img/casos/valtre/23fb4a4f30-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Project Delivery Old Client"
+            },
+            {
+              "id": "63f7499b55",
+              "src": "assets/img/casos/valtre/63f7499b55-640.webp",
+              "full": "assets/img/casos/valtre/63f7499b55-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Project Delivery Old Client"
+            },
+            {
+              "id": "b80f1f6b98",
+              "src": "assets/img/casos/valtre/b80f1f6b98-640.webp",
+              "full": "assets/img/casos/valtre/b80f1f6b98-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Quality Assurance New Client"
+            },
+            {
+              "id": "3c55fd29cb",
+              "src": "assets/img/casos/valtre/3c55fd29cb-640.webp",
+              "full": "assets/img/casos/valtre/3c55fd29cb-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Quality Assurance Old Client"
+            },
+            {
+              "id": "bcc81f9afe",
+              "src": "assets/img/casos/valtre/bcc81f9afe-640.webp",
+              "full": "assets/img/casos/valtre/bcc81f9afe-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Quality Assurance Old Client"
+            },
+            {
+              "id": "7c39d715fb",
+              "src": "assets/img/casos/valtre/7c39d715fb-640.webp",
+              "full": "assets/img/casos/valtre/7c39d715fb-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Software Development Solutions New Client"
+            },
+            {
+              "id": "af4a01d57f",
+              "src": "assets/img/casos/valtre/af4a01d57f-640.webp",
+              "full": "assets/img/casos/valtre/af4a01d57f-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Software Development Solutions Old Client"
+            },
+            {
+              "id": "04419f66f3",
+              "src": "assets/img/casos/valtre/04419f66f3-640.webp",
+              "full": "assets/img/casos/valtre/04419f66f3-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Brochures y one-pages: Valtre One Page Software Development Solutions Old Client"
+            },
+            {
+              "id": "074321cca5",
+              "src": "assets/img/casos/valtre/074321cca5-640.webp",
+              "full": "assets/img/casos/valtre/074321cca5-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Brochures y one-pages: Valtre y Axtel agradecimiento de confianza ! !"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eventos",
+      "title": "Eventos y contenido",
+      "eyebrow": "del stand a la pantalla",
+      "text": [
+        "Cada mes armé la parrilla de contenido para redes y las piezas de los eventos: la Masterclass de Product Management, iTransform y otros encuentros con clientes.",
+        "Parte de ese contenido lo produje con IA generativa, para acelerar conceptos y videos sin perder la línea de la marca."
+      ],
+      "groups": [
+        {
+          "kind": "publicaciones",
+          "topic": "Parrillas de contenido",
+          "items": [
+            {
+              "id": "f5bdec9d31",
+              "src": "assets/img/casos/valtre/f5bdec9d31-640.webp",
+              "full": "assets/img/casos/valtre/f5bdec9d31-1200.webp",
+              "width": 640,
+              "height": 717,
+              "alt": "Parrillas de contenido: brave screenshot valtre.com (4)"
+            },
+            {
+              "id": "42e2c1e8a2",
+              "src": "assets/img/casos/valtre/42e2c1e8a2-640.webp",
+              "full": "assets/img/casos/valtre/42e2c1e8a2-1200.webp",
+              "width": 361,
+              "height": 737,
+              "alt": "Parrillas de contenido: brave screenshot valtre.com (5)"
+            },
+            {
+              "id": "b5b7e7d6aa",
+              "src": "assets/img/casos/valtre/b5b7e7d6aa-640.webp",
+              "full": "assets/img/casos/valtre/b5b7e7d6aa-1200.webp",
+              "width": 640,
+              "height": 306,
+              "alt": "Parrillas de contenido: brave screenshot valtre.com"
+            },
+            {
+              "id": "48f59b8861",
+              "src": "assets/img/casos/valtre/48f59b8861-640.webp",
+              "full": "assets/img/casos/valtre/48f59b8861-1200.webp",
+              "width": 640,
+              "height": 370,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "84f928aaa6",
+              "src": "assets/img/casos/valtre/84f928aaa6-640.webp",
+              "full": "assets/img/casos/valtre/84f928aaa6-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "b7c47d7bf3",
+              "src": "assets/img/casos/valtre/b7c47d7bf3-640.webp",
+              "full": "assets/img/casos/valtre/b7c47d7bf3-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "fbb0d19fca",
+              "src": "assets/img/casos/valtre/fbb0d19fca-640.webp",
+              "full": "assets/img/casos/valtre/fbb0d19fca-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "addda48c51",
+              "src": "assets/img/casos/valtre/addda48c51-640.webp",
+              "full": "assets/img/casos/valtre/addda48c51-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "e2c44fe9b1",
+              "src": "assets/img/casos/valtre/e2c44fe9b1-640.webp",
+              "full": "assets/img/casos/valtre/e2c44fe9b1-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "189901120e",
+              "src": "assets/img/casos/valtre/189901120e-640.webp",
+              "full": "assets/img/casos/valtre/189901120e-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "ce9087ef15",
+              "src": "assets/img/casos/valtre/ce9087ef15-640.webp",
+              "full": "assets/img/casos/valtre/ce9087ef15-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "17e5d1f838",
+              "src": "assets/img/casos/valtre/17e5d1f838-640.webp",
+              "full": "assets/img/casos/valtre/17e5d1f838-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "0fba469a79",
+              "src": "assets/img/casos/valtre/0fba469a79-640.webp",
+              "full": "assets/img/casos/valtre/0fba469a79-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "0fe35ab49d",
+              "src": "assets/img/casos/valtre/0fe35ab49d-640.webp",
+              "full": "assets/img/casos/valtre/0fe35ab49d-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "d4e187c9fc",
+              "src": "assets/img/casos/valtre/d4e187c9fc-640.webp",
+              "full": "assets/img/casos/valtre/d4e187c9fc-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "a9cbb24a29",
+              "src": "assets/img/casos/valtre/a9cbb24a29-640.webp",
+              "full": "assets/img/casos/valtre/a9cbb24a29-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "da4192840e",
+              "src": "assets/img/casos/valtre/da4192840e-640.webp",
+              "full": "assets/img/casos/valtre/da4192840e-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "9826c16716",
+              "src": "assets/img/casos/valtre/9826c16716-640.webp",
+              "full": "assets/img/casos/valtre/9826c16716-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "0d9c2f93ee",
+              "src": "assets/img/casos/valtre/0d9c2f93ee-640.webp",
+              "full": "assets/img/casos/valtre/0d9c2f93ee-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "f19396e446",
+              "src": "assets/img/casos/valtre/f19396e446-640.webp",
+              "full": "assets/img/casos/valtre/f19396e446-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "8c13827245",
+              "src": "assets/img/casos/valtre/8c13827245-640.webp",
+              "full": "assets/img/casos/valtre/8c13827245-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "faf51f9146",
+              "src": "assets/img/casos/valtre/faf51f9146-640.webp",
+              "full": "assets/img/casos/valtre/faf51f9146-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "102b94cc51",
+              "src": "assets/img/casos/valtre/102b94cc51-640.webp",
+              "full": "assets/img/casos/valtre/102b94cc51-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "1b618eaff3",
+              "src": "assets/img/casos/valtre/1b618eaff3-640.webp",
+              "full": "assets/img/casos/valtre/1b618eaff3-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "f38df468ee",
+              "src": "assets/img/casos/valtre/f38df468ee-640.webp",
+              "full": "assets/img/casos/valtre/f38df468ee-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "77ab0415a8",
+              "src": "assets/img/casos/valtre/77ab0415a8-640.webp",
+              "full": "assets/img/casos/valtre/77ab0415a8-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "11c7ff50da",
+              "src": "assets/img/casos/valtre/11c7ff50da-640.webp",
+              "full": "assets/img/casos/valtre/11c7ff50da-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Álbum de Facebook"
+            },
+            {
+              "id": "6bbcd00d04",
+              "src": "assets/img/casos/valtre/6bbcd00d04-640.webp",
+              "full": "assets/img/casos/valtre/6bbcd00d04-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Banner Invitación Product Managment RSVP"
+            },
+            {
+              "id": "d9271ad627",
+              "src": "assets/img/casos/valtre/d9271ad627-640.webp",
+              "full": "assets/img/casos/valtre/d9271ad627-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Parrillas de contenido: Banner Invitación Product Managment Storie RVSP"
+            },
+            {
+              "id": "973a6ab078",
+              "src": "assets/img/casos/valtre/973a6ab078-640.webp",
+              "full": "assets/img/casos/valtre/973a6ab078-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Banner Invitación Product Managment"
+            },
+            {
+              "id": "e66d47e708",
+              "src": "assets/img/casos/valtre/e66d47e708-640.webp",
+              "full": "assets/img/casos/valtre/e66d47e708-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Blog Solo"
+            },
+            {
+              "id": "932ef0f80c",
+              "src": "assets/img/casos/valtre/932ef0f80c-640.webp",
+              "full": "assets/img/casos/valtre/932ef0f80c-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Blog"
+            },
+            {
+              "id": "fcc4dbdc02",
+              "src": "assets/img/casos/valtre/fcc4dbdc02-640.webp",
+              "full": "assets/img/casos/valtre/fcc4dbdc02-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Blog Info Beneficios de PM Oaa S"
+            },
+            {
+              "id": "abb27edcba",
+              "src": "assets/img/casos/valtre/abb27edcba-640.webp",
+              "full": "assets/img/casos/valtre/abb27edcba-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Blog Info Beneficios de PM Oaa S"
+            },
+            {
+              "id": "5a2031a14d",
+              "src": "assets/img/casos/valtre/5a2031a14d-640.webp",
+              "full": "assets/img/casos/valtre/5a2031a14d-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Parrillas de contenido: Blog Info Evolución de Project Delivery"
+            },
+            {
+              "id": "5827189ae2",
+              "src": "assets/img/casos/valtre/5827189ae2-640.webp",
+              "full": "assets/img/casos/valtre/5827189ae2-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "d9dd1f3067",
+              "src": "assets/img/casos/valtre/d9dd1f3067-640.webp",
+              "full": "assets/img/casos/valtre/d9dd1f3067-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "8e7c9b5375",
+              "src": "assets/img/casos/valtre/8e7c9b5375-640.webp",
+              "full": "assets/img/casos/valtre/8e7c9b5375-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "d4848db47e",
+              "src": "assets/img/casos/valtre/d4848db47e-640.webp",
+              "full": "assets/img/casos/valtre/d4848db47e-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "58b1abb24c",
+              "src": "assets/img/casos/valtre/58b1abb24c-640.webp",
+              "full": "assets/img/casos/valtre/58b1abb24c-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "591ebb9bdc",
+              "src": "assets/img/casos/valtre/591ebb9bdc-640.webp",
+              "full": "assets/img/casos/valtre/591ebb9bdc-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "a5f909ecc0",
+              "src": "assets/img/casos/valtre/a5f909ecc0-640.webp",
+              "full": "assets/img/casos/valtre/a5f909ecc0-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "d271964d79",
+              "src": "assets/img/casos/valtre/d271964d79-640.webp",
+              "full": "assets/img/casos/valtre/d271964d79-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "1e4264fc1b",
+              "src": "assets/img/casos/valtre/1e4264fc1b-640.webp",
+              "full": "assets/img/casos/valtre/1e4264fc1b-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "a5141c3371",
+              "src": "assets/img/casos/valtre/a5141c3371-640.webp",
+              "full": "assets/img/casos/valtre/a5141c3371-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "d16dc88646",
+              "src": "assets/img/casos/valtre/d16dc88646-640.webp",
+              "full": "assets/img/casos/valtre/d16dc88646-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "d77b8d5b27",
+              "src": "assets/img/casos/valtre/d77b8d5b27-640.webp",
+              "full": "assets/img/casos/valtre/d77b8d5b27-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "573f3cd03c",
+              "src": "assets/img/casos/valtre/573f3cd03c-640.webp",
+              "full": "assets/img/casos/valtre/573f3cd03c-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "a58a684cfa",
+              "src": "assets/img/casos/valtre/a58a684cfa-640.webp",
+              "full": "assets/img/casos/valtre/a58a684cfa-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "2b46053f1e",
+              "src": "assets/img/casos/valtre/2b46053f1e-640.webp",
+              "full": "assets/img/casos/valtre/2b46053f1e-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "322effe434",
+              "src": "assets/img/casos/valtre/322effe434-640.webp",
+              "full": "assets/img/casos/valtre/322effe434-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "dd28f5a201",
+              "src": "assets/img/casos/valtre/dd28f5a201-640.webp",
+              "full": "assets/img/casos/valtre/dd28f5a201-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "e9fb723758",
+              "src": "assets/img/casos/valtre/e9fb723758-640.webp",
+              "full": "assets/img/casos/valtre/e9fb723758-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "f1d52260f2",
+              "src": "assets/img/casos/valtre/f1d52260f2-640.webp",
+              "full": "assets/img/casos/valtre/f1d52260f2-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "5e93a27b5b",
+              "src": "assets/img/casos/valtre/5e93a27b5b-640.webp",
+              "full": "assets/img/casos/valtre/5e93a27b5b-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "b6afd8962b",
+              "src": "assets/img/casos/valtre/b6afd8962b-640.webp",
+              "full": "assets/img/casos/valtre/b6afd8962b-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "8dda63af9d",
+              "src": "assets/img/casos/valtre/8dda63af9d-640.webp",
+              "full": "assets/img/casos/valtre/8dda63af9d-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "55d3f38580",
+              "src": "assets/img/casos/valtre/55d3f38580-640.webp",
+              "full": "assets/img/casos/valtre/55d3f38580-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "f0ab1d165f",
+              "src": "assets/img/casos/valtre/f0ab1d165f-640.webp",
+              "full": "assets/img/casos/valtre/f0ab1d165f-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "6acd744b38",
+              "src": "assets/img/casos/valtre/6acd744b38-640.webp",
+              "full": "assets/img/casos/valtre/6acd744b38-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "f0e8509175",
+              "src": "assets/img/casos/valtre/f0e8509175-640.webp",
+              "full": "assets/img/casos/valtre/f0e8509175-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "6a11ff0be1",
+              "src": "assets/img/casos/valtre/6a11ff0be1-640.webp",
+              "full": "assets/img/casos/valtre/6a11ff0be1-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "f34063fe5f",
+              "src": "assets/img/casos/valtre/f34063fe5f-640.webp",
+              "full": "assets/img/casos/valtre/f34063fe5f-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "a936fc388a",
+              "src": "assets/img/casos/valtre/a936fc388a-640.webp",
+              "full": "assets/img/casos/valtre/a936fc388a-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "9f468bcba0",
+              "src": "assets/img/casos/valtre/9f468bcba0-640.webp",
+              "full": "assets/img/casos/valtre/9f468bcba0-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "75f2c9f1d3",
+              "src": "assets/img/casos/valtre/75f2c9f1d3-640.webp",
+              "full": "assets/img/casos/valtre/75f2c9f1d3-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "21f2bb6de3",
+              "src": "assets/img/casos/valtre/21f2bb6de3-640.webp",
+              "full": "assets/img/casos/valtre/21f2bb6de3-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            },
+            {
+              "id": "4c63fdd3e3",
+              "src": "assets/img/casos/valtre/4c63fdd3e3-640.webp",
+              "full": "assets/img/casos/valtre/4c63fdd3e3-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Parrillas de contenido: Carrusel"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Masterclass de Product Management",
+          "items": [
+            {
+              "id": "5227fcafab",
+              "src": "assets/img/casos/valtre/5227fcafab-640.webp",
+              "full": "assets/img/casos/valtre/5227fcafab-1200.webp",
+              "width": 640,
+              "height": 495,
+              "alt": "Masterclass de Product Management",
+              "caption": "One-page: quiénes somos, cobertura en Latinoamérica y servicios"
+            },
+            {
+              "id": "09828eab36",
+              "src": "assets/img/casos/valtre/09828eab36-640.webp",
+              "full": "assets/img/casos/valtre/09828eab36-1200.webp",
+              "width": 640,
+              "height": 495,
+              "alt": "Masterclass de Product Management",
+              "caption": "Propuesta «Tu partner TI con velocidad de negocio»: primer paso con un assessment"
+            },
+            {
+              "id": "3685f6fdeb",
+              "src": "assets/img/casos/valtre/3685f6fdeb-640.webp",
+              "full": "assets/img/casos/valtre/3685f6fdeb-1200.webp",
+              "width": 640,
+              "height": 1600,
+              "alt": "Masterclass de Product Management: Roll Up Valtre Servicios"
+            },
+            {
+              "id": "dab9a48a83",
+              "src": "assets/img/casos/valtre/dab9a48a83-640.webp",
+              "full": "assets/img/casos/valtre/dab9a48a83-1200.webp",
+              "width": 414,
+              "height": 463,
+              "alt": "Masterclass de Product Management: Coffee"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Eventos con clientes",
+          "items": [
+            {
+              "id": "d9a749fda9",
+              "src": "assets/img/casos/valtre/d9a749fda9-640.webp",
+              "full": "assets/img/casos/valtre/d9a749fda9-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "bf8139d403",
+              "src": "assets/img/casos/valtre/bf8139d403-640.webp",
+              "full": "assets/img/casos/valtre/bf8139d403-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "486a2350b9",
+              "src": "assets/img/casos/valtre/486a2350b9-640.webp",
+              "full": "assets/img/casos/valtre/486a2350b9-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "41b7db2b68",
+              "src": "assets/img/casos/valtre/41b7db2b68-640.webp",
+              "full": "assets/img/casos/valtre/41b7db2b68-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "b57a27c3b9",
+              "src": "assets/img/casos/valtre/b57a27c3b9-640.webp",
+              "full": "assets/img/casos/valtre/b57a27c3b9-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "f3db441201",
+              "src": "assets/img/casos/valtre/f3db441201-640.webp",
+              "full": "assets/img/casos/valtre/f3db441201-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "3e5da663cc",
+              "src": "assets/img/casos/valtre/3e5da663cc-640.webp",
+              "full": "assets/img/casos/valtre/3e5da663cc-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "8c86486d1a",
+              "src": "assets/img/casos/valtre/8c86486d1a-640.webp",
+              "full": "assets/img/casos/valtre/8c86486d1a-1200.webp",
+              "width": 640,
+              "height": 426,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "60ba801f40",
+              "src": "assets/img/casos/valtre/60ba801f40-640.webp",
+              "full": "assets/img/casos/valtre/60ba801f40-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "b65c50b9b8",
+              "src": "assets/img/casos/valtre/b65c50b9b8-640.webp",
+              "full": "assets/img/casos/valtre/b65c50b9b8-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Eventos con clientes: IT Xignux"
+            },
+            {
+              "id": "7175d12b1b",
+              "src": "assets/img/casos/valtre/7175d12b1b-640.webp",
+              "full": "assets/img/casos/valtre/7175d12b1b-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Eventos con clientes: Montaje de Ejemplos"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Diseños de marketing",
+          "items": [
+            {
+              "id": "841eebecab",
+              "src": "assets/img/casos/valtre/841eebecab-640.webp",
+              "full": "assets/img/casos/valtre/841eebecab-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Webinar Cloud Integration"
+            },
+            {
+              "id": "41eed7d6cd",
+              "src": "assets/img/casos/valtre/41eed7d6cd-640.webp",
+              "full": "assets/img/casos/valtre/41eed7d6cd-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Coustomer Stories"
+            },
+            {
+              "id": "277750e743",
+              "src": "assets/img/casos/valtre/277750e743-640.webp",
+              "full": "assets/img/casos/valtre/277750e743-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Coustomer Stories"
+            },
+            {
+              "id": "dd625ce130",
+              "src": "assets/img/casos/valtre/dd625ce130-640.webp",
+              "full": "assets/img/casos/valtre/dd625ce130-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Coustomer Stories"
+            },
+            {
+              "id": "b328c344a7",
+              "src": "assets/img/casos/valtre/b328c344a7-640.webp",
+              "full": "assets/img/casos/valtre/b328c344a7-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Coustomer Stories"
+            },
+            {
+              "id": "6a061cb9a5",
+              "src": "assets/img/casos/valtre/6a061cb9a5-640.webp",
+              "full": "assets/img/casos/valtre/6a061cb9a5-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Webinar"
+            },
+            {
+              "id": "fd37bcb8bc",
+              "src": "assets/img/casos/valtre/fd37bcb8bc-640.webp",
+              "full": "assets/img/casos/valtre/fd37bcb8bc-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Webinar2"
+            },
+            {
+              "id": "b269340fe1",
+              "src": "assets/img/casos/valtre/b269340fe1-640.webp",
+              "full": "assets/img/casos/valtre/b269340fe1-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Webinar3"
+            },
+            {
+              "id": "269eedb9f1",
+              "src": "assets/img/casos/valtre/269eedb9f1-640.webp",
+              "full": "assets/img/casos/valtre/269eedb9f1-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Diseños de marketing: Valtre y Pasa Invitación"
+            },
+            {
+              "id": "4abcbab153",
+              "src": "assets/img/casos/valtre/4abcbab153-640.webp",
+              "full": "assets/img/casos/valtre/4abcbab153-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Diseños de marketing: Valtre y Pasa Invitación"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Transformación digital",
+          "items": [
+            {
+              "id": "ca5993d9d4",
+              "src": "assets/img/casos/valtre/ca5993d9d4-640.webp",
+              "full": "assets/img/casos/valtre/ca5993d9d4-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Auto Fab IA"
+            },
+            {
+              "id": "8ba890f984",
+              "src": "assets/img/casos/valtre/8ba890f984-640.webp",
+              "full": "assets/img/casos/valtre/8ba890f984-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Auto Fab IA"
+            },
+            {
+              "id": "8e490f7624",
+              "src": "assets/img/casos/valtre/8e490f7624-640.webp",
+              "full": "assets/img/casos/valtre/8e490f7624-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Auto Fab IA"
+            },
+            {
+              "id": "64ad3c52a1",
+              "src": "assets/img/casos/valtre/64ad3c52a1-640.webp",
+              "full": "assets/img/casos/valtre/64ad3c52a1-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Auto Fab IA"
+            },
+            {
+              "id": "347ffd97f4",
+              "src": "assets/img/casos/valtre/347ffd97f4-640.webp",
+              "full": "assets/img/casos/valtre/347ffd97f4-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Carrusel IA"
+            },
+            {
+              "id": "1b987f7ac8",
+              "src": "assets/img/casos/valtre/1b987f7ac8-640.webp",
+              "full": "assets/img/casos/valtre/1b987f7ac8-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Carrusel IA"
+            },
+            {
+              "id": "d103ad29e3",
+              "src": "assets/img/casos/valtre/d103ad29e3-640.webp",
+              "full": "assets/img/casos/valtre/d103ad29e3-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Carrusel IA"
+            },
+            {
+              "id": "9605a5e2df",
+              "src": "assets/img/casos/valtre/9605a5e2df-640.webp",
+              "full": "assets/img/casos/valtre/9605a5e2df-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Carrusel IA"
+            },
+            {
+              "id": "bcfb184d06",
+              "src": "assets/img/casos/valtre/bcfb184d06-640.webp",
+              "full": "assets/img/casos/valtre/bcfb184d06-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Carrusel IA"
+            },
+            {
+              "id": "65f5dd87cd",
+              "src": "assets/img/casos/valtre/65f5dd87cd-640.webp",
+              "full": "assets/img/casos/valtre/65f5dd87cd-1200.webp",
+              "width": 640,
+              "height": 936,
+              "alt": "Transformación digital: End to End Mailing"
+            },
+            {
+              "id": "35dbf3bc97",
+              "src": "assets/img/casos/valtre/35dbf3bc97-640.webp",
+              "full": "assets/img/casos/valtre/35dbf3bc97-1200.webp",
+              "width": 640,
+              "height": 936,
+              "alt": "Transformación digital: End to End Mailing"
+            },
+            {
+              "id": "9d942d7ad8",
+              "src": "assets/img/casos/valtre/9d942d7ad8-640.webp",
+              "full": "assets/img/casos/valtre/9d942d7ad8-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: ERP Implementación"
+            },
+            {
+              "id": "5ed7aa6572",
+              "src": "assets/img/casos/valtre/5ed7aa6572-640.webp",
+              "full": "assets/img/casos/valtre/5ed7aa6572-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: ERP Implementación"
+            },
+            {
+              "id": "3cec4efb35",
+              "src": "assets/img/casos/valtre/3cec4efb35-640.webp",
+              "full": "assets/img/casos/valtre/3cec4efb35-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: ERP Implementación"
+            },
+            {
+              "id": "475c414d69",
+              "src": "assets/img/casos/valtre/475c414d69-640.webp",
+              "full": "assets/img/casos/valtre/475c414d69-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: ERP Implementación"
+            },
+            {
+              "id": "4d2e65d3bc",
+              "src": "assets/img/casos/valtre/4d2e65d3bc-640.webp",
+              "full": "assets/img/casos/valtre/4d2e65d3bc-1200.webp",
+              "width": 640,
+              "height": 936,
+              "alt": "Transformación digital: Fábrica de Software Mailing"
+            },
+            {
+              "id": "fafb2a76c9",
+              "src": "assets/img/casos/valtre/fafb2a76c9-640.webp",
+              "full": "assets/img/casos/valtre/fafb2a76c9-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Project Delivery LATAM"
+            },
+            {
+              "id": "71ff862e68",
+              "src": "assets/img/casos/valtre/71ff862e68-640.webp",
+              "full": "assets/img/casos/valtre/71ff862e68-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Project Delivery LATAM"
+            },
+            {
+              "id": "a083876a97",
+              "src": "assets/img/casos/valtre/a083876a97-640.webp",
+              "full": "assets/img/casos/valtre/a083876a97-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Project Delivery LATAM"
+            },
+            {
+              "id": "4175060585",
+              "src": "assets/img/casos/valtre/4175060585-640.webp",
+              "full": "assets/img/casos/valtre/4175060585-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Project Delivery LATAM"
+            },
+            {
+              "id": "82fc13f351",
+              "src": "assets/img/casos/valtre/82fc13f351-640.webp",
+              "full": "assets/img/casos/valtre/82fc13f351-1200.webp",
+              "width": 640,
+              "height": 936,
+              "alt": "Transformación digital: Servicio Administrado Mailing"
+            },
+            {
+              "id": "e20ae8a851",
+              "src": "assets/img/casos/valtre/e20ae8a851-640.webp",
+              "full": "assets/img/casos/valtre/e20ae8a851-1200.webp",
+              "width": 640,
+              "height": 936,
+              "alt": "Transformación digital: Servicio Administrado Mailing"
+            },
+            {
+              "id": "eeae835e08",
+              "src": "assets/img/casos/valtre/eeae835e08-640.webp",
+              "full": "assets/img/casos/valtre/eeae835e08-1200.webp",
+              "width": 640,
+              "height": 936,
+              "alt": "Transformación digital: Servicio Especializado Mailing"
+            },
+            {
+              "id": "6bc77923b9",
+              "src": "assets/img/casos/valtre/6bc77923b9-640.webp",
+              "full": "assets/img/casos/valtre/6bc77923b9-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Servicio Especializado Mailing"
+            },
+            {
+              "id": "9369ea7241",
+              "src": "assets/img/casos/valtre/9369ea7241-640.webp",
+              "full": "assets/img/casos/valtre/9369ea7241-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Transformación digital: Servicio Especializado Mailing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valkyria",
+      "title": "VALKYRIA",
+      "eyebrow": "un agente de IA para QA",
+      "text": [
+        "VALKYRIA es un agente de IA diseñado para optimizar el ciclo de QA: crea scripts de automatización y matrices de pruebas, y evalúa historias de usuario.",
+        "Le di identidad, una hoja de una página y su campaña. Las imágenes de la campaña están creadas con IA generativa. La idea que resume el proyecto: la IA no sustituye al tester, lo potencia."
+      ],
+      "groups": [
+        {
+          "kind": "logos",
+          "topic": "Logotipo de VALKYRIA",
+          "items": [
+            {
+              "id": "00631fb5f9",
+              "src": "assets/img/casos/valtre/00631fb5f9-640.webp",
+              "full": "assets/img/casos/valtre/00631fb5f9-1200.webp",
+              "width": 640,
+              "height": 76,
+              "alt": "Logotipo de VALKYRIA: V VALKYRIA by Valtre",
+              "tone": "light"
+            },
+            {
+              "id": "030ee5eb3c",
+              "src": "assets/img/casos/valtre/030ee5eb3c-640.webp",
+              "full": "assets/img/casos/valtre/030ee5eb3c-1200.webp",
+              "width": 640,
+              "height": 67,
+              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo",
+              "tone": "light"
+            },
+            {
+              "id": "c050412795",
+              "src": "assets/img/casos/valtre/c050412795-640.webp",
+              "full": "assets/img/casos/valtre/c050412795-1200.webp",
+              "width": 640,
+              "height": 452,
+              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo On Dark",
+              "tone": "light"
+            },
+            {
+              "id": "00828aeb91",
+              "src": "assets/img/casos/valtre/00828aeb91-640.webp",
+              "full": "assets/img/casos/valtre/00828aeb91-1200.webp",
+              "width": 640,
+              "height": 452,
+              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo On Light"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Identidad y hoja de una página",
+          "items": [
+            {
+              "id": "306df445ef",
+              "src": "assets/img/casos/valtre/306df445ef-640.webp",
+              "full": "assets/img/casos/valtre/306df445ef-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: AI Business"
+            },
+            {
+              "id": "0e5402e942",
+              "src": "assets/img/casos/valtre/0e5402e942-640.webp",
+              "full": "assets/img/casos/valtre/0e5402e942-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: AI Business"
+            },
+            {
+              "id": "89ce9d221a",
+              "src": "assets/img/casos/valtre/89ce9d221a-640.webp",
+              "full": "assets/img/casos/valtre/89ce9d221a-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: CI CD"
+            },
+            {
+              "id": "bf0460cf9d",
+              "src": "assets/img/casos/valtre/bf0460cf9d-640.webp",
+              "full": "assets/img/casos/valtre/bf0460cf9d-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: CI CD"
+            },
+            {
+              "id": "84ca92792f",
+              "src": "assets/img/casos/valtre/84ca92792f-640.webp",
+              "full": "assets/img/casos/valtre/84ca92792f-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Identidad y hoja de una página: Cybernetic Woman Working"
+            },
+            {
+              "id": "824d3b32a6",
+              "src": "assets/img/casos/valtre/824d3b32a6-640.webp",
+              "full": "assets/img/casos/valtre/824d3b32a6-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Identidad y hoja de una página: Futuristic Woman Portrait"
+            },
+            {
+              "id": "879f30c36f",
+              "src": "assets/img/casos/valtre/879f30c36f-640.webp",
+              "full": "assets/img/casos/valtre/879f30c36f-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Identidad y hoja de una página: Futuristic Woman Portrait"
+            },
+            {
+              "id": "67f56d971d",
+              "src": "assets/img/casos/valtre/67f56d971d-640.webp",
+              "full": "assets/img/casos/valtre/67f56d971d-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: human + AI"
+            },
+            {
+              "id": "6e95faaa37",
+              "src": "assets/img/casos/valtre/6e95faaa37-640.webp",
+              "full": "assets/img/casos/valtre/6e95faaa37-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: human + AI"
+            },
+            {
+              "id": "10c933374f",
+              "src": "assets/img/casos/valtre/10c933374f-640.webp",
+              "full": "assets/img/casos/valtre/10c933374f-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: human + AI"
+            },
+            {
+              "id": "5254dd7e66",
+              "src": "assets/img/casos/valtre/5254dd7e66-640.webp",
+              "full": "assets/img/casos/valtre/5254dd7e66-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: laptop mockup 1 + AI"
+            },
+            {
+              "id": "38af5e6df0",
+              "src": "assets/img/casos/valtre/38af5e6df0-640.webp",
+              "full": "assets/img/casos/valtre/38af5e6df0-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "ff41aa39aa",
+              "src": "assets/img/casos/valtre/ff41aa39aa-640.webp",
+              "full": "assets/img/casos/valtre/ff41aa39aa-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "217e214dd6",
+              "src": "assets/img/casos/valtre/217e214dd6-640.webp",
+              "full": "assets/img/casos/valtre/217e214dd6-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "2e27deaaeb",
+              "src": "assets/img/casos/valtre/2e27deaaeb-640.webp",
+              "full": "assets/img/casos/valtre/2e27deaaeb-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "305935dc30",
+              "src": "assets/img/casos/valtre/305935dc30-640.webp",
+              "full": "assets/img/casos/valtre/305935dc30-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "307e9c630c",
+              "src": "assets/img/casos/valtre/307e9c630c-640.webp",
+              "full": "assets/img/casos/valtre/307e9c630c-1200.webp",
+              "width": 640,
+              "height": 309,
+              "alt": "Identidad y hoja de una página: Cobertura"
+            },
+            {
+              "id": "575c90f0a9",
+              "src": "assets/img/casos/valtre/575c90f0a9-640.webp",
+              "full": "assets/img/casos/valtre/575c90f0a9-1200.webp",
+              "width": 640,
+              "height": 265,
+              "alt": "Identidad y hoja de una página: V Optimizar"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Campaña de lanzamiento",
+          "ai": true,
+          "items": [
+            {
+              "id": "88c6cb0d12",
+              "src": "assets/img/casos/valtre/88c6cb0d12-640.webp",
+              "full": "assets/img/casos/valtre/88c6cb0d12-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: download (1)"
+            },
+            {
+              "id": "db26f5ef9a",
+              "src": "assets/img/casos/valtre/db26f5ef9a-640.webp",
+              "full": "assets/img/casos/valtre/db26f5ef9a-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: download"
+            },
+            {
+              "id": "fdbd8dbc25",
+              "src": "assets/img/casos/valtre/fdbd8dbc25-640.webp",
+              "full": "assets/img/casos/valtre/fdbd8dbc25-1200.webp",
+              "width": 640,
+              "height": 801,
+              "alt": "Campaña de lanzamiento",
+              "caption": "QA manual contra QA con IA: «¿Cuál crees que detecta más errores?»"
+            },
+            {
+              "id": "b330e8aac5",
+              "src": "assets/img/casos/valtre/b330e8aac5-640.webp",
+              "full": "assets/img/casos/valtre/b330e8aac5-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "5b247c2cc3",
+              "src": "assets/img/casos/valtre/5b247c2cc3-640.webp",
+              "full": "assets/img/casos/valtre/5b247c2cc3-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "144c8e9365",
+              "src": "assets/img/casos/valtre/144c8e9365-640.webp",
+              "full": "assets/img/casos/valtre/144c8e9365-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "7cf59d529b",
+              "src": "assets/img/casos/valtre/7cf59d529b-640.webp",
+              "full": "assets/img/casos/valtre/7cf59d529b-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "b8c8b1973d",
+              "src": "assets/img/casos/valtre/b8c8b1973d-640.webp",
+              "full": "assets/img/casos/valtre/b8c8b1973d-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "679b964ac0",
+              "src": "assets/img/casos/valtre/679b964ac0-640.webp",
+              "full": "assets/img/casos/valtre/679b964ac0-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "4170ab883d",
+              "src": "assets/img/casos/valtre/4170ab883d-640.webp",
+              "full": "assets/img/casos/valtre/4170ab883d-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 Left Jab"
+            },
+            {
+              "id": "a1e8477ff7",
+              "src": "assets/img/casos/valtre/a1e8477ff7-640.webp",
+              "full": "assets/img/casos/valtre/a1e8477ff7-1200.webp",
+              "width": 640,
+              "height": 366,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 Left Jab"
+            },
+            {
+              "id": "92fd50db04",
+              "src": "assets/img/casos/valtre/92fd50db04-640.webp",
+              "full": "assets/img/casos/valtre/92fd50db04-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 No BG"
+            },
+            {
+              "id": "ec2521bb6e",
+              "src": "assets/img/casos/valtre/ec2521bb6e-640.webp",
+              "full": "assets/img/casos/valtre/ec2521bb6e-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "34c00d5c69",
+              "src": "assets/img/casos/valtre/34c00d5c69-640.webp",
+              "full": "assets/img/casos/valtre/34c00d5c69-1200.webp",
+              "width": 640,
+              "height": 753,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 3 No Rain Extended"
+            },
+            {
+              "id": "3786d29b21",
+              "src": "assets/img/casos/valtre/3786d29b21-640.webp",
+              "full": "assets/img/casos/valtre/3786d29b21-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "2cc2c13a40",
+              "src": "assets/img/casos/valtre/2cc2c13a40-640.webp",
+              "full": "assets/img/casos/valtre/2cc2c13a40-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "01840ce073",
+              "src": "assets/img/casos/valtre/01840ce073-640.webp",
+              "full": "assets/img/casos/valtre/01840ce073-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "e8637cdf48",
+              "src": "assets/img/casos/valtre/e8637cdf48-640.webp",
+              "full": "assets/img/casos/valtre/e8637cdf48-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Automat Engineer 1 no bg"
+            },
+            {
+              "id": "79257ac476",
+              "src": "assets/img/casos/valtre/79257ac476-640.webp",
+              "full": "assets/img/casos/valtre/79257ac476-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Automat Engineer"
+            },
+            {
+              "id": "8562059e79",
+              "src": "assets/img/casos/valtre/8562059e79-640.webp",
+              "full": "assets/img/casos/valtre/8562059e79-1200.webp",
+              "width": 640,
+              "height": 774,
+              "alt": "Campaña de lanzamiento: QA DG Sparring"
+            },
+            {
+              "id": "27569d8700",
+              "src": "assets/img/casos/valtre/27569d8700-640.webp",
+              "full": "assets/img/casos/valtre/27569d8700-1200.webp",
+              "width": 640,
+              "height": 959,
+              "alt": "Campaña de lanzamiento: QA Engineer 1 No BG"
+            },
+            {
+              "id": "e49cda13fc",
+              "src": "assets/img/casos/valtre/e49cda13fc-640.webp",
+              "full": "assets/img/casos/valtre/e49cda13fc-1200.webp",
+              "width": 640,
+              "height": 959,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "c4f0b64796",
+              "src": "assets/img/casos/valtre/c4f0b64796-640.webp",
+              "full": "assets/img/casos/valtre/c4f0b64796-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "d5eb0c1e06",
+              "src": "assets/img/casos/valtre/d5eb0c1e06-640.webp",
+              "full": "assets/img/casos/valtre/d5eb0c1e06-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "f73d60f29c",
+              "src": "assets/img/casos/valtre/f73d60f29c-640.webp",
+              "full": "assets/img/casos/valtre/f73d60f29c-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "43e02caa48",
+              "src": "assets/img/casos/valtre/43e02caa48-640.webp",
+              "full": "assets/img/casos/valtre/43e02caa48-1200.webp",
+              "width": 640,
+              "height": 780,
+              "alt": "Campaña de lanzamiento: QA Engineer 5 no bg"
+            },
+            {
+              "id": "e7e88af6eb",
+              "src": "assets/img/casos/valtre/e7e88af6eb-640.webp",
+              "full": "assets/img/casos/valtre/e7e88af6eb-1200.webp",
+              "width": 640,
+              "height": 780,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "1e8a3672cc",
+              "src": "assets/img/casos/valtre/1e8a3672cc-640.webp",
+              "full": "assets/img/casos/valtre/1e8a3672cc-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA World"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Imágenes de apoyo",
+          "ai": true,
+          "items": [
+            {
+              "id": "01c440b0f1",
+              "src": "assets/img/casos/valtre/01c440b0f1-640.webp",
+              "full": "assets/img/casos/valtre/01c440b0f1-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Imágenes de apoyo: Cluster"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "Lo que hace VALKYRIA",
+          "items": [
+            {
+              "id": "2c5bf1697e",
+              "src": "assets/img/casos/valtre/2c5bf1697e-icon.webp",
+              "full": "assets/img/casos/valtre/2c5bf1697e-icon.webp",
+              "width": 256,
+              "height": 217,
+              "alt": "Lo que hace VALKYRIA: 50 de reducción"
+            },
+            {
+              "id": "314f8816ce",
+              "src": "assets/img/casos/valtre/314f8816ce.svg",
+              "full": "assets/img/casos/valtre/314f8816ce.svg",
+              "width": 245,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 1 Scripts"
+            },
+            {
+              "id": "4c30f328b0",
+              "src": "assets/img/casos/valtre/4c30f328b0.svg",
+              "full": "assets/img/casos/valtre/4c30f328b0.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 2 Matrices"
+            },
+            {
+              "id": "871d6df7a9",
+              "src": "assets/img/casos/valtre/871d6df7a9.svg",
+              "full": "assets/img/casos/valtre/871d6df7a9.svg",
+              "width": 196,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 3 YAML"
+            },
+            {
+              "id": "720fe69b15",
+              "src": "assets/img/casos/valtre/720fe69b15.svg",
+              "full": "assets/img/casos/valtre/720fe69b15.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 4 H Us"
+            },
+            {
+              "id": "618aab8b76",
+              "src": "assets/img/casos/valtre/618aab8b76.svg",
+              "full": "assets/img/casos/valtre/618aab8b76.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 5 Divide H Us"
+            },
+            {
+              "id": "45768ede73",
+              "src": "assets/img/casos/valtre/45768ede73.svg",
+              "full": "assets/img/casos/valtre/45768ede73.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 6 ecomendaciones"
+            },
+            {
+              "id": "b3fe345f68",
+              "src": "assets/img/casos/valtre/b3fe345f68.svg",
+              "full": "assets/img/casos/valtre/b3fe345f68.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 7 INVEST"
+            },
+            {
+              "id": "e72edc5b2f",
+              "src": "assets/img/casos/valtre/e72edc5b2f.svg",
+              "full": "assets/img/casos/valtre/e72edc5b2f.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 8 Identifica riesgos"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "images": [
+      {
+        "id": "306df445ef",
+        "src": "assets/img/casos/valtre/306df445ef-640.webp",
+        "full": "assets/img/casos/valtre/306df445ef-1200.webp",
+        "width": 640,
+        "height": 359
+      },
+      {
+        "id": "6e95faaa37",
+        "src": "assets/img/casos/valtre/6e95faaa37-640.webp",
+        "full": "assets/img/casos/valtre/6e95faaa37-1200.webp",
+        "width": 640,
+        "height": 359
+      },
+      {
+        "id": "305935dc30",
+        "src": "assets/img/casos/valtre/305935dc30-640.webp",
+        "full": "assets/img/casos/valtre/305935dc30-1200.webp",
+        "width": 640,
+        "height": 1142
+      },
+      {
+        "id": "3786d29b21",
+        "src": "assets/img/casos/valtre/3786d29b21-640.webp",
+        "full": "assets/img/casos/valtre/3786d29b21-1200.webp",
+        "width": 640,
+        "height": 1120
+      },
+      {
+        "id": "db26f5ef9a",
+        "src": "assets/img/casos/valtre/db26f5ef9a-640.webp",
+        "full": "assets/img/casos/valtre/db26f5ef9a-1200.webp",
+        "width": 640,
+        "height": 1142
+      }
+    ]
+  }
+}

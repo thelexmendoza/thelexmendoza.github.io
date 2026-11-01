@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54.86 47.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_48);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_48-3);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_48-2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_48" data-name="Degradado sin nombre 48" x1="35.28" y1="45.32" x2="1.16" y2="-12.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f75bc"/>
+      <stop offset=".5" stop-color="#7f5af0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_48-2" data-name="Degradado sin nombre 48" x1="56.72" y1="6.08" x2="18.77" y2="48.97" xlink:href="#Degradado_sin_nombre_48"/>
+    <linearGradient id="Degradado_sin_nombre_48-3" data-name="Degradado sin nombre 48" x1="40.71" y1="21.48" x2="54.35" y2="7.06" xlink:href="#Degradado_sin_nombre_48"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <path class="cls-1" d="M21.47.15l17.19,5.5c1.36.44,2.28,1.7,2.28,3.12v21.35c0,9.92-15.34,15.55-19.46,16.88-.66.22-1.35.22-2.02,0C15.34,45.68,0,40.05,0,30.13V8.78c0-1.42.92-2.69,2.28-3.12L19.47.15c.65-.21,1.35-.21,2,0Z"/>
+      <g>
+        <polygon class="cls-4" points="45.67 6.92 27.3 6.92 27.3 40.6 54.86 40.6 54.86 16.1 45.67 6.92"/>
+        <line class="cls-2" x1="33.43" y1="32.94" x2="48.73" y2="32.94"/>
+        <line class="cls-2" x1="33.43" y1="25.29" x2="48.73" y2="25.29"/>
+        <line class="cls-2" x1="33.43" y1="17.64" x2="39.55" y2="17.64"/>
+        <polyline class="cls-3" points="45.59 6.87 45.59 16.06 54.78 16.06"/>
+      </g>
+    </g>
+  </g>
+</svg>

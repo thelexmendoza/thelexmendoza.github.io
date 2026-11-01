@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.83 113.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #005f89;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #005f89;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Main">
+    <g>
+      <g>
+        <path class="cls-1" d="M10.01,53.78l41.79-.1c1.06,0,1.92.85,1.92,1.92,0,1.06-.85,1.92-1.91,1.92l-41.79.26c-2.63-.05-2.67-3.92-.02-4h0Z"/>
+        <path class="cls-1" d="M37.16,94.8l13.57-39.63c.38-1.08,2.04-.59,1.74.54,0,0-11.49,40.29-11.49,40.29-.81,2.57-4.62,1.4-3.82-1.2h0Z"/>
+        <line class="cls-3" x1="85.73" y1="80.01" x2="51.59" y2="55.44"/>
+        <path class="cls-1" d="M86.68,32.5l-34.53,23.72c-1,.69-2.12-.81-1.13-1.56,0,0,33.31-25.4,33.31-25.4,2.18-1.57,4.54,1.64,2.35,3.24h0Z"/>
+        <line class="cls-3" x1="38.72" y1="15.9" x2="51.59" y2="55.44"/>
+        <circle class="cls-1" cx="85.91" cy="80.14" r="10.31"/>
+        <circle class="cls-1" cx="9.62" cy="55.91" r="9.62"/>
+        <circle class="cls-1" cx="85.6" cy="30.82" r="17.23"/>
+        <circle class="cls-2" cx="39.03" cy="95.5" r="15.76"/>
+        <circle class="cls-2" cx="38.63" cy="15.62" r="13.62"/>
+      </g>
+      <g>
+        <line class="cls-2" x1="51.59" y1="56.29" x2="51.59" y2="71.61"/>
+        <polygon class="cls-2" points="65.21 47.78 51.59 39.27 37.97 47.89 37.97 63.1 51.59 71.61 51.59 56.29 65.21 47.78"/>
+        <polyline class="cls-2" points="51.59 56.29 51.59 71.61 65.21 63.95 65.21 47.78 51.59 56.29 37.97 47.78"/>
+      </g>
+    </g>
+  </g>
+</svg>

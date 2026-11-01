@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 94.27 94.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_83);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_72-4);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_72);
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_72-2);
+      }
+
+      .cls-5 {
+        fill: url(#Degradado_sin_nombre_72-3);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_83" data-name="Degradado sin nombre 83" x1="10.56" y1="3.15" x2="128.29" y2="145.05" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00aeef"/>
+      <stop offset=".12" stop-color="#18b5f0"/>
+      <stop offset=".38" stop-color="#56c9f4"/>
+      <stop offset=".75" stop-color="#b8e8fa"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_72" data-name="Degradado sin nombre 72" x1="68.5" y1="65.16" x2="16.73" y2="39.89" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#0f75bc"/>
+      <stop offset=".11" stop-color="#0a84c9"/>
+      <stop offset=".21" stop-color="#049bde"/>
+      <stop offset=".3" stop-color="#01a9ea"/>
+      <stop offset=".37" stop-color="#00aeef"/>
+      <stop offset=".4" stop-color="#1eb7f0"/>
+      <stop offset=".46" stop-color="#58caf4"/>
+      <stop offset=".53" stop-color="#8bdaf7"/>
+      <stop offset=".59" stop-color="#b5e7fa"/>
+      <stop offset=".65" stop-color="#d5f1fc"/>
+      <stop offset=".71" stop-color="#ecf9fd"/>
+      <stop offset=".76" stop-color="#fafdfe"/>
+      <stop offset=".81" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_72-2" data-name="Degradado sin nombre 72" x1="73.54" y1="54.88" x2="21.77" y2="29.61" xlink:href="#Degradado_sin_nombre_72"/>
+    <linearGradient id="Degradado_sin_nombre_72-3" data-name="Degradado sin nombre 72" x1="63.73" y1="74.89" x2="11.96" y2="49.63" xlink:href="#Degradado_sin_nombre_72"/>
+    <linearGradient id="Degradado_sin_nombre_72-4" data-name="Degradado sin nombre 72" x1="78.31" y1="45.14" x2="26.54" y2="19.88" xlink:href="#Degradado_sin_nombre_72"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <path class="cls-1" d="M7.28,70.28c.78-1.71,1.35-3.58,2.41-5.09,1.01-1.44,1.23-2.53.63-4.25-.68-1.95-1.66-2.83-3.66-3.28C2.28,56.67.02,53.56,0,49.02c0-1.4,0-2.81.03-4.21.1-4.02,2.45-7,6.3-8.07,1.05-.29,2.53-.37,3.01-1.09.95-1.42,1.48-3.18,1.87-4.87.13-.58-.61-1.44-1.07-2.08-1.65-2.3-2.64-4.82-1.64-7.57,1.46-4.04,4.23-7.15,8.02-9.1,2.48-1.28,5.19-.86,7.54.63,1.51.95,2.7.95,4.27.01,1.89-1.13,4.01-1.88,6.08-2.66,1.01-.39,1.6-.86,1.87-1.99C37.7,2.02,40.29.01,46.38,0c.94,0,1.87-.02,2.81.01,4.49.16,7.5,2.53,8.45,6.95.39,1.81,1.17,2.73,2.96,3.3,2.15.69,4.24,1.7,6.17,2.88,1.45.89,2.55.91,3.96.05,1.9-1.16,3.98-1.59,6.23-1.08,3.78.86,9.18,6.97,9.54,10.81.26,2.69-.67,4.95-2.37,6.93-.83.97-.73,1.82-.42,3.01.64,2.43,1.9,3.84,4.48,3.96.34.02.67.19.99.34,3.07,1.43,4.85,3.79,5.05,7.2.09,1.63.05,3.28.03,4.91-.05,4.31-2.39,7.3-6.54,8.43-.95.26-2.34.28-2.73.91-.93,1.51-1.58,3.28-1.93,5.03-.14.68.78,1.61,1.3,2.37,1.54,2.24,2.37,4.7,1.39,7.29-1.51,4.01-4.28,7.12-8.09,9.05-2.65,1.35-5.39.71-7.85-.85-1.23-.78-2.19-.81-3.47-.01-1.68,1.04-3.49,1.97-5.38,2.52-2.04.6-2.98,1.63-3.4,3.74-.7,3.52-3.04,5.88-6.62,6.39-2.51.36-5.16.32-7.68-.03-3.51-.49-5.86-2.76-6.55-6.22-.45-2.25-1.43-3.32-3.61-3.98-2.21-.67-4.27-1.88-6.29-3.03-.94-.53-1.6-.47-2.56-.1-1.77.68-3.63,1.13-5.47,1.61-.37.1-.82-.01-1.22-.09-4.37-.82-9.84-7.41-9.83-11.84-.15-.07-.3-.14-.45-.21Z"/>
+      <g>
+        <ellipse class="cls-3" cx="59.81" cy="60.91" rx="10.64" ry="10.6"/>
+        <ellipse class="cls-4" cx="35.09" cy="36.11" rx="10.64" ry="10.6"/>
+        <ellipse class="cls-5" cx="35.09" cy="60.91" rx="10.64" ry="10.6"/>
+        <ellipse class="cls-2" cx="59.81" cy="36.11" rx="10.64" ry="10.6"/>
+      </g>
+    </g>
+  </g>
+</svg>

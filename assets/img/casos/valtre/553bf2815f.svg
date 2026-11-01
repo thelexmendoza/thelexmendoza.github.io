@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.11 58.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_48);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #3e6ad2;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        fill: url(#Degradado_sin_nombre_48-2);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_48" data-name="Degradado sin nombre 48" x1="5.55" y1="46.01" x2="55.32" y2="-3.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f75bc"/>
+      <stop offset=".5" stop-color="#7f5af0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_48-2" data-name="Degradado sin nombre 48" x1="40.8" y1="58.36" x2="40.8" y2="11" xlink:href="#Degradado_sin_nombre_48"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <g>
+        <polygon class="cls-1" points="38.03 50.53 0 50.53 0 14.96 38.03 0 38.03 50.53"/>
+        <rect class="cls-2" x="8.33" y="41.08" width="12.7" height="9.45"/>
+        <line class="cls-3" x1="14.68" y1="41.08" x2="14.68" y2="50.53"/>
+      </g>
+      <g>
+        <path class="cls-2" d="M40.8,26.78c-7.12,0-13.42,1.9-13.42,4.47v22.37c0,2.57,6.3,4.47,13.42,4.47s13.42-1.9,13.42-4.47v-22.37c0-2.57-6.3-4.47-13.42-4.47Z"/>
+        <path class="cls-4" d="M40.8,25.89c-7.11,0-14.31,1.84-14.31,5.36v22.37c0,3.52,7.2,5.36,14.31,5.36s14.31-1.84,14.31-5.36v-22.37c0-3.52-7.2-5.36-14.31-5.36ZM53.33,42.43c0,1.46-4.88,3.58-12.53,3.58s-12.53-2.12-12.53-3.58v-8.46c2.57,1.74,7.57,2.64,12.53,2.64s9.96-.9,12.53-2.64v8.46ZM40.8,27.67c7.65,0,12.53,2.12,12.53,3.58s-4.88,3.58-12.53,3.58-12.53-2.12-12.53-3.58,4.88-3.58,12.53-3.58ZM40.8,57.2c-7.65,0-12.53-2.12-12.53-3.58v-8.46c2.57,1.74,7.57,2.64,12.53,2.64s9.96-.9,12.53-2.64v8.46c0,1.46-4.88,3.58-12.53,3.58Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

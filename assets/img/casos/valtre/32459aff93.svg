@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 262.29 314.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_118-5);
+      }
+
+      .cls-2 {
+        stroke-dasharray: 11.51 11.51;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-7 {
+        fill: url(#Degradado_sin_nombre_118);
+      }
+
+      .cls-8 {
+        fill: url(#Degradado_sin_nombre_118-4);
+      }
+
+      .cls-5 {
+        stroke-dasharray: 11.37 11.37;
+      }
+
+      .cls-9 {
+        fill: url(#Degradado_sin_nombre_118-7);
+      }
+
+      .cls-10 {
+        fill: url(#Degradado_sin_nombre_118-6);
+      }
+
+      .cls-11 {
+        fill: url(#Degradado_sin_nombre_118-3);
+      }
+
+      .cls-12 {
+        fill: url(#Degradado_sin_nombre_118-9);
+      }
+
+      .cls-6 {
+        stroke-dasharray: 10.06 10.06;
+      }
+
+      .cls-13 {
+        fill: url(#Degradado_sin_nombre_118-2);
+      }
+
+      .cls-14 {
+        fill: url(#Degradado_sin_nombre_118-8);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_118" data-name="Degradado sin nombre 118" x1="130.65" y1="79.18" x2="130.65" y2="-52.85" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#0f75bc"/>
+      <stop offset=".11" stop-color="#0a84c9"/>
+      <stop offset=".21" stop-color="#049bde"/>
+      <stop offset=".3" stop-color="#01a9ea"/>
+      <stop offset=".37" stop-color="#00aeef"/>
+      <stop offset=".4" stop-color="#1eb7f0"/>
+      <stop offset=".46" stop-color="#58caf4"/>
+      <stop offset=".53" stop-color="#8bdaf7"/>
+      <stop offset=".59" stop-color="#b5e7fa"/>
+      <stop offset=".65" stop-color="#d5f1fc"/>
+      <stop offset=".71" stop-color="#ecf9fd"/>
+      <stop offset=".76" stop-color="#fafdfe"/>
+      <stop offset=".81" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_118-2" data-name="Degradado sin nombre 118" x1="130.65" y1="91.09" x2="130.65" y2="-40.95" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-3" data-name="Degradado sin nombre 118" x1="130.65" y1="91.09" x2="130.65" y2="-40.95" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-4" data-name="Degradado sin nombre 118" x1="39.01" y1="212.66" x2="39.01" y2="276.2" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-5" data-name="Degradado sin nombre 118" x1="84.83" y1="201.98" x2="-34.09" y2="201.98" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-6" data-name="Degradado sin nombre 118" x1="130.65" y1="277.78" x2="130.65" y2="341.32" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-7" data-name="Degradado sin nombre 118" x1="176.46" y1="267.11" x2="57.54" y2="267.11" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-8" data-name="Degradado sin nombre 118" x1="223.28" y1="212.66" x2="223.28" y2="276.2" xlink:href="#Degradado_sin_nombre_118"/>
+    <linearGradient id="Degradado_sin_nombre_118-9" data-name="Degradado sin nombre 118" x1="269.09" y1="201.98" x2="150.17" y2="201.98" xlink:href="#Degradado_sin_nombre_118"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <g>
+        <g>
+          <line class="cls-4" x1="130.65" y1="91.95" x2="124.65" y2="91.95"/>
+          <line class="cls-6" x1="114.59" y1="91.95" x2="79.38" y2="91.95"/>
+          <polyline class="cls-4" points="74.35 91.95 68.35 91.95 64.11 96.19"/>
+          <polyline class="cls-5" points="56.07 104.23 38.02 122.28 38.02 204.73"/>
+          <line class="cls-4" x1="38.02" y1="210.41" x2="38.02" y2="216.41"/>
+        </g>
+        <g>
+          <line class="cls-4" x1="130.65" y1="91.95" x2="136.65" y2="91.95"/>
+          <line class="cls-6" x1="146.71" y1="91.95" x2="181.92" y2="91.95"/>
+          <polyline class="cls-4" points="186.95 91.95 192.95 91.95 197.19 96.19"/>
+          <polyline class="cls-5" points="205.23 104.23 223.28 122.28 223.28 204.73"/>
+          <line class="cls-4" x1="223.28" y1="210.41" x2="223.28" y2="216.41"/>
+        </g>
+        <g>
+          <line class="cls-4" x1="130.65" y1="91.95" x2="130.65" y2="97.95"/>
+          <line class="cls-2" x1="130.65" y1="109.45" x2="130.65" y2="264.77"/>
+          <line class="cls-4" x1="130.65" y1="270.52" x2="130.65" y2="276.52"/>
+        </g>
+      </g>
+      <g>
+        <path class="cls-7" d="M130.65,0c-22.55,0-47.12,5.38-47.12,16.83s24.57,16.83,47.12,16.83,47.12-5.38,47.12-16.83S153.2,0,130.65,0Z"/>
+        <path class="cls-13" d="M130.65,40.39c-18.17,0-37.36-3.03-47.12-10.77v24.23c0,11.44,24.57,16.83,47.12,16.83s47.12-5.38,47.12-16.83v-24.23c-9.76,7.74-28.94,10.77-47.12,10.77Z"/>
+        <path class="cls-11" d="M130.65,77.41c-18.17,0-37.36-3.03-47.12-10.77v24.23c0,11.44,24.57,16.83,47.12,16.83s47.12-5.38,47.12-16.83v-24.23c-9.76,7.74-28.94,10.77-47.12,10.77Z"/>
+      </g>
+      <g>
+        <rect class="cls-8" y="192.57" width="78.03" height="56.57" rx="10.5" ry="10.5"/>
+        <path class="cls-1" d="M9.42,192.57h68.61v18.83H9.42c-5.2,0-9.42-4.22-9.42-9.42h0c0-5.2,4.22-9.42,9.42-9.42Z"/>
+        <line class="cls-3" x1="13.45" y1="232.93" x2="29.6" y2="232.93"/>
+        <line class="cls-3" x1="59.19" y1="232.93" x2="64.58" y2="232.93"/>
+      </g>
+      <g>
+        <rect class="cls-10" x="91.63" y="257.69" width="78.03" height="56.57" rx="10.5" ry="10.5"/>
+        <path class="cls-9" d="M101.05,257.69h68.61v18.83h-68.61c-5.2,0-9.42-4.22-9.42-9.42h0c0-5.2,4.22-9.42,9.42-9.42Z"/>
+        <line class="cls-3" x1="105.09" y1="298.05" x2="121.23" y2="298.05"/>
+        <line class="cls-3" x1="150.83" y1="298.05" x2="156.21" y2="298.05"/>
+      </g>
+      <g>
+        <rect class="cls-14" x="184.26" y="192.57" width="78.03" height="56.57" rx="10.5" ry="10.5"/>
+        <path class="cls-12" d="M193.68,192.57h68.61v18.83h-68.61c-5.2,0-9.42-4.22-9.42-9.42h0c0-5.2,4.22-9.42,9.42-9.42Z"/>
+        <line class="cls-3" x1="197.72" y1="232.93" x2="213.86" y2="232.93"/>
+        <line class="cls-3" x1="243.46" y1="232.93" x2="248.84" y2="232.93"/>
+      </g>
+    </g>
+  </g>
+</svg>

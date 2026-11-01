@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 82.9 79.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_25);
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_25-2);
+      }
+
+      .cls-3 {
+        fill: url(#Degradado_sin_nombre_25-3);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_25" data-name="Degradado sin nombre 25" x1="41.45" y1="100.82" x2="41.45" y2="-78.59" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#0f75bc"/>
+      <stop offset=".1" stop-color="#0c70b2"/>
+      <stop offset=".2" stop-color="#05679b"/>
+      <stop offset=".29" stop-color="#01618d"/>
+      <stop offset=".37" stop-color="#005f89"/>
+      <stop offset=".4" stop-color="#1e7196"/>
+      <stop offset=".46" stop-color="#5896b2"/>
+      <stop offset=".53" stop-color="#8bb6c9"/>
+      <stop offset=".59" stop-color="#b5d0dc"/>
+      <stop offset=".65" stop-color="#d5e4eb"/>
+      <stop offset=".71" stop-color="#ecf3f6"/>
+      <stop offset=".76" stop-color="#fafcfc"/>
+      <stop offset=".81" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Degradado_sin_nombre_25-2" data-name="Degradado sin nombre 25" x1="41.45" x2="41.45" y2="-78.59" xlink:href="#Degradado_sin_nombre_25"/>
+    <linearGradient id="Degradado_sin_nombre_25-3" data-name="Degradado sin nombre 25" x1="41.45" x2="41.45" y2="-78.59" xlink:href="#Degradado_sin_nombre_25"/>
+  </defs>
+  <g id="Main">
+    <g>
+      <path class="cls-1" d="M50.46,61.27c0,.99-.81,1.8-1.8,1.8h-14.42c-.99,0-1.8-.81-1.8-1.8v-3.6H3.6v18.02c0,1.99,1.61,3.6,3.6,3.6h68.48c1.99,0,3.6-1.61,3.6-3.6v-18.02h-28.83v3.6Z"/>
+      <path class="cls-2" d="M79.29,14.42H3.6c-1.99,0-3.6,1.61-3.6,3.6v34.24c0,.99.81,1.8,1.8,1.8h30.64v-3.6c0-.99.81-1.8,1.8-1.8h14.42c.99,0,1.8.81,1.8,1.8v3.6h30.64c.99,0,1.8-.81,1.8-1.8V18.02c0-1.99-1.61-3.6-3.6-3.6Z"/>
+      <path class="cls-3" d="M30.64,3.6h21.63v7.21h3.6V1.8c0-.99-.81-1.8-1.8-1.8h-25.23c-.99,0-1.8.81-1.8,1.8v9.01h3.6V3.6Z"/>
+    </g>
+  </g>
+</svg>
