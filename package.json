@@ -1,15 +1,24 @@
 {
   "name": "thelexmendoza.github.io",
   "version": "1.0.0",
-  "description": "Página personal y de portafolio.",
-  "main": "index.js",
+  "description": "Sitio personal y de portafolio de Lex Mendoza.",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass src/scss/main.scss assets/css/main.min.css --style=compressed --no-source-map",
+    "dev": "sass src/scss/main.scss assets/css/main.min.css --style=expanded --source-map --watch",
+    "fonts": "node scripts/copy-fonts.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test tests/"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.8"
+  "author": "Alejandro Mendoza",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "^5.0.0",
+    "@fontsource/ibm-plex-sans": "^5.0.0",
+    "@fontsource/ibm-plex-sans-condensed": "^5.0.0",
+    "@fontsource/ibm-plex-serif": "^5.0.0",
+    "sass": "^1.107.1"
   }
 }

@@ -1,0 +1,37 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+.c-hero {
+  display: flex;
+  align-items: center;
+  min-block-size: calc(100svh - #{fn.rem(89)});
+  padding-block: var(--space-5);
+
+  &__inner {
+    --stack-space: var(--space-3);
+  }
+
+  &__eyebrow {
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    // Mayusculas y espacio entre letras como en el Figma; el ancho maximo evita desbordes.
+    max-inline-size: 14ch;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  &__lead {
+    max-inline-size: fn.rem(544);
+    color: var(--color-text-muted);
+    font-size: var(--step-1);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}

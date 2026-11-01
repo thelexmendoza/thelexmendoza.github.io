@@ -1,0 +1,14 @@
+@use "../1-tools/functions" as fn;
+
+:root {
+  @for $i from 1 through 7 {
+    --space-#{$i}: #{fn.space($i)};
+  }
+
+  // Tipografia: razon aurea en escritorio, raiz de phi en movil.
+  --step--1: #{fn.rem(13)};
+  --step-0: #{fn.rem(16)};
+  @for $n from 1 through 4 {
+    --step-#{$n}: #{fn.fluid(fn.step-px($n, fn.$sqrt-phi), fn.step-px($n, fn.$phi))};
+  }
+}

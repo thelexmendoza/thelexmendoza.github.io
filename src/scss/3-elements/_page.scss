@@ -1,0 +1,16 @@
+@use "../0-settings/fonts" as f;
+
+body {
+  min-height: 100dvh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: f.$font-sans;
+  font-size: var(--step-0);
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+strong {
+  font-weight: 600;
+}

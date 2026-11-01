@@ -1,0 +1,18 @@
+@use "../0-settings/fonts" as f;
+
+.c-footer {
+  padding-block: var(--space-6) var(--space-5);
+  border-block-start: 1px solid var(--color-text-muted);
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  &__legal {
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+  }
+}

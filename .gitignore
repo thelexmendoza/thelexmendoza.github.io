@@ -1,0 +1,40 @@
+# Material pesado o sin publicar (originales, notas en bruto, borradores)
+private/
+
+# Dependencias y artefactos locales
+node_modules/
+*.map
+.DS_Store
+Thumbs.db
+
+# Estado local de ejecucion del plan
+.superpowers/
+.claude/
+
+# Secretos: claves de Supabase, Resend y similares (nunca se suben)
+.env
+.env.*
+!.env.example
+
+# Archivos temporales del CLI de Supabase
+supabase/.temp/
+supabase/.branches/
+
+# Registros
+*.log
+npm-debug.log*
+
+# Editor y sistema
+.vscode/
+.idea/
+desktop.ini
+
+# Red de seguridad: originales pesados y fuentes sin optimizar (el sitio solo usa woff2)
+*.psd
+*.ai
+*.indd
+*.mov
+*.zip
+*.raw
+*.ttf
+*.otf

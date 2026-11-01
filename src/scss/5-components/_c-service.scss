@@ -1,0 +1,28 @@
+@use "../0-settings/fonts" as f;
+
+.c-service {
+  display: grid;
+  align-content: start;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--color-text-muted);
+
+  &__tag {
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.1em;
+  }
+
+  &__title {
+    font-family: f.$font-condensed;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  // El paquete combinado destaca con el acento (uno por vista).
+  &--featured {
+    border-color: var(--color-accent);
+    border-block-start-width: 4px;
+  }
+}

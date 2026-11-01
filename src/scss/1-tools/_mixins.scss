@@ -1,0 +1,41 @@
+@use "sass:map";
+@use "functions" as fn;
+
+// Puntos de quiebre por clase de dispositivo, en px (los de Figma).
+$breakpoints: (
+  phone-s: 320,
+  phone: 375,
+  phone-l: 430,
+  tablet: 768,
+  laptop-s: 1024,
+  laptop: 1280,
+  desktop: 1440,
+  wide: 1920,
+  tv: 2560,
+);
+
+@mixin respond-to($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error "Punto de quiebre desconocido: #{$name}";
+  }
+  @media (min-width: fn.rem(map.get($breakpoints, $name))) {
+    @content;
+  }
+}
+
+// Objetivo tactil de 55 px (numero de Fibonacci) solo con puntero tactil.
+@mixin touch-target {
+  @media (pointer: coarse) {
+    min-block-size: fn.rem(55);
+    min-inline-size: fn.rem(55);
+  }
+}
+
+// Efectos de hover solo en dispositivos que lo tienen.
+@mixin on-hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

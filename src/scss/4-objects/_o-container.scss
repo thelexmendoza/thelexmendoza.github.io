@@ -1,0 +1,9 @@
+@use "../1-tools/functions" as fn;
+
+.o-container {
+  inline-size: 100%;
+  max-inline-size: fn.rem(1280);
+  margin-inline: auto;
+  padding-inline-start: max(var(--space-3), env(safe-area-inset-left));
+  padding-inline-end: max(var(--space-3), env(safe-area-inset-right));
+}

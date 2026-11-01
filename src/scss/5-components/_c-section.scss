@@ -1,0 +1,19 @@
+@use "../1-tools/functions" as fn;
+
+.c-section {
+  padding-block: var(--space-6);
+  scroll-margin-block-start: var(--space-4);
+
+  &__lead {
+    max-inline-size: fn.rem(544);
+    color: var(--color-text-muted);
+    font-size: var(--step-1);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  // Cierre del portafolio: banda con el acento de la firma.
+  &--plan {
+    border-block: 1px solid var(--color-text-muted);
+  }
+}

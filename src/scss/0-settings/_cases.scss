@@ -1,0 +1,54 @@
+@use "sass:map";
+
+// Modo camaleon: cada caso redefine acento y degradado, con una variante por
+// tema para que siempre se lean sobre el fondo (contraste de 3 o mas).
+// Valtre y CiiSA quedan sin paleta propia hasta definir su identidad.
+$cases: (
+  bmw: (
+    dark: (accent: #1a8fe3, gradient-a: #1a8fe3, gradient-b: #7cc0ff),
+    light: (accent: #0066b1, gradient-a: #0066b1, gradient-b: #001489),
+  ),
+  daniel: (
+    dark: (accent: #a78bfa, gradient-a: #a78bfa, gradient-b: #f472b6),
+    light: (accent: #7c3aed, gradient-a: #7c3aed, gradient-b: #be185d),
+  ),
+  etics: (
+    dark: (accent: #10b981, gradient-a: #10b981, gradient-b: #6ee7b7),
+    light: (accent: #047857, gradient-a: #047857, gradient-b: #065f46),
+  ),
+  moto: (
+    dark: (accent: #f97316, gradient-a: #f97316, gradient-b: #fdba74),
+    light: (accent: #c2410c, gradient-a: #c2410c, gradient-b: #9a3412),
+  ),
+);
+
+@mixin case-vars($vars) {
+  --color-accent: #{map.get($vars, accent)};
+  --color-accent-text: #{map.get($vars, accent)};
+  --gradient-a: #{map.get($vars, gradient-a)};
+  --gradient-b: #{map.get($vars, gradient-b)};
+}
+
+@each $name, $by-theme in $cases {
+  [data-case="#{$name}"] {
+    @include case-vars(map.get($by-theme, light));
+  }
+
+  // `data-case` va en <html> (pagina de caso) o en un elemento interno (tarjeta de la home).
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"])[data-case="#{$name}"],
+    :root:not([data-theme="light"]) [data-case="#{$name}"] {
+      @include case-vars(map.get($by-theme, dark));
+    }
+  }
+
+  [data-theme="dark"][data-case="#{$name}"],
+  [data-theme="dark"] [data-case="#{$name}"] {
+    @include case-vars(map.get($by-theme, dark));
+  }
+
+  [data-theme="light"][data-case="#{$name}"],
+  [data-theme="light"] [data-case="#{$name}"] {
+    @include case-vars(map.get($by-theme, light));
+  }
+}

@@ -1,0 +1,71 @@
+@use "sass:list";
+@use "sass:map";
+@use "../0-settings/cases";
+
+// Palabra con degradado animado. Solo debe haber una por pantalla.
+.c-chameleon-title {
+  background-image: linear-gradient(90deg, var(--gradient-a), var(--gradient-b), var(--gradient-a));
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: c-chameleon-flow 8s linear infinite;
+
+  // Recorre el acento de cada caso (el primero se repite al final para un ciclo continuo).
+  &--spectrum {
+    background-image: var(--spectrum);
+  }
+}
+
+@keyframes c-chameleon-flow {
+  to {
+    background-position-x: 200%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-chameleon-title {
+    animation: none;
+  }
+}
+
+// Alto contraste: el navegador ignora los degradados y el texto transparente
+// desapareceria. Se vuelve a un color de texto normal.
+@media (forced-colors: active) {
+  .c-chameleon-title,
+  .c-chameleon-title--spectrum {
+    background: none;
+    color: CanvasText;
+    -webkit-text-fill-color: currentcolor;
+    animation: none;
+  }
+}
+
+@function spectrum($theme) {
+  $colors: ();
+  @each $name, $by-theme in cases.$cases {
+    $colors: list.append($colors, map.get(map.get($by-theme, $theme), accent), comma);
+  }
+  $colors: list.append($colors, list.nth($colors, 1), comma);
+  @return linear-gradient(90deg, $colors);
+}
+
+.c-chameleon-title--spectrum {
+  --spectrum: #{spectrum(light)};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .c-chameleon-title--spectrum {
+    --spectrum: #{spectrum(dark)};
+  }
+}
+
+[data-theme="dark"] .c-chameleon-title--spectrum {
+  --spectrum: #{spectrum(dark)};
+}
+
+[data-theme="light"] .c-chameleon-title--spectrum {
+  --spectrum: #{spectrum(light)};
+}

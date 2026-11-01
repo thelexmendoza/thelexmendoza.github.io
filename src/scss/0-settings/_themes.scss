@@ -1,0 +1,59 @@
+@use "sass:map";
+@use "sass:string";
+
+// Tema oscuro (A) y claro (B). El acento rojo es la firma personal.
+$themes: (
+  dark: (
+    bg: #0a0a0a,
+    text: #fafafa,
+    text-muted: #bdbdbd,
+    accent: #e10600,
+    accent-text: #ff5a4d,
+    on-accent: #ffffff,
+    gradient-a: #e10600,
+    gradient-b: #ff5a4d,
+  ),
+  light: (
+    bg: #fafafa,
+    text: #0a0a0a,
+    text-muted: #4a4a4a,
+    accent: #d90429,
+    accent-text: #d90429,
+    on-accent: #ffffff,
+    gradient-a: #d90429,
+    gradient-b: #9d0208,
+  ),
+);
+
+@mixin theme-vars($name) {
+  $theme: map.get($themes, $name);
+  @each $key, $value in $theme {
+    // Los degradados se llaman --gradient-*, igual que en las paletas de caso.
+    @if string.index($key, "gradient") == 1 {
+      --#{$key}: #{$value};
+    } @else {
+      --color-#{$key}: #{$value};
+    }
+  }
+  color-scheme: $name;
+}
+
+// Sin atributo: claro por defecto y oscuro si el sistema lo prefiere.
+// Funciona sin JavaScript.
+:root {
+  @include theme-vars(light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include theme-vars(dark);
+  }
+}
+
+[data-theme="dark"] {
+  @include theme-vars(dark);
+}
+
+[data-theme="light"] {
+  @include theme-vars(light);
+}
