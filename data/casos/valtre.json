@@ -4,18 +4,545 @@
   "title": "Valtre",
   "eyebrow": "identidad y contenido",
   "meta": "2024–2026 · Diseñador multimedia",
-  "summary": "Valtre es una empresa de tecnología. Durante año y medio me encargué de cómo se ve y cómo se comunica: el rebranding completo, la identidad de cada Centro de Excelencia, los materiales comerciales, el contenido para redes y los eventos, hasta llegar a VALKYRIA, un agente de IA para QA.",
+  "summary": "Valtre es una empresa de tecnología. Durante año y medio me encargué de cómo se ve y cómo se comunica, y empiezo por lo mejor: VALKYRIA, un agente de IA para QA, con su identidad y su campaña. Antes vinieron el rebranding completo, la identidad de cada Centro de Excelencia, los materiales comerciales, el contenido para redes y los eventos.",
   "teaser": {
     "chapter": "valkyria",
-    "text": "Al final: VALKYRIA, un agente de IA para QA, con su identidad y su campaña."
+    "text": "Empieza por VALKYRIA: un agente de IA para QA, con su identidad y su campaña."
   },
   "chapters": [
+    {
+      "id": "valkyria",
+      "title": "VALKYRIA",
+      "eyebrow": "un agente de IA para QA",
+      "text": [
+        "VALKYRIA es un agente de IA diseñado para optimizar el ciclo de QA: crea scripts de automatización y matrices de pruebas, y evalúa historias de usuario.",
+        "Le di identidad, una hoja de una página y su campaña. Las imágenes de la campaña están creadas con IA generativa. La idea que resume el proyecto: la IA no sustituye al tester, lo potencia."
+      ],
+      "groups": [
+        {
+          "kind": "logos",
+          "topic": "Logotipo de VALKYRIA",
+          "items": [
+            {
+              "id": "00631fb5f9",
+              "src": "assets/img/casos/valtre/00631fb5f9-640.webp",
+              "full": "assets/img/casos/valtre/00631fb5f9-1200.webp",
+              "width": 640,
+              "height": 76,
+              "alt": "Logotipo de VALKYRIA: V VALKYRIA by Valtre",
+              "tone": "light"
+            },
+            {
+              "id": "030ee5eb3c",
+              "src": "assets/img/casos/valtre/030ee5eb3c-640.webp",
+              "full": "assets/img/casos/valtre/030ee5eb3c-1200.webp",
+              "width": 640,
+              "height": 67,
+              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo",
+              "tone": "light"
+            },
+            {
+              "id": "c050412795",
+              "src": "assets/img/casos/valtre/c050412795-640.webp",
+              "full": "assets/img/casos/valtre/c050412795-1200.webp",
+              "width": 640,
+              "height": 452,
+              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo On Dark",
+              "tone": "light"
+            },
+            {
+              "id": "00828aeb91",
+              "src": "assets/img/casos/valtre/00828aeb91-640.webp",
+              "full": "assets/img/casos/valtre/00828aeb91-1200.webp",
+              "width": 640,
+              "height": 452,
+              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo On Light"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Identidad y hoja de una página",
+          "items": [
+            {
+              "id": "306df445ef",
+              "src": "assets/img/casos/valtre/306df445ef-640.webp",
+              "full": "assets/img/casos/valtre/306df445ef-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: AI Business"
+            },
+            {
+              "id": "0e5402e942",
+              "src": "assets/img/casos/valtre/0e5402e942-640.webp",
+              "full": "assets/img/casos/valtre/0e5402e942-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: AI Business"
+            },
+            {
+              "id": "89ce9d221a",
+              "src": "assets/img/casos/valtre/89ce9d221a-640.webp",
+              "full": "assets/img/casos/valtre/89ce9d221a-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: CI CD"
+            },
+            {
+              "id": "bf0460cf9d",
+              "src": "assets/img/casos/valtre/bf0460cf9d-640.webp",
+              "full": "assets/img/casos/valtre/bf0460cf9d-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: CI CD"
+            },
+            {
+              "id": "84ca92792f",
+              "src": "assets/img/casos/valtre/84ca92792f-640.webp",
+              "full": "assets/img/casos/valtre/84ca92792f-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Identidad y hoja de una página: Cybernetic Woman Working"
+            },
+            {
+              "id": "824d3b32a6",
+              "src": "assets/img/casos/valtre/824d3b32a6-640.webp",
+              "full": "assets/img/casos/valtre/824d3b32a6-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Identidad y hoja de una página: Futuristic Woman Portrait"
+            },
+            {
+              "id": "879f30c36f",
+              "src": "assets/img/casos/valtre/879f30c36f-640.webp",
+              "full": "assets/img/casos/valtre/879f30c36f-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Identidad y hoja de una página: Futuristic Woman Portrait"
+            },
+            {
+              "id": "67f56d971d",
+              "src": "assets/img/casos/valtre/67f56d971d-640.webp",
+              "full": "assets/img/casos/valtre/67f56d971d-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: human + AI"
+            },
+            {
+              "id": "6e95faaa37",
+              "src": "assets/img/casos/valtre/6e95faaa37-640.webp",
+              "full": "assets/img/casos/valtre/6e95faaa37-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: human + AI"
+            },
+            {
+              "id": "10c933374f",
+              "src": "assets/img/casos/valtre/10c933374f-640.webp",
+              "full": "assets/img/casos/valtre/10c933374f-1200.webp",
+              "width": 640,
+              "height": 359,
+              "alt": "Identidad y hoja de una página: human + AI"
+            },
+            {
+              "id": "5254dd7e66",
+              "src": "assets/img/casos/valtre/5254dd7e66-640.webp",
+              "full": "assets/img/casos/valtre/5254dd7e66-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: laptop mockup 1 + AI"
+            },
+            {
+              "id": "38af5e6df0",
+              "src": "assets/img/casos/valtre/38af5e6df0-640.webp",
+              "full": "assets/img/casos/valtre/38af5e6df0-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "ff41aa39aa",
+              "src": "assets/img/casos/valtre/ff41aa39aa-640.webp",
+              "full": "assets/img/casos/valtre/ff41aa39aa-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "217e214dd6",
+              "src": "assets/img/casos/valtre/217e214dd6-640.webp",
+              "full": "assets/img/casos/valtre/217e214dd6-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "2e27deaaeb",
+              "src": "assets/img/casos/valtre/2e27deaaeb-640.webp",
+              "full": "assets/img/casos/valtre/2e27deaaeb-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "305935dc30",
+              "src": "assets/img/casos/valtre/305935dc30-640.webp",
+              "full": "assets/img/casos/valtre/305935dc30-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Identidad y hoja de una página: QA Agent"
+            },
+            {
+              "id": "307e9c630c",
+              "src": "assets/img/casos/valtre/307e9c630c-640.webp",
+              "full": "assets/img/casos/valtre/307e9c630c-1200.webp",
+              "width": 640,
+              "height": 309,
+              "alt": "Identidad y hoja de una página: Cobertura"
+            },
+            {
+              "id": "575c90f0a9",
+              "src": "assets/img/casos/valtre/575c90f0a9-640.webp",
+              "full": "assets/img/casos/valtre/575c90f0a9-1200.webp",
+              "width": 640,
+              "height": 265,
+              "alt": "Identidad y hoja de una página: V Optimizar"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Campaña de lanzamiento",
+          "ai": true,
+          "items": [
+            {
+              "id": "88c6cb0d12",
+              "src": "assets/img/casos/valtre/88c6cb0d12-640.webp",
+              "full": "assets/img/casos/valtre/88c6cb0d12-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: download (1)"
+            },
+            {
+              "id": "db26f5ef9a",
+              "src": "assets/img/casos/valtre/db26f5ef9a-640.webp",
+              "full": "assets/img/casos/valtre/db26f5ef9a-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: download"
+            },
+            {
+              "id": "fdbd8dbc25",
+              "src": "assets/img/casos/valtre/fdbd8dbc25-640.webp",
+              "full": "assets/img/casos/valtre/fdbd8dbc25-1200.webp",
+              "width": 640,
+              "height": 801,
+              "alt": "Campaña de lanzamiento",
+              "caption": "QA manual contra QA con IA: «¿Cuál crees que detecta más errores?»"
+            },
+            {
+              "id": "b330e8aac5",
+              "src": "assets/img/casos/valtre/b330e8aac5-640.webp",
+              "full": "assets/img/casos/valtre/b330e8aac5-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "5b247c2cc3",
+              "src": "assets/img/casos/valtre/5b247c2cc3-640.webp",
+              "full": "assets/img/casos/valtre/5b247c2cc3-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "144c8e9365",
+              "src": "assets/img/casos/valtre/144c8e9365-640.webp",
+              "full": "assets/img/casos/valtre/144c8e9365-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "7cf59d529b",
+              "src": "assets/img/casos/valtre/7cf59d529b-640.webp",
+              "full": "assets/img/casos/valtre/7cf59d529b-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "b8c8b1973d",
+              "src": "assets/img/casos/valtre/b8c8b1973d-640.webp",
+              "full": "assets/img/casos/valtre/b8c8b1973d-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "679b964ac0",
+              "src": "assets/img/casos/valtre/679b964ac0-640.webp",
+              "full": "assets/img/casos/valtre/679b964ac0-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "4170ab883d",
+              "src": "assets/img/casos/valtre/4170ab883d-640.webp",
+              "full": "assets/img/casos/valtre/4170ab883d-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 Left Jab"
+            },
+            {
+              "id": "a1e8477ff7",
+              "src": "assets/img/casos/valtre/a1e8477ff7-640.webp",
+              "full": "assets/img/casos/valtre/a1e8477ff7-1200.webp",
+              "width": 640,
+              "height": 366,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 Left Jab"
+            },
+            {
+              "id": "92fd50db04",
+              "src": "assets/img/casos/valtre/92fd50db04-640.webp",
+              "full": "assets/img/casos/valtre/92fd50db04-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 No BG"
+            },
+            {
+              "id": "ec2521bb6e",
+              "src": "assets/img/casos/valtre/ec2521bb6e-640.webp",
+              "full": "assets/img/casos/valtre/ec2521bb6e-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "34c00d5c69",
+              "src": "assets/img/casos/valtre/34c00d5c69-640.webp",
+              "full": "assets/img/casos/valtre/34c00d5c69-1200.webp",
+              "width": 640,
+              "height": 753,
+              "alt": "Campaña de lanzamiento: QA AI Engineer 7 3 No Rain Extended"
+            },
+            {
+              "id": "3786d29b21",
+              "src": "assets/img/casos/valtre/3786d29b21-640.webp",
+              "full": "assets/img/casos/valtre/3786d29b21-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "2cc2c13a40",
+              "src": "assets/img/casos/valtre/2cc2c13a40-640.webp",
+              "full": "assets/img/casos/valtre/2cc2c13a40-1200.webp",
+              "width": 640,
+              "height": 1120,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "01840ce073",
+              "src": "assets/img/casos/valtre/01840ce073-640.webp",
+              "full": "assets/img/casos/valtre/01840ce073-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA AI Engineer"
+            },
+            {
+              "id": "e8637cdf48",
+              "src": "assets/img/casos/valtre/e8637cdf48-640.webp",
+              "full": "assets/img/casos/valtre/e8637cdf48-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Automat Engineer 1 no bg"
+            },
+            {
+              "id": "79257ac476",
+              "src": "assets/img/casos/valtre/79257ac476-640.webp",
+              "full": "assets/img/casos/valtre/79257ac476-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Automat Engineer"
+            },
+            {
+              "id": "8562059e79",
+              "src": "assets/img/casos/valtre/8562059e79-640.webp",
+              "full": "assets/img/casos/valtre/8562059e79-1200.webp",
+              "width": 640,
+              "height": 774,
+              "alt": "Campaña de lanzamiento: QA DG Sparring"
+            },
+            {
+              "id": "27569d8700",
+              "src": "assets/img/casos/valtre/27569d8700-640.webp",
+              "full": "assets/img/casos/valtre/27569d8700-1200.webp",
+              "width": 640,
+              "height": 959,
+              "alt": "Campaña de lanzamiento: QA Engineer 1 No BG"
+            },
+            {
+              "id": "e49cda13fc",
+              "src": "assets/img/casos/valtre/e49cda13fc-640.webp",
+              "full": "assets/img/casos/valtre/e49cda13fc-1200.webp",
+              "width": 640,
+              "height": 959,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "c4f0b64796",
+              "src": "assets/img/casos/valtre/c4f0b64796-640.webp",
+              "full": "assets/img/casos/valtre/c4f0b64796-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "d5eb0c1e06",
+              "src": "assets/img/casos/valtre/d5eb0c1e06-640.webp",
+              "full": "assets/img/casos/valtre/d5eb0c1e06-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "f73d60f29c",
+              "src": "assets/img/casos/valtre/f73d60f29c-640.webp",
+              "full": "assets/img/casos/valtre/f73d60f29c-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "43e02caa48",
+              "src": "assets/img/casos/valtre/43e02caa48-640.webp",
+              "full": "assets/img/casos/valtre/43e02caa48-1200.webp",
+              "width": 640,
+              "height": 780,
+              "alt": "Campaña de lanzamiento: QA Engineer 5 no bg"
+            },
+            {
+              "id": "e7e88af6eb",
+              "src": "assets/img/casos/valtre/e7e88af6eb-640.webp",
+              "full": "assets/img/casos/valtre/e7e88af6eb-1200.webp",
+              "width": 640,
+              "height": 780,
+              "alt": "Campaña de lanzamiento: QA Engineer"
+            },
+            {
+              "id": "1e8a3672cc",
+              "src": "assets/img/casos/valtre/1e8a3672cc-640.webp",
+              "full": "assets/img/casos/valtre/1e8a3672cc-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Campaña de lanzamiento: QA World"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Imágenes de apoyo",
+          "ai": true,
+          "items": [
+            {
+              "id": "01c440b0f1",
+              "src": "assets/img/casos/valtre/01c440b0f1-640.webp",
+              "full": "assets/img/casos/valtre/01c440b0f1-1200.webp",
+              "width": 640,
+              "height": 1142,
+              "alt": "Imágenes de apoyo: Cluster"
+            }
+          ]
+        },
+        {
+          "kind": "iconos",
+          "topic": "Lo que hace VALKYRIA",
+          "items": [
+            {
+              "id": "2c5bf1697e",
+              "src": "assets/img/casos/valtre/2c5bf1697e-icon.webp",
+              "full": "assets/img/casos/valtre/2c5bf1697e-icon.webp",
+              "width": 256,
+              "height": 217,
+              "alt": "Lo que hace VALKYRIA: 50 de reducción"
+            },
+            {
+              "id": "314f8816ce",
+              "src": "assets/img/casos/valtre/314f8816ce.svg",
+              "full": "assets/img/casos/valtre/314f8816ce.svg",
+              "width": 245,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 1 Scripts"
+            },
+            {
+              "id": "4c30f328b0",
+              "src": "assets/img/casos/valtre/4c30f328b0.svg",
+              "full": "assets/img/casos/valtre/4c30f328b0.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 2 Matrices"
+            },
+            {
+              "id": "871d6df7a9",
+              "src": "assets/img/casos/valtre/871d6df7a9.svg",
+              "full": "assets/img/casos/valtre/871d6df7a9.svg",
+              "width": 196,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 3 YAML"
+            },
+            {
+              "id": "720fe69b15",
+              "src": "assets/img/casos/valtre/720fe69b15.svg",
+              "full": "assets/img/casos/valtre/720fe69b15.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 4 H Us"
+            },
+            {
+              "id": "618aab8b76",
+              "src": "assets/img/casos/valtre/618aab8b76.svg",
+              "full": "assets/img/casos/valtre/618aab8b76.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 5 Divide H Us"
+            },
+            {
+              "id": "45768ede73",
+              "src": "assets/img/casos/valtre/45768ede73.svg",
+              "full": "assets/img/casos/valtre/45768ede73.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 6 ecomendaciones"
+            },
+            {
+              "id": "b3fe345f68",
+              "src": "assets/img/casos/valtre/b3fe345f68.svg",
+              "full": "assets/img/casos/valtre/b3fe345f68.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 7 INVEST"
+            },
+            {
+              "id": "e72edc5b2f",
+              "src": "assets/img/casos/valtre/e72edc5b2f.svg",
+              "full": "assets/img/casos/valtre/e72edc5b2f.svg",
+              "width": 244,
+              "height": 244,
+              "alt": "Lo que hace VALKYRIA: 8 Identifica riesgos"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "identidad",
       "title": "Identidad",
       "eyebrow": "una marca, muchos centros",
       "text": [
-        "Lideré el rebranding completo de la compañía y construí desde cero la identidad de los Centros de Excelencia: cada uno con su propia personalidad, todos dentro de la misma familia visual.",
+        "Antes de VALKYRIA lideré el rebranding completo de la compañía y construí desde cero la identidad de los Centros de Excelencia: cada uno con su propia personalidad, todos dentro de la misma familia visual.",
         "Aquí está el sistema: los iconos de Software Solutions y AI Labs en una sola hoja, los logotipos y los materiales de cada centro."
       ],
       "groups": [
@@ -4189,533 +4716,6 @@
               "width": 640,
               "height": 800,
               "alt": "Transformación digital: Servicio Especializado Mailing"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "valkyria",
-      "title": "VALKYRIA",
-      "eyebrow": "un agente de IA para QA",
-      "text": [
-        "VALKYRIA es un agente de IA diseñado para optimizar el ciclo de QA: crea scripts de automatización y matrices de pruebas, y evalúa historias de usuario.",
-        "Le di identidad, una hoja de una página y su campaña. Las imágenes de la campaña están creadas con IA generativa. La idea que resume el proyecto: la IA no sustituye al tester, lo potencia."
-      ],
-      "groups": [
-        {
-          "kind": "logos",
-          "topic": "Logotipo de VALKYRIA",
-          "items": [
-            {
-              "id": "00631fb5f9",
-              "src": "assets/img/casos/valtre/00631fb5f9-640.webp",
-              "full": "assets/img/casos/valtre/00631fb5f9-1200.webp",
-              "width": 640,
-              "height": 76,
-              "alt": "Logotipo de VALKYRIA: V VALKYRIA by Valtre",
-              "tone": "light"
-            },
-            {
-              "id": "030ee5eb3c",
-              "src": "assets/img/casos/valtre/030ee5eb3c-640.webp",
-              "full": "assets/img/casos/valtre/030ee5eb3c-1200.webp",
-              "width": 640,
-              "height": 67,
-              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo",
-              "tone": "light"
-            },
-            {
-              "id": "c050412795",
-              "src": "assets/img/casos/valtre/c050412795-640.webp",
-              "full": "assets/img/casos/valtre/c050412795-1200.webp",
-              "width": 640,
-              "height": 452,
-              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo On Dark",
-              "tone": "light"
-            },
-            {
-              "id": "00828aeb91",
-              "src": "assets/img/casos/valtre/00828aeb91-640.webp",
-              "full": "assets/img/casos/valtre/00828aeb91-1200.webp",
-              "width": 640,
-              "height": 452,
-              "alt": "Logotipo de VALKYRIA: VALKYRIA Logo On Light"
-            }
-          ]
-        },
-        {
-          "kind": "disenos",
-          "topic": "Identidad y hoja de una página",
-          "items": [
-            {
-              "id": "306df445ef",
-              "src": "assets/img/casos/valtre/306df445ef-640.webp",
-              "full": "assets/img/casos/valtre/306df445ef-1200.webp",
-              "width": 640,
-              "height": 359,
-              "alt": "Identidad y hoja de una página: AI Business"
-            },
-            {
-              "id": "0e5402e942",
-              "src": "assets/img/casos/valtre/0e5402e942-640.webp",
-              "full": "assets/img/casos/valtre/0e5402e942-1200.webp",
-              "width": 640,
-              "height": 359,
-              "alt": "Identidad y hoja de una página: AI Business"
-            },
-            {
-              "id": "89ce9d221a",
-              "src": "assets/img/casos/valtre/89ce9d221a-640.webp",
-              "full": "assets/img/casos/valtre/89ce9d221a-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Identidad y hoja de una página: CI CD"
-            },
-            {
-              "id": "bf0460cf9d",
-              "src": "assets/img/casos/valtre/bf0460cf9d-640.webp",
-              "full": "assets/img/casos/valtre/bf0460cf9d-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Identidad y hoja de una página: CI CD"
-            },
-            {
-              "id": "84ca92792f",
-              "src": "assets/img/casos/valtre/84ca92792f-640.webp",
-              "full": "assets/img/casos/valtre/84ca92792f-1200.webp",
-              "width": 640,
-              "height": 640,
-              "alt": "Identidad y hoja de una página: Cybernetic Woman Working"
-            },
-            {
-              "id": "824d3b32a6",
-              "src": "assets/img/casos/valtre/824d3b32a6-640.webp",
-              "full": "assets/img/casos/valtre/824d3b32a6-1200.webp",
-              "width": 640,
-              "height": 360,
-              "alt": "Identidad y hoja de una página: Futuristic Woman Portrait"
-            },
-            {
-              "id": "879f30c36f",
-              "src": "assets/img/casos/valtre/879f30c36f-640.webp",
-              "full": "assets/img/casos/valtre/879f30c36f-1200.webp",
-              "width": 640,
-              "height": 640,
-              "alt": "Identidad y hoja de una página: Futuristic Woman Portrait"
-            },
-            {
-              "id": "67f56d971d",
-              "src": "assets/img/casos/valtre/67f56d971d-640.webp",
-              "full": "assets/img/casos/valtre/67f56d971d-1200.webp",
-              "width": 640,
-              "height": 359,
-              "alt": "Identidad y hoja de una página: human + AI"
-            },
-            {
-              "id": "6e95faaa37",
-              "src": "assets/img/casos/valtre/6e95faaa37-640.webp",
-              "full": "assets/img/casos/valtre/6e95faaa37-1200.webp",
-              "width": 640,
-              "height": 359,
-              "alt": "Identidad y hoja de una página: human + AI"
-            },
-            {
-              "id": "10c933374f",
-              "src": "assets/img/casos/valtre/10c933374f-640.webp",
-              "full": "assets/img/casos/valtre/10c933374f-1200.webp",
-              "width": 640,
-              "height": 359,
-              "alt": "Identidad y hoja de una página: human + AI"
-            },
-            {
-              "id": "5254dd7e66",
-              "src": "assets/img/casos/valtre/5254dd7e66-640.webp",
-              "full": "assets/img/casos/valtre/5254dd7e66-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Identidad y hoja de una página: laptop mockup 1 + AI"
-            },
-            {
-              "id": "38af5e6df0",
-              "src": "assets/img/casos/valtre/38af5e6df0-640.webp",
-              "full": "assets/img/casos/valtre/38af5e6df0-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Identidad y hoja de una página: QA Agent"
-            },
-            {
-              "id": "ff41aa39aa",
-              "src": "assets/img/casos/valtre/ff41aa39aa-640.webp",
-              "full": "assets/img/casos/valtre/ff41aa39aa-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Identidad y hoja de una página: QA Agent"
-            },
-            {
-              "id": "217e214dd6",
-              "src": "assets/img/casos/valtre/217e214dd6-640.webp",
-              "full": "assets/img/casos/valtre/217e214dd6-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Identidad y hoja de una página: QA Agent"
-            },
-            {
-              "id": "2e27deaaeb",
-              "src": "assets/img/casos/valtre/2e27deaaeb-640.webp",
-              "full": "assets/img/casos/valtre/2e27deaaeb-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Identidad y hoja de una página: QA Agent"
-            },
-            {
-              "id": "305935dc30",
-              "src": "assets/img/casos/valtre/305935dc30-640.webp",
-              "full": "assets/img/casos/valtre/305935dc30-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Identidad y hoja de una página: QA Agent"
-            },
-            {
-              "id": "307e9c630c",
-              "src": "assets/img/casos/valtre/307e9c630c-640.webp",
-              "full": "assets/img/casos/valtre/307e9c630c-1200.webp",
-              "width": 640,
-              "height": 309,
-              "alt": "Identidad y hoja de una página: Cobertura"
-            },
-            {
-              "id": "575c90f0a9",
-              "src": "assets/img/casos/valtre/575c90f0a9-640.webp",
-              "full": "assets/img/casos/valtre/575c90f0a9-1200.webp",
-              "width": 640,
-              "height": 265,
-              "alt": "Identidad y hoja de una página: V Optimizar"
-            }
-          ]
-        },
-        {
-          "kind": "disenos",
-          "topic": "Campaña de lanzamiento",
-          "ai": true,
-          "items": [
-            {
-              "id": "88c6cb0d12",
-              "src": "assets/img/casos/valtre/88c6cb0d12-640.webp",
-              "full": "assets/img/casos/valtre/88c6cb0d12-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: download (1)"
-            },
-            {
-              "id": "db26f5ef9a",
-              "src": "assets/img/casos/valtre/db26f5ef9a-640.webp",
-              "full": "assets/img/casos/valtre/db26f5ef9a-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: download"
-            },
-            {
-              "id": "fdbd8dbc25",
-              "src": "assets/img/casos/valtre/fdbd8dbc25-640.webp",
-              "full": "assets/img/casos/valtre/fdbd8dbc25-1200.webp",
-              "width": 640,
-              "height": 801,
-              "alt": "Campaña de lanzamiento",
-              "caption": "QA manual contra QA con IA: «¿Cuál crees que detecta más errores?»"
-            },
-            {
-              "id": "b330e8aac5",
-              "src": "assets/img/casos/valtre/b330e8aac5-640.webp",
-              "full": "assets/img/casos/valtre/b330e8aac5-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "5b247c2cc3",
-              "src": "assets/img/casos/valtre/5b247c2cc3-640.webp",
-              "full": "assets/img/casos/valtre/5b247c2cc3-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "144c8e9365",
-              "src": "assets/img/casos/valtre/144c8e9365-640.webp",
-              "full": "assets/img/casos/valtre/144c8e9365-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "7cf59d529b",
-              "src": "assets/img/casos/valtre/7cf59d529b-640.webp",
-              "full": "assets/img/casos/valtre/7cf59d529b-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "b8c8b1973d",
-              "src": "assets/img/casos/valtre/b8c8b1973d-640.webp",
-              "full": "assets/img/casos/valtre/b8c8b1973d-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "679b964ac0",
-              "src": "assets/img/casos/valtre/679b964ac0-640.webp",
-              "full": "assets/img/casos/valtre/679b964ac0-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "4170ab883d",
-              "src": "assets/img/casos/valtre/4170ab883d-640.webp",
-              "full": "assets/img/casos/valtre/4170ab883d-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Campaña de lanzamiento: QA AI Engineer 7 Left Jab"
-            },
-            {
-              "id": "a1e8477ff7",
-              "src": "assets/img/casos/valtre/a1e8477ff7-640.webp",
-              "full": "assets/img/casos/valtre/a1e8477ff7-1200.webp",
-              "width": 640,
-              "height": 366,
-              "alt": "Campaña de lanzamiento: QA AI Engineer 7 Left Jab"
-            },
-            {
-              "id": "92fd50db04",
-              "src": "assets/img/casos/valtre/92fd50db04-640.webp",
-              "full": "assets/img/casos/valtre/92fd50db04-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer 7 No BG"
-            },
-            {
-              "id": "ec2521bb6e",
-              "src": "assets/img/casos/valtre/ec2521bb6e-640.webp",
-              "full": "assets/img/casos/valtre/ec2521bb6e-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "34c00d5c69",
-              "src": "assets/img/casos/valtre/34c00d5c69-640.webp",
-              "full": "assets/img/casos/valtre/34c00d5c69-1200.webp",
-              "width": 640,
-              "height": 753,
-              "alt": "Campaña de lanzamiento: QA AI Engineer 7 3 No Rain Extended"
-            },
-            {
-              "id": "3786d29b21",
-              "src": "assets/img/casos/valtre/3786d29b21-640.webp",
-              "full": "assets/img/casos/valtre/3786d29b21-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "2cc2c13a40",
-              "src": "assets/img/casos/valtre/2cc2c13a40-640.webp",
-              "full": "assets/img/casos/valtre/2cc2c13a40-1200.webp",
-              "width": 640,
-              "height": 1120,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "01840ce073",
-              "src": "assets/img/casos/valtre/01840ce073-640.webp",
-              "full": "assets/img/casos/valtre/01840ce073-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA AI Engineer"
-            },
-            {
-              "id": "e8637cdf48",
-              "src": "assets/img/casos/valtre/e8637cdf48-640.webp",
-              "full": "assets/img/casos/valtre/e8637cdf48-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA Automat Engineer 1 no bg"
-            },
-            {
-              "id": "79257ac476",
-              "src": "assets/img/casos/valtre/79257ac476-640.webp",
-              "full": "assets/img/casos/valtre/79257ac476-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA Automat Engineer"
-            },
-            {
-              "id": "8562059e79",
-              "src": "assets/img/casos/valtre/8562059e79-640.webp",
-              "full": "assets/img/casos/valtre/8562059e79-1200.webp",
-              "width": 640,
-              "height": 774,
-              "alt": "Campaña de lanzamiento: QA DG Sparring"
-            },
-            {
-              "id": "27569d8700",
-              "src": "assets/img/casos/valtre/27569d8700-640.webp",
-              "full": "assets/img/casos/valtre/27569d8700-1200.webp",
-              "width": 640,
-              "height": 959,
-              "alt": "Campaña de lanzamiento: QA Engineer 1 No BG"
-            },
-            {
-              "id": "e49cda13fc",
-              "src": "assets/img/casos/valtre/e49cda13fc-640.webp",
-              "full": "assets/img/casos/valtre/e49cda13fc-1200.webp",
-              "width": 640,
-              "height": 959,
-              "alt": "Campaña de lanzamiento: QA Engineer"
-            },
-            {
-              "id": "c4f0b64796",
-              "src": "assets/img/casos/valtre/c4f0b64796-640.webp",
-              "full": "assets/img/casos/valtre/c4f0b64796-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA Engineer"
-            },
-            {
-              "id": "d5eb0c1e06",
-              "src": "assets/img/casos/valtre/d5eb0c1e06-640.webp",
-              "full": "assets/img/casos/valtre/d5eb0c1e06-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA Engineer"
-            },
-            {
-              "id": "f73d60f29c",
-              "src": "assets/img/casos/valtre/f73d60f29c-640.webp",
-              "full": "assets/img/casos/valtre/f73d60f29c-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA Engineer"
-            },
-            {
-              "id": "43e02caa48",
-              "src": "assets/img/casos/valtre/43e02caa48-640.webp",
-              "full": "assets/img/casos/valtre/43e02caa48-1200.webp",
-              "width": 640,
-              "height": 780,
-              "alt": "Campaña de lanzamiento: QA Engineer 5 no bg"
-            },
-            {
-              "id": "e7e88af6eb",
-              "src": "assets/img/casos/valtre/e7e88af6eb-640.webp",
-              "full": "assets/img/casos/valtre/e7e88af6eb-1200.webp",
-              "width": 640,
-              "height": 780,
-              "alt": "Campaña de lanzamiento: QA Engineer"
-            },
-            {
-              "id": "1e8a3672cc",
-              "src": "assets/img/casos/valtre/1e8a3672cc-640.webp",
-              "full": "assets/img/casos/valtre/1e8a3672cc-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Campaña de lanzamiento: QA World"
-            }
-          ]
-        },
-        {
-          "kind": "disenos",
-          "topic": "Imágenes de apoyo",
-          "ai": true,
-          "items": [
-            {
-              "id": "01c440b0f1",
-              "src": "assets/img/casos/valtre/01c440b0f1-640.webp",
-              "full": "assets/img/casos/valtre/01c440b0f1-1200.webp",
-              "width": 640,
-              "height": 1142,
-              "alt": "Imágenes de apoyo: Cluster"
-            }
-          ]
-        },
-        {
-          "kind": "iconos",
-          "topic": "Lo que hace VALKYRIA",
-          "items": [
-            {
-              "id": "2c5bf1697e",
-              "src": "assets/img/casos/valtre/2c5bf1697e-icon.webp",
-              "full": "assets/img/casos/valtre/2c5bf1697e-icon.webp",
-              "width": 256,
-              "height": 217,
-              "alt": "Lo que hace VALKYRIA: 50 de reducción"
-            },
-            {
-              "id": "314f8816ce",
-              "src": "assets/img/casos/valtre/314f8816ce.svg",
-              "full": "assets/img/casos/valtre/314f8816ce.svg",
-              "width": 245,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 1 Scripts"
-            },
-            {
-              "id": "4c30f328b0",
-              "src": "assets/img/casos/valtre/4c30f328b0.svg",
-              "full": "assets/img/casos/valtre/4c30f328b0.svg",
-              "width": 244,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 2 Matrices"
-            },
-            {
-              "id": "871d6df7a9",
-              "src": "assets/img/casos/valtre/871d6df7a9.svg",
-              "full": "assets/img/casos/valtre/871d6df7a9.svg",
-              "width": 196,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 3 YAML"
-            },
-            {
-              "id": "720fe69b15",
-              "src": "assets/img/casos/valtre/720fe69b15.svg",
-              "full": "assets/img/casos/valtre/720fe69b15.svg",
-              "width": 244,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 4 H Us"
-            },
-            {
-              "id": "618aab8b76",
-              "src": "assets/img/casos/valtre/618aab8b76.svg",
-              "full": "assets/img/casos/valtre/618aab8b76.svg",
-              "width": 244,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 5 Divide H Us"
-            },
-            {
-              "id": "45768ede73",
-              "src": "assets/img/casos/valtre/45768ede73.svg",
-              "full": "assets/img/casos/valtre/45768ede73.svg",
-              "width": 244,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 6 ecomendaciones"
-            },
-            {
-              "id": "b3fe345f68",
-              "src": "assets/img/casos/valtre/b3fe345f68.svg",
-              "full": "assets/img/casos/valtre/b3fe345f68.svg",
-              "width": 244,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 7 INVEST"
-            },
-            {
-              "id": "e72edc5b2f",
-              "src": "assets/img/casos/valtre/e72edc5b2f.svg",
-              "full": "assets/img/casos/valtre/e72edc5b2f.svg",
-              "width": 244,
-              "height": 244,
-              "alt": "Lo que hace VALKYRIA: 8 Identifica riesgos"
             }
           ]
         }

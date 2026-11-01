@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es" data-case="ciisa">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CiiSA | PSW | Lex Mendoza</title>
+    <meta name="description" content="Sitios de eventos y de producto para CiiSA | PSW, publicados y en uso. Entra a cada uno y míralo en tu pantalla.">
+    <script>
+      document.documentElement.classList.add('has-js');
+      setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.add('reveal-all'); }, 2500);
+      // Al llegar con una transicion entre paginas, la tarjeta del caso y el hero ya vienen revelados: la
+      // transicion necesita algo visible a lo que llegar (si no, el titulo moraria hacia algo invisible).
+      addEventListener('pagereveal', function (e) {
+        if (!e.viewTransition) return;
+        document.querySelectorAll('.c-case-hero [data-reveal], .c-case-card[data-media]').forEach(function (n) { n.classList.add('is-revealed'); });
+      });
+      try {
+        var stored = localStorage.getItem('theme');
+        if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored;
+      } catch (e) {}
+    </script>
+    <link rel="expect" href="#contenido" blocking="render">
+    <link rel="preload" href="../../assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../assets/fonts/plex/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../assets/fonts/plex/ibm-plex-mono-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../../assets/fonts/plex/ibm-plex-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="../../favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="stylesheet" href="../../assets/css/main.min.css">
+    <script type="module" src="../../assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="u-visually-hidden u-visually-hidden--focusable" href="#contenido">Saltar al contenido</a>
+    <div class="c-progress" aria-hidden="true"></div>
+
+    <header class="c-nav">
+      <div class="o-container c-nav__inner">
+        <a class="c-nav__brand" href="../../">Lex Mendoza</a>
+        <button class="c-theme-toggle js-theme-toggle" type="button" aria-pressed="false">
+          <span class="u-visually-hidden">Modo oscuro</span>
+          <span class="c-theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+        <nav class="c-nav__links" aria-label="Principal">
+          <a class="c-nav__link" href="../../#casos">Casos</a>
+          <a class="c-nav__link" href="../../#servicios">Servicios</a>
+          <a class="c-nav__link" href="../../#sobre-mi">Sobre mí</a>
+          <a class="c-nav__link" data-soon="como-trabajo/" aria-disabled="true">Cómo trabajo <span class="c-nav__soon">Próximamente</span></a>
+          <a class="c-nav__link c-nav__link--quiet" href="../../#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="c-rail" aria-label="Capítulos">
+      <a class="c-rail__link js-spy" href="#sitios"><span class="c-rail__num">01</span><span class="c-rail__label">Sitios para visitar</span></a>
+      <a class="c-rail__link js-spy" href="#sigue"><span class="c-rail__num">02</span><span class="c-rail__label">Esta historia sigue</span></a>
+    </nav>
+
+    <main id="contenido" data-lens="todo">
+      <section class="c-case-hero" id="caso-inicio" data-media style="--vt-hero: hero-ciisa; --vt-title: title-ciisa" aria-labelledby="caso-titulo">
+        <span class="c-case-hero__media" aria-hidden="true" data-count="3">
+            <video class="c-case-hero__video" src="../../assets/video/casos/ciisa-psw/beyond-h.mp4" poster="../../assets/video/casos/ciisa-psw/beyond-h-poster.webp" data-src-mobile="../../assets/video/casos/ciisa-psw/beyond-v.mp4" data-poster-mobile="../../assets/video/casos/ciisa-psw/beyond-v-poster.webp" width="1280" height="722" muted loop playsinline preload="metadata"></video>
+            <video class="c-case-hero__video" src="../../assets/video/casos/ciisa-psw/aniv35-h.mp4" poster="../../assets/video/casos/ciisa-psw/aniv35-h-poster.webp" data-src-mobile="../../assets/video/casos/ciisa-psw/aniv35-v.mp4" data-poster-mobile="../../assets/video/casos/ciisa-psw/aniv35-v-poster.webp" width="1280" height="730" muted loop playsinline preload="metadata"></video>
+            <span class="c-sky" data-sky="adobe" aria-hidden="true"><span class="c-sky__aurora"></span><canvas class="c-sky__stars"></canvas></span>
+          </span>
+          <span class="c-case-hero__veil" aria-hidden="true"></span>
+          <div class="o-container o-stack">
+          <p class="c-eyebrow">// sitios web y eventos</p>
+          <h1 class="c-case-hero__title" id="caso-titulo" data-reveal="title"><span class="c-chameleon-title">CiiSA | PSW</span></h1>
+          <p class="c-case-hero__meta" data-reveal="text">2026–hoy · Diseñador gráfico y desarrollo web</p>
+          <p class="c-case-hero__summary" data-reveal="text">Sitios de eventos y de producto para CiiSA | PSW, publicados y en uso. Entra a cada uno y míralo en tu pantalla.</p>
+          <p class="c-case-hero__teaser" data-reveal="text"><a href="#sitios">Abajo: los sitios para visitar.</a></p>
+        </div>
+      </section>
+
+      
+
+      <section class="c-chapter" id="sitios" aria-labelledby="sitios-titulo">
+  <div class="o-container o-stack">
+    <p class="c-eyebrow">// publicados y en uso</p>
+    <h2 id="sitios-titulo" data-reveal="title">Sitios para visitar</h2>
+    <p class="c-chapter__text" data-reveal="text">Estos son los sitios que construí para CiiSA | PSW. Cada tarjeta lleva a su sitio en una pestaña nueva, y la vista previa cambia de proporción según tu pantalla.</p>
+    <div class="c-sites" data-kind="sitios">
+    <h3 class="c-gallery__topic">Sitios publicados</h3>
+    <ul class="c-sites__grid">
+      <li class="c-sites__item" data-reveal="card">
+        <a class="c-site-card" href="https://beyond.ciisa.com/" target="_blank" rel="noopener noreferrer" style="--site-color: #b7ec04">
+          <span class="c-site-card__bar"><span class="c-site-card__domain">beyond.ciisa.com</span><span class="c-site-card__tags">Evento · 2026</span></span>
+          <picture class="c-site-card__preview"><source media="(max-width: 30em)" srcset="../../assets/img/casos/ciisa-psw/beyond-mobile-390.webp"><source media="(max-width: 60em)" srcset="../../assets/img/casos/ciisa-psw/beyond-tablet-820.webp"><img src="../../assets/img/casos/ciisa-psw/beyond-1200.webp" width="640" height="400" alt="Vista previa de CiiSA Beyond 2026" loading="lazy" decoding="async"></picture>
+          <span class="c-site-card__title">CiiSA Beyond 2026</span>
+          <span class="c-site-card__text">Sitio del evento anual de CiiSA: agenda, laboratorio y registro, con flujos de registro y gafetes automatizados.</span>
+          <span class="c-site-card__cta">Visita el sitio ↗<span class="u-visually-hidden">(se abre en otra pestaña)</span></span>
+        </a>
+      </li>
+      <li class="c-sites__item" data-reveal="card">
+        <a class="c-site-card" href="https://lex-psw.github.io/35-aniversario-ciisa-psw/" target="_blank" rel="noopener noreferrer" style="--site-color: #7b2fe0">
+          <span class="c-site-card__bar"><span class="c-site-card__domain">lex-psw.github.io/35-aniversario-ciisa-psw</span><span class="c-site-card__tags">Evento · 2026</span></span>
+          <picture class="c-site-card__preview"><source media="(max-width: 30em)" srcset="../../assets/img/casos/ciisa-psw/aniv35-mobile-390.webp"><source media="(max-width: 60em)" srcset="../../assets/img/casos/ciisa-psw/aniv35-tablet-820.webp"><img src="../../assets/img/casos/ciisa-psw/aniv35-1200.webp" width="640" height="400" alt="Vista previa de 35 Aniversario CiiSA | PSW" loading="lazy" decoding="async"></picture>
+          <span class="c-site-card__title">35 Aniversario CiiSA | PSW</span>
+          <span class="c-site-card__text">Invitación virtual para celebrar los 35 años de CiiSA | PSW: su historia, su impacto y la agenda del día.</span>
+          <span class="c-site-card__cta">Visita el sitio ↗<span class="u-visually-hidden">(se abre en otra pestaña)</span></span>
+        </a>
+      </li>
+      <li class="c-sites__item" data-reveal="card">
+        <a class="c-site-card" href="https://lex-psw.github.io/ciisa-adobe/" target="_blank" rel="noopener noreferrer" style="--site-color: #e8431a">
+          <span class="c-site-card__bar"><span class="c-site-card__domain">lex-psw.github.io/ciisa-adobe</span><span class="c-site-card__tags">Producto · 2026</span></span>
+          <picture class="c-site-card__preview"><source media="(max-width: 30em)" srcset="../../assets/img/casos/ciisa-psw/adobe-mobile-390.webp"><source media="(max-width: 60em)" srcset="../../assets/img/casos/ciisa-psw/adobe-tablet-820.webp"><img src="../../assets/img/casos/ciisa-psw/adobe-1200.webp" width="640" height="400" alt="Vista previa de CiiSA y Adobe" loading="lazy" decoding="async"></picture>
+          <span class="c-site-card__title">CiiSA y Adobe</span>
+          <span class="c-site-card__text">El sitio de CiiSA como partner oficial de Adobe: soluciones, sectores y cotización de Creative Cloud, Acrobat y Firefly.</span>
+          <span class="c-site-card__cta">Visita el sitio ↗<span class="u-visually-hidden">(se abre en otra pestaña)</span></span>
+        </a>
+      </li>
+      <li class="c-sites__item" data-reveal="card">
+        <a class="c-site-card" href="https://lex-psw.github.io/Capacitacion-Pyxoom/bienvenida-y-cursos-del-mes.html" target="_blank" rel="noopener noreferrer" style="--site-color: #213acd">
+          <span class="c-site-card__bar"><span class="c-site-card__domain">lex-psw.github.io/Capacitacion-Pyxoom/bienvenida-y-cursos-del-mes.html</span><span class="c-site-card__tags">Migrado a pyxoom.com</span></span>
+          <picture class="c-site-card__preview"><source media="(max-width: 30em)" srcset="../../assets/img/casos/ciisa-psw/pyxoom-mobile-390.webp"><source media="(max-width: 60em)" srcset="../../assets/img/casos/ciisa-psw/pyxoom-tablet-820.webp"><img src="../../assets/img/casos/ciisa-psw/pyxoom-1200.webp" width="640" height="400" alt="Vista previa de Bienvenida a Pyxoom" loading="lazy" decoding="async"></picture>
+          <span class="c-site-card__title">Bienvenida a Pyxoom</span>
+          <span class="c-site-card__text">Guía de bienvenida y calendario de cursos mensuales gratuitos para usuarios nuevos de Pyxoom. Hoy el sitio vive en pyxoom.com.</span>
+          <span class="c-site-card__cta">Visita el sitio ↗<span class="u-visually-hidden">(se abre en otra pestaña)</span></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+      <section class="c-chapter" id="sigue" aria-labelledby="sigue-titulo">
+  <div class="o-container o-stack">
+    <p class="c-eyebrow">// se sigue escribiendo</p>
+    <h2 id="sigue-titulo" data-reveal="title">Esta historia sigue</h2>
+    <p class="c-chapter__text" data-reveal="text">Mi historia en CiiSA | PSW se sigue escribiendo, y lo hago con mucho gusto.</p>
+    <p class="c-chapter__text" data-reveal="text">Aquí irán sumándose más sitios, el trabajo de Pyxoom en HubSpot y el contenido que he hecho para la empresa.</p>
+    
+  </div>
+</section>
+
+      <section class="c-section c-section--plan" aria-labelledby="cierre-titulo">
+        <div class="o-container o-stack">
+          <h2 id="cierre-titulo" data-reveal="title">¿Te late este tipo de trabajo?</h2>
+          <p class="c-section__lead" data-reveal="text">Cuéntame qué necesitas y armamos tu plan, paso a paso, sin compromiso.</p>
+          <p><a class="c-button" data-soon="../../plan/" aria-disabled="true">Arma tu plan <span class="c-nav__soon">Próximamente</span></a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="c-footer" id="contacto">
+      <div class="o-container o-stack">
+        <p class="c-eyebrow">// WhatsApp o correo, como prefieras</p>
+        <h2 data-reveal="title">¿Hablamos?</h2>
+        <p class="c-section__lead" data-reveal="text">Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad. ¿Tu sobrino lo hace con ChatGPT? Seguro quedará increíble. Si prefieres a alguien con 15 años de oficio, aquí estoy.</p>
+        <p class="c-footer__actions">
+          <a class="c-button" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20vi%20tu%20sitio%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20proyecto." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="c-button c-button--ghost" href="mailto:lex.mendozaleon@gmail.com">Correo</a>
+        </p>
+        <p class="c-footer__legal">© 2026 Lex Mendoza · <a data-soon="privacidad/" aria-disabled="true">Aviso de privacidad <span class="c-nav__soon">Próximamente</span></a></p>
+      </div>
+    </footer>
+
+    <dialog class="c-lightbox" aria-label="Imagen ampliada">
+      <form method="dialog"><button class="c-lightbox__close" type="submit" aria-label="Cerrar">Cerrar</button></form>
+      <figure class="c-lightbox__figure"></figure>
+      <button class="c-lightbox__nav c-lightbox__nav--prev" type="button" aria-label="Anterior">‹</button>
+      <button class="c-lightbox__nav c-lightbox__nav--next" type="button" aria-label="Siguiente">›</button>
+    </dialog>
+
+    <a class="c-to-top js-to-top" href="#caso-inicio" aria-label="Volver al inicio del caso"></a>
+
+    <script type="module" src="../../assets/js/case.js"></script>
+  </body>
+</html>

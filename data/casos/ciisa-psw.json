@@ -1,0 +1,172 @@
+{
+  "slug": "ciisa-psw",
+  "key": "ciisa",
+  "title": "CiiSA | PSW",
+  "eyebrow": "sitios web y eventos",
+  "meta": "2026–hoy · Diseñador gráfico y desarrollo web",
+  "summary": "Sitios de eventos y de producto para CiiSA | PSW, publicados y en uso. Entra a cada uno y míralo en tu pantalla.",
+  "teaser": {
+    "chapter": "sitios",
+    "text": "Abajo: los sitios para visitar."
+  },
+  "chapters": [
+    {
+      "id": "sitios",
+      "title": "Sitios para visitar",
+      "eyebrow": "publicados y en uso",
+      "text": [
+        "Estos son los sitios que construí para CiiSA | PSW. Cada tarjeta lleva a su sitio en una pestaña nueva, y la vista previa cambia de proporción según tu pantalla."
+      ],
+      "groups": [
+        {
+          "kind": "sitios",
+          "topic": "Sitios publicados",
+          "items": [
+            {
+              "id": "beyond",
+              "title": "CiiSA Beyond 2026",
+              "url": "https://beyond.ciisa.com/",
+              "domain": "beyond.ciisa.com",
+              "tags": "Evento · 2026",
+              "text": "Sitio del evento anual de CiiSA: agenda, laboratorio y registro, con flujos de registro y gafetes automatizados.",
+              "color": "#b7ec04",
+              "alt": "Vista previa de CiiSA Beyond 2026",
+              "src": "assets/img/casos/ciisa-psw/beyond-640.webp",
+              "full": "assets/img/casos/ciisa-psw/beyond-1200.webp",
+              "width": 640,
+              "height": 400,
+              "shots": {
+                "tablet": {
+                  "src": "assets/img/casos/ciisa-psw/beyond-tablet-820.webp",
+                  "width": 820,
+                  "height": 1180
+                },
+                "mobile": {
+                  "src": "assets/img/casos/ciisa-psw/beyond-mobile-390.webp",
+                  "width": 390,
+                  "height": 844
+                }
+              }
+            },
+            {
+              "id": "aniv35",
+              "title": "35 Aniversario CiiSA | PSW",
+              "url": "https://lex-psw.github.io/35-aniversario-ciisa-psw/",
+              "domain": "lex-psw.github.io/35-aniversario-ciisa-psw",
+              "tags": "Evento · 2026",
+              "text": "Invitación virtual para celebrar los 35 años de CiiSA | PSW: su historia, su impacto y la agenda del día.",
+              "color": "#7b2fe0",
+              "alt": "Vista previa de 35 Aniversario CiiSA | PSW",
+              "src": "assets/img/casos/ciisa-psw/aniv35-640.webp",
+              "full": "assets/img/casos/ciisa-psw/aniv35-1200.webp",
+              "width": 640,
+              "height": 400,
+              "shots": {
+                "tablet": {
+                  "src": "assets/img/casos/ciisa-psw/aniv35-tablet-820.webp",
+                  "width": 820,
+                  "height": 1180
+                },
+                "mobile": {
+                  "src": "assets/img/casos/ciisa-psw/aniv35-mobile-390.webp",
+                  "width": 390,
+                  "height": 844
+                }
+              }
+            },
+            {
+              "id": "adobe",
+              "title": "CiiSA y Adobe",
+              "url": "https://lex-psw.github.io/ciisa-adobe/",
+              "domain": "lex-psw.github.io/ciisa-adobe",
+              "tags": "Producto · 2026",
+              "text": "El sitio de CiiSA como partner oficial de Adobe: soluciones, sectores y cotización de Creative Cloud, Acrobat y Firefly.",
+              "color": "#e8431a",
+              "alt": "Vista previa de CiiSA y Adobe",
+              "src": "assets/img/casos/ciisa-psw/adobe-640.webp",
+              "full": "assets/img/casos/ciisa-psw/adobe-1200.webp",
+              "width": 640,
+              "height": 400,
+              "shots": {
+                "tablet": {
+                  "src": "assets/img/casos/ciisa-psw/adobe-tablet-820.webp",
+                  "width": 820,
+                  "height": 1180
+                },
+                "mobile": {
+                  "src": "assets/img/casos/ciisa-psw/adobe-mobile-390.webp",
+                  "width": 390,
+                  "height": 844
+                }
+              }
+            },
+            {
+              "id": "pyxoom",
+              "title": "Bienvenida a Pyxoom",
+              "url": "https://lex-psw.github.io/Capacitacion-Pyxoom/bienvenida-y-cursos-del-mes.html",
+              "domain": "lex-psw.github.io/Capacitacion-Pyxoom/bienvenida-y-cursos-del-mes.html",
+              "tags": "Migrado a pyxoom.com",
+              "text": "Guía de bienvenida y calendario de cursos mensuales gratuitos para usuarios nuevos de Pyxoom. Hoy el sitio vive en pyxoom.com.",
+              "color": "#213acd",
+              "alt": "Vista previa de Bienvenida a Pyxoom",
+              "src": "assets/img/casos/ciisa-psw/pyxoom-640.webp",
+              "full": "assets/img/casos/ciisa-psw/pyxoom-1200.webp",
+              "width": 640,
+              "height": 400,
+              "shots": {
+                "tablet": {
+                  "src": "assets/img/casos/ciisa-psw/pyxoom-tablet-820.webp",
+                  "width": 820,
+                  "height": 1180
+                },
+                "mobile": {
+                  "src": "assets/img/casos/ciisa-psw/pyxoom-mobile-390.webp",
+                  "width": 390,
+                  "height": 844
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sigue",
+      "title": "Esta historia sigue",
+      "eyebrow": "se sigue escribiendo",
+      "text": [
+        "Mi historia en CiiSA | PSW se sigue escribiendo, y lo hago con mucho gusto.",
+        "Aquí irán sumándose más sitios, el trabajo de Pyxoom en HubSpot y el contenido que he hecho para la empresa."
+      ],
+      "groups": []
+    }
+  ],
+  "card": {
+    "media": [
+      {
+        "type": "video",
+        "id": "beyond",
+        "desktop": "assets/video/casos/ciisa-psw/beyond-h.mp4",
+        "poster": "assets/video/casos/ciisa-psw/beyond-h-poster.webp",
+        "width": 1280,
+        "height": 722,
+        "mobile": "assets/video/casos/ciisa-psw/beyond-v.mp4",
+        "posterMobile": "assets/video/casos/ciisa-psw/beyond-v-poster.webp"
+      },
+      {
+        "type": "video",
+        "id": "aniv35",
+        "desktop": "assets/video/casos/ciisa-psw/aniv35-h.mp4",
+        "poster": "assets/video/casos/ciisa-psw/aniv35-h-poster.webp",
+        "width": 1280,
+        "height": 730,
+        "mobile": "assets/video/casos/ciisa-psw/aniv35-v.mp4",
+        "posterMobile": "assets/video/casos/ciisa-psw/aniv35-v-poster.webp"
+      },
+      {
+        "type": "sky",
+        "id": "adobe"
+      }
+    ]
+  }
+}
