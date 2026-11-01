@@ -1,0 +1,10 @@
+@use "../0-settings/fonts" as f;
+
+// Comentario numerado sobre cada titulo, como el encabezado de una pagina de documentacion.
+.c-eyebrow {
+  color: var(--color-accent-text);
+  font-family: f.$font-mono;
+  font-size: var(--step--1);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,45 @@
+// Revelado al entrar en pantalla. El contenido existe siempre en el HTML: solo se oculta si
+// el modulo de JavaScript cargo (`.has-js`), la persona acepta movimiento y no se activo el
+// respaldo `.reveal-all` (que el script de la cabecera pone si el modulo no llega).
+@media (prefers-reduced-motion: no-preference) {
+  .has-js:not(.reveal-all) [data-reveal="title"] {
+    transition: opacity 0.6s ease var(--reveal-delay, 0ms), transform 0.6s ease var(--reveal-delay, 0ms);
+  }
+
+  .has-js:not(.reveal-all) [data-reveal="title"]:not(.is-revealed) {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+
+  // Tarjetas: primero un esqueleto con brillo; al revelarse, el contenido aparece y el esqueleto se va.
+  .has-js:not(.reveal-all) [data-reveal="card"] > * {
+    transition: opacity 0.45s ease calc(var(--reveal-delay, 0ms) + 120ms);
+  }
+
+  .has-js:not(.reveal-all) [data-reveal="card"]:not(.is-revealed) > * {
+    opacity: 0;
+  }
+
+  .has-js:not(.reveal-all) [data-reveal="card"]::after {
+    content: "";
+    position: absolute;
+    inset: var(--space-3);
+    background:
+      linear-gradient(90deg, transparent 0, color-mix(in srgb, var(--color-text) 12%, transparent) 50%, transparent 100%) 0 0 / 200% 100%,
+      repeating-linear-gradient(to bottom, color-mix(in srgb, var(--color-text) 14%, transparent) 0 0.5rem, transparent 0.5rem 1.3125rem);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    animation: c-skeleton 1.4s linear infinite;
+  }
+
+  .has-js:not(.reveal-all) [data-reveal="card"]:not(.is-revealed)::after {
+    opacity: 1;
+  }
+}
+
+@keyframes c-skeleton {
+  to {
+    background-position: -200% 0, 0 0;
+  }
+}

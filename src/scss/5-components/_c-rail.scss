@@ -1,0 +1,65 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/mixins" as m;
+
+// Riel numerado de secciones, solo en pantallas amplias donde hay margen a los lados.
+// Muestra solo los numeros; la etiqueta aparece en una burbuja al pasar el puntero o al enfocar.
+.c-rail {
+  display: none;
+}
+
+@include m.respond-to(desktop) {
+  .c-rail {
+    position: fixed;
+    inset-block-start: 50%;
+    inset-inline-start: var(--space-3);
+    z-index: 10;
+    display: grid;
+    gap: var(--space-2);
+    transform: translateY(-50%);
+  }
+
+  .c-rail__link {
+    position: relative;
+    display: block;
+    padding-inline-end: var(--space-1);
+    border-inline-end: 2px solid transparent;
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+
+  .c-rail__label {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 100%;
+    margin-inline-start: var(--space-2);
+    padding: 0 var(--space-1);
+    border: 1px solid var(--color-text-muted);
+    background: var(--color-bg);
+    color: var(--color-text);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease;
+  }
+
+  .c-rail__link.is-active {
+    border-inline-end-color: var(--color-accent);
+    color: var(--color-accent-text);
+  }
+
+  .c-rail__link:focus-visible .c-rail__label {
+    opacity: 1;
+  }
+
+  @media (hover: hover) {
+    .c-rail__link:hover .c-rail__label {
+      opacity: 1;
+    }
+  }
+}

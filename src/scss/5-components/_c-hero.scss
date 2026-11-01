@@ -3,13 +3,35 @@
 @use "../1-tools/mixins" as m;
 
 .c-hero {
+  position: relative;
   display: flex;
   align-items: center;
   min-block-size: calc(100svh - #{fn.rem(89)});
   padding-block: var(--space-5);
+  overflow: hidden;
 
   &__inner {
     --stack-space: var(--space-3);
+    position: relative;
+    z-index: 1;
+  }
+
+  // Capa decorativa del parallax: una reticula de puntos. El leon nunca va como imagen grande.
+  &__backdrop {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  // Retícula de puntos muy tenue, con los bordes difuminados. Reemplaza a la columna de numeros.
+  &__grid {
+    position: absolute;
+    inset: -20% 0;
+    background-image: radial-gradient(circle, color-mix(in srgb, var(--color-text) 30%, transparent) 1px, transparent 1.6px);
+    background-size: #{fn.rem(34)} #{fn.rem(34)};
+    mask-image: radial-gradient(ellipse at 72% 45%, #000 15%, transparent 72%);
+    opacity: 0.55;
   }
 
   &__eyebrow {
@@ -33,5 +55,23 @@
     font-size: var(--step-1);
     font-weight: 300;
     line-height: 1.4;
+  }
+}
+
+// Parallax: la reticula baja mas despacio que el contenido al hacer scroll.
+// Solo con soporte de animaciones ligadas al scroll y sin preferencia de menos movimiento.
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .c-hero__grid {
+      animation: c-hero-slow linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 100vh;
+    }
+  }
+}
+
+@keyframes c-hero-slow {
+  to {
+    transform: translateY(18vh);
   }
 }

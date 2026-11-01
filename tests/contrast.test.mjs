@@ -70,6 +70,6 @@ test('el degradado base existe en :root para el avatar y la palabra camaleonica'
 test('todo var(--x) usado en el CSS esta definido en alguna parte', () => {
   const defined = new Set([...css.matchAll(/(--[\w-]+)\s*:/g)].map((m) => m[1]));
   const used = new Set([...css.matchAll(/var\((--[\w-]+)/g)].map((m) => m[1]));
-  const missing = [...used].filter((name) => !defined.has(name) && name !== '--grid-gap' && name !== '--stack-space');
+  const missing = [...used].filter((name) => !defined.has(name) && !['--grid-gap', '--stack-space', '--reveal-delay'].includes(name));
   assert.deepEqual(missing, []);
 });

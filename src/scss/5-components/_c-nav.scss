@@ -71,3 +71,11 @@
     font-size: 0.75em;
   }
 }
+
+// Enlace de la seccion que se esta leyendo (lo marca el scroll-spy).
+.c-nav__link[aria-current="true"] {
+  color: var(--color-accent-text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.4em;
+}

@@ -79,3 +79,19 @@ test('las orejas miden al menos 4 filas de alto', () => {
   const rows = GRID.filter((row) => /[Ee]/.test(row.slice(0, 4)));
   assert.ok(rows.length >= 4, 'orejas demasiado bajas');
 });
+
+test('hay un favicon.ico en la raiz, que es donde los navegadores lo piden por defecto', () => {
+  assert.ok(fs.existsSync('favicon.ico'), 'falta favicon.ico en la raiz');
+  assert.deepEqual(read('favicon.ico'), read('assets/icons/favicon.ico'));
+});
+
+test('el enlace del favicon SVG declara sizes="any" para que Chrome lo prefiera sobre el .ico', () => {
+  const html = read('index.html').toString();
+  assert.match(html, /rel="icon"[^>]*favicon\.svg[^>]*sizes="any"/);
+});
+
+test('el servidor local entrega el .ico y el manifest con su tipo correcto', () => {
+  const serve = read('scripts/serve.mjs').toString();
+  assert.match(serve, /'\.ico':\s*'image\/x-icon'/);
+  assert.match(serve, /'\.webmanifest':\s*'application\/manifest\+json/);
+});

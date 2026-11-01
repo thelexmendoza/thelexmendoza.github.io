@@ -1,0 +1,28 @@
+// Barra fina de progreso de lectura. Solo existe donde el navegador soporta
+// animaciones ligadas al scroll; en los demas no se muestra.
+.c-progress {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline: 0;
+  z-index: 20;
+  block-size: 3px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .c-progress {
+      animation: c-progress-grow linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+
+@keyframes c-progress-grow {
+  to {
+    transform: scaleX(1);
+  }
+}

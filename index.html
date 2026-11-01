@@ -6,12 +6,14 @@
     <title>Lex Mendoza | Diseñador gráfico y desarrollador web</title>
     <meta name="description" content="Identidad visual y sitios web para negocios y marcas personales. Diseñador gráfico y desarrollador web en Monterrey.">
     <script>
+      document.documentElement.classList.add('has-js');
+      setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.add('reveal-all'); }, 2500);
       try {
         var stored = localStorage.getItem('theme');
         if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored;
       } catch (e) {}
     </script>
-    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="assets/icons/favicon.ico" sizes="48x48">
     <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
@@ -21,6 +23,7 @@
   </head>
   <body>
     <a class="u-visually-hidden u-visually-hidden--focusable" href="#contenido">Saltar al contenido</a>
+    <div class="c-progress" aria-hidden="true"></div>
 
     <header class="c-nav">
       <div class="o-container c-nav__inner">
@@ -30,17 +33,29 @@
           <span class="c-theme-toggle__icon" aria-hidden="true"></span>
         </button>
         <nav class="c-nav__links" aria-label="Principal">
-          <a class="c-nav__link" href="#casos">Casos</a>
-          <a class="c-nav__link" href="#servicios">Servicios</a>
-          <a class="c-nav__link" href="#sobre-mi">Sobre mí</a>
+          <a class="c-nav__link js-spy" href="#casos">Casos</a>
+          <a class="c-nav__link js-spy" href="#servicios">Servicios</a>
+          <a class="c-nav__link js-spy" href="#sobre-mi">Sobre mí</a>
           <a class="c-nav__link" data-soon="como-trabajo/" aria-disabled="true">Cómo trabajo <span class="c-nav__soon">Próximamente</span></a>
-          <a class="c-nav__link c-nav__link--quiet" href="#contacto">Contacto</a>
+          <a class="c-nav__link c-nav__link--quiet js-spy" href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
 
+    <nav class="c-rail" aria-label="Secciones">
+      <a class="c-rail__link js-spy" href="#inicio"><span class="c-rail__num">01</span><span class="c-rail__label">Inicio</span></a>
+      <a class="c-rail__link js-spy" href="#servicios"><span class="c-rail__num">02</span><span class="c-rail__label">Servicios</span></a>
+      <a class="c-rail__link js-spy" href="#casos"><span class="c-rail__num">03</span><span class="c-rail__label">Casos</span></a>
+      <a class="c-rail__link js-spy" href="#plan"><span class="c-rail__num">04</span><span class="c-rail__label">Plan</span></a>
+      <a class="c-rail__link js-spy" href="#sobre-mi"><span class="c-rail__num">05</span><span class="c-rail__label">Sobre mí</span></a>
+      <a class="c-rail__link js-spy" href="#contacto"><span class="c-rail__num">06</span><span class="c-rail__label">Contacto</span></a>
+    </nav>
+
     <main id="contenido">
-      <section class="c-hero" aria-labelledby="hero-titulo">
+      <section class="c-hero" id="inicio" aria-labelledby="hero-titulo">
+        <div class="c-hero__backdrop" aria-hidden="true">
+          <span class="c-hero__grid"></span>
+        </div>
         <div class="o-container o-stack c-hero__inner">
           <p class="c-hero__eyebrow">// Diseño + web</p>
           <h1 class="c-hero__title" id="hero-titulo">¿Buscas <span class="c-chameleon-title c-chameleon-title--spectrum">diseñador</span>?</h1>
@@ -51,7 +66,8 @@
 
       <section class="c-section" id="servicios" aria-labelledby="servicios-titulo">
         <div class="o-container o-stack">
-          <h2 id="servicios-titulo">Servicios</h2>
+          <p class="c-eyebrow">// elige una, o las dos</p>
+          <h2 data-reveal="title" id="servicios-titulo">Servicios</h2>
           <p class="c-section__lead">Dos cosas que puedes contratar por separado o juntas, y una sola persona que las entiende.</p>
           <div class="o-grid">
             <article class="c-service">
@@ -75,54 +91,55 @@
 
       <section class="c-section" id="casos" aria-labelledby="casos-titulo">
         <div class="o-container o-stack">
-          <h2 id="casos-titulo">Casos</h2>
+          <p class="c-eyebrow">// trabajo real, con clientes reales</p>
+          <h2 data-reveal="title" id="casos-titulo">Casos</h2>
           <p class="c-section__lead">Seis proyectos, seis voces. Cada uno cambia de color y de carácter; la manera de trabajar es la misma.</p>
           <ul class="o-grid c-case-list">
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="ciisa" data-soon="casos/ciisa-web/" aria-disabled="true">
-                <span class="c-case-card__tags">Web · 2026</span>
-                <span class="c-case-card__title">CiiSA | PSW</span>
-                <span class="c-case-card__text">Sitios de eventos y de producto, y el trabajo de Pyxoom en HubSpot. Publicados y en uso.</span>
+              <a class="c-case-card" data-case="ciisa" data-soon="casos/ciisa-web/" aria-disabled="true" data-reveal="card">
+                <span class="c-case-card__bar"><span class="c-case-card__file">ciisa-psw.caso</span><span class="c-case-card__tags">Web · 2026</span></span>
+                <span class="c-case-card__line c-case-card__title">CiiSA | PSW</span>
+                <span class="c-case-card__line c-case-card__text">Sitios de eventos y de producto, y el trabajo de Pyxoom en HubSpot. Publicados y en uso.</span>
                 <span class="c-case-card__soon">Próximamente</span>
               </a>
             </li>
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="valtre" data-soon="casos/valtre/" aria-disabled="true">
-                <span class="c-case-card__tags">Identidad · Web · 2024–2026</span>
-                <span class="c-case-card__title">Valtre</span>
-                <span class="c-case-card__text">Rebranding completo y rediseño del sitio corporativo.</span>
+              <a class="c-case-card" data-case="valtre" data-soon="casos/valtre/" aria-disabled="true" data-reveal="card">
+                <span class="c-case-card__bar"><span class="c-case-card__file">valtre.caso</span><span class="c-case-card__tags">Identidad · Web · 2024–2026</span></span>
+                <span class="c-case-card__line c-case-card__title">Valtre</span>
+                <span class="c-case-card__line c-case-card__text">Rebranding completo y rediseño del sitio corporativo.</span>
                 <span class="c-case-card__soon">Próximamente</span>
               </a>
             </li>
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="bmw" data-soon="casos/bmw-mini/" aria-disabled="true">
-                <span class="c-case-card__tags">Contenido · 2019–2023</span>
-                <span class="c-case-card__title">BMW / MINI Euromotors</span>
-                <span class="c-case-card__text">Contenido mensual para seis líneas de negocio, dentro de los lineamientos de cada marca.</span>
+              <a class="c-case-card" data-case="bmw" data-soon="casos/bmw-mini/" aria-disabled="true" data-reveal="card">
+                <span class="c-case-card__bar"><span class="c-case-card__file">bmw-mini.caso</span><span class="c-case-card__tags">Contenido · 2019–2023</span></span>
+                <span class="c-case-card__line c-case-card__title">BMW / MINI Euromotors</span>
+                <span class="c-case-card__line c-case-card__text">Contenido mensual para seis líneas de negocio, dentro de los lineamientos de cada marca.</span>
                 <span class="c-case-card__soon">Próximamente</span>
               </a>
             </li>
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="daniel" data-soon="casos/daniel-abrego/" aria-disabled="true">
-                <span class="c-case-card__tags">Marca personal · 2022–hoy</span>
-                <span class="c-case-card__title">Daniel Ábrego</span>
-                <span class="c-case-card__text">Psicología práctica y divulgación: una marca personal sostenida en el tiempo.</span>
+              <a class="c-case-card" data-case="daniel" data-soon="casos/daniel-abrego/" aria-disabled="true" data-reveal="card">
+                <span class="c-case-card__bar"><span class="c-case-card__file">daniel-abrego.caso</span><span class="c-case-card__tags">Marca personal · 2022–hoy</span></span>
+                <span class="c-case-card__line c-case-card__title">Daniel Ábrego</span>
+                <span class="c-case-card__line c-case-card__text">Psicología práctica y divulgación: una marca personal sostenida en el tiempo.</span>
                 <span class="c-case-card__soon">Próximamente</span>
               </a>
             </li>
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="etics" data-soon="casos/etics-live/" aria-disabled="true">
-                <span class="c-case-card__tags">Video · Foto · Desde 2011</span>
-                <span class="c-case-card__title">Etic's Live</span>
-                <span class="c-case-card__text">Conciertos y festivales de Monterrey; un canal con 200 mil suscriptores en YouTube.</span>
+              <a class="c-case-card" data-case="etics" data-soon="casos/etics-live/" aria-disabled="true" data-reveal="card">
+                <span class="c-case-card__bar"><span class="c-case-card__file">etics-live.caso</span><span class="c-case-card__tags">Video · Foto · Desde 2011</span></span>
+                <span class="c-case-card__line c-case-card__title">Etic's Live</span>
+                <span class="c-case-card__line c-case-card__text">Conciertos y festivales de Monterrey; un canal con 200 mil suscriptores en YouTube.</span>
                 <span class="c-case-card__soon">Próximamente</span>
               </a>
             </li>
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="moto" data-soon="casos/motociclismo/" aria-disabled="true">
-                <span class="c-case-card__tags">Contenido · 2023–2024</span>
-                <span class="c-case-card__title">Motociclismo</span>
-                <span class="c-case-card__text">Motoplex Monterrey y Motoland Driving School.</span>
+              <a class="c-case-card" data-case="moto" data-soon="casos/motociclismo/" aria-disabled="true" data-reveal="card">
+                <span class="c-case-card__bar"><span class="c-case-card__file">motociclismo.caso</span><span class="c-case-card__tags">Contenido · 2023–2024</span></span>
+                <span class="c-case-card__line c-case-card__title">Motociclismo</span>
+                <span class="c-case-card__line c-case-card__text">Motoplex Monterrey y Motoland Driving School.</span>
                 <span class="c-case-card__soon">Próximamente</span>
               </a>
             </li>
@@ -132,7 +149,8 @@
 
       <section class="c-section c-section--plan" id="plan" aria-labelledby="plan-titulo">
         <div class="o-container o-stack">
-          <h2 id="plan-titulo">¿Te late lo que ves?</h2>
+          <p class="c-eyebrow">// sin compromiso, a tu ritmo</p>
+          <h2 data-reveal="title" id="plan-titulo">¿Te late lo que ves?</h2>
           <p class="c-section__lead">Cuéntame qué necesitas y armamos tu plan, paso a paso, sin compromiso.</p>
           <p><a class="c-button" data-soon="plan/" aria-disabled="true">Arma tu plan <span class="c-nav__soon">Próximamente</span></a></p>
         </div>
@@ -141,9 +159,10 @@
       <section class="c-section" id="sobre-mi" aria-labelledby="sobre-titulo">
         <div class="o-container o-grid o-grid--golden c-about">
           <div class="o-stack">
-            <h2 id="sobre-titulo">Sobre mí</h2>
+            <p class="c-eyebrow">// la versión corta</p>
+            <h2 data-reveal="title" id="sobre-titulo">Sobre mí</h2>
             <p>Soy Alejandro "Lex" Mendoza, diseñador en Monterrey desde 2011. Empecé atendiendo clientes en un cibercafé y de ahí pasé a grabar conciertos, a marcas personales, al dealer de BMW y a proyectos de TI.</p>
-            <p>Hoy diseño en CiiSA | PSW y armo sitios web con Claude Code. Me gustan las preguntas grandes, el metal y reírme de mí mismo.</p>
+            <p>Hoy diseño en CiiSA | PSW y armo sitios web con Claude Code. Me gustan las preguntas grandes, el metal y reírme de lo simple y sencillo.</p>
             <p><a data-soon="sobre-mi/" aria-disabled="true">Conoce más de mí <span class="c-nav__soon">Próximamente</span></a></p>
           </div>
           <div class="c-about__avatar" role="img" aria-label="Foto de Lex Mendoza, pendiente"></div>
@@ -153,7 +172,8 @@
 
     <footer class="c-footer" id="contacto">
       <div class="o-container o-stack">
-        <h2>¿Hablamos?</h2>
+        <p class="c-eyebrow">// WhatsApp o correo, como prefieras</p>
+        <h2 data-reveal="title">¿Hablamos?</h2>
         <p class="c-section__lead">Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad. ¿Tu sobrino lo hace con ChatGPT? Seguro quedará increíble. Si prefieres a alguien con 15 años de oficio, aquí estoy.</p>
         <p class="c-footer__actions">
           <a class="c-button" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20vi%20tu%20sitio%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20proyecto." target="_blank" rel="noopener">WhatsApp</a>

@@ -90,3 +90,72 @@ test('la home no contiene precios', () => {
   const html = fs.readFileSync('index.html', 'utf8');
   assert.doesNotMatch(html, /\$\s?\d/);
 });
+
+test('cada seccion tiene un comentario que complementa el titulo, sin numeracion', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const comments = ['Diseño + web', 'elige una, o las dos', 'trabajo real, con clientes reales', 'sin compromiso, a tu ritmo', 'la versión corta', 'WhatsApp o correo, como prefieras'];
+  for (const text of comments) {
+    assert.ok(html.includes('// ' + text + '<'), 'falta el comentario "// ' + text + '"');
+  }
+  assert.doesNotMatch(html, /[/][/] 0[0-9]/, 'los comentarios no llevan numeracion');
+  for (const redundant of ['// servicios<', '// casos<', '// plan<', '// sobre mí<', '// contacto<']) {
+    assert.ok(!html.includes(redundant), 'el comentario repite el titulo: ' + redundant);
+  }
+});
+
+test('el texto de sobre mi dice que le gusta reirse de lo simple y sencillo', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.ok(html.includes('reírme de lo simple y sencillo'));
+  assert.ok(!html.includes('reírme de mí mismo'));
+});
+
+test('cada tarjeta de caso tiene barra con el archivo, titulo, texto y su etiqueta de estado', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  for (const file of ['ciisa-psw.caso', 'valtre.caso', 'bmw-mini.caso', 'daniel-abrego.caso', 'etics-live.caso', 'motociclismo.caso']) {
+    assert.ok(html.includes(`>${file}<`), `falta la barra con ${file}`);
+  }
+  assert.equal((html.match(/class="c-case-card__line/g) ?? []).length, 12);
+  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 6);
+});
+
+test('el riel de secciones enlaza las seis secciones en orden', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const rail = html.match(/<nav class="c-rail"[\s\S]*?<\/nav>/)?.[0] ?? '';
+  const hrefs = [...rail.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]);
+  assert.deepEqual(hrefs, ['inicio', 'servicios', 'casos', 'plan', 'sobre-mi', 'contacto']);
+});
+
+test('el script de la cabecera marca has-js y tiene respaldo para mostrar todo', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.match(html, /classList\.add\('has-js'\)/);
+  assert.match(html, /reveal-all/);
+  assert.match(html, /__revealReady/);
+});
+
+test('las tarjetas y los titulos se revelan al entrar en pantalla', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.ok((html.match(/data-reveal="card"/g) ?? []).length >= 6, 'faltan tarjetas con data-reveal');
+  assert.ok((html.match(/data-reveal="title"/g) ?? []).length >= 4, 'faltan titulos con data-reveal');
+});
+
+test('el hero tiene una capa decorativa de puntos, sin columna de numeros', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.match(html, /class="c-hero__backdrop" aria-hidden="true"/);
+  assert.match(html, /class="c-hero__grid"/);
+  assert.doesNotMatch(html, /c-hero__lines/, 'la columna de numeros del hero ya no existe');
+});
+
+test('el leon es solo un icono pequeno: nunca se usa como imagen en la pagina', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.doesNotMatch(html, /<img[^>]*icons[/]/, 'el leon no debe aparecer como imagen dentro de la pagina');
+  assert.doesNotMatch(html, /c-hero__mark/);
+  const css = fs.readFileSync('assets/css/main.min.css', 'utf8');
+  assert.doesNotMatch(css, /c-hero__mark/, 'no debe quedar estilo de una marca grande');
+  assert.doesNotMatch(css, /icons[/]/, 'el CSS no debe cargar el icono del leon como fondo');
+});
+
+test('las tarjetas no llevan numerales de linea', () => {
+  const css = fs.readFileSync('assets/css/main.min.css', 'utf8');
+  assert.doesNotMatch(css, /counter(line)/);
+  assert.doesNotMatch(css, /counter-increment:s*line/);
+});

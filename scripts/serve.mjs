@@ -15,6 +15,8 @@ const types = {
   '.jpg': 'image/jpeg',
   '.webp': 'image/webp',
   '.woff2': 'font/woff2',
+  '.ico': 'image/x-icon',
+  '.webmanifest': 'application/manifest+json; charset=utf-8',
 };
 
 // Servidor estatico minimo para revisar el sitio en local (como lo haria GitHub Pages).

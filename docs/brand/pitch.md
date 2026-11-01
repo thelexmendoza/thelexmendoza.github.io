@@ -78,7 +78,7 @@ Para trabajos de un solo día, sin tanto protocolo.
 
 ## Algo más sobre mí
 
-Me gustan las preguntas grandes y la filosofía, que me llegó por la semiótica. Escucho metal (Iron Maiden, Judas Priest, Meshuggah) y también cumbias. Juego Elden Ring y Dark Souls, leo cómics y manga, y me río de mí mismo con facilidad. Soy cálido para tratar con la gente y muy serio cuando me concentro.
+Me gustan las preguntas grandes y la filosofía, que me llegó por la semiótica. Escucho metal (Iron Maiden, Judas Priest, Meshuggah) y también cumbias. Juego Elden Ring y Dark Souls, leo cómics y manga, y me gusta reírme de lo simple y sencillo. Soy cálido para tratar con la gente y muy serio cuando me concentro.
 
 ## Hacia dónde voy
 

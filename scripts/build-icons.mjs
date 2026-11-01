@@ -183,7 +183,9 @@ function ico(sizes) {
 function build() {
   fs.mkdirSync('assets/icons', { recursive: true });
   fs.writeFileSync('assets/icons/favicon.svg', svg());
-  fs.writeFileSync('assets/icons/favicon.ico', ico([16, 32, 48]));
+  const favicon = ico([16, 32, 48]);
+  fs.writeFileSync('assets/icons/favicon.ico', favicon);
+  fs.writeFileSync('favicon.ico', favicon); // los navegadores lo piden aqui por defecto
   fs.writeFileSync('assets/icons/apple-touch-icon.png', png(renderNearest(9)));
   fs.writeFileSync('assets/icons/icon-192.png', png(renderNearest(9, 6)));
   fs.writeFileSync('assets/icons/icon-512.png', png(renderNearest(25, 6)));

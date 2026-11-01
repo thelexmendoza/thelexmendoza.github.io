@@ -40,3 +40,22 @@ test('el enlace de saltar al contenido se ve al recibir el foco', () => {
 test('la palabra camaleonica tiene salida para alto contraste', () => {
   assert.match(css, /@media \(forced-colors: active\)[\s\S]*?\.c-chameleon-title[\s\S]*?background:\s*none/);
 });
+
+test('el parallax usa scroll-driven animations solo con soporte y sin reduced-motion', () => {
+  assert.match(css, /@supports \(animation-timeline: scroll\(\)\)/);
+  assert.match(css, /animation-timeline:\s*scroll\(root\)/);
+  assert.match(css, /@media \(prefers-reduced-motion: no-preference\)[\s\S]*?animation-timeline/);
+});
+
+test('el estado oculto del revelado solo existe con has-js y sin reduced-motion', () => {
+  assert.match(css, /@media \(prefers-reduced-motion: no-preference\)[\s\S]*?\.has-js[^{]*\[data-reveal/);
+  assert.match(css, /reveal-all/);
+});
+
+test('la barra de progreso de lectura existe y usa el acento', () => {
+  assert.match(css, /\.c-progress/);
+});
+
+test('el riel de secciones solo aparece en pantallas amplias', () => {
+  assert.match(css, /@media \(min-width: 90rem\)[\s\S]*?\.c-rail/);
+});

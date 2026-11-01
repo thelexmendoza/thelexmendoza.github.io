@@ -14,13 +14,14 @@
   }
 }
 
+// La tarjeta es un bloque de codigo: barra con el nombre del archivo y lineas numeradas.
 .c-case-card {
+  position: relative;
   display: grid;
-  align-content: space-between;
-  gap: var(--space-2);
+  align-content: start;
   block-size: 100%;
   min-block-size: fn.rem(233);
-  padding: var(--space-4);
+  overflow: hidden;
   border: 1px solid var(--color-text-muted);
   border-inline-start: 8px solid var(--color-accent);
   background: var(--color-bg);
@@ -34,12 +35,29 @@
     border-color: var(--color-accent);
   }
 
-  &__tags {
-    color: var(--color-accent-text);
+  &__bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--space-1) var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    border-block-end: 1px solid var(--color-text-muted);
     font-family: f.$font-mono;
     font-size: var(--step--1);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
+  }
+
+  &__file {
+    color: var(--color-text-muted);
+  }
+
+  &__tags {
+    color: var(--color-accent-text);
     text-transform: uppercase;
+  }
+
+  &__line {
+    padding: var(--space-1) var(--space-3);
   }
 
   &__title {
@@ -49,6 +67,7 @@
     line-height: 1;
     letter-spacing: -0.01em;
     overflow-wrap: break-word;
+    padding-block-start: var(--space-3);
   }
 
   &__text {
@@ -57,6 +76,7 @@
 
   &__soon {
     justify-self: start;
+    margin: var(--space-1) var(--space-3) var(--space-3);
     padding: 0 var(--space-1);
     border: 1px solid var(--color-text-muted);
     color: var(--color-text-muted);
@@ -71,7 +91,12 @@
 }
 
 @container (min-width: 28rem) {
-  .c-case-card {
-    padding: var(--space-5);
+  .c-case-card__line,
+  .c-case-card__bar {
+    padding-inline: var(--space-4);
+  }
+
+  .c-case-card__soon {
+    margin-inline: var(--space-4);
   }
 }
