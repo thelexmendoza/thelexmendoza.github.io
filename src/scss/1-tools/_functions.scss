@@ -1,0 +1,35 @@
+@use "sass:math";
+@use "sass:list";
+
+$phi: 1.618033988749895;
+$sqrt-phi: math.sqrt($phi);
+
+// Numeros de Fibonacci usados como espaciado, en px.
+$fibonacci: (8, 13, 21, 34, 55, 89, 144);
+
+// Viewports entre los que la tipografia fluida interpola, en px.
+$fluid-min-vw: 320;
+$fluid-max-vw: 1440;
+
+@function rem($px) {
+  @return math.div($px, 16) * 1rem;
+}
+
+@function space($n) {
+  @return rem(list.nth($fibonacci, $n));
+}
+
+// Paso tipografico de razon `$ratio` sobre 16 px, redondeado a px enteros.
+@function step-px($n, $ratio) {
+  @return math.round(16 * math.pow($ratio, $n));
+}
+
+// Valor fluido para una propiedad: clamp() entre `$min-px` y `$max-px`.
+@function fluid($min-px, $max-px) {
+  $slope: math.div($max-px - $min-px, $fluid-max-vw - $fluid-min-vw);
+  @return clamp(
+    rem($min-px),
+    calc(#{rem($min-px)} + #{$slope} * (100vw - #{rem($fluid-min-vw)})),
+    rem($max-px)
+  );
+}
