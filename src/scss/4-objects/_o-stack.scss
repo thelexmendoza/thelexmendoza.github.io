@@ -1,0 +1,4 @@
+// Separacion vertical entre hijos directos. `--stack-space` la ajusta por contexto.
+.o-stack > * + * {
+  margin-block-start: var(--stack-space, var(--space-3));
+}

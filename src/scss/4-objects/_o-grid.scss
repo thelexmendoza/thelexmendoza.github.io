@@ -1,0 +1,17 @@
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+.o-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, #{fn.rem(272)}), 1fr));
+  gap: var(--grid-gap, var(--space-3));
+}
+
+// Division aurea 61.8 / 38.2 a partir de tableta.
+.o-grid--golden {
+  grid-template-columns: 1fr;
+
+  @include m.respond-to(tablet) {
+    grid-template-columns: 1.618fr 1fr;
+  }
+}
