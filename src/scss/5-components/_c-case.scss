@@ -60,6 +60,10 @@
   pointer-events: none;
 }
 
+.c-case-hero__media .c-sky,
+
+.c-case-hero__media video,
+
 .c-case-hero__media img {
   position: absolute;
   inset: 0;
@@ -69,6 +73,10 @@
   object-position: center 30%;
   opacity: 0;
 }
+
+.c-case-hero__media .c-sky:first-child,
+
+.c-case-hero__media video:first-child,
 
 .c-case-hero__media img:first-child {
   opacity: 1;
@@ -83,18 +91,32 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .c-case-hero__media .c-sky,
+  .c-case-hero__media video,
   .c-case-hero__media img {
     animation: c-card-bg 20s linear infinite both;
-
-    &:nth-child(2),
-    &:nth-child(4) {
-      animation-name: c-card-bg-in;
-    }
 
     @for $i from 0 through 4 {
       &:nth-child(#{$i + 1}) {
         animation-delay: #{$i * 4}s;
       }
+    }
+  }
+
+  // Las imagenes pares hacen zoom in; los videos no hacen zoom (ver la tarjeta).
+  .c-case-hero__media img:nth-child(2),
+  .c-case-hero__media img:nth-child(4) {
+    animation-name: c-card-bg-in;
+  }
+
+  .c-case-hero__media .c-sky,
+  .c-case-hero__media video {
+    animation-name: c-card-bg-flat;
+  }
+
+  @for $n from 2 through 4 {
+    .c-case-hero__media[data-count="#{$n}"] :is(video, .c-sky) {
+      animation-name: c-card-bg-flat-n#{$n};
     }
   }
 }

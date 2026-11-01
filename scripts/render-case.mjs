@@ -50,7 +50,39 @@ function head(group) {
 const opener = (item, group, cls) =>
   `<button class="${cls} js-open" type="button" data-full="${esc(PREFIX + item.full)}" data-caption="${esc(item.caption ?? item.alt)}">${img(item)}</button>`;
 
+// Sitios publicados: cada uno es una tarjeta con la vista previa de su hero, el color del sitio y un
+// llamado a visitarlo. La vista previa cambia de proporcion segun la pantalla (movil, tablet o escritorio).
+function renderSites(group) {
+  const cards = group.items
+    .map((site) => {
+      const sources = [
+        ['(max-width: 30em)', site.shots?.mobile],
+        ['(max-width: 60em)', site.shots?.tablet],
+      ]
+        .filter(([, shot]) => shot)
+        .map(([media, shot]) => `<source media="${media}" srcset="${esc(PREFIX + shot.src)}">`)
+        .join('');
+      return `<li class="c-sites__item" data-reveal="card">
+        <a class="c-site-card" href="${esc(site.url)}" target="_blank" rel="noopener noreferrer" style="--site-color: ${esc(site.color)}">
+          <span class="c-site-card__bar"><span class="c-site-card__domain">${esc(site.domain)}</span><span class="c-site-card__tags">${esc(site.tags)}</span></span>
+          <picture class="c-site-card__preview">${sources}<img src="${esc(PREFIX + site.full)}" width="${site.width}" height="${site.height}" alt="${esc(site.alt)}" loading="lazy" decoding="async"></picture>
+          <span class="c-site-card__title">${esc(site.title)}</span>
+          <span class="c-site-card__text">${esc(site.text)}</span>
+          <span class="c-site-card__cta">Visita el sitio ↗<span class="u-visually-hidden">(se abre en otra pestaña)</span></span>
+        </a>
+      </li>`;
+    })
+    .join('\n      ');
+  return `<div class="c-sites" data-kind="sitios">
+    ${head(group)}
+    <ul class="c-sites__grid">
+      ${cards}
+    </ul>
+  </div>`;
+}
+
 function renderGroup(group) {
+  if (group.kind === 'sitios') return renderSites(group);
   const kind = lensOf(group.kind);
   if (group.kind === 'iconos') {
     const items = group.items.map((item) => `<li class="c-icons__item" title="${esc(item.alt)}">${img(item)}</li>`).join('\n      ');
@@ -93,14 +125,43 @@ function renderChapter(chapter) {
 </section>`;
 }
 
-// Fondo del hero: las mismas imagenes que la tarjeta del home, para que la tarjeta se transforme en el hero.
+// Fondo del hero: los mismos elementos que la tarjeta del home (imagenes y videos del caso), para que la tarjeta
+// se transforme en el hero. Los videos no llevan `autoplay`: los reproduce el JavaScript, solo si la persona
+// acepta movimiento (si no, se queda el poster). La version vertical se elige en el navegador (`data-src-mobile`).
+const cardMedia = (card) => card?.media ?? (card?.images ?? []).map((item) => ({ type: 'image', ...item }));
+
+// Fondo de la tarjeta del home: los mismos elementos que el hero. Aqui los videos no traen `src` ni se descargan
+// hasta que la tarjeta se activa (`preload="none"`, con su poster); las imagenes cargan perezosas.
+export function renderCardMedia(media, prefix = '') {
+  const pad = ' '.repeat(18);
+  return media
+    .map((item) => {
+      if (item.type === 'sky') return `${pad}<span class="c-sky" data-sky="${esc(item.id)}" aria-hidden="true"><span class="c-sky__aurora"></span><canvas class="c-sky__stars"></canvas></span>`;
+      if (item.type === 'video') {
+        const mobile = item.mobile ? ` data-src-mobile="${esc(prefix + item.mobile)}" data-poster-mobile="${esc(prefix + item.posterMobile)}"` : '';
+        return `${pad}<video class="c-case-card__video" data-src="${esc(prefix + item.desktop)}"${mobile} poster="${esc(prefix + item.poster)}" width="${item.width}" height="${item.height}" muted loop playsinline preload="none"></video>`;
+      }
+      return `${pad}<img src="${esc(prefix + item.src)}" alt="" width="${item.width}" height="${item.height}" loading="lazy" decoding="async">`;
+    })
+    .join('\n');
+}
+
 function renderHeroMedia(card) {
-  if (!card?.images?.length) return '';
-  const imgs = card.images
-    .map((item, i) => `<img src="${esc(PREFIX + item.full)}" alt="" width="${item.width}" height="${item.height}" decoding="async"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}>`)
+  const media = cardMedia(card);
+  if (!media.length) return '';
+  const items = media
+    .map((item, i) => {
+      if (item.type === 'sky') return `<span class="c-sky" data-sky="${esc(item.id)}" aria-hidden="true"><span class="c-sky__aurora"></span><canvas class="c-sky__stars"></canvas></span>`;
+      if (item.type === 'video') {
+        const mobile = item.mobile ? ` data-src-mobile="${esc(PREFIX + item.mobile)}" data-poster-mobile="${esc(PREFIX + item.posterMobile)}"` : '';
+        return `<video class="c-case-hero__video" src="${esc(PREFIX + item.desktop)}" poster="${esc(PREFIX + item.poster)}"${mobile} width="${item.width}" height="${item.height}" muted loop playsinline preload="metadata"></video>`;
+      }
+      return `<img src="${esc(PREFIX + item.full)}" alt="" width="${item.width}" height="${item.height}" decoding="async"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}>`;
+    })
     .join('\n            ');
-  return `<span class="c-case-hero__media" aria-hidden="true">
-            ${imgs}
+  const count = media.length === 5 ? '' : ` data-count="${media.length}"`;
+  return `<span class="c-case-hero__media" aria-hidden="true"${count}>
+            ${items}
           </span>
           <span class="c-case-hero__veil" aria-hidden="true"></span>
           `;
@@ -118,7 +179,7 @@ function renderBar(chapters) {
       ${buttons}
     </div>`);
   }
-  if (groups.some((group) => group.kind !== 'iconos')) {
+  if (groups.some((group) => group.kind !== 'iconos' && group.kind !== 'sitios')) {
     const buttons = FORMATS.map(([format, label]) => `<button class="c-format__button" type="button" data-format="${format}" aria-pressed="false">${label}</button>`).join('\n      ');
     parts.push(`<div class="c-format" role="group" aria-label="Cómo verlo">
       ${buttons}
@@ -132,7 +193,8 @@ function renderBar(chapters) {
 
 export function renderCase(data, { layoutPath = 'index.html' } = {}) {
   const layout = extractLayout(layoutPath);
-  const rail = `<nav class="c-rail" aria-label="Capítulos">
+  // Un riel de un solo capitulo no sirve para navegar: solo aparece desde dos.
+  const rail = data.chapters.length < 2 ? '' : `<nav class="c-rail" aria-label="Capítulos">
 ${data.chapters
   .map((chapter, i) => `      <a class="c-rail__link js-spy" href="#${esc(chapter.id)}"><span class="c-rail__num">${String(i + 1).padStart(2, '0')}</span><span class="c-rail__label">${esc(chapter.title)}</span></a>`)
   .join('\n')}
@@ -168,7 +230,7 @@ ${data.chapters
     ${rail}
 
     <main id="contenido" data-lens="todo">
-      <section class="c-case-hero" id="caso-inicio"${data.card?.images?.length ? ' data-media' : ''} aria-labelledby="caso-titulo">
+      <section class="c-case-hero" id="caso-inicio"${cardMedia(data.card).length ? ` data-media style="--vt-hero: hero-${esc(data.key)}; --vt-title: title-${esc(data.key)}"` : ''} aria-labelledby="caso-titulo">
         ${renderHeroMedia(data.card)}<div class="o-container o-stack">
           <p class="c-eyebrow">// ${esc(data.eyebrow)}</p>
           <h1 class="c-case-hero__title" id="caso-titulo" data-reveal="title"><span class="c-chameleon-title">${esc(data.title)}</span></h1>

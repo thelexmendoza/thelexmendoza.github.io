@@ -64,7 +64,7 @@ test('un enlace a un ancla existente se acepta', () => {
 
 test('la home enlaza los seis casos y el plan (con href o declarados como proximos)', () => {
   const html = fs.readFileSync('index.html', 'utf8');
-  for (const dest of ['casos/valtre/', 'casos/ciisa-web/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/', 'plan/']) {
+  for (const dest of ['casos/valtre/', 'casos/ciisa-psw/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/', 'plan/']) {
     assert.ok(html.includes(`href="${dest}"`) || html.includes(`data-soon="${dest}"`), `falta ${dest}`);
   }
 });
@@ -116,7 +116,7 @@ test('cada tarjeta de caso tiene barra con el archivo, titulo, texto y su etique
     assert.ok(html.includes(`>${file}<`), `falta la barra con ${file}`);
   }
   assert.equal((html.match(/class="c-case-card__line/g) ?? []).length, 12);
-  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 5);
+  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 4);
 });
 
 test('el riel de secciones enlaza las seis secciones en orden', () => {

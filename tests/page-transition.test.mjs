@@ -68,7 +68,7 @@ test('al llegar con una transicion, la tarjeta y el hero ya vienen revelados par
 test('el titulo de la tarjeta y el del hero son el mismo texto para la transicion, medido solo por su texto', () => {
   const home = fs.readFileSync('index.html', 'utf8');
   assert.match(home, /<span class="c-case-card__line c-case-card__title"><span class="c-case-card__word">Valtre<\/span><\/span>/);
-  assert.match(block, /\.c-case-card\[data-media\] \.c-case-card__word,\s*\.c-case-hero\[data-media\] \.c-chameleon-title\s*\{[^}]*display:\s*inline-block;[^}]*view-transition-name:\s*case-title/);
-  assert.match(block, /::view-transition-group\(case-title\)\s*\{[^}]*animation-duration:\s*0\.55s/);
-  assert.match(block, /::view-transition-old\(case-title\),\s*::view-transition-new\(case-title\)\s*\{[^}]*object-fit:\s*contain/);
+  assert.match(block, /\.c-case-card\[data-media\] \.c-case-card__word,\s*\.c-case-hero\[data-media\] \.c-chameleon-title\s*\{[^}]*display:\s*inline-block;[^}]*view-transition-name:\s*var\(--vt-title\);[^}]*view-transition-class:\s*case-title/);
+  assert.match(block, /::view-transition-group\(\*\.case-title\)\s*\{[^}]*animation-duration:\s*0\.55s/);
+  assert.match(block, /::view-transition-old\(\*\.case-title\),\s*::view-transition-new\(\*\.case-title\)\s*\{[^}]*object-fit:\s*contain/);
 });

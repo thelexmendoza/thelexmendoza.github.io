@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { renderCase } from '../scripts/render-case.mjs';
+import { renderCase, renderCardMedia } from '../scripts/render-case.mjs';
 
 const item = (id, extra = {}) => ({ id, src: `assets/img/casos/demo/${id}-640.webp`, full: `assets/img/casos/demo/${id}-1200.webp`, width: 640, height: 800, alt: `Pieza ${id}`, ...extra });
 
@@ -180,7 +180,7 @@ test('con imagenes de tarjeta, el hero lleva el mismo fondo (imagenes en ciclo y
   const card = { images: [1, 2, 3, 4, 5].map((n) => ({ id: `c${n}`, src: `assets/img/casos/demo/c${n}-640.webp`, full: `assets/img/casos/demo/c${n}-1200.webp`, width: 640, height: 400 })) };
   const withCard = renderCase({ ...data, card });
   const hero = withCard.match(/<section class="c-case-hero"[\s\S]*?<\/section>/)[0];
-  assert.match(hero, /<section class="c-case-hero" id="caso-inicio" data-media aria-labelledby="caso-titulo">/);
+  assert.match(hero, /<section class="c-case-hero" id="caso-inicio" data-media style="--vt-hero: hero-valtre; --vt-title: title-valtre" aria-labelledby="caso-titulo">/);
   const media = hero.match(/<span class="c-case-hero__media" aria-hidden="true">[\s\S]*?<\/span>/)[0];
   const imgs = media.match(/<img[^>]*>/g) ?? [];
   assert.equal(imgs.length, 5);
@@ -191,4 +191,89 @@ test('con imagenes de tarjeta, el hero lleva el mismo fondo (imagenes en ciclo y
   }
   assert.match(hero, /<span class="c-case-hero__veil" aria-hidden="true"><\/span>/);
   assert.doesNotMatch(html, /c-case-hero__media/, 'sin imagenes de tarjeta no hay fondo');
+});
+
+const siteItem = (slug, extra = {}) => ({
+  id: slug, title: `Sitio ${slug}`, url: `https://${slug}.example.com/`, domain: `${slug}.example.com`, tags: 'Evento · 2026', text: `Texto de ${slug}.`, color: '#b7ec04', alt: `Vista previa de Sitio ${slug}`,
+  src: `assets/img/casos/demo/${slug}-640.webp`, full: `assets/img/casos/demo/${slug}-1200.webp`, width: 640, height: 400,
+  shots: { tablet: { src: `assets/img/casos/demo/${slug}-tablet-820.webp`, width: 820, height: 1180 }, mobile: { src: `assets/img/casos/demo/${slug}-mobile-390.webp`, width: 390, height: 844 } },
+  ...extra,
+});
+const sitesCase = renderCase({
+  ...data,
+  chapters: [{ id: 'sitios', title: 'Sitios', eyebrow: 'publicados', text: ['Entra y recorrelos.'], groups: [{ kind: 'sitios', topic: 'Sitios publicados', items: [siteItem('uno'), siteItem('dos', { shots: {} })] }] }],
+  teaser: { chapter: 'sitios', text: 'Visita los sitios.' },
+});
+
+test('cada sitio es una tarjeta que se abre en otra pestana, con su color, su dominio y un llamado a visitarlo', () => {
+  const card = sitesCase.match(/<a class="c-site-card"[\s\S]*?<\/a>/)[0];
+  assert.match(card, /href="https:\/\/uno\.example\.com\/" target="_blank" rel="noopener noreferrer" style="--site-color: #b7ec04"/);
+  assert.match(card, /<span class="c-site-card__domain">uno\.example\.com<\/span>/);
+  assert.match(card, /<span class="c-site-card__tags">Evento · 2026<\/span>/);
+  assert.match(card, /<span class="c-site-card__title">Sitio uno<\/span>/);
+  assert.match(card, /<span class="c-site-card__text">Texto de uno\.<\/span>/);
+  assert.match(card, /<span class="c-site-card__cta">Visita el sitio[^<]*<span class="u-visually-hidden">\(se abre en otra pestaña\)<\/span><\/span>/);
+});
+
+test('la vista previa cambia de proporcion segun la pantalla: movil, tablet y escritorio', () => {
+  const picture = sitesCase.match(/<picture class="c-site-card__preview">[\s\S]*?<\/picture>/)[0];
+  assert.match(picture, /<source media="\(max-width: 30em\)" srcset="\.\.\/\.\.\/assets\/img\/casos\/demo\/uno-mobile-390\.webp">/);
+  assert.match(picture, /<source media="\(max-width: 60em\)" srcset="\.\.\/\.\.\/assets\/img\/casos\/demo\/uno-tablet-820\.webp">/);
+  assert.match(picture, /<img src="\.\.\/\.\.\/assets\/img\/casos\/demo\/uno-1200\.webp" width="640" height="400" alt="Vista previa de Sitio uno" loading="lazy" decoding="async">/);
+});
+
+test('un sitio sin capturas de tablet o movil usa solo la de escritorio', () => {
+  const second = sitesCase.match(/<a class="c-site-card"[\s\S]*?<\/a>/g)[1];
+  assert.doesNotMatch(second, /<source/);
+  assert.match(second, /dos-1200\.webp/);
+});
+
+test('con solo sitios no hay barra de vistas ni selector de formato, y con un solo capitulo no hay riel', () => {
+  assert.doesNotMatch(sitesCase, /class="c-bar"/);
+  assert.doesNotMatch(sitesCase, /class="c-rail"/);
+  assert.match(sitesCase, /<div class="c-sites" data-kind="sitios">/);
+});
+
+test('cada caso nombra sus transiciones con su propia clave, para que dos tarjetas del home no repitan nombre', () => {
+  const card = { images: [1, 2, 3, 4, 5].map((n) => ({ id: `c${n}`, src: `a${n}-640.webp`, full: `a${n}-1200.webp`, width: 640, height: 400 })) };
+  assert.match(renderCase({ ...data, key: 'valtre', card }), /<section class="c-case-hero" id="caso-inicio" data-media style="--vt-hero: hero-valtre; --vt-title: title-valtre" aria-labelledby="caso-titulo">/);
+  assert.match(renderCase({ ...data, key: 'ciisa', card }), /style="--vt-hero: hero-ciisa; --vt-title: title-ciisa"/);
+});
+
+const mixedCard = {
+  media: [
+    { type: 'video', id: 'beyond', desktop: 'assets/video/casos/demo/beyond-h.mp4', mobile: 'assets/video/casos/demo/beyond-v.mp4', poster: 'assets/video/casos/demo/beyond-h-poster.webp', posterMobile: 'assets/video/casos/demo/beyond-v-poster.webp', width: 1280, height: 722 },
+    { type: 'image', id: 'adobe', src: 'assets/img/casos/demo/adobe-640.webp', full: 'assets/img/casos/demo/adobe-1200.webp', width: 640, height: 400 },
+    { type: 'video', id: 'solo', desktop: 'assets/video/casos/demo/solo-h.mp4', poster: 'assets/video/casos/demo/solo-h-poster.webp', width: 1280, height: 720 },
+  ],
+};
+
+test('el hero reproduce los videos del caso: sin sonido, en bucle, con poster y con la version vertical para movil', () => {
+  const hero = renderCase({ ...data, key: 'ciisa', card: mixedCard }).match(/<section class="c-case-hero"[\s\S]*?<\/section>/)[0];
+  assert.match(hero, /<span class="c-case-hero__media" aria-hidden="true" data-count="3">/);
+  const video = hero.match(/<video[^>]*beyond-h\.mp4[^>]*><\/video>/)[0];
+  assert.match(video, /class="c-case-hero__video"/);
+  for (const attr of ['muted', 'loop', 'playsinline', 'preload="metadata"']) assert.ok(video.includes(attr), attr);
+  assert.doesNotMatch(video, /\bautoplay\b/, 'lo reproduce el JavaScript, solo si la persona acepta movimiento');
+  assert.match(video, /poster="\.\.\/\.\.\/assets\/video\/casos\/demo\/beyond-h-poster\.webp"/);
+  assert.match(video, /data-src-mobile="\.\.\/\.\.\/assets\/video\/casos\/demo\/beyond-v\.mp4"/);
+  assert.match(video, /data-poster-mobile="\.\.\/\.\.\/assets\/video\/casos\/demo\/beyond-v-poster\.webp"/);
+  assert.match(video, /width="1280" height="722"/);
+  assert.match(hero, /<img src="\.\.\/\.\.\/assets\/img\/casos\/demo\/adobe-1200\.webp"/);
+  const solo = hero.match(/<video[^>]*solo-h\.mp4[^>]*><\/video>/)[0];
+  assert.doesNotMatch(solo, /data-src-mobile/, 'sin version vertical no hay atributo movil');
+  assert.match(hero, /<section class="c-case-hero" id="caso-inicio" data-media/);
+});
+
+test('un fondo de cinco elementos no lleva data-count (es el ciclo original)', () => {
+  const card = { images: [1, 2, 3, 4, 5].map((n) => ({ id: `c${n}`, src: `a${n}-640.webp`, full: `a${n}-1200.webp`, width: 640, height: 400 })) };
+  assert.doesNotMatch(renderCase({ ...data, card }), /data-count/);
+});
+
+test('el cielo animado se dibuja en un canvas dentro del fondo, igual en el hero y en la tarjeta', () => {
+  const card = { media: [{ type: 'video', id: 'a', desktop: 'a-h.mp4', poster: 'a.webp', width: 10, height: 10 }, { type: 'sky', id: 'adobe' }] };
+  const hero = renderCase({ ...data, card }).match(/<span class="c-case-hero__media"[\s\S]*?<\/span>\s*<span class="c-case-hero__veil"/)[0];
+  assert.match(hero, /data-count="2"/);
+  assert.match(hero, /<span class="c-sky" data-sky="adobe" aria-hidden="true"><span class="c-sky__aurora"><\/span><canvas class="c-sky__stars"><\/canvas><\/span>/);
+  assert.match(renderCardMedia(card.media), /<span class="c-sky" data-sky="adobe" aria-hidden="true"><span class="c-sky__aurora"><\/span><canvas class="c-sky__stars"><\/canvas><\/span>/);
 });

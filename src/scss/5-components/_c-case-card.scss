@@ -1,3 +1,4 @@
+@use "sass:math";
 @use "../0-settings/fonts" as f;
 @use "../1-tools/functions" as fn;
 @use "../1-tools/mixins" as m;
@@ -143,8 +144,14 @@
 
 .c-case-card[data-media] {
   --bar-h: #{fn.rem(37.8)};
+  // Cuanto de la barra que se comprime sube el contenido (el resto se devuelve como relleno abajo).
+  --lift: 0.7;
 
   isolation: isolate;
+  // La tarjeta no debe cambiar de alto al activarse: el fondo llena la tarjeta con object-fit: cover, y si el contenedor
+  // se encoge el video se vuelve a encuadrar y se ve desplazarse (y regresar al salir). La barra baja el 100 % de
+  // --bar-h y el titulo solo sube --lift; la diferencia se recupera con este relleno.
+  padding-block-end: calc(var(--bar-h) * (1 - var(--lift)) * var(--peek));
   grid-template-rows: calc(var(--bar-h) * (1 - var(--peek))) auto auto auto 1fr;
 
   > :not(.c-case-card__media, .c-case-card__veil) {
@@ -154,7 +161,7 @@
 
   // El contenido sube con la barra, pero deja un colchon arriba para quedar centrado en la tarjeta.
   > .c-case-card__title {
-    margin-block-start: calc(var(--bar-h) * 0.7 * var(--peek));
+    margin-block-start: calc(var(--bar-h) * var(--lift) * var(--peek));
   }
 
   // "Ver caso" lleva la misma caja que "Proximamente" en las tarjetas hermanas (borde de 1 px y 8 px a los
@@ -206,6 +213,10 @@
     pointer-events: none;
   }
 
+  .c-case-card__media .c-sky,
+
+  .c-case-card__media video,
+
   .c-case-card__media img {
     position: absolute;
     inset: 0;
@@ -215,6 +226,10 @@
     object-position: center 30%;
     opacity: 0;
   }
+
+  .c-case-card__media .c-sky:first-child,
+
+  .c-case-card__media video:first-child,
 
   .c-case-card__media img:first-child {
     opacity: 1;
@@ -242,6 +257,16 @@
   }
 }
 
+// Version de una sola linea (CiiSA | PSW): sus etiquetas caben siempre en una linea, asi que la barra conserva la
+// altura original en cualquier ancho. Va despues de la regla de dos lineas para ganarle en tarjetas angostas.
+.c-case-card[data-media][data-bar="single"] {
+  --bar-h: #{fn.rem(37.8)};
+
+  .c-case-card__bar {
+    flex-wrap: nowrap;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .c-case-card[data-media] {
     transition:
@@ -250,6 +275,8 @@
   }
 
   // Las imagenes se alternan solo mientras dura el efecto.
+  .c-case-card__media .c-sky,
+  .c-case-card__media video,
   .c-case-card__media img {
     animation: c-card-bg 20s linear infinite both paused;
 
@@ -262,6 +289,8 @@
 
   .c-case-card[data-media] {
     @include peeking {
+      .c-case-card__media .c-sky,
+      .c-case-card__media video,
       .c-case-card__media img {
         animation-play-state: running;
       }
@@ -272,6 +301,115 @@
   .c-case-card__media img:nth-child(2),
   .c-case-card__media img:nth-child(4) {
     animation-name: c-card-bg-in;
+  }
+
+  // Ciclo para 2, 3 o 4 elementos (`data-count`): cada uno se ve 4 s y se funde con el siguiente. El de 5 es el
+  // original. Los pares hacen zoom in y los impares zoom out, igual que en el ciclo de 5.
+  @for $n from 2 through 4 {
+    $p: math.div(100, $n);
+
+    .c-case-card__media[data-count="#{$n}"] :is(img, video, .c-sky),
+    .c-case-hero__media[data-count="#{$n}"] :is(img, video, .c-sky) {
+      animation-name: c-card-bg-n#{$n};
+      animation-duration: #{$n * 4}s;
+    }
+
+    .c-case-card__media[data-count="#{$n}"] img:nth-child(even),
+    .c-case-hero__media[data-count="#{$n}"] img:nth-child(even) {
+      animation-name: c-card-bg-in-n#{$n};
+    }
+
+    @keyframes c-card-bg-n#{$n} {
+      0% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
+
+      #{$p * 0.15}%,
+      #{$p * 0.95}% {
+        opacity: 1;
+      }
+
+      #{$p * 1.2}% {
+        opacity: 0;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes c-card-bg-in-n#{$n} {
+      0% {
+        opacity: 0;
+        transform: scale(1);
+      }
+
+      #{$p * 0.15}%,
+      #{$p * 0.95}% {
+        opacity: 1;
+      }
+
+      #{$p * 1.2}% {
+        opacity: 0;
+        transform: scale(1.08);
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  // Los videos no hacen zoom (al moverse el video y escalarse a la vez se ve entrecortado): solo se funden. Van despues
+  // de las reglas de arriba para ganarles. Las imagenes conservan el zoom.
+  .c-case-card__media .c-sky,
+  .c-case-card__media video,
+  .c-case-hero__media .c-sky,
+  .c-case-hero__media video {
+    animation-name: c-card-bg-flat;
+  }
+
+  @for $n from 2 through 4 {
+    $p: math.div(100, $n);
+
+    .c-case-card__media[data-count="#{$n}"] :is(video, .c-sky),
+    .c-case-hero__media[data-count="#{$n}"] :is(video, .c-sky) {
+      animation-name: c-card-bg-flat-n#{$n};
+    }
+
+    @keyframes c-card-bg-flat-n#{$n} {
+      0% {
+        opacity: 0;
+      }
+
+      #{$p * 0.15}%,
+      #{$p * 0.95}% {
+        opacity: 1;
+      }
+
+      #{$p * 1.2}%,
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+  @keyframes c-card-bg-flat {
+    0% {
+      opacity: 0;
+    }
+
+    3%,
+    19% {
+      opacity: 1;
+    }
+
+    24%,
+    100% {
+      opacity: 0;
+    }
   }
 
   @keyframes c-card-bg-in {

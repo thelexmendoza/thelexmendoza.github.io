@@ -1,6 +1,7 @@
 import { nextTheme, readStoredTheme, resolveTheme, saveTheme } from './theme.js';
 import { pickActive } from './scrollspy.js';
 import { staggerDelay } from './reveal.js';
+import { setupCardVideos, setupHeroVideos } from './media.js';
 
 // Avisa al script de la cabecera que este modulo cargo: si no llega, ese script muestra todo.
 window.__revealReady = true;
@@ -144,3 +145,7 @@ if (spySections.length) {
   window.addEventListener('resize', onScroll);
   updateSpy();
 }
+
+// Videos de fondo: el del hero se reproduce al cargar; el de la tarjeta, mientras esta activa.
+setupHeroVideos();
+setupCardVideos();

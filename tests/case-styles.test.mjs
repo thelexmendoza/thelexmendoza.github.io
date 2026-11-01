@@ -113,3 +113,41 @@ test('en cuadricula, en movil, los pies de foto se esconden para no romper las f
   assert.match(css, /@media \(min-width: 48rem\)\s*\{\s*\.c-gallery\[data-format=grid\] figcaption,\s*main\[data-format=grid\] \.c-gallery figcaption\s*\{[^}]*display:\s*block/);
   assert.match(css, /main\[data-format=carousel\] \.c-gallery figcaption\s*\{[^}]*display:\s*block/);
 });
+
+test('las tarjetas de sitio van en una columna y pasan a dos desde tablet', () => {
+  assert.match(css, /\.c-sites__grid\s*\{[^}]*display:\s*grid;[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/);
+  assert.match(css, /@media \(min-width: 48rem\)\s*\{\s*\.c-sites__grid\s*\{[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/);
+});
+
+test('cada tarjeta de sitio toma el color de su sitio en la barra lateral y en el cuadro de visitar', () => {
+  assert.match(css, /\.c-site-card\s*\{[^}]*border-inline-start:\s*8px solid var\(--site-color\)/);
+  assert.match(css, /\.c-site-card__cta\s*\{[^}]*border:\s*1px solid var\(--site-color\)/);
+  assert.match(css, /\.c-site-card:focus-visible\s*\{[^}]*outline:/);
+});
+
+test('la vista previa cambia de proporcion igual que su captura: 16:10, 4:3 y 4:5', () => {
+  assert.match(css, /\.c-site-card__preview\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*10/);
+  assert.match(css, /@media \(max-width: 60em\)\s*\{\s*\.c-site-card__preview\s*\{[^}]*aspect-ratio:\s*4\s*\/\s*3/);
+  assert.match(css, /@media \(max-width: 30em\)\s*\{\s*\.c-site-card__preview\s*\{[^}]*aspect-ratio:\s*4\s*\/\s*5/);
+  assert.match(css, /\.c-site-card__preview img\s*\{[^}]*object-fit:\s*cover;[^}]*object-position:\s*top/);
+});
+
+test('al pasar el cursor por una tarjeta de sitio, el cuadro se llena de su color y la vista previa se acerca solo con movimiento permitido', () => {
+  assert.match(css, /\.c-site-card:hover \.c-site-card__cta[^{]*\{[^}]*background:\s*color-mix\([^;]*var\(--site-color\)/);
+  assert.match(css, /@media \(prefers-reduced-motion: no-preference\)\s*\{[\s\S]*?\.c-site-card:hover \.c-site-card__preview img[^{]*\{[^}]*transform:\s*scale\(1\.0\d\)/);
+});
+
+test('la barra de la tarjeta de sitio es de una sola linea: el dominio largo se recorta y la etiqueta no baja', () => {
+  assert.match(css, /\.c-site-card__bar\s*\{[^}]*flex-wrap:\s*nowrap/);
+  assert.match(css, /\.c-site-card__domain\s*\{[^}]*overflow:\s*hidden;[^}]*text-overflow:\s*ellipsis;[^}]*white-space:\s*nowrap/);
+  assert.match(css, /\.c-site-card__tags\s*\{[^}]*flex:\s*none/);
+});
+
+test('la tarjeta de sitio es el contenedor de su esqueleto de carga, para que no se pinte sobre todo el hero', () => {
+  assert.match(css, /\.c-sites__item\s*\{[^}]*position:\s*relative/);
+});
+
+test('el contenido de la tarjeta de sitio nunca se sale de ella: su columna interna encoge y las filas miden lo mismo', () => {
+  assert.match(css, /\.c-site-card\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/);
+  assert.match(css, /\.c-sites__grid\s*\{[^}]*grid-auto-rows:\s*1fr/);
+});

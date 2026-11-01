@@ -1,0 +1,151 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// Sitios publicados: cada uno es una tarjeta con la vista previa de su hero, el color del sitio y un
+// llamado a visitarlo. La tarjeta toma el color de su sitio (`--site-color`) en la barra lateral y en el
+// cuadro de "Visita el sitio"; el texto sigue los colores del tema para que se lea en claro y en oscuro.
+.c-sites {
+  display: grid;
+  gap: var(--space-2);
+
+  &__grid {
+    display: grid;
+    // `minmax(0, 1fr)`: con `1fr` a secas una columna no baja de su contenido (el dominio largo) y crece mas que la otra.
+    grid-template-columns: minmax(0, 1fr);
+    // Todas las filas miden lo mismo, asi las cuatro tarjetas quedan del mismo tamano.
+    grid-auto-rows: 1fr;
+    gap: var(--space-3);
+    padding: 0;
+    list-style: none;
+
+    @include m.respond-to(tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  // El esqueleto de carga de cada tarjeta (`[data-reveal="card"]::after`) se posiciona en absoluto: sin un
+  // contenedor posicionado se pintaba sobre todo el primer viewport, encima del hero.
+  &__item {
+    position: relative;
+  }
+}
+
+.c-site-card {
+  display: grid;
+  // La columna interna encoge hasta el ancho de la tarjeta: sin esto crecia al del dominio o la etiqueta mas largos
+  // y el texto se salia de la tarjeta (se recortaba).
+  grid-template-columns: minmax(0, 1fr);
+  min-inline-size: 0;
+  align-content: start;
+  block-size: 100%;
+  overflow: hidden;
+  border: 1px solid var(--color-text-muted);
+  border-inline-start: 8px solid var(--site-color);
+  background: var(--color-bg);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  &:focus-visible {
+    outline: 2px solid var(--site-color);
+    outline-offset: 3px;
+  }
+
+  @include m.on-hover {
+    border-color: var(--site-color);
+  }
+
+  &__bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    border-block-end: 1px solid var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.04em;
+  }
+
+  &__domain {
+    min-inline-size: 0;
+    overflow: hidden;
+    color: var(--color-text-muted);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__tags {
+    flex: none;
+    color: var(--color-accent-text);
+    text-transform: uppercase;
+  }
+
+  // La vista previa tiene la proporcion de la captura que muestra (escritorio, tablet o movil).
+  &__preview {
+    display: block;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-block-end: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--site-color) 12%, var(--color-bg));
+
+    @media (max-width: 60em) {
+      aspect-ratio: 4 / 3;
+    }
+
+    @media (max-width: 30em) {
+      aspect-ratio: 4 / 5;
+    }
+
+    img {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &__title {
+    padding: var(--space-3) var(--space-3) 0;
+    font-family: f.$font-condensed;
+    font-size: var(--step-2);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    overflow-wrap: break-word;
+  }
+
+  &__text {
+    padding: var(--space-1) var(--space-3);
+    color: var(--color-text-muted);
+  }
+
+  &__cta {
+    justify-self: start;
+    margin: var(--space-1) var(--space-3) var(--space-3);
+    padding: 0 var(--space-1);
+    border: 1px solid var(--site-color);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+  }
+
+  &:hover &__cta {
+    background: color-mix(in srgb, var(--site-color) 22%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .c-site-card__preview img {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .c-site-card:hover .c-site-card__preview img {
+    transform: scale(1.04);
+  }
+}

@@ -42,6 +42,8 @@ for (const name of ['valtre', 'ciisa', 'bmw', 'daniel', 'etics', 'moto']) {
       const bg = block(themeSelector(theme))['--color-bg'];
       const c = block(caseSelector(theme, name));
       assert.ok(contrast(c['--color-accent-text'], bg) >= 4.5, 'texto pequeno en el acento del caso');
+      assert.ok(c['--color-on-accent'], 'falta --color-on-accent');
+      assert.ok(contrast(c['--color-on-accent'], c['--color-accent']) >= 4.5, `texto de los botones (CTA) sobre el acento del caso en ${theme}`);
       for (const key of ['--color-accent', '--gradient-a', '--gradient-b']) {
         assert.ok(c[key], `falta ${key}`);
         assert.ok(contrast(c[key], bg) >= 3, `${key} sobre el fondo ${theme}`);
@@ -70,6 +72,6 @@ test('el degradado base existe en :root para el avatar y la palabra camaleonica'
 test('todo var(--x) usado en el CSS esta definido en alguna parte', () => {
   const defined = new Set([...css.matchAll(/(--[\w-]+)\s*:/g)].map((m) => m[1]));
   const used = new Set([...css.matchAll(/var\((--[\w-]+)/g)].map((m) => m[1]));
-  const missing = [...used].filter((name) => !defined.has(name) && !['--grid-gap', '--stack-space', '--reveal-delay'].includes(name));
+  const missing = [...used].filter((name) => !defined.has(name) && !['--grid-gap', '--stack-space', '--reveal-delay', '--site-color', '--vt-hero', '--vt-title'] /* se definen en linea, en el HTML de cada tarjeta o caso */.includes(name));
   assert.deepEqual(missing, []);
 });

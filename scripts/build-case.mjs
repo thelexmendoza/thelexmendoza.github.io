@@ -76,7 +76,66 @@ async function processItem(file, group, dirs) {
   return tone ? { ...item, tone } : item;
 }
 
+// Un sitio publicado: su captura en tres proporciones (escritorio, tablet y movil). Cada una se guarda en su
+// ancho; la de escritorio ademas en 640 para las tarjetas. Si una captura falta se reporta y el sitio se
+// publica con las demas; sin la de escritorio no hay sitio.
+const SHOT_WIDTHS = { tablet: 820, mobile: 390 };
+
+async function processSite(site, group, dirs, failed) {
+  const rel = (name) => `${dirs.rel}/${name}`;
+  const { desktop, tablet, mobile } = site.shots ?? {};
+  if (!desktop || !fs.existsSync(desktop)) {
+    failed.push(desktop ?? `${site.slug}: sin captura de escritorio`);
+    return null;
+  }
+  const smallOut = path.join(dirs.abs, `${site.slug}-${SRC_WIDTH}.webp`);
+  await webp(desktop, SRC_WIDTH, smallOut);
+  await webp(desktop, FULL_WIDTH, path.join(dirs.abs, `${site.slug}-${FULL_WIDTH}.webp`));
+  const { width, height } = await sharp(smallOut).metadata();
+  const item = {
+    id: site.slug,
+    title: site.title,
+    url: site.url,
+    domain: `${new URL(site.url).hostname}${new URL(site.url).pathname.replace(/\/$/, '')}`,
+    tags: site.tags,
+    text: site.text,
+    color: site.color,
+    alt: `Vista previa de ${site.title}`,
+    src: rel(`${site.slug}-${SRC_WIDTH}.webp`),
+    full: rel(`${site.slug}-${FULL_WIDTH}.webp`),
+    width,
+    height,
+    shots: {},
+  };
+  for (const [variant, file] of Object.entries({ tablet, mobile })) {
+    if (!file) continue;
+    if (!fs.existsSync(file)) {
+      failed.push(file);
+      continue;
+    }
+    const target = SHOT_WIDTHS[variant];
+    const out = path.join(dirs.abs, `${site.slug}-${variant}-${target}.webp`);
+    await webp(file, target, out);
+    const meta = await sharp(out).metadata();
+    item.shots[variant] = { src: rel(`${site.slug}-${variant}-${target}.webp`), width: meta.width, height: meta.height };
+  }
+  return item;
+}
+
 async function processGroup(group, dirs, failed, generic) {
+  if (group.kind === 'sitios') {
+    const items = [];
+    for (const site of group.sites) {
+      try {
+        const item = await processSite(site, group, dirs, failed);
+        if (item) items.push(item);
+      } catch {
+        failed.push(site.shots?.desktop ?? site.slug);
+      }
+    }
+    const { sites, ...rest } = group;
+    return { ...rest, items };
+  }
   const seen = new Set();
   const items = [];
   for (const file of group.files) {
@@ -100,6 +159,21 @@ async function processGroup(group, dirs, failed, generic) {
   return { ...rest, items };
 }
 
+// Un video de fondo ya optimizado vive en assets/video/casos/<caso>/: <id>-h.mp4 (horizontal), <id>-v.mp4
+// (vertical, opcional) y un poster webp de cada uno. Sin el horizontal y su poster no hay video.
+async function resolveVideo(id, slug, root) {
+  const rel = (name) => `assets/video/casos/${slug}/${name}`;
+  const exists = (name) => fs.existsSync(path.join(root, rel(name)));
+  if (!exists(`${id}-h.mp4`) || !exists(`${id}-h-poster.webp`)) return null;
+  const { width, height } = await sharp(path.join(root, rel(`${id}-h-poster.webp`))).metadata();
+  const video = { type: 'video', id, desktop: rel(`${id}-h.mp4`), poster: rel(`${id}-h-poster.webp`), width, height };
+  if (exists(`${id}-v.mp4`) && exists(`${id}-v-poster.webp`)) {
+    video.mobile = rel(`${id}-v.mp4`);
+    video.posterMobile = rel(`${id}-v-poster.webp`);
+  }
+  return video;
+}
+
 export async function buildCase(plan, { root = '.', layoutPath = 'index.html', skipImages = false } = {}) {
   const dataFile = path.join(root, 'data', 'casos', `${plan.slug}.json`);
   const dirs = { abs: path.join(root, 'assets', 'img', 'casos', plan.slug), rel: `assets/img/casos/${plan.slug}` };
@@ -120,9 +194,32 @@ export async function buildCase(plan, { root = '.', layoutPath = 'index.html', s
     const { chapters: _drop, card: cardPlan, ...head } = plan;
     data = { ...head, chapters };
     // Las imagenes de la tarjeta (y del hero) son piezas ya publicadas; el plan las nombra por su id.
-    const published = new Map(chapters.flatMap((chapter) => chapter.groups.flatMap((group) => group.items.map((item) => [item.id, item]))));
+    const published = new Map(chapters.flatMap((chapter) => chapter.groups.flatMap((group) => group.items.flatMap((item) => [
+      [item.id, item],
+      // "sitio:variante" nombra una captura de otra proporcion (tablet o movil) como imagen de la tarjeta.
+      ...Object.entries(item.shots ?? {}).map(([variant, shot]) => [`${item.id}:${variant}`, { id: `${item.id}:${variant}`, src: shot.src, full: shot.src, width: shot.width, height: shot.height }]),
+    ]))));
     const cardImages = (cardPlan?.images ?? []).map((id) => published.get(id)).filter(Boolean);
-    if (cardImages.length) data.card = { images: cardImages.map(({ id, src, full, width, height }) => ({ id, src, full, width, height })) };
+    const card = {};
+    if (cardImages.length) card.images = cardImages.map(({ id, src, full, width, height }) => ({ id, src, full, width, height }));
+    // `card.media` mezcla videos (ya optimizados con encode-videos) e imagenes, en el orden del plan.
+    const media = [];
+    for (const entry of cardPlan?.media ?? []) {
+      if (entry.video) {
+        const video = await resolveVideo(entry.video, plan.slug, root);
+        if (video) media.push(video);
+        else failed.push(`video:${entry.video}`);
+      } else if (entry.sky) {
+        // El cielo animado se dibuja en el navegador (assets/js/sky.js): no hay archivos que optimizar.
+        media.push({ type: 'sky', id: entry.sky });
+      } else if (entry.image) {
+        const item = published.get(entry.image);
+        if (item) media.push({ type: 'image', id: item.id, src: item.src, full: item.full, width: item.width, height: item.height });
+        else failed.push(`imagen:${entry.image}`);
+      }
+    }
+    if (media.length) card.media = media;
+    if (Object.keys(card).length) data.card = card;
     fs.mkdirSync(path.dirname(dataFile), { recursive: true });
     fs.writeFileSync(dataFile, JSON.stringify(data, null, 2));
   }

@@ -1,0 +1,51 @@
+// Cielo animado del sitio de CiiSA y Adobe (assets/js/sky.js dibuja las estrellas en el canvas). Aqui solo el fondo:
+// el degradado navy, la aurora que deriva despacio y una vineta que oscurece los bordes. Los colores son los de
+// Adobe para CiiSA (navy, verde CiiSA y rojo Adobe), porque son los de ese sitio, no los del tema.
+.c-sky {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(160deg, #00030f 0%, #00051f 38%, #000b3c 70%, #00030f 100%);
+  pointer-events: none;
+
+  &__aurora {
+    position: absolute;
+    inset: -35%;
+    background:
+      radial-gradient(34% 30% at 70% 38%, rgb(0 28 113 / 0.95), transparent 72%),
+      radial-gradient(30% 26% at 18% 80%, rgb(6 39 119 / 0.7), transparent 72%),
+      radial-gradient(26% 24% at 26% 28%, rgb(188 242 0 / 0.07), transparent 70%),
+      radial-gradient(30% 26% at 84% 70%, rgb(235 16 0 / 0.13), transparent 70%);
+  }
+
+  &__stars {
+    position: absolute;
+    inset: 0;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 85% 80% at 50% 45%, transparent 38%, rgb(0 3 15 / 0.78) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .c-sky__aurora {
+    animation: c-sky-aurora 38s ease-in-out infinite alternate;
+  }
+
+  @keyframes c-sky-aurora {
+    from {
+      transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1);
+    }
+
+    to {
+      transform: translate3d(4%, 3%, 0) rotate(6deg) scale(1.08);
+    }
+  }
+}

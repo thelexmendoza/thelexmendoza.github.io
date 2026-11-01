@@ -1,4 +1,6 @@
+@use "sass:color";
 @use "sass:map";
+@use "sass:math";
 
 // Modo camaleon: cada caso redefine acento y degradado, con una variante por
 // tema para que siempre se lean sobre el fondo (contraste de 3 o mas).
@@ -31,8 +33,35 @@ $cases: (
   ),
 );
 
+// Texto de los botones (CTA) sobre el acento del caso: negro o blanco, el que mas contraste de.
+// Un acento claro (el lima de CiiSA, el azul cielo de Valtre...) pide texto negro; uno oscuro, blanco.
+$ink: #0a0a0a;
+
+@function channel-light($value) {
+  $v: math.div($value, 255);
+  @if $v <= 0.03928 {
+    @return math.div($v, 12.92);
+  }
+  @return math.pow(math.div($v + 0.055, 1.055), 2.4);
+}
+
+@function luminance($c) {
+  @return 0.2126 * channel-light(color.channel($c, "red", $space: rgb)) + 0.7152 * channel-light(color.channel($c, "green", $space: rgb)) + 0.0722 * channel-light(color.channel($c, "blue", $space: rgb));
+}
+
+@function on-accent($accent) {
+  $l: luminance($accent);
+  $with-ink: math.div($l + 0.05, luminance($ink) + 0.05);
+  $with-white: math.div(1.05, $l + 0.05);
+  @if $with-ink >= $with-white {
+    @return $ink;
+  }
+  @return #ffffff;
+}
+
 @mixin case-vars($vars) {
   --color-accent: #{map.get($vars, accent)};
+  --color-on-accent: #{on-accent(map.get($vars, accent))};
   --color-accent-text: #{map.get($vars, accent)};
   --gradient-a: #{map.get($vars, gradient-a)};
   --gradient-b: #{map.get($vars, gradient-b)};

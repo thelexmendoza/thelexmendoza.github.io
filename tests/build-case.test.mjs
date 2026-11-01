@@ -153,3 +153,82 @@ test('las imagenes de la tarjeta se toman de las piezas ya publicadas, por su id
   assert.ok(without.items > 0);
   assert.equal(JSON.parse(fs.readFileSync(path.join(site, 'data/casos/sin-tarjeta.json'), 'utf8')).card, undefined);
 });
+
+test('un grupo de sitios optimiza las capturas en tres proporciones y guarda su enlace, su color y sus textos', async () => {
+  const shots = path.join(tmp, 'sitios');
+  fs.mkdirSync(shots, { recursive: true });
+  const art = (w, h, color) => sharp({ create: { width: w, height: h, channels: 3, background: color } }).png();
+  await art(1440, 900, '#112233').toFile(path.join(shots, 'beyond-desktop.png'));
+  await art(820, 1180, '#223344').toFile(path.join(shots, 'beyond-tablet.png'));
+  await art(390, 844, '#334455').toFile(path.join(shots, 'beyond-mobile.png'));
+  const entry = { slug: 'beyond', title: 'CiiSA Beyond 2026', url: 'https://beyond.ciisa.com/', tags: 'Evento · 2026', text: 'Registro y agenda.', color: '#b7ec04', shots: { desktop: path.join(shots, 'beyond-desktop.png'), tablet: path.join(shots, 'beyond-tablet.png'), mobile: path.join(shots, 'beyond-mobile.png') } };
+  const p = { ...plan(), slug: 'sitios-demo', card: { images: ['beyond', 'beyond:tablet', 'beyond:mobile'] }, chapters: [{ ...plan().chapters[0], groups: [{ kind: 'sitios', topic: 'Sitios publicados', sites: [entry] }] }] };
+  const result = await buildCase(p, { root: site, layoutPath: 'index.html' });
+  assert.deepEqual(result.failed, []);
+  const data = JSON.parse(fs.readFileSync(path.join(site, 'data/casos/sitios-demo.json'), 'utf8'));
+  const [item] = data.chapters[0].groups[0].items;
+  assert.equal(item.id, 'beyond');
+  assert.equal(item.url, 'https://beyond.ciisa.com/');
+  assert.equal(item.domain, 'beyond.ciisa.com');
+  assert.equal(item.color, '#b7ec04');
+  assert.equal(item.alt, 'Vista previa de CiiSA Beyond 2026');
+  const sizeOf = async (file) => (await sharp(path.join(site, file)).metadata()).width;
+  assert.equal(await sizeOf(item.src), 640);
+  assert.equal(await sizeOf(item.full), 1200);
+  assert.equal(await sizeOf(item.shots.tablet.src), 820);
+  assert.equal(await sizeOf(item.shots.mobile.src), 390);
+  assert.ok(item.shots.mobile.height > item.shots.mobile.width);
+  assert.equal(data.chapters[0].groups[0].sites, undefined, 'las rutas del disco no se publican');
+  assert.deepEqual(data.card.images.map((i) => i.id), ['beyond', 'beyond:tablet', 'beyond:mobile']);
+  assert.match(data.card.images[1].full, /beyond-tablet-820\.webp$/);
+  assert.doesNotMatch(JSON.stringify(data), /sitios[\/]beyond|C:|A:/);
+});
+
+test('una captura que falta se reporta y el sitio se publica con las que si existen', async () => {
+  const shots = path.join(tmp, 'sitios2');
+  fs.mkdirSync(shots, { recursive: true });
+  await sharp({ create: { width: 1440, height: 900, channels: 3, background: '#112233' } }).png().toFile(path.join(shots, 'a-desktop.png'));
+  const entry = { slug: 'a', title: 'A', url: 'https://a.example.com/', tags: 'x', text: 'x', color: '#ffffff', shots: { desktop: path.join(shots, 'a-desktop.png'), mobile: path.join(shots, 'no-existe.png') } };
+  const p = { ...plan(), slug: 'sitios-faltan', chapters: [{ ...plan().chapters[0], groups: [{ kind: 'sitios', topic: 'S', sites: [entry] }] }] };
+  const result = await buildCase(p, { root: site, layoutPath: 'index.html' });
+  assert.equal(result.failed.length, 1);
+  const data = JSON.parse(fs.readFileSync(path.join(site, 'data/casos/sitios-faltan.json'), 'utf8'));
+  assert.equal(data.chapters[0].groups[0].items[0].shots.mobile, undefined);
+});
+
+test('el fondo de la tarjeta puede mezclar videos ya optimizados con imagenes, en el orden del plan', async () => {
+  const dir = path.join(site, 'assets/video/casos/media-demo');
+  fs.mkdirSync(dir, { recursive: true });
+  for (const key of ['h', 'v']) {
+    fs.writeFileSync(path.join(dir, `clip-${key}.mp4`), 'no es un video de verdad');
+    await sharp({ create: { width: key === 'h' ? 1280 : 540, height: key === 'h' ? 720 : 960, channels: 3, background: '#123456' } }).webp().toFile(path.join(dir, `clip-${key}-poster.webp`));
+  }
+  const sha = (file) => crypto.createHash('sha1').update(fs.readFileSync(file)).digest('hex').slice(0, 10);
+  const b = path.join(src, 'Carrusel - 9-7-26 - S2-100.png');
+  const p = { ...plan(), slug: 'media-demo', card: { media: [{ video: 'clip' }, { image: sha(b) }, { video: 'no-existe' }] } };
+  const result = await buildCase(p, { root: site, layoutPath: 'index.html' });
+  const data = JSON.parse(fs.readFileSync(path.join(site, 'data/casos/media-demo.json'), 'utf8'));
+  assert.equal(data.card.media.length, 2, 'el video que no existe se omite');
+  const [video, image] = data.card.media;
+  assert.equal(video.type, 'video');
+  assert.equal(video.desktop, 'assets/video/casos/media-demo/clip-h.mp4');
+  assert.equal(video.mobile, 'assets/video/casos/media-demo/clip-v.mp4');
+  assert.equal(video.poster, 'assets/video/casos/media-demo/clip-h-poster.webp');
+  assert.equal(video.posterMobile, 'assets/video/casos/media-demo/clip-v-poster.webp');
+  assert.deepEqual([video.width, video.height], [1280, 720]);
+  assert.equal(image.type, 'image');
+  assert.match(image.src, /-640\.webp$/);
+  assert.ok(result.failed.some((f) => f.includes('no-existe')), 'se reporta el video que falta');
+  const html = fs.readFileSync(path.join(site, 'casos/media-demo/index.html'), 'utf8');
+  assert.match(html, /<video class="c-case-hero__video"/);
+  assert.doesNotMatch(JSON.stringify(data), /C:|A:|E:/);
+});
+
+test('el cielo animado es un tipo de fondo mas: se guarda por su id y no necesita archivos', async () => {
+  const p = { ...plan(), slug: 'cielo-demo', card: { media: [{ sky: 'adobe' }] } };
+  await buildCase(p, { root: site, layoutPath: 'index.html' });
+  const data = JSON.parse(fs.readFileSync(path.join(site, 'data/casos/cielo-demo.json'), 'utf8'));
+  assert.deepEqual(data.card.media, [{ type: 'sky', id: 'adobe' }]);
+  const html = fs.readFileSync(path.join(site, 'casos/cielo-demo/index.html'), 'utf8');
+  assert.match(html, /<span class="c-sky" data-sky="adobe" aria-hidden="true"><span class="c-sky__aurora"><\/span><canvas class="c-sky__stars"><\/canvas><\/span>/);
+});
