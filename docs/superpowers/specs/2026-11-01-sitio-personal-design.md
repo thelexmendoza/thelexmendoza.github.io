@@ -42,7 +42,7 @@ Páginas estáticas en carpetas con `index.html`, para URL limpias en GitHub Pag
 
 **Navegación:** Casos, Servicios, Sobre mí, Cómo trabajo, enlace discreto de contacto y botón de tema. "Arma tu plan" no va en el menú: aparece solo después del portafolio.
 
-**Orden de los casos:** Valtre, CiiSA, BMW/MINI, Daniel Ábrego, Etic's Live, Motociclismo.
+**Orden de los casos:** CiiSA | PSW, Valtre, BMW/MINI, Daniel Ábrego, Etic's Live, Motociclismo.
 
 **Llamados a la acción, en orden:** Ver casos (hero) → Arma tu plan (tras ver el portafolio) → Contacto simple (cierre).
 
@@ -71,8 +71,8 @@ Cada caso redefine acento, degradado y tipografía de titulares con `data-case="
 
 | Caso | Colores del degradado |
 |---|---|
-| Valtre | por definir con su identidad |
-| CiiSA | por definir con su identidad |
+| Valtre | azul cielo `#38bdf8` (de valtre.com) y `#7dd3fc`; en claro `#0369a1` y `#0c4a6e` |
+| CiiSA | PSW | verde CiiSA `#bcf200` hacia cian `#00ccff` (de CiiSA Beyond); en claro `#5c7a00` y `#00758f` |
 | BMW / MINI | `#0066b1` y azul oscuro `#001489` |
 | Daniel Ábrego | `#7c3aed` y `#ec4899` |
 | Etic's Live | `#065f46` y `#10b981` |

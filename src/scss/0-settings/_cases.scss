@@ -2,8 +2,17 @@
 
 // Modo camaleon: cada caso redefine acento y degradado, con una variante por
 // tema para que siempre se lean sobre el fondo (contraste de 3 o mas).
-// Valtre y CiiSA quedan sin paleta propia hasta definir su identidad.
+// CiiSA | PSW: verde CiiSA (#bcf200) hacia cian electrico (#00ccff), del repositorio de CiiSA Beyond.
+// Valtre: azul cielo #38bdf8 de valtre.com. En claro se oscurecen para cumplir contraste.
 $cases: (
+  ciisa: (
+    dark: (accent: #bcf200, gradient-a: #bcf200, gradient-b: #00ccff),
+    light: (accent: #5c7a00, gradient-a: #5c7a00, gradient-b: #00758f),
+  ),
+  valtre: (
+    dark: (accent: #38bdf8, gradient-a: #38bdf8, gradient-b: #7dd3fc),
+    light: (accent: #0369a1, gradient-a: #0369a1, gradient-b: #0c4a6e),
+  ),
   bmw: (
     dark: (accent: #1a8fe3, gradient-a: #1a8fe3, gradient-b: #7cc0ff),
     light: (accent: #0066b1, gradient-a: #0066b1, gradient-b: #001489),

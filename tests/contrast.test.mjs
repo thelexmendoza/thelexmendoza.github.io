@@ -36,11 +36,12 @@ for (const theme of ['dark', 'light']) {
   });
 }
 
-for (const name of ['bmw', 'daniel', 'etics', 'moto']) {
+for (const name of ['valtre', 'ciisa', 'bmw', 'daniel', 'etics', 'moto']) {
   for (const theme of ['dark', 'light']) {
     test(`caso ${name} en ${theme}: acento y degradado se leen sobre el fondo`, () => {
       const bg = block(themeSelector(theme))['--color-bg'];
       const c = block(caseSelector(theme, name));
+      assert.ok(contrast(c['--color-accent-text'], bg) >= 4.5, 'texto pequeno en el acento del caso');
       for (const key of ['--color-accent', '--gradient-a', '--gradient-b']) {
         assert.ok(c[key], `falta ${key}`);
         assert.ok(contrast(c[key], bg) >= 3, `${key} sobre el fondo ${theme}`);
