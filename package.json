@@ -9,6 +9,7 @@
     "dev": "sass src/scss/main.scss assets/css/main.min.css --style=expanded --source-map --watch",
     "fonts": "node scripts/copy-fonts.mjs",
     "serve": "node scripts/serve.mjs",
+    "icons": "node scripts/build-icons.mjs",
     "test": "node --test tests/"
   },
   "keywords": [],
