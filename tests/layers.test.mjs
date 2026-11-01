@@ -32,3 +32,11 @@ test('los titulares usan la fuente condensada y los pasos fluidos', () => {
 test('los enlaces tienen foco visible', () => {
   assert.match(css, /a:focus-visible/);
 });
+
+test('el enlace de saltar al contenido se ve al recibir el foco', () => {
+  assert.match(css, /\.u-visually-hidden--focusable:focus-visible\s*\{[^}]*clip-path:\s*none/);
+});
+
+test('la palabra camaleonica tiene salida para alto contraste', () => {
+  assert.match(css, /@media \(forced-colors: active\)[\s\S]*?\.c-chameleon-title[\s\S]*?background:\s*none/);
+});

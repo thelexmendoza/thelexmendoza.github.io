@@ -29,8 +29,11 @@ export function checkHtml(filePath) {
       continue;
     }
     if (!href || href.startsWith('#') || isExternal(href)) continue;
-    const comingSoon = /aria-disabled="true"/i.test(anchor) && /pr[óo]ximamente/i.test(anchor);
-    if (comingSoon) continue;
+    const disabled = /aria-disabled="true"/i.test(anchor);
+    if (disabled) {
+      problems.push(`Enlace deshabilitado con href (llevaria a un 404): ${href}`);
+      continue;
+    }
     const target = path.join(dir, href.split(/[?#]/)[0]);
     const exists = fs.existsSync(target) && (!fs.statSync(target).isDirectory() || fs.existsSync(path.join(target, 'index.html')));
     if (!exists) problems.push(`Enlace interno roto: ${href}`);

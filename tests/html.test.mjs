@@ -37,9 +37,14 @@ test('detecta enlaces internos rotos y referencias a bootstrap', () => {
   assert.match(problems, /bootstrap/i);
 });
 
-test('un enlace rotado con aria-disabled y "Proximamente" se acepta', () => {
+test('un enlace "Proximamente" con href se reporta: llevaria a un 404', () => {
   const soon = good.replace('<h1>', '<a href="aun-no/" aria-disabled="true">Próximamente</a><h1>');
-  assert.deepEqual(checkHtml(write('soon.html', soon)), []);
+  assert.match(checkHtml(write('soon.html', soon)).join(' | '), /deshabilitado/);
+});
+
+test('un enlace "Proximamente" sin href se acepta', () => {
+  const soon = good.replace('<h1>', '<a data-soon="aun-no/" aria-disabled="true">Próximamente</a><h1>');
+  assert.deepEqual(checkHtml(write('soon-ok.html', soon)), []);
 });
 
 test('index.html no tiene problemas', () => {
@@ -56,11 +61,16 @@ test('un enlace a un ancla existente se acepta', () => {
   assert.deepEqual(checkHtml(write('anchor-ok.html', ok)), []);
 });
 
-test('la home enlaza los seis casos y el plan', () => {
+test('la home enlaza los seis casos y el plan (con href o declarados como proximos)', () => {
   const html = fs.readFileSync('index.html', 'utf8');
-  for (const href of ['casos/valtre/', 'casos/ciisa-web/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/', 'plan/']) {
-    assert.ok(html.includes(`href="${href}"`), `falta el enlace a ${href}`);
+  for (const dest of ['casos/valtre/', 'casos/ciisa-web/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/', 'plan/']) {
+    assert.ok(html.includes(`href="${dest}"`) || html.includes(`data-soon="${dest}"`), `falta ${dest}`);
   }
+});
+
+test('el enlace de saltar al contenido usa la variante con foco visible', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  assert.match(html, /class="u-visually-hidden u-visually-hidden--focusable" href="#contenido"/);
 });
 
 test('cada tarjeta de caso declara su paleta con data-case', () => {

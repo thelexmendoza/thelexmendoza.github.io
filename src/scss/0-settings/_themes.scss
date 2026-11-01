@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "sass:string";
 
 // Tema oscuro (A) y claro (B). El acento rojo es la firma personal.
 $themes: (
@@ -27,7 +28,12 @@ $themes: (
 @mixin theme-vars($name) {
   $theme: map.get($themes, $name);
   @each $key, $value in $theme {
-    --color-#{$key}: #{$value};
+    // Los degradados se llaman --gradient-*, igual que en las paletas de caso.
+    @if string.index($key, "gradient") == 1 {
+      --#{$key}: #{$value};
+    } @else {
+      --color-#{$key}: #{$value};
+    }
   }
   color-scheme: $name;
 }

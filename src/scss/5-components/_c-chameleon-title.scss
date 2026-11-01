@@ -31,6 +31,18 @@
   }
 }
 
+// Alto contraste: el navegador ignora los degradados y el texto transparente
+// desapareceria. Se vuelve a un color de texto normal.
+@media (forced-colors: active) {
+  .c-chameleon-title,
+  .c-chameleon-title--spectrum {
+    background: none;
+    color: CanvasText;
+    -webkit-text-fill-color: currentcolor;
+    animation: none;
+  }
+}
+
 @function spectrum($theme) {
   $colors: ();
   @each $name, $by-theme in cases.$cases {
