@@ -1,0 +1,11 @@
+# Material pesado o sin publicar (originales, notas en bruto, borradores)
+private/
+
+# Dependencias y artefactos locales
+node_modules/
+*.map
+.DS_Store
+Thumbs.db
+
+# Estado local de ejecucion del plan
+.superpowers/
