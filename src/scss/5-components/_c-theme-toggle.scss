@@ -1,0 +1,29 @@
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+.c-theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  inline-size: fn.rem(34);
+  block-size: fn.rem(34);
+  padding: 0;
+  border: 1px solid var(--color-text-muted);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+
+  @include m.touch-target;
+
+  // Icono: circulo dividido en mitad clara y mitad oscura.
+  &__icon {
+    inline-size: fn.rem(13);
+    block-size: fn.rem(13);
+    border: 1px solid var(--color-text);
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--color-text) 50%, transparent 50%);
+  }
+
+  @include m.on-hover {
+    border-color: var(--color-accent-text);
+  }
+}
