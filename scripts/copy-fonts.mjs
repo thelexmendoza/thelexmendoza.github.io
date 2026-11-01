@@ -43,11 +43,36 @@ for (const { pkg, name } of families) {
   }
 }
 
+// Respaldos con las medidas de Plex. Mientras llega la fuente, el texto se dibuja con Arial o Courier New
+// ajustados para ocupar casi lo mismo, asi que al hacer el cambio el texto no se reacomoda.
+// size-adjust parte del ancho medio de Plex / ancho medio del respaldo (metricas de @capsizecss/metrics) y se
+// afino midiendo texto real en los pesos que usa el sitio (Sans 300, Condensed 700, Mono 300);
+// ascent y descent = metrica de Plex / size-adjust; line-gap = 0.
+const fallbacks = [
+  { name: 'IBM Plex Sans Fallback', local: 'Arial', size: 98.9, ascent: 103.6, descent: 27.8 },
+  { name: 'IBM Plex Sans Condensed Fallback', local: 'Arial', size: 95, ascent: 107.9, descent: 28.9 },
+  { name: 'IBM Plex Mono Fallback', local: 'Courier New', size: 100, ascent: 102.5, descent: 27.5 },
+];
+for (const { name, local, size, ascent, descent } of fallbacks) {
+  scss += [
+    '@font-face {',
+    `  font-family: "${name}";`,
+    `  src: local("${local}");`,
+    `  size-adjust: ${size}%;`,
+    `  ascent-override: ${ascent}%;`,
+    `  descent-override: ${descent}%;`,
+    '  line-gap-override: 0%;',
+    '}',
+    '',
+    '',
+  ].join('\n');
+}
+
 scss += [
-  '$font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;',
-  '$font-condensed: "IBM Plex Sans Condensed", "Arial Narrow", "IBM Plex Sans", sans-serif;',
+  '$font-sans: "IBM Plex Sans", "IBM Plex Sans Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;',
+  '$font-condensed: "IBM Plex Sans Condensed", "IBM Plex Sans Condensed Fallback", "Arial Narrow", "IBM Plex Sans", sans-serif;',
   '$font-serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;',
-  '$font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Code", Consolas, monospace;',
+  '$font-mono: "IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, "Cascadia Code", Consolas, monospace;',
   '',
 ].join('\n');
 

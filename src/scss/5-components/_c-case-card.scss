@@ -85,6 +85,16 @@
     text-transform: uppercase;
   }
 
+  &__cta {
+    justify-self: start;
+    margin: var(--space-1) var(--space-3) var(--space-3);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
   &[aria-disabled="true"] {
     cursor: not-allowed;
   }
@@ -96,7 +106,219 @@
     padding-inline: var(--space-4);
   }
 
-  .c-case-card__soon {
+  .c-case-card__soon,
+  .c-case-card__cta {
     margin-inline: var(--space-4);
+  }
+}
+
+// Tarjeta con imagenes (Valtre): al pasar el cursor, enfocarla con teclado o, en pantallas tactiles,
+// dejarla en el centro de la pantalla (JavaScript pone `is-peek` tras un instante), la barra sube y se
+// recorta junto con su linea, y deja ver de fondo cinco imagenes de VALKYRIA bajo un velo.
+//
+// Un solo numero, `--peek` (0 en reposo, 1 con el efecto), se anima con una transicion. De el se derivan
+// la altura de la barra, el color de la descripcion y la opacidad del fondo, asi que todo avanza a la
+// par: la linea, el titulo y la descripcion suben exactamente igual, y al salir se deshace en reversa.
+@property --peek {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@mixin peeking {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  &:focus-visible {
+    @content;
+  }
+
+  &.is-peek {
+    @content;
+  }
+}
+
+.c-case-card[data-media] {
+  --bar-h: #{fn.rem(37.8)};
+
+  isolation: isolate;
+  grid-template-rows: calc(var(--bar-h) * (1 - var(--peek))) auto auto auto 1fr;
+
+  > :not(.c-case-card__media, .c-case-card__veil) {
+    position: relative;
+    z-index: 1;
+  }
+
+  // El contenido sube con la barra, pero deja un colchon arriba para quedar centrado en la tarjeta.
+  > .c-case-card__title {
+    margin-block-start: calc(var(--bar-h) * 0.7 * var(--peek));
+  }
+
+  // "Ver caso" lleva la misma caja que "Proximamente" en las tarjetas hermanas (borde de 1 px y 8 px a los
+  // lados). En reposo el borde es transparente y el texto queda donde estaba. Con el efecto el cuadro se
+  // alinea con el margen izquierdo, desliza el texto hacia la derecha y toma el color de la marca, a la
+  // par que todo lo demas; al salir se contrae y vuelve a su sitio.
+  --gutter: var(--space-3);
+
+  > .c-case-card__cta {
+    padding: 0 var(--space-1);
+    margin-inline-start: calc(var(--gutter) - (var(--space-1) + 1px) * (1 - var(--peek)));
+    border: 1px solid color-mix(in srgb, var(--color-accent) calc(var(--peek) * 100%), transparent);
+    background: color-mix(in srgb, var(--color-accent) calc(var(--peek) * 14%), transparent);
+  }
+
+  // La barra conserva su fondo y su alto completo; lo que sube es el recorte (`clip-path`) y su margen
+  // negativo, para que la fila baje a la par. Su linea inferior es un pseudo-elemento que viaja con el recorte.
+  .c-case-card__bar {
+    box-sizing: border-box;
+    block-size: var(--bar-h);
+    margin-block-end: calc(var(--bar-h) * var(--peek) * -1);
+    overflow: hidden;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    border-block-end: 0;
+    background: var(--color-bg);
+    clip-path: inset(0 0 calc(var(--bar-h) * var(--peek)) 0);
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 calc(var(--bar-h) * var(--peek));
+      block-size: 1px;
+      background: var(--color-text-muted);
+    }
+  }
+
+  .c-case-card__text {
+    color: color-mix(in srgb, var(--color-text-muted) calc((1 - var(--peek)) * 100%), var(--color-text));
+  }
+
+  .c-case-card__media,
+  .c-case-card__veil {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    opacity: var(--peek);
+    pointer-events: none;
+  }
+
+  .c-case-card__media img {
+    position: absolute;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    opacity: 0;
+  }
+
+  .c-case-card__media img:first-child {
+    opacity: 1;
+  }
+
+  .c-case-card__veil {
+    background:
+      radial-gradient(ellipse at center, color-mix(in srgb, var(--color-bg) 86%, transparent), color-mix(in srgb, var(--color-bg) 56%, transparent)),
+      linear-gradient(to bottom, color-mix(in srgb, var(--color-bg) 40%, transparent), transparent 40%);
+  }
+
+  @include peeking {
+    --peek: 1;
+  }
+}
+
+// Con poco ancho la barra se parte en dos lineas.
+@container (max-width: 28rem) {
+  .c-case-card[data-media] {
+    --bar-h: #{fn.rem(66.6)};
+  }
+
+  .c-case-card[data-media] .c-case-card__bar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .c-case-card[data-media] {
+    transition:
+      border-color 0.2s ease,
+      --peek 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  // Las imagenes se alternan solo mientras dura el efecto.
+  .c-case-card__media img {
+    animation: c-card-bg 20s linear infinite both paused;
+
+    @for $i from 0 through 4 {
+      &:nth-child(#{$i + 1}) {
+        animation-delay: #{$i * 4}s;
+      }
+    }
+  }
+
+  .c-case-card[data-media] {
+    @include peeking {
+      .c-case-card__media img {
+        animation-play-state: running;
+      }
+    }
+  }
+
+  // Las imagenes pares hacen zoom in; las impares, zoom out.
+  .c-case-card__media img:nth-child(2),
+  .c-case-card__media img:nth-child(4) {
+    animation-name: c-card-bg-in;
+  }
+
+  @keyframes c-card-bg-in {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+
+    3%,
+    19% {
+      opacity: 1;
+    }
+
+    24% {
+      opacity: 0;
+      transform: scale(1.08);
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes c-card-bg {
+    0% {
+      opacity: 0;
+      transform: scale(1.08);
+    }
+
+    3%,
+    19% {
+      opacity: 1;
+    }
+
+    24% {
+      opacity: 0;
+      transform: scale(1);
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@container (min-width: 28rem) {
+  .c-case-card[data-media] {
+    --gutter: var(--space-4);
   }
 }

@@ -1,0 +1,248 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// Pagina de caso: cabecera, selector de vista y capitulos. El relato manda: el texto de cada
+// capitulo va antes de sus galerias y el selector de vista nunca lo oculta.
+
+.c-case-hero {
+  padding-block: var(--space-6) var(--space-5);
+
+  &__title {
+    font-size: var(--step-4);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  &__meta {
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__summary {
+    max-inline-size: fn.rem(544);
+    color: var(--color-text-muted);
+    font-size: var(--step-1);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  &__teaser {
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+// Hero con fondo: las mismas cinco imagenes y el mismo velo que la tarjeta del home, para que la tarjeta se
+// transforme en el hero. Las imagenes se alternan solo si la persona acepta movimiento.
+.c-case-hero[data-media] {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  .o-container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.c-case-hero__media,
+.c-case-hero__veil {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.c-case-hero__media img {
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0;
+}
+
+.c-case-hero__media img:first-child {
+  opacity: 1;
+}
+
+// Como el texto del hero va a la izquierda, el velo es mas denso de ese lado.
+.c-case-hero__veil {
+  background:
+    linear-gradient(to right, color-mix(in srgb, var(--color-bg) 78%, transparent), color-mix(in srgb, var(--color-bg) 12%, transparent) 75%),
+    radial-gradient(ellipse at center, color-mix(in srgb, var(--color-bg) 86%, transparent), color-mix(in srgb, var(--color-bg) 56%, transparent)),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-bg) 40%, transparent), transparent 40%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .c-case-hero__media img {
+    animation: c-card-bg 20s linear infinite both;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      animation-name: c-card-bg-in;
+    }
+
+    @for $i from 0 through 4 {
+      &:nth-child(#{$i + 1}) {
+        animation-delay: #{$i * 4}s;
+      }
+    }
+  }
+}
+
+.c-chapter {
+  padding-block: var(--space-6);
+  scroll-margin-block-start: var(--space-4);
+
+  &__text {
+    max-inline-size: fn.rem(640);
+    font-size: var(--step-0);
+    line-height: 1.6;
+  }
+}
+
+// Barra de vistas (que ver y como verlo): solo existe con JavaScript. Sin JavaScript se ve todo.
+.c-bar {
+  display: none;
+}
+
+// En movil la barra es compacta: una sola linea con todos los botones (y desplazable si no cupieran).
+.has-js .c-bar {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 8;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: fn.rem(5);
+  padding: var(--space-1) max(var(--space-1), env(safe-area-inset-left));
+  overflow-x: auto;
+  border-block: 1px solid var(--color-text-muted);
+  background: var(--color-bg);
+  scrollbar-width: none;
+
+  @include m.respond-to(tablet) {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: var(--space-2) max(var(--space-3), env(safe-area-inset-left));
+    overflow: visible;
+  }
+}
+
+.c-lens,
+.c-format {
+  display: flex;
+  flex: none;
+  flex-wrap: nowrap;
+  gap: fn.rem(5);
+
+  @include m.respond-to(tablet) {
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
+}
+
+// El area tactil de 55 px del sitio haria enormes estos botones; aqui basta con 34 px de alto.
+.c-lens__button,
+.c-format__button {
+  min-block-size: fn.rem(34);
+  padding: 0 var(--space-1);
+  border: 1px solid var(--color-text-muted);
+  background: transparent;
+  color: var(--color-text);
+  font-family: f.$font-mono;
+  font-size: fn.rem(10);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @include m.respond-to(tablet) {
+    min-block-size: 0;
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+  }
+
+  &[aria-pressed="true"] {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-on-accent);
+  }
+}
+
+// La vista elegida solo oculta las galerias de otro tipo; los capitulos y su texto siguen en su lugar.
+main[data-lens="iconos"] [data-kind]:not([data-kind="iconos"]),
+main[data-lens="fotos"] [data-kind]:not([data-kind="fotos"]),
+main[data-lens="disenos"] [data-kind]:not([data-kind="disenos"]) {
+  display: none;
+}
+
+// Cambio de vista (tipo o formato): el contenido se funde en lugar de saltar.
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(case),
+  ::view-transition-new(case) {
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// Volver al hero: boton flotante en la esquina inferior derecha, donde llega el pulgar. Solo existe
+// con JavaScript y aparece cuando el hero ya salio de la pantalla.
+.c-to-top {
+  display: none;
+}
+
+.has-js .c-to-top {
+  position: fixed;
+  inset-inline-end: max(var(--space-2), env(safe-area-inset-right));
+  inset-block-end: max(var(--space-2), env(safe-area-inset-bottom));
+  z-index: 9;
+  inline-size: fn.rem(55);
+  block-size: fn.rem(55);
+  border: 1px solid var(--color-text-muted);
+  background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+  color: var(--color-text);
+  opacity: 0;
+  pointer-events: none;
+
+  @include m.chevron(up);
+
+  &.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @include m.on-hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-text);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent-text);
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .has-js .c-to-top {
+    transform: translateY(var(--space-2));
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      border-color 0.2s ease;
+
+    &.is-visible {
+      transform: none;
+    }
+  }
+}

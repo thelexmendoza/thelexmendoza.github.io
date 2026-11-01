@@ -39,3 +39,31 @@ $breakpoints: (
     }
   }
 }
+
+// Flecha dibujada con un borde girado, centrada de verdad en su caja (el glifo "‹" de la fuente queda bajo).
+// El texto del boton se oculta con `font-size: 0`; su nombre accesible sigue en `aria-label`.
+@mixin chevron($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+
+  &::before {
+    content: "";
+    inline-size: 0.6rem;
+    block-size: 0.6rem;
+    border: solid currentcolor;
+    flex: none;
+    border-width: 2px 2px 0 0;
+
+    @if $direction == next {
+      transform: translateX(-0.1rem) rotate(45deg);
+    } @else if $direction == up {
+      transform: translateY(0.1rem) rotate(-45deg);
+    } @else {
+      transform: translateX(0.1rem) rotate(-135deg);
+    }
+  }
+}

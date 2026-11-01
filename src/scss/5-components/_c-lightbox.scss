@@ -1,0 +1,125 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// Imagen ampliada en un <dialog> nativo: Escape cierra, las flechas navegan y el foco se queda dentro.
+.c-lightbox {
+  inline-size: 100vw;
+  max-inline-size: none;
+  block-size: 100dvh;
+  max-block-size: none;
+  padding: var(--space-3);
+  border: 0;
+  background: rgb(0 0 0 / 0.92);
+  color: #fafafa;
+
+  &[open] {
+    display: grid;
+    place-items: center;
+  }
+
+  &::backdrop {
+    background: rgb(0 0 0 / 0.6);
+  }
+
+  &__figure {
+    display: grid;
+    gap: var(--space-1);
+    justify-items: center;
+    margin: 0;
+
+    img {
+      display: block;
+      max-inline-size: min(100%, 92vw);
+      max-block-size: 80dvh;
+      block-size: auto;
+      object-fit: contain;
+    }
+
+    figcaption {
+      font-family: f.$font-mono;
+      font-size: var(--step--1);
+      color: #bdbdbd;
+    }
+  }
+
+  &__close,
+  &__nav {
+    position: absolute;
+    border: 1px solid #bdbdbd;
+    background: rgb(0 0 0 / 0.5);
+    color: #fafafa;
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @include m.touch-target;
+
+    &:focus-visible {
+      outline: 2px solid #fafafa;
+      outline-offset: 3px;
+    }
+  }
+
+  &__close {
+    inset-block-start: var(--space-3);
+    inset-inline-end: var(--space-3);
+    padding: var(--space-1) var(--space-2);
+  }
+
+  &__nav {
+    inset-block-start: 50%;
+    inline-size: fn.rem(55);
+    block-size: fn.rem(55);
+    transform: translateY(-50%);
+
+    &--prev {
+      inset-inline-start: var(--space-3);
+
+      @include m.chevron(prev);
+    }
+
+    &--next {
+      inset-inline-end: var(--space-3);
+
+      @include m.chevron(next);
+    }
+  }
+}
+
+// Entrada y salida con un fundido rapido. `display` y `overlay` se transicionan como valores discretos para
+// que el <dialog> siga visible mientras se desvanece; sin soporte simplemente aparece y desaparece.
+@media (prefers-reduced-motion: no-preference) {
+  .c-lightbox {
+    opacity: 0;
+    transition:
+      opacity 0.2s ease,
+      display 0.2s allow-discrete,
+      overlay 0.2s allow-discrete;
+
+    &[open] {
+      opacity: 1;
+    }
+
+    &::backdrop {
+      opacity: 0;
+      transition:
+        opacity 0.2s ease,
+        display 0.2s allow-discrete,
+        overlay 0.2s allow-discrete;
+    }
+
+    &[open]::backdrop {
+      opacity: 1;
+    }
+  }
+
+  @starting-style {
+    .c-lightbox[open],
+    .c-lightbox[open]::backdrop {
+      opacity: 0;
+    }
+  }
+}

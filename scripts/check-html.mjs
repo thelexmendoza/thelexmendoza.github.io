@@ -18,6 +18,10 @@ export function checkHtml(filePath) {
 
   for (const img of html.match(/<img\b[^>]*>/gi) ?? []) {
     if (!/\balt=/i.test(img)) problems.push(`Imagen sin alt: ${img.slice(0, 60)}`);
+    const source = img.match(/\bsrc="([^"]*)"/i)?.[1];
+    if (source && !isExternal(source) && !source.startsWith('#') && !fs.existsSync(path.join(dir, source.split(/[?#]/)[0]))) {
+      problems.push(`Imagen que no existe: ${source}`);
+    }
   }
 
   const ids = new Set([...html.matchAll(/\bid="([^"]+)"/gi)].map((m) => m[1]));

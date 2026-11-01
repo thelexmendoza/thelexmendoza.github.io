@@ -6,6 +6,7 @@ import path from 'node:path';
 import { checkHtml } from '../scripts/check-html.mjs';
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'check-html-'));
+fs.writeFileSync(path.join(tmp, 'a.png'), ''); // la imagen que usan los HTML de ejemplo
 const write = (name, html) => {
   const file = path.join(tmp, name);
   fs.writeFileSync(file, html);
@@ -115,7 +116,7 @@ test('cada tarjeta de caso tiene barra con el archivo, titulo, texto y su etique
     assert.ok(html.includes(`>${file}<`), `falta la barra con ${file}`);
   }
   assert.equal((html.match(/class="c-case-card__line/g) ?? []).length, 12);
-  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 6);
+  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 5);
 });
 
 test('el riel de secciones enlaza las seis secciones en orden', () => {
@@ -158,4 +159,30 @@ test('las tarjetas no llevan numerales de linea', () => {
   const css = fs.readFileSync('assets/css/main.min.css', 'utf8');
   assert.doesNotMatch(css, /counter(line)/);
   assert.doesNotMatch(css, /counter-increment:s*line/);
+});
+
+test('la tarjeta de Valtre se presenta como identidad y contenido', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const card = html.match(/<a class="c-case-card" data-case="valtre"[\s\S]*?<\/a>/)?.[0] ?? '';
+  assert.match(card, /Identidad · Contenido/);
+  assert.match(card, /contenido para redes/);
+  assert.doesNotMatch(card, /Identidad · Web|sitio corporativo/);
+});
+
+test('la tarjeta de Valtre enlaza a su pagina de caso y ya no dice proximamente', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  const card = html.match(/<a class="c-case-card" data-case="valtre"[\s\S]*?<\/a>/)?.[0] ?? '';
+  assert.match(card, /href="casos\/valtre\/"/);
+  assert.doesNotMatch(card, /Próximamente|aria-disabled|data-soon/);
+  assert.match(card, /class="c-case-card__cta"/);
+  assert.ok(fs.existsSync('casos/valtre/index.html'), 'falta la pagina del caso');
+});
+
+test('la pagina de Valtre no tiene problemas estructurales ni imagenes rotas', () => {
+  assert.deepEqual(checkHtml('casos/valtre/index.html'), []);
+});
+
+test('un img con una ruta local inexistente se reporta', () => {
+  const bad = good.replace('<h1>', '<img src="no-esta.webp" alt="x"><h1>');
+  assert.match(checkHtml(write('img-rota.html', bad)).join(' | '), /no-esta\.webp/);
 });

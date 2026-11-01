@@ -1,0 +1,251 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// Carrusel por tema: tres columnas, dos y una segun el espacio del propio carrusel.
+.c-gallery {
+  position: relative;
+  display: grid;
+  gap: var(--space-2);
+  container-type: inline-size;
+
+  &__topic {
+    color: var(--color-text);
+    font-family: f.$font-mono;
+    font-size: var(--step-0);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__badge {
+    justify-self: start;
+    padding: 0 var(--space-1);
+    border: 1px solid var(--color-text-muted);
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+  }
+
+  &__note {
+    max-inline-size: fn.rem(640);
+    color: var(--color-text-muted);
+  }
+
+  &__track {
+    display: flex;
+    gap: var(--space-2);
+    padding-block-end: var(--space-1);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+  }
+
+  &__slide {
+    position: relative;
+    flex: 0 0 calc((100% - 2 * var(--space-2)) / 3);
+    margin: 0;
+    scroll-snap-align: start;
+
+    figcaption {
+      padding-block: var(--space-1);
+      color: var(--color-text-muted);
+      font-size: var(--step--1);
+    }
+  }
+
+  &__open {
+    display: grid;
+    place-items: center;
+    inline-size: 100%;
+    padding: 0;
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-text) 6%, transparent);
+    cursor: zoom-in;
+
+    img {
+      display: block;
+      inline-size: 100%;
+      block-size: auto;
+      aspect-ratio: 4 / 5;
+      object-fit: contain;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent-text);
+      outline-offset: 3px;
+    }
+  }
+
+  // Flechas: las crea el JavaScript. Sin el, el carrusel se desliza con dedo o rueda.
+  &__controls {
+    display: flex;
+    gap: var(--space-1);
+    justify-self: end;
+  }
+
+  &__step {
+    inline-size: fn.rem(34);
+    block-size: fn.rem(34);
+    border: 1px solid var(--color-text-muted);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+
+    @include m.touch-target;
+
+    &:first-child {
+      @include m.chevron(prev);
+    }
+
+    &:last-child {
+      @include m.chevron(next);
+    }
+
+    @include m.on-hover {
+      border-color: var(--color-accent);
+    }
+  }
+}
+
+// Formato cuadricula (tipo Instagram): tres columnas de casillas cuadradas. Lo trae cada galeria
+// (las publicaciones) o lo elige la persona para todas; elegir carrusel lo anula.
+.c-gallery[data-format="grid"] .c-gallery__track,
+main[data-format="grid"] .c-gallery .c-gallery__track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-1);
+  overflow: visible;
+  scroll-snap-type: none;
+}
+
+.c-gallery[data-format="grid"] .c-gallery__slide,
+main[data-format="grid"] .c-gallery .c-gallery__slide {
+  flex-basis: auto;
+}
+
+.c-gallery[data-format="grid"] .c-gallery__open img,
+main[data-format="grid"] .c-gallery .c-gallery__open img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.c-gallery[data-format="grid"] .c-gallery__controls,
+main[data-format="grid"] .c-gallery .c-gallery__controls {
+  display: none;
+}
+
+main[data-format="carousel"] .c-gallery .c-gallery__track {
+  display: flex;
+  gap: var(--space-2);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+main[data-format="carousel"] .c-gallery .c-gallery__open img {
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+}
+
+main[data-format="carousel"] .c-gallery .c-gallery__controls {
+  display: flex;
+}
+
+// Los pies de foto rompen las filas de la cuadricula (cada uno mide distinto): en movil se esconden y se leen
+// al ampliar la pieza. En pantallas mayores caben y se muestran; en carrusel siempre se ven.
+.c-gallery[data-format="grid"] figcaption,
+main[data-format="grid"] .c-gallery figcaption {
+  display: none;
+}
+
+@include m.respond-to(tablet) {
+  .c-gallery[data-format="grid"] figcaption,
+  main[data-format="grid"] .c-gallery figcaption {
+    display: block;
+  }
+}
+
+main[data-format="carousel"] .c-gallery figcaption {
+  display: block;
+}
+
+// Logotipos: casillas con margen interno para que el dibujo respire, y un fondo que contrasta con su tono.
+.c-gallery--logos .c-gallery__open {
+  padding: var(--space-4);
+}
+
+.c-gallery.c-gallery--logos .c-gallery__open img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+// En cuadricula los logotipos no se recortan: casilla cuadrada, dibujo completo y centrado, con menos margen.
+.c-gallery--logos[data-format="grid"] .c-gallery__open,
+main[data-format="grid"] .c-gallery--logos .c-gallery__open {
+  padding: var(--space-2);
+}
+
+main[data-format="grid"] .c-gallery.c-gallery--logos .c-gallery__open img,
+.c-gallery.c-gallery--logos[data-format="grid"] .c-gallery__open img {
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.c-gallery__slide--logo[data-tone="light"] .c-gallery__open {
+  background: #14202b;
+}
+
+.c-gallery__slide--logo[data-tone="dark"] .c-gallery__open {
+  background: #f4f6f8;
+}
+
+@container (max-width: 52rem) {
+  .c-gallery__slide {
+    flex-basis: calc((100% - var(--space-2)) / 2);
+  }
+}
+
+@container (max-width: 30rem) {
+  .c-gallery__slide {
+    flex-basis: 100%;
+  }
+}
+
+// Cuadricula con muchas piezas: se ven nueve y el resto se pliega hasta pedir mas (solo con JavaScript).
+.c-gallery__more {
+  display: none;
+}
+
+.has-js main:not([data-format="carousel"]) .c-gallery[data-format="grid"] .is-folded,
+.has-js main[data-format="grid"] .c-gallery .is-folded {
+  display: none;
+}
+
+.has-js main:not([data-format="carousel"]) .c-gallery[data-format="grid"] .c-gallery__more,
+.has-js main[data-format="grid"] .c-gallery .c-gallery__more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  justify-content: center;
+}
+
+.c-gallery__more-button {
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-text-muted);
+  background: transparent;
+  color: var(--color-text);
+  font-family: f.$font-mono;
+  font-size: var(--step--1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include m.touch-target;
+
+  @include m.on-hover {
+    border-color: var(--color-accent);
+  }
+}

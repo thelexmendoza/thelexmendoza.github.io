@@ -1,0 +1,114 @@
+// Navegar entre paginas (home, casos y las que vengan) se anima con transiciones entre documentos: el
+// menu se queda en su sitio y el resto de la pantalla sale con un fundido corto mientras entra el de la
+// otra pagina. Sin soporte del navegador, o con menos movimiento, la navegacion es la de siempre.
+//
+// Importante: no se le pone nombre a <main>. En un caso mide miles de pixeles de alto y el navegador no
+// puede capturarlo de forma fiable (la animacion salia bien a veces y otras no). Lo que se anima es la
+// captura de la pantalla (root), que siempre mide lo que el viewport. Cada pagina declara en su <head>
+// `<link rel="expect" href="#contenido" blocking="render">` para no pintarse hasta tener su contenido.
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  .c-nav {
+    view-transition-name: nav;
+  }
+
+  // La tarjeta del home y el hero del caso son el mismo elemento para el navegador: al ir de uno a otro (y
+  // al volver) la tarjeta se estira hasta ser el hero, o el hero se encoge hasta ser la tarjeta.
+  .c-case-card[data-media],
+  .c-case-hero[data-media] {
+    view-transition-name: case-hero;
+  }
+
+  ::view-transition-group(case-hero) {
+    animation-duration: 0.55s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  ::view-transition-old(case-hero),
+  ::view-transition-new(case-hero) {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+  }
+
+  // El titulo es el mismo texto en la tarjeta y en el hero: "Valtre" en la tarjeta se agranda y se vuelve el
+  // "VALTRE" del hero (y al regresar, al reves). Cada nombre mide solo su texto, sin el relleno de la tarjeta,
+  // para que no se estire; la fuente es la misma (Plex Condensed 700) y viene precargada.
+  .c-case-card[data-media] .c-case-card__word,
+  .c-case-hero[data-media] .c-chameleon-title {
+    display: inline-block;
+    view-transition-name: case-title;
+  }
+
+  ::view-transition-group(case-title) {
+    animation-duration: 0.55s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  ::view-transition-old(case-title),
+  ::view-transition-new(case-title) {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  ::view-transition-old(root) {
+    animation: c-page-out 0.2s cubic-bezier(0.4, 0, 1, 1) both;
+  }
+
+  ::view-transition-new(root) {
+    animation: c-page-in 0.35s cubic-bezier(0, 0, 0.2, 1) 0.05s both;
+  }
+
+  @keyframes c-page-out {
+    to {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  @keyframes c-page-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.8125rem);
+    }
+  }
+}
+
+// Cambio de tema claro/oscuro: toda la pantalla (menu incluido) se funde en medio segundo, sin el
+// desplazamiento de las transiciones entre paginas. La pantalla vieja se queda debajo y la nueva aparece
+// encima, asi los colores se mezclan en lugar de saltar. `main.js` pone `is-theming` mientras dura; sin
+// View Transitions pone `is-theming-css` y los colores se transicionan con CSS.
+@media (prefers-reduced-motion: no-preference) {
+  :root.is-theming::view-transition-old(root),
+  :root.is-theming::view-transition-old(nav) {
+    animation: none;
+  }
+
+  :root.is-theming::view-transition-new(root),
+  :root.is-theming::view-transition-new(nav) {
+    animation: c-theme-in 0.5s ease both;
+  }
+
+  @keyframes c-theme-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  :root.is-theming-css,
+  :root.is-theming-css *,
+  :root.is-theming-css *::before,
+  :root.is-theming-css *::after {
+    transition:
+      background-color 0.5s ease,
+      color 0.5s ease,
+      border-color 0.5s ease,
+      fill 0.5s ease,
+      stroke 0.5s ease !important;
+  }
+}

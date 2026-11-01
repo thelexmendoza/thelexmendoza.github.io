@@ -10,7 +10,9 @@
     "fonts": "node scripts/copy-fonts.mjs",
     "serve": "node scripts/serve.mjs",
     "icons": "node scripts/build-icons.mjs",
-    "test": "node --test tests/"
+    "test": "node --test tests/",
+    "sheet": "node scripts/contact-sheet.mjs",
+    "case": "node scripts/build-case.mjs"
   },
   "keywords": [],
   "author": "Alejandro Mendoza",
@@ -20,6 +22,7 @@
     "@fontsource/ibm-plex-sans": "^5.0.0",
     "@fontsource/ibm-plex-sans-condensed": "^5.0.0",
     "@fontsource/ibm-plex-serif": "^5.0.0",
-    "sass": "^1.107.1"
+    "sass": "^1.107.1",
+    "sharp": "^0.35.5"
   }
 }

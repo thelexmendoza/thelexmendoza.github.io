@@ -1,0 +1,32 @@
+@use "../1-tools/functions" as fn;
+
+// Hoja de iconos: una plantilla de casillas cuadradas. La casilla es oscura en los dos temas
+// porque muchos iconos son claros y desaparecerian sobre fondo blanco.
+.c-icons {
+  display: grid;
+  gap: var(--space-2);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(#{fn.rem(89)}, 1fr));
+    gap: var(--space-1);
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    padding: var(--space-2);
+    background: #14202b;
+    border: 1px solid var(--color-text-muted);
+
+    img {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: contain;
+    }
+  }
+}

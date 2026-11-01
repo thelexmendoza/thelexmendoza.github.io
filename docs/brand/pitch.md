@@ -73,7 +73,7 @@ Para trabajos de un solo día, sin tanto protocolo.
 - **15 años** diseñando, desde 2011.
 - **ETICS Live:** canal de YouTube con 200 mil suscriptores. Grabé conciertos y festivales de la ciudad, entre ellos el Pa'l Norte hasta 2025. Mi video de Karol G en el Pa'l Norte 2019 supera los 5 millones de vistas.
 - **BMW y MINI Euromotors Monterrey (2019–2023):** contenido mensual para BMW, BMW Motorrad, MINI, Seminuevos, Bodyshop, Postventa y Boutique, siguiendo los lineamientos estrictos de cada marca.
-- **Valtre (2024–2026):** rebranding completo y rediseño del sitio corporativo.
+- **Valtre (2024–2026):** rebranding completo, identidad de los Centros de Excelencia y contenido para redes.
 - **CiiSA Beyond:** sitio, flujos de registro, gafetes automatizados, streaming del prelanzamiento de Pyxoom y piezas para el stand, todo en menos de mes y medio.
 
 ## Algo más sobre mí

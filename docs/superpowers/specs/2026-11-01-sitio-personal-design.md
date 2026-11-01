@@ -22,7 +22,7 @@ Fuera por ahora: blog, multilenguaje (solo español), cotizador público, pagos 
 
 ```
 /                       Home
-/casos/valtre/          Valtre: identidad y web corporativa
+/casos/valtre/          Valtre: identidad y contenido
 /casos/ciisa-web/       CiiSA: sitios web de eventos y producto
 /casos/bmw-mini/        BMW / MINI Euromotors Monterrey
 /casos/daniel-abrego/   Psicología Práctica, Daniel Ábrego

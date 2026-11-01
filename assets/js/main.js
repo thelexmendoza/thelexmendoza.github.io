@@ -23,17 +23,48 @@ function apply(theme) {
 
 apply(resolveTheme(readStoredTheme(storage), media.matches));
 
+// Cambia de tema con un fundido de medio segundo (View Transitions; sin ellas, transiciones CSS de color).
+// Con la preferencia de menos movimiento el cambio es inmediato.
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+function switchTheme(theme) {
+  if (reduceMotion.matches) {
+    apply(theme);
+    return;
+  }
+  root.classList.add('is-theming');
+  const done = () => root.classList.remove('is-theming', 'is-theming-css');
+  if (document.startViewTransition) {
+    // Seguro: si el navegador no pinta fotogramas (pestana en segundo plano) la transicion nunca corre su
+    // funcion; pasado un instante el tema se aplica igual para que el cambio no se quede a medias.
+    let applied = false;
+    const run = () => {
+      if (applied) return;
+      applied = true;
+      apply(theme);
+    };
+    document.startViewTransition(run).finished.finally(done);
+    setTimeout(() => {
+      run();
+      done();
+    }, 700);
+  } else {
+    root.classList.add('is-theming-css');
+    apply(theme);
+    setTimeout(done, 550);
+  }
+}
+
 toggles.forEach((button) => {
   button.addEventListener('click', () => {
     const theme = nextTheme(root.dataset.theme);
-    apply(theme);
+    switchTheme(theme);
     saveTheme(storage, theme);
   });
 });
 
 // Si la persona no eligio un tema, acompana los cambios del sistema.
 media.addEventListener('change', (event) => {
-  if (!readStoredTheme(storage)) apply(resolveTheme(null, event.matches));
+  if (!readStoredTheme(storage)) switchTheme(resolveTheme(null, event.matches));
 });
 
 // Revelado: tarjetas y titulos aparecen al entrar en pantalla, de uno en uno.
@@ -56,6 +87,25 @@ if ('IntersectionObserver' in window) {
   revealTargets.forEach((target) => observer.observe(target));
 } else {
   revealTargets.forEach((target) => target.classList.add('is-revealed'));
+}
+
+// Tarjetas con imagenes: sin cursor (pantallas tactiles) hacen lo mismo que el hover cuando quedan en
+// el centro de la pantalla, tras un instante para no parpadear mientras se hace scroll.
+const PEEK_DELAY = 600;
+const peekCards = [...document.querySelectorAll('.c-case-card[data-media]')];
+if (peekCards.length && 'IntersectionObserver' in window && window.matchMedia('(hover: none)').matches) {
+  const timers = new Map();
+  const peekObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        clearTimeout(timers.get(target));
+        if (isIntersecting) timers.set(target, setTimeout(() => target.classList.add('is-peek'), PEEK_DELAY));
+        else target.classList.remove('is-peek');
+      });
+    },
+    { rootMargin: '-38% 0px -38% 0px' },
+  );
+  peekCards.forEach((card) => peekObserver.observe(card));
 }
 
 // Scroll-spy: marca en el menu y en el riel la seccion que se esta leyendo.

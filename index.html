@@ -8,11 +8,22 @@
     <script>
       document.documentElement.classList.add('has-js');
       setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.add('reveal-all'); }, 2500);
+      // Al llegar con una transicion entre paginas, la tarjeta del caso y el hero ya vienen revelados: la
+      // transicion necesita algo visible a lo que llegar (si no, el titulo moraria hacia algo invisible).
+      addEventListener('pagereveal', function (e) {
+        if (!e.viewTransition) return;
+        document.querySelectorAll('.c-case-hero [data-reveal], .c-case-card[data-media]').forEach(function (n) { n.classList.add('is-revealed'); });
+      });
       try {
         var stored = localStorage.getItem('theme');
         if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored;
       } catch (e) {}
     </script>
+    <link rel="expect" href="#contenido" blocking="render">
+    <link rel="preload" href="assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/plex/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/plex/ibm-plex-mono-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/plex/ibm-plex-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
     <link rel="icon" href="assets/icons/favicon.ico" sizes="48x48">
     <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
@@ -59,7 +70,7 @@
         <div class="o-container o-stack c-hero__inner">
           <p class="c-hero__eyebrow">// Diseño + web</p>
           <h1 class="c-hero__title" id="hero-titulo">¿Buscas <span class="c-chameleon-title c-chameleon-title--spectrum">diseñador</span>?</h1>
-          <p class="c-hero__lead">Has llegado al lugar correcto. Identidad visual y sitio web para negocios y marcas personales: tu marca, de la idea a la pantalla.</p>
+          <p class="c-hero__lead" data-reveal="text">Has llegado al lugar correcto. Identidad visual y sitio web para negocios y marcas personales: tu marca, de la idea a la pantalla.</p>
           <p><a class="c-button" href="#casos">Ver casos</a></p>
         </div>
       </section>
@@ -68,22 +79,22 @@
         <div class="o-container o-stack">
           <p class="c-eyebrow">// elige una, o las dos</p>
           <h2 data-reveal="title" id="servicios-titulo">Servicios</h2>
-          <p class="c-section__lead">Dos cosas que puedes contratar por separado o juntas, y una sola persona que las entiende.</p>
+          <p class="c-section__lead" data-reveal="text">Dos cosas que puedes contratar por separado o juntas, y una sola persona que las entiende.</p>
           <div class="o-grid">
             <article class="c-service">
               <p class="c-service__tag">01</p>
               <h3 class="c-service__title">Identidad</h3>
-              <p>Tu marca lista para usarse: logotipo, sistema visual, papelería y piezas para redes, impresión y eventos.</p>
+              <p data-reveal="text">Tu marca lista para usarse: logotipo, sistema visual, papelería y piezas para redes, impresión y eventos.</p>
             </article>
             <article class="c-service">
               <p class="c-service__tag">02</p>
               <h3 class="c-service__title">Sitio web</h3>
-              <p>Tu página con la plataforma que más te convenga: a la medida en código, WordPress, Squarespace o Wix. Con integraciones y entrega técnica si las necesitas.</p>
+              <p data-reveal="text">Tu página con la plataforma que más te convenga: a la medida en código, WordPress, Squarespace o Wix. Con integraciones y entrega técnica si las necesitas.</p>
             </article>
             <article class="c-service c-service--featured">
               <p class="c-service__tag">01 + 02</p>
               <h3 class="c-service__title">Identidad + sitio</h3>
-              <p>Las dos cosas, con coherencia de principio a fin.</p>
+              <p data-reveal="text">Las dos cosas, con coherencia de principio a fin.</p>
             </article>
           </div>
         </div>
@@ -93,7 +104,7 @@
         <div class="o-container o-stack">
           <p class="c-eyebrow">// trabajo real, con clientes reales</p>
           <h2 data-reveal="title" id="casos-titulo">Casos</h2>
-          <p class="c-section__lead">Seis proyectos, seis voces. Cada uno cambia de color y de carácter; la manera de trabajar es la misma.</p>
+          <p class="c-section__lead" data-reveal="text">Seis proyectos, seis voces. Cada uno cambia de color y de carácter; la manera de trabajar es la misma.</p>
           <ul class="o-grid c-case-list">
             <li class="c-case-list__item">
               <a class="c-case-card" data-case="ciisa" data-soon="casos/ciisa-web/" aria-disabled="true" data-reveal="card">
@@ -104,11 +115,19 @@
               </a>
             </li>
             <li class="c-case-list__item">
-              <a class="c-case-card" data-case="valtre" data-soon="casos/valtre/" aria-disabled="true" data-reveal="card">
-                <span class="c-case-card__bar"><span class="c-case-card__file">valtre.caso</span><span class="c-case-card__tags">Identidad · Web · 2024–2026</span></span>
-                <span class="c-case-card__line c-case-card__title">Valtre</span>
-                <span class="c-case-card__line c-case-card__text">Rebranding completo y rediseño del sitio corporativo.</span>
-                <span class="c-case-card__soon">Próximamente</span>
+              <a class="c-case-card" data-case="valtre" data-media href="casos/valtre/" data-reveal="card">
+                <span class="c-case-card__media" aria-hidden="true">
+                  <img src="assets/img/casos/valtre/306df445ef-640.webp" alt="" width="640" height="359" loading="lazy" decoding="async">
+                  <img src="assets/img/casos/valtre/6e95faaa37-640.webp" alt="" width="640" height="359" loading="lazy" decoding="async">
+                  <img src="assets/img/casos/valtre/305935dc30-640.webp" alt="" width="640" height="1142" loading="lazy" decoding="async">
+                  <img src="assets/img/casos/valtre/3786d29b21-640.webp" alt="" width="640" height="1120" loading="lazy" decoding="async">
+                  <img src="assets/img/casos/valtre/db26f5ef9a-640.webp" alt="" width="640" height="1142" loading="lazy" decoding="async">
+                </span>
+                <span class="c-case-card__veil" aria-hidden="true"></span>
+                <span class="c-case-card__bar"><span class="c-case-card__file">valtre.caso</span><span class="c-case-card__tags">Identidad · Contenido · 2024–2026</span></span>
+                <span class="c-case-card__line c-case-card__title"><span class="c-case-card__word">Valtre</span></span>
+                <span class="c-case-card__line c-case-card__text">Rebranding, identidad de los Centros de Excelencia y contenido para redes.</span>
+                <span class="c-case-card__cta">Ver caso →</span>
               </a>
             </li>
             <li class="c-case-list__item">
@@ -151,7 +170,7 @@
         <div class="o-container o-stack">
           <p class="c-eyebrow">// sin compromiso, a tu ritmo</p>
           <h2 data-reveal="title" id="plan-titulo">¿Te late lo que ves?</h2>
-          <p class="c-section__lead">Cuéntame qué necesitas y armamos tu plan, paso a paso, sin compromiso.</p>
+          <p class="c-section__lead" data-reveal="text">Cuéntame qué necesitas y armamos tu plan, paso a paso, sin compromiso.</p>
           <p><a class="c-button" data-soon="plan/" aria-disabled="true">Arma tu plan <span class="c-nav__soon">Próximamente</span></a></p>
         </div>
       </section>
@@ -161,9 +180,9 @@
           <div class="o-stack">
             <p class="c-eyebrow">// la versión corta</p>
             <h2 data-reveal="title" id="sobre-titulo">Sobre mí</h2>
-            <p>Soy Alejandro "Lex" Mendoza, diseñador en Monterrey desde 2011. Empecé atendiendo clientes en un cibercafé y de ahí pasé a grabar conciertos, a marcas personales, al dealer de BMW y a proyectos de TI.</p>
-            <p>Hoy diseño en CiiSA | PSW y armo sitios web con Claude Code. Me gustan las preguntas grandes, el metal y reírme de lo simple y sencillo.</p>
-            <p><a data-soon="sobre-mi/" aria-disabled="true">Conoce más de mí <span class="c-nav__soon">Próximamente</span></a></p>
+            <p data-reveal="text">Soy Alejandro "Lex" Mendoza, diseñador en Monterrey desde 2011. Empecé atendiendo clientes en un cibercafé y de ahí pasé a grabar conciertos, a marcas personales, al dealer de BMW y a proyectos de TI.</p>
+            <p data-reveal="text">Hoy diseño en CiiSA | PSW y armo sitios web con Claude Code. Me gustan las preguntas grandes, el metal y reírme de lo simple y sencillo.</p>
+            <p data-reveal="text"><a data-soon="sobre-mi/" aria-disabled="true">Conoce más de mí <span class="c-nav__soon">Próximamente</span></a></p>
           </div>
           <div class="c-about__avatar" role="img" aria-label="Foto de Lex Mendoza, pendiente"></div>
         </div>
@@ -174,7 +193,7 @@
       <div class="o-container o-stack">
         <p class="c-eyebrow">// WhatsApp o correo, como prefieras</p>
         <h2 data-reveal="title">¿Hablamos?</h2>
-        <p class="c-section__lead">Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad. ¿Tu sobrino lo hace con ChatGPT? Seguro quedará increíble. Si prefieres a alguien con 15 años de oficio, aquí estoy.</p>
+        <p class="c-section__lead" data-reveal="text">Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad. ¿Tu sobrino lo hace con ChatGPT? Seguro quedará increíble. Si prefieres a alguien con 15 años de oficio, aquí estoy.</p>
         <p class="c-footer__actions">
           <a class="c-button" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20vi%20tu%20sitio%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20proyecto." target="_blank" rel="noopener">WhatsApp</a>
           <a class="c-button c-button--ghost" href="mailto:lex.mendozaleon@gmail.com">Correo</a>
