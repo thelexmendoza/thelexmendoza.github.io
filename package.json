@@ -19,6 +19,6 @@
     "@fontsource/ibm-plex-sans": "^5.0.0",
     "@fontsource/ibm-plex-sans-condensed": "^5.0.0",
     "@fontsource/ibm-plex-serif": "^5.0.0",
-    "sass": "~1.83.0"
+    "sass": "^1.107.1"
   }
 }

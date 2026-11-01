@@ -7,7 +7,7 @@ Sitio personal y de portafolio de Lex Mendoza, publicado en GitHub Pages desde `
 - **Sin frameworks** de CSS ni de JS. Sass para el CSS y JavaScript plano.
 - **Idioma:** español, en tuteo y en primera persona.
 - **Compilar antes de hacer commit:** `npm run build` genera `assets/css/main.min.css`, que es lo único que carga el sitio. Después, `npm test`.
-- **Sass 1.83:** se fija esa versión porque Node local es 20.10; las versiones nuevas de Sass piden 20.19 o más.
+- **Node 26 LTS o superior** (Sass moderno requiere Node 20.19 o más).
 
 ## CSS
 
