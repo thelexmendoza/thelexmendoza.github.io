@@ -1,0 +1,601 @@
+{
+  "slug": "daniel-abrego",
+  "key": "daniel",
+  "title": "Daniel Ábrego",
+  "eyebrow": "marca personal",
+  "meta": "2022–hoy · Diseñador gráfico",
+  "summary": "Daniel Ábrego es mi psicólogo de cabecera. Lo conocí por su contenido en YouTube, fui a uno de sus talleres y ahí empezó una relación de cliente a cliente: yo fui el suyo y después él se volvió el mío. Desde entonces diseño su marca, Psicología Práctica: los afiches de sus talleres, las miniaturas de su canal y el contenido que los acompaña.",
+  "teaser": {
+    "chapter": "talleres",
+    "text": "Empieza por lo más reciente: los afiches de los talleres de este año."
+  },
+  "chapters": [
+    {
+      "id": "talleres",
+      "title": "Talleres",
+      "eyebrow": "el diseño se queda, cambia el texto",
+      "text": [
+        "El sistema visual de los talleres se ha mantenido igual: lo que cambia en cada afiche es el contenido, no la forma de armarlo. Lo que sí ha cambiado, sobre todo este año, es lo que yo traigo: con cada proyecto aprendo algo y se lo voy aplicando a Daniel para mejorar mi diseño.",
+        "Estos son los afiches de 2026 y, al final, las hojas informativas, el diseño completo con fechas, inversión y formas de pago."
+      ],
+      "groups": [
+        {
+          "kind": "disenos",
+          "topic": "Adiós timidez",
+          "items": [
+            {
+              "id": "f38c81389f",
+              "src": "assets/img/casos/daniel-abrego/f38c81389f-640.webp",
+              "full": "assets/img/casos/daniel-abrego/f38c81389f-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Adiós timidez: Taller Adiós Timidez Nueva Fecha 2026 Grupo Online"
+            },
+            {
+              "id": "8d45aff275",
+              "src": "assets/img/casos/daniel-abrego/8d45aff275-640.webp",
+              "full": "assets/img/casos/daniel-abrego/8d45aff275-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Adiós timidez: Taller Adiós Timidez Nueva Fecha"
+            },
+            {
+              "id": "2821f77777",
+              "src": "assets/img/casos/daniel-abrego/2821f77777-640.webp",
+              "full": "assets/img/casos/daniel-abrego/2821f77777-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Adiós timidez: Taller Adiós Timidez Nueva Fecha"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Marcando límites",
+          "ai": true,
+          "items": [
+            {
+              "id": "dd51c7d85e",
+              "src": "assets/img/casos/daniel-abrego/dd51c7d85e-640.webp",
+              "full": "assets/img/casos/daniel-abrego/dd51c7d85e-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcando límites: Curso Marcando Límites Feed 2026 Nuevas fechas"
+            },
+            {
+              "id": "643df6a9c1",
+              "src": "assets/img/casos/daniel-abrego/643df6a9c1-640.webp",
+              "full": "assets/img/casos/daniel-abrego/643df6a9c1-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcando límites: Curso Marcando Límites Feed"
+            },
+            {
+              "id": "21154c1823",
+              "src": "assets/img/casos/daniel-abrego/21154c1823-640.webp",
+              "full": "assets/img/casos/daniel-abrego/21154c1823-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcando límites: Curso Marcando Límites Feed"
+            },
+            {
+              "id": "54983e3efb",
+              "src": "assets/img/casos/daniel-abrego/54983e3efb-640.webp",
+              "full": "assets/img/casos/daniel-abrego/54983e3efb-1200.webp",
+              "width": 640,
+              "height": 335,
+              "alt": "Marcando límites: Marcando límites Banner Evento FB"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Amando con libertad",
+          "items": [
+            {
+              "id": "94063ea920",
+              "src": "assets/img/casos/daniel-abrego/94063ea920-640.webp",
+              "full": "assets/img/casos/daniel-abrego/94063ea920-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Amando con libertad: Amando con Libertad Banner"
+            },
+            {
+              "id": "7f95cee8e7",
+              "src": "assets/img/casos/daniel-abrego/7f95cee8e7-640.webp",
+              "full": "assets/img/casos/daniel-abrego/7f95cee8e7-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Amando con libertad: Amando con Libertad Banner Online"
+            },
+            {
+              "id": "e67e386987",
+              "src": "assets/img/casos/daniel-abrego/e67e386987-640.webp",
+              "full": "assets/img/casos/daniel-abrego/e67e386987-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Amando con libertad: Amando con Libertad Banner"
+            },
+            {
+              "id": "841da3872e",
+              "src": "assets/img/casos/daniel-abrego/841da3872e-640.webp",
+              "full": "assets/img/casos/daniel-abrego/841da3872e-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Amando con libertad: Libertad emocional 1",
+              "caption": "Collage de «Amando con libertad»"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "El arte de la seducción",
+          "ai": true,
+          "items": [
+            {
+              "id": "70465f323a",
+              "src": "assets/img/casos/daniel-abrego/70465f323a-640.webp",
+              "full": "assets/img/casos/daniel-abrego/70465f323a-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "El arte de la seducción: Arte de la Seducción Banner"
+            },
+            {
+              "id": "687011bb2a",
+              "src": "assets/img/casos/daniel-abrego/687011bb2a-640.webp",
+              "full": "assets/img/casos/daniel-abrego/687011bb2a-1200.webp",
+              "width": 640,
+              "height": 338,
+              "alt": "El arte de la seducción: Arte de la Seducción Evento Facebook"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Seducción zapatista",
+          "ai": true,
+          "items": [
+            {
+              "id": "d461073f4d",
+              "src": "assets/img/casos/daniel-abrego/d461073f4d-640.webp",
+              "full": "assets/img/casos/daniel-abrego/d461073f4d-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Seducción zapatista: Seducción Zapatista Banner"
+            },
+            {
+              "id": "2e82383e94",
+              "src": "assets/img/casos/daniel-abrego/2e82383e94-640.webp",
+              "full": "assets/img/casos/daniel-abrego/2e82383e94-1200.webp",
+              "width": 640,
+              "height": 338,
+              "alt": "Seducción zapatista: Seducción Zapatista Evento Facebook"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Hojas informativas",
+          "items": [
+            {
+              "id": "ad38019f88",
+              "src": "assets/img/casos/daniel-abrego/ad38019f88-640.webp",
+              "full": "assets/img/casos/daniel-abrego/ad38019f88-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Hojas informativas: Taller Timidez 3",
+              "caption": "Adiós timidez: hoja de fechas, inversión y formas de pago"
+            },
+            {
+              "id": "7fb0a8f20f",
+              "src": "assets/img/casos/daniel-abrego/7fb0a8f20f-640.webp",
+              "full": "assets/img/casos/daniel-abrego/7fb0a8f20f-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Hojas informativas: Taller Amando con Libertad L1 Online",
+              "caption": "Amando con libertad: hoja de descripción del taller"
+            },
+            {
+              "id": "0664125f1d",
+              "src": "assets/img/casos/daniel-abrego/0664125f1d-640.webp",
+              "full": "assets/img/casos/daniel-abrego/0664125f1d-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Hojas informativas: Taller Amando con Libertad L3 Online",
+              "caption": "Amando con libertad: hoja de fechas, inversión y formas de pago"
+            },
+            {
+              "id": "54d945e285",
+              "src": "assets/img/casos/daniel-abrego/54d945e285-640.webp",
+              "full": "assets/img/casos/daniel-abrego/54d945e285-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Hojas informativas: Curso Marcando Límites L3 Domingo Online",
+              "caption": "Marcando límites: hoja de fechas, inversión y formas de pago"
+            },
+            {
+              "id": "d7f3f64bfd",
+              "src": "assets/img/casos/daniel-abrego/d7f3f64bfd-640.webp",
+              "full": "assets/img/casos/daniel-abrego/d7f3f64bfd-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Hojas informativas: Seducción Zapatista L2",
+              "caption": "Seducción zapatista: hoja de inversión y formas de pago"
+            },
+            {
+              "id": "6829affe97",
+              "src": "assets/img/casos/daniel-abrego/6829affe97-640.webp",
+              "full": "assets/img/casos/daniel-abrego/6829affe97-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Hojas informativas: Taller Amando con Libertad L1",
+              "caption": "El arte de la seducción: hoja de fechas, inversión y formas de pago"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Imágenes de apoyo",
+          "ai": true,
+          "items": [
+            {
+              "id": "925b2ccb35",
+              "src": "assets/img/casos/daniel-abrego/925b2ccb35-640.webp",
+              "full": "assets/img/casos/daniel-abrego/925b2ccb35-1200.webp",
+              "width": 640,
+              "height": 850,
+              "alt": "Imágenes de apoyo: Pareja",
+              "caption": "Pareja en un café al atardecer"
+            },
+            {
+              "id": "c79f5fc420",
+              "src": "assets/img/casos/daniel-abrego/c79f5fc420-640.webp",
+              "full": "assets/img/casos/daniel-abrego/c79f5fc420-1200.webp",
+              "width": 640,
+              "height": 850,
+              "alt": "Imágenes de apoyo: Pareja",
+              "caption": "Pareja cenando con luz de atardecer"
+            },
+            {
+              "id": "f3ff174be0",
+              "src": "assets/img/casos/daniel-abrego/f3ff174be0-640.webp",
+              "full": "assets/img/casos/daniel-abrego/f3ff174be0-1200.webp",
+              "width": 640,
+              "height": 850,
+              "alt": "Imágenes de apoyo: Zapata",
+              "caption": "Pareja con sombrero y rebozo al atardecer"
+            },
+            {
+              "id": "58e392b3d1",
+              "src": "assets/img/casos/daniel-abrego/58e392b3d1-640.webp",
+              "full": "assets/img/casos/daniel-abrego/58e392b3d1-1200.webp",
+              "width": 640,
+              "height": 853,
+              "alt": "Imágenes de apoyo: Zpatista",
+              "caption": "Emiliano Zapata, imagen de apoyo de «Seducción zapatista»"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canal",
+      "title": "El canal",
+      "eyebrow": "miniaturas de YouTube",
+      "text": [
+        "Además de los talleres, diseño las miniaturas de los videos del canal de Daniel. Fue su contenido lo que me llevó a conocerlo, así que estas piezas tienen un lugar especial para mí.",
+        "Cada serie tiene su propio tema y el formato se mantiene: aquí va una muestra de cada una. Algunas llevan fotos de figuras públicas, porque son parte del tema de cada episodio."
+      ],
+      "groups": [
+        {
+          "kind": "disenos",
+          "topic": "Miniaturas del canal",
+          "note": "Una muestra de cada serie del canal; el formato se mantiene y cambia el tema.",
+          "items": [
+            {
+              "id": "5e9afa5d38",
+              "src": "assets/img/casos/daniel-abrego/5e9afa5d38-640.webp",
+              "full": "assets/img/casos/daniel-abrego/5e9afa5d38-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: BG La mainopulación perfecta Ep4 aswsfs",
+              "caption": "Baby Grinder · Capítulo 4: análisis psicológico"
+            },
+            {
+              "id": "95eb372eab",
+              "src": "assets/img/casos/daniel-abrego/95eb372eab-640.webp",
+              "full": "assets/img/casos/daniel-abrego/95eb372eab-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Bad Surgeon Narcisismo Fatal",
+              "caption": "Bad Surgeon · Narcisismo fatal"
+            },
+            {
+              "id": "53a40a3502",
+              "src": "assets/img/casos/daniel-abrego/53a40a3502-640.webp",
+              "full": "assets/img/casos/daniel-abrego/53a40a3502-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: La Luz del Muendo Principe del mal",
+              "caption": "La Luz del Mundo · Príncipe de la maldad"
+            },
+            {
+              "id": "b275fc12e8",
+              "src": "assets/img/casos/daniel-abrego/b275fc12e8-640.webp",
+              "full": "assets/img/casos/daniel-abrego/b275fc12e8-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: La Luz del Mundo El método 1",
+              "caption": "La Luz del Mundo · El método de la familia Joaquín"
+            },
+            {
+              "id": "378c36c984",
+              "src": "assets/img/casos/daniel-abrego/378c36c984-640.webp",
+              "full": "assets/img/casos/daniel-abrego/378c36c984-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Seducción Fatal",
+              "caption": "La peor madre del mundo · Seducción fatal"
+            },
+            {
+              "id": "5bbdf598a5",
+              "src": "assets/img/casos/daniel-abrego/5bbdf598a5-640.webp",
+              "full": "assets/img/casos/daniel-abrego/5bbdf598a5-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: La secta del amor",
+              "caption": "La secta del amor"
+            },
+            {
+              "id": "58135fdfa0",
+              "src": "assets/img/casos/daniel-abrego/58135fdfa0-640.webp",
+              "full": "assets/img/casos/daniel-abrego/58135fdfa0-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: El próximo Manson",
+              "caption": "La secta del amor · ¿El próximo Manson?"
+            },
+            {
+              "id": "d44c1c5fa9",
+              "src": "assets/img/casos/daniel-abrego/d44c1c5fa9-640.webp",
+              "full": "assets/img/casos/daniel-abrego/d44c1c5fa9-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Técnica del espejo",
+              "caption": "La secta del amor · La técnica del espejo"
+            },
+            {
+              "id": "967a306b52",
+              "src": "assets/img/casos/daniel-abrego/967a306b52-640.webp",
+              "full": "assets/img/casos/daniel-abrego/967a306b52-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Mitómana Barriga de trapo",
+              "caption": "Mitómanos · Mitomanía o algo más…"
+            },
+            {
+              "id": "c481d3da3a",
+              "src": "assets/img/casos/daniel-abrego/c481d3da3a-640.webp",
+              "full": "assets/img/casos/daniel-abrego/c481d3da3a-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Clonación ovnis",
+              "caption": "Mitómanos · Charlatán supremo"
+            },
+            {
+              "id": "586642a757",
+              "src": "assets/img/casos/daniel-abrego/586642a757-640.webp",
+              "full": "assets/img/casos/daniel-abrego/586642a757-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Chicas de Andrade Culpables",
+              "caption": "Sergio Andrade · ¿Víctimas o culpables?"
+            },
+            {
+              "id": "a3c2278aff",
+              "src": "assets/img/casos/daniel-abrego/a3c2278aff-640.webp",
+              "full": "assets/img/casos/daniel-abrego/a3c2278aff-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Sergio Andrade Genio del mal",
+              "caption": "Sergio Andrade · Genio del mal"
+            },
+            {
+              "id": "fc86ef08bb",
+              "src": "assets/img/casos/daniel-abrego/fc86ef08bb-640.webp",
+              "full": "assets/img/casos/daniel-abrego/fc86ef08bb-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Sergio Andrade Mente perversa",
+              "caption": "Sergio Andrade · Mente perversa"
+            },
+            {
+              "id": "98e7356bd2",
+              "src": "assets/img/casos/daniel-abrego/98e7356bd2-640.webp",
+              "full": "assets/img/casos/daniel-abrego/98e7356bd2-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: El rey del grooming",
+              "caption": "Todo sobre el grooming · El rey del grooming"
+            },
+            {
+              "id": "8f74e5ab30",
+              "src": "assets/img/casos/daniel-abrego/8f74e5ab30-640.webp",
+              "full": "assets/img/casos/daniel-abrego/8f74e5ab30-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: La leona del grooming",
+              "caption": "Todo sobre el grooming · La leona del grooming"
+            },
+            {
+              "id": "98e966f7d7",
+              "src": "assets/img/casos/daniel-abrego/98e966f7d7-640.webp",
+              "full": "assets/img/casos/daniel-abrego/98e966f7d7-1200.webp",
+              "width": 640,
+              "height": 363,
+              "alt": "Miniaturas del canal: Todo sobre el grooming",
+              "caption": "Todo sobre el grooming · Lo que debes saber"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sr-bigotes",
+      "title": "Sr. Bigotes",
+      "eyebrow": "una pizzería",
+      "text": [
+        "Sr. Bigotes es una pizzería con la que también trabajo. Aquí van sus menús y las publicaciones de sus eventos, como Beats & Bites y la Guerra de pizzas, y de sus valores, Respeto y Solidaridad.",
+        "Su local fue sede de «Amando con libertad», uno de los talleres de Daniel."
+      ],
+      "groups": [
+        {
+          "kind": "logos",
+          "topic": "Logotipo",
+          "items": [
+            {
+              "id": "c6f091f93a",
+              "src": "assets/img/casos/daniel-abrego/c6f091f93a-640.webp",
+              "full": "assets/img/casos/daniel-abrego/c6f091f93a-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Logotipo",
+              "caption": "Logotipo de Sr. Bigotes"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Menús y publicaciones",
+          "items": [
+            {
+              "id": "c78e007587",
+              "src": "assets/img/casos/daniel-abrego/c78e007587-640.webp",
+              "full": "assets/img/casos/daniel-abrego/c78e007587-1200.webp",
+              "width": 640,
+              "height": 237,
+              "alt": "Menús y publicaciones",
+              "caption": "Menú: pizzas, pastas, lasaña, panini y bar"
+            },
+            {
+              "id": "c41f184269",
+              "src": "assets/img/casos/daniel-abrego/c41f184269-640.webp",
+              "full": "assets/img/casos/daniel-abrego/c41f184269-1200.webp",
+              "width": 640,
+              "height": 798,
+              "alt": "Menús y publicaciones",
+              "caption": "Menú: entradas y ensaladas"
+            },
+            {
+              "id": "c4549534e2",
+              "src": "assets/img/casos/daniel-abrego/c4549534e2-640.webp",
+              "full": "assets/img/casos/daniel-abrego/c4549534e2-1200.webp",
+              "width": 640,
+              "height": 798,
+              "alt": "Menús y publicaciones",
+              "caption": "Menú: paquetes de pasta"
+            },
+            {
+              "id": "5ecb1176fd",
+              "src": "assets/img/casos/daniel-abrego/5ecb1176fd-640.webp",
+              "full": "assets/img/casos/daniel-abrego/5ecb1176fd-1200.webp",
+              "width": 640,
+              "height": 802,
+              "alt": "Menús y publicaciones: Cartel",
+              "caption": "Beats & Bites: DJ y pizza libre"
+            },
+            {
+              "id": "92d16fb6f8",
+              "src": "assets/img/casos/daniel-abrego/92d16fb6f8-640.webp",
+              "full": "assets/img/casos/daniel-abrego/92d16fb6f8-1200.webp",
+              "width": 640,
+              "height": 788,
+              "alt": "Menús y publicaciones: Cartel",
+              "caption": "Beats & Bites, edición Cumbres"
+            },
+            {
+              "id": "63f133ef03",
+              "src": "assets/img/casos/daniel-abrego/63f133ef03-640.webp",
+              "full": "assets/img/casos/daniel-abrego/63f133ef03-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Menús y publicaciones",
+              "caption": "Patrón de pizzas para fondos y empaques"
+            },
+            {
+              "id": "f3bb29e89c",
+              "src": "assets/img/casos/daniel-abrego/f3bb29e89c-640.webp",
+              "full": "assets/img/casos/daniel-abrego/f3bb29e89c-1200.webp",
+              "width": 640,
+              "height": 801,
+              "alt": "Menús y publicaciones",
+              "caption": "Guerra de pizzas: DJ set y pizza libre"
+            },
+            {
+              "id": "3c9c9aa372",
+              "src": "assets/img/casos/daniel-abrego/3c9c9aa372-640.webp",
+              "full": "assets/img/casos/daniel-abrego/3c9c9aa372-1200.webp",
+              "width": 612,
+              "height": 792,
+              "alt": "Menús y publicaciones: Ya checaste Carta",
+              "caption": "Solidaridad: «¿Ya checaste?»"
+            },
+            {
+              "id": "75f7f8e2a8",
+              "src": "assets/img/casos/daniel-abrego/75f7f8e2a8-640.webp",
+              "full": "assets/img/casos/daniel-abrego/75f7f8e2a8-1200.webp",
+              "width": 640,
+              "height": 828,
+              "alt": "Menús y publicaciones: Respeto Media carta",
+              "caption": "Respeto: «¿Ya checaste?»"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "media": [
+      {
+        "type": "image",
+        "id": "841da3872e",
+        "src": "assets/img/casos/daniel-abrego/841da3872e-640.webp",
+        "full": "assets/img/casos/daniel-abrego/841da3872e-1200.webp",
+        "width": 640,
+        "height": 640
+      },
+      {
+        "type": "image",
+        "id": "c79f5fc420",
+        "src": "assets/img/casos/daniel-abrego/c79f5fc420-640.webp",
+        "full": "assets/img/casos/daniel-abrego/c79f5fc420-1200.webp",
+        "width": 640,
+        "height": 850
+      },
+      {
+        "type": "image",
+        "id": "58e392b3d1",
+        "src": "assets/img/casos/daniel-abrego/58e392b3d1-640.webp",
+        "full": "assets/img/casos/daniel-abrego/58e392b3d1-1200.webp",
+        "width": 640,
+        "height": 853
+      },
+      {
+        "type": "image",
+        "id": "925b2ccb35",
+        "src": "assets/img/casos/daniel-abrego/925b2ccb35-640.webp",
+        "full": "assets/img/casos/daniel-abrego/925b2ccb35-1200.webp",
+        "width": 640,
+        "height": 850
+      },
+      {
+        "type": "image",
+        "id": "f3ff174be0",
+        "src": "assets/img/casos/daniel-abrego/f3ff174be0-640.webp",
+        "full": "assets/img/casos/daniel-abrego/f3ff174be0-1200.webp",
+        "width": 640,
+        "height": 850
+      }
+    ]
+  }
+}
