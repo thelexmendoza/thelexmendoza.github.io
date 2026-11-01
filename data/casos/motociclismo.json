@@ -1,0 +1,1135 @@
+{
+  "slug": "motociclismo",
+  "key": "moto",
+  "title": "Motociclismo",
+  "eyebrow": "contenido y motos",
+  "meta": "2023–2024 · Diseñador gráfico",
+  "summary": "Todo empezó con Oscar Guzmán, comisionado de la Federación Nacional de Motociclismo de México, a quien conocí trabajando en BMW. Le gustó mi trabajo y de ahí salieron dos clientes del mundo de las motos: Motoplex Monterrey, concesionaria de Aprilia, Moto Guzzi, Piaggio y Vespa, y Motoland Driving School, su escuela de manejo.",
+  "teaser": {
+    "chapter": "motoplex",
+    "text": "Empieza por Motoplex: fotos de producto, servicio y clínicas de manejo."
+  },
+  "chapters": [
+    {
+      "id": "motoplex",
+      "title": "Motoplex Monterrey",
+      "eyebrow": "contenido mensual de redes",
+      "text": [
+        "Llegué a Motoplex por Oscar, que me invitó a conocer a Eduardo Ortega, padre, y a su hijo, también Eduardo Ortega, dueños de la concesionaria. Entre marzo y julio de 2024 armé su contenido para redes: publicaciones e historias de servicio, anuncios de llantas y accesorios, invitaciones a charlas y clínicas de manejo, y series como «5 hechos sorprendentes».",
+        "Las fotos de producto también las tomé yo: motos, scooters y equipo de manejo en el showroom. Aquí van las de mejor encuadre, y después los diseños. Los precios y las promociones que aparecen son los de cada anuncio original."
+      ],
+      "groups": [
+        {
+          "kind": "fotos",
+          "topic": "Aprilia",
+          "items": [
+            {
+              "id": "b11f3beb95",
+              "src": "assets/img/casos/motociclismo/b11f3beb95-640.webp",
+              "full": "assets/img/casos/motociclismo/b11f3beb95-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Aprilia",
+              "caption": "Aprilia RS 660 amarilla, de tres cuartos"
+            },
+            {
+              "id": "92720748cf",
+              "src": "assets/img/casos/motociclismo/92720748cf-640.webp",
+              "full": "assets/img/casos/motociclismo/92720748cf-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Aprilia",
+              "caption": "Aprilia RS 660 amarilla, de frente"
+            },
+            {
+              "id": "f8854d4976",
+              "src": "assets/img/casos/motociclismo/f8854d4976-640.webp",
+              "full": "assets/img/casos/motociclismo/f8854d4976-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Aprilia",
+              "caption": "Aprilia RS 660 amarilla, de cerca"
+            },
+            {
+              "id": "7130a06bae",
+              "src": "assets/img/casos/motociclismo/7130a06bae-640.webp",
+              "full": "assets/img/casos/motociclismo/7130a06bae-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Aprilia",
+              "caption": "Aprilia RS 660: horquilla y rueda delantera"
+            },
+            {
+              "id": "dc7eb475b7",
+              "src": "assets/img/casos/motociclismo/dc7eb475b7-640.webp",
+              "full": "assets/img/casos/motociclismo/dc7eb475b7-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Aprilia",
+              "caption": "Aprilia Tuono 660 roja, de costado"
+            },
+            {
+              "id": "f020af1c4c",
+              "src": "assets/img/casos/motociclismo/f020af1c4c-640.webp",
+              "full": "assets/img/casos/motociclismo/f020af1c4c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Aprilia",
+              "caption": "Aprilia Tuono 660 roja, de tres cuartos"
+            },
+            {
+              "id": "cb60236e3d",
+              "src": "assets/img/casos/motociclismo/cb60236e3d-640.webp",
+              "full": "assets/img/casos/motociclismo/cb60236e3d-1200.webp",
+              "width": 640,
+              "height": 428,
+              "alt": "Aprilia",
+              "caption": "Aprilia Tuareg 660, de costado"
+            },
+            {
+              "id": "8b0c87649a",
+              "src": "assets/img/casos/motociclismo/8b0c87649a-640.webp",
+              "full": "assets/img/casos/motociclismo/8b0c87649a-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Aprilia",
+              "caption": "Aprilia Tuareg 660: rueda delantera"
+            },
+            {
+              "id": "f59a40b5c4",
+              "src": "assets/img/casos/motociclismo/f59a40b5c4-640.webp",
+              "full": "assets/img/casos/motociclismo/f59a40b5c4-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Aprilia",
+              "caption": "Scooter Aprilia negro con rojo, de costado"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Moto Guzzi",
+          "items": [
+            {
+              "id": "a6876b8bf7",
+              "src": "assets/img/casos/motociclismo/a6876b8bf7-640.webp",
+              "full": "assets/img/casos/motociclismo/a6876b8bf7-1200.webp",
+              "width": 640,
+              "height": 426,
+              "alt": "Moto Guzzi",
+              "caption": "Moto Guzzi V7 Stone, de costado"
+            },
+            {
+              "id": "bff827c399",
+              "src": "assets/img/casos/motociclismo/bff827c399-640.webp",
+              "full": "assets/img/casos/motociclismo/bff827c399-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Moto Guzzi",
+              "caption": "Moto Guzzi V7 Stone, de tres cuartos"
+            },
+            {
+              "id": "1102aab026",
+              "src": "assets/img/casos/motociclismo/1102aab026-640.webp",
+              "full": "assets/img/casos/motociclismo/1102aab026-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Moto Guzzi",
+              "caption": "Moto Guzzi: tanque con el águila"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Piaggio y Vespa",
+          "items": [
+            {
+              "id": "28e3e5034c",
+              "src": "assets/img/casos/motociclismo/28e3e5034c-640.webp",
+              "full": "assets/img/casos/motociclismo/28e3e5034c-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "Piaggio y Vespa",
+              "caption": "Piaggio MP3 de tres ruedas, de costado"
+            },
+            {
+              "id": "947c1781ec",
+              "src": "assets/img/casos/motociclismo/947c1781ec-640.webp",
+              "full": "assets/img/casos/motociclismo/947c1781ec-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Piaggio y Vespa",
+              "caption": "Piaggio MP3: rueda delantera"
+            },
+            {
+              "id": "352d6cd2fd",
+              "src": "assets/img/casos/motociclismo/352d6cd2fd-640.webp",
+              "full": "assets/img/casos/motociclismo/352d6cd2fd-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Piaggio y Vespa",
+              "caption": "Vespa blanca, de frente"
+            },
+            {
+              "id": "81edf5b2f1",
+              "src": "assets/img/casos/motociclismo/81edf5b2f1-640.webp",
+              "full": "assets/img/casos/motociclismo/81edf5b2f1-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Piaggio y Vespa",
+              "caption": "Vespa negra mate con asiento beige"
+            },
+            {
+              "id": "dbd526e8a5",
+              "src": "assets/img/casos/motociclismo/dbd526e8a5-640.webp",
+              "full": "assets/img/casos/motociclismo/dbd526e8a5-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Piaggio y Vespa",
+              "caption": "Vespa amarilla mate, detalle del frente"
+            },
+            {
+              "id": "45ddd79904",
+              "src": "assets/img/casos/motociclismo/45ddd79904-640.webp",
+              "full": "assets/img/casos/motociclismo/45ddd79904-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Piaggio y Vespa",
+              "caption": "Casco Vespa azul sobre una Vespa azul"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Equipo de manejo",
+          "items": [
+            {
+              "id": "f92200246e",
+              "src": "assets/img/casos/motociclismo/f92200246e-640.webp",
+              "full": "assets/img/casos/motociclismo/f92200246e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Casco de enduro, de tres cuartos"
+            },
+            {
+              "id": "ebd05720aa",
+              "src": "assets/img/casos/motociclismo/ebd05720aa-640.webp",
+              "full": "assets/img/casos/motociclismo/ebd05720aa-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Bota de motocross, detalle"
+            },
+            {
+              "id": "a743b7e2a3",
+              "src": "assets/img/casos/motociclismo/a743b7e2a3-640.webp",
+              "full": "assets/img/casos/motociclismo/a743b7e2a3-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Guantes rojos sobre la mesa"
+            },
+            {
+              "id": "a25192349c",
+              "src": "assets/img/casos/motociclismo/a25192349c-640.webp",
+              "full": "assets/img/casos/motociclismo/a25192349c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Botas de motocross, par"
+            },
+            {
+              "id": "b59b26ab33",
+              "src": "assets/img/casos/motociclismo/b59b26ab33-640.webp",
+              "full": "assets/img/casos/motociclismo/b59b26ab33-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Tenis de manejo negros, de frente"
+            },
+            {
+              "id": "044375b78a",
+              "src": "assets/img/casos/motociclismo/044375b78a-640.webp",
+              "full": "assets/img/casos/motociclismo/044375b78a-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Jersey de motocross en el exhibidor"
+            },
+            {
+              "id": "c69dc0e3b5",
+              "src": "assets/img/casos/motociclismo/c69dc0e3b5-640.webp",
+              "full": "assets/img/casos/motociclismo/c69dc0e3b5-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Chamarra azul de manejo en el exhibidor"
+            },
+            {
+              "id": "92c96c3bd0",
+              "src": "assets/img/casos/motociclismo/92c96c3bd0-640.webp",
+              "full": "assets/img/casos/motociclismo/92c96c3bd0-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Chamarra de manejo verde y negra"
+            },
+            {
+              "id": "41dba56864",
+              "src": "assets/img/casos/motociclismo/41dba56864-640.webp",
+              "full": "assets/img/casos/motociclismo/41dba56864-1200.webp",
+              "width": 640,
+              "height": 964,
+              "alt": "Equipo de manejo",
+              "caption": "Chamarra de piel en el exhibidor"
+            },
+            {
+              "id": "fd75f9f4dd",
+              "src": "assets/img/casos/motociclismo/fd75f9f4dd-640.webp",
+              "full": "assets/img/casos/motociclismo/fd75f9f4dd-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Guantes Moto Guzzi de piel"
+            },
+            {
+              "id": "1fceb139de",
+              "src": "assets/img/casos/motociclismo/1fceb139de-640.webp",
+              "full": "assets/img/casos/motociclismo/1fceb139de-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Casco abierto amarillo"
+            },
+            {
+              "id": "9eefc7cb9a",
+              "src": "assets/img/casos/motociclismo/9eefc7cb9a-640.webp",
+              "full": "assets/img/casos/motociclismo/9eefc7cb9a-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Equipo de manejo",
+              "caption": "Casco de enduro blanco, sobre su base"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Promociones y ofertas",
+          "items": [
+            {
+              "id": "814d0332cd",
+              "src": "assets/img/casos/motociclismo/814d0332cd-640.webp",
+              "full": "assets/img/casos/motociclismo/814d0332cd-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en botas"
+            },
+            {
+              "id": "e2cc1197a0",
+              "src": "assets/img/casos/motociclismo/e2cc1197a0-640.webp",
+              "full": "assets/img/casos/motociclismo/e2cc1197a0-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en cascos"
+            },
+            {
+              "id": "9aa2d6e7c2",
+              "src": "assets/img/casos/motociclismo/9aa2d6e7c2-640.webp",
+              "full": "assets/img/casos/motociclismo/9aa2d6e7c2-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en lentes y accesorios"
+            },
+            {
+              "id": "99eb7c9d83",
+              "src": "assets/img/casos/motociclismo/99eb7c9d83-640.webp",
+              "full": "assets/img/casos/motociclismo/99eb7c9d83-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en guantes"
+            },
+            {
+              "id": "a1f209af32",
+              "src": "assets/img/casos/motociclismo/a1f209af32-640.webp",
+              "full": "assets/img/casos/motociclismo/a1f209af32-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en cascos de enduro"
+            },
+            {
+              "id": "a3c2c36a44",
+              "src": "assets/img/casos/motociclismo/a3c2c36a44-640.webp",
+              "full": "assets/img/casos/motociclismo/a3c2c36a44-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en calzado"
+            },
+            {
+              "id": "0c026b7b51",
+              "src": "assets/img/casos/motociclismo/0c026b7b51-640.webp",
+              "full": "assets/img/casos/motociclismo/0c026b7b51-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Promociones y ofertas: Promoción Julio Storie",
+              "caption": "Por todo julio: hasta 6 meses sin intereses en ropa"
+            },
+            {
+              "id": "919e0d02d1",
+              "src": "assets/img/casos/motociclismo/919e0d02d1-640.webp",
+              "full": "assets/img/casos/motociclismo/919e0d02d1-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Promociones y ofertas: Promoción Julio",
+              "caption": "Por todo julio: 3 o 6 meses sin intereses en accesorios y botique"
+            },
+            {
+              "id": "a53c9b311a",
+              "src": "assets/img/casos/motociclismo/a53c9b311a-640.webp",
+              "full": "assets/img/casos/motociclismo/a53c9b311a-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Promociones y ofertas: Michelin en Motoplex Informativo Flyer",
+              "caption": "Llantas Michelin Anakee Adventure con precio de contado"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Llantas Michelin",
+          "items": [
+            {
+              "id": "7b2f74800a",
+              "src": "assets/img/casos/motociclismo/7b2f74800a-640.webp",
+              "full": "assets/img/casos/motociclismo/7b2f74800a-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Llantas Michelin: Michelin en Motoplex Informativo Flyer Ducati",
+              "caption": "Michelin: ahora toda la gama en Motoplex"
+            },
+            {
+              "id": "37d4b00ecc",
+              "src": "assets/img/casos/motociclismo/37d4b00ecc-640.webp",
+              "full": "assets/img/casos/motociclismo/37d4b00ecc-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Llantas Michelin: Michelin en Motoplex Informativo Storie",
+              "caption": "Michelin: «¡Estrena ahora!»"
+            },
+            {
+              "id": "4de9142997",
+              "src": "assets/img/casos/motociclismo/4de9142997-640.webp",
+              "full": "assets/img/casos/motociclismo/4de9142997-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Llantas Michelin: Michelin Aprilia RS",
+              "caption": "Michelin Power Cup: «Lo tuyo es correr»"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Servicio",
+          "items": [
+            {
+              "id": "bc05ad2ee6",
+              "src": "assets/img/casos/motociclismo/bc05ad2ee6-640.webp",
+              "full": "assets/img/casos/motociclismo/bc05ad2ee6-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Servicio: Instagram Cita de servicio",
+              "caption": "Servicio: «Aquí sí cuidamos todos los detalles»"
+            },
+            {
+              "id": "6ec38bbec5",
+              "src": "assets/img/casos/motociclismo/6ec38bbec5-640.webp",
+              "full": "assets/img/casos/motociclismo/6ec38bbec5-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Servicio: Instagram Cita de servicio",
+              "caption": "Servicio: «¿Ya tienes tu cita al regresar de vacaciones?»"
+            },
+            {
+              "id": "06d8247865",
+              "src": "assets/img/casos/motociclismo/06d8247865-640.webp",
+              "full": "assets/img/casos/motociclismo/06d8247865-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Servicio: Instagram Cita de servicio",
+              "caption": "Servicio: «Que no te falte el servizio e dettagliato»"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Clínicas de manejo",
+          "items": [
+            {
+              "id": "b531118fc1",
+              "src": "assets/img/casos/motociclismo/b531118fc1-640.webp",
+              "full": "assets/img/casos/motociclismo/b531118fc1-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Clínicas de manejo: Motoland Storie MP",
+              "caption": "Clínica de manejo: 5 de mayo"
+            },
+            {
+              "id": "62bab9efdb",
+              "src": "assets/img/casos/motociclismo/62bab9efdb-640.webp",
+              "full": "assets/img/casos/motociclismo/62bab9efdb-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Clínicas de manejo: Motoland Storie MP",
+              "caption": "Clínica de manejo: faltan 2 días"
+            },
+            {
+              "id": "9a51534f4d",
+              "src": "assets/img/casos/motociclismo/9a51534f4d-640.webp",
+              "full": "assets/img/casos/motociclismo/9a51534f4d-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Clínicas de manejo: Motoland Storie MP Junio",
+              "caption": "Clínica de manejo: domingo 30 de junio"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Marcas y datos curiosos",
+          "items": [
+            {
+              "id": "b5406d4e46",
+              "src": "assets/img/casos/motociclismo/b5406d4e46-640.webp",
+              "full": "assets/img/casos/motociclismo/b5406d4e46-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcas y datos curiosos: Ejemplo indentidad motoplex",
+              "caption": "Aprilia: «Diseñada para el futuro»"
+            },
+            {
+              "id": "1f07c69338",
+              "src": "assets/img/casos/motociclismo/1f07c69338-640.webp",
+              "full": "assets/img/casos/motociclismo/1f07c69338-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcas y datos curiosos: Ejemplo indentidad motoplex",
+              "caption": "Moto Guzzi: «El corazón del águila»"
+            },
+            {
+              "id": "09dc2814e4",
+              "src": "assets/img/casos/motociclismo/09dc2814e4-640.webp",
+              "full": "assets/img/casos/motociclismo/09dc2814e4-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcas y datos curiosos: Ejemplo indentidad motoplex",
+              "caption": "Piaggio: «Conduce la revolución»"
+            },
+            {
+              "id": "79e5e6a4e0",
+              "src": "assets/img/casos/motociclismo/79e5e6a4e0-640.webp",
+              "full": "assets/img/casos/motociclismo/79e5e6a4e0-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Marcas y datos curiosos: Ejemplo indentidad motoplex",
+              "caption": "Vespa: «Legado de histórica y durabilidad»"
+            },
+            {
+              "id": "86f6e628cf",
+              "src": "assets/img/casos/motociclismo/86f6e628cf-640.webp",
+              "full": "assets/img/casos/motociclismo/86f6e628cf-1200.webp",
+              "width": 640,
+              "height": 1138,
+              "alt": "Marcas y datos curiosos: 5 hechos Aprilia 8 19 IG",
+              "caption": "5 hechos sorprendentes de Aprilia"
+            },
+            {
+              "id": "82ae650923",
+              "src": "assets/img/casos/motociclismo/82ae650923-640.webp",
+              "full": "assets/img/casos/motociclismo/82ae650923-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Marcas y datos curiosos: 5 hechos Moto Guzzi P1 8 19 IG",
+              "caption": "5 hechos sorprendentes de Moto Guzzi, parte 1"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Invitaciones e historias",
+          "items": [
+            {
+              "id": "75b541c307",
+              "src": "assets/img/casos/motociclismo/75b541c307-640.webp",
+              "full": "assets/img/casos/motociclismo/75b541c307-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Invitaciones e historias: Instagram Carnita post",
+              "caption": "Invitación a una charla: «¿Qué tal una carnita?»"
+            },
+            {
+              "id": "d8733da5ca",
+              "src": "assets/img/casos/motociclismo/d8733da5ca-640.webp",
+              "full": "assets/img/casos/motociclismo/d8733da5ca-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Invitaciones e historias: Instagram Carnita Whats App",
+              "caption": "Invitación a la charla «Experiencia en ADV MX 2024»"
+            },
+            {
+              "id": "9f0db7e144",
+              "src": "assets/img/casos/motociclismo/9f0db7e144-640.webp",
+              "full": "assets/img/casos/motociclismo/9f0db7e144-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Invitaciones e historias: Instagram Encuesta post",
+              "caption": "Historia con encuesta: «¡Tenemos encuesta!»"
+            },
+            {
+              "id": "9689d8f9d9",
+              "src": "assets/img/casos/motociclismo/9689d8f9d9-640.webp",
+              "full": "assets/img/casos/motociclismo/9689d8f9d9-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Invitaciones e historias: MP comic",
+              "caption": "Historia: «Yo quiero ir a unos tacos en la carretera»"
+            },
+            {
+              "id": "11088feaf6",
+              "src": "assets/img/casos/motociclismo/11088feaf6-640.webp",
+              "full": "assets/img/casos/motociclismo/11088feaf6-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Invitaciones e historias: MP comic",
+              "caption": "Historia: «Vamos a la Huasteca, ¿sí o qué?»"
+            },
+            {
+              "id": "92c52a2266",
+              "src": "assets/img/casos/motociclismo/92c52a2266-640.webp",
+              "full": "assets/img/casos/motociclismo/92c52a2266-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Invitaciones e historias: MP comic",
+              "caption": "Historia: «¡Ah! Qué bonito día»"
+            },
+            {
+              "id": "9b7ec85b90",
+              "src": "assets/img/casos/motociclismo/9b7ec85b90-640.webp",
+              "full": "assets/img/casos/motociclismo/9b7ec85b90-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Invitaciones e historias: MP comic",
+              "caption": "Historia: «¿A dónde vamos hoy chicos?»"
+            },
+            {
+              "id": "09613a3ae0",
+              "src": "assets/img/casos/motociclismo/09613a3ae0-640.webp",
+              "full": "assets/img/casos/motociclismo/09613a3ae0-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "Invitaciones e historias: DALL·E 2024 .11.15 A warning sign that reads 'Rodada Cancelada'. The sign is bold and attention grabbing, with large, clear text. The background is bright yellow with b",
+              "caption": "Aviso: rodada cancelada"
+            },
+            {
+              "id": "d80e0a59be",
+              "src": "assets/img/casos/motociclismo/d80e0a59be-640.webp",
+              "full": "assets/img/casos/motociclismo/d80e0a59be-1200.webp",
+              "width": 536,
+              "height": 466,
+              "alt": "Invitaciones e historias",
+              "caption": "Logotipo del Rally ADV NL 2024"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motoland",
+      "title": "Motoland Driving School",
+      "eyebrow": "una escuela de manejo",
+      "text": [
+        "Motoland Driving School es la escuela de manejo de Oscar, el mismo que me presentó a Motoplex. Para ella fotografié sus clínicas de manejo en pista y diseñé su promoción: invitaciones, cuentas regresivas y agradecimientos. De la fotografía van las de mejor encuadre; los pilotos van con casco."
+      ],
+      "groups": [
+        {
+          "kind": "fotos",
+          "topic": "Curvas en pista",
+          "items": [
+            {
+              "id": "e57ad389d8",
+              "src": "assets/img/casos/motociclismo/e57ad389d8-640.webp",
+              "full": "assets/img/casos/motociclismo/e57ad389d8-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Agosto",
+              "caption": "Moto deportiva turquesa tomando una curva"
+            },
+            {
+              "id": "22d00120ff",
+              "src": "assets/img/casos/motociclismo/22d00120ff-640.webp",
+              "full": "assets/img/casos/motociclismo/22d00120ff-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Agosto",
+              "caption": "Moto roja inclinada en la curva"
+            },
+            {
+              "id": "79e5986116",
+              "src": "assets/img/casos/motociclismo/79e5986116-640.webp",
+              "full": "assets/img/casos/motociclismo/79e5986116-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Agosto",
+              "caption": "Moto roja entrando a la curva"
+            },
+            {
+              "id": "e2c367eb49",
+              "src": "assets/img/casos/motociclismo/e2c367eb49-640.webp",
+              "full": "assets/img/casos/motociclismo/e2c367eb49-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto naranja con turquesa, muy inclinada"
+            },
+            {
+              "id": "55d357f5b6",
+              "src": "assets/img/casos/motociclismo/55d357f5b6-640.webp",
+              "full": "assets/img/casos/motociclismo/55d357f5b6-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto blanca pegada al piso en la curva"
+            },
+            {
+              "id": "b3d5b387ac",
+              "src": "assets/img/casos/motociclismo/b3d5b387ac-640.webp",
+              "full": "assets/img/casos/motociclismo/b3d5b387ac-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto roja y naranja saliendo de la curva"
+            },
+            {
+              "id": "f799ae6522",
+              "src": "assets/img/casos/motociclismo/f799ae6522-640.webp",
+              "full": "assets/img/casos/motociclismo/f799ae6522-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto naranja con turquesa, de cerca en la curva"
+            },
+            {
+              "id": "f8c4895625",
+              "src": "assets/img/casos/motociclismo/f8c4895625-640.webp",
+              "full": "assets/img/casos/motociclismo/f8c4895625-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto roja de frente, tomando la curva"
+            },
+            {
+              "id": "f2f3e03d0e",
+              "src": "assets/img/casos/motociclismo/f2f3e03d0e-640.webp",
+              "full": "assets/img/casos/motociclismo/f2f3e03d0e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto amarilla inclinada en la curva"
+            },
+            {
+              "id": "c73be531b1",
+              "src": "assets/img/casos/motociclismo/c73be531b1-640.webp",
+              "full": "assets/img/casos/motociclismo/c73be531b1-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto amarilla saliendo de la curva"
+            },
+            {
+              "id": "a90da377e4",
+              "src": "assets/img/casos/motociclismo/a90da377e4-640.webp",
+              "full": "assets/img/casos/motociclismo/a90da377e4-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Agosto",
+              "caption": "Moto blanca saliendo de la curva"
+            },
+            {
+              "id": "63d68c94bc",
+              "src": "assets/img/casos/motociclismo/63d68c94bc-640.webp",
+              "full": "assets/img/casos/motociclismo/63d68c94bc-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto naked roja de tres cuartos en la curva"
+            },
+            {
+              "id": "05805fe365",
+              "src": "assets/img/casos/motociclismo/05805fe365-640.webp",
+              "full": "assets/img/casos/motociclismo/05805fe365-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto naked verde de cerca"
+            },
+            {
+              "id": "bbc8b493df",
+              "src": "assets/img/casos/motociclismo/bbc8b493df-640.webp",
+              "full": "assets/img/casos/motociclismo/bbc8b493df-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto naked verde en la entrada de la curva"
+            },
+            {
+              "id": "cc1a0b9e9c",
+              "src": "assets/img/casos/motociclismo/cc1a0b9e9c-640.webp",
+              "full": "assets/img/casos/motociclismo/cc1a0b9e9c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Curvas en pista: Julio",
+              "caption": "Moto naranja inclinada en la curva"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Off road y aventura",
+          "items": [
+            {
+              "id": "a44516ba40",
+              "src": "assets/img/casos/motociclismo/a44516ba40-640.webp",
+              "full": "assets/img/casos/motociclismo/a44516ba40-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de aventura con maletas, de frente"
+            },
+            {
+              "id": "a5da5bb03b",
+              "src": "assets/img/casos/motociclismo/a5da5bb03b-640.webp",
+              "full": "assets/img/casos/motociclismo/a5da5bb03b-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de aventura en terreno suelto"
+            },
+            {
+              "id": "e4fb95deae",
+              "src": "assets/img/casos/motociclismo/e4fb95deae-640.webp",
+              "full": "assets/img/casos/motociclismo/e4fb95deae-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de enduro naranja entre conos"
+            },
+            {
+              "id": "31b75ce0da",
+              "src": "assets/img/casos/motociclismo/31b75ce0da-640.webp",
+              "full": "assets/img/casos/motociclismo/31b75ce0da-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de enduro naranja, de frente"
+            },
+            {
+              "id": "78dac0e3cd",
+              "src": "assets/img/casos/motociclismo/78dac0e3cd-640.webp",
+              "full": "assets/img/casos/motociclismo/78dac0e3cd-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de aventura, de cerca"
+            },
+            {
+              "id": "aa357d48ad",
+              "src": "assets/img/casos/motociclismo/aa357d48ad-640.webp",
+              "full": "assets/img/casos/motociclismo/aa357d48ad-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de aventura sobre un montículo"
+            },
+            {
+              "id": "6b78d711d5",
+              "src": "assets/img/casos/motociclismo/6b78d711d5-640.webp",
+              "full": "assets/img/casos/motociclismo/6b78d711d5-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de aventura de frente, con cámara en el casco"
+            },
+            {
+              "id": "7bf3846722",
+              "src": "assets/img/casos/motociclismo/7bf3846722-640.webp",
+              "full": "assets/img/casos/motociclismo/7bf3846722-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de aventura entre conos en terreno suelto"
+            },
+            {
+              "id": "b009c7c15f",
+              "src": "assets/img/casos/motociclismo/b009c7c15f-640.webp",
+              "full": "assets/img/casos/motociclismo/b009c7c15f-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Off road y aventura: Julio",
+              "caption": "Moto de enduro blanca y azul en terreno suelto"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Entre conos",
+          "items": [
+            {
+              "id": "54f1ec9f41",
+              "src": "assets/img/casos/motociclismo/54f1ec9f41-640.webp",
+              "full": "assets/img/casos/motociclismo/54f1ec9f41-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto doble propósito esquivando conos"
+            },
+            {
+              "id": "f601157036",
+              "src": "assets/img/casos/motociclismo/f601157036-640.webp",
+              "full": "assets/img/casos/motociclismo/f601157036-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto doble propósito de frente entre conos"
+            },
+            {
+              "id": "3dd7ab7e4c",
+              "src": "assets/img/casos/motociclismo/3dd7ab7e4c-640.webp",
+              "full": "assets/img/casos/motociclismo/3dd7ab7e4c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Piloto con chamarra roja entre conos"
+            },
+            {
+              "id": "e2a0965bc0",
+              "src": "assets/img/casos/motociclismo/e2a0965bc0-640.webp",
+              "full": "assets/img/casos/motociclismo/e2a0965bc0-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto azul de cerca entre conos"
+            },
+            {
+              "id": "4a02e94fd3",
+              "src": "assets/img/casos/motociclismo/4a02e94fd3-640.webp",
+              "full": "assets/img/casos/motociclismo/4a02e94fd3-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto verde entre conos, de frente"
+            },
+            {
+              "id": "375b81fd9a",
+              "src": "assets/img/casos/motociclismo/375b81fd9a-640.webp",
+              "full": "assets/img/casos/motociclismo/375b81fd9a-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto verde entre conos, de cerca"
+            },
+            {
+              "id": "fb36575f7c",
+              "src": "assets/img/casos/motociclismo/fb36575f7c-640.webp",
+              "full": "assets/img/casos/motociclismo/fb36575f7c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto verde inclinada entre conos"
+            },
+            {
+              "id": "b0daf46850",
+              "src": "assets/img/casos/motociclismo/b0daf46850-640.webp",
+              "full": "assets/img/casos/motociclismo/b0daf46850-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto azul tomando la curva entre conos"
+            },
+            {
+              "id": "8afd886911",
+              "src": "assets/img/casos/motociclismo/8afd886911-640.webp",
+              "full": "assets/img/casos/motociclismo/8afd886911-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Entre conos: Mayo",
+              "caption": "Moto roja esquivando conos"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Clínicas de manejo",
+          "items": [
+            {
+              "id": "68094bf590",
+              "src": "assets/img/casos/motociclismo/68094bf590-640.webp",
+              "full": "assets/img/casos/motociclismo/68094bf590-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo",
+              "caption": "Clínica de manejo: «Aprende a conducir desde cero»"
+            },
+            {
+              "id": "c2a194bb0f",
+              "src": "assets/img/casos/motociclismo/c2a194bb0f-640.webp",
+              "full": "assets/img/casos/motociclismo/c2a194bb0f-1200.webp",
+              "width": 640,
+              "height": 799,
+              "alt": "Clínicas de manejo",
+              "caption": "Clínica de manejo calle y carretera: domingo 23 de julio"
+            },
+            {
+              "id": "ef2b873d92",
+              "src": "assets/img/casos/motociclismo/ef2b873d92-640.webp",
+              "full": "assets/img/casos/motociclismo/ef2b873d92-1200.webp",
+              "width": 640,
+              "height": 799,
+              "alt": "Clínicas de manejo",
+              "caption": "Clínica de manejo: «¿Quieres mejorar? Sube tu nivel»"
+            },
+            {
+              "id": "85d0d6686a",
+              "src": "assets/img/casos/motociclismo/85d0d6686a-640.webp",
+              "full": "assets/img/casos/motociclismo/85d0d6686a-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: Storie",
+              "caption": "Facebook Live con Oscar Guzmán y Lalo Matre: iniciación al off road"
+            },
+            {
+              "id": "d798849e62",
+              "src": "assets/img/casos/motociclismo/d798849e62-640.webp",
+              "full": "assets/img/casos/motociclismo/d798849e62-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: TN Reel Aumenta tu Nivel Julio",
+              "caption": "Clínica de manejo: «Aumenta tu nivel de manejo»"
+            },
+            {
+              "id": "5620f6ca04",
+              "src": "assets/img/casos/motociclismo/5620f6ca04-640.webp",
+              "full": "assets/img/casos/motociclismo/5620f6ca04-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: TN Reel gracias por tu asitencia Julio",
+              "caption": "Clínica de manejo: «Gracias por tu asistencia»"
+            },
+            {
+              "id": "7c4cd81532",
+              "src": "assets/img/casos/motociclismo/7c4cd81532-640.webp",
+              "full": "assets/img/casos/motociclismo/7c4cd81532-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Clínicas de manejo",
+              "caption": "Clínica de manejo calle y carretera e iniciación al off road"
+            },
+            {
+              "id": "21af831182",
+              "src": "assets/img/casos/motociclismo/21af831182-640.webp",
+              "full": "assets/img/casos/motociclismo/21af831182-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: Storie 21 Jul",
+              "caption": "Cuenta regresiva: «Faltan 2 días»"
+            },
+            {
+              "id": "8bf2a841c2",
+              "src": "assets/img/casos/motociclismo/8bf2a841c2-640.webp",
+              "full": "assets/img/casos/motociclismo/8bf2a841c2-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: Storie 22 Jul",
+              "caption": "Cuenta regresiva: «Nos vemos mañana»"
+            },
+            {
+              "id": "04e01e674c",
+              "src": "assets/img/casos/motociclismo/04e01e674c-640.webp",
+              "full": "assets/img/casos/motociclismo/04e01e674c-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Clínicas de manejo: Feed 05 Dic",
+              "caption": "Clínica de manejo con donación de juguetes: 17 de diciembre"
+            },
+            {
+              "id": "1c2b2a14d4",
+              "src": "assets/img/casos/motociclismo/1c2b2a14d4-640.webp",
+              "full": "assets/img/casos/motociclismo/1c2b2a14d4-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: Storie 20 Jul",
+              "caption": "Cuenta regresiva de la clínica de diciembre: «Faltan 3 días»"
+            },
+            {
+              "id": "84b69ec2cf",
+              "src": "assets/img/casos/motociclismo/84b69ec2cf-640.webp",
+              "full": "assets/img/casos/motociclismo/84b69ec2cf-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo: Storie 22 Jul",
+              "caption": "Cuenta regresiva de la clínica de diciembre: «Nos vemos mañana»"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "media": [
+      {
+        "type": "image",
+        "id": "b11f3beb95",
+        "src": "assets/img/casos/motociclismo/b11f3beb95-640.webp",
+        "full": "assets/img/casos/motociclismo/b11f3beb95-1200.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "type": "image",
+        "id": "dc7eb475b7",
+        "src": "assets/img/casos/motociclismo/dc7eb475b7-640.webp",
+        "full": "assets/img/casos/motociclismo/dc7eb475b7-1200.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "type": "image",
+        "id": "a6876b8bf7",
+        "src": "assets/img/casos/motociclismo/a6876b8bf7-640.webp",
+        "full": "assets/img/casos/motociclismo/a6876b8bf7-1200.webp",
+        "width": 640,
+        "height": 426
+      },
+      {
+        "type": "image",
+        "id": "28e3e5034c",
+        "src": "assets/img/casos/motociclismo/28e3e5034c-640.webp",
+        "full": "assets/img/casos/motociclismo/28e3e5034c-1200.webp",
+        "width": 640,
+        "height": 427
+      },
+      {
+        "type": "image",
+        "id": "dbd526e8a5",
+        "src": "assets/img/casos/motociclismo/dbd526e8a5-640.webp",
+        "full": "assets/img/casos/motociclismo/dbd526e8a5-1200.webp",
+        "width": 640,
+        "height": 960
+      }
+    ]
+  }
+}

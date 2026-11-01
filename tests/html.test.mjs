@@ -116,7 +116,7 @@ test('cada tarjeta de caso tiene barra con el archivo, titulo, texto y su etique
     assert.ok(html.includes(`>${file}<`), `falta la barra con ${file}`);
   }
   assert.equal((html.match(/class="c-case-card__line/g) ?? []).length, 12);
-  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 3);
+  assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 2);
 });
 
 test('el riel de secciones enlaza las seis secciones en orden', () => {
