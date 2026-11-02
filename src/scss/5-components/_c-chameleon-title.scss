@@ -19,6 +19,11 @@
   }
 }
 
+// La palabra del hero toma la identidad del caso destacado (hero-fx.js le pone su data-case): su degradado.
+.c-chameleon-title--spectrum[data-case] {
+  background-image: linear-gradient(90deg, var(--gradient-a), var(--gradient-b), var(--gradient-a));
+}
+
 @keyframes c-chameleon-flow {
   to {
     background-position-x: 200%;

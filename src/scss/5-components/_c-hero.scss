@@ -34,6 +34,74 @@
     opacity: 0.55;
   }
 
+  // Parallax con el mouse: cada capa se mueve (--px y --py, de -1 a 1, los pone hero-fx.js) a su profundidad.
+  &__grid {
+    translate: calc(var(--px, 0) * -10px) calc(var(--py, 0) * -7px);
+  }
+
+  // Collage de los fondos de cada caso, mezclado en cada visita. Gris y tenue; la pieza destacada recupera su
+  // color, se enmarca con el acento de su caso y muestra su nombre de archivo, como la barra de las tarjetas.
+  &__collage {
+    position: absolute;
+    inset: 0;
+    translate: calc(var(--px, 0) * -26px) calc(var(--py, 0) * -18px);
+    mask-image: linear-gradient(90deg, transparent 6%, rgb(0 0 0 / 0.5) 40%, #000 78%);
+  }
+
+  &__tile {
+    position: absolute;
+    inline-size: var(--w);
+    translate: -50% -50%;
+    rotate: var(--tilt);
+    overflow: hidden;
+    border: 1px solid color-mix(in srgb, var(--color-text) 28%, transparent);
+    opacity: 0;
+    filter: grayscale(1) contrast(1.05);
+
+    img {
+      display: block;
+      inline-size: 100%;
+      block-size: 100%;
+      object-fit: cover;
+    }
+
+    &.is-in {
+      opacity: 0.3;
+    }
+
+    &.is-hot {
+      z-index: 1;
+      border-color: var(--color-accent);
+      opacity: 0.92;
+      filter: none;
+    }
+
+    &.is-hot::after {
+      content: attr(data-label);
+      position: absolute;
+      inset: auto 0 0;
+      padding: var(--space-1) var(--space-2);
+      background: var(--color-accent);
+      color: var(--color-on-accent);
+      font-family: f.$font-mono;
+      font-size: fn.rem(10);
+      letter-spacing: 0.06em;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: opacity 0.5s ease, filter 0.4s ease, border-color 0.4s ease;
+    }
+  }
+
+  // Retículos nuevos entre los puntos de la base (los dibuja hero-fx.js al mover el mouse).
+  &__reticles {
+    position: absolute;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    pointer-events: none;
+  }
+
   &__eyebrow {
     color: var(--color-accent-text);
     font-family: f.$font-mono;

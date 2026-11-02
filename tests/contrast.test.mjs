@@ -72,6 +72,6 @@ test('el degradado base existe en :root para el avatar y la palabra camaleonica'
 test('todo var(--x) usado en el CSS esta definido en alguna parte', () => {
   const defined = new Set([...css.matchAll(/(--[\w-]+)\s*:/g)].map((m) => m[1]));
   const used = new Set([...css.matchAll(/var\((--[\w-]+)/g)].map((m) => m[1]));
-  const missing = [...used].filter((name) => !defined.has(name) && !['--grid-gap', '--stack-space', '--reveal-delay', '--site-color', '--vt-hero', '--vt-title'] /* se definen en linea, en el HTML de cada tarjeta o caso */.includes(name));
+  const missing = [...used].filter((name) => !defined.has(name) && !['--grid-gap', '--stack-space', '--reveal-delay', '--px', '--py', '--w', '--tilt', '--mx', '--my', '--mag-x', '--mag-y', '--site-color', '--vt-hero', '--vt-title'] /* se definen en linea, en el HTML de cada tarjeta o caso */.includes(name));
   assert.deepEqual(missing, []);
 });

@@ -1,0 +1,112 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+
+// Detalles retro y futuristas. Todo lo que se mueve va dentro de `prefers-reduced-motion: no-preference`.
+
+// Cinta de texto entre el hero y los servicios: corre despacio y se detiene al pasar el cursor.
+.c-ticker {
+  overflow: hidden;
+  border-block: 1px solid var(--color-text-muted);
+  color: var(--color-text-muted);
+  font-family: f.$font-mono;
+  font-size: var(--step--1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &__track {
+    display: flex;
+    inline-size: max-content;
+    padding-block: var(--space-2);
+  }
+
+  &__group {
+    display: flex;
+    flex: none;
+    gap: var(--space-4);
+    padding-inline-end: var(--space-4);
+  }
+
+  // La marca ✦ de cada tramo toma el acento (uno por vista).
+  &__mark {
+    color: var(--color-accent-text);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    &__track {
+      animation: c-ticker 42s linear infinite;
+    }
+
+    &:hover &__track {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes c-ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+// Tarjetas de servicio: marcas de registro en las esquinas (como las de un pliego impreso) y un foco de luz del
+// acento que sigue al cursor (hero-fx y ornaments.js ponen --mx, --my y is-lit).
+.c-service {
+  position: relative;
+  isolation: isolate;
+  --mark: color-mix(in srgb, var(--color-text) 42%, transparent);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(circle fn.rem(190) at var(--mx, -999px) var(--my, -999px), color-mix(in srgb, var(--color-accent) 17%, transparent), transparent 72%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-lit::before {
+    opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    pointer-events: none;
+    background:
+      linear-gradient(var(--mark), var(--mark)) 0 0 / 9px 1px,
+      linear-gradient(var(--mark), var(--mark)) 0 0 / 1px 9px,
+      linear-gradient(var(--mark), var(--mark)) 100% 0 / 9px 1px,
+      linear-gradient(var(--mark), var(--mark)) 100% 0 / 1px 9px,
+      linear-gradient(var(--mark), var(--mark)) 0 100% / 9px 1px,
+      linear-gradient(var(--mark), var(--mark)) 0 100% / 1px 9px,
+      linear-gradient(var(--mark), var(--mark)) 100% 100% / 9px 1px,
+      linear-gradient(var(--mark), var(--mark)) 100% 100% / 1px 9px;
+    background-repeat: no-repeat;
+  }
+
+  &--featured {
+    --mark: var(--color-accent);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    &::before,
+    &::after {
+      transition: opacity 0.35s ease, inset 0.35s ease;
+    }
+
+    &:hover::after {
+      inset: -9px;
+    }
+  }
+}
+
+// Botones magnéticos: se corren hacia el cursor (ornaments.js pone --mag-x y --mag-y).
+@media (prefers-reduced-motion: no-preference) {
+  .c-button {
+    translate: var(--mag-x, 0) var(--mag-y, 0);
+    transition: translate 0.18s ease-out, filter 0.2s ease;
+  }
+}
