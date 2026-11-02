@@ -76,6 +76,13 @@
       filter: none;
     }
 
+    // En pantallas chicas el texto ocupa casi todo el ancho: la pieza destacada no tapa su lectura.
+    @media (max-width: 47.9375rem) {
+      &.is-hot {
+        opacity: 0.6;
+      }
+    }
+
     &.is-hot::after {
       content: attr(data-label);
       position: absolute;

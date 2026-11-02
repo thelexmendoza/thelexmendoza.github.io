@@ -148,8 +148,19 @@ export function setupHeroFx() {
   // Pantallas táctiles: el destacado pasa solo de un caso a otro, sin movimiento extra.
   if (!hover && !reduce) {
     let timer = 0;
+    // Solo se destacan piezas que no pisan el texto del hero: así la imagen a color nunca estorba la lectura.
+    const clearOfText = (tile) => {
+      const a = tile.getBoundingClientRect();
+      return ![...hero.querySelectorAll('.c-hero__eyebrow, .c-hero__title, .c-hero__lead, .c-hero .c-button')].some((el) => {
+        const b = el.getBoundingClientRect();
+        return a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
+      });
+    };
     const tick = () => {
-      if (tiles.length) light(tiles[Math.floor(Math.random() * tiles.length)]);
+      if (!tiles.length) return;
+      const free = tiles.filter((tile) => tile !== hot && clearOfText(tile));
+      const pool = free.length ? free : tiles;
+      light(pool[Math.floor(Math.random() * pool.length)]);
     };
     const onVisible = new IntersectionObserver(([entry]) => {
       clearInterval(timer);

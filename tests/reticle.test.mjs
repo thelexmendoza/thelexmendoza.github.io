@@ -119,3 +119,9 @@ test('con menos movimiento no hay parallax ni retículos ni transiciones nuevas'
   assert.match(fx, /if \(!hover \|\| reduce\) return;/, 'sin cursor fino o con menos movimiento no se enlaza el puntero');
   assert.match(css, /@media \(prefers-reduced-motion: no-preference\)\s*\{[^}]*\.c-hero__tile\s*\{[^}]*transition:/s);
 });
+
+test('en móvil la pieza destacada no estorba el texto: opacidad limitada y el ciclo táctil evita las piezas bajo el texto', () => {
+  assert.match(css, /@media \(max-width: 47\.9375rem\)\s*\{\s*\.c-hero__tile\.is-hot\s*\{[^}]*opacity:\s*0\.6/);
+  assert.match(fx, /clearOfText/);
+  assert.match(fx, /tile !== hot && clearOfText\(tile\)/);
+});
