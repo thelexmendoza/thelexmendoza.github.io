@@ -209,6 +209,11 @@ main[data-lens="disenos"] [data-kind]:not([data-kind="disenos"]) {
   display: none;
 }
 
+// La marca elegida oculta las galerias de otra marca (lo marca case.js con is-brand-off).
+[data-brand].is-brand-off {
+  display: none;
+}
+
 // Cambio de vista (tipo o formato): el contenido se funde en lugar de saltar.
 @media (prefers-reduced-motion: no-preference) {
   ::view-transition-old(case),

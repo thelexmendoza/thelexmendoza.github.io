@@ -29,8 +29,8 @@ test('nextFormat ignora un formato desconocido', () => {
 });
 
 test('showMore revela otra pagina sin pasarse del total, y showLess vuelve a la primera', () => {
-  assert.equal(showMore(9, 68), 18);
-  assert.equal(showMore(63, 68), 68);
+  assert.equal(showMore(6, 68), 12);
+  assert.equal(showMore(66, 68), 68);
   assert.equal(showMore(68, 68), 68);
-  assert.equal(showLess(), 9);
+  assert.equal(showLess(), 6);
 });

@@ -277,3 +277,30 @@ test('el cielo animado se dibuja en un canvas dentro del fondo, igual en el hero
   assert.match(hero, /<span class="c-sky" data-sky="adobe" aria-hidden="true"><span class="c-sky__aurora"><\/span><canvas class="c-sky__stars"><\/canvas><\/span>/);
   assert.match(renderCardMedia(card.media), /<span class="c-sky" data-sky="adobe" aria-hidden="true"><span class="c-sky__aurora"><\/span><canvas class="c-sky__stars"><\/canvas><\/span>/);
 });
+
+test('con dos o mas marcas aparece el filtro por marca y cada galeria lleva su marca', () => {
+  const branded = renderCase({
+    ...data,
+    brands: [{ id: 'bmw', label: 'BMW' }, { id: 'mini', label: 'MINI' }, { id: 'motorrad', label: 'Motorrad' }],
+    chapters: [{
+      ...data.chapters[0],
+      groups: [
+        { kind: 'fotos', topic: 'Autos BMW', brand: 'bmw', items: [item('b1')] },
+        { kind: 'fotos', topic: 'Autos MINI', brand: 'mini', items: [item('m1')] },
+      ],
+    }],
+  });
+  const bar = branded.match(/<div class="c-lens c-lens--brand"[\s\S]*?<\/div>/)[0];
+  const labels = [...bar.matchAll(/<button[^>]*>([^<]+)<\/button>/g)].map((m) => m[1].trim());
+  assert.deepEqual(labels, ['Todas', 'BMW', 'MINI'], 'solo salen las marcas que tienen galerias');
+  assert.match(bar, /data-brand-filter="todas" aria-pressed="true"/);
+  assert.match(branded, /data-kind="fotos" data-format="carousel" data-brand="bmw"/);
+  assert.match(branded, /data-brand="mini"/);
+  assert.doesNotMatch(bar, /\d/);
+});
+
+test('sin marcas o con una sola no hay filtro por marca', () => {
+  assert.doesNotMatch(html, /c-lens--brand|data-brand/);
+  const one = renderCase({ ...data, brands: [{ id: 'bmw', label: 'BMW' }], chapters: [{ ...data.chapters[0], groups: [{ kind: 'fotos', topic: 'Solo', brand: 'bmw', items: [item('b1')] }] }] });
+  assert.doesNotMatch(one, /c-lens--brand/);
+});

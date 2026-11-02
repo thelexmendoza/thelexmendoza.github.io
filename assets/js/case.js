@@ -46,6 +46,20 @@ lensButtons.forEach((button) => {
   });
 });
 
+// Marca: oculta las galerias de otra marca (las que no tienen marca siempre se ven).
+const brandButtons = [...document.querySelectorAll('[data-brand-filter]')];
+brandButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const brand = button.dataset.brandFilter;
+    smooth(() => {
+      document.querySelectorAll('[data-brand]').forEach((gallery) => {
+        gallery.classList.toggle('is-brand-off', brand !== 'todas' && gallery.dataset.brand !== brand);
+      });
+      brandButtons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+    });
+  });
+});
+
 // Formato: cuadricula tipo Instagram o carrusel, para todas las galerias a la vez.
 const formatButtons = [...document.querySelectorAll('.c-format [data-format]')];
 formatButtons.forEach((button) => {
@@ -78,7 +92,7 @@ document.querySelectorAll('.c-gallery').forEach((gallery) => {
   });
   track.before(controls);
 
-  // Cuadricula con muchas piezas: se ven nueve y hay botones de mostrar mas y menos.
+  // Cuadricula con muchas piezas: se ven seis y hay botones de mostrar mas y menos.
   const slides = [...track.children];
   if (slides.length <= PAGE) return;
   let visible = PAGE;

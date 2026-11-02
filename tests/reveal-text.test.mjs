@@ -53,3 +53,11 @@ test('el esqueleto del parrafo usa la misma animacion de brillo que las tarjetas
   const css = sass.compile('src/scss/main.scss', { style: 'expanded' }).css;
   assert.match(css, /\[data-reveal=text\][^{]*:not\(\.is-revealed\)[^{]*\{[^}]*animation:\s*c-skeleton/);
 });
+
+test('la carga de imagenes y tarjetas es un degradado plano de grises, sin lineas', () => {
+  const css = sass.compile('src/scss/main.scss', { style: 'expanded' }).css;
+  const block = css.match(/\[data-reveal=card\]::after\s*\{[^}]*\}/)[0];
+  assert.match(block, /linear-gradient\(/);
+  assert.doesNotMatch(block, /repeating-linear-gradient/, 'las lineas quedan solo para los parrafos');
+  assert.match(block, /animation:\s*c-skeleton-flat/);
+});

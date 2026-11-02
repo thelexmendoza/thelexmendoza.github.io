@@ -151,3 +151,7 @@ test('el contenido de la tarjeta de sitio nunca se sale de ella: su columna inte
   assert.match(css, /\.c-site-card\s*\{[^}]*grid-template-columns:\s*minmax\(0,\s*1fr\)/);
   assert.match(css, /\.c-sites__grid\s*\{[^}]*grid-auto-rows:\s*1fr/);
 });
+
+test('el filtro por marca oculta de verdad: is-brand-off gana a la regla display de la galeria', () => {
+  assert.ok(/\[data-brand\]\.is-brand-off\s*\{[^}]*display:\s*none/.test(css), 'sin el atributo, .c-gallery (display: grid) lo anulaba');
+});

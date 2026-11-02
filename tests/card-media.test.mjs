@@ -22,8 +22,8 @@ test('la tarjeta de Valtre trae cinco imagenes de VALKYRIA decorativas y sin tex
   assert.match(card, /data-media/);
 });
 
-test('solo las tarjetas con imagenes (Valtre, CiiSA | PSW, Daniel Ábrego y Motociclismo) cambian al pasar el cursor', () => {
-  assert.equal((home.match(/c-case-card__media/g) ?? []).length, 4);
+test('solo las tarjetas con imagenes (Valtre, CiiSA | PSW, Daniel Ábrego, Motociclismo y BMW / MINI) cambian al pasar el cursor', () => {
+  assert.equal((home.match(/c-case-card__media/g) ?? []).length, 5);
 });
 
 test('al pasar el cursor, al enfocar o al llegar al centro en movil, aparece la imagen con su velo', () => {
@@ -193,4 +193,19 @@ test('la tarjeta de Motociclismo abre su caso y repite el fondo del hero (imagen
   const count = data.card.media.length === 5 ? '' : ` data-count="${data.card.media.length}"`;
   assert.equal(media, `<span class="c-case-card__media" aria-hidden="true"${count}>\n${renderCardMedia(data.card.media)}\n                </span>`);
   assert.ok(fs.existsSync('casos/motociclismo/index.html'));
+});
+
+test('la tarjeta de BMW / MINI abre su caso y repite el fondo del hero (imagenes del caso) en el mismo orden', () => {
+  const card = home.match(/<a class="c-case-card" data-case="bmw"[\s\S]*?<\/a>/)[0];
+  assert.match(card, /href="casos\/bmw-mini\/"/);
+  assert.doesNotMatch(card, /Próximamente|aria-disabled|data-soon/);
+  assert.match(card, /<span class="c-case-card__line c-case-card__title"><span class="c-case-card__word">BMW \/ MINI Euromotors<\/span><\/span>/);
+  assert.match(card, /class="c-case-card__cta">Ver caso →/);
+  assert.match(card, /--vt-hero: hero-bmw; --vt-title: title-bmw/);
+  assert.match(card, /data-bar="single"/);
+  const data = JSON.parse(fs.readFileSync('data/casos/bmw-mini.json', 'utf8'));
+  const media = card.match(/<span class="c-case-card__media"[\s\S]*?\n {16}<\/span>/)[0];
+  const count = data.card.media.length === 5 ? '' : ` data-count="${data.card.media.length}"`;
+  assert.equal(media, `<span class="c-case-card__media" aria-hidden="true"${count}>\n${renderCardMedia(data.card.media)}\n                </span>`);
+  assert.ok(fs.existsSync('casos/bmw-mini/index.html'));
 });

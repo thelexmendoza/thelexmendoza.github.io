@@ -81,12 +81,14 @@ function renderSites(group) {
   </div>`;
 }
 
+const brandAttr = (group) => (group.brand ? ` data-brand="${esc(group.brand)}"` : '');
+
 function renderGroup(group) {
   if (group.kind === 'sitios') return renderSites(group);
   const kind = lensOf(group.kind);
   if (group.kind === 'iconos') {
     const items = group.items.map((item) => `<li class="c-icons__item" title="${esc(item.alt)}">${img(item)}</li>`).join('\n      ');
-    return `<div class="c-icons" data-kind="iconos">
+    return `<div class="c-icons" data-kind="iconos"${brandAttr(group)}>
     ${head(group)}
     <ul class="c-icons__grid">
       ${items}
@@ -104,7 +106,7 @@ function renderGroup(group) {
       }</figure>`;
     })
     .join('\n      ');
-  return `<div class="c-gallery${logos ? ' c-gallery--logos' : ''}" data-kind="${kind}" data-format="${format}" data-gallery>
+  return `<div class="c-gallery${logos ? ' c-gallery--logos' : ''}" data-kind="${kind}" data-format="${format}"${brandAttr(group)} data-gallery>
     ${head(group)}
     <div class="c-gallery__track" tabindex="0" role="group" aria-label="${esc(group.topic)}">
       ${slides}
@@ -167,7 +169,7 @@ function renderHeroMedia(card) {
           `;
 }
 
-function renderBar(chapters) {
+function renderBar(chapters, brands = []) {
   const groups = chapters.flatMap((chapter) => chapter.groups);
   const kinds = new Set(groups.map((group) => lensOf(group.kind)));
   const parts = [];
@@ -176,6 +178,16 @@ function renderBar(chapters) {
       .map(([kind, label]) => `<button class="c-lens__button" type="button" data-lens="${kind}" aria-pressed="${kind === 'todo'}">${label}</button>`)
       .join('\n      ');
     parts.push(`<div class="c-lens" role="group" aria-label="Qué quieres ver">
+      ${buttons}
+    </div>`);
+  }
+  const used = new Set(groups.map((group) => group.brand).filter(Boolean));
+  const brandList = brands.filter((brand) => used.has(brand.id));
+  if (brandList.length >= 2) {
+    const buttons = [{ id: 'todas', label: 'Todas' }, ...brandList]
+      .map((brand) => `<button class="c-lens__button" type="button" data-brand-filter="${esc(brand.id)}" aria-pressed="${brand.id === 'todas'}">${esc(brand.label)}</button>`)
+      .join('\n      ');
+    parts.push(`<div class="c-lens c-lens--brand" role="group" aria-label="Qué marca quieres ver">
       ${buttons}
     </div>`);
   }
@@ -240,7 +252,7 @@ ${data.chapters
         </div>
       </section>
 
-      ${renderBar(data.chapters)}
+      ${renderBar(data.chapters, data.brands)}
 
       ${data.chapters.map(renderChapter).join('\n\n      ')}
 

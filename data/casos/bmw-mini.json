@@ -1,0 +1,1829 @@
+{
+  "slug": "bmw-mini",
+  "key": "bmw",
+  "title": "BMW / MINI Euromotors",
+  "eyebrow": "automotriz y motocicletas",
+  "meta": "2019–2023 · Diseñador gráfico y fotógrafo",
+  "summary": "Trabajé con Euromotors de Monterrey, el dealer de BMW, MINI y BMW Motorrad: fotografié sus autos y motos en el piso de exhibición y armé sus promociones, el servicio y las rodadas. Elige una marca arriba para ver solo su contenido.",
+  "teaser": {
+    "chapter": "fotografia",
+    "text": "Empieza por las fotos del dealer: autos, motos y detalles."
+  },
+  "brands": [
+    {
+      "id": "bmw",
+      "label": "BMW"
+    },
+    {
+      "id": "mini",
+      "label": "MINI"
+    },
+    {
+      "id": "motorrad",
+      "label": "Motorrad"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "fotografia",
+      "title": "Fotografía en el dealer",
+      "eyebrow": "autos y motos en el piso de exhibición",
+      "text": [
+        "Todas estas fotos las tomé yo en el dealer: autos recién llegados, interiores, rines, faros y las motos en el piso de exhibición. Son las de mejor encuadre de cada sesión.",
+        "Con la barra de arriba puedes ver una sola marca."
+      ],
+      "groups": [
+        {
+          "kind": "fotos",
+          "topic": "BMW: frentes y perfiles",
+          "brand": "bmw",
+          "items": [
+            {
+              "id": "4c35c34131",
+              "src": "assets/img/casos/bmw-mini/4c35c34131-640.webp",
+              "full": "assets/img/casos/bmw-mini/4c35c34131-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Enero",
+              "caption": "BMW M5, de frente en el piso de exhibición"
+            },
+            {
+              "id": "d2b23ebe72",
+              "src": "assets/img/casos/bmw-mini/d2b23ebe72-640.webp",
+              "full": "assets/img/casos/bmw-mini/d2b23ebe72-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Enero",
+              "caption": "BMW X5 M50i roja, de frente"
+            },
+            {
+              "id": "332a1b7500",
+              "src": "assets/img/casos/bmw-mini/332a1b7500-640.webp",
+              "full": "assets/img/casos/bmw-mini/332a1b7500-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Enero",
+              "caption": "BMW Serie 8 M850i azul, de frente"
+            },
+            {
+              "id": "79f576cfb9",
+              "src": "assets/img/casos/bmw-mini/79f576cfb9-640.webp",
+              "full": "assets/img/casos/bmw-mini/79f576cfb9-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Marzo",
+              "caption": "BMW M3 en verde limón, de frente"
+            },
+            {
+              "id": "d474836f27",
+              "src": "assets/img/casos/bmw-mini/d474836f27-640.webp",
+              "full": "assets/img/casos/bmw-mini/d474836f27-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Abril",
+              "caption": "BMW Serie 1 M135i, de tres cuartos"
+            },
+            {
+              "id": "093cf77eb6",
+              "src": "assets/img/casos/bmw-mini/093cf77eb6-640.webp",
+              "full": "assets/img/casos/bmw-mini/093cf77eb6-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Abril",
+              "caption": "BMW Serie 7 60i 2023, de frente"
+            },
+            {
+              "id": "5bee1afbee",
+              "src": "assets/img/casos/bmw-mini/5bee1afbee-640.webp",
+              "full": "assets/img/casos/bmw-mini/5bee1afbee-1200.webp",
+              "width": 640,
+              "height": 951,
+              "alt": "BMW: frentes y perfiles: Diciembre",
+              "caption": "BMW Serie 7 Blindado, de frente en el piso de exhibición"
+            },
+            {
+              "id": "e6dff32ac8",
+              "src": "assets/img/casos/bmw-mini/e6dff32ac8-640.webp",
+              "full": "assets/img/casos/bmw-mini/e6dff32ac8-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Noviembre",
+              "caption": "BMW X5 M Competition, de frente"
+            },
+            {
+              "id": "c4bb922c7c",
+              "src": "assets/img/casos/bmw-mini/c4bb922c7c-640.webp",
+              "full": "assets/img/casos/bmw-mini/c4bb922c7c-1200.webp",
+              "width": 640,
+              "height": 1139,
+              "alt": "BMW: frentes y perfiles: Agosto",
+              "caption": "BMW X7 M50i con barras en el techo, de frente"
+            },
+            {
+              "id": "c785dd492d",
+              "src": "assets/img/casos/bmw-mini/c785dd492d-640.webp",
+              "full": "assets/img/casos/bmw-mini/c785dd492d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Abril",
+              "caption": "BMW M5, de tres cuartos en el piso de exhibición"
+            },
+            {
+              "id": "0f8a13e907",
+              "src": "assets/img/casos/bmw-mini/0f8a13e907-640.webp",
+              "full": "assets/img/casos/bmw-mini/0f8a13e907-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Abril",
+              "caption": "BMW Serie 1 M135i, de frente"
+            },
+            {
+              "id": "84b04b1e4c",
+              "src": "assets/img/casos/bmw-mini/84b04b1e4c-640.webp",
+              "full": "assets/img/casos/bmw-mini/84b04b1e4c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Abril",
+              "caption": "BMW Serie 7 50Li Advanced Plus, de tres cuartos"
+            },
+            {
+              "id": "3c609ad05d",
+              "src": "assets/img/casos/bmw-mini/3c609ad05d-640.webp",
+              "full": "assets/img/casos/bmw-mini/3c609ad05d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Diciembre",
+              "caption": "BMW Serie 7 Blindado, de frente con luz cálida"
+            },
+            {
+              "id": "948210c118",
+              "src": "assets/img/casos/bmw-mini/948210c118-640.webp",
+              "full": "assets/img/casos/bmw-mini/948210c118-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Agosto",
+              "caption": "BMW X7 M50i, de frente"
+            },
+            {
+              "id": "21b6d5b64e",
+              "src": "assets/img/casos/bmw-mini/21b6d5b64e-640.webp",
+              "full": "assets/img/casos/bmw-mini/21b6d5b64e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: frentes y perfiles: Enero",
+              "caption": "BMW X5 M50i roja, de costado"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "BMW: interiores",
+          "brand": "bmw",
+          "items": [
+            {
+              "id": "3e08e1a82f",
+              "src": "assets/img/casos/bmw-mini/3e08e1a82f-640.webp",
+              "full": "assets/img/casos/bmw-mini/3e08e1a82f-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Enero",
+              "caption": "BMW M5: tablero y volante con piel café"
+            },
+            {
+              "id": "add77cff03",
+              "src": "assets/img/casos/bmw-mini/add77cff03-640.webp",
+              "full": "assets/img/casos/bmw-mini/add77cff03-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "BMW: interiores: Noviembre",
+              "caption": "BMW X5 M Competition: tablero y consola"
+            },
+            {
+              "id": "a2a9e7fda6",
+              "src": "assets/img/casos/bmw-mini/a2a9e7fda6-640.webp",
+              "full": "assets/img/casos/bmw-mini/a2a9e7fda6-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Enero",
+              "caption": "BMW X5 M50i: volante y consola"
+            },
+            {
+              "id": "00e6933466",
+              "src": "assets/img/casos/bmw-mini/00e6933466-640.webp",
+              "full": "assets/img/casos/bmw-mini/00e6933466-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Enero",
+              "caption": "BMW M5: asientos y volante en naranja"
+            },
+            {
+              "id": "95e9a14d84",
+              "src": "assets/img/casos/bmw-mini/95e9a14d84-640.webp",
+              "full": "assets/img/casos/bmw-mini/95e9a14d84-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Abril",
+              "caption": "BMW Serie 7 60i: tablero y asientos en café"
+            },
+            {
+              "id": "5d862bbc75",
+              "src": "assets/img/casos/bmw-mini/5d862bbc75-640.webp",
+              "full": "assets/img/casos/bmw-mini/5d862bbc75-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Abril",
+              "caption": "BMW X6 M: tablero y asientos en café"
+            },
+            {
+              "id": "75e1f5915a",
+              "src": "assets/img/casos/bmw-mini/75e1f5915a-640.webp",
+              "full": "assets/img/casos/bmw-mini/75e1f5915a-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Diciembre",
+              "caption": "BMW Serie 7 Blindado: asientos traseros y descansabrazos"
+            },
+            {
+              "id": "3953b04e77",
+              "src": "assets/img/casos/bmw-mini/3953b04e77-640.webp",
+              "full": "assets/img/casos/bmw-mini/3953b04e77-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Noviembre",
+              "caption": "BMW X5 M Competition: volante M"
+            },
+            {
+              "id": "9b6f756e75",
+              "src": "assets/img/casos/bmw-mini/9b6f756e75-640.webp",
+              "full": "assets/img/casos/bmw-mini/9b6f756e75-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Enero",
+              "caption": "BMW X5 M50i: asiento y quemacocos"
+            },
+            {
+              "id": "2de36e09af",
+              "src": "assets/img/casos/bmw-mini/2de36e09af-640.webp",
+              "full": "assets/img/casos/bmw-mini/2de36e09af-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Marzo",
+              "caption": "BMW M3 Competition: palanca de cambios en carbono"
+            },
+            {
+              "id": "eb48c3045d",
+              "src": "assets/img/casos/bmw-mini/eb48c3045d-640.webp",
+              "full": "assets/img/casos/bmw-mini/eb48c3045d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Abril",
+              "caption": "BMW Serie 7 60i: tablero curvo y luz ambiental"
+            },
+            {
+              "id": "5aef3bb57b",
+              "src": "assets/img/casos/bmw-mini/5aef3bb57b-640.webp",
+              "full": "assets/img/casos/bmw-mini/5aef3bb57b-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: interiores: Abril",
+              "caption": "BMW Serie 7 60i: pantalla trasera"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "BMW: detalles",
+          "brand": "bmw",
+          "items": [
+            {
+              "id": "1d177224ff",
+              "src": "assets/img/casos/bmw-mini/1d177224ff-640.webp",
+              "full": "assets/img/casos/bmw-mini/1d177224ff-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Octubre",
+              "caption": "BMW M5: centro del rin con el logo clásico"
+            },
+            {
+              "id": "1d4b7f2dcb",
+              "src": "assets/img/casos/bmw-mini/1d4b7f2dcb-640.webp",
+              "full": "assets/img/casos/bmw-mini/1d4b7f2dcb-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Octubre",
+              "caption": "BMW M5: palanca de cambios y botón rojo"
+            },
+            {
+              "id": "4108c5ada7",
+              "src": "assets/img/casos/bmw-mini/4108c5ada7-640.webp",
+              "full": "assets/img/casos/bmw-mini/4108c5ada7-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Enero",
+              "caption": "BMW X5 M50i: rin y cubierta de la rueda en rojo"
+            },
+            {
+              "id": "3876da164d",
+              "src": "assets/img/casos/bmw-mini/3876da164d-640.webp",
+              "full": "assets/img/casos/bmw-mini/3876da164d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Agosto",
+              "caption": "BMW X7 M50i: rin y pinza de freno"
+            },
+            {
+              "id": "524f0f6813",
+              "src": "assets/img/casos/bmw-mini/524f0f6813-640.webp",
+              "full": "assets/img/casos/bmw-mini/524f0f6813-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Marzo",
+              "caption": "BMW M3 verde limón: emblema"
+            },
+            {
+              "id": "d10cd92ed0",
+              "src": "assets/img/casos/bmw-mini/d10cd92ed0-640.webp",
+              "full": "assets/img/casos/bmw-mini/d10cd92ed0-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Marzo",
+              "caption": "BMW M3 verde limón: escapes"
+            },
+            {
+              "id": "2fec24a489",
+              "src": "assets/img/casos/bmw-mini/2fec24a489-640.webp",
+              "full": "assets/img/casos/bmw-mini/2fec24a489-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Diciembre",
+              "caption": "BMW Serie 7 Blindado: calavera trasera"
+            },
+            {
+              "id": "aab4bf4dd6",
+              "src": "assets/img/casos/bmw-mini/aab4bf4dd6-640.webp",
+              "full": "assets/img/casos/bmw-mini/aab4bf4dd6-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Noviembre",
+              "caption": "BMW X5 M Competition: faro láser"
+            },
+            {
+              "id": "63a3241d0d",
+              "src": "assets/img/casos/bmw-mini/63a3241d0d-640.webp",
+              "full": "assets/img/casos/bmw-mini/63a3241d0d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Enero",
+              "caption": "BMW Serie 8 M850i: calavera y aleta trasera"
+            },
+            {
+              "id": "f97165653f",
+              "src": "assets/img/casos/bmw-mini/f97165653f-640.webp",
+              "full": "assets/img/casos/bmw-mini/f97165653f-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Enero",
+              "caption": "BMW M5: difusor y calavera trasera"
+            },
+            {
+              "id": "9e4ae4d993",
+              "src": "assets/img/casos/bmw-mini/9e4ae4d993-640.webp",
+              "full": "assets/img/casos/bmw-mini/9e4ae4d993-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "BMW: detalles: Noviembre",
+              "caption": "BMW X5 M Competition: motor V8"
+            },
+            {
+              "id": "10a255fdef",
+              "src": "assets/img/casos/bmw-mini/10a255fdef-640.webp",
+              "full": "assets/img/casos/bmw-mini/10a255fdef-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Noviembre",
+              "caption": "BMW X5 M Competition: rin y salpicadera"
+            },
+            {
+              "id": "12062ee68e",
+              "src": "assets/img/casos/bmw-mini/12062ee68e-640.webp",
+              "full": "assets/img/casos/bmw-mini/12062ee68e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Agosto",
+              "caption": "BMW X7 M50i: faro"
+            },
+            {
+              "id": "bf81b45883",
+              "src": "assets/img/casos/bmw-mini/bf81b45883-640.webp",
+              "full": "assets/img/casos/bmw-mini/bf81b45883-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Agosto",
+              "caption": "BMW X7 M50i: palanca de cambios"
+            },
+            {
+              "id": "0d13b8d392",
+              "src": "assets/img/casos/bmw-mini/0d13b8d392-640.webp",
+              "full": "assets/img/casos/bmw-mini/0d13b8d392-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Enero",
+              "caption": "BMW Serie 8 M850i azul: rin y costado"
+            },
+            {
+              "id": "dc92e54918",
+              "src": "assets/img/casos/bmw-mini/dc92e54918-640.webp",
+              "full": "assets/img/casos/bmw-mini/dc92e54918-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Octubre",
+              "caption": "BMW Serie 8 M850i: palanca de cristal"
+            },
+            {
+              "id": "de4af9af04",
+              "src": "assets/img/casos/bmw-mini/de4af9af04-640.webp",
+              "full": "assets/img/casos/bmw-mini/de4af9af04-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Marzo",
+              "caption": "BMW M3 verde limón: entrada de aire lateral"
+            },
+            {
+              "id": "3bb81f792f",
+              "src": "assets/img/casos/bmw-mini/3bb81f792f-640.webp",
+              "full": "assets/img/casos/bmw-mini/3bb81f792f-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "BMW: detalles: Marzo",
+              "caption": "BMW M3 verde limón: rin y costado"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "BMW: Car Care",
+          "brand": "bmw",
+          "items": [
+            {
+              "id": "418ac9b26b",
+              "src": "assets/img/casos/bmw-mini/418ac9b26b-640.webp",
+              "full": "assets/img/casos/bmw-mini/418ac9b26b-1200.webp",
+              "width": 640,
+              "height": 426,
+              "alt": "BMW: Car Care",
+              "caption": "Productos Car Care sobre el cofre de un BMW"
+            },
+            {
+              "id": "e58eccbbcf",
+              "src": "assets/img/casos/bmw-mini/e58eccbbcf-640.webp",
+              "full": "assets/img/casos/bmw-mini/e58eccbbcf-1200.webp",
+              "width": 640,
+              "height": 446,
+              "alt": "BMW: Car Care",
+              "caption": "Productos Car Care: kit de limpieza"
+            },
+            {
+              "id": "0425764c0b",
+              "src": "assets/img/casos/bmw-mini/0425764c0b-640.webp",
+              "full": "assets/img/casos/bmw-mini/0425764c0b-1200.webp",
+              "width": 640,
+              "height": 389,
+              "alt": "BMW: Car Care",
+              "caption": "Productos Car Care: limpieza de rin"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "MINI: exteriores",
+          "brand": "mini",
+          "items": [
+            {
+              "id": "1e01a00e19",
+              "src": "assets/img/casos/bmw-mini/1e01a00e19-640.webp",
+              "full": "assets/img/casos/bmw-mini/1e01a00e19-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Diciembre",
+              "caption": "MINI 3 puertas amarillo, de frente sobre el pasto"
+            },
+            {
+              "id": "7382ee5ef0",
+              "src": "assets/img/casos/bmw-mini/7382ee5ef0-640.webp",
+              "full": "assets/img/casos/bmw-mini/7382ee5ef0-1200.webp",
+              "width": 640,
+              "height": 961,
+              "alt": "MINI: exteriores: Diciembre",
+              "caption": "MINI 3 puertas amarillo, de tres cuartos"
+            },
+            {
+              "id": "cb393a120e",
+              "src": "assets/img/casos/bmw-mini/cb393a120e-640.webp",
+              "full": "assets/img/casos/bmw-mini/cb393a120e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Octubre",
+              "caption": "MINI 3 puertas multitono, frente al dealer"
+            },
+            {
+              "id": "822eeaee33",
+              "src": "assets/img/casos/bmw-mini/822eeaee33-640.webp",
+              "full": "assets/img/casos/bmw-mini/822eeaee33-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Diciembre",
+              "caption": "MINI 3 puertas negro, frente al dealer"
+            },
+            {
+              "id": "690e686fdf",
+              "src": "assets/img/casos/bmw-mini/690e686fdf-640.webp",
+              "full": "assets/img/casos/bmw-mini/690e686fdf-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Septiembre",
+              "caption": "MINI Electric gris, frente al dealer"
+            },
+            {
+              "id": "77eb0e05f1",
+              "src": "assets/img/casos/bmw-mini/77eb0e05f1-640.webp",
+              "full": "assets/img/casos/bmw-mini/77eb0e05f1-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Enero",
+              "caption": "MINI 3 puertas rojo, de frente"
+            },
+            {
+              "id": "754bff3ce7",
+              "src": "assets/img/casos/bmw-mini/754bff3ce7-640.webp",
+              "full": "assets/img/casos/bmw-mini/754bff3ce7-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Enero",
+              "caption": "MINI 3 puertas rojo, de cerca"
+            },
+            {
+              "id": "3bc786c70d",
+              "src": "assets/img/casos/bmw-mini/3bc786c70d-640.webp",
+              "full": "assets/img/casos/bmw-mini/3bc786c70d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Abril",
+              "caption": "MINI 5 puertas S Classic rojo, en el piso de exhibición"
+            },
+            {
+              "id": "a93d0f267e",
+              "src": "assets/img/casos/bmw-mini/a93d0f267e-640.webp",
+              "full": "assets/img/casos/bmw-mini/a93d0f267e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Abril",
+              "caption": "MINI Countryman Classic blanco, en el piso de exhibición"
+            },
+            {
+              "id": "0354ea5fe1",
+              "src": "assets/img/casos/bmw-mini/0354ea5fe1-640.webp",
+              "full": "assets/img/casos/bmw-mini/0354ea5fe1-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Diciembre",
+              "caption": "MINI 3 puertas amarillo, de atrás sobre el pasto"
+            },
+            {
+              "id": "bada884c06",
+              "src": "assets/img/casos/bmw-mini/bada884c06-640.webp",
+              "full": "assets/img/casos/bmw-mini/bada884c06-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Septiembre",
+              "caption": "MINI 3 puertas Resolute, frente al dealer"
+            },
+            {
+              "id": "cff208feb8",
+              "src": "assets/img/casos/bmw-mini/cff208feb8-640.webp",
+              "full": "assets/img/casos/bmw-mini/cff208feb8-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Diciembre",
+              "caption": "MINI Countryman Untamed, frente al dealer"
+            },
+            {
+              "id": "333de283a3",
+              "src": "assets/img/casos/bmw-mini/333de283a3-640.webp",
+              "full": "assets/img/casos/bmw-mini/333de283a3-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Enero",
+              "caption": "MINI 3 puertas negro, de tres cuartos"
+            },
+            {
+              "id": "70ecb34822",
+              "src": "assets/img/casos/bmw-mini/70ecb34822-640.webp",
+              "full": "assets/img/casos/bmw-mini/70ecb34822-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Enero",
+              "caption": "MINI 3 puertas negro, de cerca"
+            },
+            {
+              "id": "a19495651a",
+              "src": "assets/img/casos/bmw-mini/a19495651a-640.webp",
+              "full": "assets/img/casos/bmw-mini/a19495651a-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Enero",
+              "caption": "MINI 3 puertas rojo, de costado"
+            },
+            {
+              "id": "3f8f893872",
+              "src": "assets/img/casos/bmw-mini/3f8f893872-640.webp",
+              "full": "assets/img/casos/bmw-mini/3f8f893872-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Marzo",
+              "caption": "MINI 3 puertas Island Blue, de frente"
+            },
+            {
+              "id": "ae119c6bc9",
+              "src": "assets/img/casos/bmw-mini/ae119c6bc9-640.webp",
+              "full": "assets/img/casos/bmw-mini/ae119c6bc9-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Marzo",
+              "caption": "MINI Countryman negro, de tres cuartos"
+            },
+            {
+              "id": "793b9d7fa2",
+              "src": "assets/img/casos/bmw-mini/793b9d7fa2-640.webp",
+              "full": "assets/img/casos/bmw-mini/793b9d7fa2-1200.webp",
+              "width": 640,
+              "height": 961,
+              "alt": "MINI: exteriores: Marzo",
+              "caption": "MINI 3 puertas Island Blue, con la cajuela abierta"
+            },
+            {
+              "id": "d59dbee352",
+              "src": "assets/img/casos/bmw-mini/d59dbee352-640.webp",
+              "full": "assets/img/casos/bmw-mini/d59dbee352-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Marzo",
+              "caption": "MINI 3 puertas Island Blue, vista desde arriba"
+            },
+            {
+              "id": "d482d7494b",
+              "src": "assets/img/casos/bmw-mini/d482d7494b-640.webp",
+              "full": "assets/img/casos/bmw-mini/d482d7494b-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Marzo",
+              "caption": "MINI 3 puertas rojo con líneas negras, vista desde arriba"
+            },
+            {
+              "id": "32d3151248",
+              "src": "assets/img/casos/bmw-mini/32d3151248-640.webp",
+              "full": "assets/img/casos/bmw-mini/32d3151248-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Marzo",
+              "caption": "MINI Countryman negro con barras en el techo"
+            },
+            {
+              "id": "064ab2b9a7",
+              "src": "assets/img/casos/bmw-mini/064ab2b9a7-640.webp",
+              "full": "assets/img/casos/bmw-mini/064ab2b9a7-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Septiembre",
+              "caption": "MINI 3 puertas Resolute, de lado"
+            },
+            {
+              "id": "3211d41273",
+              "src": "assets/img/casos/bmw-mini/3211d41273-640.webp",
+              "full": "assets/img/casos/bmw-mini/3211d41273-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: exteriores: Septiembre",
+              "caption": "MINI Electric gris con detalles amarillos, de frente"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "MINI: interiores y detalles",
+          "brand": "mini",
+          "items": [
+            {
+              "id": "cbfa5a4988",
+              "src": "assets/img/casos/bmw-mini/cbfa5a4988-640.webp",
+              "full": "assets/img/casos/bmw-mini/cbfa5a4988-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Octubre",
+              "caption": "MINI 3 puertas multitono: faro redondo"
+            },
+            {
+              "id": "2f5336e030",
+              "src": "assets/img/casos/bmw-mini/2f5336e030-640.webp",
+              "full": "assets/img/casos/bmw-mini/2f5336e030-1200.webp",
+              "width": 640,
+              "height": 427,
+              "alt": "MINI: interiores y detalles: Octubre",
+              "caption": "MINI 3 puertas multitono: tablero y volante"
+            },
+            {
+              "id": "fc0c1904a8",
+              "src": "assets/img/casos/bmw-mini/fc0c1904a8-640.webp",
+              "full": "assets/img/casos/bmw-mini/fc0c1904a8-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Septiembre",
+              "caption": "MINI 3 puertas Resolute: volante bordado"
+            },
+            {
+              "id": "b5e59cd664",
+              "src": "assets/img/casos/bmw-mini/b5e59cd664-640.webp",
+              "full": "assets/img/casos/bmw-mini/b5e59cd664-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Diciembre",
+              "caption": "MINI Countryman Untamed: consola y selectores"
+            },
+            {
+              "id": "8ea9913313",
+              "src": "assets/img/casos/bmw-mini/8ea9913313-640.webp",
+              "full": "assets/img/casos/bmw-mini/8ea9913313-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Marzo",
+              "caption": "MINI JCW azul oscuro: volante y asientos"
+            },
+            {
+              "id": "5ad1f95e9c",
+              "src": "assets/img/casos/bmw-mini/5ad1f95e9c-640.webp",
+              "full": "assets/img/casos/bmw-mini/5ad1f95e9c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Abril",
+              "caption": "MINI 5 puertas S Classic rojo: faro y franjas"
+            },
+            {
+              "id": "ad0fa7ad5d",
+              "src": "assets/img/casos/bmw-mini/ad0fa7ad5d-640.webp",
+              "full": "assets/img/casos/bmw-mini/ad0fa7ad5d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Enero",
+              "caption": "MINI 3 puertas negro: escapes"
+            },
+            {
+              "id": "ac991c3059",
+              "src": "assets/img/casos/bmw-mini/ac991c3059-640.webp",
+              "full": "assets/img/casos/bmw-mini/ac991c3059-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Noviembre",
+              "caption": "MINI Countryman Untamed: rueda y llanta"
+            },
+            {
+              "id": "69f2148c6b",
+              "src": "assets/img/casos/bmw-mini/69f2148c6b-640.webp",
+              "full": "assets/img/casos/bmw-mini/69f2148c6b-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Abril",
+              "caption": "MINI Countryman Classic blanco: rin"
+            },
+            {
+              "id": "f61200c9d9",
+              "src": "assets/img/casos/bmw-mini/f61200c9d9-640.webp",
+              "full": "assets/img/casos/bmw-mini/f61200c9d9-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Abril",
+              "caption": "MINI Countryman Classic blanco: calavera trasera"
+            },
+            {
+              "id": "ff4922bbd7",
+              "src": "assets/img/casos/bmw-mini/ff4922bbd7-640.webp",
+              "full": "assets/img/casos/bmw-mini/ff4922bbd7-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Diciembre",
+              "caption": "MINI 3 puertas amarillo: cofre y parrilla"
+            },
+            {
+              "id": "03b9410540",
+              "src": "assets/img/casos/bmw-mini/03b9410540-640.webp",
+              "full": "assets/img/casos/bmw-mini/03b9410540-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Septiembre",
+              "caption": "MINI 3 puertas Resolute: cofre con franjas"
+            },
+            {
+              "id": "fdbbe43731",
+              "src": "assets/img/casos/bmw-mini/fdbbe43731-640.webp",
+              "full": "assets/img/casos/bmw-mini/fdbbe43731-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Diciembre",
+              "caption": "MINI Countryman Untamed, de tres cuartos"
+            },
+            {
+              "id": "5fbc49132e",
+              "src": "assets/img/casos/bmw-mini/5fbc49132e-640.webp",
+              "full": "assets/img/casos/bmw-mini/5fbc49132e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Diciembre",
+              "caption": "MINI Countryman Untamed: asientos verdes"
+            },
+            {
+              "id": "1fa7ce81b4",
+              "src": "assets/img/casos/bmw-mini/1fa7ce81b4-640.webp",
+              "full": "assets/img/casos/bmw-mini/1fa7ce81b4-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Enero",
+              "caption": "MINI 3 puertas negro: asientos y quemacocos"
+            },
+            {
+              "id": "9d3ef21416",
+              "src": "assets/img/casos/bmw-mini/9d3ef21416-640.webp",
+              "full": "assets/img/casos/bmw-mini/9d3ef21416-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "MINI: interiores y detalles: Septiembre",
+              "caption": "MINI 3 puertas Resolute: vista interior hacia atrás"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Motorrad: R 18",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "7bcfd6dc19",
+              "src": "assets/img/casos/bmw-mini/7bcfd6dc19-640.webp",
+              "full": "assets/img/casos/bmw-mini/7bcfd6dc19-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 B negra, en el piso de exhibición"
+            },
+            {
+              "id": "650ae3b2df",
+              "src": "assets/img/casos/bmw-mini/650ae3b2df-640.webp",
+              "full": "assets/img/casos/bmw-mini/650ae3b2df-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 Custom Gaia azul, de frente"
+            },
+            {
+              "id": "4377d3cac1",
+              "src": "assets/img/casos/bmw-mini/4377d3cac1-640.webp",
+              "full": "assets/img/casos/bmw-mini/4377d3cac1-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 Custom Gaia: faro y manubrio"
+            },
+            {
+              "id": "cdcef7c0f6",
+              "src": "assets/img/casos/bmw-mini/cdcef7c0f6-640.webp",
+              "full": "assets/img/casos/bmw-mini/cdcef7c0f6-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 negra: motor boxer"
+            },
+            {
+              "id": "8711b97dd5",
+              "src": "assets/img/casos/bmw-mini/8711b97dd5-640.webp",
+              "full": "assets/img/casos/bmw-mini/8711b97dd5-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 Transcontinental: motor y tanque"
+            },
+            {
+              "id": "a17dc2acf0",
+              "src": "assets/img/casos/bmw-mini/a17dc2acf0-640.webp",
+              "full": "assets/img/casos/bmw-mini/a17dc2acf0-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Septiembre",
+              "caption": "BMW R 18 B negra: carenado y tablero"
+            },
+            {
+              "id": "e1e3d9133d",
+              "src": "assets/img/casos/bmw-mini/e1e3d9133d-640.webp",
+              "full": "assets/img/casos/bmw-mini/e1e3d9133d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 negra, en el piso de exhibición"
+            },
+            {
+              "id": "18fb894988",
+              "src": "assets/img/casos/bmw-mini/18fb894988-640.webp",
+              "full": "assets/img/casos/bmw-mini/18fb894988-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 Custom Gaia: asiento y tanque"
+            },
+            {
+              "id": "d08b6c1766",
+              "src": "assets/img/casos/bmw-mini/d08b6c1766-640.webp",
+              "full": "assets/img/casos/bmw-mini/d08b6c1766-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 B negra: tanque y cuadro"
+            },
+            {
+              "id": "8af3d87183",
+              "src": "assets/img/casos/bmw-mini/8af3d87183-640.webp",
+              "full": "assets/img/casos/bmw-mini/8af3d87183-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 Transcontinental, de frente"
+            },
+            {
+              "id": "f3491d13ef",
+              "src": "assets/img/casos/bmw-mini/f3491d13ef-640.webp",
+              "full": "assets/img/casos/bmw-mini/f3491d13ef-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: R 18: Diciembre",
+              "caption": "BMW R 18 Transcontinental: asiento del pasajero"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Motorrad: aventura GS",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "450d2f0cd5",
+              "src": "assets/img/casos/bmw-mini/450d2f0cd5-640.webp",
+              "full": "assets/img/casos/bmw-mini/450d2f0cd5-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW F 850 GS café: faro y parabrisas"
+            },
+            {
+              "id": "393382a00c",
+              "src": "assets/img/casos/bmw-mini/393382a00c-640.webp",
+              "full": "assets/img/casos/bmw-mini/393382a00c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW F 850 GS café: parrilla trasera"
+            },
+            {
+              "id": "aaeeb445fc",
+              "src": "assets/img/casos/bmw-mini/aaeeb445fc-640.webp",
+              "full": "assets/img/casos/bmw-mini/aaeeb445fc-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW G 310 GS Rallye: tanque"
+            },
+            {
+              "id": "dc49f7b066",
+              "src": "assets/img/casos/bmw-mini/dc49f7b066-640.webp",
+              "full": "assets/img/casos/bmw-mini/dc49f7b066-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW R 1250 GS blanca, junto a la ventana"
+            },
+            {
+              "id": "6ef676f998",
+              "src": "assets/img/casos/bmw-mini/6ef676f998-640.webp",
+              "full": "assets/img/casos/bmw-mini/6ef676f998-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW R 1250 GS blanca: motor y defensas"
+            },
+            {
+              "id": "f069eee1b7",
+              "src": "assets/img/casos/bmw-mini/f069eee1b7-640.webp",
+              "full": "assets/img/casos/bmw-mini/f069eee1b7-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW R 1250 GS Rallye blanca: defensas y tanque"
+            },
+            {
+              "id": "42eb961977",
+              "src": "assets/img/casos/bmw-mini/42eb961977-640.webp",
+              "full": "assets/img/casos/bmw-mini/42eb961977-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW F 750 GS blanca: motor"
+            },
+            {
+              "id": "e04f9d0e55",
+              "src": "assets/img/casos/bmw-mini/e04f9d0e55-640.webp",
+              "full": "assets/img/casos/bmw-mini/e04f9d0e55-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW F 850 GS café, en el piso de exhibición"
+            },
+            {
+              "id": "7044da2562",
+              "src": "assets/img/casos/bmw-mini/7044da2562-640.webp",
+              "full": "assets/img/casos/bmw-mini/7044da2562-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW F 850 GS Trophy azul, de frente"
+            },
+            {
+              "id": "9b5b940ec9",
+              "src": "assets/img/casos/bmw-mini/9b5b940ec9-640.webp",
+              "full": "assets/img/casos/bmw-mini/9b5b940ec9-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW G 310 GS Rallye, junto a la ventana"
+            },
+            {
+              "id": "cfc7ca866b",
+              "src": "assets/img/casos/bmw-mini/cfc7ca866b-640.webp",
+              "full": "assets/img/casos/bmw-mini/cfc7ca866b-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW R 1250 GS Rallye blanca: costado"
+            },
+            {
+              "id": "3577662dad",
+              "src": "assets/img/casos/bmw-mini/3577662dad-640.webp",
+              "full": "assets/img/casos/bmw-mini/3577662dad-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Diciembre",
+              "caption": "BMW R 1250 GS Triple Black, en el piso de exhibición"
+            },
+            {
+              "id": "a6f1e9432e",
+              "src": "assets/img/casos/bmw-mini/a6f1e9432e-640.webp",
+              "full": "assets/img/casos/bmw-mini/a6f1e9432e-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Abril",
+              "caption": "BMW F 750 GS, en el piso de exhibición"
+            },
+            {
+              "id": "4d9dedce54",
+              "src": "assets/img/casos/bmw-mini/4d9dedce54-640.webp",
+              "full": "assets/img/casos/bmw-mini/4d9dedce54-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Abril",
+              "caption": "BMW F 850 GS Adventure café, de frente"
+            },
+            {
+              "id": "60640916ba",
+              "src": "assets/img/casos/bmw-mini/60640916ba-640.webp",
+              "full": "assets/img/casos/bmw-mini/60640916ba-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: aventura GS: Abril",
+              "caption": "BMW F 850 GS Adventure café: motor"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Motorrad: deportivas y urbanas",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "3fadfaf7ec",
+              "src": "assets/img/casos/bmw-mini/3fadfaf7ec-640.webp",
+              "full": "assets/img/casos/bmw-mini/3fadfaf7ec-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW S 1000 RR negra, en el piso de exhibición"
+            },
+            {
+              "id": "ef46b7c4c2",
+              "src": "assets/img/casos/bmw-mini/ef46b7c4c2-640.webp",
+              "full": "assets/img/casos/bmw-mini/ef46b7c4c2-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW S 1000 RR negra: horquilla y rueda delantera"
+            },
+            {
+              "id": "01e8e32fdb",
+              "src": "assets/img/casos/bmw-mini/01e8e32fdb-640.webp",
+              "full": "assets/img/casos/bmw-mini/01e8e32fdb-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW S 1000 RR negra: llanta trasera"
+            },
+            {
+              "id": "8d7864a682",
+              "src": "assets/img/casos/bmw-mini/8d7864a682-640.webp",
+              "full": "assets/img/casos/bmw-mini/8d7864a682-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Abril",
+              "caption": "BMW C 400 GT, de frente"
+            },
+            {
+              "id": "0c8507244f",
+              "src": "assets/img/casos/bmw-mini/0c8507244f-640.webp",
+              "full": "assets/img/casos/bmw-mini/0c8507244f-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Abril",
+              "caption": "BMW C 400 GT, de costado"
+            },
+            {
+              "id": "95216ef744",
+              "src": "assets/img/casos/bmw-mini/95216ef744-640.webp",
+              "full": "assets/img/casos/bmw-mini/95216ef744-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Abril",
+              "caption": "BMW CE 04 blanca: rueda y carenado"
+            },
+            {
+              "id": "b9a476ec5f",
+              "src": "assets/img/casos/bmw-mini/b9a476ec5f-640.webp",
+              "full": "assets/img/casos/bmw-mini/b9a476ec5f-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW F 900 R blanca, de frente"
+            },
+            {
+              "id": "4a1aad35a9",
+              "src": "assets/img/casos/bmw-mini/4a1aad35a9-640.webp",
+              "full": "assets/img/casos/bmw-mini/4a1aad35a9-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW F 900 R blanca, de costado"
+            },
+            {
+              "id": "d25439821d",
+              "src": "assets/img/casos/bmw-mini/d25439821d-640.webp",
+              "full": "assets/img/casos/bmw-mini/d25439821d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW F 900 R blanca: tanque y manubrio"
+            },
+            {
+              "id": "6293cb37c8",
+              "src": "assets/img/casos/bmw-mini/6293cb37c8-640.webp",
+              "full": "assets/img/casos/bmw-mini/6293cb37c8-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW C 400 X azul, de frente"
+            },
+            {
+              "id": "ba19d71000",
+              "src": "assets/img/casos/bmw-mini/ba19d71000-640.webp",
+              "full": "assets/img/casos/bmw-mini/ba19d71000-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW C 400 X azul, de costado"
+            },
+            {
+              "id": "0f39fe798c",
+              "src": "assets/img/casos/bmw-mini/0f39fe798c-640.webp",
+              "full": "assets/img/casos/bmw-mini/0f39fe798c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Diciembre",
+              "caption": "BMW C 400 X azul: calavera trasera"
+            },
+            {
+              "id": "41c9e1ab88",
+              "src": "assets/img/casos/bmw-mini/41c9e1ab88-640.webp",
+              "full": "assets/img/casos/bmw-mini/41c9e1ab88-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Abril",
+              "caption": "BMW C 400 GT, de frente"
+            },
+            {
+              "id": "68ff07db28",
+              "src": "assets/img/casos/bmw-mini/68ff07db28-640.webp",
+              "full": "assets/img/casos/bmw-mini/68ff07db28-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: deportivas y urbanas: Abril",
+              "caption": "BMW CE 04 blanca, de costado"
+            },
+            {
+              "id": "25420f276a",
+              "src": "assets/img/casos/bmw-mini/25420f276a-640.webp",
+              "full": "assets/img/casos/bmw-mini/25420f276a-1200.webp",
+              "width": 640,
+              "height": 961,
+              "alt": "Motorrad: deportivas y urbanas: Abril",
+              "caption": "BMW CE 04 blanca: tablero"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Motorrad: K 1600 GTL",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "bffc7905fb",
+              "src": "assets/img/casos/bmw-mini/bffc7905fb-640.webp",
+              "full": "assets/img/casos/bmw-mini/bffc7905fb-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: K 1600 GTL: Diciembre",
+              "caption": "BMW K 1600 GTL negra, en el piso de exhibición"
+            },
+            {
+              "id": "be212b1c49",
+              "src": "assets/img/casos/bmw-mini/be212b1c49-640.webp",
+              "full": "assets/img/casos/bmw-mini/be212b1c49-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: K 1600 GTL: Diciembre",
+              "caption": "BMW K 1600 GTL negra: tablero y carenado"
+            },
+            {
+              "id": "0d4cd1cda1",
+              "src": "assets/img/casos/bmw-mini/0d4cd1cda1-640.webp",
+              "full": "assets/img/casos/bmw-mini/0d4cd1cda1-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: K 1600 GTL: Diciembre",
+              "caption": "BMW K 1600 GTL negra, de costado"
+            }
+          ]
+        },
+        {
+          "kind": "fotos",
+          "topic": "Motorrad: equipo de manejo",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "c9d26d5377",
+              "src": "assets/img/casos/bmw-mini/c9d26d5377-640.webp",
+              "full": "assets/img/casos/bmw-mini/c9d26d5377-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: equipo de manejo: Agosto",
+              "caption": "Mochila impermeable BMW Motorrad"
+            },
+            {
+              "id": "f7ad23e0f2",
+              "src": "assets/img/casos/bmw-mini/f7ad23e0f2-640.webp",
+              "full": "assets/img/casos/bmw-mini/f7ad23e0f2-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: equipo de manejo: Junio",
+              "caption": "Sudaderas BMW Motorrad en el exhibidor"
+            },
+            {
+              "id": "b44cc942c3",
+              "src": "assets/img/casos/bmw-mini/b44cc942c3-640.webp",
+              "full": "assets/img/casos/bmw-mini/b44cc942c3-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: equipo de manejo: Mayo",
+              "caption": "Casco BMW Motorrad blanco"
+            },
+            {
+              "id": "3821cbff2d",
+              "src": "assets/img/casos/bmw-mini/3821cbff2d-640.webp",
+              "full": "assets/img/casos/bmw-mini/3821cbff2d-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: equipo de manejo: Mayo",
+              "caption": "Chamarras de manejo en el exhibidor"
+            },
+            {
+              "id": "58a5470f94",
+              "src": "assets/img/casos/bmw-mini/58a5470f94-640.webp",
+              "full": "assets/img/casos/bmw-mini/58a5470f94-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: equipo de manejo: Mayo",
+              "caption": "Trajes de manejo en el exhibidor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "promociones",
+      "title": "Promociones y campañas",
+      "eyebrow": "las fotos del dealer, ya diseñadas",
+      "text": [
+        "Con esas mismas fotos armé las promociones de cada marca para redes: financiamientos, neumáticos, accesorios y modelos. Los precios y las condiciones que aparecen son los de cada anuncio original."
+      ],
+      "groups": [
+        {
+          "kind": "disenos",
+          "topic": "BMW: modelos y financiamiento",
+          "brand": "bmw",
+          "items": [
+            {
+              "id": "60b9d5464a",
+              "src": "assets/img/casos/bmw-mini/60b9d5464a-640.webp",
+              "full": "assets/img/casos/bmw-mini/60b9d5464a-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: modelos y financiamiento: Lógica M5 IG",
+              "caption": "BMW M: «En la ciudad o en el circuito»"
+            },
+            {
+              "id": "1230d40259",
+              "src": "assets/img/casos/bmw-mini/1230d40259-640.webp",
+              "full": "assets/img/casos/bmw-mini/1230d40259-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: modelos y financiamiento: Serie 7 Precio Especial Feed",
+              "caption": "BMW Serie 7: precio especial"
+            },
+            {
+              "id": "4098f74c06",
+              "src": "assets/img/casos/bmw-mini/4098f74c06-640.webp",
+              "full": "assets/img/casos/bmw-mini/4098f74c06-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "BMW: modelos y financiamiento: Serie 7 Precio Especial Storie",
+              "caption": "BMW Serie 7: precio especial, versión vertical"
+            },
+            {
+              "id": "0458048e16",
+              "src": "assets/img/casos/bmw-mini/0458048e16-640.webp",
+              "full": "assets/img/casos/bmw-mini/0458048e16-1200.webp",
+              "width": 640,
+              "height": 361,
+              "alt": "BMW: modelos y financiamiento: BMW Ad Marzo 2023 M3 Article",
+              "caption": "BMW M3 Competition: mensualidad con enganche"
+            },
+            {
+              "id": "a9297d709b",
+              "src": "assets/img/casos/bmw-mini/a9297d709b-640.webp",
+              "full": "assets/img/casos/bmw-mini/a9297d709b-1200.webp",
+              "width": 640,
+              "height": 361,
+              "alt": "BMW: modelos y financiamiento: BMW Ad Marzo 2023 M5 Article",
+              "caption": "BMW M5: 35% de enganche"
+            },
+            {
+              "id": "c807cfbf7b",
+              "src": "assets/img/casos/bmw-mini/c807cfbf7b-640.webp",
+              "full": "assets/img/casos/bmw-mini/c807cfbf7b-1200.webp",
+              "width": 640,
+              "height": 361,
+              "alt": "BMW: modelos y financiamiento: BMW Ad Marzo 2023 Serie 7 Article",
+              "caption": "BMW Serie 7: 35% de enganche"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "BMW: servicio y accesorios",
+          "brand": "bmw",
+          "items": [
+            {
+              "id": "314a81afab",
+              "src": "assets/img/casos/bmw-mini/314a81afab-640.webp",
+              "full": "assets/img/casos/bmw-mini/314a81afab-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: servicio y accesorios: Prom BMW Service",
+              "caption": "Neumáticos: 10% de descuento e instalación gratis"
+            },
+            {
+              "id": "0038ce6a5e",
+              "src": "assets/img/casos/bmw-mini/0038ce6a5e-640.webp",
+              "full": "assets/img/casos/bmw-mini/0038ce6a5e-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: servicio y accesorios: Prom BMW Service 2",
+              "caption": "Neumáticos: 10% de descuento, versión con rin"
+            },
+            {
+              "id": "8352766241",
+              "src": "assets/img/casos/bmw-mini/8352766241-640.webp",
+              "full": "assets/img/casos/bmw-mini/8352766241-1200.webp",
+              "width": 601,
+              "height": 481,
+              "alt": "BMW: servicio y accesorios: Neumáticos 10pdd Header",
+              "caption": "Neumáticos con 10% de descuento"
+            },
+            {
+              "id": "46e0e11d76",
+              "src": "assets/img/casos/bmw-mini/46e0e11d76-640.webp",
+              "full": "assets/img/casos/bmw-mini/46e0e11d76-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: servicio y accesorios: Prom BMW Service",
+              "caption": "Limpiaparabrisas: 10% de descuento"
+            },
+            {
+              "id": "997bfcc674",
+              "src": "assets/img/casos/bmw-mini/997bfcc674-640.webp",
+              "full": "assets/img/casos/bmw-mini/997bfcc674-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: servicio y accesorios",
+              "caption": "Limpiaparabrisas: renueva los tuyos"
+            },
+            {
+              "id": "30571b688c",
+              "src": "assets/img/casos/bmw-mini/30571b688c-640.webp",
+              "full": "assets/img/casos/bmw-mini/30571b688c-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "BMW: servicio y accesorios",
+              "caption": "Limpiaparabrisas: renueva los tuyos, versión clara"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "MINI: modelos",
+          "brand": "mini",
+          "items": [
+            {
+              "id": "9d47b697ff",
+              "src": "assets/img/casos/bmw-mini/9d47b697ff-640.webp",
+              "full": "assets/img/casos/bmw-mini/9d47b697ff-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: modelos: MINI 3P Reel",
+              "caption": "MINI 3 puertas"
+            },
+            {
+              "id": "a90d66528b",
+              "src": "assets/img/casos/bmw-mini/a90d66528b-640.webp",
+              "full": "assets/img/casos/bmw-mini/a90d66528b-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: modelos: MINI Countryman Reel",
+              "caption": "MINI Countryman Untamed Edition"
+            },
+            {
+              "id": "875a007e2b",
+              "src": "assets/img/casos/bmw-mini/875a007e2b-640.webp",
+              "full": "assets/img/casos/bmw-mini/875a007e2b-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: modelos: MINI 3P Reel",
+              "caption": "MINI 3 puertas rojo"
+            },
+            {
+              "id": "78a6901324",
+              "src": "assets/img/casos/bmw-mini/78a6901324-640.webp",
+              "full": "assets/img/casos/bmw-mini/78a6901324-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: modelos: MINI CUE Reel",
+              "caption": "MINI Countryman Untamed Edition, versión clara"
+            },
+            {
+              "id": "9a9348b3dd",
+              "src": "assets/img/casos/bmw-mini/9a9348b3dd-640.webp",
+              "full": "assets/img/casos/bmw-mini/9a9348b3dd-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: modelos: MINI 3P Reel 2",
+              "caption": "MINI 3 puertas azul"
+            },
+            {
+              "id": "e8ca63d7c3",
+              "src": "assets/img/casos/bmw-mini/e8ca63d7c3-640.webp",
+              "full": "assets/img/casos/bmw-mini/e8ca63d7c3-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: modelos: MINI Electric Reel",
+              "caption": "MINI Electric"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "MINI: accesorios",
+          "brand": "mini",
+          "items": [
+            {
+              "id": "a8928fb136",
+              "src": "assets/img/casos/bmw-mini/a8928fb136-640.webp",
+              "full": "assets/img/casos/bmw-mini/a8928fb136-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: accesorios: MINI Efemeride",
+              "caption": "Accesorios MINI: «¡Cuídala!»"
+            },
+            {
+              "id": "c131de9c6f",
+              "src": "assets/img/casos/bmw-mini/c131de9c6f-640.webp",
+              "full": "assets/img/casos/bmw-mini/c131de9c6f-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: accesorios: MINI PV Promotion Q1 Union Jack",
+              "caption": "Luces traseras Union Jack: «Destaca tu estilo»"
+            },
+            {
+              "id": "ce10048ca9",
+              "src": "assets/img/casos/bmw-mini/ce10048ca9-640.webp",
+              "full": "assets/img/casos/bmw-mini/ce10048ca9-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "MINI: accesorios: MINI Efemeride",
+              "caption": "MINI Electric: «100% energía positiva»"
+            },
+            {
+              "id": "051947f78d",
+              "src": "assets/img/casos/bmw-mini/051947f78d-640.webp",
+              "full": "assets/img/casos/bmw-mini/051947f78d-1200.webp",
+              "width": 640,
+              "height": 639,
+              "alt": "MINI: accesorios: MINI Ad Marzo 2023 Countryman Untamed Carrusel",
+              "caption": "Accesorios MINI: «Embrague con 7 velocidades»"
+            },
+            {
+              "id": "88d34eb31b",
+              "src": "assets/img/casos/bmw-mini/88d34eb31b-640.webp",
+              "full": "assets/img/casos/bmw-mini/88d34eb31b-1200.webp",
+              "width": 640,
+              "height": 639,
+              "alt": "MINI: accesorios: MINI Ad Marzo 2023 Countryman Untamed Carrusel",
+              "caption": "Accesorios MINI: «¿Qué esperas para viajar?»"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "MINI: «I'M IN»",
+          "brand": "mini",
+          "items": [
+            {
+              "id": "00a4bef71f",
+              "src": "assets/img/casos/bmw-mini/00a4bef71f-640.webp",
+              "full": "assets/img/casos/bmw-mini/00a4bef71f-1200.webp",
+              "width": 640,
+              "height": 361,
+              "alt": "MINI: «I'M IN»: MINI Ad Marzo 2023 3 Puertas Article",
+              "caption": "I'M IN: MINI Cooper con enganche y mensualidades"
+            },
+            {
+              "id": "73ab17faf3",
+              "src": "assets/img/casos/bmw-mini/73ab17faf3-640.webp",
+              "full": "assets/img/casos/bmw-mini/73ab17faf3-1200.webp",
+              "width": 640,
+              "height": 640,
+              "alt": "MINI: «I'M IN»: MINI Ad Marzo 2023 3 Puertas Suqere",
+              "caption": "I'M IN: MINI Cooper rojo, versión con plan"
+            },
+            {
+              "id": "f90c108f46",
+              "src": "assets/img/casos/bmw-mini/f90c108f46-640.webp",
+              "full": "assets/img/casos/bmw-mini/f90c108f46-1200.webp",
+              "width": 640,
+              "height": 641,
+              "alt": "MINI: «I'M IN»: MINI Ad Marzo 2023 Countryman JCW Squere",
+              "caption": "I'M IN: MINI Countryman con enganche y mensualidades"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Motorrad: modelos y accesorios",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "241b6a9329",
+              "src": "assets/img/casos/bmw-mini/241b6a9329-640.webp",
+              "full": "assets/img/casos/bmw-mini/241b6a9329-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: modelos y accesorios: FB R 18 B",
+              "caption": "BMW R 18 B"
+            },
+            {
+              "id": "fe4a98558c",
+              "src": "assets/img/casos/bmw-mini/fe4a98558c-640.webp",
+              "full": "assets/img/casos/bmw-mini/fe4a98558c-1200.webp",
+              "width": 640,
+              "height": 960,
+              "alt": "Motorrad: modelos y accesorios: FB F 900 R",
+              "caption": "BMW F 900 R"
+            },
+            {
+              "id": "d5981a894e",
+              "src": "assets/img/casos/bmw-mini/d5981a894e-640.webp",
+              "full": "assets/img/casos/bmw-mini/d5981a894e-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Motorrad: modelos y accesorios: Rider Equipent BMW Motorrad FB",
+              "caption": "Botas GS Competition con 10% de descuento"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rodadas",
+      "title": "Rodadas y clínicas de manejo",
+      "eyebrow": "BMW Motorrad fuera del dealer",
+      "text": [
+        "BMW Motorrad organizaba rodadas y clínicas de manejo, y yo diseñaba las invitaciones. Fue ahí donde conocí a Oscar Guzmán, quien daba las clínicas, y de ahí nació todo lo que sigue en Motociclismo."
+      ],
+      "groups": [
+        {
+          "kind": "disenos",
+          "topic": "Clínicas de manejo por Oscar Guzmán",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "bc9df333e2",
+              "src": "assets/img/casos/bmw-mini/bc9df333e2-640.webp",
+              "full": "assets/img/casos/bmw-mini/bc9df333e2-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Clínicas de manejo por Oscar Guzmán: Clinica con Motoland Oscar Evento",
+              "caption": "Clínica de manejo por Oscar Guzmán: banner"
+            },
+            {
+              "id": "3525c71acb",
+              "src": "assets/img/casos/bmw-mini/3525c71acb-640.webp",
+              "full": "assets/img/casos/bmw-mini/3525c71acb-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Clínicas de manejo por Oscar Guzmán: Clinica con Motoland Oscar Feed",
+              "caption": "Clínica de manejo por Oscar Guzmán: portada"
+            },
+            {
+              "id": "d231d55d08",
+              "src": "assets/img/casos/bmw-mini/d231d55d08-640.webp",
+              "full": "assets/img/casos/bmw-mini/d231d55d08-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Clínicas de manejo por Oscar Guzmán: Clinica con Motoland Oscar IG",
+              "caption": "Clínica de manejo por Oscar Guzmán: kartódromo"
+            },
+            {
+              "id": "78a3e738c7",
+              "src": "assets/img/casos/bmw-mini/78a3e738c7-640.webp",
+              "full": "assets/img/casos/bmw-mini/78a3e738c7-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo por Oscar Guzmán: Clinica con Motoland Oscar Storie",
+              "caption": "Clínica de manejo por Oscar Guzmán: invitación"
+            },
+            {
+              "id": "7b205715dc",
+              "src": "assets/img/casos/bmw-mini/7b205715dc-640.webp",
+              "full": "assets/img/casos/bmw-mini/7b205715dc-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo por Oscar Guzmán: Clinica con Motoland Oscar Summon",
+              "caption": "Clínica de manejo por Oscar Guzmán: programa y precio"
+            },
+            {
+              "id": "6d3c5c19e1",
+              "src": "assets/img/casos/bmw-mini/6d3c5c19e1-640.webp",
+              "full": "assets/img/casos/bmw-mini/6d3c5c19e1-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Clínicas de manejo por Oscar Guzmán: Clinica con Motoland Oscar Summon",
+              "caption": "Clínica de manejo por Oscar Guzmán: programa, versión oscura"
+            }
+          ]
+        },
+        {
+          "kind": "disenos",
+          "topic": "Rodadas",
+          "brand": "motorrad",
+          "items": [
+            {
+              "id": "82a7530095",
+              "src": "assets/img/casos/bmw-mini/82a7530095-640.webp",
+              "full": "assets/img/casos/bmw-mini/82a7530095-1200.webp",
+              "width": 640,
+              "height": 1137,
+              "alt": "Rodadas: Rodada Off Road Día del niño Motorrax Storie",
+              "caption": "Rodada por los niños"
+            },
+            {
+              "id": "7e5a3a04a0",
+              "src": "assets/img/casos/bmw-mini/7e5a3a04a0-640.webp",
+              "full": "assets/img/casos/bmw-mini/7e5a3a04a0-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Rodadas: Rodada Off Road Motorrax Evento",
+              "caption": "Rodada off road Relámpago"
+            },
+            {
+              "id": "e231499390",
+              "src": "assets/img/casos/bmw-mini/e231499390-640.webp",
+              "full": "assets/img/casos/bmw-mini/e231499390-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Rodadas: Rodada Off Road Motorrax Feed",
+              "caption": "Rodada off road: Mesa del Oso y Rayones"
+            },
+            {
+              "id": "6fce3f689c",
+              "src": "assets/img/casos/bmw-mini/6fce3f689c-640.webp",
+              "full": "assets/img/casos/bmw-mini/6fce3f689c-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Rodadas: Rodada On Road Cumple de Napo FB",
+              "caption": "Rodada a New West"
+            },
+            {
+              "id": "f45f353ac2",
+              "src": "assets/img/casos/bmw-mini/f45f353ac2-640.webp",
+              "full": "assets/img/casos/bmw-mini/f45f353ac2-1200.webp",
+              "width": 640,
+              "height": 800,
+              "alt": "Rodadas: Rodada On Road Motorrax Feed",
+              "caption": "Rodada on road internacional"
+            },
+            {
+              "id": "02eb905922",
+              "src": "assets/img/casos/bmw-mini/02eb905922-640.webp",
+              "full": "assets/img/casos/bmw-mini/02eb905922-1200.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Rodadas: Rodada On Road Napo Evento",
+              "caption": "Rodada on road: presa El Cuchillo"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "media": [
+      {
+        "type": "image",
+        "id": "79f576cfb9",
+        "src": "assets/img/casos/bmw-mini/79f576cfb9-640.webp",
+        "full": "assets/img/casos/bmw-mini/79f576cfb9-1200.webp",
+        "width": 640,
+        "height": 960
+      },
+      {
+        "type": "image",
+        "id": "1e01a00e19",
+        "src": "assets/img/casos/bmw-mini/1e01a00e19-640.webp",
+        "full": "assets/img/casos/bmw-mini/1e01a00e19-1200.webp",
+        "width": 640,
+        "height": 960
+      },
+      {
+        "type": "image",
+        "id": "ef46b7c4c2",
+        "src": "assets/img/casos/bmw-mini/ef46b7c4c2-640.webp",
+        "full": "assets/img/casos/bmw-mini/ef46b7c4c2-1200.webp",
+        "width": 640,
+        "height": 960
+      },
+      {
+        "type": "image",
+        "id": "332a1b7500",
+        "src": "assets/img/casos/bmw-mini/332a1b7500-640.webp",
+        "full": "assets/img/casos/bmw-mini/332a1b7500-1200.webp",
+        "width": 640,
+        "height": 960
+      },
+      {
+        "type": "image",
+        "id": "3bc786c70d",
+        "src": "assets/img/casos/bmw-mini/3bc786c70d-640.webp",
+        "full": "assets/img/casos/bmw-mini/3bc786c70d-1200.webp",
+        "width": 640,
+        "height": 960
+      }
+    ]
+  }
+}

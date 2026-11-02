@@ -11,6 +11,6 @@ export function nextFormat(current, clicked) {
 }
 
 // "Mostrar mas" revela otra pagina de piezas en la cuadricula; "mostrar menos" vuelve a la primera.
-export const PAGE = 9;
+export const PAGE = 6;
 export const showMore = (visible, total, step = PAGE) => Math.min(visible + step, total);
 export const showLess = (step = PAGE) => step;
