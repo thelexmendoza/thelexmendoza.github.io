@@ -1,0 +1,655 @@
+{
+  "slug": "etics-live",
+  "key": "etics",
+  "title": "Etic's Live",
+  "eyebrow": "conciertos y festivales",
+  "meta": "Desde 2011 · Grabación y edición de video",
+  "summary": "ETICS Live es un canal de YouTube que cubre los conciertos y festivales de Monterrey, con más de 200 mil suscriptores. Casi todos los videos que ves aquí los edité yo, y empiezo por México Metal Fest, donde además grabé y edité.",
+  "teaser": {
+    "chapter": "metal-fest",
+    "text": "Empieza por México Metal Fest: mis mejores ediciones, con Rotting Christ de estelar."
+  },
+  "chapters": [
+    {
+      "id": "metal-fest",
+      "title": "México Metal Fest",
+      "eyebrow": "mis mejores ediciones",
+      "text": [
+        "En México Metal Fest grabé y edité yo: bandas de metal de todo el mundo en Monterrey, con una edición pensada para el ritmo de cada canción. Son mis mejores ediciones, y la estelar es la de Rotting Christ.",
+        "Toca una miniatura para verlo aquí mismo, sin salir de la página."
+      ],
+      "groups": [
+        {
+          "kind": "videos",
+          "topic": "México Metal Fest IV",
+          "items": [
+            {
+              "id": "yt-AIKoJ_pcyMo",
+              "videoId": "AIKoJ_pcyMo",
+              "src": "assets/img/casos/etics-live/yt-AIKoJ_pcyMo-640.webp",
+              "full": "assets/img/casos/etics-live/yt-AIKoJ_pcyMo-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Rotting Christ - Non Serviam ( Lyric Video ) · Rumbo al #MxMFV",
+              "caption": "Rotting Christ - Non Serviam ( Lyric Video ) · Rumbo al #MxMFV"
+            },
+            {
+              "id": "yt-T1fUPQ3YG2g",
+              "videoId": "T1fUPQ3YG2g",
+              "src": "assets/img/casos/etics-live/yt-T1fUPQ3YG2g-640.webp",
+              "full": "assets/img/casos/etics-live/yt-T1fUPQ3YG2g-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Six Feet Under - The enemy inside · México Metal Fest IV",
+              "caption": "Six Feet Under - The enemy inside · México Metal Fest IV"
+            },
+            {
+              "id": "yt-AMB1-i9UjZo",
+              "videoId": "AMB1-i9UjZo",
+              "src": "assets/img/casos/etics-live/yt-AMB1-i9UjZo-640.webp",
+              "full": "assets/img/casos/etics-live/yt-AMB1-i9UjZo-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Deicide - Dead by dawn · México Metal Fest IV",
+              "caption": "Deicide - Dead by dawn · México Metal Fest IV"
+            },
+            {
+              "id": "yt-fDEViYexvSA",
+              "videoId": "fDEViYexvSA",
+              "src": "assets/img/casos/etics-live/yt-fDEViYexvSA-640.webp",
+              "full": "assets/img/casos/etics-live/yt-fDEViYexvSA-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Havok - Fatal intervention · México Metal Fest IV",
+              "caption": "Havok - Fatal intervention · México Metal Fest IV"
+            },
+            {
+              "id": "yt-41SvLBfd7C8",
+              "videoId": "41SvLBfd7C8",
+              "src": "assets/img/casos/etics-live/yt-41SvLBfd7C8-640.webp",
+              "full": "assets/img/casos/etics-live/yt-41SvLBfd7C8-640.webp",
+              "width": 480,
+              "height": 270,
+              "alt": "Skull Fist - Get fisted · México Metal Fest IV",
+              "caption": "Skull Fist - Get fisted · México Metal Fest IV"
+            },
+            {
+              "id": "yt-9iPkxfo4hXY",
+              "videoId": "9iPkxfo4hXY",
+              "src": "assets/img/casos/etics-live/yt-9iPkxfo4hXY-640.webp",
+              "full": "assets/img/casos/etics-live/yt-9iPkxfo4hXY-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Emperor - Alsvartr (The Oath) + Ye Entrancemperiums · México Metal Fest IV",
+              "caption": "Emperor - Alsvartr (The Oath) + Ye Entrancemperiums · México Metal Fest IV"
+            },
+            {
+              "id": "yt-u7ebNTV54vE",
+              "videoId": "u7ebNTV54vE",
+              "src": "assets/img/casos/etics-live/yt-u7ebNTV54vE-640.webp",
+              "full": "assets/img/casos/etics-live/yt-u7ebNTV54vE-640.webp",
+              "width": 480,
+              "height": 270,
+              "alt": "Possessed - No more room in hell · México Metal Fest IV",
+              "caption": "Possessed - No more room in hell · México Metal Fest IV"
+            },
+            {
+              "id": "yt-NxmAVsDyj_o",
+              "videoId": "NxmAVsDyj_o",
+              "src": "assets/img/casos/etics-live/yt-NxmAVsDyj_o-640.webp",
+              "full": "assets/img/casos/etics-live/yt-NxmAVsDyj_o-640.webp",
+              "width": 480,
+              "height": 270,
+              "alt": "Dying Fetus - In the trenches · México Metal Fest IV",
+              "caption": "Dying Fetus - In the trenches · México Metal Fest IV"
+            },
+            {
+              "id": "yt-u3DhaCKuP8o",
+              "videoId": "u3DhaCKuP8o",
+              "src": "assets/img/casos/etics-live/yt-u3DhaCKuP8o-640.webp",
+              "full": "assets/img/casos/etics-live/yt-u3DhaCKuP8o-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Hammerfall - Never forgive, never forget · México Metal Fest IV",
+              "caption": "Hammerfall - Never forgive, never forget · México Metal Fest IV"
+            }
+          ]
+        },
+        {
+          "kind": "videos",
+          "topic": "México Metal Fest II y III",
+          "items": [
+            {
+              "id": "yt-TJDWSIGOUdc",
+              "videoId": "TJDWSIGOUdc",
+              "src": "assets/img/casos/etics-live/yt-TJDWSIGOUdc-640.webp",
+              "full": "assets/img/casos/etics-live/yt-TJDWSIGOUdc-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Nervosa - Guerra Santa · México Metal Fest II",
+              "caption": "Nervosa - Guerra Santa · México Metal Fest II"
+            },
+            {
+              "id": "yt-fzzeK-rmS2o",
+              "videoId": "fzzeK-rmS2o",
+              "src": "assets/img/casos/etics-live/yt-fzzeK-rmS2o-640.webp",
+              "full": "assets/img/casos/etics-live/yt-fzzeK-rmS2o-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Dark Tranquillity - The lesser faith · México Metal Fest II ( Monterrey, México )",
+              "caption": "Dark Tranquillity - The lesser faith · México Metal Fest II ( Monterrey, México )"
+            },
+            {
+              "id": "yt-C59aYJAc1hI",
+              "videoId": "C59aYJAc1hI",
+              "src": "assets/img/casos/etics-live/yt-C59aYJAc1hI-640.webp",
+              "full": "assets/img/casos/etics-live/yt-C59aYJAc1hI-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Sodom - In retribution (México Metal Fest II)",
+              "caption": "Sodom - In retribution (México Metal Fest II)"
+            },
+            {
+              "id": "yt-UONAlaDAx7w",
+              "videoId": "UONAlaDAx7w",
+              "src": "assets/img/casos/etics-live/yt-UONAlaDAx7w-640.webp",
+              "full": "assets/img/casos/etics-live/yt-UONAlaDAx7w-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Sodom - In war and pieces (México Metal Fest II)",
+              "caption": "Sodom - In war and pieces (México Metal Fest II)"
+            },
+            {
+              "id": "yt-kjoLeMZ4xVA",
+              "videoId": "kjoLeMZ4xVA",
+              "src": "assets/img/casos/etics-live/yt-kjoLeMZ4xVA-640.webp",
+              "full": "assets/img/casos/etics-live/yt-kjoLeMZ4xVA-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Cannibal Corpse - Red before black · México Metal Fest III",
+              "caption": "Cannibal Corpse - Red before black · México Metal Fest III"
+            },
+            {
+              "id": "yt-I5S1ag9ae8I",
+              "videoId": "I5S1ag9ae8I",
+              "src": "assets/img/casos/etics-live/yt-I5S1ag9ae8I-640.webp",
+              "full": "assets/img/casos/etics-live/yt-I5S1ag9ae8I-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Venom - Black metal · México Metal Fest III",
+              "caption": "Venom - Black metal · México Metal Fest III"
+            },
+            {
+              "id": "yt-rOed5sLmTiI",
+              "videoId": "rOed5sLmTiI",
+              "src": "assets/img/casos/etics-live/yt-rOed5sLmTiI-640.webp",
+              "full": "assets/img/casos/etics-live/yt-rOed5sLmTiI-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Obituary - By the light · México Metal Fest III",
+              "caption": "Obituary - By the light · México Metal Fest III"
+            },
+            {
+              "id": "yt-hP2bAdkOVhc",
+              "videoId": "hP2bAdkOVhc",
+              "src": "assets/img/casos/etics-live/yt-hP2bAdkOVhc-640.webp",
+              "full": "assets/img/casos/etics-live/yt-hP2bAdkOVhc-640.webp",
+              "width": 480,
+              "height": 270,
+              "alt": "Destruction - Tormentor · México Metal Fest III",
+              "caption": "Destruction - Tormentor · México Metal Fest III"
+            },
+            {
+              "id": "yt-9O0jxXwWuYQ",
+              "videoId": "9O0jxXwWuYQ",
+              "src": "assets/img/casos/etics-live/yt-9O0jxXwWuYQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-9O0jxXwWuYQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Accept - Balls to the wall · México Metal Fest III",
+              "caption": "Accept - Balls to the wall · México Metal Fest III"
+            }
+          ]
+        },
+        {
+          "kind": "videos",
+          "topic": "Megadeth y Pantera",
+          "items": [
+            {
+              "id": "yt-gnuqQy-gQg0",
+              "videoId": "gnuqQy-gQg0",
+              "src": "assets/img/casos/etics-live/yt-gnuqQy-gQg0-640.webp",
+              "full": "assets/img/casos/etics-live/yt-gnuqQy-gQg0-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Megadeth - MxMF Medley · México Metal Fest",
+              "caption": "Megadeth - MxMF Medley · México Metal Fest"
+            },
+            {
+              "id": "yt-ZKzkrbGlKc8",
+              "videoId": "ZKzkrbGlKc8",
+              "src": "assets/img/casos/etics-live/yt-ZKzkrbGlKc8-640.webp",
+              "full": "assets/img/casos/etics-live/yt-ZKzkrbGlKc8-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Megadeth - Hangar 18 · México Metal Fest ( Dystopia World Tour, Monterrey )",
+              "caption": "Megadeth - Hangar 18 · México Metal Fest ( Dystopia World Tour, Monterrey )"
+            },
+            {
+              "id": "yt-FdwY4WE9B0A",
+              "videoId": "FdwY4WE9B0A",
+              "src": "assets/img/casos/etics-live/yt-FdwY4WE9B0A-640.webp",
+              "full": "assets/img/casos/etics-live/yt-FdwY4WE9B0A-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Pantera - Cowboys from hell · Monterrey Metal Fest V ( México )",
+              "caption": "Pantera - Cowboys from hell · Monterrey Metal Fest V ( México )"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festivales",
+      "title": "Festivales y giras",
+      "eyebrow": "más videos que edité",
+      "text": [
+        "Además del metal, el canal cubre, con mi edición, los festivales y las giras que pasan por Monterrey: Pa'l Norte, Machaca, Festival Retro y los conciertos de Arena Monterrey y Domo Care."
+      ],
+      "groups": [
+        {
+          "kind": "videos",
+          "topic": "Tecate Pa'l Norte",
+          "items": [
+            {
+              "id": "yt-6_gk-4WnUfM",
+              "videoId": "6_gk-4WnUfM",
+              "src": "assets/img/casos/etics-live/yt-6_gk-4WnUfM-640.webp",
+              "full": "assets/img/casos/etics-live/yt-6_gk-4WnUfM-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "José Madero - Los malaventurados no lloran · Tecate Pa'l Norte 2023 ( Giallo fantastique Tour II )",
+              "caption": "José Madero - Los malaventurados no lloran · Tecate Pa'l Norte 2023 ( Giallo fantastique Tour II )"
+            },
+            {
+              "id": "yt-W2l0YdQ1fKk",
+              "videoId": "W2l0YdQ1fKk",
+              "src": "assets/img/casos/etics-live/yt-W2l0YdQ1fKk-640.webp",
+              "full": "assets/img/casos/etics-live/yt-W2l0YdQ1fKk-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Belanova ft. Danna - Me pregunto · Tecate Pa'l Norte 2024 ( Vida en rosa Tour, Monterrey )",
+              "caption": "Belanova ft. Danna - Me pregunto · Tecate Pa'l Norte 2024 ( Vida en rosa Tour, Monterrey )"
+            },
+            {
+              "id": "yt-4Nal93svFBM",
+              "videoId": "4Nal93svFBM",
+              "src": "assets/img/casos/etics-live/yt-4Nal93svFBM-640.webp",
+              "full": "assets/img/casos/etics-live/yt-4Nal93svFBM-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Fuerza Regida ft. Calle 24 - Qué onda · Tecate Pa'l Norte 2024 ( Pero no te enamores Tour )",
+              "caption": "Fuerza Regida ft. Calle 24 - Qué onda · Tecate Pa'l Norte 2024 ( Pero no te enamores Tour )"
+            },
+            {
+              "id": "yt-aEJIV_FA0xM",
+              "videoId": "aEJIV_FA0xM",
+              "src": "assets/img/casos/etics-live/yt-aEJIV_FA0xM-640.webp",
+              "full": "assets/img/casos/etics-live/yt-aEJIV_FA0xM-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Mario Bautista ft. Bobby Pulido - Desvelado + Mujer maravilla · Tecate Pa'l Norte 2024 (Oasis, Mty )",
+              "caption": "Mario Bautista ft. Bobby Pulido - Desvelado + Mujer maravilla · Tecate Pa'l Norte 2024 (Oasis, Mty )"
+            },
+            {
+              "id": "yt-RQqDorzWkuo",
+              "videoId": "RQqDorzWkuo",
+              "src": "assets/img/casos/etics-live/yt-RQqDorzWkuo-640.webp",
+              "full": "assets/img/casos/etics-live/yt-RQqDorzWkuo-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Moderatto ft. Danna Paola - Sólo quédate en silencio · Tecate Pa'l Norte 2022 (Sorpresa)",
+              "caption": "Moderatto ft. Danna Paola - Sólo quédate en silencio · Tecate Pa'l Norte 2022 (Sorpresa)"
+            },
+            {
+              "id": "yt-17CY1yyrF1c",
+              "videoId": "17CY1yyrF1c",
+              "src": "assets/img/casos/etics-live/yt-17CY1yyrF1c-640.webp",
+              "full": "assets/img/casos/etics-live/yt-17CY1yyrF1c-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Big Boy - Mis ojos lloran por ti · Tecate Pa'l Norte 2022 ( Sorpresa )",
+              "caption": "Big Boy - Mis ojos lloran por ti · Tecate Pa'l Norte 2022 ( Sorpresa )"
+            },
+            {
+              "id": "yt-WM5VI6nGdLE",
+              "videoId": "WM5VI6nGdLE",
+              "src": "assets/img/casos/etics-live/yt-WM5VI6nGdLE-640.webp",
+              "full": "assets/img/casos/etics-live/yt-WM5VI6nGdLE-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Enjambre - Dulce soledad · Tecate Pa'l Norte 2024 ( Show eléctrico, Monterrey )",
+              "caption": "Enjambre - Dulce soledad · Tecate Pa'l Norte 2024 ( Show eléctrico, Monterrey )"
+            },
+            {
+              "id": "yt-HQEbOrwxMjQ",
+              "videoId": "HQEbOrwxMjQ",
+              "src": "assets/img/casos/etics-live/yt-HQEbOrwxMjQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-HQEbOrwxMjQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Gloria Gaynor - I will survive · Tecate Pa'l Norte 2023 ( Sorpresa )",
+              "caption": "Gloria Gaynor - I will survive · Tecate Pa'l Norte 2023 ( Sorpresa )"
+            },
+            {
+              "id": "yt-2GqXlcc9fSU",
+              "videoId": "2GqXlcc9fSU",
+              "src": "assets/img/casos/etics-live/yt-2GqXlcc9fSU-640.webp",
+              "full": "assets/img/casos/etics-live/yt-2GqXlcc9fSU-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Peso Pluma - Zapata · Tecate Pa'l Norte 2024 ( Monterrey, México )",
+              "caption": "Peso Pluma - Zapata · Tecate Pa'l Norte 2024 ( Monterrey, México )"
+            },
+            {
+              "id": "yt-N09AI4dCBsQ",
+              "videoId": "N09AI4dCBsQ",
+              "src": "assets/img/casos/etics-live/yt-N09AI4dCBsQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-N09AI4dCBsQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Capital Cities - Safe and sound · Tecate Pa'l Norte 2024 ( Sorpresa, Monterrey, México )",
+              "caption": "Capital Cities - Safe and sound · Tecate Pa'l Norte 2024 ( Sorpresa, Monterrey, México )"
+            },
+            {
+              "id": "yt-skx6qjCb8ME",
+              "videoId": "skx6qjCb8ME",
+              "src": "assets/img/casos/etics-live/yt-skx6qjCb8ME-640.webp",
+              "full": "assets/img/casos/etics-live/yt-skx6qjCb8ME-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Garibaldi - La ventanita · Pa'l Norte 2018",
+              "caption": "Garibaldi - La ventanita · Pa'l Norte 2018"
+            },
+            {
+              "id": "yt-g-LfvdSdoMc",
+              "videoId": "g-LfvdSdoMc",
+              "src": "assets/img/casos/etics-live/yt-g-LfvdSdoMc-640.webp",
+              "full": "assets/img/casos/etics-live/yt-g-LfvdSdoMc-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Macario Martínez - ¿Qué somos hoy?, Sueña lindo corazón · Pa'l Norte 2025 ( Acústico, Monterrey )",
+              "caption": "Macario Martínez - ¿Qué somos hoy?, Sueña lindo corazón · Pa'l Norte 2025 ( Acústico, Monterrey )"
+            }
+          ]
+        },
+        {
+          "kind": "videos",
+          "topic": "Machaca, Retro y más festivales",
+          "items": [
+            {
+              "id": "yt-44BShrehbTQ",
+              "videoId": "44BShrehbTQ",
+              "src": "assets/img/casos/etics-live/yt-44BShrehbTQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-44BShrehbTQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Belinda - Popurri de telenovelas ( Sapito, cómplices al rescate, amigos x siempre ) · Machaca 2022",
+              "caption": "Belinda - Popurri de telenovelas ( Sapito, cómplices al rescate, amigos x siempre ) · Machaca 2022"
+            },
+            {
+              "id": "yt-MPMgBQISshQ",
+              "videoId": "MPMgBQISshQ",
+              "src": "assets/img/casos/etics-live/yt-MPMgBQISshQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-MPMgBQISshQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Belinda ft. Jay de la Cueva - Muriendo lento · Machaca 2022 ( Monterrey, México )",
+              "caption": "Belinda ft. Jay de la Cueva - Muriendo lento · Machaca 2022 ( Monterrey, México )"
+            },
+            {
+              "id": "yt-5KxKSwwWSvQ",
+              "videoId": "5KxKSwwWSvQ",
+              "src": "assets/img/casos/etics-live/yt-5KxKSwwWSvQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-5KxKSwwWSvQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Los Yonic's - Palabras tristes · Festival retro 2019",
+              "caption": "Los Yonic's - Palabras tristes · Festival retro 2019"
+            },
+            {
+              "id": "yt-tdTw0g_1e0A",
+              "videoId": "tdTw0g_1e0A",
+              "src": "assets/img/casos/etics-live/yt-tdTw0g_1e0A-640.webp",
+              "full": "assets/img/casos/etics-live/yt-tdTw0g_1e0A-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Liberación - Ese loco soy yo · Festival Retro 2022 ( La Mejor FM )",
+              "caption": "Liberación - Ese loco soy yo · Festival Retro 2022 ( La Mejor FM )"
+            },
+            {
+              "id": "yt-8IYHqitGYCI",
+              "videoId": "8IYHqitGYCI",
+              "src": "assets/img/casos/etics-live/yt-8IYHqitGYCI-640.webp",
+              "full": "assets/img/casos/etics-live/yt-8IYHqitGYCI-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Pato Machete & Fermín IV - ¿Comprendes, Mendes? · OktoberFest 2023 ( Parque Fundidora, Monterrey )",
+              "caption": "Pato Machete & Fermín IV - ¿Comprendes, Mendes? · OktoberFest 2023 ( Parque Fundidora, Monterrey )"
+            },
+            {
+              "id": "yt-Tq20Gwm0zV4",
+              "videoId": "Tq20Gwm0zV4",
+              "src": "assets/img/casos/etics-live/yt-Tq20Gwm0zV4-640.webp",
+              "full": "assets/img/casos/etics-live/yt-Tq20Gwm0zV4-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Lenny Tavárez - Hola + Elegí · Dale MiXX ( Monterrey, México )",
+              "caption": "Lenny Tavárez - Hola + Elegí · Dale MiXX ( Monterrey, México )"
+            },
+            {
+              "id": "yt-YI3OD4WqbxQ",
+              "videoId": "YI3OD4WqbxQ",
+              "src": "assets/img/casos/etics-live/yt-YI3OD4WqbxQ-640.webp",
+              "full": "assets/img/casos/etics-live/yt-YI3OD4WqbxQ-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Farruko - Pepas · La 167 Tour ( Power Fest @ Monterrey )",
+              "caption": "Farruko - Pepas · La 167 Tour ( Power Fest @ Monterrey )"
+            },
+            {
+              "id": "yt-qhVrthlXaPA",
+              "videoId": "qhVrthlXaPA",
+              "src": "assets/img/casos/etics-live/yt-qhVrthlXaPA-640.webp",
+              "full": "assets/img/casos/etics-live/yt-qhVrthlXaPA-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Diego El Cigala - Amar y vivir · Festival Santa Lucía 2023 ( Canta a México, Monterrey )",
+              "caption": "Diego El Cigala - Amar y vivir · Festival Santa Lucía 2023 ( Canta a México, Monterrey )"
+            },
+            {
+              "id": "yt-7HUxLwmcfIs",
+              "videoId": "7HUxLwmcfIs",
+              "src": "assets/img/casos/etics-live/yt-7HUxLwmcfIs-640.webp",
+              "full": "assets/img/casos/etics-live/yt-7HUxLwmcfIs-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Liberación - Con el corazón en la mano · Festival Retro 2022 ( La Mejor FM, Monterrey )",
+              "caption": "Liberación - Con el corazón en la mano · Festival Retro 2022 ( La Mejor FM, Monterrey )"
+            }
+          ]
+        },
+        {
+          "kind": "videos",
+          "topic": "Giras en Monterrey",
+          "items": [
+            {
+              "id": "yt-Ic9EsQTtg7k",
+              "videoId": "Ic9EsQTtg7k",
+              "src": "assets/img/casos/etics-live/yt-Ic9EsQTtg7k-640.webp",
+              "full": "assets/img/casos/etics-live/yt-Ic9EsQTtg7k-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Joe López y Grupo Mazz - Vuelve conmigo · En concierto 2025 ( Arena Monterrey, México )",
+              "caption": "Joe López y Grupo Mazz - Vuelve conmigo · En concierto 2025 ( Arena Monterrey, México )"
+            },
+            {
+              "id": "yt-yxF2da8tEF8",
+              "videoId": "yxF2da8tEF8",
+              "src": "assets/img/casos/etics-live/yt-yxF2da8tEF8-640.webp",
+              "full": "assets/img/casos/etics-live/yt-yxF2da8tEF8-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Duelo con Mariachi: Corrido de Monterrey, Te compro · Mi realidad Tour ( Arena Monterrey, México )",
+              "caption": "Duelo con Mariachi: Corrido de Monterrey, Te compro · Mi realidad Tour ( Arena Monterrey, México )"
+            },
+            {
+              "id": "yt-DTX_QB1eZxs",
+              "videoId": "DTX_QB1eZxs",
+              "src": "assets/img/casos/etics-live/yt-DTX_QB1eZxs-640.webp",
+              "full": "assets/img/casos/etics-live/yt-DTX_QB1eZxs-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Marco Antonio Solís - No puedo olvidarla · Gratitud Tour ( Monterrey, México )",
+              "caption": "Marco Antonio Solís - No puedo olvidarla · Gratitud Tour ( Monterrey, México )"
+            },
+            {
+              "id": "yt-7aeETuF1UAE",
+              "videoId": "7aeETuF1UAE",
+              "src": "assets/img/casos/etics-live/yt-7aeETuF1UAE-640.webp",
+              "full": "assets/img/casos/etics-live/yt-7aeETuF1UAE-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Bryan Adams ft Estilo Sin Limite - Ando bien pedo · Roll with the punches Tour (Monterrey, México)",
+              "caption": "Bryan Adams ft Estilo Sin Limite - Ando bien pedo · Roll with the punches Tour (Monterrey, México)"
+            },
+            {
+              "id": "yt-Kmi27co_SMU",
+              "videoId": "Kmi27co_SMU",
+              "src": "assets/img/casos/etics-live/yt-Kmi27co_SMU-640.webp",
+              "full": "assets/img/casos/etics-live/yt-Kmi27co_SMU-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Rosalía - Con altura · Motomami World Tour ( Monterrey, México )",
+              "caption": "Rosalía - Con altura · Motomami World Tour ( Monterrey, México )"
+            },
+            {
+              "id": "yt-9ohQ48hZkBk",
+              "videoId": "9ohQ48hZkBk",
+              "src": "assets/img/casos/etics-live/yt-9ohQ48hZkBk-640.webp",
+              "full": "assets/img/casos/etics-live/yt-9ohQ48hZkBk-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "CA7RIEL & Paco Amoroso - Hasta Jesús tuvo un mal día · Free spirits World Tour (Monterrey, México)",
+              "caption": "CA7RIEL & Paco Amoroso - Hasta Jesús tuvo un mal día · Free spirits World Tour (Monterrey, México)"
+            },
+            {
+              "id": "yt-uZd5Ql0a5C8",
+              "videoId": "uZd5Ql0a5C8",
+              "src": "assets/img/casos/etics-live/yt-uZd5Ql0a5C8-640.webp",
+              "full": "assets/img/casos/etics-live/yt-uZd5Ql0a5C8-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Rivers se confiesa con Rosalía · LUX Tour ( Arena Monterrey, México )",
+              "caption": "Rivers se confiesa con Rosalía · LUX Tour ( Arena Monterrey, México )"
+            },
+            {
+              "id": "yt-hdQSqP791M0",
+              "videoId": "hdQSqP791M0",
+              "src": "assets/img/casos/etics-live/yt-hdQSqP791M0-640.webp",
+              "full": "assets/img/casos/etics-live/yt-hdQSqP791M0-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Tatiana ft. 2000's x Siempre: Medley telenovelas infantiles · 2000s Pop Tour ( Arena Monterrey )",
+              "caption": "Tatiana ft. 2000's x Siempre: Medley telenovelas infantiles · 2000s Pop Tour ( Arena Monterrey )"
+            },
+            {
+              "id": "yt-nDr-hxGwpH8",
+              "videoId": "nDr-hxGwpH8",
+              "src": "assets/img/casos/etics-live/yt-nDr-hxGwpH8-640.webp",
+              "full": "assets/img/casos/etics-live/yt-nDr-hxGwpH8-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Irán Castillo ft. Litzy - Yo por él · 90's Pop Tour",
+              "caption": "Irán Castillo ft. Litzy - Yo por él · 90's Pop Tour"
+            },
+            {
+              "id": "yt-G0zNyJI1Gow",
+              "videoId": "G0zNyJI1Gow",
+              "src": "assets/img/casos/etics-live/yt-G0zNyJI1Gow-640.webp",
+              "full": "assets/img/casos/etics-live/yt-G0zNyJI1Gow-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Kim Loaiza - Apaga la luz · Bye Bye Tour ( Monterrey, México )",
+              "caption": "Kim Loaiza - Apaga la luz · Bye Bye Tour ( Monterrey, México )"
+            },
+            {
+              "id": "yt-qQVFXxwWnqI",
+              "videoId": "qQVFXxwWnqI",
+              "src": "assets/img/casos/etics-live/yt-qQVFXxwWnqI-640.webp",
+              "full": "assets/img/casos/etics-live/yt-qQVFXxwWnqI-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "Bely y Beto - Siempre amigos · El gran show en vivo ( Monterrey, México )",
+              "caption": "Bely y Beto - Siempre amigos · El gran show en vivo ( Monterrey, México )"
+            },
+            {
+              "id": "yt-2UW2tkDckFg",
+              "videoId": "2UW2tkDckFg",
+              "src": "assets/img/casos/etics-live/yt-2UW2tkDckFg-640.webp",
+              "full": "assets/img/casos/etics-live/yt-2UW2tkDckFg-640.webp",
+              "width": 640,
+              "height": 360,
+              "alt": "LMT a Arturo Carmona: \"Te quedó grande la yegua\" · En concierto ( Auditorio Cumbres, Monterrey )",
+              "caption": "LMT a Arturo Carmona: \"Te quedó grande la yegua\" · En concierto ( Auditorio Cumbres, Monterrey )"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "media": [
+      {
+        "type": "image",
+        "id": "yt-T1fUPQ3YG2g",
+        "src": "assets/img/casos/etics-live/yt-T1fUPQ3YG2g-640.webp",
+        "full": "assets/img/casos/etics-live/yt-T1fUPQ3YG2g-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "type": "image",
+        "id": "yt-AMB1-i9UjZo",
+        "src": "assets/img/casos/etics-live/yt-AMB1-i9UjZo-640.webp",
+        "full": "assets/img/casos/etics-live/yt-AMB1-i9UjZo-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "type": "image",
+        "id": "yt-fDEViYexvSA",
+        "src": "assets/img/casos/etics-live/yt-fDEViYexvSA-640.webp",
+        "full": "assets/img/casos/etics-live/yt-fDEViYexvSA-640.webp",
+        "width": 640,
+        "height": 360
+      },
+      {
+        "type": "image",
+        "id": "yt-41SvLBfd7C8",
+        "src": "assets/img/casos/etics-live/yt-41SvLBfd7C8-640.webp",
+        "full": "assets/img/casos/etics-live/yt-41SvLBfd7C8-640.webp",
+        "width": 480,
+        "height": 270
+      },
+      {
+        "type": "image",
+        "id": "yt-9iPkxfo4hXY",
+        "src": "assets/img/casos/etics-live/yt-9iPkxfo4hXY-640.webp",
+        "full": "assets/img/casos/etics-live/yt-9iPkxfo4hXY-640.webp",
+        "width": 640,
+        "height": 360
+      }
+    ]
+  }
+}

@@ -304,3 +304,17 @@ test('sin marcas o con una sola no hay filtro por marca', () => {
   const one = renderCase({ ...data, brands: [{ id: 'bmw', label: 'BMW' }], chapters: [{ ...data.chapters[0], groups: [{ kind: 'fotos', topic: 'Solo', brand: 'bmw', items: [item('b1')] }] }] });
   assert.doesNotMatch(one, /c-lens--brand/);
 });
+
+test('los videos de YouTube salen como miniatura con boton de reproducir, sin cargar el reproductor', () => {
+  const video = item('yt-abcdefghijk', { videoId: 'abcdefghijk', caption: 'Banda: Tema | México Metal Fest', width: 640, height: 360 });
+  const page = renderCase({
+    ...data,
+    chapters: [{ ...data.chapters[0], groups: [{ kind: 'videos', topic: 'México Metal Fest', items: [video] }, ...data.chapters[0].groups] }],
+  });
+  const group = page.match(/<div class="c-gallery c-gallery--videos"[\s\S]*?<\/div>\n/)[0];
+  assert.match(group, /data-kind="videos" data-format="grid"/);
+  assert.match(group, /<button class="c-gallery__play js-play" type="button" data-video="abcdefghijk"/);
+  assert.match(group, /aria-label="Reproducir: Banda: Tema \| México Metal Fest"/);
+  assert.doesNotMatch(page, /<iframe|youtube\.com|youtube-nocookie|ytimg/, 'el reproductor y YouTube solo se tocan al hacer clic (case.js)');
+  assert.match(page, />Videos</, 'con otros tipos hay boton de vista para los videos');
+});

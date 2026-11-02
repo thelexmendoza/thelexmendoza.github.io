@@ -5,8 +5,8 @@ import fs from 'node:fs';
 // solo afectan a las imagenes, nunca al texto.
 
 const PREFIX = '../../';
-const LENS_LABELS = { disenos: 'Diseños', fotos: 'Fotos', iconos: 'Iconos' };
-const LENS_ORDER = ['disenos', 'fotos', 'iconos'];
+const LENS_LABELS = { disenos: 'Diseños', fotos: 'Fotos', videos: 'Videos', iconos: 'Iconos' };
+const LENS_ORDER = ['disenos', 'fotos', 'videos', 'iconos'];
 
 const esc = (value) =>
   String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -83,8 +83,27 @@ function renderSites(group) {
 
 const brandAttr = (group) => (group.brand ? ` data-brand="${esc(group.brand)}"` : '');
 
+// Videos de YouTube: miniatura con boton de reproducir. El reproductor (youtube-nocookie) solo se carga al tocarla.
+function renderVideos(group) {
+  const slides = group.items
+    .map((item) => {
+      const label = esc(item.caption ?? item.alt);
+      return `<figure class="c-gallery__slide c-gallery__slide--video" data-reveal="card"><button class="c-gallery__play js-play" type="button" data-video="${esc(item.videoId)}" data-title="${label}" aria-label="Reproducir: ${label}">${img(item)}<span class="c-gallery__play-icon" aria-hidden="true"></span></button>${
+        item.caption ? `<figcaption>${esc(item.caption)}</figcaption>` : ''
+      }</figure>`;
+    })
+    .join('\n      ');
+  return `<div class="c-gallery c-gallery--videos" data-kind="videos" data-format="grid"${brandAttr(group)} data-gallery>
+    ${head(group)}
+    <div class="c-gallery__track" tabindex="0" role="group" aria-label="${esc(group.topic)}">
+      ${slides}
+    </div>
+  </div>`;
+}
+
 function renderGroup(group) {
   if (group.kind === 'sitios') return renderSites(group);
+  if (group.kind === 'videos') return renderVideos(group);
   const kind = lensOf(group.kind);
   if (group.kind === 'iconos') {
     const items = group.items.map((item) => `<li class="c-icons__item" title="${esc(item.alt)}">${img(item)}</li>`).join('\n      ');

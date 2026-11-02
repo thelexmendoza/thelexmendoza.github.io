@@ -46,6 +46,19 @@ lensButtons.forEach((button) => {
   });
 });
 
+// Videos de YouTube: el reproductor se carga al tocar la miniatura (youtube-nocookie, sin cookies hasta entonces).
+document.addEventListener('click', (event) => {
+  const button = event.target.closest('.js-play');
+  if (!button) return;
+  const frame = document.createElement('iframe');
+  frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(button.dataset.video)}?autoplay=1&rel=0`;
+  frame.title = button.dataset.title ?? 'Video de YouTube';
+  frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+  frame.allowFullscreen = true;
+  frame.className = 'c-gallery__frame';
+  button.replaceWith(frame);
+});
+
 // Marca: oculta las galerias de otra marca (las que no tienen marca siempre se ven).
 const brandButtons = [...document.querySelectorAll('[data-brand-filter]')];
 brandButtons.forEach((button) => {

@@ -22,8 +22,8 @@ test('la tarjeta de Valtre trae cinco imagenes de VALKYRIA decorativas y sin tex
   assert.match(card, /data-media/);
 });
 
-test('solo las tarjetas con imagenes (Valtre, CiiSA | PSW, Daniel Ábrego, Motociclismo y BMW / MINI) cambian al pasar el cursor', () => {
-  assert.equal((home.match(/c-case-card__media/g) ?? []).length, 5);
+test('solo las tarjetas con imagenes (Valtre, CiiSA | PSW, Daniel Ábrego, Motociclismo, BMW / MINI y Etics Live) cambian al pasar el cursor', () => {
+  assert.equal((home.match(/c-case-card__media/g) ?? []).length, 6);
 });
 
 test('al pasar el cursor, al enfocar o al llegar al centro en movil, aparece la imagen con su velo', () => {
@@ -208,4 +208,27 @@ test('la tarjeta de BMW / MINI abre su caso y repite el fondo del hero (imagenes
   const count = data.card.media.length === 5 ? '' : ` data-count="${data.card.media.length}"`;
   assert.equal(media, `<span class="c-case-card__media" aria-hidden="true"${count}>\n${renderCardMedia(data.card.media)}\n                </span>`);
   assert.ok(fs.existsSync('casos/bmw-mini/index.html'));
+});
+
+test("la tarjeta de Etic's Live abre su caso y repite el fondo del hero (miniaturas del canal) en el mismo orden", () => {
+  const card = home.match(/<a class="c-case-card" data-case="etics"[\s\S]*?<\/a>/)[0];
+  assert.match(card, /href="casos\/etics-live\/"/);
+  assert.doesNotMatch(card, /Próximamente|aria-disabled|data-soon/);
+  assert.match(card, /<span class="c-case-card__line c-case-card__title"><span class="c-case-card__word">Etic's Live<\/span><\/span>/);
+  assert.match(card, /class="c-case-card__cta">Ver caso →/);
+  assert.match(card, /--vt-hero: hero-etics; --vt-title: title-etics/);
+  assert.match(card, /data-bar="single"/);
+  const data = JSON.parse(fs.readFileSync('data/casos/etics-live.json', 'utf8'));
+  const media = card.match(/<span class="c-case-card__media"[\s\S]*?\n {16}<\/span>/)[0];
+  const count = data.card.media.length === 5 ? '' : ` data-count="${data.card.media.length}"`;
+  assert.equal(media, `<span class="c-case-card__media" aria-hidden="true"${count}>\n${renderCardMedia(data.card.media)}\n                </span>`);
+  assert.ok(fs.existsSync('casos/etics-live/index.html'));
+});
+
+test("el caso de Etic's Live es de videos: cada uno es una miniatura que carga el reproductor al tocarla", () => {
+  const page = fs.readFileSync('casos/etics-live/index.html', 'utf8');
+  assert.match(page, /c-gallery--videos/);
+  assert.ok((page.match(/class="c-gallery__play js-play"/g) ?? []).length >= 30);
+  assert.doesNotMatch(page, /<iframe|youtube\.com|youtube-nocookie|ytimg/);
+  assert.doesNotMatch(page, /class="c-lens"/, 'un solo tipo de pieza: no hay selector de vista');
 });

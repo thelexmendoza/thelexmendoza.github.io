@@ -122,7 +122,49 @@ async function processSite(site, group, dirs, failed) {
   return item;
 }
 
+// Miniatura de un video de YouTube: se baja una vez al construir (no se enlaza a YouTube desde la pagina).
+async function processVideo(video, dirs, failed) {
+  const rel = (name) => `${dirs.rel}/${name}`;
+  fs.mkdirSync(dirs.abs, { recursive: true });
+  const out = path.join(dirs.abs, `yt-${video.id}-640.webp`);
+  if (!fs.existsSync(out)) {
+    let buffer;
+    for (const name of ['maxresdefault', 'hqdefault']) {
+      const response = await fetch(`https://i.ytimg.com/vi/${video.id}/${name}.jpg`);
+      if (response.ok) {
+        buffer = Buffer.from(await response.arrayBuffer());
+        break;
+      }
+    }
+    if (!buffer) {
+      failed.push(`video:${video.id}`);
+      return null;
+    }
+    // hqdefault trae franjas negras arriba y abajo: se recorta a 16:9 desde el centro.
+    const { width, height } = await sharp(buffer).metadata();
+    const target = Math.round((width * 9) / 16);
+    const top = Math.max(0, Math.round((height - target) / 2));
+    await sharp(buffer).extract({ left: 0, top, width, height: Math.min(target, height) }).resize({ width: 640, withoutEnlargement: true }).webp({ quality: 72 }).toFile(out);
+  }
+  const { width, height } = await sharp(out).metadata();
+  const alt = video.title;
+  return { id: `yt-${video.id}`, videoId: video.id, src: rel(`yt-${video.id}-640.webp`), full: rel(`yt-${video.id}-640.webp`), width, height, alt, caption: video.caption ?? video.title };
+}
+
 async function processGroup(group, dirs, failed, generic) {
+  if (group.kind === 'videos') {
+    const items = [];
+    for (const video of group.videos) {
+      try {
+        const item = await processVideo(video, dirs, failed);
+        if (item) items.push(item);
+      } catch {
+        failed.push(`video:${video.id}`);
+      }
+    }
+    const { videos, ...rest } = group;
+    return { ...rest, items };
+  }
   if (group.kind === 'sitios') {
     const items = [];
     for (const site of group.sites) {
