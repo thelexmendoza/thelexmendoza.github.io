@@ -1,0 +1,40 @@
+@use "../1-tools/functions" as fn;
+
+// Aviso al salir de una página (leave.js pone is-leaving en <html> y en el enlace pulsado): una barra de carga abajo,
+// cursor de espera y el enlace atenuado. La barra solo avanza con movimiento permitido; con menos movimiento queda fija.
+html.is-leaving {
+  cursor: progress;
+
+  &::after {
+    content: "";
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 30;
+    block-size: 3px;
+    background: var(--color-accent);
+    transform-origin: left;
+    transform: scaleX(0.55);
+    pointer-events: none;
+  }
+}
+
+a.is-leaving {
+  opacity: 0.78;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.is-leaving::after {
+    transform: scaleX(0.04);
+    animation: c-leaving 6s cubic-bezier(0.1, 0.7, 0.3, 1) forwards;
+  }
+
+  a.is-leaving {
+    transition: opacity 0.2s ease;
+  }
+}
+
+@keyframes c-leaving {
+  to {
+    transform: scaleX(0.92);
+  }
+}

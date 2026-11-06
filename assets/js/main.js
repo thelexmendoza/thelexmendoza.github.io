@@ -4,6 +4,7 @@ import { staggerDelay } from './reveal.js';
 import { setupCardVideos, setupHeroVideos } from './media.js';
 import { setupHeroFx } from './hero-fx.js';
 import { setupOrnaments } from './ornaments.js';
+import { setupLeave } from './leave.js';
 
 // Avisa al script de la cabecera que este modulo cargo: si no llega, ese script muestra todo.
 window.__revealReady = true;
@@ -153,3 +154,4 @@ setupHeroVideos();
 setupCardVideos();
 setupHeroFx();
 setupOrnaments();
+setupLeave();

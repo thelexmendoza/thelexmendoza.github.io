@@ -249,7 +249,20 @@ ${data.chapters
     <link rel="apple-touch-icon" href="${PREFIX}assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="${PREFIX}site.webmanifest">
     <meta name="theme-color" content="#0a0a0a">
+    <script type="speculationrules">
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[data-soon], [aria-disabled='true'], [target=_blank]"}}]},"eagerness":"moderate"}]}
+    </script>
     <link rel="stylesheet" href="${PREFIX}assets/css/main.min.css">
+    <link rel="modulepreload" href="${PREFIX}assets/js/theme.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/scrollspy.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/reveal.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/media.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/sky.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/hero-fx.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/reticle.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/ornaments.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/decode.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/leave.js">
     <script type="module" src="${PREFIX}assets/js/main.js"></script>
   </head>
   <body>
