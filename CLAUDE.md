@@ -91,3 +91,12 @@ IBM Plex completa, alojada en el sitio (`npm run fonts` copia los `woff2` latino
 - **Este sitio y lo que Lex y Claude hacen en git y GitHub es coautorado:** los commits y PR conservan la línea `Co-Authored-By` de Claude.
 - **Entregables a clientes: solo el ORCID de Lex**, sin coautoría de Claude (ver `tpl-express-codigo`).
 - Al crear metadatos de un proyecto (README, `CITATION.cff`, `package.json`) se pone a Lex como autor con su ORCID.
+
+## Páginas legales
+
+- **Aviso de privacidad y política de cookies** viven en `/privacidad/` y `/cookies/`. El texto está en `scripts/legal/privacidad.mjs` y `scripts/legal/cookies.mjs`; **no se editan los HTML a mano**: `npm run legal` los genera (con la cabecera de `index.html`) y una prueba falla si están desactualizados.
+- El pie de todas las páginas enlaza ambas. Al cambiar el pie de `index.html` hay que regenerar los casos (`npm run case -- private/content/<caso>/caso.plan.json --sin-imagenes`).
+- **La política de cookies debe coincidir con lo que el sitio guarda**: hoy solo `theme` (localStorage) y, en el formulario, `landing-express-borrador`. Una prueba revisa que cada clave de almacenamiento del sitio esté en la política y que no se escriban cookies.
+- **Antes de agregar analítica o el píxel de Meta:** publicar el banner de aceptación (aceptar, rechazar y configurar con el mismo peso, nada premarcado, sin cargar nada antes de aceptar) y actualizar ambos textos. La lógica ya existe en `tpl-express-codigo` (`src/brief/consentimiento.js`).
+- **Datos que nunca van en estas páginas:** el RFC y cualquier dato de clientes. El domicilio sí va, porque la ley lo pide.
+- Los borradores y notas de revisión viven en `private/estrategia/buen-fin-549/` (`12-` y `13-`).

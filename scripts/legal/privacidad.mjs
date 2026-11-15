@@ -1,0 +1,118 @@
+// Aviso de privacidad (integral). Texto estático: se escribe aquí y scripts/render-legal.mjs arma la página.
+// Si cambia el servicio (por ejemplo, empiezas a facturar o a usar analítica), se actualiza este texto y la fecha.
+
+export const privacidad = {
+  slug: 'privacidad',
+  eyebrow: 'Aviso de privacidad',
+  title: 'Aviso de privacidad',
+  word: 'privacidad',
+  description: 'Quién trata tus datos personales, cuáles recabo, para qué los uso, con quién los comparto y cómo ejercer tus derechos ARCO.',
+  updated: '15 de noviembre de 2026',
+  lead: 'Te explico con claridad qué datos recabo cuando me escribes o armas tu pedido, para qué los uso y cómo puedes pedirme que los corrija o los elimine.',
+  body: `
+<h2>1. Quién es el responsable de tus datos</h2>
+<p><strong>Manuel Alejandro Mendoza León</strong>, con nombre comercial <strong>Lex Mendoza</strong> y la marca <strong>Landing Express</strong> (en adelante, «yo»), con domicilio en Fresnos 931, Col. Hacienda Los Morales, San Nicolás de los Garza, Nuevo León, C. P. 66495, es el responsable del tratamiento de tus datos personales.</p>
+<p>Contacto para este aviso y para tus derechos: <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>. Sitio: thelexmendoza.github.io</p>
+<p>Este aviso aplica a lo que me compartes al escribirme por WhatsApp o correo y al formulario «Arma tu Landing Express».</p>
+
+<h2>2. Qué datos personales recabo</h2>
+<div class="c-legal__scroll">
+<table class="c-legal__table">
+<thead><tr><th scope="col">Tipo</th><th scope="col">Datos</th></tr></thead>
+<tbody>
+<tr><th scope="row">Contacto</th><td>Tu nombre, tu número de WhatsApp y tu correo electrónico.</td></tr>
+<tr><th scope="row">Tu negocio</th><td>Nombre del negocio, giro y ciudad.</td></tr>
+<tr><th scope="row">Tu marca y tus preferencias</th><td>Los colores y las palabras de voz que eliges, y las marcas, sitios web o perfiles de redes sociales (enlaces, usuarios o nombres) que me compartes como referencia o como cosas que <em>no</em> quieres.</td></tr>
+<tr><th scope="row">Tus archivos</th><td>Tu logotipo, tus imágenes y sus descripciones. Si en ellas aparecen personas, también se tratan sus imágenes (ver sección 8).</td></tr>
+<tr><th scope="row">Tu pedido</th><td>Folio, fecha, estado, cupo reservado y los consentimientos que aceptaste.</td></tr>
+<tr><th scope="row">Datos técnicos</th><td>Una huella irreversible de tu dirección IP (no guardo la IP en sí), el número de intentos de envío para prevenir abusos y la verificación anti-robots de Cloudflare Turnstile, que puede procesar datos de tu navegador y tu IP.</td></tr>
+<tr><th scope="row">Pago</th><td><strong>El formulario no pide datos de tarjeta.</strong> El pago se hace por transferencia (SPEI) a mi cuenta; por ahora no uso un procesador de pagos. El comprobante que me mandes por WhatsApp se trata como dato de tu pedido.</td></tr>
+<tr><th scope="row">Facturación</th><td><strong>Por ahora no emito facturas</strong>, así que no recabo datos fiscales. Si en el futuro lo hago, actualizaré este aviso y te lo diré antes de pedirte esos datos.</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>No recabo datos personales sensibles</strong> (salud, origen, creencias, vida sexual, datos biométricos, entre otros) y te pido que no los incluyas en tus mensajes, descripciones ni archivos. Este servicio <strong>no está dirigido a menores de 18 años</strong>.</p>
+
+<h2>3. Para qué uso tus datos</h2>
+<h3>Finalidades necesarias</h3>
+<p>Sin ellas no puedo darte el servicio:</p>
+<ol>
+<li>Recibir tu pedido, reservar tu cupo y llevar el control de su estado.</li>
+<li>Contactarte por WhatsApp o correo para confirmar el pedido, darte los datos de pago, pedirte tu contenido, mostrarte avances y entregarte tu página.</li>
+<li>Producir, publicar y darte soporte sobre tu página, incluida la ronda de ajustes y los cambios menores durante 30 días.</li>
+<li>Cobrar, confirmar tu pago y cumplir mis obligaciones fiscales y legales.</li>
+<li>Proteger el servicio contra abusos y fraude (límite de uso y verificación anti-robots).</li>
+</ol>
+<h3>Finalidades voluntarias</h3>
+<p>Puedes decir que no y el servicio no cambia:</p>
+<ol start="6">
+<li>Enviarte promociones, novedades y ofertas de otros servicios.</li>
+<li>Mostrar tu proyecto terminado como caso de mi trabajo, con tu permiso por escrito.</li>
+<li>Invitarte a dejar una reseña o responder una encuesta de satisfacción.</li>
+</ol>
+<p>Estas tres finalidades <strong>solo se activan si marcas su casilla</strong>, que <strong>no viene marcada</strong>. Puedes retirar tu consentimiento en cualquier momento escribiendo a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
+
+<h2>4. Tu consentimiento</h2>
+<p>Al marcar «Acepto el aviso de privacidad» y enviar tu pedido, aceptas el tratamiento de tus datos para las finalidades necesarias. Para las voluntarias, tu consentimiento es la casilla aparte. Si quiero usar tus datos para una finalidad distinta a las de este aviso, te pediré consentimiento de nuevo.</p>
+
+<h2>5. Con quién se comparten tus datos</h2>
+<p><strong>No vendo tus datos ni los comparto con terceros con fines propios.</strong> Para poder darte el servicio uso proveedores que tratan datos <strong>por mi cuenta y bajo mis instrucciones</strong>:</p>
+<div class="c-legal__scroll">
+<table class="c-legal__table">
+<thead><tr><th scope="col">Proveedor</th><th scope="col">Para qué</th><th scope="col">Qué datos ve</th></tr></thead>
+<tbody>
+<tr><th scope="row">Supabase</th><td>Base de datos y almacenamiento privado de tu pedido y tus archivos (servidores en Estados Unidos).</td><td>Los de las secciones 2 y 3.</td></tr>
+<tr><th scope="row">Cloudflare (Turnstile)</th><td>Distinguir personas de robots al enviar el formulario.</td><td>Datos técnicos de tu navegador y tu IP.</td></tr>
+<tr><th scope="row">GitHub Pages y Surge</th><td>Alojar el sitio y las demostraciones.</td><td>Datos técnicos de conexión de quien visita.</td></tr>
+<tr><th scope="row">WhatsApp (Meta)</th><td>Comunicarme contigo.</td><td>Lo que me escribes por ahí.</td></tr>
+<tr><th scope="row">Google (Gmail)</th><td>Correos de confirmación y atención a solicitudes de derechos.</td><td>Tu correo y el contenido de los mensajes.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Estos proveedores pueden guardar datos fuera de México. Solo entregaré tus datos a una autoridad cuando una ley o una orden lo exija.</p>
+
+<h2>6. Tus derechos: acceso, rectificación, cancelación y oposición (ARCO)</h2>
+<p>Tienes derecho a:</p>
+<ul>
+<li><strong>Acceder</strong> a tus datos y saber cómo los trato.</li>
+<li><strong>Rectificarlos</strong> si están incompletos o son inexactos.</li>
+<li><strong>Cancelarlos</strong> cuando consideres que no se necesitan o se usan fuera de este aviso.</li>
+<li><strong>Oponerte</strong> a que los use para ciertos fines.</li>
+<li><strong>Retirar tu consentimiento</strong>.</li>
+</ul>
+<p><strong>Cómo ejercerlos:</strong> envía un correo a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a> con tu nombre, un medio para responderte, la descripción clara de lo que pides y una copia de una identificación oficial (o la de quien te represente, con su carta poder). Te responderé en un máximo de <strong>20 días hábiles</strong> a partir de que reciba tu solicitud; si procede, la hago efectiva dentro de los <strong>15 días hábiles</strong> siguientes. <strong>Si pides que borre tus datos, al terminar te entrego un comprobante</strong> con el folio de tu solicitud, la fecha y qué se eliminó (y, si algo debo conservar por ley, qué es y por cuánto tiempo). La copia de tu identificación la elimino al cerrar la solicitud.</p>
+
+<h2>7. Cómo limitar el uso o la divulgación de tus datos</h2>
+<p>Para dejar de recibir promociones escríbeme a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a> o responde «BAJA» a cualquier mensaje mío por WhatsApp. Te daré de baja y no volveré a mandarte promociones.</p>
+
+<h2>8. Imágenes de personas y de terceros</h2>
+<p>Si subes fotos donde aparecen personas, <strong>confirmas que tienes derecho a usarlas y que esas personas te dieron su permiso</strong> (así lo marcas en el formulario). Si alguien te pide que se quite su imagen, avísame y la retiro de tu página.</p>
+
+<h2>9. Cuánto tiempo conservo tus datos</h2>
+<ul>
+<li><strong>Pedido y archivos:</strong> hasta <strong>90 días</strong> después de entregarte tu página o de cancelar el pedido; después se eliminan de la base de datos y del almacenamiento.</li>
+<li><strong>Pedidos sin pago:</strong> si no pagas en 24 horas, el cupo se libera y el pedido se marca como expirado; sus datos siguen el mismo plazo de 90 días.</li>
+<li><strong>Comprobantes de pago recibidos:</strong> el tiempo que establezcan las disposiciones fiscales aplicables para conservar el registro de mis ingresos.</li>
+<li><strong>Promociones:</strong> hasta que retires tu consentimiento.</li>
+</ul>
+
+<h2>10. Cookies y tecnologías de seguimiento</h2>
+<p>El detalle está en mi <a href="../cookies/">política de cookies y almacenamiento</a>. En resumen:</p>
+<ul>
+<li>Mi sitio guarda en tu navegador <strong>solo tu preferencia de tema</strong> (claro u oscuro).</li>
+<li>El formulario guarda tu <strong>borrador en tu propio navegador</strong> para que no pierdas tu avance. Ese borrador <strong>no se envía a ningún servidor</strong>.</li>
+<li>Al enviar tu pedido, <strong>Cloudflare Turnstile</strong> verifica que eres una persona y puede usar sus propias tecnologías para ello.</li>
+<li><strong>No uso hoy publicidad ni analítica con cookies.</strong> Si en el futuro activo la medición de anuncios (por ejemplo el píxel de Meta), <strong>te pediré tu aceptación antes de cargarla</strong> y podrás rechazarla o cambiarla cuando quieras.</li>
+<li>Puedes borrar el almacenamiento de este sitio desde la configuración de tu navegador.</li>
+</ul>
+
+<h2>11. Cómo protejo tus datos</h2>
+<p>Uso conexiones cifradas (HTTPS), almacenamiento privado para tus archivos, acceso restringido a mi persona, validación de todo lo que se recibe y límites de uso contra abusos. Ningún sistema es infalible: si hubiera una vulneración que te afecte de forma significativa, te lo diré para que puedas tomar medidas.</p>
+
+<h2>12. Si crees que tu derecho fue vulnerado</h2>
+<p>Puedes acudir a la autoridad en materia de protección de datos personales en posesión de particulares. Desde marzo de 2025 esas funciones corresponden a la <strong>Secretaría Anticorrupción y Buen Gobierno</strong> (antes INAI).</p>
+
+<h2>13. Cambios a este aviso</h2>
+<p>Si cambia, lo publicaré en esta página con una nueva fecha de actualización. Si el cambio afecta las finalidades, te pediré tu consentimiento otra vez.</p>
+`,
+};
