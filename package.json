@@ -15,7 +15,10 @@
     "case": "node scripts/build-case.mjs"
   },
   "keywords": [],
-  "author": "Alejandro Mendoza",
+  "author": {
+    "name": "Alejandro Mendoza",
+    "url": "https://orcid.org/0009-0008-1244-2160"
+  },
   "license": "GPL-3.0",
   "devDependencies": {
     "@fontsource/ibm-plex-mono": "^5.0.0",

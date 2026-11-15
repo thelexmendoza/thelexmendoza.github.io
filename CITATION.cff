@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Si usas o citas este trabajo, cítalo con estos datos."
+title: "Sitio personal y portafolio de Lex Mendoza"
+type: software
+authors:
+  - family-names: "Mendoza"
+    given-names: "Alejandro (Lex)"
+    orcid: "https://orcid.org/0009-0008-1244-2160"
+license: GPL-3.0
+repository-code: "https://github.com/thelexmendoza/thelexmendoza.github.io"
