@@ -103,17 +103,18 @@ test('los precios llevan un ancho minimo para que el conteo no mueva el diseño'
 test('el hero lleva de fondo la maqueta que se arma: bloques de linea decorativos, con un bloque de acento', () => {
   const fondo = html.match(/<div class="c-hero__backdrop" aria-hidden="true">([\s\S]*?)<\/div>\s*<div class="o-container/)[1];
   const maqueta = fondo.match(/<span class="c-promo__maqueta">([\s\S]*?)<\/span>\s*<\/div>|<span class="c-promo__maqueta">([\s\S]*?)<\/span>\s*$/)?.[0] ?? fondo;
-  const bloques = maqueta.match(/<i [^>]*><\/i>/g) ?? [];
+  const bloques = maqueta.match(/<i [^>]*>(?:<b>[^<]*(?:<em>[^<]*<\/em>[^<]*)*<\/b>)?<\/i>/g) ?? [];
   assert.ok(bloques.length >= 14 && bloques.length <= 24, `bloques: ${bloques.length}`);
   assert.ok(bloques.some((b) => b.includes('is-acento')), 'un bloque con el acento (el boton)');
   for (const b of bloques) assert.match(b, /style="--i: \d+; --x: [\d.]+; --y: [\d.]+; --w: [\d.]+; --h: [\d.]+"/, b);
   assert.match(fondo, /<span class="c-hero__grid"><\/span>/, 'conserva la reticula del hero');
 });
 
-test('el body lleva un plano aureo fijo y numeros fantasma por seccion, todo decorativo y sin texto para lectores', () => {
+test('el body lleva un fondo fijo estilo flyer (cruces, brillo y esquinas) y numeros fantasma por seccion, todo decorativo', () => {
   const main = html.match(/<main[\s\S]*?<\/main>/)[0];
-  assert.match(main, /<main[^>]*>\s*<div class="c-promo__fondo" aria-hidden="true">\s*<svg/);
-  assert.match(html, /vector-effect="non-scaling-stroke"/);
+  assert.match(main, /<main[^>]*>\s*<div class="c-promo__fondo" aria-hidden="true">\s*<span class="c-promo__cruces"><\/span>\s*<span class="c-promo__brillo"><\/span>/);
+  assert.equal((main.match(/c-promo__esquina c-promo__esquina--/g) ?? []).length, 4);
+  assert.doesNotMatch(main, /vector-effect/, 'ya no hay plano aureo');
   const fantasmas = [...main.matchAll(/<span class="c-promo__fantasma c-promo__fantasma--(?:der|izq)" aria-hidden="true">([^<]*)<\/span>/g)].map((m) => m[1]);
   assert.deepEqual(fantasmas, ['5', '549', '15', '?', '31/12']);
   assert.equal((main.match(/c-promo__seccion/g) ?? []).length, 5);

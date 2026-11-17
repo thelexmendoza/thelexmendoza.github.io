@@ -99,7 +99,7 @@ export function promoJsonLd(indent) {
       offers: promo.precios.plataformas.map((p) => ({
         '@type': 'Offer',
         name: p.nombre,
-        description: `${p.resumen} Entrega en ${p.dias} días hábiles.`,
+        description: `${p.resumen.replaceAll('*', '')} Entrega en ${p.dias} días hábiles.`,
         price: aNumero(p.precio),
         priceCurrency: 'MXN',
         priceValidUntil: '2026-12-31',

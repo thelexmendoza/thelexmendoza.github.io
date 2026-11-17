@@ -73,12 +73,17 @@ export function marcarTerminada(raiz) {
   });
 }
 
-// Conteo breve de los precios al entrar en pantalla (0.7 s). Solo con movimiento; el texto final siempre es el del HTML.
+// Conteo breve de los precios (0.7 s): al entrar en pantalla y cada vez que la tarjeta se activa. Solo con movimiento; el texto final
+// siempre es el del HTML (se guarda la primera vez) y un conteo nuevo cancela el anterior, así que repetirlo nunca deja un número a medias.
 function contarPrecio(elemento) {
-  const final = elemento.textContent;
+  elemento.dataset.final ??= elemento.textContent;
+  const final = elemento.dataset.final;
   const valor = Number(final.replace(/[^0-9]/g, ''));
+  const turno = (Number(elemento.dataset.turno) || 0) + 1;
+  elemento.dataset.turno = String(turno);
   const inicio = performance.now();
   const paso = (ahora) => {
+    if (Number(elemento.dataset.turno) !== turno) return;
     const t = (ahora - inicio) / 700;
     if (t >= 1) {
       elemento.textContent = final;
@@ -105,10 +110,48 @@ export function animarPrecios(raiz) {
   raiz.querySelectorAll('.c-promo__monto').forEach((monto) => observador.observe(monto));
 }
 
+// Tarjeta activa (is-activo): el precio se vuelve a contar y se pone rojo, el borde toma el acento y las palabras clave se subrayan.
+// Con cursor: al pasar el cursor o enfocar con teclado. En táctil (tableta y móvil): la tarjeta que ocupa el centro de la pantalla,
+// con un respiro de 350 ms para no parpadear al hacer scroll. Entrar y salir son la misma animación, en un sentido y en otro.
+export function activarPlanes(raiz) {
+  const reducido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cursorFino = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const planes = [...raiz.querySelectorAll('.c-promo__plan')];
+  const poner = (plan, activo) => {
+    if (plan.classList.contains('is-activo') === activo) return;
+    plan.classList.toggle('is-activo', activo);
+    const monto = plan.querySelector('.c-promo__monto');
+    if (activo && monto && !reducido) contarPrecio(monto);
+  };
+  planes.forEach((plan) => {
+    plan.addEventListener('focusin', () => poner(plan, true));
+    plan.addEventListener('focusout', (e) => {
+      if (!plan.contains(e.relatedTarget)) poner(plan, false);
+    });
+    if (cursorFino) {
+      plan.addEventListener('pointerenter', () => poner(plan, true));
+      plan.addEventListener('pointerleave', () => poner(plan, false));
+    }
+  });
+  if (cursorFino || !('IntersectionObserver' in window)) return;
+  const esperas = new Map();
+  const observador = new IntersectionObserver(
+    (entradas) => {
+      entradas.forEach(({ target, isIntersecting }) => {
+        clearTimeout(esperas.get(target));
+        esperas.set(target, setTimeout(() => poner(target, isIntersecting), isIntersecting ? 350 : 0));
+      });
+    },
+    { rootMargin: '-38% 0px -38% 0px', threshold: 0 },
+  );
+  planes.forEach((plan) => observador.observe(plan));
+}
+
 export async function setupPromo() {
   const raiz = document.querySelector('[data-promo]');
   if (!raiz) return;
   animarPrecios(raiz);
+  activarPlanes(raiz);
   if (!promoVigente(new Date())) {
     marcarTerminada(raiz);
     return;

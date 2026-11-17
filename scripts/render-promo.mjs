@@ -50,42 +50,50 @@ function casoImagen(slug) {
 
 // La maqueta del hero: el contorno de una landing que se arma bloque por bloque (x, y, ancho y alto en % de su caja de 4:3).
 // Es decorativa: nada de esto se lee ni se enfoca. El bloque `acento` es el boton.
+// Algunos bloques se llenan con texto que se «teclea» al armarse (como los flyers: negritas en Plex Sans y palabras en Plex Serif cursiva).
+// El sexto elemento es el texto (HTML fijo, sin datos de nadie); `gran` es el cinco gigante que se pinta.
 const MAQUETA = [
   [0, 0, 100, 9],
   [3, 2.2, 10, 4.6],
   [60, 3.6, 8, 1.8],
   [71, 3.6, 8, 1.8],
   [82, 3.6, 8, 1.8],
-  [6, 16, 58, 6],
-  [6, 25, 42, 6],
+  [6, 16, 58, 6, '', '<em>tu</em> PÁGINA'],
+  [6, 25, 42, 6, '', 'en 5 <em>días</em>'],
   [6, 36, 50, 2.2],
   [6, 40, 44, 2.2],
-  [6, 47, 20, 6, 'acento'],
-  [66, 14, 28, 36],
-  [6, 62, 28, 26],
-  [36, 62, 28, 26],
-  [66, 62, 28, 26],
+  [6, 47, 20, 6, 'acento', '$549'],
+  [66, 14, 28, 36, 'gran', '5'],
+  [6, 62, 28, 26, 'paso', '01 <em>pides</em>'],
+  [36, 62, 28, 26, 'paso', '02 <em>pagas</em>'],
+  [66, 62, 28, 26, 'paso', '03 <em>publico</em>'],
   [10, 66, 14, 8],
   [40, 66, 14, 8],
   [70, 66, 14, 8],
   [0, 93, 100, 7],
 ];
 const renderMaqueta = () =>
-  `<span class="c-promo__maqueta">${MAQUETA.map(([x, y, w, h, extra], i) => `<i${extra ? ` class="is-${extra}"` : ''} style="--i: ${i}; --x: ${x}; --y: ${y}; --w: ${w}; --h: ${h}"></i>`).join('')}</span>`;
+  `<span class="c-promo__maqueta">${MAQUETA.map(([x, y, w, h, extra, texto], i) => {
+    const clase = extra ? ` class="is-${extra}"` : '';
+    return `<i${clase} style="--i: ${i}; --x: ${x}; --y: ${y}; --w: ${w}; --h: ${h}">${texto ? `<b>${texto}</b>` : ''}</i>`;
+  }).join('')}</span>`;
 
-// El plano aureo del fondo del body: los mismos rectangulos y la misma espiral del favicon (61.8 / 38.2 / 23.6 / 14.6), en una sola capa fija.
-const AUREO = `<svg viewBox="0 0 161.8 100" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <g fill="none" stroke="currentColor" stroke-width="1" vector-effect="non-scaling-stroke">
-          <rect x="0" y="0" width="100" height="100" vector-effect="non-scaling-stroke"/>
-          <rect x="100" y="0" width="61.8" height="61.8" vector-effect="non-scaling-stroke"/>
-          <rect x="123.6" y="61.8" width="38.2" height="38.2" vector-effect="non-scaling-stroke"/>
-          <rect x="100" y="76.4" width="23.6" height="23.6" vector-effect="non-scaling-stroke"/>
-          <path d="M0,100 A100,100 0 0 1 100,0 A61.8,61.8 0 0 1 161.8,61.8 A38.2,38.2 0 0 1 123.6,100 A23.6,23.6 0 0 1 100,76.4 A14.6,14.6 0 0 1 114.6,61.8 A9,9 0 0 1 123.6,70.8" vector-effect="non-scaling-stroke"/>
-        </g>
-      </svg>`;
+// Capas fijas del fondo del body, del estilo de los flyers: retícula de cruces, brillo rojo en dos esquinas y marcas de registro.
+const FONDO = `<span class="c-promo__cruces"></span>
+        <span class="c-promo__brillo"></span>
+        <i class="c-promo__esquina c-promo__esquina--nw"></i>
+        <i class="c-promo__esquina c-promo__esquina--ne"></i>
+        <i class="c-promo__esquina c-promo__esquina--sw"></i>
+        <i class="c-promo__esquina c-promo__esquina--se"></i>`;
 
 // Numero gigante en contorno detras de una seccion (decorativo).
 const fantasma = (texto, lado) => `<span class="c-promo__fantasma c-promo__fantasma--${lado}" aria-hidden="true">${esc(texto)}</span>`;
+
+// Palabras clave: `*asi*` en el texto se vuelve negrita con subrayado que se dibuja cuando la tarjeta se activa (--k escalona el subrayado).
+const clave = (texto, inicio = 0) => {
+  let k = inicio;
+  return esc(texto).replace(/\*([^*]+)\*/g,(_, t) => `<strong class="c-promo__clave" style="--k: ${k++}">${t}</strong>`);
+};
 
 const renderPlan = (p, precios) => {
   const dias = `Entrega en ${p.dias} días hábiles`;
@@ -95,11 +103,11 @@ const renderPlan = (p, precios) => {
             <p class="c-promo__dias">${dias}</p>
             <p class="c-promo__lugares" data-lugares role="status">${esc(promo.hero.resumenFijo)}</p>
             <span class="c-promo__medidor" aria-hidden="true">${Array.from({ length: LIMITES[p.id] }, (_, i) => `<i style="--i: ${i}"></i>`).join('')}</span>
-            <p class="c-promo__resumen-plan">${esc(p.resumen)}</p>
+            <p class="c-promo__resumen-plan">${clave(p.resumen)}</p>
             <ul class="c-promo__detalle">
-              <li><strong>Para quién:</strong> ${esc(p.paraQuien)}</li>
-              <li><strong>Se paga aparte:</strong> ${esc(p.aparte)}</li>
-              <li><strong>Cambios:</strong> ${esc(p.edicion)}</li>
+              <li><strong>Para quién:</strong> ${clave(p.paraQuien, 3)}</li>
+              <li><strong>Se paga aparte:</strong> ${clave(p.aparte, 5)}</li>
+              <li><strong>Cambios:</strong> ${clave(p.edicion, 7)}</li>
             </ul>
             <a class="c-button" href="${BRIEF_URL}" data-promo-cta>${icon('tag')}${esc(precios.boton)}</a>
           </li>`;
@@ -157,7 +165,7 @@ ${tagsHead()}
 
     <main id="contenido" class="c-promo" data-promo data-fin="${esc(FIN_PROMO)}" data-terminada-wa="${esc(whatsappUrl(cierre.terminadaMensaje))}" data-terminada-boton="${esc(cierre.terminadaBoton)}" data-avisame-texto="${esc(cierre.avisame)}">
       <div class="c-promo__fondo" aria-hidden="true">
-      ${AUREO}
+        ${FONDO}
       </div>
 
       <section class="c-hero c-promo__hero" id="inicio" aria-labelledby="promo-titulo">
