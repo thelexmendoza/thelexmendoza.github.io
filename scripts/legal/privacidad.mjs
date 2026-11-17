@@ -7,7 +7,7 @@ export const privacidad = {
   title: 'Aviso de privacidad',
   word: 'privacidad',
   description: 'Quién trata tus datos personales, cuáles recabo, para qué los uso, con quién los comparto y cómo ejercer tus derechos ARCO.',
-  updated: '15 de noviembre de 2026',
+  updated: '17 de noviembre de 2026',
   lead: 'Te explico con claridad qué datos recabo cuando me escribes o armas tu pedido, para qué los uso y cómo puedes pedirme que los corrija o los elimine.',
   body: `
 <h2>1. Quién es el responsable de tus datos</h2>
@@ -26,6 +26,7 @@ export const privacidad = {
 <tr><th scope="row">Tus archivos</th><td>Tu logotipo, tus imágenes y sus descripciones. Si en ellas aparecen personas, también se tratan sus imágenes (ver sección 8).</td></tr>
 <tr><th scope="row">Tu pedido</th><td>Folio, fecha, estado, cupo reservado y los consentimientos que aceptaste.</td></tr>
 <tr><th scope="row">Datos técnicos</th><td>Una huella irreversible de tu dirección IP (no guardo la IP en sí), el número de intentos de envío para prevenir abusos y la verificación anti-robots de Cloudflare Turnstile, que puede procesar datos de tu navegador y tu IP.</td></tr>
+<tr><th scope="row">Medición de anuncios (solo si aceptas)</th><td>Las páginas que ves, tus clics en WhatsApp, correo o teléfono, datos técnicos de tu navegador y tu IP, y los identificadores de las cookies de Meta (<code>_fbp</code> y <code>_fbc</code>). Solo los recibe Meta si aceptas la «medición de anuncios» en el aviso de cookies.</td></tr>
 <tr><th scope="row">Pago</th><td><strong>El formulario no pide datos de tarjeta.</strong> El pago se hace por transferencia (SPEI) a mi cuenta; por ahora no uso un procesador de pagos. El comprobante que me mandes por WhatsApp se trata como dato de tu pedido.</td></tr>
 <tr><th scope="row">Facturación</th><td><strong>Por ahora no emito facturas</strong>, así que no recabo datos fiscales. Si en el futuro lo hago, actualizaré este aviso y te lo diré antes de pedirte esos datos.</td></tr>
 </tbody>
@@ -49,20 +50,22 @@ export const privacidad = {
 <li>Enviarte promociones, novedades y ofertas de otros servicios.</li>
 <li>Mostrar tu proyecto terminado como caso de mi trabajo, con tu permiso por escrito.</li>
 <li>Invitarte a dejar una reseña o responder una encuesta de satisfacción.</li>
+<li>Medir si mis anuncios funcionan (píxel de Meta), solo si aceptas la «medición de anuncios» en el aviso de cookies.</li>
 </ol>
-<p>Estas tres finalidades <strong>solo se activan si marcas su casilla</strong>, que <strong>no viene marcada</strong>. Puedes retirar tu consentimiento en cualquier momento escribiendo a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
+<p>Las finalidades 6, 7 y 8 <strong>solo se activan si marcas su casilla</strong>, que <strong>no viene marcada</strong>; la 9, solo si aceptas en el aviso de cookies. Puedes retirar tu consentimiento en cualquier momento escribiendo a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
 
 <h2>4. Tu consentimiento</h2>
-<p>Al marcar «Acepto el aviso de privacidad» y enviar tu pedido, aceptas el tratamiento de tus datos para las finalidades necesarias. Para las voluntarias, tu consentimiento es la casilla aparte. Si quiero usar tus datos para una finalidad distinta a las de este aviso, te pediré consentimiento de nuevo.</p>
+<p>Al marcar «Acepto el aviso de privacidad» y enviar tu pedido, aceptas el tratamiento de tus datos para las finalidades necesarias. Para las voluntarias, tu consentimiento es la casilla aparte. Para la medición de anuncios, tu consentimiento es tu elección en el aviso de cookies (Aceptar o Configurar). Si quiero usar tus datos para una finalidad distinta a las de este aviso, te pediré consentimiento de nuevo.</p>
 
 <h2>5. Con quién se comparten tus datos</h2>
-<p><strong>No vendo tus datos ni los comparto con terceros con fines propios.</strong> Para poder darte el servicio uso proveedores que tratan datos <strong>por mi cuenta y bajo mis instrucciones</strong>:</p>
+<p><strong>No vendo tus datos.</strong> Salvo el píxel de Meta (solo si tú lo aceptas, y Meta lo trata según su propia política), no los comparto con terceros con fines propios. Para poder darte el servicio uso proveedores que tratan datos <strong>por mi cuenta y bajo mis instrucciones</strong>:</p>
 <div class="c-legal__scroll">
 <table class="c-legal__table">
 <thead><tr><th scope="col">Proveedor</th><th scope="col">Para qué</th><th scope="col">Qué datos ve</th></tr></thead>
 <tbody>
-<tr><th scope="row">Supabase</th><td>Base de datos y almacenamiento privado de tu pedido y tus archivos (servidores en Estados Unidos).</td><td>Los de las secciones 2 y 3.</td></tr>
+<tr><th scope="row">Supabase</th><td>Base de datos y almacenamiento privado de tu pedido y tus archivos (servidores en Estados Unidos). También responde la consulta de los lugares disponibles de la página de la promo: tu navegador se conecta a Supabase y este puede registrar datos técnicos de la conexión; esa consulta no guarda tu dirección IP en mi base de datos.</td><td>Los de las secciones 2 y 3, y datos técnicos de tu conexión al ver los lugares de la promo.</td></tr>
 <tr><th scope="row">Cloudflare (Turnstile)</th><td>Distinguir personas de robots al enviar el formulario.</td><td>Datos técnicos de tu navegador y tu IP.</td></tr>
+<tr><th scope="row">Meta (píxel)</th><td>Medir si mis anuncios funcionan, solo si aceptas.</td><td>Las páginas que ves, tus clics de contacto, datos técnicos, tu IP e identificadores de cookies.</td></tr>
 <tr><th scope="row">GitHub Pages y Surge</th><td>Alojar el sitio y las demostraciones.</td><td>Datos técnicos de conexión de quien visita.</td></tr>
 <tr><th scope="row">WhatsApp (Meta)</th><td>Comunicarme contigo.</td><td>Lo que me escribes por ahí.</td></tr>
 <tr><th scope="row">Google (Gmail)</th><td>Correos de confirmación y atención a solicitudes de derechos.</td><td>Tu correo y el contenido de los mensajes.</td></tr>
@@ -94,15 +97,16 @@ export const privacidad = {
 <li><strong>Pedidos sin pago:</strong> si no pagas en 24 horas, el cupo se libera y el pedido se marca como expirado; sus datos siguen el mismo plazo de 90 días.</li>
 <li><strong>Comprobantes de pago recibidos:</strong> el tiempo que establezcan las disposiciones fiscales aplicables para conservar el registro de mis ingresos.</li>
 <li><strong>Promociones:</strong> hasta que retires tu consentimiento.</li>
+<li><strong>Medición de anuncios:</strong> los datos que recibe Meta los conserva Meta según su política; en tu navegador, sus cookies duran hasta 3 meses y tu decisión sobre las cookies, 12 meses.</li>
 </ul>
 
 <h2>10. Cookies y tecnologías de seguimiento</h2>
 <p>El detalle está en mi <a href="../cookies/">política de cookies y almacenamiento</a>. En resumen:</p>
 <ul>
-<li>Mi sitio guarda en tu navegador <strong>solo tu preferencia de tema</strong> (claro u oscuro).</li>
+<li>Mi sitio guarda en tu navegador <strong>tu preferencia de tema</strong> (claro u oscuro) y <strong>tu decisión sobre las cookies opcionales</strong>.</li>
 <li>El formulario guarda tu <strong>borrador en tu propio navegador</strong> para que no pierdas tu avance. Ese borrador <strong>no se envía a ningún servidor</strong>.</li>
 <li>Al enviar tu pedido, <strong>Cloudflare Turnstile</strong> verifica que eres una persona y puede usar sus propias tecnologías para ello.</li>
-<li><strong>No uso hoy publicidad ni analítica con cookies.</strong> Si en el futuro activo la medición de anuncios (por ejemplo el píxel de Meta), <strong>te pediré tu aceptación antes de cargarla</strong> y podrás rechazarla o cambiarla cuando quieras.</li>
+<li><strong>Medición de anuncios (píxel de Meta):</strong> solo se carga si aceptas en el aviso de cookies; con <strong>Rechazar</strong> o sin decidir, no se carga y no se envía nada a Meta. Puedes cambiar tu decisión cuando quieras desde «Preferencias de cookies», en el pie de cada página. No uso analítica de visitas.</li>
 <li>Puedes borrar el almacenamiento de este sitio desde la configuración de tu navegador.</li>
 </ul>
 

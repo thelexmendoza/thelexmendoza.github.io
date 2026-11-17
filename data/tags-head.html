@@ -1,0 +1,49 @@
+<!-- tag-orquestador:inicio -->
+<script>
+  /* Consent Mode v2: todo negado hasta que la persona decida. Debe ir antes de cualquier etiqueta. */
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('consent', 'default', {"ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","analytics_storage":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"granted"});
+  window.__tagorqConsentDefault = true;
+</script>
+<script type="module">
+  import { init } from '/assets/js/tag-orquestador/browser.mjs';
+  init({
+  "fictitious": false,
+  "client": {
+    "slug": "lexmendoza",
+    "name": "Lex Mendoza",
+    "domain": "lexmendoza.com",
+    "locale": "es-MX",
+    "currency": "MXN"
+  },
+  "mode": "direct",
+  "consent": {
+    "mode": "basic",
+    "version": "2026-11",
+    "durationMonths": 12,
+    "banner": true,
+    "categories": [
+      "marketing"
+    ],
+    "texts": {
+      "title": "Tu privacidad",
+      "body": "Uso el píxel de Meta para medir si mis anuncios funcionan, solo si tú lo permites. Rechazar no te quita nada del sitio.",
+      "marketing": "Medición de anuncios: el píxel de Meta mide si mis anuncios funcionan.",
+      "policy": "Política de cookies",
+      "policyHref": "/cookies/"
+    }
+  },
+  "platforms": {
+    "meta": {
+      "pixel_id": "2050494035617814"
+    }
+  },
+  "events": {
+    "autoPageView": true,
+    "autoBind": true,
+    "custom": {}
+  }
+});
+</script>
+<!-- tag-orquestador:fin -->

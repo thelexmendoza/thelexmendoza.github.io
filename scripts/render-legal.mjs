@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { privacidad } from './legal/privacidad.mjs';
 import { cookies } from './legal/cookies.mjs';
 import { seoTags } from './seo.mjs';
+import { tagsHead } from './tags.mjs';
 
 // Genera las páginas legales (aviso de privacidad y política de cookies) con el mismo molde que los casos:
 // cabecera y script del tema salen de index.html, así que cualquier cambio del menú se refleja al regenerarlas.
@@ -42,7 +43,7 @@ function footer(current) {
   return `<footer class="c-footer">
       <div class="o-container o-stack">
         <p class="c-footer__actions"><a class="c-button c-button--ghost" href="${PREFIX}">Volver al inicio</a></p>
-        <p class="c-footer__legal">© 2026 Lex Mendoza · ${link('privacidad', 'Aviso de privacidad')} · ${link('cookies', 'Política de cookies')}</p>
+        <p class="c-footer__legal">© 2026 Lex Mendoza · ${link('privacidad', 'Aviso de privacidad')} · ${link('cookies', 'Política de cookies')} · <a href="#" data-tagorq-prefs>Preferencias de cookies</a></p>
       </div>
     </footer>`;
 }
@@ -59,6 +60,7 @@ export function renderLegal(page, { layoutPath = 'index.html' } = {}) {
     <meta name="description" content="${esc(page.description)}">
 ${seoTags({ path: `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, description: page.description })}
     ${layout.themeScript}
+${tagsHead()}
     <link rel="expect" href="#contenido" blocking="render">
     <link rel="preload" href="${PREFIX}assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${PREFIX}assets/fonts/plex/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -83,6 +85,8 @@ ${seoTags({ path: `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, descri
     <link rel="modulepreload" href="${PREFIX}assets/js/ornaments.js">
     <link rel="modulepreload" href="${PREFIX}assets/js/decode.js">
     <link rel="modulepreload" href="${PREFIX}assets/js/leave.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/promo.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/cupos.js">
     <script type="module" src="${PREFIX}assets/js/main.js"></script>
   </head>
   <body>

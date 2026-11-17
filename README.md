@@ -14,6 +14,8 @@ npm test        # corre las pruebas
 npm run case -- private/content/<caso>/caso.plan.json   # genera la pagina de un caso (--sin-imagenes solo regenera la pagina)
 npm run legal   # genera el aviso de privacidad y la politica de cookies
 npm run seo     # genera robots.txt, sitemap.xml y el bloque de SEO de la home
+npm run promo   # genera la landing /promo/
+npm run tags    # deja al dia el bloque de etiquetas (píxel con aviso de cookies) en la home
 ```
 
 El sitio se publica en [lexmendoza.com](https://lexmendoza.com) desde la rama `main` (el archivo `CNAME` fija el dominio). Los planes de los casos, los originales y las notas viven en `private/`, que no se sube.

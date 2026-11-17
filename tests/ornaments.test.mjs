@@ -82,8 +82,11 @@ test('el decodificado deja el texto real a los lectores de pantalla y lo restaur
 });
 
 test('las tarjetas de servicio llevan marcas de registro y foco de luz sin tapar su texto', () => {
-  assert.match(css, /\.c-service::before\s*\{[^}]*z-index:\s*-1[^}]*pointer-events:\s*none/s);
-  assert.match(css, /\.c-service::after\s*\{[^}]*pointer-events:\s*none/s);
-  assert.match(css, /\.c-service\s*\{[^}]*isolation:\s*isolate/s);
+  // El estilo se comparte con las tarjetas de precio y de casos de /promo/ (lista de selectores).
+  assert.match(css, /\.c-service::before(?:,[^{}]*)?\{[^}]*z-index:\s*-1[^}]*pointer-events:\s*none/s);
+  assert.match(css, /\.c-service::after(?:,[^{}]*)?\{[^}]*pointer-events:\s*none/s);
+  assert.match(css, /\.c-service(?:,[^{}]*)?\{[^}]*isolation:\s*isolate/s);
+  assert.match(css, /\.c-promo__plan::before/);
+  assert.match(css, /\.c-promo__caso a::before/);
   assert.match(css, /\.c-service--featured\s*\{[^}]*--mark:\s*var\(--color-accent\)/s);
 });

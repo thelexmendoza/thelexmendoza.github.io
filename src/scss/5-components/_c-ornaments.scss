@@ -50,8 +50,10 @@
 }
 
 // Tarjetas de servicio: marcas de registro en las esquinas (como las de un pliego impreso) y un foco de luz del
-// acento que sigue al cursor (hero-fx y ornaments.js ponen --mx, --my y is-lit).
-.c-service {
+// acento que sigue al cursor (hero-fx y ornaments.js ponen --mx, --my y is-lit). Lo mismo llevan las tarjetas de precio y de casos de /promo/.
+.c-service,
+.c-promo__plan,
+.c-promo__caso a {
   position: relative;
   isolation: isolate;
   --mark: color-mix(in srgb, var(--color-text) 42%, transparent);
@@ -87,10 +89,6 @@
     background-repeat: no-repeat;
   }
 
-  &--featured {
-    --mark: var(--color-accent);
-  }
-
   @media (prefers-reduced-motion: no-preference) {
     &::before,
     &::after {
@@ -101,6 +99,11 @@
       inset: -9px;
     }
   }
+}
+
+// La tarjeta destacada pinta sus marcas con el acento.
+.c-service--featured {
+  --mark: var(--color-accent);
 }
 
 // Botones magnéticos: se corren hacia el cursor (ornaments.js pone --mag-x y --mag-y).

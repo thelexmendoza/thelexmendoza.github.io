@@ -5,6 +5,7 @@ import { setupCardVideos, setupHeroVideos, setupPlanVideo } from './media.js';
 import { setupHeroFx } from './hero-fx.js';
 import { setupOrnaments } from './ornaments.js';
 import { setupLeave } from './leave.js';
+import { setupPromo } from './promo.js';
 
 // Avisa al script de la cabecera que este modulo cargo: si no llega, ese script muestra todo.
 window.__revealReady = true;
@@ -153,6 +154,7 @@ if (spySections.length) {
 setupHeroVideos();
 setupCardVideos();
 setupPlanVideo();
+setupPromo();
 setupHeroFx();
 setupOrnaments();
 setupLeave();

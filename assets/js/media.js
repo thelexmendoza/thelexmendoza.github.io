@@ -119,32 +119,33 @@ export function setupCardVideos() {
   });
 }
 
-// «¿Te late lo que ves?»: el video del brief se descarga y se reproduce solo cuando la seccion esta cerca de la pantalla y se
-// pausa al salir. Con menos movimiento no se descarga nada: queda el poster.
+// El video del brief que va de fondo o de ilustracion («¿Te late lo que ves?» y la landing /promo/): se descarga y se reproduce solo cuando
+// su seccion esta cerca de la pantalla y se pausa al salir. Con menos movimiento no se descarga nada: queda el poster.
 export function setupPlanVideo() {
-  const section = document.querySelector('.c-plan');
-  const video = section?.querySelector('.c-plan__video');
-  if (!video) return;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
   const mobile = window.matchMedia(MOBILE);
-  let near = false;
-  const sync = () => {
-    if (reduce.matches || !near) {
-      video.pause();
-      return;
+  document.querySelectorAll('.c-plan__video, .c-promo__video-el').forEach((video) => {
+    const section = video.closest('section');
+    if (!section) return;
+    let near = false;
+    const sync = () => {
+      if (reduce.matches || !near) {
+        video.pause();
+        return;
+      }
+      load(video, mobile.matches);
+      play(video);
+    };
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(
+        ([entry]) => {
+          near = entry.isIntersecting;
+          sync();
+        },
+        { rootMargin: '200px 0px' },
+      ).observe(section);
     }
-    load(video, mobile.matches);
-    play(video);
-  };
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(
-      ([entry]) => {
-        near = entry.isIntersecting;
-        sync();
-      },
-      { rootMargin: '200px 0px' },
-    ).observe(section);
-  }
-  mobile.addEventListener('change', sync);
-  reduce.addEventListener('change', sync);
+    mobile.addEventListener('change', sync);
+    reduce.addEventListener('change', sync);
+  });
 }

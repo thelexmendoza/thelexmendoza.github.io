@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Política de cookies | Lex Mendoza</title>
-    <meta name="description" content="Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. Hoy no uso publicidad ni analítica.">
+    <meta name="description" content="Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. La medición de anuncios (píxel de Meta) solo se activa si tú la aceptas.">
     <link rel="canonical" href="https://lexmendoza.com/cookies/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_MX">
     <meta property="og:site_name" content="Lex Mendoza">
     <meta property="og:title" content="Política de cookies | Lex Mendoza">
-    <meta property="og:description" content="Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. Hoy no uso publicidad ni analítica.">
+    <meta property="og:description" content="Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. La medición de anuncios (píxel de Meta) solo se activa si tú la aceptas.">
     <meta property="og:url" content="https://lexmendoza.com/cookies/">
     <meta property="og:image" content="https://lexmendoza.com/assets/img/og/lex.jpg">
     <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
     <meta property="og:image:alt" content="Lex Mendoza, diseñador gráfico y desarrollador web en Monterrey">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Política de cookies | Lex Mendoza">
-    <meta name="twitter:description" content="Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. Hoy no uso publicidad ni analítica.">
+    <meta name="twitter:description" content="Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. La medición de anuncios (píxel de Meta) solo se activa si tú la aceptas.">
     <meta name="twitter:image" content="https://lexmendoza.com/assets/img/og/lex.jpg">
     <script>
       document.documentElement.classList.add('has-js');
@@ -34,6 +34,55 @@
         if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored;
       } catch (e) {}
     </script>
+    <!-- tag-orquestador:inicio -->
+    <script>
+      /* Consent Mode v2: todo negado hasta que la persona decida. Debe ir antes de cualquier etiqueta. */
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('consent', 'default', {"ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","analytics_storage":"denied","functionality_storage":"denied","personalization_storage":"denied","security_storage":"granted"});
+      window.__tagorqConsentDefault = true;
+    </script>
+    <script type="module">
+      import { init } from '/assets/js/tag-orquestador/browser.mjs';
+      init({
+      "fictitious": false,
+      "client": {
+        "slug": "lexmendoza",
+        "name": "Lex Mendoza",
+        "domain": "lexmendoza.com",
+        "locale": "es-MX",
+        "currency": "MXN"
+      },
+      "mode": "direct",
+      "consent": {
+        "mode": "basic",
+        "version": "2026-11",
+        "durationMonths": 12,
+        "banner": true,
+        "categories": [
+          "marketing"
+        ],
+        "texts": {
+          "title": "Tu privacidad",
+          "body": "Uso el píxel de Meta para medir si mis anuncios funcionan, solo si tú lo permites. Rechazar no te quita nada del sitio.",
+          "marketing": "Medición de anuncios: el píxel de Meta mide si mis anuncios funcionan.",
+          "policy": "Política de cookies",
+          "policyHref": "/cookies/"
+        }
+      },
+      "platforms": {
+        "meta": {
+          "pixel_id": "2050494035617814"
+        }
+      },
+      "events": {
+        "autoPageView": true,
+        "autoBind": true,
+        "custom": {}
+      }
+    });
+    </script>
+    <!-- tag-orquestador:fin -->
     <link rel="expect" href="#contenido" blocking="render">
     <link rel="preload" href="../assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/plex/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -58,6 +107,8 @@
     <link rel="modulepreload" href="../assets/js/ornaments.js">
     <link rel="modulepreload" href="../assets/js/decode.js">
     <link rel="modulepreload" href="../assets/js/leave.js">
+    <link rel="modulepreload" href="../assets/js/promo.js">
+    <link rel="modulepreload" href="../assets/js/cupos.js">
     <script type="module" src="../assets/js/main.js"></script>
   </head>
   <body>
@@ -86,8 +137,8 @@
         <header class="c-legal__header o-stack">
           <p class="c-eyebrow">// Cookies y almacenamiento</p>
           <h1 data-reveal="title">Política de <span class="c-chameleon-title">cookies</span></h1>
-          <p class="c-section__lead">Te cuento exactamente qué guarda este sitio en tu navegador. Hoy es muy poco, y nada de seguimiento ni publicidad.</p>
-          <p class="c-legal__meta">Última actualización: 15 de noviembre de 2026</p>
+          <p class="c-section__lead">Te cuento exactamente qué guarda este sitio en tu navegador. Lo necesario es muy poco; la medición de anuncios solo se activa si tú la aceptas.</p>
+          <p class="c-legal__meta">Última actualización: 17 de noviembre de 2026</p>
         </header>
         <div class="c-legal__body">
 <p>Responsable: <strong>Manuel Alejandro Mendoza León</strong> (Lex Mendoza), Fresnos 931, Col. Hacienda Los Morales, San Nicolás de los Garza, Nuevo León, C. P. 66495. Contacto: <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
@@ -102,31 +153,34 @@
 <tbody>
 <tr><th scope="row"><code>theme</code></th><td>Este sitio</td><td>Recordar si prefieres el tema claro u oscuro. Es una preferencia que tú eliges.</td><td>Hasta que lo borres</td><td>Yo</td></tr>
 <tr><th scope="row"><code>landing-express-borrador</code></th><td>Formulario «Arma tu Landing Express»</td><td>Guardar tu avance en <strong>tu navegador</strong>, para que no lo pierdas. <strong>No se envía a ningún servidor.</strong></td><td>Hasta que lo borres</td><td>Yo</td></tr>
+<tr><th scope="row"><code>tagorq_consent</code></th><td>Este sitio</td><td>Recordar tu decisión sobre las cookies opcionales: qué aceptaste, cuándo y con qué versión de esta política.</td><td>12 meses, o hasta que esta política cambie</td><td>Yo</td></tr>
+<tr><th scope="row"><code>_fbp</code> y <code>_fbc</code></th><td>Este sitio (cookies de Meta)</td><td>Identificar tu navegador y, si llegas desde un anuncio, ese clic, para medir si mis anuncios funcionan. <strong>Solo existen si aceptas la medición de anuncios.</strong></td><td>Hasta 3 meses</td><td>Meta, tercero</td></tr>
 <tr><th scope="row">Verificación de Cloudflare Turnstile</th><td>Solo al enviar tu pedido</td><td>Comprobar que eres una persona y no un robot (seguridad).</td><td>Lo define Cloudflare</td><td>Cloudflare, tercero</td></tr>
 <tr><th scope="row">Datos de conexión del alojamiento</th><td>GitHub Pages y Surge</td><td>Entregarte el sitio (por ejemplo, tu IP y tu navegador).</td><td>Según sus políticas</td><td>GitHub y Surge, terceros</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>No instalo cookies de seguimiento propias.</strong> Cloudflare Turnstile se carga <strong>solo en el paso final del formulario</strong>, no al entrar al sitio.</p>
+<p><strong>No instalo cookies de seguimiento propias.</strong> Las únicas de seguimiento son las de <strong>Meta</strong> (<code>_fbp</code> y <code>_fbc</code>), y <strong>solo después de que aceptes la medición de anuncios</strong>. Cloudflare Turnstile se carga <strong>solo en el paso final del formulario</strong>, no al entrar al sitio.</p>
 
 <h2>3. Lo que no uso hoy</h2>
-<p>Analítica de visitas, publicidad o remarketing, píxeles de redes sociales, botones de «compartir» incrustados, mapas ni videos de terceros incrustados.</p>
+<p>Analítica de visitas, píxeles de plataformas distintas de Meta (Google, TikTok y otras), botones de «compartir» incrustados ni mapas.</p>
 
-<h2>4. Lo que podría usar mañana (siempre con tu aceptación)</h2>
-<p>Si activo la <strong>medición de anuncios</strong> (por ejemplo el píxel de Meta) o <strong>analítica</strong>, actualizaré esta política <strong>antes</strong> y verás un aviso con tres opciones: <strong>Aceptar</strong>, <strong>Rechazar</strong> y <strong>Configurar</strong>. Mientras no aceptes esas categorías, <strong>no se carga ningún script de ese tipo</strong>. Rechazar no te quita nada del servicio. Tu decisión se guardaría en tu navegador (categorías, fecha y versión) y caducaría a los 12 meses o si esta política cambia.</p>
+<h2>4. La medición de anuncios (píxel de Meta), siempre con tu aceptación</h2>
+<p>Uso el <strong>píxel de Meta</strong> para saber si mis anuncios funcionan. Al entrar al sitio verás un aviso con tres opciones de igual peso: <strong>Aceptar</strong>, <strong>Rechazar</strong> y <strong>Configurar</strong>, y nada viene premarcado. Mientras no aceptes la <strong>medición de anuncios</strong>, <strong>no se carga el píxel ni se envía nada a Meta</strong>. Rechazar no te quita nada del sitio.</p>
+<p>Si aceptas, Meta recibe datos de tu visita: las páginas que ves, tus clics en WhatsApp, correo o teléfono, datos técnicos de tu navegador y tu IP, junto con los identificadores de sus cookies. Meta los trata conforme a su política de privacidad (sus servidores están, entre otros lugares, en Estados Unidos). Hoy la medición de anuncios es la única categoría opcional que existe. Tu decisión se guarda en tu navegador (categorías, fecha y versión) y caduca a los 12 meses o si esta política cambia.</p>
 
 <h2>5. Cómo cambiar o retirar tu decisión</h2>
 <ul>
 <li>Desde tu navegador, en <strong>Configuración → Privacidad → Borrar datos de sitios</strong>, puedes eliminar el almacenamiento de este sitio en cualquier momento. Si borras <code>landing-express-borrador</code>, pierdes el avance de tu formulario; si borras <code>theme</code>, el sitio vuelve al tema de tu sistema.</li>
 <li>Puedes bloquear las cookies de terceros en tu navegador; el formulario podría no poder verificar que eres una persona.</li>
-<li>Cuando exista aceptación de categorías opcionales, podrás cambiarla desde «Preferencias de cookies» en el pie de cada página.</li>
+<li>Puedes cambiar o retirar tu decisión cuando quieras desde <strong>«Preferencias de cookies»</strong>, en el pie de cada página. También puedes borrar <code>tagorq_consent</code> y las cookies <code>_fbp</code> y <code>_fbc</code> desde tu navegador; si borras tu decisión, el aviso vuelve a aparecer.</li>
 </ul>
 
 <h2>6. Terceros</h2>
 <ul>
 <li><strong>Cloudflare (Turnstile):</strong> consulta su política de privacidad en cloudflare.com.</li>
 <li><strong>GitHub y Surge:</strong> alojan el sitio; consulta sus políticas.</li>
-<li><strong>Meta:</strong> solo si activo el píxel y tú lo aceptas.</li>
+<li><strong>Meta (píxel):</strong> solo si aceptas la medición de anuncios; consulta su política de privacidad en facebook.com/privacy/policy.</li>
 </ul>
 
 <h2>7. Cambios</h2>
@@ -138,7 +192,7 @@
     <footer class="c-footer">
       <div class="o-container o-stack">
         <p class="c-footer__actions"><a class="c-button c-button--ghost" href="../">Volver al inicio</a></p>
-        <p class="c-footer__legal">© 2026 Lex Mendoza · <a href="../privacidad/">Aviso de privacidad</a> · <a href="../cookies/" aria-current="page">Política de cookies</a></p>
+        <p class="c-footer__legal">© 2026 Lex Mendoza · <a href="../privacidad/">Aviso de privacidad</a> · <a href="../cookies/" aria-current="page">Política de cookies</a> · <a href="#" data-tagorq-prefs>Preferencias de cookies</a></p>
       </div>
     </footer>
   </body>

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import { caseJsonLd, ogPath, seoTags } from './seo.mjs';
+import { tagsHead } from './tags.mjs';
 
 // Genera la pagina de un caso a partir de sus datos. Es una funcion pura de texto: no toca imagenes.
 // El relato va primero: cada capitulo es titulo, texto y luego sus galerias. Los botones de vista
@@ -23,7 +24,7 @@ const FORMATS = [['carousel', 'Carrusel'], ['grid', 'Cuadrícula']];
 // Las rutas de los datos son desde la raiz del sitio; la pagina vive dos carpetas mas adentro.
 const rebase = (html) =>
   html.replace(/\b(href|src)="([^"]*)"/g, (match, attr, url) => {
-    if (/^(https?:|mailto:|tel:|data:|\/\/)/.test(url)) return match;
+    if (/^(https?:|mailto:|tel:|data:|\/\/)/.test(url) || url === '#') return match; // «#» solo (por ejemplo «Preferencias de cookies») no se reescribe
     if (url === './') return `${attr}="${PREFIX}"`;
     return `${attr}="${PREFIX}${url}"`;
   });
@@ -272,6 +273,7 @@ ${data.chapters
 ${seoTags({ path: `/casos/${data.slug}/`, title: `${data.title} | Lex Mendoza`, description: data.summary, image: ogPath(data.slug), imageAlt: `${data.title}: caso de ${data.eyebrow}, por Lex Mendoza` })}
 ${caseJsonLd({ slug: data.slug, title: data.title })}
     ${layout.themeScript}
+${tagsHead()}
     <link rel="expect" href="#contenido" blocking="render">
     <link rel="preload" href="${PREFIX}assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${PREFIX}assets/fonts/plex/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -296,6 +298,8 @@ ${caseJsonLd({ slug: data.slug, title: data.title })}
     <link rel="modulepreload" href="${PREFIX}assets/js/ornaments.js">
     <link rel="modulepreload" href="${PREFIX}assets/js/decode.js">
     <link rel="modulepreload" href="${PREFIX}assets/js/leave.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/promo.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/cupos.js">
     <script type="module" src="${PREFIX}assets/js/main.js"></script>
   </head>
   <body>

@@ -12,4 +12,4 @@ const next = home.slice(0, lineStart) + homeBlock() + home.slice(end + HOME_BLOC
 if (next !== home) fs.writeFileSync('index.html', next);
 fs.writeFileSync('robots.txt', robotsTxt());
 fs.writeFileSync('sitemap.xml', sitemapXml(caseSlugs(next)));
-console.log(`SEO: robots.txt, sitemap.xml (${caseSlugs(next).length + 1} paginas) y bloque de la home${next !== home ? ' actualizado' : ' sin cambios'}.`);
+console.log(`SEO: robots.txt, sitemap.xml (${caseSlugs(next).length + 2} paginas) y bloque de la home${next !== home ? ' actualizado' : ' sin cambios'}.`);

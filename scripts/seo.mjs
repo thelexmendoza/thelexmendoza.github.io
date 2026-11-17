@@ -2,6 +2,8 @@
 // Lo usan la home (npm run seo), las paginas de caso (render-case.mjs) y las legales (render-legal.mjs), para que digan lo mismo.
 // El dominio definitivo es lexmendoza.com, sin www (www y thelexmendoza.github.io redirigen ahi).
 
+import { promo } from './promo/promo.mjs';
+
 export const SITE_URL = 'https://lexmendoza.com';
 export const SITE_NAME = 'Lex Mendoza';
 export const HOME_TITLE = 'Lex Mendoza | Diseñador gráfico y desarrollador web';
@@ -82,6 +84,34 @@ export function caseJsonLd({ slug, title }, indent) {
   );
 }
 
+// La landing de la promo: el servicio y sus cuatro ofertas (precios con IVA incluido, vigentes hasta el cierre de la promo).
+const aNumero = (precio) => Number(String(precio).replace(/[^0-9.]/g, ''));
+export function promoJsonLd(indent) {
+  return ldScript(
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: 'Landing Express: tu página web con la promo de fin de año',
+      description: promo.description,
+      areaServed: 'MX',
+      provider: { '@id': `${SITE_URL}/#persona` },
+      url: `${SITE_URL}/promo/`,
+      offers: promo.precios.plataformas.map((p) => ({
+        '@type': 'Offer',
+        name: p.nombre,
+        description: `${p.resumen} Entrega en ${p.dias} días hábiles.`,
+        price: aNumero(p.precio),
+        priceCurrency: 'MXN',
+        priceValidUntil: '2026-12-31',
+        availability: 'https://schema.org/LimitedAvailability',
+        url: `${SITE_URL}/promo/#precios`,
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: aNumero(p.precio), priceCurrency: 'MXN', valueAddedTaxIncluded: true },
+      })),
+    },
+    indent,
+  );
+}
+
 export const HOME_BLOCK_START = '<!-- seo:inicio -->';
 export const HOME_BLOCK_END = '<!-- seo:fin -->';
 
@@ -95,9 +125,9 @@ export function robotsTxt() {
   return `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 }
 
-// La home y cada caso, en el orden de las tarjetas de la home. Las paginas legales y la guia no se listan.
+// La home, la promo y cada caso (en el orden de las tarjetas de la home). Las paginas legales y la guia no se listan.
 export function sitemapXml(slugs) {
-  const urls = ['/', ...slugs.map((slug) => `/casos/${slug}/`)];
+  const urls = ['/', '/promo/', ...slugs.map((slug) => `/casos/${slug}/`)];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${absolute(u)}</loc></url>`).join('\n')}\n</urlset>\n`;
 }
 

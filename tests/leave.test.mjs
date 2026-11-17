@@ -58,7 +58,7 @@ test('la barra de carga va abajo (no choca con la barra de lectura de arriba) y 
 });
 
 test('todas las páginas precargan al pasar el cursor y excluyen enlaces deshabilitados y pestañas nuevas', () => {
-  const pages = ['index.html', ...fs.readdirSync('casos').map((d) => `casos/${d}/index.html`)];
+  const pages = ['index.html', 'promo/index.html', ...fs.readdirSync('casos').map((d) => `casos/${d}/index.html`)];
   for (const page of pages) {
     const html = fs.readFileSync(page, 'utf8');
     const rules = JSON.parse(html.match(/<script type="speculationrules">\s*([\s\S]*?)\s*<\/script>/)[1]);

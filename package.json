@@ -14,7 +14,9 @@
     "sheet": "node scripts/contact-sheet.mjs",
     "case": "node scripts/build-case.mjs",
     "legal": "node scripts/render-legal.mjs",
-    "seo": "node scripts/build-seo.mjs"
+    "seo": "node scripts/build-seo.mjs",
+    "promo": "node scripts/render-promo.mjs",
+    "tags": "node scripts/build-tags.mjs"
   },
   "keywords": [],
   "author": {

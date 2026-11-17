@@ -11,7 +11,7 @@ const finePointer = () => window.matchMedia('(hover: hover) and (pointer: fine)'
 // pantalla durante la animación (el decodificado va en un span aria-hidden) y al terminar se restaura tal cual.
 function setupDecode() {
   if (reduce() || !('IntersectionObserver' in window)) return;
-  const labels = [...document.querySelectorAll('.c-eyebrow, .c-hero__eyebrow')];
+  const labels = [...document.querySelectorAll('.c-eyebrow, .c-hero__eyebrow, .c-promo__paso-num, .c-promo__caso-etiqueta')];
   const FRAMES = 16;
   const FRAME_MS = 34;
   const run = (el) => {
@@ -47,7 +47,7 @@ function setupDecode() {
 // Foco de luz del acento que sigue al cursor dentro de las tarjetas de servicio.
 function setupSpotlight() {
   if (reduce() || !finePointer()) return;
-  document.querySelectorAll('.c-service').forEach((card) => {
+  document.querySelectorAll('.c-service, .c-promo__plan, .c-promo__caso a').forEach((card) => {
     card.addEventListener('pointermove', (event) => {
       const spot = spotAt(event.clientX, event.clientY, card.getBoundingClientRect());
       card.style.setProperty('--mx', `${spot.x.toFixed(0)}px`);

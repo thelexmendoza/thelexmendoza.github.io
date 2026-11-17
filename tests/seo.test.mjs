@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import sharp from 'sharp';
-import { SITE_URL, SOCIALS, caseJsonLd, caseSlugs, homeBlock, ogPath, OG_HOME, robotsTxt, sitemapXml } from '../scripts/seo.mjs';
+import { SITE_URL, SOCIALS, caseJsonLd, caseSlugs, homeBlock, ogPath, OG_HOME, promoJsonLd, robotsTxt, sitemapXml } from '../scripts/seo.mjs';
 
 const home = fs.readFileSync('index.html', 'utf8');
 const slugs = caseSlugs(home);
@@ -17,7 +17,7 @@ test('la home tiene su bloque de SEO al dia (npm run seo): canonica, Open Graph,
 
 test('hay seis casos y cada imagen para compartir existe y mide 1200x630', async () => {
   assert.equal(slugs.length, 6);
-  for (const image of [OG_HOME, ...slugs.map(ogPath)]) {
+  for (const image of [OG_HOME, '/assets/img/og/promo.jpg', ...slugs.map(ogPath)]) {
     assert.ok(fs.existsSync(image.slice(1)), `falta ${image}`);
     const { width, height } = await sharp(image.slice(1)).metadata();
     assert.deepEqual([width, height], [1200, 630], image);
@@ -54,17 +54,18 @@ test('el JSON-LD no puede romper la pagina: un titulo con </script> queda escapa
   assert.equal(parsed.itemListElement[2].name, '</script><img src=x onerror=alert(1)> & Co');
 });
 
-test('robots.txt y sitemap.xml estan al dia y listan la home y los seis casos, sin la guia ni las paginas legales', () => {
+test('robots.txt y sitemap.xml estan al dia y listan la home, la promo y los seis casos, sin la guia ni las paginas legales', () => {
   assert.equal(fs.readFileSync('robots.txt', 'utf8'), robotsTxt());
   assert.match(robotsTxt(), /Sitemap: https:\/\/lexmendoza\.com\/sitemap\.xml/);
   const sitemap = fs.readFileSync('sitemap.xml', 'utf8');
   assert.equal(sitemap, sitemapXml(slugs), 'sitemap.xml desactualizado: corre npm run seo');
-  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 7);
+  assert.equal((sitemap.match(/<loc>/g) ?? []).length, 8);
+  assert.ok(sitemap.includes('<loc>https://lexmendoza.com/promo/</loc>'));
   assert.doesNotMatch(sitemap, /guia|privacidad|cookies/);
 });
 
 test('solo la guia y la 404 piden no indexarse: la home, los casos y las paginas legales se pueden indexar', () => {
-  for (const page of ['index.html', 'privacidad/index.html', 'cookies/index.html', ...slugs.map((s) => `casos/${s}/index.html`)]) {
+  for (const page of ['index.html', 'promo/index.html', 'privacidad/index.html', 'cookies/index.html', ...slugs.map((s) => `casos/${s}/index.html`)]) {
     assert.doesNotMatch(fs.readFileSync(page, 'utf8'), /name="robots"[^>]*noindex/, `${page} no debe llevar noindex`);
   }
   for (const page of ['404.html', 'guia-dominio-hosting/index.html']) {
@@ -80,4 +81,19 @@ test('las paginas legales tienen su canonica', () => {
 
 test('el CNAME del repo es el dominio de las canonicas', () => {
   assert.equal(fs.readFileSync('CNAME', 'utf8').trim(), new URL(SITE_URL).hostname);
+});
+
+test('la landing de la promo tiene canonica, imagen para compartir y las cuatro ofertas con sus precios en MXN, con IVA y vigencia', () => {
+  const html = fs.readFileSync('promo/index.html', 'utf8');
+  assert.ok(html.includes(`<link rel="canonical" href="${SITE_URL}/promo/">`));
+  assert.ok(html.includes(`<meta property="og:image" content="${SITE_URL}/assets/img/og/promo.jpg">`));
+  assert.ok(html.includes(promoJsonLd('    ')), 'el JSON-LD de la promo esta desactualizado: corre npm run promo');
+  const servicio = jsonLd(html)[0];
+  assert.equal(servicio['@type'], 'Service');
+  assert.deepEqual(servicio.offers.map((o) => o.price), [549, 1290, 1990, 2190]);
+  for (const oferta of servicio.offers) {
+    assert.equal(oferta.priceCurrency, 'MXN');
+    assert.equal(oferta.priceValidUntil, '2026-12-31');
+    assert.equal(oferta.priceSpecification.valueAddedTaxIncluded, true);
+  }
 });
