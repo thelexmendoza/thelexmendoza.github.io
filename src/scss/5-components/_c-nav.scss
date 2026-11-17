@@ -4,7 +4,7 @@
 .c-nav {
   border-block-end: 1px solid var(--color-text-muted);
 
-  // Movil: marca y tema arriba, enlaces debajo. Tableta en adelante: una fila.
+  // Movil y tableta: marca y tema arriba, enlaces debajo. Desde 1024 px: una fila.
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
     gap: var(--space-2) var(--space-3);
     padding-block: var(--space-2);
 
-    @include m.respond-to(tablet) {
+    @include m.respond-to(laptop-s) {
       flex-wrap: nowrap;
     }
   }
@@ -34,7 +34,7 @@
     order: 3;
     inline-size: 100%;
 
-    @include m.respond-to(tablet) {
+    @include m.respond-to(laptop-s) {
       order: 0;
       inline-size: auto;
       margin-inline-start: auto;

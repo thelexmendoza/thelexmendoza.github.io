@@ -1,0 +1,46 @@
+@use "sass:map";
+@use "sass:string";
+@use "../0-settings/icons";
+
+// Icono de linea hecho con una mascara: toma el color del texto (currentcolor), asi cambia con el tema, con el color de cada
+// caso y con el hover. Siempre decorativo (aria-hidden): el texto del enlace dice lo que hace.
+@function replace($text, $find, $with) {
+  $at: string.index($text, $find);
+  @if not $at {
+    @return $text;
+  }
+  @return string.slice($text, 1, $at - 1) + $with + replace(string.slice($text, $at + string.length($find)), $find, $with);
+}
+
+@function icon-uri($paths) {
+  $svg: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.75' stroke-linecap='square' stroke-linejoin='miter'>";
+  @each $path in $paths {
+    $svg: $svg + "<path d='" + $path + "'/>";
+  }
+  $svg: $svg + "</svg>";
+  @return url("data:image/svg+xml," + replace(replace($svg, "<", "%3C"), ">", "%3E"));
+}
+
+.c-icon {
+  display: inline-block;
+  flex: none;
+  inline-size: 1.3em;
+  block-size: 1.3em;
+  background-color: currentcolor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  vertical-align: -0.28em;
+  // En alto contraste el navegador reemplaza los fondos: el icono se conserva con el color del texto.
+  forced-color-adjust: none;
+}
+
+@each $name, $paths in icons.$icons {
+  .c-icon--#{$name} {
+    -webkit-mask-image: icon-uri($paths);
+    mask-image: icon-uri($paths);
+  }
+}

@@ -61,10 +61,10 @@ test('cada capitulo trae su texto antes de sus galerias', () => {
 
 test('los botones de vista solo existen para los tipos que hay y no llevan cantidades', () => {
   const lens = html.match(/<div class="c-lens"[\s\S]*?<\/div>/)[0];
-  const labels = [...lens.matchAll(/<button[^>]*>([^<]+)<\/button>/g)].map((m) => m[1].trim());
+  const labels = [...lens.matchAll(/<button[^>]*>(?:<span[^>]*><\/span>)?([^<]+)<\/button>/g)].map((m) => m[1].trim());
   assert.deepEqual(labels, ['Todo', 'Diseños', 'Iconos']);
   assert.doesNotMatch(lens, /\d/);
-  assert.doesNotMatch(lens, /aria-pressed="true"[^>]*>(?!Todo)/);
+  assert.doesNotMatch(lens, /aria-pressed="true"[^>]*>(?!(?:<span[^>]*><\/span>)?Todo)/);
 });
 
 test('con fotos aparece el boton de fotos', () => {
@@ -124,7 +124,7 @@ test('un grupo de logotipos lleva casillas con margen y el tono de cada logo', (
 
 test('hay un selector de formato con carrusel y cuadricula, sin ninguno elegido de inicio y sin numeros', () => {
   const format = html.match(/<div class="c-format"[\s\S]*?<\/div>/)[0];
-  const labels = [...format.matchAll(/<button[^>]*>([^<]+)<\/button>/g)].map((m) => m[1].trim());
+  const labels = [...format.matchAll(/<button[^>]*>(?:<span[^>]*><\/span>)?([^<]+)<\/button>/g)].map((m) => m[1].trim());
   assert.deepEqual(labels, ['Carrusel', 'Cuadrícula']);
   assert.equal((format.match(/aria-pressed="false"/g) ?? []).length, 2);
   assert.doesNotMatch(format, /\d/);
@@ -158,9 +158,15 @@ test('el riel enlaza los capitulos y el menu de la home no participa del scroll-
   assert.doesNotMatch(nav, /js-spy/);
 });
 
-test('cierra con la invitacion a armar el plan, marcada como proxima mientras plan/ no exista', () => {
-  assert.match(html, /class="c-button"[^>]*data-soon="\.\.\/\.\.\/plan\/"/);
-  assert.match(html, /Arma tu plan/);
+test('cierra con la promo de fin de año: enlace al brief y su video de fondo, igual que la home', () => {
+  assert.match(html, /<a class="c-button" href="https:\/\/brief\.lexmendoza\.com\/"><span class="c-icon c-icon--tag" aria-hidden="true"><\/span>Cotiza con la promo<\/a>/);
+  assert.match(html, /\/\/ promo de fin de año/);
+  assert.match(html, /Precios exclusivos con lugares limitados/);
+  assert.doesNotMatch(html, /data-soon="\.\.\/\.\.\/plan\//);
+  const video = html.match(/<video class="c-plan__video"[^>]*>/)[0];
+  assert.doesNotMatch(video, /autoplay/);
+  assert.match(video, /data-src="\.\.\/\.\.\/assets\/video\/plan\/brief-h\.mp4"/);
+  assert.match(video, /data-src-mobile="\.\.\/\.\.\/assets\/video\/plan\/brief-v\.mp4"/);
 });
 
 test('hay un solo h1, el lightbox existe y los textos se escapan', () => {
@@ -317,4 +323,33 @@ test('los videos de YouTube salen como miniatura con boton de reproducir, sin ca
   assert.match(group, /aria-label="Reproducir: Banda: Tema \| México Metal Fest"/);
   assert.doesNotMatch(page, /<iframe|youtube\.com|youtube-nocookie|ytimg/, 'el reproductor y YouTube solo se tocan al hacer clic (case.js)');
   assert.match(page, />Videos</, 'con otros tipos hay boton de vista para los videos');
+});
+
+test('cada caso tiene un boton de regreso al inicio y, debajo de la promo, ver el caso anterior y el siguiente en el orden de la home', () => {
+  assert.match(html, /<a class="c-button c-button--ghost" href="\.\.\/\.\.\/#casos"><span class="c-icon c-icon--arrow-left" aria-hidden="true"><\/span>Volver al inicio<\/a>/);
+  const valtre = renderCase({ ...data, slug: 'valtre' });
+  const nav = valtre.match(/<nav class="c-case-nav"[\s\S]*?<\/nav>/)[0];
+  // en la home Valtre va despues de CiiSA | PSW y antes de BMW / MINI
+  assert.match(nav, /href="\.\.\/ciisa-psw\/" rel="prev"/);
+  assert.match(nav, /href="\.\.\/bmw-mini\/" rel="next"/);
+  assert.match(nav, /data-case="bmw"/);
+  assert.match(nav, /Ver caso anterior/);
+  assert.match(nav, /Ver siguiente caso/);
+  assert.match(nav, /href="\.\.\/\.\.\/#casos"><span class="c-icon c-icon--grid" aria-hidden="true"><\/span>Todos los casos/);
+  assert.ok(valtre.indexOf('Cotiza con la promo') < valtre.indexOf('c-case-nav'), 'va debajo de la promo');
+  assert.ok(valtre.indexOf('c-case-nav') < valtre.indexOf('<footer'), 'y antes del pie');
+});
+
+test('los casos van en circulo: el primero lleva al ultimo y el ultimo al primero', () => {
+  const primero = renderCase({ ...data, slug: 'ciisa-psw' }).match(/<nav class="c-case-nav"[\s\S]*?<\/nav>/)[0];
+  assert.match(primero, /href="\.\.\/motociclismo\/" rel="prev"/);
+  const ultimo = renderCase({ ...data, slug: 'motociclismo' }).match(/<nav class="c-case-nav"[\s\S]*?<\/nav>/)[0];
+  assert.match(ultimo, /href="\.\.\/ciisa-psw\/" rel="next"/);
+  assert.doesNotMatch(html, /c-case-nav"/, 'una pagina que no esta en la home no lleva el bloque');
+});
+
+test('los iconos son decorativos (aria-hidden) y la barra, el regreso y anterior/siguiente los usan', () => {
+  const valtre = renderCase({ ...data, slug: 'valtre' });
+  for (const m of valtre.matchAll(/<span class="c-icon [^"]*"([^>]*)>/g)) assert.match(m[1], /aria-hidden="true"/);
+  for (const name of ['list', 'pen', 'star', 'carousel', 'grid', 'arrow-left', 'arrow-right', 'tag']) assert.ok(valtre.includes(`c-icon--${name}"`), `falta el icono ${name}`);
 });

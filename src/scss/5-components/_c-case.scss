@@ -176,6 +176,9 @@
 // El area tactil de 55 px del sitio haria enormes estos botones; aqui basta con 34 px de alto.
 .c-lens__button,
 .c-format__button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
   min-block-size: fn.rem(34);
   padding: 0 var(--space-1);
   border: 1px solid var(--color-text-muted);
@@ -193,6 +196,15 @@
     padding: var(--space-1) var(--space-2);
     font-size: var(--step--1);
     letter-spacing: 0.06em;
+  }
+
+  // En movil la barra va justa: los iconos aparecen desde la tableta.
+  .c-icon {
+    display: none;
+
+    @include m.respond-to(tablet) {
+      display: inline-block;
+    }
   }
 
   &[aria-pressed="true"] {

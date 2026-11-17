@@ -1,0 +1,85 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/mixins" as m;
+
+// Debajo de la promo de cada caso: ir al caso anterior o al siguiente (en el orden de la home, en circulo) y volver a todos los
+// casos. Cada enlace lleva el color del caso al que va (data-case), asi se sabe a donde se llega.
+.c-case-nav {
+  padding-block: var(--space-5);
+  border-block-start: 1px solid var(--color-text-muted);
+
+  &__row {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    color: var(--color-text);
+    text-decoration: none;
+
+    &--next {
+      align-items: flex-end;
+      text-align: end;
+    }
+
+    @include m.on-hover {
+      border-color: var(--color-accent);
+      background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    }
+
+    &:focus-visible {
+      border-color: var(--color-accent);
+    }
+  }
+
+  &__dir {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__name {
+    font-size: var(--step-2);
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  &__home {
+    margin-block: var(--space-2) 0;
+    text-align: center;
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-1);
+      color: var(--color-text-muted);
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .c-case-nav__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .c-case-nav__link {
+    transition:
+      border-color 0.25s ease,
+      background-color 0.25s ease;
+  }
+}

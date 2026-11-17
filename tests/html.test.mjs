@@ -62,11 +62,12 @@ test('un enlace a un ancla existente se acepta', () => {
   assert.deepEqual(checkHtml(write('anchor-ok.html', ok)), []);
 });
 
-test('la home enlaza los seis casos y el plan (con href o declarados como proximos)', () => {
+test('la home enlaza los seis casos (con href) y el plan lleva al brief', () => {
   const html = fs.readFileSync('index.html', 'utf8');
-  for (const dest of ['casos/valtre/', 'casos/ciisa-psw/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/', 'plan/']) {
+  for (const dest of ['casos/valtre/', 'casos/ciisa-psw/', 'casos/bmw-mini/', 'casos/daniel-abrego/', 'casos/etics-live/', 'casos/motociclismo/']) {
     assert.ok(html.includes(`href="${dest}"`) || html.includes(`data-soon="${dest}"`), `falta ${dest}`);
   }
+  assert.ok(html.includes('href="https://brief.lexmendoza.com/"'), 'falta el enlace al brief');
 });
 
 test('el enlace de saltar al contenido usa la variante con foco visible', () => {
@@ -94,7 +95,7 @@ test('la home no contiene precios', () => {
 
 test('cada seccion tiene un comentario que complementa el titulo, sin numeracion', () => {
   const html = fs.readFileSync('index.html', 'utf8');
-  const comments = ['Diseño + web', 'elige una, o las dos', 'trabajo real, con clientes reales', 'sin compromiso, a tu ritmo', 'la versión corta', 'WhatsApp o correo, como prefieras'];
+  const comments = ['Diseño + web', 'elige una, o las dos', 'trabajo real, con clientes reales', 'promo de fin de año', 'la versión corta', 'WhatsApp, correo o redes, como prefieras'];
   for (const text of comments) {
     assert.ok(html.includes('// ' + text + '<'), 'falta el comentario "// ' + text + '"');
   }
@@ -185,4 +186,15 @@ test('la pagina de Valtre no tiene problemas estructurales ni imagenes rotas', (
 test('un img con una ruta local inexistente se reporta', () => {
   const bad = good.replace('<h1>', '<img src="no-esta.webp" alt="x"><h1>');
   assert.match(checkHtml(write('img-rota.html', bad)).join(' | '), /no-esta\.webp/);
+});
+
+test('el pie enlaza el Instagram y el LinkedIn de Lex (sin parametros de rastreo) y se abren en otra pestaña con noopener', () => {
+  const html = fs.readFileSync('index.html', 'utf8');
+  for (const url of ['https://www.instagram.com/thelexmendoza/', 'https://www.linkedin.com/in/amendozaleon/']) {
+    const a = html.match(new RegExp(`<a [^>]*href="${url}"[^>]*>`));
+    assert.ok(a, `falta ${url}`);
+    assert.match(a[0], /target="_blank"/);
+    assert.match(a[0], /rel="noopener noreferrer"/);
+  }
+  assert.doesNotMatch(html, /instagram\.com[^"]*[?]/);
 });

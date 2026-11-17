@@ -118,3 +118,33 @@ export function setupCardVideos() {
     new MutationObserver(sync).observe(card, { attributes: true, attributeFilter: ['class'] });
   });
 }
+
+// «¿Te late lo que ves?»: el video del brief se descarga y se reproduce solo cuando la seccion esta cerca de la pantalla y se
+// pausa al salir. Con menos movimiento no se descarga nada: queda el poster.
+export function setupPlanVideo() {
+  const section = document.querySelector('.c-plan');
+  const video = section?.querySelector('.c-plan__video');
+  if (!video) return;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const mobile = window.matchMedia(MOBILE);
+  let near = false;
+  const sync = () => {
+    if (reduce.matches || !near) {
+      video.pause();
+      return;
+    }
+    load(video, mobile.matches);
+    play(video);
+  };
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(
+      ([entry]) => {
+        near = entry.isIntersecting;
+        sync();
+      },
+      { rootMargin: '200px 0px' },
+    ).observe(section);
+  }
+  mobile.addEventListener('change', sync);
+  reduce.addEventListener('change', sync);
+}

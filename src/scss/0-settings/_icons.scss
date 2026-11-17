@@ -1,0 +1,23 @@
+// Iconos de linea para la navegacion y los botones: una cuadricula de 24, trazo de 1.75, puntas y esquinas rectas (como los
+// botones del sitio). Cada icono es una lista de trazos SVG; `c-icon` los usa como mascara, asi toman el color del texto.
+$icons: (
+  "arrow-left": ("M20 12H4", "M10 6l-6 6 6 6"),
+  "arrow-right": ("M4 12h16", "M14 6l6 6-6 6"),
+  "arrow-down": ("M12 4v16", "M6 14l6 6 6-6"),
+  "home": ("M3 11l9-8 9 8", "M5 10v10h14V10", "M10 20v-6h4v6"),
+  "grid": ("M4 4h7v7H4z", "M13 4h7v7h-7z", "M4 13h7v7H4z", "M13 13h7v7h-7z"),
+  "layers": ("M12 3l9 5-9 5-9-5z", "M3 12l9 5 9-5", "M3 16l9 5 9-5"),
+  "user": ("M12 12a4 4 0 100-8 4 4 0 000 8z", "M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"),
+  "checklist": ("M10 6h10", "M10 12h10", "M10 18h10", "M3.5 6l1.5 1.5L7.5 5", "M3.5 12l1.5 1.5L7.5 11", "M3.5 18l1.5 1.5L7.5 17"),
+  "mail": ("M3 5h18v14H3z", "M3 6l9 7 9-7"),
+  "message": ("M4 4h16v12H9l-5 4z"),
+  "instagram": ("M4 4h16v16H4z", "M12 16a4 4 0 100-8 4 4 0 000 8z", "M17 7h.01"),
+  "linkedin": ("M4 4h16v16H4z", "M8 10v7", "M8 7h.01", "M12 17v-7", "M12 13c0-2 1.5-3 3-3s2 1 2 3v4"),
+  "tag": ("M3 3h8l10 10-8 8L3 11z", "M7.5 7.5h.01"),
+  "list": ("M4 6h16", "M4 12h16", "M4 18h16"),
+  "pen": ("M4 20l1-5L16 4l4 4L9 19z", "M14 6l4 4"),
+  "image": ("M3 4h18v16H3z", "M3 17l6-6 5 5 3-3 4 4", "M8.5 9h.01"),
+  "video": ("M3 6h12v12H3z", "M15 10l6-3v10l-6-3"),
+  "star": ("M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L12 16.6l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z"),
+  "carousel": ("M2 7h4v10H2z", "M8 5h8v14H8z", "M18 7h4v10h-4z"),
+);

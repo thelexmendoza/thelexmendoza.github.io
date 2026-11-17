@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { privacidad } from './legal/privacidad.mjs';
 import { cookies } from './legal/cookies.mjs';
+import { seoTags } from './seo.mjs';
 
 // Genera las páginas legales (aviso de privacidad y política de cookies) con el mismo molde que los casos:
 // cabecera y script del tema salen de index.html, así que cualquier cambio del menú se refleja al regenerarlas.
@@ -56,6 +57,7 @@ export function renderLegal(page, { layoutPath = 'index.html' } = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(page.title)} | Lex Mendoza</title>
     <meta name="description" content="${esc(page.description)}">
+${seoTags({ path: `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, description: page.description })}
     ${layout.themeScript}
     <link rel="expect" href="#contenido" blocking="render">
     <link rel="preload" href="${PREFIX}assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>

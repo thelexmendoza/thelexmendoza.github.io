@@ -1,6 +1,5 @@
 @use "sass:list";
 @use "sass:map";
-@use "../0-settings/cases";
 
 // Palabra con degradado animado. Solo debe haber una por pantalla.
 .c-chameleon-title {
@@ -13,7 +12,7 @@
   -webkit-text-fill-color: transparent;
   animation: c-chameleon-flow 8s linear infinite;
 
-  // Recorre el acento de cada caso (el primero se repite al final para un ciclo continuo).
+  // Degradado de rojos en reposo (ver spectrum()).
   &--spectrum {
     background-image: var(--spectrum);
   }
@@ -48,11 +47,14 @@
   }
 }
 
+// En reposo la palabra del hero recorre una familia de rojos (guinda, rojo del sitio y coral); el arcoiris de los casos solo
+// aparece cuando el cursor está sobre un caso y hero-fx.js le pone su data-case. El primero se repite al final para un ciclo continuo.
 @function spectrum($theme) {
-  $colors: ();
-  @each $name, $by-theme in cases.$cases {
-    $colors: list.append($colors, map.get(map.get($by-theme, $theme), accent), comma);
-  }
+  $reds: (
+    light: (#8f0a1c, #d90429, #ff4d4d),
+    dark: (#e10600, #ff5a4d, #ff9a8a),
+  );
+  $colors: map.get($reds, $theme);
   $colors: list.append($colors, list.nth($colors, 1), comma);
   @return linear-gradient(90deg, $colors);
 }

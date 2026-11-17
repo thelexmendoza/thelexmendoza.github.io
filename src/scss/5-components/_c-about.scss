@@ -1,15 +1,168 @@
 @use "../1-tools/functions" as fn;
+@use "../0-settings/fonts" as f;
 
 .c-about {
   align-items: center;
   gap: var(--space-5);
 
-  // Avatar provisional hasta que lleguen las fotos.
-  &__avatar {
-    inline-size: min(100%, #{fn.rem(233)});
+  // Foto de Lex con el estilo del sitio: en reposo es duotono negro y rojo con reticula, marcas de registro y un barrido
+  // de luz; al pasar el cursor recupera su color (como las piezas del hero). Los dos retratos son la misma imagen:
+  // la de blanco y negro lleva encima un velo rojo (multiply) y la de color queda oculta hasta el hover.
+  &__photo {
+    position: relative;
+    isolation: isolate;
+    inline-size: min(100%, #{fn.rem(377)});
     aspect-ratio: 1;
     justify-self: center;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--gradient-a), var(--gradient-b));
+    margin: 0;
+    overflow: hidden;
+    background: #0a0a0a;
+    border: 1px solid color-mix(in srgb, var(--color-text) 28%, transparent);
+
+    // Marcas de registro en las cuatro esquinas.
+    &::before {
+      content: "";
+      position: absolute;
+      inset: #{fn.rem(8)};
+      z-index: 5;
+      pointer-events: none;
+      --mark: color-mix(in srgb, #fff 80%, transparent);
+      background:
+        linear-gradient(var(--mark), var(--mark)) 0 0 / #{fn.rem(21)} 2px no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 0 0 / 2px #{fn.rem(21)} no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 100% 0 / #{fn.rem(21)} 2px no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 100% 0 / 2px #{fn.rem(21)} no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 0 100% / #{fn.rem(21)} 2px no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 0 100% / 2px #{fn.rem(21)} no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 100% 100% / #{fn.rem(21)} 2px no-repeat,
+        linear-gradient(var(--mark), var(--mark)) 100% 100% / 2px #{fn.rem(21)} no-repeat;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+
+    // La version a color queda por encima del velo y solo se ve con el cursor encima.
+    &--color {
+      z-index: 2;
+      opacity: 0;
+    }
+  }
+
+  &__tint {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(165deg, #ff3b4a, var(--color-accent) 45%, #5a0612);
+    mix-blend-mode: multiply;
+  }
+
+  // Cruces de la reticula (paso de 34 px, como la del hero), tenues; con movimiento les pasa un destello en diagonal.
+  &__grid {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.45;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34'%3E%3Cpath d='M12,17h10M17,12v10' stroke='white' stroke-width='1.2' fill='none'/%3E%3C/svg%3E");
+    background-size: #{fn.rem(34)} #{fn.rem(34)};
+  }
+
+  // Linea de barrido: solo con movimiento.
+  &__scan {
+    display: none;
+  }
+
+  &__tag {
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: #{fn.rem(13)};
+    z-index: 5;
+    text-align: center;
+    font-family: f.$font-mono;
+    font-size: fn.rem(10);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1px 6px rgb(0 0 0 / 0.7);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .c-about {
+    &__img--color {
+      transition: opacity 0.35s ease;
+    }
+
+    &__photo:hover &__img--color {
+      opacity: 1;
+    }
+
+    &__photo:hover &__tint {
+      opacity: 0;
+    }
+
+    &__tint {
+      transition: opacity 0.35s ease;
+    }
+
+    &__grid {
+      -webkit-mask-image: linear-gradient(115deg, transparent 32%, #000 50%, transparent 68%);
+      mask-image: linear-gradient(115deg, transparent 32%, #000 50%, transparent 68%);
+      -webkit-mask-size: 320% 100%;
+      mask-size: 320% 100%;
+      animation: c-about-shimmer 7s ease-in-out infinite;
+      opacity: 0.7;
+    }
+
+    &__scan {
+      display: block;
+      position: absolute;
+      inset-inline: 0;
+      inset-block-start: 0;
+      block-size: 22%;
+      z-index: 4;
+      pointer-events: none;
+      background: linear-gradient(transparent, rgb(255 90 100 / 0.5) 50%, transparent);
+      mix-blend-mode: screen;
+      animation: c-about-scan 6.5s linear infinite;
+    }
+
+    &__photo::before {
+      animation: c-about-marks 3.4s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes c-about-shimmer {
+  from {
+    mask-position: 130% 0;
+    -webkit-mask-position: 130% 0;
+  }
+
+  to {
+    mask-position: -30% 0;
+    -webkit-mask-position: -30% 0;
+  }
+}
+
+@keyframes c-about-scan {
+  from {
+    translate: 0 -100%;
+  }
+
+  to {
+    translate: 0 460%;
+  }
+}
+
+@keyframes c-about-marks {
+  50% {
+    inset: #{fn.rem(13)};
+    opacity: 0.55;
   }
 }

@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { caseJsonLd, ogPath, seoTags } from './seo.mjs';
 
 // Genera la pagina de un caso a partir de sus datos. Es una funcion pura de texto: no toca imagenes.
 // El relato va primero: cada capitulo es titulo, texto y luego sus galerias. Los botones de vista
@@ -6,7 +7,12 @@ import fs from 'node:fs';
 
 const PREFIX = '../../';
 const LENS_LABELS = { disenos: 'Diseños', fotos: 'Fotos', videos: 'Videos', iconos: 'Iconos' };
+const LENS_ICONS = { todo: 'list', disenos: 'pen', fotos: 'image', videos: 'video', iconos: 'star' };
+const FORMAT_ICONS = { carousel: 'carousel', grid: 'grid' };
 const LENS_ORDER = ['disenos', 'fotos', 'videos', 'iconos'];
+
+// Icono de linea (ver src/scss/5-components/_c-icon.scss): decorativo, el texto del enlace dice lo que hace.
+const icon = (name) => `<span class="c-icon c-icon--${name}" aria-hidden="true"></span>`;
 
 const esc = (value) =>
   String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -33,7 +39,32 @@ function extractLayout(layoutPath) {
     themeScript: take(/<script>[\s\S]*?<\/script>/, 'el script del tema'),
     header: rebase(take(/<header class="c-nav">[\s\S]*?<\/header>/, 'la cabecera')).replace(/ js-spy/g, ''),
     footer: rebase(take(/<footer class="c-footer"[\s\S]*?<\/footer>/, 'el pie')),
+    cases: extractCases(home),
   };
+}
+
+// Los casos, en el orden de las tarjetas de la home (de ahi salen «caso anterior» y «siguiente»).
+function extractCases(home) {
+  return [...home.matchAll(/<a class="c-case-card"[^>]*data-case="([^"]+)"[^>]*href="casos\/([^"/]+)\/"[\s\S]*?<span class="c-case-card__word">([^<]+)<\/span>/g)].map(([, key, slug, title]) => ({ key, slug, title }));
+}
+
+// Anterior y siguiente en circulo: el primero lleva al ultimo y el ultimo al primero. Sin el caso en la lista (paginas de prueba), no hay bloque.
+function renderCaseNav(cases, slug) {
+  const at = cases.findIndex((c) => c.slug === slug);
+  if (at < 0 || cases.length < 2) return '';
+  const prev = cases[(at - 1 + cases.length) % cases.length];
+  const next = cases[(at + 1) % cases.length];
+  const link = (c, rel, dir) => `<a class="c-case-nav__link c-case-nav__link--${rel}" data-case="${esc(c.key)}" href="../${esc(c.slug)}/" rel="${rel}"><span class="c-case-nav__dir">${rel === 'prev' ? icon('arrow-left') + dir : dir + icon('arrow-right')}</span><span class="c-case-nav__name">${c.title}</span></a>`;
+  return `<nav class="c-case-nav" aria-label="Más casos">
+        <div class="o-container o-stack">
+          <div class="c-case-nav__row">
+            ${link(prev, 'prev', 'Ver caso anterior')}
+            ${link(next, 'next', 'Ver siguiente caso')}
+          </div>
+          <p class="c-case-nav__home"><a href="${PREFIX}#casos">${icon('grid')}Todos los casos</a></p>
+        </div>
+      </nav>
+`;
 }
 
 const img = (item, extra = '') =>
@@ -194,7 +225,7 @@ function renderBar(chapters, brands = []) {
   const parts = [];
   if (kinds.size >= 2) {
     const buttons = [['todo', 'Todo'], ...LENS_ORDER.filter((kind) => kinds.has(kind)).map((kind) => [kind, LENS_LABELS[kind]])]
-      .map(([kind, label]) => `<button class="c-lens__button" type="button" data-lens="${kind}" aria-pressed="${kind === 'todo'}">${label}</button>`)
+      .map(([kind, label]) => `<button class="c-lens__button" type="button" data-lens="${kind}" aria-pressed="${kind === 'todo'}">${icon(LENS_ICONS[kind])}${label}</button>`)
       .join('\n      ');
     parts.push(`<div class="c-lens" role="group" aria-label="Qué quieres ver">
       ${buttons}
@@ -211,7 +242,7 @@ function renderBar(chapters, brands = []) {
     </div>`);
   }
   if (groups.some((group) => group.kind !== 'iconos' && group.kind !== 'sitios')) {
-    const buttons = FORMATS.map(([format, label]) => `<button class="c-format__button" type="button" data-format="${format}" aria-pressed="false">${label}</button>`).join('\n      ');
+    const buttons = FORMATS.map(([format, label]) => `<button class="c-format__button" type="button" data-format="${format}" aria-pressed="false">${icon(FORMAT_ICONS[format])}${label}</button>`).join('\n      ');
     parts.push(`<div class="c-format" role="group" aria-label="Cómo verlo">
       ${buttons}
     </div>`);
@@ -238,6 +269,8 @@ ${data.chapters
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(data.title)} | Lex Mendoza</title>
     <meta name="description" content="${esc(data.summary)}">
+${seoTags({ path: `/casos/${data.slug}/`, title: `${data.title} | Lex Mendoza`, description: data.summary, image: ogPath(data.slug), imageAlt: `${data.title}: caso de ${data.eyebrow}, por Lex Mendoza` })}
+${caseJsonLd({ slug: data.slug, title: data.title })}
     ${layout.themeScript}
     <link rel="expect" href="#contenido" blocking="render">
     <link rel="preload" href="${PREFIX}assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -276,6 +309,7 @@ ${data.chapters
     <main id="contenido" data-lens="todo">
       <section class="c-case-hero" id="caso-inicio"${cardMedia(data.card).length ? ` data-media style="--vt-hero: hero-${esc(data.key)}; --vt-title: title-${esc(data.key)}"` : ''} aria-labelledby="caso-titulo">
         ${renderHeroMedia(data.card)}<div class="o-container o-stack">
+          <p class="c-case-hero__back"><a class="c-button c-button--ghost" href="${PREFIX}#casos">${icon('arrow-left')}Volver al inicio</a></p>
           <p class="c-eyebrow">// ${esc(data.eyebrow)}</p>
           <h1 class="c-case-hero__title" id="caso-titulo" data-reveal="title"><span class="c-chameleon-title">${esc(data.title)}</span></h1>
           ${text(data.meta, 'c-case-hero__meta')}
@@ -288,13 +322,19 @@ ${data.chapters
 
       ${data.chapters.map(renderChapter).join('\n\n      ')}
 
-      <section class="c-section c-section--plan" aria-labelledby="cierre-titulo">
-        <div class="o-container o-stack">
+      <section class="c-section c-section--plan c-plan" aria-labelledby="cierre-titulo">
+        <div class="c-plan__media" aria-hidden="true">
+          <video class="c-plan__video" muted loop playsinline preload="none" poster="${PREFIX}assets/video/plan/brief-h-poster.webp" data-src="${PREFIX}assets/video/plan/brief-h.mp4" data-src-mobile="${PREFIX}assets/video/plan/brief-v.mp4" data-poster-mobile="${PREFIX}assets/video/plan/brief-v-poster.webp"></video>
+        </div>
+        <div class="o-container o-stack c-plan__content">
+          <p class="c-eyebrow">// promo de fin de año</p>
           <h2 id="cierre-titulo" data-reveal="title">¿Te late este tipo de trabajo?</h2>
-          ${text('Cuéntame qué necesitas y armamos tu plan, paso a paso, sin compromiso.', 'c-section__lead')}
-          <p><a class="c-button" data-soon="${PREFIX}plan/" aria-disabled="true">Arma tu plan <span class="c-nav__soon">Próximamente</span></a></p>
+          ${text('Precios exclusivos con lugares limitados. Cotiza tu página: respondes unas preguntas y la ves armarse en vivo, sin pagar nada todavía.', 'c-section__lead')}
+          <p><a class="c-button" href="https://brief.lexmendoza.com/">${icon('tag')}Cotiza con la promo</a></p>
         </div>
       </section>
+
+      ${renderCaseNav(layout.cases, data.slug)}
     </main>
 
     ${layout.footer}

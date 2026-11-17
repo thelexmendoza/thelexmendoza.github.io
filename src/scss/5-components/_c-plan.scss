@@ -1,0 +1,93 @@
+@use "../1-tools/functions" as fn;
+
+// «¿Te late lo que ves?»: el fondo es un recorrido grabado del brief (lo que le espera a quien arma su plan). En escritorio y
+// tableta ocupa el lado derecho y se difumina hacia el texto; en movil va arriba, en su propia ventana, y el texto queda
+// debajo, sin empalmarse. El video no lleva autoplay: media.js lo reproduce solo si la persona acepta movimiento y solo
+// mientras la seccion se ve (con menos movimiento queda el poster).
+.c-plan {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__media {
+    position: relative;
+    z-index: 0;
+    aspect-ratio: 4 / 5;
+    max-block-size: 62svh;
+    // En movil llega hasta el borde de arriba de la seccion (anula su relleno) y el texto empieza debajo.
+    margin-block: calc(-1 * var(--space-6)) var(--space-3);
+    pointer-events: none;
+    // Se difumina hacia abajo, donde empieza el texto.
+    mask-image: linear-gradient(180deg, #000 55%, transparent);
+  }
+
+  &__video {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+    opacity: 0.9;
+  }
+}
+
+// Tableta: sigue apilado (el mockup claro del brief chocaria con el texto gris), pero la ventana es horizontal y usa el video de escritorio.
+@media (min-width: 768px) {
+  .c-plan__media {
+    aspect-ratio: 16 / 9;
+    max-block-size: none;
+  }
+
+  .c-plan__video {
+    object-position: 50% 50%;
+  }
+}
+
+// Escritorio: el video ocupa el lado derecho. En tema claro solo se deja ver la maqueta (el formulario del brief es oscuro y
+// dejaria una franja gris); en oscuro el formulario se asoma difuminado, como un fantasma detras del texto.
+.c-plan {
+  --plan-mask: linear-gradient(90deg, transparent 33%, #000 40%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .c-plan {
+    --plan-mask: linear-gradient(90deg, transparent 12%, rgb(0 0 0 / 0.5) 36%, #000 64%);
+  }
+}
+
+[data-theme="dark"] .c-plan {
+  --plan-mask: linear-gradient(90deg, transparent 12%, rgb(0 0 0 / 0.5) 36%, #000 64%);
+}
+
+@media (min-width: 1024px) {
+  .c-plan {
+    min-block-size: fn.rem(466);
+    display: flex;
+    align-items: center;
+
+    &__content {
+      inline-size: 100%;
+    }
+
+    &__media {
+      position: absolute;
+      inset-block: 0;
+      inset-inline-end: 0;
+      inline-size: 54%;
+      aspect-ratio: auto;
+      max-block-size: none;
+      margin: 0;
+      mask-image: var(--plan-mask);
+    }
+
+    &__video {
+      object-position: 60% 34%;
+      opacity: 0.92;
+    }
+  }
+}

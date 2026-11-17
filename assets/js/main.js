@@ -1,7 +1,7 @@
 import { nextTheme, readStoredTheme, resolveTheme, saveTheme } from './theme.js';
 import { pickActive } from './scrollspy.js';
 import { staggerDelay } from './reveal.js';
-import { setupCardVideos, setupHeroVideos } from './media.js';
+import { setupCardVideos, setupHeroVideos, setupPlanVideo } from './media.js';
 import { setupHeroFx } from './hero-fx.js';
 import { setupOrnaments } from './ornaments.js';
 import { setupLeave } from './leave.js';
@@ -152,6 +152,7 @@ if (spySections.length) {
 // Videos de fondo: el del hero se reproduce al cargar; el de la tarjeta, mientras esta activa.
 setupHeroVideos();
 setupCardVideos();
+setupPlanVideo();
 setupHeroFx();
 setupOrnaments();
 setupLeave();

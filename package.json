@@ -13,7 +13,8 @@
     "test": "node --test tests/",
     "sheet": "node scripts/contact-sheet.mjs",
     "case": "node scripts/build-case.mjs",
-    "legal": "node scripts/render-legal.mjs"
+    "legal": "node scripts/render-legal.mjs",
+    "seo": "node scripts/build-seo.mjs"
   },
   "keywords": [],
   "author": {
