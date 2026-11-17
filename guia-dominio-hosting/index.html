@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía de dominio y hosting · Landing Express</title>
+<meta name="description" content="Qué son el dominio y el hosting, qué conviene comprar, qué evitar y cómo conectar tu sitio.">
+<meta name="robots" content="noindex">
+<style>
+:root {
+  --bg: #f6f6f3;
+  --panel: #fff;
+  --fg: #141414;
+  --muted: #5a5a58;
+  --line: #d9d9d4;
+  --acc: #c8102e;
+  --on-acc: #fff;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e0e0e;
+    --panel: #181818;
+    --fg: #f1f1ee;
+    --muted: #a6a6a1;
+    --line: #2e2e2c;
+    --acc: #ff4d63;
+    --on-acc: #140406;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 1rem/1.618 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  inline-size: min(100% - 2rem, 44rem);
+  margin-inline: auto;
+  padding-block: 2.0625rem 5.5625rem;
+}
+
+.etiqueta {
+  margin: 0;
+  font: 0.6875rem/1 ui-monospace, "Cascadia Mono", Consolas, monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--acc);
+}
+
+h1 { margin: 0.8125rem 0; font-size: clamp(1.625rem, 6vw, 2.625rem); line-height: 1.1; }
+h2 { margin: 3.4375rem 0 0.8125rem; font-size: 1.625rem; line-height: 1.2; }
+h3 { margin: 1.3125rem 0 0.3rem; font-size: 1rem; }
+p, ul, ol { margin: 0 0 0.8125rem; }
+ul, ol { padding-inline-start: 1.3rem; }
+li { margin-block-end: 0.4rem; }
+a { color: var(--acc); }
+
+.nota, .tarjeta {
+  padding: 1rem 1.3125rem;
+  border: 1.5px solid var(--line);
+  border-radius: 0.8125rem;
+  background: var(--panel);
+}
+
+.nota { border-color: color-mix(in srgb, var(--acc) 45%, var(--line)); }
+.tarjetas { display: grid; gap: 0.8125rem; }
+.tarjeta h3 { margin-block-start: 0; }
+.tarjeta p { margin: 0; color: var(--muted); }
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  background: var(--acc);
+  color: var(--on-acc);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (min-width: 40rem) {
+  .tarjetas { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+  <p class="etiqueta">// Guía de dominio y hosting</p>
+  <h1>Lo que debes saber antes de comprar tu dominio y publicar tu sitio</h1>
+  <p>Soy Lex. Esta guía es gratis, sin letra chica y no te vende nada: son las cosas que me gustaría que supiera cualquiera antes de pagar. Si algo no queda claro, escríbeme por WhatsApp y te ayudo.</p>
+  <p class="nota"><strong>Verifica siempre en el sitio oficial.</strong> Los precios, promociones y pasos de cada proveedor cambian seguido. Aquí no te prometo ninguna oferta ni cifra: te enseño qué mirar.</p>
+
+  <h2>Lo básico en un minuto</h2>
+  <div class="tarjetas">
+    <div class="tarjeta"><h3>Dominio</h3><p>Tu dirección en internet, como <em>tunegocio.com</em>. Se compra a un registrador y se renueva cada año.</p></div>
+    <div class="tarjeta"><h3>Hosting</h3><p>El lugar donde vive tu sitio para que cualquiera lo abra a cualquier hora. En Wix y Squarespace va incluido en tu plan.</p></div>
+    <div class="tarjeta"><h3>DNS</h3><p>La libreta que le dice al mundo «este dominio vive en este hosting». Conectar tu dominio es, sobre todo, editar esa libreta.</p></div>
+    <div class="tarjeta"><h3>HTTPS</h3><p>El candado del navegador. Cifra la conexión y da confianza; hoy es obligatorio para que no marque «no seguro».</p></div>
+  </div>
+
+  <h2>Antes de comprar: las reglas que sí se mantienen</h2>
+  <ol>
+    <li><strong>El dominio va a tu nombre, en tu cuenta.</strong> Nunca en la cuenta de otra persona, aunque te lo ofrezca como favor: si algún día se pierde la relación, se pierde tu dirección.</li>
+    <li><strong>Mira el precio de renovación</strong> antes de pagar. Muchas ofertas son del primer año y la renovación cuesta bastante más.</li>
+    <li><strong>No compres extras</strong> que el registrador ofrece al final (correo, «protección», sitio web, seguros). Casi nunca los necesitas.</li>
+    <li><strong>Activa la privacidad del dominio</strong> para que tus datos no queden públicos, y la <strong>renovación automática</strong> para no perderlo por un descuido.</li>
+    <li><strong>Activa la verificación en dos pasos</strong> y guarda tus accesos en un gestor de contraseñas.</li>
+    <li><strong>Elige un nombre corto</strong>, fácil de decir y de escribir, sin guiones ni números. <em>.com</em> si buscas alcance general; <em>.mx</em> o <em>.com.mx</em> si tu público es local.</li>
+  </ol>
+
+  <h2>Qué necesitas según cómo armemos tu sitio</h2>
+  <div class="tarjetas">
+    <div class="tarjeta"><h3>Código a la medida</h3><p>Dominio y un hosting donde publicar. Sin mensualidad de plataforma.</p></div>
+    <div class="tarjeta"><h3>Wix</h3><p>Tu plan de Wix (incluye alojamiento) y tu dominio, o el que ofrece el plan.</p></div>
+    <div class="tarjeta"><h3>Squarespace</h3><p>Tu plan de Squarespace (incluye alojamiento) y tu dominio.</p></div>
+    <div class="tarjeta"><h3>WordPress</h3><p>Un hosting para WordPress y tu dominio. Pide más mantenimiento: actualizaciones y copias de respaldo.</p></div>
+  </div>
+
+  <h2>Los costos que debes contemplar</h2>
+  <ul>
+    <li><strong>Una vez:</strong> mi trabajo de armar tu sitio, que te confirmo por WhatsApp antes de que pagues.</li>
+    <li><strong>Cada año:</strong> el dominio (y su renovación).</li>
+    <li><strong>Cada mes o cada año:</strong> tu hosting o tu plan de plataforma, según lo que elijas.</li>
+    <li><strong>Opcional:</strong> la publicación asistida, un costo extra que te confirmo en tu pedido.</li>
+  </ul>
+
+  <h2>Cómo se conecta, paso a paso</h2>
+  <ol>
+    <li>Compra el dominio en tu cuenta y activa privacidad, renovación y verificación en dos pasos.</li>
+    <li>Ten listo tu hosting o tu plan de plataforma.</li>
+    <li>Apunta el dominio a tu sitio: en el panel del registrador se editan los registros DNS (o los servidores de nombres), con los datos que te da tu hosting o tu plataforma.</li>
+    <li>Espera la propagación: de unos minutos a 24 o 48 horas.</li>
+    <li>Activa HTTPS y la redirección de <em>www</em>.</li>
+    <li>Revisa: ábrelo desde tu celular, con y sin <em>www</em>, y compártelo por WhatsApp para ver cómo se ve la vista previa.</li>
+  </ol>
+  <p>Si prefieres no tocar nada de esto, la <strong>publicación asistida</strong> existe para eso: conecto tu dominio y verifico que quede funcionando. Cómo lo hacemos sin que me des tus contraseñas está en la siguiente sección.</p>
+
+  <h2>Cómo te ayudo sin pedirte tus contraseñas</h2>
+  <p>No te pido tus contraseñas ni las guardo, nunca. Cuando necesito entrar a algo tuyo, hay tres formas, de la más segura a la menos:</p>
+  <ol>
+    <li><strong>Lo haces tú y yo te guío.</strong> Videollamada con pantalla compartida: tú tecleas, yo te dicto cada paso. No queda ningún acceso.</li>
+    <li><strong>Me das un acceso propio y temporal.</strong> Me invitas con mi correo como colaborador o administrador (Wix, Squarespace), me creas un usuario (WordPress) o me delegas acceso en el registrador o el hosting si lo permite. Entro con mi cuenta y mi verificación en dos pasos, y tú me quitas cuando terminemos.</li>
+    <li><strong>Último recurso:</strong> si una plataforma no permite invitados, me compartes la contraseña con un enlace de un solo uso que caduca (Bitwarden Send o 1Password), la cambias al terminar y nunca me la mandas por WhatsApp ni por correo.</li>
+  </ol>
+  <p class="nota"><strong>Antes de entrar</strong> te mando por escrito qué voy a hacer, en qué cuenta y hasta cuándo, y esperas a responder «acepto». <strong>Al terminar,</strong> revoca mi acceso y cambia tus contraseñas. La cuenta, el dominio y el sitio son tuyos en todo momento.</p>
+
+  <h2>Los errores más comunes</h2>
+  <ul>
+    <li>Comprar el dominio con el correo de un tercero y luego no poder recuperarlo.</li>
+    <li>Pagar un hosting carísimo por tres años solo por el descuento y llegar a la renovación sin saberlo.</li>
+    <li>Editar el DNS equivocado (si cambias los servidores de nombres, el DNS del registrador ya no manda).</li>
+    <li>Esperar que funcione al instante: la propagación tarda.</li>
+    <li>Olvidar la renovación y perder el dominio.</li>
+  </ul>
+
+  <h2>Qué sigue</h2>
+  <p>Pronto agrego una página con proveedores de hosting y dominios que recomiendo, con el porqué de cada uno. Cuando esté lista te aviso por WhatsApp.</p>
+  <p><a class="btn" href="https://wa.me/528129043592" rel="noopener">Escribirme por WhatsApp</a></p>
+</main>
+</body>
+</html>
