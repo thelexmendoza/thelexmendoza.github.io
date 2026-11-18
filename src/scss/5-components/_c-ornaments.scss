@@ -53,7 +53,9 @@
 // acento que sigue al cursor (hero-fx y ornaments.js ponen --mx, --my y is-lit). Lo mismo llevan las tarjetas de precio y de casos de /promo/.
 .c-service,
 .c-promo__plan,
-.c-promo__caso a {
+.c-promo__caso a,
+.c-guia__card,
+.c-guia__indice a {
   position: relative;
   isolation: isolate;
   --mark: color-mix(in srgb, var(--color-text) 42%, transparent);

@@ -22,7 +22,7 @@ const rebase = (html) =>
     return `${attr}="${PREFIX}${url}"`;
   });
 
-function extractLayout(layoutPath) {
+export function extractLayout(layoutPath) {
   const home = fs.readFileSync(layoutPath, 'utf8');
   const take = (re, label) => {
     const found = home.match(re)?.[0];

@@ -118,6 +118,7 @@ const spyLinks = [...document.querySelectorAll('.js-spy')];
 const spyIds = [...new Set(spyLinks.map((link) => link.getAttribute('href').slice(1)))];
 const spySections = spyIds.map((id) => document.getElementById(id)).filter(Boolean);
 
+let lastSpy = null;
 function updateSpy() {
   const line = window.innerHeight * 0.4;
   const active = pickActive(
@@ -132,6 +133,21 @@ function updateSpy() {
     link.classList.toggle('is-active', current);
     if (current) link.setAttribute('aria-current', 'true');
     else link.removeAttribute('aria-current');
+  });
+  if (active !== lastSpy) {
+    lastSpy = active;
+    followSpy();
+  }
+}
+
+// Barras que se desplazan de lado (la de la guia): mueve la barra para que el enlace activo quede a la vista.
+const spyFollowers = [...document.querySelectorAll('[data-spy-follow]')];
+function followSpy() {
+  spyFollowers.forEach((box) => {
+    const link = box.querySelector('.is-active');
+    if (!link || box.scrollWidth <= box.clientWidth) return;
+    const left = link.offsetLeft - (box.clientWidth - link.offsetWidth) / 2;
+    box.scrollTo({ left, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   });
 }
 
@@ -148,6 +164,30 @@ if (spySections.length) {
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
   updateSpy();
+}
+
+// Boton flotante de la guia: aparece cuando ya pasaste el indice (la seccion que sigue al hero) y te regresa a el. Sin JavaScript queda
+// oculto y el enlace de la barra de capitulos hace lo mismo. En los casos el boton es otro (.js-to-top, case.js).
+const guiaTop = document.querySelector('.js-guia-top');
+const guiaIndice = guiaTop && document.querySelector(guiaTop.getAttribute('href'));
+if (guiaTop && guiaIndice) {
+  // Con un observador de interseccion el boton no aparecia si saltabas del hero a un capitulo sin pasar por el indice (un salto directo
+  // no cruza ningun umbral): por eso se mide la posicion en cada scroll.
+  let guiaFrame = 0;
+  const syncGuiaTop = () => {
+    guiaFrame = 0;
+    guiaTop.classList.toggle('is-visible', guiaIndice.getBoundingClientRect().bottom < 0);
+  };
+  const queueGuiaTop = () => {
+    if (!guiaFrame) guiaFrame = requestAnimationFrame(syncGuiaTop);
+  };
+  window.addEventListener('scroll', queueGuiaTop, { passive: true });
+  window.addEventListener('resize', queueGuiaTop);
+  syncGuiaTop();
+  guiaTop.addEventListener('click', (event) => {
+    event.preventDefault();
+    guiaIndice.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
+  });
 }
 
 // Videos de fondo: el del hero se reproduce al cargar; el de la tarjeta, mientras esta activa.

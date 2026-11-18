@@ -1,166 +1,622 @@
 <!doctype html>
 <html lang="es-MX">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guía de dominio y hosting · Landing Express</title>
-<meta name="description" content="Qué son el dominio y el hosting, qué conviene comprar, qué evitar y cómo conectar tu sitio.">
-<meta name="robots" content="noindex">
-<style>
-:root {
-  --bg: #f6f6f3;
-  --panel: #fff;
-  --fg: #141414;
-  --muted: #5a5a58;
-  --line: #d9d9d4;
-  --acc: #c8102e;
-  --on-acc: #fff;
-  color-scheme: light dark;
-}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guía de dominio y hosting | Lex Mendoza</title>
+    <meta name="description" content="Qué son el dominio, el hosting y el DNS, qué conviene comprar, qué evitar y cómo conectar tu sitio paso a paso. Gratis, sin precios y sin letra chica.">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://lexmendoza.com/guia-dominio-hosting/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Lex Mendoza">
+    <meta property="og:title" content="Guía de dominio y hosting | Lex Mendoza">
+    <meta property="og:description" content="Qué son el dominio, el hosting y el DNS, qué conviene comprar, qué evitar y cómo conectar tu sitio paso a paso. Gratis, sin precios y sin letra chica.">
+    <meta property="og:url" content="https://lexmendoza.com/guia-dominio-hosting/">
+    <meta property="og:image" content="https://lexmendoza.com/assets/img/og/lex.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Lex Mendoza, diseñador gráfico y desarrollador web en Monterrey">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Guía de dominio y hosting | Lex Mendoza">
+    <meta name="twitter:description" content="Qué son el dominio, el hosting y el DNS, qué conviene comprar, qué evitar y cómo conectar tu sitio paso a paso. Gratis, sin precios y sin letra chica.">
+    <meta name="twitter:image" content="https://lexmendoza.com/assets/img/og/lex.jpg">
+    <script>
+      document.documentElement.classList.add('has-js');
+      setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.add('reveal-all'); }, 2500);
+      // Al llegar con una transicion entre paginas, la tarjeta del caso y el hero ya vienen revelados: la
+      // transicion necesita algo visible a lo que llegar (si no, el titulo moraria hacia algo invisible).
+      addEventListener('pagereveal', function (e) {
+        if (!e.viewTransition) return;
+        document.querySelectorAll('.c-case-hero [data-reveal], .c-case-card[data-media]').forEach(function (n) { n.classList.add('is-revealed'); });
+      });
+      try {
+        var stored = localStorage.getItem('theme');
+        if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored;
+      } catch (e) {}
+    </script>
+    <link rel="expect" href="#contenido" blocking="render">
+    <link rel="preload" href="../assets/fonts/plex/ibm-plex-sans-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/plex/ibm-plex-sans-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/plex/ibm-plex-mono-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/plex/ibm-plex-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="../favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <meta name="theme-color" content="#0a0a0a">
+    <script type="speculationrules">
+      {"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[data-soon], [aria-disabled='true'], [target=_blank]"}}]},"eagerness":"moderate"}]}
+    </script>
+    <link rel="stylesheet" href="../assets/css/main.min.css">
+    <link rel="modulepreload" href="../assets/js/theme.js">
+    <link rel="modulepreload" href="../assets/js/scrollspy.js">
+    <link rel="modulepreload" href="../assets/js/reveal.js">
+    <link rel="modulepreload" href="../assets/js/media.js">
+    <link rel="modulepreload" href="../assets/js/sky.js">
+    <link rel="modulepreload" href="../assets/js/hero-fx.js">
+    <link rel="modulepreload" href="../assets/js/reticle.js">
+    <link rel="modulepreload" href="../assets/js/ornaments.js">
+    <link rel="modulepreload" href="../assets/js/decode.js">
+    <link rel="modulepreload" href="../assets/js/leave.js">
+    <link rel="modulepreload" href="../assets/js/promo.js">
+    <link rel="modulepreload" href="../assets/js/cupos.js">
+    <script type="module" src="../assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="u-visually-hidden u-visually-hidden--focusable" href="#contenido">Saltar al contenido</a>
+    <div class="c-progress" aria-hidden="true"></div>
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0e0e;
-    --panel: #181818;
-    --fg: #f1f1ee;
-    --muted: #a6a6a1;
-    --line: #2e2e2c;
-    --acc: #ff4d63;
-    --on-acc: #140406;
-  }
-}
+    <header class="c-nav">
+      <div class="o-container c-nav__inner">
+        <a class="c-nav__brand" href="../">Lex Mendoza</a>
+        <button class="c-theme-toggle js-theme-toggle" type="button" aria-pressed="false">
+          <span class="u-visually-hidden">Modo oscuro</span>
+          <span class="c-theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+        <nav class="c-nav__links" aria-label="Principal">
+          <a class="c-nav__link" href="../#casos"><span class="c-icon c-icon--grid" aria-hidden="true"></span>Casos</a>
+          <a class="c-nav__link" href="../#servicios"><span class="c-icon c-icon--layers" aria-hidden="true"></span>Servicios</a>
+          <a class="c-nav__link" href="../#sobre-mi"><span class="c-icon c-icon--user" aria-hidden="true"></span>Sobre mí</a>
+          <a class="c-nav__link" href="../#plan"><span class="c-icon c-icon--tag" aria-hidden="true"></span>Promo de fin de año</a>
+          <a class="c-nav__link c-nav__link--quiet" href="../#contacto"><span class="c-icon c-icon--mail" aria-hidden="true"></span>Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-* { box-sizing: border-box; }
+    <main id="contenido" class="c-promo c-guia">
+      <div class="c-promo__fondo" aria-hidden="true">
+        <span class="c-promo__cruces"></span>
+        <span class="c-promo__brillo"></span>
+        <i class="c-promo__esquina c-promo__esquina--nw"></i>
+        <i class="c-promo__esquina c-promo__esquina--ne"></i>
+        <i class="c-promo__esquina c-promo__esquina--sw"></i>
+        <i class="c-promo__esquina c-promo__esquina--se"></i>
+      </div>
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font: 1rem/1.618 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-}
+      <section class="c-hero c-promo__hero" id="inicio" aria-labelledby="guia-titulo">
+        <div class="c-hero__backdrop" aria-hidden="true">
+          <span class="c-hero__grid"></span>
+        </div>
+        <div class="o-container o-stack c-hero__inner">
+          <p class="c-eyebrow">// Guía gratis · dominio y hosting</p>
+          <h1 data-reveal="title" id="guia-titulo">Dominio y hosting, <span class="c-chameleon-title">sin misterio</span></h1>
+          <p class="c-section__lead" data-reveal="text">Soy Lex. Esta guía es gratis, sin letra chica y no te vende nada: son las cosas que me gustaría que supiera cualquiera antes de pagar. Está pensada para alguien que nunca ha hecho esto. Si algo no queda claro, escríbeme por WhatsApp y te ayudo.</p>
+          <p class="c-guia__meta"><span><span class="c-icon c-icon--list" aria-hidden="true"></span>Lectura de 15 min</span><span><span class="c-icon c-icon--checklist" aria-hidden="true"></span>Sin precios ni capturas de nadie</span><span><span class="c-icon c-icon--pen" aria-hidden="true"></span>Actualizada en noviembre de 2026</span></p>
+          <p class="c-guia__nota c-guia__nota--ico"><span class="c-icon c-icon--search" aria-hidden="true"></span><span><strong>Verifica siempre en el sitio oficial.</strong> Los precios, promociones y pasos de cada proveedor cambian seguido, y sus paneles se ven distintos de un año a otro. Por eso aquí no hay cifras ni capturas de pantalla de nadie: te enseño qué mirar y por qué, con dibujos propios.</span></p>
+          <p class="c-promo__acciones">
+            <a class="c-button" href="#capitulos"><span class="c-icon c-icon--arrow-down" aria-hidden="true"></span>Empezar a leer</a>
+            <a class="c-button c-button--ghost" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20le%C3%AD%20tu%20gu%C3%ADa%20de%20dominio%20y%20hosting%20y%20quiero%20preguntarte%20algo." target="_blank" rel="noopener noreferrer"><span class="c-icon c-icon--message" aria-hidden="true"></span>Preguntarme algo</a>
+          </p>
+          <div class="c-guia__flujo" aria-hidden="true">
+            <div class="c-guia__nodo">
+              <span class="c-guia__nodo-etq">// navegador</span>
+              <div class="c-guia__barra"><span class="c-icon c-icon--lock" aria-hidden="true"></span><span class="c-guia__tecleo">tunegocio.com</span></div>
+              <i class="c-guia__carga"></i>
+              <div class="c-guia__pagina"><i></i><i></i><i></i></div>
+            </div>
+            <span class="c-guia__via"><i class="c-guia__paquete"></i></span>
+            <div class="c-guia__nodo">
+              <span class="c-guia__nodo-etq">// DNS · la libreta</span>
+              <ul class="c-guia__libreta">
+                <li><span>otrositio.mx</span><span>192.0.2.77</span></li>
+                <li class="is-hit"><span>tunegocio.com</span><span>192.0.2.10</span></li>
+                <li><span>mitienda.com</span><span>192.0.2.31</span></li>
+              </ul>
+            </div>
+            <span class="c-guia__via c-guia__via--2"><i class="c-guia__paquete"></i></span>
+            <div class="c-guia__nodo">
+              <span class="c-guia__nodo-etq">// hosting · la casa</span>
+              <div class="c-guia__rack"><i></i><i></i></div>
+              <span class="c-guia__ok"><span class="c-icon c-icon--lock" aria-hidden="true"></span>HTTPS · listo</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-main {
-  inline-size: min(100% - 2rem, 44rem);
-  margin-inline: auto;
-  padding-block: 2.0625rem 5.5625rem;
-}
+      <div class="c-ticker" aria-hidden="true">
+        <div class="c-ticker__track">
+          <div class="c-ticker__group"><span>Dominio</span><span class="c-ticker__mark">//</span><span>Hosting</span><span class="c-ticker__mark">//</span><span>DNS</span><span class="c-ticker__mark">//</span><span>HTTPS</span><span class="c-ticker__mark">//</span><span>Registrador</span><span class="c-ticker__mark">//</span><span>Servidores de nombres</span><span class="c-ticker__mark">//</span><span>Propagación</span><span class="c-ticker__mark">//</span><span>Correo con tu dominio</span><span class="c-ticker__mark">//</span></div>
+          <div class="c-ticker__group"><span>Dominio</span><span class="c-ticker__mark">//</span><span>Hosting</span><span class="c-ticker__mark">//</span><span>DNS</span><span class="c-ticker__mark">//</span><span>HTTPS</span><span class="c-ticker__mark">//</span><span>Registrador</span><span class="c-ticker__mark">//</span><span>Servidores de nombres</span><span class="c-ticker__mark">//</span><span>Propagación</span><span class="c-ticker__mark">//</span><span>Correo con tu dominio</span><span class="c-ticker__mark">//</span></div>
+        </div>
+      </div>
 
-.etiqueta {
-  margin: 0;
-  font: 0.6875rem/1 ui-monospace, "Cascadia Mono", Consolas, monospace;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--acc);
-}
+      <nav class="c-guia__nav" aria-label="Capítulos de la guía">
+        <ol class="c-guia__nav-lista" data-spy-follow>
+          <li><a class="c-guia__nav-link js-spy" href="#idea"><span class="c-guia__nav-num" aria-hidden="true">01</span><span>La idea</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#basico"><span class="c-guia__nav-num" aria-hidden="true">02</span><span>Lo básico</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#direccion"><span class="c-guia__nav-num" aria-hidden="true">03</span><span>Tu dirección</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#contratar"><span class="c-guia__nav-num" aria-hidden="true">04</span><span>Contratar</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#conectar"><span class="c-guia__nav-num" aria-hidden="true">05</span><span>Conectar</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#contrasenas"><span class="c-guia__nav-num" aria-hidden="true">06</span><span>Sin contraseñas</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#errores"><span class="c-guia__nav-num" aria-hidden="true">07</span><span>Errores</span></a></li>
+          <li><a class="c-guia__nav-link js-spy" href="#preguntas"><span class="c-guia__nav-num" aria-hidden="true">08</span><span>Preguntas</span></a></li>
+        </ol>
+      </nav>
 
-h1 { margin: 0.8125rem 0; font-size: clamp(1.625rem, 6vw, 2.625rem); line-height: 1.1; }
-h2 { margin: 3.4375rem 0 0.8125rem; font-size: 1.625rem; line-height: 1.2; }
-h3 { margin: 1.3125rem 0 0.3rem; font-size: 1rem; }
-p, ul, ol { margin: 0 0 0.8125rem; }
-ul, ol { padding-inline-start: 1.3rem; }
-li { margin-block-end: 0.4rem; }
-a { color: var(--acc); }
+      <section class="c-section c-promo__seccion" id="capitulos" aria-labelledby="indice-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--izq" aria-hidden="true">A–Z</span>
+        <div class="o-container o-stack">
+          <h2 data-reveal="title" id="indice-titulo">Lo que vas a aprender</h2>
+          <p class="c-section__lead" data-reveal="text">Ocho capítulos cortos. Toca uno para ir directo; arriba te queda una barra que marca dónde vas y te deja moverte entre ellos.</p>
+          <ol class="c-guia__indice">
+            <li><a href="#idea"><span class="c-guia__indice-cab"><span class="c-guia__num">01</span><span class="c-guia__icono"><span class="c-icon c-icon--globe" aria-hidden="true"></span></span></span><strong>La idea completa en una imagen</strong><span class="c-guia__corto">Qué pasa cuando alguien escribe tu dirección.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#basico"><span class="c-guia__indice-cab"><span class="c-guia__num">02</span><span class="c-guia__icono"><span class="c-icon c-icon--book" aria-hidden="true"></span></span></span><strong>Lo básico en un minuto</strong><span class="c-guia__corto">Seis palabras que vas a ver en todos lados.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#direccion"><span class="c-guia__indice-cab"><span class="c-guia__num">03</span><span class="c-guia__icono"><span class="c-icon c-icon--link" aria-hidden="true"></span></span></span><strong>Tu dirección: cómo se lee y cómo elegirla</strong><span class="c-guia__corto">Las partes de una dirección y las reglas antes de pagar.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#contratar"><span class="c-guia__indice-cab"><span class="c-guia__num">04</span><span class="c-guia__icono"><span class="c-icon c-icon--tag" aria-hidden="true"></span></span></span><strong>Dónde se contrata cada cosa y qué cuesta</strong><span class="c-guia__corto">Tres formas de juntar dominio y sitio, y qué pide cada plataforma.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#conectar"><span class="c-guia__indice-cab"><span class="c-guia__num">05</span><span class="c-guia__icono"><span class="c-icon c-icon--server" aria-hidden="true"></span></span></span><strong>Cómo se conecta, paso a paso</strong><span class="c-guia__corto">Del dominio comprado al sitio funcionando: DNS, registros y propagación.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#contrasenas"><span class="c-guia__indice-cab"><span class="c-guia__num">06</span><span class="c-guia__icono"><span class="c-icon c-icon--key" aria-hidden="true"></span></span></span><strong>Cómo te ayudo sin pedirte tus contraseñas</strong><span class="c-guia__corto">Tres formas de darme acceso, y una mini guía para crear cada una.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#errores"><span class="c-guia__indice-cab"><span class="c-guia__num">07</span><span class="c-guia__icono"><span class="c-icon c-icon--alert" aria-hidden="true"></span></span></span><strong>Errores comunes y lista de verificación</strong><span class="c-guia__corto">Lo que más sale mal y cómo comprobar que todo quedó bien.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+            <li><a href="#preguntas"><span class="c-guia__indice-cab"><span class="c-guia__num">08</span><span class="c-guia__icono"><span class="c-icon c-icon--message" aria-hidden="true"></span></span></span><strong>Preguntas rápidas y glosario</strong><span class="c-guia__corto">Las dudas más comunes y el diccionario de la guía.</span><span class="c-guia__ir" aria-hidden="true">Ir al capítulo <span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></span></a></li>
+          </ol>
+        </div>
+      </section>
 
-.nota, .tarjeta {
-  padding: 1rem 1.3125rem;
-  border: 1.5px solid var(--line);
-  border-radius: 0.8125rem;
-  background: var(--panel);
-}
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="idea" aria-labelledby="idea-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--der" aria-hidden="true">01</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 01</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--globe" aria-hidden="true"></span></span><h2 data-reveal="title" id="idea-titulo">La idea completa en una imagen</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Tu dominio es la dirección, el hosting es la casa y el DNS es el mapa que une las dos.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <p>Cuando alguien escribe tu dirección en su celular, pasan tres cosas en una fracción de segundo. Entender este camino te sirve para casi todo lo demás de la guía.</p>
+<figure class="c-guia__figura c-guia__figura--estrecha">
+  <svg class="c-guia__svg" viewBox="0 0 420 336" role="img" aria-labelledby="f1t f1d">
+    <title id="f1t">Cómo llega una persona a tu sitio</title>
+    <desc id="f1d">Una persona escribe tu dirección; el DNS le dice dónde vive tu sitio; el hosting entrega el sitio.</desc>
+    <defs><marker id="pta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="punta" d="M0 0 10 5 0 10z"/></marker></defs>
 
-.nota { border-color: color-mix(in srgb, var(--acc) 45%, var(--line)); }
-.tarjetas { display: grid; gap: 0.8125rem; }
-.tarjeta h3 { margin-block-start: 0; }
-.tarjeta p { margin: 0; color: var(--muted); }
+    <rect class="caja" x="20" y="10" width="380" height="76"/><path class="marca" d="M15 13V5H23 M397 5H405V13 M405 83V91H397 M23 91H15V83"/>
+    <rect class="trazo" x="46" y="24" width="26" height="46"/><line class="trazo" x1="55" y1="62" x2="63" y2="62"/>
+    <text class="t" x="96" y="44">Una persona</text>
+    <text class="t2" x="96" y="68">escribe tunegocio.com</text>
 
-.btn {
-  display: inline-block;
-  padding: 0.7rem 1.3rem;
-  border-radius: 999px;
-  background: var(--acc);
-  color: var(--on-acc);
-  font-weight: 600;
-  text-decoration: none;
-}
+    <line class="flecha" x1="210" y1="90" x2="210" y2="124" marker-end="url(#pta)"/>
+    <text class="t2" x="226" y="112">¿dónde vive ese sitio?</text>
 
-@media (min-width: 40rem) {
-  .tarjetas { grid-template-columns: 1fr 1fr; }
-}
-</style>
-</head>
-<body>
-<main>
-  <p class="etiqueta">// Guía de dominio y hosting</p>
-  <h1>Lo que debes saber antes de comprar tu dominio y publicar tu sitio</h1>
-  <p>Soy Lex. Esta guía es gratis, sin letra chica y no te vende nada: son las cosas que me gustaría que supiera cualquiera antes de pagar. Si algo no queda claro, escríbeme por WhatsApp y te ayudo.</p>
-  <p class="nota"><strong>Verifica siempre en el sitio oficial.</strong> Los precios, promociones y pasos de cada proveedor cambian seguido. Aquí no te prometo ninguna oferta ni cifra: te enseño qué mirar.</p>
+    <rect class="caja caja--acc" x="20" y="130" width="380" height="76"/><path class="marca marca--acc" d="M15 133V125H23 M397 125H405V133 M405 203V211H397 M23 211H15V203"/>
+    <rect class="trazo" x="44" y="148" width="30" height="40"/><line class="trazo" x1="51" y1="160" x2="67" y2="160"/><line class="trazo" x1="51" y1="170" x2="67" y2="170"/><line class="trazo" x1="51" y1="180" x2="61" y2="180"/>
+    <text class="t" x="96" y="164">DNS</text>
+    <text class="t2" x="96" y="188">la libreta de direcciones</text>
 
-  <h2>Lo básico en un minuto</h2>
-  <div class="tarjetas">
-    <div class="tarjeta"><h3>Dominio</h3><p>Tu dirección en internet, como <em>tunegocio.com</em>. Se compra a un registrador y se renueva cada año.</p></div>
-    <div class="tarjeta"><h3>Hosting</h3><p>El lugar donde vive tu sitio para que cualquiera lo abra a cualquier hora. En Wix y Squarespace va incluido en tu plan.</p></div>
-    <div class="tarjeta"><h3>DNS</h3><p>La libreta que le dice al mundo «este dominio vive en este hosting». Conectar tu dominio es, sobre todo, editar esa libreta.</p></div>
-    <div class="tarjeta"><h3>HTTPS</h3><p>El candado del navegador. Cifra la conexión y da confianza; hoy es obligatorio para que no marque «no seguro».</p></div>
-  </div>
+    <line class="flecha" x1="210" y1="210" x2="210" y2="244" marker-end="url(#pta)"/>
+    <text class="t2" x="226" y="232">«en este servidor»</text>
 
-  <h2>Antes de comprar: las reglas que sí se mantienen</h2>
-  <ol>
-    <li><strong>El dominio va a tu nombre, en tu cuenta.</strong> Nunca en la cuenta de otra persona, aunque te lo ofrezca como favor: si algún día se pierde la relación, se pierde tu dirección.</li>
-    <li><strong>Mira el precio de renovación</strong> antes de pagar. Muchas ofertas son del primer año y la renovación cuesta bastante más.</li>
-    <li><strong>No compres extras</strong> que el registrador ofrece al final (correo, «protección», sitio web, seguros). Casi nunca los necesitas.</li>
-    <li><strong>Activa la privacidad del dominio</strong> para que tus datos no queden públicos, y la <strong>renovación automática</strong> para no perderlo por un descuido.</li>
-    <li><strong>Activa la verificación en dos pasos</strong> y guarda tus accesos en un gestor de contraseñas.</li>
-    <li><strong>Elige un nombre corto</strong>, fácil de decir y de escribir, sin guiones ni números. <em>.com</em> si buscas alcance general; <em>.mx</em> o <em>.com.mx</em> si tu público es local.</li>
-  </ol>
+    <rect class="caja" x="20" y="250" width="380" height="76"/><path class="marca" d="M15 253V245H23 M397 245H405V253 M405 323V331H397 M23 331H15V323"/>
+    <rect class="trazo" x="42" y="264" width="36" height="18"/><rect class="trazo" x="42" y="288" width="36" height="18"/>
+    <rect class="punta" x="47.5" y="270.5" width="5" height="5"/><rect class="punta" x="47.5" y="294.5" width="5" height="5"/>
+    <text class="t" x="96" y="284">Hosting</text>
+    <text class="t2" x="96" y="308">aquí vive tu sitio y se entrega</text>
+  </svg>
+  <figcaption>El dominio es tu dirección; el DNS dice dónde está; el hosting es la casa.</figcaption>
+</figure>
+<h3 class="c-guia__h3"><span class="c-icon c-icon--home" aria-hidden="true"></span><span>Y si lo piensas como una casa</span></h3>
+<p>Cuatro palabras que suenan técnicas y que en realidad son de la vida diaria:</p>
+<figure class="c-guia__figura c-guia__figura--estrecha">
+  <svg class="c-guia__svg" viewBox="0 0 420 270" role="img" aria-labelledby="f0t f0d">
+    <title id="f0t">Una casa para explicar el dominio, el hosting, el DNS y el HTTPS</title>
+    <desc id="f0d">El dominio es la dirección de la casa, el hosting es la casa, el DNS es el mapa que lleva hasta ella y el HTTPS es la cerradura.</desc>
+    <rect class="caja" x="8" y="8" width="196" height="118"/><path class="marca" d="M3 11V3H11 M201 3H209V11 M209 123V131H201 M11 131H3V123"/>
+    <g class="trazo" transform="translate(22 24)"><path d="M30 4l15 18-15 28-15-28z"/><path d="M26 18h8v8h-8z"/></g>
+    <text class="t" x="90" y="50">Dominio</text><text class="t2" x="90" y="74">la dirección</text><text class="t2" x="90" y="96">de la casa</text>
 
-  <h2>Qué necesitas según cómo armemos tu sitio</h2>
-  <div class="tarjetas">
-    <div class="tarjeta"><h3>Código a la medida</h3><p>Dominio y un hosting donde publicar. Sin mensualidad de plataforma.</p></div>
-    <div class="tarjeta"><h3>Wix</h3><p>Tu plan de Wix (incluye alojamiento) y tu dominio, o el que ofrece el plan.</p></div>
-    <div class="tarjeta"><h3>Squarespace</h3><p>Tu plan de Squarespace (incluye alojamiento) y tu dominio.</p></div>
-    <div class="tarjeta"><h3>WordPress</h3><p>Un hosting para WordPress y tu dominio. Pide más mantenimiento: actualizaciones y copias de respaldo.</p></div>
-  </div>
+    <rect class="caja caja--acc" x="216" y="8" width="196" height="118"/><path class="marca marca--acc" d="M211 11V3H219 M409 3H417V11 M417 123V131H409 M219 131H211V123"/>
+    <g class="trazo" transform="translate(228 22)"><path d="M10 38l22-20 22 20M16 34v26h32V34"/><path d="M32 60V46h8v14"/></g>
+    <text class="t" x="298" y="50">Hosting</text><text class="t2" x="298" y="74">la casa donde</text><text class="t2" x="298" y="96">vive tu sitio</text>
 
-  <h2>Los costos que debes contemplar</h2>
-  <ul>
-    <li><strong>Una vez:</strong> mi trabajo de armar tu sitio, que te confirmo por WhatsApp antes de que pagues.</li>
-    <li><strong>Cada año:</strong> el dominio (y su renovación).</li>
-    <li><strong>Cada mes o cada año:</strong> tu hosting o tu plan de plataforma, según lo que elijas.</li>
-    <li><strong>Opcional:</strong> la publicación asistida, un costo extra que te confirmo en tu pedido.</li>
-  </ul>
+    <rect class="caja" x="8" y="140" width="196" height="118"/><path class="marca" d="M3 143V135H11 M201 135H209V143 M209 255V263H201 M11 263H3V255"/>
+    <g class="trazo" transform="translate(20 154)"><path d="M10 18l16-6 16 6 16-6v42l-16 6-16-6-16 6z"/><path d="M26 12v42M42 18v42"/></g>
+    <text class="t" x="90" y="182">DNS</text><text class="t2" x="90" y="206">el mapa que</text><text class="t2" x="90" y="228">lleva a ella</text>
 
-  <h2>Cómo se conecta, paso a paso</h2>
-  <ol>
-    <li>Compra el dominio en tu cuenta y activa privacidad, renovación y verificación en dos pasos.</li>
-    <li>Ten listo tu hosting o tu plan de plataforma.</li>
-    <li>Apunta el dominio a tu sitio: en el panel del registrador se editan los registros DNS (o los servidores de nombres), con los datos que te da tu hosting o tu plataforma.</li>
-    <li>Espera la propagación: de unos minutos a 24 o 48 horas.</li>
-    <li>Activa HTTPS y la redirección de <em>www</em>.</li>
-    <li>Revisa: ábrelo desde tu celular, con y sin <em>www</em>, y compártelo por WhatsApp para ver cómo se ve la vista previa.</li>
-  </ol>
-  <p>Si prefieres no tocar nada de esto, la <strong>publicación asistida</strong> existe para eso: conecto tu dominio y verifico que quede funcionando. Cómo lo hacemos sin que me des tus contraseñas está en la siguiente sección.</p>
+    <rect class="caja" x="216" y="140" width="196" height="118"/><path class="marca" d="M211 143V135H219 M409 135H417V143 M417 255V263H409 M219 263H211V255"/>
+    <g class="trazo" transform="translate(228 156)"><rect x="12" y="26" width="38" height="28"/><path d="M20 26V14h22v12"/><path d="M29 38h4v6h-4z"/></g>
+    <text class="t" x="298" y="182">HTTPS</text><text class="t2" x="298" y="206">la cerradura:</text><text class="t2" x="298" y="228">visita segura</text>
+  </svg>
+  <figcaption>Si piensas en una casa, todo lo de abajo se vuelve más fácil.</figcaption>
+</figure>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 01">
+            <a class="c-guia__pasar-link" href="#capitulos" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Volver</small><strong>Índice de capítulos</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#basico" rel="next"><span><small>Siguiente capítulo</small><strong>Lo básico en un minuto</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
 
-  <h2>Cómo te ayudo sin pedirte tus contraseñas</h2>
-  <p>No te pido tus contraseñas ni las guardo, nunca. Cuando necesito entrar a algo tuyo, hay tres formas, de la más segura a la menos:</p>
-  <ol>
-    <li><strong>Lo haces tú y yo te guío.</strong> Videollamada con pantalla compartida: tú tecleas, yo te dicto cada paso. No queda ningún acceso.</li>
-    <li><strong>Me das un acceso propio y temporal.</strong> Me invitas con mi correo como colaborador o administrador (Wix, Squarespace), me creas un usuario (WordPress) o me delegas acceso en el registrador o el hosting si lo permite. Entro con mi cuenta y mi verificación en dos pasos, y tú me quitas cuando terminemos.</li>
-    <li><strong>Último recurso:</strong> si una plataforma no permite invitados, me compartes la contraseña con un enlace de un solo uso que caduca (Bitwarden Send o 1Password), la cambias al terminar y nunca me la mandas por WhatsApp ni por correo.</li>
-  </ol>
-  <p class="nota"><strong>Antes de entrar</strong> te mando por escrito qué voy a hacer, en qué cuenta y hasta cuándo, y esperas a responder «acepto». <strong>Al terminar,</strong> revoca mi acceso y cambia tus contraseñas. La cuenta, el dominio y el sitio son tuyos en todo momento.</p>
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="basico" aria-labelledby="basico-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--izq" aria-hidden="true">02</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 02</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--book" aria-hidden="true"></span></span><h2 data-reveal="title" id="basico-titulo">Lo básico en un minuto</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Casi todo el misterio es vocabulario. Con estas seis palabras ya lees cualquier panel.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <div class="c-guia__tarjetas c-guia__tarjetas--2"><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--globe" aria-hidden="true"></span></span><h3>Dominio</h3><p>Tu dirección en internet, como <em>tunegocio.com</em>. Se compra a un registrador y se renueva cada año. No se «compra para siempre»: se renta.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--tag" aria-hidden="true"></span></span><h3>Registrador</h3><p>La tienda donde compras y administras el dominio. Es independiente del hosting: puedes comprar el dominio en un lugar y publicar el sitio en otro.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--server" aria-hidden="true"></span></span><h3>Hosting</h3><p>El lugar donde vive tu sitio para que cualquiera lo abra a cualquier hora. En Wix y Squarespace va incluido en tu plan.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--book" aria-hidden="true"></span></span><h3>DNS</h3><p>La libreta que le dice al mundo «este dominio vive en este hosting». Conectar tu dominio es, sobre todo, editar esa libreta.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--lock" aria-hidden="true"></span></span><h3>HTTPS</h3><p>El candado del navegador. Cifra la conexión y da confianza; hoy es obligatorio para que no marque «no seguro». Casi todos los hostings y plataformas lo activan sin costo extra: confírmalo.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--mail" aria-hidden="true"></span></span><h3>Correo con tu dominio</h3><p>Direcciones como <em>hola@tunegocio.com</em>. Es un servicio aparte del sitio: se configura con un tipo de registro DNS llamado MX (más abajo).</p></article></div>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 02">
+            <a class="c-guia__pasar-link" href="#idea" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>La idea completa en una imagen</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#direccion" rel="next"><span><small>Siguiente capítulo</small><strong>Tu dirección: cómo se lee y cómo elegirla</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
 
-  <h2>Los errores más comunes</h2>
-  <ul>
-    <li>Comprar el dominio con el correo de un tercero y luego no poder recuperarlo.</li>
-    <li>Pagar un hosting carísimo por tres años solo por el descuento y llegar a la renovación sin saberlo.</li>
-    <li>Editar el DNS equivocado (si cambias los servidores de nombres, el DNS del registrador ya no manda).</li>
-    <li>Esperar que funcione al instante: la propagación tarda.</li>
-    <li>Olvidar la renovación y perder el dominio.</li>
-  </ul>
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="direccion" aria-labelledby="direccion-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--der" aria-hidden="true">03</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 03</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--link" aria-hidden="true"></span></span><h2 data-reveal="title" id="direccion-titulo">Tu dirección: cómo se lee y cómo elegirla</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Compra el dominio a tu nombre, mira la renovación y no aceptes extras que no pediste.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <h3 class="c-guia__h3"><span class="c-icon c-icon--link" aria-hidden="true"></span><span>Cómo se lee una dirección</span></h3>
+<p>Una dirección parece un solo bloque, pero tiene partes. La que importa, y la que compras, es la tercera.</p>
+<div class="c-guia__url" role="img" aria-label="https://www.tunegocio.com.mx/promo dividida en protocolo, subdominio, dominio, extensión y ruta">
+  <div class="s1"><code>https://</code><small>protocolo<br>(el candado)</small></div>
+  <div class="s2"><code>www.</code><small>subdominio<br>(opcional)</small></div>
+  <div class="s3"><code>tunegocio</code><small>tu dominio<br>(tu marca)</small></div>
+  <div class="s4"><code>.com.mx</code><small>extensión<br>(.com, .mx…)</small></div>
+  <div class="s5"><code>/promo</code><small>ruta<br>(una página)</small></div>
+</div>
+<p>Si sabes cómo se llama cada parte, los paneles de DNS dejan de intimidar: casi siempre piden «el nombre» (tu dominio o un subdominio como <em>www</em>) y «el valor» (a dónde apunta).</p>
 
-  <h2>Qué sigue</h2>
-  <p>Pronto agrego una página con proveedores de hosting y dominios que recomiendo, con el porqué de cada uno. Cuando esté lista te aviso por WhatsApp.</p>
-  <p><a class="btn" href="https://wa.me/528129043592" rel="noopener">Escribirme por WhatsApp</a></p>
-</main>
-</body>
+<h3 class="c-guia__h3"><span class="c-icon c-icon--lock" aria-hidden="true"></span><span>Antes de comprar: las reglas que sí se mantienen</span></h3>
+<ol class="c-guia__reglas">
+  <li><strong>El dominio va a tu nombre, en tu cuenta.</strong> Nunca en la cuenta de otra persona, aunque te lo ofrezca como favor: si algún día se pierde la relación, se pierde tu dirección.</li>
+  <li><strong>Mira el precio de renovación</strong> antes de pagar. Muchas ofertas son del primer año y la renovación cuesta bastante más.</li>
+  <li><strong>No compres extras</strong> que el registrador ofrece al final (correo, «protección», sitio web, seguros). Casi nunca los necesitas.</li>
+  <li><strong>Activa la privacidad del dominio</strong> para que tus datos no queden públicos, y la <strong>renovación automática</strong> para no perderlo por un descuido.</li>
+  <li><strong>Activa la verificación en dos pasos</strong> y guarda tus accesos en un gestor de contraseñas.</li>
+  <li><strong>Usa un correo tuyo y que revises.</strong> Ahí llegan los avisos de renovación y de recuperación de cuenta; si es un correo que ya no usas, el aviso se pierde.</li>
+  <li><strong>Elige un nombre corto</strong>, fácil de decir y de escribir, sin guiones ni números. <em>.com</em> si buscas alcance general; <em>.mx</em> o <em>.com.mx</em> si tu público es local.</li>
+</ol>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--search" aria-hidden="true"></span><span>Cómo revisar un nombre antes de enamorarte de él</span></h3>
+<ul class="c-guia__lista">
+  <li><strong>Que esté libre:</strong> cualquier registrador te lo dice al buscarlo. Para ver de quién es uno ya ocupado, usa el buscador público <a href="https://lookup.icann.org" target="_blank" rel="noopener noreferrer">lookup.icann.org<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</li>
+  <li><strong>Que no se parezca demasiado a otra marca.</strong> Si es muy parecido al nombre de un negocio conocido, mejor otro: puedes tener problemas más adelante.</li>
+  <li><strong>Que lo puedas decir por teléfono</strong> sin deletrearlo. Si cuesta trabajo dictarlo, cuesta trabajo recordarlo.</li>
+  <li><strong>Que tus redes se puedan llamar igual</strong> (o muy parecido), para que todo se vea como una sola marca.</li>
+</ul>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 03">
+            <a class="c-guia__pasar-link" href="#basico" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>Lo básico en un minuto</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#contratar" rel="next"><span><small>Siguiente capítulo</small><strong>Dónde se contrata cada cosa y qué cuesta</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="contratar" aria-labelledby="contratar-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--izq" aria-hidden="true">04</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 04</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--tag" aria-hidden="true"></span></span><h2 data-reveal="title" id="contratar-titulo">Dónde se contrata cada cosa y qué cuesta</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Dominio en tu propia cuenta y hosting aparte: así el dominio siempre es tuyo, cambies lo que cambies.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <p>Hay tres formas comunes de juntar dominio y sitio. Ninguna es la correcta para todos:</p>
+<div class="c-guia__tarjetas c-guia__tarjetas--3"><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--layers" aria-hidden="true"></span></span><h3>Todo en la plataforma</h3><p>Wix o Squarespace: pagas un plan y el alojamiento va incluido; el dominio lo compras ahí o lo conectas.</p><p><strong>Ventaja:</strong> menos piezas.<br><strong>Cuidado:</strong> si te vas, mover el sitio es más trabajo.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--link" aria-hidden="true"></span></span><h3>Registrador + hosting</h3><p>Compras el dominio en un lugar y el hosting en otro, y los conectas con el DNS.</p><p><strong>Ventaja:</strong> eliges cada pieza y cambias una sin tocar la otra.<br><strong>Cuidado:</strong> hay que conectarlas bien.</p></article><article class="c-guia__card"><span class="c-guia__icono"><span class="c-icon c-icon--server" aria-hidden="true"></span></span><h3>Hosting que incluye dominio</h3><p>Algunos hostings regalan el dominio el primer año si contratas su plan.</p><p><strong>Ventaja:</strong> cómodo al inicio.<br><strong>Cuidado:</strong> revisa a nombre de quién queda y cuánto cuesta renovarlo.</p></article></div>
+<p>Mi recomendación general: el <strong>dominio en tu propia cuenta de un registrador</strong> y el hosting o la plataforma aparte. Así el dominio siempre es tuyo, aunque cambies de proveedor.</p>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--code" aria-hidden="true"></span><span>Qué necesitas según cómo armemos tu sitio</span></h3>
+<div class="c-guia__tarjetas c-guia__tarjetas--2"><article class="c-guia__card c-guia__card--plat"><span class="c-guia__marca"><span class="c-icon c-icon--code" aria-hidden="true"></span></span><h3>Código a la medida</h3><p class="c-guia__etiqueta">Hecho a mano</p><p>Dominio y un hosting donde publicar (hay opciones gratuitas para sitios estáticos, como <a href="https://docs.github.com/pages" target="_blank" rel="noopener noreferrer">GitHub Pages<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>). Sin mensualidad de plataforma.</p></article><article class="c-guia__card c-guia__card--plat"><span class="c-guia__marca"><span class="c-icon c-icon--cursor" aria-hidden="true"></span></span><h3>Wix</h3><p class="c-guia__etiqueta">Arrastrar y soltar</p><p>Tu plan de Wix (incluye alojamiento) y tu dominio, o el que ofrece el plan. <a href="https://support.wix.com" target="_blank" rel="noopener noreferrer">Ayuda oficial de Wix<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</p></article><article class="c-guia__card c-guia__card--plat"><span class="c-guia__marca"><span class="c-icon c-icon--layout" aria-hidden="true"></span></span><h3>Squarespace</h3><p class="c-guia__etiqueta">Plantillas de diseño</p><p>Tu plan de Squarespace (incluye alojamiento) y tu dominio. <a href="https://support.squarespace.com" target="_blank" rel="noopener noreferrer">Ayuda oficial de Squarespace<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</p></article><article class="c-guia__card c-guia__card--plat"><span class="c-guia__marca"><span class="c-icon c-icon--blocks" aria-hidden="true"></span></span><h3>WordPress</h3><p class="c-guia__etiqueta">Editor de bloques</p><p>Un hosting para WordPress y tu dominio. Pide más mantenimiento: actualizaciones y copias de respaldo. <a href="https://wordpress.org/hosting/" target="_blank" rel="noopener noreferrer">Qué pide WordPress.org<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</p></article></div>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--tag" aria-hidden="true"></span><span>Los costos que debes contemplar</span></h3>
+<ul class="c-guia__lista">
+  <li><strong>Una vez:</strong> mi trabajo de armar tu sitio, que te confirmo por WhatsApp antes de que pagues.</li>
+  <li><strong>Cada año:</strong> el dominio (y su renovación).</li>
+  <li><strong>Cada mes o cada año:</strong> tu hosting o tu plan de plataforma, según lo que elijas.</li>
+  <li><strong>Opcional:</strong> la publicación asistida, un costo extra que te confirmo en tu pedido.</li>
+  <li><strong>Si quieres correo con tu dominio:</strong> es un servicio aparte, normalmente por usuario y por mes.</li>
+</ul>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 04">
+            <a class="c-guia__pasar-link" href="#direccion" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>Tu dirección: cómo se lee y cómo elegirla</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#conectar" rel="next"><span><small>Siguiente capítulo</small><strong>Cómo se conecta, paso a paso</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="conectar" aria-labelledby="conectar-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--der" aria-hidden="true">05</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 05</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--server" aria-hidden="true"></span></span><h2 data-reveal="title" id="conectar-titulo">Cómo se conecta, paso a paso</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Conectar es editar la libreta (DNS) en el lugar correcto, copiar los valores exactos y esperar a que se propague.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <ol class="c-guia__recorrido">
+  <li><strong>Compra el dominio</strong> en tu cuenta y activa privacidad, renovación automática y verificación en dos pasos.</li>
+  <li><strong>Ten listo tu hosting o tu plan de plataforma.</strong> Ahí te dan los datos que vas a necesitar: una o varias direcciones, o los servidores de nombres.</li>
+  <li><strong>Apunta el dominio a tu sitio.</strong> En el panel del registrador se editan los registros DNS (o los servidores de nombres), con los datos que te dio tu hosting o plataforma.</li>
+  <li><strong>Espera la propagación:</strong> de unos minutos a 24 o 48 horas.</li>
+  <li><strong>Activa HTTPS</strong> y la redirección entre la versión con <em>www</em> y la que no lo lleva.</li>
+  <li><strong>Revisa:</strong> ábrelo desde tu celular con datos móviles, con y sin <em>www</em>, y compártelo por WhatsApp para ver cómo se ve la vista previa.</li>
+</ol>
+<p>Si prefieres no tocar nada de esto, la <strong>publicación asistida</strong> existe para eso: conecto tu dominio y verifico que quede funcionando. Cómo lo hacemos sin que me des tus contraseñas está en el capítulo siguiente.</p>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--alert" aria-hidden="true"></span><span>La decisión que más confunde: ¿dónde edito el DNS?</span></h3>
+<p>El DNS solo se edita en <strong>un</strong> lugar: el que esté marcado como «servidores de nombres» (nameservers) de tu dominio. Hay dos caminos:</p>
+<figure class="c-guia__figura">
+  <svg class="c-guia__svg f3" viewBox="0 0 600 300" role="img" aria-labelledby="f3t f3d">
+    <title id="f3t">Dónde se edita el DNS según los servidores de nombres</title>
+    <desc id="f3d">A la izquierda, los servidores de nombres siguen en el registrador y ahí se editan los registros. A la derecha, se cambian al hosting y los registros se editan allá; el DNS del registrador deja de mandar.</desc>
+    <defs><marker id="ptb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="punta" d="M0 0 10 5 0 10z"/></marker></defs>
+
+    <text class="t3" x="10" y="26">CAMINO A</text>
+    <text class="t" x="10" y="52">DNS en el registrador</text>
+    <rect class="caja caja--acc" x="10" y="72" width="270" height="74"/><path class="marca marca--acc" d="M5 75V67H13 M277 67H285V75 M285 143V151H277 M13 151H5V143"/>
+    <text class="t" x="26" y="102">Registrador</text>
+    <text class="t2" x="26" y="128">aquí editas los registros</text>
+    <line class="flecha" x1="145" y1="150" x2="145" y2="178" marker-end="url(#ptb)"/>
+    <rect class="caja" x="10" y="182" width="270" height="74"/><path class="marca" d="M5 185V177H13 M277 177H285V185 M285 253V261H277 M13 261H5V253"/>
+    <text class="t" x="26" y="212">Hosting</text>
+    <text class="t2" x="26" y="238">solo te da los datos</text>
+
+    <text class="t3" x="320" y="26">CAMINO B</text>
+    <text class="t" x="320" y="52">DNS en el hosting</text>
+    <rect class="caja" x="320" y="72" width="270" height="74"/><path class="marca" d="M315 75V67H323 M587 67H595V75 M595 143V151H587 M323 151H315V143"/>
+    <text class="t" x="336" y="102">Registrador</text>
+    <text class="t2" x="336" y="128">solo guarda el dominio</text>
+    <line class="flecha" x1="455" y1="150" x2="455" y2="178" marker-end="url(#ptb)"/>
+    <rect class="caja caja--acc" x="320" y="182" width="270" height="74"/><path class="marca marca--acc" d="M315 185V177H323 M587 177H595V185 M595 253V261H587 M323 261H315V253"/>
+    <text class="t" x="336" y="212">Hosting</text>
+    <text class="t2" x="336" y="238">aquí editas los registros</text>
+
+    <text class="t2" x="10" y="288">Resalté (en rojo) el lugar donde se edita en cada camino.</text>
+  </svg>
+  <figcaption>Si cambias los servidores de nombres al hosting (camino B), los registros que tengas en el registrador dejan de contar.</figcaption>
+</figure>
+<p>Cuál es mejor depende de tu proveedor: algunos piden un camino y otros el otro. Lo importante es <strong>no editar en el lugar equivocado</strong>: es el error más común (y por eso a veces «hiciste todo bien» y no pasa nada).</p>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--book" aria-hidden="true"></span><span>Los registros DNS que vas a ver</span></h3>
+<p>En el panel de DNS aparece una tabla. Solo necesitas reconocer cinco tipos:</p>
+<div class="c-guia__tabla" role="region" aria-label="Tabla de tipos de registro DNS" tabindex="0">
+  <table>
+    <thead><tr><th>Tipo</th><th>Para qué sirve</th><th>Ejemplo de valor</th></tr></thead>
+    <tbody>
+      <tr><td><code>A</code></td><td>Apunta tu dominio a un servidor por su dirección numérica (IPv4).</td><td><code>192.0.2.10</code></td></tr>
+      <tr><td><code>AAAA</code></td><td>Lo mismo, con direcciones IPv6 (más largas).</td><td><code>2001:db8::10</code></td></tr>
+      <tr><td><code>CNAME</code></td><td>Hace que un subdominio (como <em>www</em>) sea un alias de otro nombre.</td><td><code>usuario.github.io</code></td></tr>
+      <tr><td><code>TXT</code></td><td>Guarda un texto. Se usa para verificar que el dominio es tuyo (Google, Meta…).</td><td><code>google-site-verification=…</code></td></tr>
+      <tr><td><code>MX</code></td><td>Dice a dónde se entrega el correo del dominio.</td><td><code>10 mail.tuproveedor.com</code></td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="c-guia__desliza" aria-hidden="true">↔ Desliza la tabla de lado para verla completa.</p>
+<p>Los valores de la tabla son ficticios, de ejemplo: <strong>los reales te los da tu hosting o tu plataforma</strong>, y hay que copiarlos exactos (sin espacios al final ni punto de más).</p>
+<p class="c-guia__nota c-guia__nota--ico"><span class="c-icon c-icon--alert" aria-hidden="true"></span><span><strong>Cuidado con el correo.</strong> Si tu dominio ya tiene correo funcionando, antes de cambiar servidores de nombres (camino B) anota o copia sus registros MX: si no los llevas al nuevo lugar, el correo deja de llegar.</span></p>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--clock" aria-hidden="true"></span><span>Propagación y cómo comprobar que quedó</span></h3>
+<p>Cuando cambias un registro, el cambio no se ve en todo el mundo al mismo tiempo: cada red guarda una copia (caché) durante cierto tiempo, llamado TTL. Por eso tarda: de minutos a 48 horas, casi siempre menos de una hora. Mientras tanto puede abrir en tu casa y no en la de tu amigo, y eso es normal.</p>
+<ul class="c-guia__lista">
+  <li><strong>Del dominio:</strong> en <a href="https://lookup.icann.org" target="_blank" rel="noopener noreferrer">lookup.icann.org<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> ves a nombre de quién está y cuándo vence.</li>
+  <li><strong>Del DNS:</strong> en <a href="https://dnschecker.org" target="_blank" rel="noopener noreferrer">dnschecker.org<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> ves si el registro ya cambió en distintas partes del mundo.</li>
+  <li><strong>Del candado:</strong> en <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener noreferrer">ssllabs.com/ssltest<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> ves si el HTTPS está bien puesto.</li>
+</ul>
+<p>Y si te gusta la terminal, esto te dice a dónde apunta tu dominio (cambia <em>tunegocio.com</em> por el tuyo): <code>nslookup tunegocio.com</code></p>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--globe" aria-hidden="true"></span><span>Con o sin <em>www</em></span></h3>
+<p>Tu sitio puede abrir como <em>tunegocio.com</em> o como <em>www.tunegocio.com</em>. Son direcciones distintas y las dos deberían llevar al mismo lugar. Lo ideal es elegir <strong>una</strong> como principal y que la otra la <strong>redirija</strong>: así Google no las cuenta como dos sitios y todos ven lo mismo. La mayoría de las plataformas lo hacen sola una vez que conectas el dominio; en un sitio de código se configura al publicar.</p>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 05">
+            <a class="c-guia__pasar-link" href="#contratar" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>Dónde se contrata cada cosa y qué cuesta</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#contrasenas" rel="next"><span><small>Siguiente capítulo</small><strong>Cómo te ayudo sin pedirte tus contraseñas</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="contrasenas" aria-labelledby="contrasenas-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--izq" aria-hidden="true">06</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 06</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--key" aria-hidden="true"></span></span><h2 data-reveal="title" id="contrasenas-titulo">Cómo te ayudo sin pedirte tus contraseñas</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Nunca te pido tus contraseñas. Lo haces tú con mi guía, o me das un acceso propio y temporal que tú creas y quitas.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <p>No te pido tus contraseñas ni las guardo, nunca. Cuando necesito entrar a algo tuyo, hay tres formas, de la más segura a la menos:</p>
+<ol class="c-guia__recorrido">
+  <li><strong>Lo haces tú y yo te guío.</strong> Videollamada con pantalla compartida: tú tecleas, yo te dicto cada paso. No queda ningún acceso.</li>
+  <li><strong>Me das un acceso propio y temporal.</strong> Me invitas con mi correo como colaborador (<a href="https://support.wix.com/en/article/wix-app-inviting-and-managing-collaborators" target="_blank" rel="noopener noreferrer">Wix<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>, <a href="https://support.squarespace.com/hc/en-us/articles/206537297" target="_blank" rel="noopener noreferrer">Squarespace<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>), me creas un usuario (<a href="https://wordpress.org/documentation/article/users-add-new-screen/" target="_blank" rel="noopener noreferrer">WordPress<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>) o me delegas acceso en el registrador o el hosting (por ejemplo, el <a href="https://www.godaddy.com/es/help/que-es-el-acceso-delegado-12378" target="_blank" rel="noopener noreferrer">acceso delegado de GoDaddy<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>). Entro con mi cuenta y mi verificación en dos pasos, y tú me quitas cuando terminemos.</li>
+  <li><strong>Último recurso:</strong> si una plataforma no permite invitados, me compartes la contraseña con un enlace de un solo uso que caduca (<a href="https://bitwarden.com/es-la/help/about-send/" target="_blank" rel="noopener noreferrer">Bitwarden Send<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> o <a href="https://support.1password.com/share-items/" target="_blank" rel="noopener noreferrer">1Password<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>), la cambias al terminar y nunca me la mandas por WhatsApp ni por correo.</li>
+</ol>
+<p class="c-guia__nota c-guia__nota--ico"><span class="c-icon c-icon--shield" aria-hidden="true"></span><span><strong>Antes de entrar</strong> te mando por escrito qué voy a hacer, en qué cuenta y hasta cuándo, y esperas a responder «acepto». <strong>Al terminar,</strong> revoca mi acceso y cambia tus contraseñas. La cuenta, el dominio y el sitio son tuyos en todo momento.</span></p>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--key" aria-hidden="true"></span><span>Mini guía: cómo crear cada acceso</span></h3>
+<p>Los menús cambian de un año a otro y según tu idioma: si algo no se llama igual, busca la palabra parecida («colaboradores», «permisos», «usuarios», «acceso delegado»). Dame siempre el <strong>rol más bajo que alcance</strong>: para tocar solo el contenido basta un rol de editor; para conectar el dominio o ver la facturación hace falta uno de administrador.</p>
+<div class="c-promo__faq c-guia__faq c-guia__mini">
+  <details class="c-promo__pregunta"><summary>Wix: invitarme como colaborador</summary>
+    <div class="c-guia__mini-cuerpo">
+      <ol class="c-guia__recorrido">
+        <li>Abre tu sitio en la app de Wix y toca <strong>Administrar</strong>.</li>
+        <li>Entra a <strong>Configuración</strong> y luego a <strong>Roles y permisos</strong> (<em>Roles &amp; Permissions</em>).</li>
+        <li>Toca <strong>Colaboradores</strong> y después <strong>Invitar a otros</strong> (<em>+ Invite Others</em>).</li>
+        <li>Escribe mi correo y elige un <strong>rol</strong>. Toca <strong>Enviar</strong>.</li>
+      </ol>
+      <p><strong>Ojo:</strong> solo el propietario y los administradores (copropietarios) pueden invitar. <strong>Para quitarme:</strong> Colaboradores → «Más acciones» junto a mi nombre → Quitar (Wix no avisa a quien se quita). <a href="https://support.wix.com/en/article/wix-app-inviting-and-managing-collaborators" target="_blank" rel="noopener noreferrer">Ayuda oficial de Wix<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> (en inglés).</p>
+    </div>
+  </details>
+  <details class="c-promo__pregunta"><summary>Squarespace: invitarme como colaborador</summary>
+    <div class="c-guia__mini-cuerpo">
+      <ol class="c-guia__recorrido">
+        <li>Entra a tu sitio, abre <strong>Configuración</strong> y luego <strong>Permisos</strong> (<em>Permissions</em>).</li>
+        <li>Elige <strong>Invitar colaborador</strong> (<em>Invite Contributor</em>).</li>
+        <li>Escribe mi nombre y mi correo, y marca los permisos que quieres darme.</li>
+        <li>Pulsa <strong>Invitar</strong>. Yo acepto desde el correo; mientras no lo acepte aparece como invitación enviada.</li>
+      </ol>
+      <p><strong>Ojo:</strong> solo el propietario y los administradores pueden invitar, y los límites de colaboradores dependen de tu plan. <strong>Para quitarme:</strong> en la misma pantalla de Permisos, eliminas mi nombre. Aquí están los <a href="https://support.squarespace.com/hc/en-us/articles/206537297" target="_blank" rel="noopener noreferrer">roles y permisos de Squarespace<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> (en inglés).</p>
+    </div>
+  </details>
+  <details class="c-promo__pregunta"><summary>WordPress: crearme un usuario</summary>
+    <div class="c-guia__mini-cuerpo">
+      <ol class="c-guia__recorrido">
+        <li>Entra al panel (normalmente <em>tusitio.com/wp-admin</em>) con tu cuenta.</li>
+        <li>Ve a <strong>Usuarios</strong> y luego <strong>Añadir nuevo</strong>.</li>
+        <li>Pon un nombre de usuario, mi correo y deja que WordPress me envíe el aviso para elegir mi propia contraseña.</li>
+        <li>En <strong>Rol</strong>, elige <strong>Administrador</strong> si voy a instalar el tema y los plugins, o <strong>Editor</strong> si solo es contenido. Pulsa <strong>Añadir nuevo usuario</strong>.</li>
+      </ol>
+      <p><strong>Para quitarme:</strong> Usuarios → pasa el cursor sobre mi nombre → Borrar. Todo lo que publiqué te lo puedes quedar. Más en la <a href="https://wordpress.org/documentation/article/users-add-new-screen/" target="_blank" rel="noopener noreferrer">documentación de WordPress<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> y en sus <a href="https://wordpress.org/documentation/article/roles-and-capabilities/" target="_blank" rel="noopener noreferrer">roles y permisos<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</p>
+    </div>
+  </details>
+  <details class="c-promo__pregunta"><summary>Registrador u hosting: acceso delegado</summary>
+    <div class="c-guia__mini-cuerpo">
+      <p>Muchos proveedores permiten dar acceso a otra persona <strong>sin compartir tu contraseña</strong>. Búscalo como «acceso delegado», «usuarios» o «miembros del equipo». Ejemplo con GoDaddy:</p>
+      <ol class="c-guia__recorrido">
+        <li>Entra a la página de <a href="https://account.godaddy.com/access" target="_blank" rel="noopener noreferrer">acceso de tu cuenta de GoDaddy<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</li>
+        <li>En «Personas que pueden acceder a mi cuenta», elige <strong>Invitar para acceder</strong>.</li>
+        <li>Escribe mi nombre y mi correo, y elige el <strong>nivel de acceso</strong>: con el que solo administre productos y dominios, sin compras, alcanza.</li>
+        <li>Pulsa <strong>Invitar</strong>. La invitación vence en unos días si no se acepta.</li>
+      </ol>
+      <p><strong>Para quitarme:</strong> en la misma página, «Editar» junto a mi nombre y luego «Eliminar». Más en la <a href="https://www.godaddy.com/es/help/que-es-el-acceso-delegado-12378" target="_blank" rel="noopener noreferrer">ayuda de GoDaddy<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>. Si tu proveedor no ofrece nada parecido, usamos la opción 1 (videollamada).</p>
+    </div>
+  </details>
+  <details class="c-promo__pregunta"><summary>Enlace de un solo uso con Bitwarden Send</summary>
+    <div class="c-guia__mini-cuerpo">
+      <ol class="c-guia__recorrido">
+        <li>En Bitwarden, entra a <strong>Enviar</strong> y elige <strong>Enviar nuevo</strong>.</li>
+        <li>Tipo <strong>Texto</strong>. Ponle un nombre (por ejemplo «Acceso para Lex») y pega ahí la contraseña.</li>
+        <li>Abre <strong>Opciones</strong>: pon el <strong>número máximo de accesos en 1</strong> y una <strong>fecha de eliminación</strong> cercana (por defecto son 7 días). Si quieres, añade una contraseña al enlace y mándamela por otro medio, y activa que el texto se oculte por defecto.</li>
+        <li>Pulsa <strong>Guardar</strong>, luego en Opciones <strong>Copiar enlace de Enviar</strong>, y pásame el enlace. El enlace sí puede ir por WhatsApp: ya no sirve después de abrirse.</li>
+      </ol>
+      <p>Si la plataforma te pide un código de verificación en dos pasos al entrar, tendrás que estar conmigo para dármelo. <a href="https://bitwarden.com/es-la/help/create-send/" target="_blank" rel="noopener noreferrer">Cómo crear un Enviar<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a> · <a href="https://bitwarden.com/es-la/help/send-lifespan/" target="_blank" rel="noopener noreferrer">Vida útil de un Enviar<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</p>
+    </div>
+  </details>
+  <details class="c-promo__pregunta"><summary>Enlace temporal con 1Password</summary>
+    <div class="c-guia__mini-cuerpo">
+      <ol class="c-guia__recorrido">
+        <li>Abre 1Password, busca el elemento y elige <strong>Compartir</strong> (<em>Share</em>).</li>
+        <li>Elige <strong>cuándo caduca</strong> el enlace y, para que solo yo pueda abrirlo, toca <strong>Agregar correo</strong> y escribe el mío.</li>
+        <li>Pulsa <strong>Copiar enlace</strong> y pásamelo. No necesito cuenta de 1Password para abrirlo.</li>
+      </ol>
+      <p>Según 1Password, el enlace se puede abrir hasta que caduque: pon una caducidad corta y limítalo a mi correo. <a href="https://support.1password.com/share-items/" target="_blank" rel="noopener noreferrer">Cómo compartir elementos con 1Password<span class="u-visually-hidden"> (se abre en otra pestaña)</span></a>.</p>
+    </div>
+  </details>
+</div>
+<p class="c-guia__nota c-guia__nota--ico"><span class="c-icon c-icon--check" aria-hidden="true"></span><span><strong>Cuando terminemos:</strong> quita mi acceso con los pasos de arriba, cambia la contraseña de lo que compartiste y revisa que mi nombre ya no aparezca en la lista de usuarios, colaboradores o delegados. Si compartiste una contraseña por un enlace, cámbiala aunque el enlace ya haya caducado.</span></p>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 06">
+            <a class="c-guia__pasar-link" href="#conectar" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>Cómo se conecta, paso a paso</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#errores" rel="next"><span><small>Siguiente capítulo</small><strong>Errores comunes y lista de verificación</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="errores" aria-labelledby="errores-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--der" aria-hidden="true">07</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 07</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--alert" aria-hidden="true"></span></span><h2 data-reveal="title" id="errores-titulo">Errores comunes y lista de verificación</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Casi todos los problemas son los mismos ocho. Revisa la lista al terminar y, si algo falla, avísame.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <h3 class="c-guia__h3"><span class="c-icon c-icon--alert" aria-hidden="true"></span><span>Los errores más comunes</span></h3>
+<ul class="c-guia__lista c-guia__lista--no">
+  <li>Comprar el dominio con el correo de un tercero y luego no poder recuperarlo.</li>
+  <li>Pagar un hosting carísimo por tres años solo por el descuento y llegar a la renovación sin saberlo.</li>
+  <li>Editar el DNS equivocado (si cambias los servidores de nombres, el DNS del registrador ya no manda).</li>
+  <li>Esperar que funcione al instante: la propagación tarda.</li>
+  <li>Olvidar la renovación y perder el dominio.</li>
+  <li>Copiar mal un valor del DNS (un espacio de más, o pegar la dirección completa <em>https://…</em> donde pedía solo el nombre).</li>
+  <li>Cambiar servidores de nombres sin respaldar los registros de correo, y quedarse sin correo.</li>
+  <li>Tener solo una versión del dominio funcionando (con <em>www</em> o sin él).</li>
+</ul>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--check" aria-hidden="true"></span><span>Lista de verificación al terminar</span></h3>
+<p>Cuando todo esté conectado, repasa esto. Puedes ir marcando cada punto.</p>
+<ul class="c-guia__verificacion">
+  <li><label><input type="checkbox"><span>El dominio está a tu nombre y con tu correo.</span></label></li>
+  <li><label><input type="checkbox"><span>Privacidad, renovación automática y verificación en dos pasos activadas.</span></label></li>
+  <li><label><input type="checkbox"><span>El sitio abre con y sin <em>www</em> y las dos llevan al mismo lugar.</span></label></li>
+  <li><label><input type="checkbox"><span>Sale el candado (HTTPS) y no hay avisos de «no seguro».</span></label></li>
+  <li><label><input type="checkbox"><span>Se ve bien en tu celular con datos móviles, no solo con tu Wi-Fi.</span></label></li>
+  <li><label><input type="checkbox"><span>Al compartirlo por WhatsApp se ve una vista previa con título e imagen.</span></label></li>
+  <li><label><input type="checkbox"><span>El correo con tu dominio (si lo tienes) sigue funcionando.</span></label></li>
+  <li><label><input type="checkbox"><span>Sabes dónde vence el dominio y dónde está guardada la contraseña.</span></label></li>
+</ul>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 07">
+            <a class="c-guia__pasar-link" href="#contrasenas" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>Cómo te ayudo sin pedirte tus contraseñas</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#preguntas" rel="next"><span><small>Siguiente capítulo</small><strong>Preguntas rápidas y glosario</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="c-section c-promo__seccion c-guia__capitulo" id="preguntas" aria-labelledby="preguntas-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--izq" aria-hidden="true">08</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Capítulo 08</p>
+          <div class="c-guia__titulo"><span class="c-guia__icono c-guia__icono--grande"><span class="c-icon c-icon--message" aria-hidden="true"></span></span><h2 data-reveal="title" id="preguntas-titulo">Preguntas rápidas y glosario</h2></div>
+          <p class="c-guia__encorto"><strong>En corto:</strong> Si una palabra te frena, búscala aquí; y si tu duda no está, escríbeme.</p>
+          <div class="c-guia__cuerpo o-stack">
+            <div class="c-promo__faq c-guia__faq">
+  <details class="c-promo__pregunta"><summary>¿Puedo cambiar de hosting después sin perder mi dominio?</summary><p>Sí, si el dominio está en tu cuenta de un registrador. Cambias a dónde apunta el DNS y el dominio sigue siendo tuyo. Por eso recomiendo tenerlo aparte.</p></details>
+  <details class="c-promo__pregunta"><summary>¿Qué pasa si no renuevo mi dominio?</summary><p>Primero queda en un periodo de gracia, luego puede ponerse en venta y cualquiera podría comprarlo. Con la renovación automática y un correo vigente casi nunca pasa.</p></details>
+  <details class="c-promo__pregunta"><summary>¿Necesito comprar el dominio antes de pedir mi página?</summary><p>No. Puedes pedirla y comprarlo después, antes de publicar. Si no tienes uno elegido, en tu pedido me lo dices y te ayudo a escogerlo.</p></details>
+  <details class="c-promo__pregunta"><summary>¿El hosting gratuito sirve?</summary><p>Para un sitio estático (sin tienda ni base de datos) sí hay opciones gratuitas confiables. Para algo con más movimiento, un hosting de paga da más tranquilidad. Te digo cuál conviene según lo que vayas a hacer.</p></details>
+  <details class="c-promo__pregunta"><summary>¿Qué es mejor, .com o .mx?</summary><p>Si tu público es de todo el mundo, <em>.com</em>. Si es local, <em>.mx</em> o <em>.com.mx</em> da confianza en México. Si puedes, consigue la que elijas y, si es barata, también la otra para que nadie la use.</p></details>
+</div>
+
+<h3 class="c-guia__h3"><span class="c-icon c-icon--book" aria-hidden="true"></span><span>Glosario</span></h3>
+<dl class="c-guia__glosario">
+  <div><dt>Registrador</dt><dd>La empresa donde compras y administras tu dominio.</dd></div>
+  <div><dt>Servidores de nombres (nameservers)</dt><dd>Los servidores que mandan sobre el DNS de tu dominio. Donde apuntan es donde editas.</dd></div>
+  <div><dt>Registro DNS</dt><dd>Una línea de la libreta: dice qué hacer con tu dominio o un subdominio.</dd></div>
+  <div><dt>Propagación</dt><dd>El tiempo que tarda un cambio de DNS en verse en todos lados.</dd></div>
+  <div><dt>TTL</dt><dd>Cuánto tiempo guarda una red su copia de un registro antes de volver a preguntar.</dd></div>
+  <div><dt>Subdominio</dt><dd>Un prefijo de tu dominio, como <em>www</em> o <em>tienda</em>.</dd></div>
+  <div><dt>HTTPS / certificado</dt><dd>El cifrado de la conexión. El certificado es lo que lo prueba; lo normal es que tu proveedor lo renueve solo.</dd></div>
+  <div><dt>Redirección</dt><dd>Mandar automáticamente a quien entra a una dirección hacia otra.</dd></div>
+  <div><dt>Alojamiento</dt><dd>Lo mismo que hosting.</dd></div>
+</dl>
+          </div>
+          <nav class="c-guia__pasar" aria-label="Anterior y siguiente del capítulo 08">
+            <a class="c-guia__pasar-link" href="#errores" rel="prev"><span class="c-icon c-icon--arrow-left" aria-hidden="true"></span><span><small>Capítulo anterior</small><strong>Errores comunes y lista de verificación</strong></span></a>
+            <a class="c-guia__pasar-link c-guia__pasar-link--sig" href="#que-sigue" rel="next"><span><small>Para terminar</small><strong>Qué sigue</strong></span><span class="c-icon c-icon--arrow-right" aria-hidden="true"></span></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="c-section c-section--plan c-promo__seccion" id="que-sigue" aria-labelledby="sigue-titulo">
+        <span class="c-promo__fantasma c-promo__fantasma--der" aria-hidden="true">→</span>
+        <div class="o-container o-stack">
+          <p class="c-eyebrow">// Qué sigue</p>
+          <h2 data-reveal="title" id="sigue-titulo">¿Prefieres que lo haga contigo?</h2>
+          <p class="c-section__lead" data-reveal="text">Pronto agrego una página con proveedores de hosting y dominios que recomiendo, con el porqué de cada uno. Cuando esté lista te aviso por WhatsApp. Mientras tanto, si algo no quedó claro, escríbeme y lo vemos.</p>
+          <p class="c-promo__acciones">
+            <a class="c-button" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20le%C3%AD%20tu%20gu%C3%ADa%20de%20dominio%20y%20hosting%20y%20quiero%20preguntarte%20algo." target="_blank" rel="noopener noreferrer"><span class="c-icon c-icon--message" aria-hidden="true"></span>Escribirme por WhatsApp</a>
+            <a class="c-button c-button--ghost" href="#inicio"><span class="c-icon c-icon--arrow-up" aria-hidden="true"></span>Volver arriba</a>
+          </p>
+        </div>
+      </section>
+
+      <a class="c-to-top js-guia-top" href="#capitulos" aria-label="Volver al índice de capítulos" title="Volver al índice"></a>
+    </main>
+
+    <footer class="c-footer" id="contacto">
+      <div class="o-container o-stack">
+        <p class="c-eyebrow">// WhatsApp, correo o redes, como prefieras</p>
+        <h2 data-reveal="title">¿Hablamos?</h2>
+        <p class="c-section__lead" data-reveal="text">Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad. ¿Tu sobrino lo hace con ChatGPT? Seguro quedará increíble. Si prefieres a alguien con 15 años de oficio, aquí estoy.</p>
+        <p class="c-footer__actions">
+          <a class="c-button" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20vi%20tu%20sitio%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20proyecto." target="_blank" rel="noopener"><span class="c-icon c-icon--message" aria-hidden="true"></span>WhatsApp</a>
+          <a class="c-button c-button--ghost" href="mailto:lex.mendozaleon@gmail.com"><span class="c-icon c-icon--mail" aria-hidden="true"></span>Correo</a>
+          <a class="c-button c-button--ghost" href="https://www.instagram.com/thelexmendoza/" target="_blank" rel="noopener noreferrer"><span class="c-icon c-icon--instagram" aria-hidden="true"></span>Instagram</a>
+          <a class="c-button c-button--ghost" href="https://www.linkedin.com/in/amendozaleon/" target="_blank" rel="noopener noreferrer"><span class="c-icon c-icon--linkedin" aria-hidden="true"></span>LinkedIn</a>
+        </p>
+        <p class="c-footer__legal">© 2026 Lex Mendoza · <a href="../privacidad/">Aviso de privacidad</a> · <a href="../cookies/">Política de cookies</a></p>
+      </div>
+    </footer>
+  </body>
 </html>

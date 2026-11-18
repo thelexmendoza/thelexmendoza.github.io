@@ -16,6 +16,7 @@
     "legal": "node scripts/render-legal.mjs",
     "seo": "node scripts/build-seo.mjs",
     "promo": "node scripts/render-promo.mjs",
+    "guia": "node scripts/render-guia.mjs",
     "tags": "node scripts/build-tags.mjs"
   },
   "keywords": [],

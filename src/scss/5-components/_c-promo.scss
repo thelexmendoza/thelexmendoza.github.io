@@ -539,8 +539,15 @@
     }
   }
 
+  // Aire: el texto de apertura de una sección y el pie de las tarjetas no se pegan a ellas (las marcas de registro salen 5 px del borde).
+  &__planes,
+  &__casos {
+    margin-block-start: var(--space-4);
+  }
+
   &__extra {
     max-inline-size: fn.rem(544);
+    margin-block-start: var(--space-4);
     color: var(--color-text-muted);
   }
 
@@ -832,6 +839,33 @@
 
   to {
     transform: scaleX(1);
+  }
+}
+
+// Tema claro: sobre fondo blanco las cruces compiten con el texto que no lleva nada detras. Se aligeran (la retícula y la banda roja del scroll)
+// y el texto lleva un halo del color del fondo, así ninguna cruz lo cruza. Vale para la promo y para la guía, que comparten el fondo.
+:root[data-theme="light"] .c-promo {
+  .c-promo__cruces {
+    background: color-mix(in srgb, var(--color-text) 9%, transparent);
+  }
+
+  .c-promo__cruces::after {
+    background-image: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--color-accent) 42%, transparent), transparent);
+  }
+
+  :is(p, li, dd, dt, h1, h2, h3, summary, figcaption, small) {
+    text-shadow:
+      0 0 0.35em var(--color-bg),
+      0 0 0.7em var(--color-bg),
+      0 0 1.1em var(--color-bg);
+  }
+
+  // Sin halo donde el texto es un degradado recortado (la palabra camaleónica: el halo se vería a través de él) y en los botones.
+  .c-chameleon-title,
+  .c-chameleon-title *,
+  .c-button,
+  .c-button * {
+    text-shadow: none;
   }
 }
 

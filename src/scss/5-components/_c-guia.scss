@@ -1,0 +1,1189 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// Guía de dominio y hosting (lexmendoza.com/guia-dominio-hosting/). Vive en <main class="c-promo c-guia">: del vocabulario de la promo
+// reutiliza el fondo (cruces, brillo, marcas de registro), las cifras en contorno, el hero, la cinta y las preguntas; aquí solo va lo propio
+// de una guía (índice, tarjetas, anatomía de una dirección, tabla de registros, figuras, pasos, listas y glosario). Mobile first.
+.c-guia {
+  // Línea de datos del hero: cuánto se lee, qué no lleva y cuándo se actualizó.
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.04em;
+
+    span {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+
+    .c-icon {
+      color: var(--color-accent-text);
+    }
+  }
+
+  // Aviso o nota: filete en acento a la izquierda.
+  &__nota {
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    border-inline-start: 3px solid var(--color-accent);
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    max-inline-size: fn.rem(680);
+  }
+
+  // Barra de capítulos: queda fija arriba mientras lees. main.js marca el capítulo activo (js-spy) y, en pantallas angostas donde la barra
+  // se desplaza de lado, la mueve para que el activo siempre se vea (data-spy-follow).
+  &__nav {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 5;
+    border-block: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 92%, transparent);
+    backdrop-filter: blur(8px);
+  }
+
+  &__nav-lista {
+    position: relative;
+    display: flex;
+    gap: var(--space-1);
+    margin: 0 auto;
+    padding: 0 var(--space-2);
+    list-style: none;
+    max-inline-size: fn.rem(1200);
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include m.respond-to(tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    min-block-size: fn.rem(44);
+    padding-inline: var(--space-2);
+    border-block-end: 2px solid transparent;
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-text);
+    }
+
+    &.is-active,
+    &[aria-current="true"] {
+      border-color: var(--color-accent);
+      color: var(--color-text);
+    }
+
+    &.is-active .c-guia__nav-num,
+    &[aria-current="true"] .c-guia__nav-num {
+      color: var(--color-accent-text);
+    }
+  }
+
+  &__nav-num {
+    color: var(--color-text-muted);
+  }
+
+  // Al saltar a un capítulo, que la barra fija no tape el título.
+  &__capitulo,
+  #capitulos,
+  #que-sigue {
+    scroll-margin-block-start: fn.rem(56);
+  }
+
+  // Nota con icono a la izquierda.
+  &__nota--ico {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+
+    .c-icon {
+      margin-block-start: 0.15em;
+      color: var(--color-accent-text);
+      font-size: 1.15em;
+    }
+  }
+
+  // Icono dentro de un recuadro: marca cada idea para reconocerla al hojear.
+  &__icono {
+    display: inline-grid;
+    place-items: center;
+    flex: none;
+    inline-size: fn.rem(40);
+    block-size: fn.rem(40);
+    border: 1px solid color-mix(in srgb, var(--color-accent) 60%, transparent);
+    color: var(--color-accent-text);
+    font-size: 1.25rem;
+
+    &--grande {
+      inline-size: fn.rem(55);
+      block-size: fn.rem(55);
+      font-size: 1.75rem;
+    }
+  }
+
+  // Título de capítulo con su icono: apilados en móvil, en fila desde tableta.
+  &__titulo {
+    display: grid;
+    gap: var(--space-2);
+    justify-items: start;
+
+    h2 {
+      margin: 0;
+    }
+
+    @include m.respond-to(tablet) {
+      grid-template-columns: auto 1fr;
+      align-items: center;
+    }
+  }
+
+  // Subtítulo con icono.
+  &__h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+
+    .c-icon {
+      color: var(--color-accent-text);
+    }
+  }
+
+  // Tarjeta de una forma de armar el sitio: el pictograma va relleno en acento (no es el logotipo de la plataforma).
+  &__marca {
+    display: inline-grid;
+    place-items: center;
+    inline-size: fn.rem(55);
+    block-size: fn.rem(55);
+    margin-block-end: var(--space-1);
+    background: var(--color-accent);
+    color: var(--color-bg);
+    font-size: 1.75rem;
+  }
+
+  &__etiqueta {
+    margin: 0 0 var(--space-1);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__indice-cab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // Animación del hero (decorativa): navegador → DNS → hosting. Base = cuadro final ya armado (lo que se ve con menos movimiento);
+  // con movimiento, el bucle de abajo lo teclea, lo envía y lo carga. En móvil va debajo de los botones; desde 1024 px, a la derecha.
+  &__flujo {
+    display: grid;
+    inline-size: 100%;
+    max-inline-size: fn.rem(360);
+    pointer-events: none;
+    user-select: none;
+
+    @include m.respond-to(laptop-s) {
+      position: absolute;
+      inset-block-start: 50%;
+      inset-inline-end: 0;
+      inline-size: fn.rem(320);
+      translate: 0 -50%;
+    }
+  }
+
+  &__nodo {
+    position: relative;
+    padding: var(--space-2);
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 84%, transparent);
+  }
+
+  &__nodo-etq {
+    display: block;
+    margin-block-end: var(--space-1);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: fn.rem(11);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__barra {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    min-block-size: fn.rem(32);
+    padding-inline: var(--space-1);
+    border: 1px solid color-mix(in srgb, var(--color-text) 38%, transparent);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+
+    .c-icon {
+      color: var(--color-accent-text);
+    }
+  }
+
+  &__tecleo {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  &__carga {
+    display: block;
+    block-size: 2px;
+    margin-block: var(--space-1);
+    background: var(--color-accent);
+    transform-origin: 0 50%;
+  }
+
+  &__pagina {
+    display: grid;
+    gap: 5px;
+
+    i {
+      display: block;
+      block-size: 6px;
+      background: color-mix(in srgb, var(--color-text) 24%, transparent);
+    }
+
+    i:nth-child(1) {
+      inline-size: 58%;
+    }
+
+    i:nth-child(2) {
+      inline-size: 92%;
+    }
+
+    i:nth-child(3) {
+      inline-size: 44%;
+    }
+  }
+
+  // Los dos tramos entre cuadros: una línea punteada por donde viaja el paquete.
+  &__via {
+    position: relative;
+    display: block;
+    block-size: fn.rem(34);
+    inline-size: 1px;
+    margin-inline-start: 50%;
+    background: repeating-linear-gradient(to bottom, color-mix(in srgb, var(--color-accent) 70%, transparent) 0 4px, transparent 4px 8px);
+  }
+
+  &__paquete {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    inline-size: fn.rem(9);
+    block-size: fn.rem(9);
+    translate: -50% -50%;
+    background: var(--color-accent);
+    opacity: 0;
+  }
+
+  &__libreta {
+    display: grid;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: f.$font-mono;
+    font-size: fn.rem(12);
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--space-1);
+      padding: 0.2rem 0.45rem;
+      border-inline-start: 2px solid transparent;
+      color: var(--color-text-muted);
+    }
+
+    .is-hit {
+      border-color: var(--color-accent);
+      background: color-mix(in srgb, var(--color-accent) 16%, transparent);
+      color: var(--color-text);
+    }
+  }
+
+  &__rack {
+    display: grid;
+    gap: 5px;
+
+    i {
+      position: relative;
+      display: block;
+      block-size: fn.rem(14);
+      border: 1px solid color-mix(in srgb, var(--color-text) 38%, transparent);
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset-block: 3px;
+        inset-inline-end: 4px;
+        inline-size: 5px;
+        background: var(--color-accent);
+      }
+    }
+  }
+
+  &__ok {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-block-start: var(--space-1);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: fn.rem(12);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  // Índice: una tarjeta por capítulo.
+  &__indice {
+    display: grid;
+    gap: var(--space-2);
+    
+    padding: 0;
+    list-style: none;
+
+    @include m.respond-to(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-3);
+    }
+
+    a {
+      display: grid;
+      align-content: start;
+      gap: var(--space-1);
+      block-size: 100%;
+      padding: var(--space-3);
+      border: 1px solid var(--color-text-muted);
+      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      color: var(--color-text);
+      text-decoration: none;
+
+      &:hover,
+      &:focus-visible {
+        border-color: var(--color-accent);
+      }
+    }
+
+    strong {
+      font-size: var(--step-1);
+      line-height: 1.2;
+    }
+  }
+
+  &__num {
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+  }
+
+  &__corto {
+    color: var(--color-text-muted);
+    font-size: var(--step--1);
+  }
+
+  // Pista de que la tarjeta es un enlace: «Ir al capítulo →», y la flecha se corre al pasar el cursor.
+  &__ir {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-block-start: var(--space-1);
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  // Cada capítulo: una frase que resume lo que hay que llevarse.
+  &__encorto {
+    padding-inline-start: var(--space-2);
+    border-inline-start: 3px solid var(--color-accent);
+    color: var(--color-text);
+    font-size: var(--step-1);
+    line-height: 1.4;
+    max-inline-size: fn.rem(680);
+  }
+
+  // Anterior y siguiente al final de cada capítulo.
+  &__pasar {
+    display: grid;
+    gap: var(--space-2);
+    margin-block-start: var(--space-4);
+    padding-block-start: var(--space-3);
+    border-block-start: 1px solid color-mix(in srgb, var(--color-text) 28%, transparent);
+
+    @include m.respond-to(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__pasar-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      border-color: var(--color-accent);
+    }
+
+    small {
+      display: block;
+      color: var(--color-text-muted);
+      font-family: f.$font-mono;
+      font-size: var(--step--1);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    strong {
+      display: block;
+      font-size: var(--step-0);
+      line-height: 1.25;
+    }
+
+    .c-icon {
+      flex: none;
+      color: var(--color-accent-text);
+    }
+
+    &--sig {
+      justify-content: space-between;
+      text-align: end;
+    }
+  }
+
+  &__cuerpo {
+    --stack-space: var(--space-3);
+    max-inline-size: fn.rem(780);
+
+    // El aire entre bloques lo pone o-stack: aquí solo se quita el margen de abajo (el de arriba de cada bloque ya lo da el apilado) y el del primero.
+    > * {
+      margin-block-end: 0;
+    }
+
+    > :first-child {
+      margin-block-start: 0;
+    }
+
+    h3 {
+      margin-block: var(--space-4) 0;
+      font-size: var(--step-1);
+      line-height: 1.2;
+    }
+
+    h3:first-child {
+      margin-block-start: 0;
+    }
+
+    a {
+      color: var(--color-accent-text);
+    }
+
+    // Enlace que sale del sitio (se abre en otra pestaña): una flechita lo avisa a la vista.
+    a[target="_blank"]::after {
+      content: "↗";
+      display: inline-block;
+      margin-inline-start: 0.15em;
+      font-size: 0.85em;
+      text-decoration: none;
+    }
+
+    code {
+      padding: 0.1em 0.4em;
+      border: 1px solid color-mix(in srgb, var(--color-text) 28%, transparent);
+      background: color-mix(in srgb, var(--color-bg) 70%, transparent);
+      font-family: f.$font-mono;
+      font-size: 0.9em;
+      overflow-wrap: anywhere;
+    }
+  }
+
+  // Tarjetas de conceptos: foco de luz y marcas de registro como las de los servicios.
+  &__tarjetas {
+    display: grid;
+    gap: var(--space-2);
+
+    @include m.respond-to(tablet) {
+      gap: var(--space-3);
+
+      &--2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &--3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  &__card {
+    padding: var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+
+    h3 {
+      margin: 0 0 var(--space-1);
+      font-family: f.$font-condensed;
+      font-size: var(--step-1);
+    }
+
+    p {
+      margin: 0;
+      color: var(--color-text-muted);
+    }
+
+    p + p {
+      margin-block-start: var(--space-1);
+    }
+  }
+
+  // Anatomía de una dirección: cada parte con su subrayado.
+  &__url {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-1);
+    padding: var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+
+    div {
+      display: grid;
+      gap: var(--space-1);
+      justify-items: start;
+    }
+
+    code {
+      padding: 0 0 var(--space-1);
+      border: 0;
+      border-block-end: 3px solid var(--color-text-muted);
+      background: none;
+      font-size: var(--step-1);
+    }
+
+    small {
+      color: var(--color-text-muted);
+      font-size: var(--step--1);
+      line-height: 1.3;
+    }
+
+    .s3 code {
+      border-color: var(--color-accent);
+      color: var(--color-accent-text);
+      font-weight: 700;
+    }
+
+    .s2 code {
+      border-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-text-muted));
+    }
+  }
+
+  // Tabla de registros DNS: se desplaza de lado en pantallas angostas.
+  &__tabla {
+    overflow-x: auto;
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+
+    &:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+    }
+
+    table {
+      inline-size: 100%;
+      min-inline-size: fn.rem(560);
+      border-collapse: collapse;
+    }
+
+    // El tipo de registro (A, AAAA, CNAME…) nunca se parte; los valores largos van enteros en su caja y, si no caben, la tabla se desplaza de lado
+    // (con `overflow-wrap: anywhere` la columna se encogía a una letra y «CNAME» se partía en dos).
+    td:first-child,
+    th:first-child {
+      inline-size: 1%;
+      white-space: nowrap;
+    }
+
+    td code {
+      display: inline-block;
+      max-inline-size: 100%;
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+
+    th,
+    td {
+      padding: var(--space-1) var(--space-2);
+      border-block-end: 1px solid color-mix(in srgb, var(--color-text) 22%, transparent);
+      text-align: start;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--color-text-muted);
+      font-family: f.$font-mono;
+      font-size: var(--step--1);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td {
+      border-block-end: 0;
+    }
+  }
+
+  // Pista de que la tabla se desplaza de lado: solo en pantallas angostas, donde no cabe entera.
+  &__desliza {
+    margin-block-start: var(--space-1);
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+
+    @media (min-width: 40rem) {
+      display: none;
+    }
+  }
+
+  // Figuras con dibujos propios (SVG en línea): toman los colores del tema.
+  &__figura {
+    
+    padding: var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+
+    figcaption {
+      margin-block-start: var(--space-2);
+      color: var(--color-text-muted);
+      font-size: var(--step--1);
+      text-align: center;
+    }
+
+    &--estrecha .c-guia__svg {
+      max-inline-size: fn.rem(420);
+    }
+  }
+
+  &__svg {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+    margin-inline: auto;
+
+    .caja {
+      fill: var(--color-bg);
+      stroke: var(--color-text-muted);
+      stroke-width: 1.5;
+    }
+
+    .caja--acc {
+      stroke: var(--color-accent);
+    }
+
+    // Puntas y esquinas rectas, como los botones y las tarjetas del sitio (nada redondeado).
+    .trazo {
+      fill: none;
+      stroke: var(--color-accent);
+      stroke-width: 2;
+      stroke-linecap: square;
+      stroke-linejoin: miter;
+    }
+
+    .flecha {
+      fill: none;
+      stroke: var(--color-accent);
+      stroke-width: 2;
+      stroke-linecap: square;
+    }
+
+    // Marcas de registro en las esquinas de cada cuadro, como las de las tarjetas.
+    .marca {
+      fill: none;
+      stroke: color-mix(in srgb, var(--color-text) 55%, transparent);
+      stroke-width: 1.5;
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+    }
+
+    .marca--acc {
+      stroke: var(--color-accent);
+    }
+
+    .punta {
+      fill: var(--color-accent);
+    }
+
+    .t {
+      fill: var(--color-text);
+      font: 700 20px f.$font-condensed;
+    }
+
+    .t2 {
+      fill: var(--color-text-muted);
+      font: 300 17px f.$font-sans;
+    }
+
+    .t3 {
+      fill: var(--color-accent-text);
+      font: 500 16px f.$font-mono;
+      letter-spacing: 0.08em;
+    }
+
+    &.f3 .t2 {
+      font-size: 19px;
+    }
+
+    &.f3 .t {
+      font-size: 21px;
+    }
+  }
+
+  // Pasos: una columna con una línea que une los números.
+  &__recorrido,
+  &__reglas {
+    
+    padding: 0;
+    list-style: none;
+    counter-reset: paso;
+
+    li {
+      position: relative;
+      margin: 0;
+      padding: 0 0 var(--space-3) var(--space-5);
+      counter-increment: paso;
+
+      &::before {
+        content: counter(paso, decimal-leading-zero);
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        color: var(--color-accent-text);
+        font-family: f.$font-mono;
+        font-size: var(--step--1);
+        letter-spacing: 0.08em;
+      }
+
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        inset-block: fn.rem(26) 0;
+        inset-inline-start: fn.rem(8);
+        inline-size: 1px;
+        background: color-mix(in srgb, var(--color-text) 30%, transparent);
+      }
+    }
+  }
+
+  // Listas con cuadritos en acento (y con cruz en la de errores).
+  &__lista {
+    
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin: 0 0 var(--space-1);
+      padding-inline-start: var(--space-4);
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset-block-start: 0.6em;
+        inset-inline-start: 0;
+        inline-size: fn.rem(8);
+        block-size: fn.rem(8);
+        background: var(--color-accent);
+      }
+    }
+
+    &--no li::before {
+      content: "×";
+      inset-block-start: 0;
+      inline-size: auto;
+      block-size: auto;
+      background: none;
+      color: var(--color-accent-text);
+      font-family: f.$font-mono;
+      line-height: 1.6;
+    }
+  }
+
+  // Lista de verificación: casillas de verdad, para ir marcando.
+  &__verificacion {
+    display: grid;
+    gap: var(--space-1);
+    
+    padding: 0;
+    list-style: none;
+
+    label {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: start;
+      gap: var(--space-2);
+      padding: var(--space-2);
+      border: 1px solid color-mix(in srgb, var(--color-text) 28%, transparent);
+      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      cursor: pointer;
+    }
+
+    input {
+      appearance: none;
+      inline-size: fn.rem(21);
+      block-size: fn.rem(21);
+      margin: 0;
+      border: 2px solid var(--color-accent);
+      background: transparent;
+      cursor: pointer;
+
+      &:checked {
+        background: var(--color-accent);
+        box-shadow: inset 0 0 0 4px var(--color-bg);
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-text);
+        outline-offset: 2px;
+      }
+    }
+
+    label:has(input:checked) {
+      border-color: var(--color-accent);
+
+      span {
+        color: var(--color-text-muted);
+      }
+    }
+  }
+
+  &__faq {
+    max-inline-size: fn.rem(780);
+  }
+
+  // Mini guías en acordeón: los pasos dentro de cada respuesta, un poco más compactos.
+  &__mini-cuerpo {
+    display: grid;
+    gap: var(--space-2);
+    padding-block: var(--space-1) var(--space-3);
+
+    p,
+    ol {
+      margin: 0;
+    }
+
+    p {
+      color: var(--color-text-muted);
+    }
+
+    .c-guia__recorrido li {
+      padding-block-end: var(--space-2);
+    }
+
+    a {
+      color: var(--color-accent-text);
+    }
+  }
+
+  // Glosario: una definición por tarjeta, en dos columnas desde tableta.
+  &__glosario {
+    display: grid;
+    gap: var(--space-2);
+    
+
+    @include m.respond-to(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    div {
+      padding: var(--space-2) var(--space-3);
+      border-inline-start: 3px solid var(--color-accent);
+      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    }
+
+    dt {
+      font-family: f.$font-mono;
+      font-size: var(--step--1);
+      letter-spacing: 0.04em;
+    }
+
+    dd {
+      margin: 0;
+      color: var(--color-text-muted);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  // Hero: un bucle de 10 s. Cada animación empieza y termina en el mismo estado (y los cambios de reinicio ocurren con el elemento
+  // invisible), así que al repetirse no hay salto. 0-22 % se teclea la dirección; 24-40 % viaja al DNS; 40-54 % lo encuentra;
+  // 54-68 % viaja al hosting; 66-96 % responde (candado, carga y página); 96-100 % todo se apaga para empezar de nuevo.
+  @keyframes c-guia-teclea {
+    0% {
+      clip-path: inset(0 100% 0 0);
+      opacity: 1;
+      animation-timing-function: steps(13, end);
+    }
+
+    22% {
+      clip-path: inset(0 0 0 0);
+      animation-timing-function: linear;
+    }
+
+    90% {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+
+    96% {
+      clip-path: inset(0 0 0 0);
+      opacity: 0;
+    }
+
+    97%,
+    99% {
+      clip-path: inset(0 100% 0 0);
+      opacity: 0;
+    }
+
+    100% {
+      clip-path: inset(0 100% 0 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes c-guia-paquete-1 {
+    0%,
+    24% {
+      inset-block-start: 0;
+      opacity: 0;
+    }
+
+    26% {
+      inset-block-start: 0;
+      opacity: 1;
+    }
+
+    38% {
+      inset-block-start: 100%;
+      opacity: 1;
+    }
+
+    40%,
+    100% {
+      inset-block-start: 100%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes c-guia-paquete-2 {
+    0%,
+    54% {
+      inset-block-start: 0;
+      opacity: 0;
+    }
+
+    56% {
+      inset-block-start: 0;
+      opacity: 1;
+    }
+
+    66% {
+      inset-block-start: 100%;
+      opacity: 1;
+    }
+
+    68%,
+    100% {
+      inset-block-start: 100%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes c-guia-hit {
+    0%,
+    38% {
+      border-color: transparent;
+      background: transparent;
+      color: var(--color-text-muted);
+    }
+
+    42%,
+    54% {
+      border-color: var(--color-accent);
+      background: color-mix(in srgb, var(--color-accent) 16%, transparent);
+      color: var(--color-text);
+    }
+
+    58%,
+    100% {
+      border-color: transparent;
+      background: transparent;
+      color: var(--color-text-muted);
+    }
+  }
+
+  @keyframes c-guia-ok {
+    0%,
+    64% {
+      opacity: 0;
+      translate: 0 4px;
+    }
+
+    70%,
+    90% {
+      opacity: 1;
+      translate: 0 0;
+    }
+
+    96%,
+    100% {
+      opacity: 0;
+      translate: 0 0;
+    }
+  }
+
+  @keyframes c-guia-carga {
+    0%,
+    70% {
+      transform: scaleX(0);
+      opacity: 1;
+    }
+
+    88% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+
+    94% {
+      transform: scaleX(1);
+      opacity: 0;
+    }
+
+    94.1%,
+    100% {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+  }
+
+  @keyframes c-guia-pagina {
+    0%,
+    86% {
+      opacity: 0;
+    }
+
+    90%,
+    94% {
+      opacity: 1;
+    }
+
+    98%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes c-guia-led {
+    0%,
+    100% {
+      opacity: 0.25;
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .c-guia {
+    &__tecleo {
+      animation: c-guia-teclea 10s linear infinite;
+    }
+
+    &__paquete {
+      animation: c-guia-paquete-1 10s linear infinite;
+    }
+
+    &__via--2 &__paquete {
+      animation-name: c-guia-paquete-2;
+    }
+
+    &__libreta .is-hit {
+      animation: c-guia-hit 10s linear infinite;
+    }
+
+    &__ok {
+      animation: c-guia-ok 10s ease-out infinite;
+    }
+
+    &__carga {
+      animation: c-guia-carga 10s ease-in-out infinite;
+    }
+
+    &__pagina {
+      animation: c-guia-pagina 10s linear infinite;
+    }
+
+    // Las luces del servidor parpadean, cada una a su ritmo.
+    &__rack i::after {
+      animation: c-guia-led 1.6s ease-in-out infinite;
+    }
+
+    &__rack i:nth-child(2)::after {
+      animation-duration: 2.3s;
+      animation-delay: -0.7s;
+    }
+
+    &__indice a,
+    &__verificacion label,
+    &__pasar-link,
+    &__nav-link {
+      transition: border-color 0.25s ease, color 0.25s ease;
+    }
+
+    &__ir .c-icon,
+    &__pasar-link .c-icon {
+      transition: translate 0.25s ease;
+    }
+
+    &__pasar-link:hover .c-icon,
+    &__pasar-link:focus-visible .c-icon {
+      translate: -0.3rem 0;
+    }
+
+    &__indice a:hover &__ir .c-icon,
+    &__indice a:focus-visible &__ir .c-icon,
+    &__pasar-link--sig:hover .c-icon,
+    &__pasar-link--sig:focus-visible .c-icon {
+      translate: 0.3rem 0;
+    }
+  }
+}
