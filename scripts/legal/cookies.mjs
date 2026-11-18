@@ -7,7 +7,7 @@ export const cookies = {
   title: 'Política de cookies',
   word: 'cookies',
   description: 'Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. La medición de anuncios (píxel de Meta) solo se activa si tú la aceptas.',
-  updated: '17 de noviembre de 2026',
+  updated: '18 de noviembre de 2026',
   lead: 'Te cuento exactamente qué guarda este sitio en tu navegador. Lo necesario es muy poco; la medición de anuncios solo se activa si tú la aceptas.',
   body: `
 <p>Responsable: <strong>Manuel Alejandro Mendoza León</strong> (Lex Mendoza), Fresnos 931, Col. Hacienda Los Morales, San Nicolás de los Garza, Nuevo León, C. P. 66495. Contacto: <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
@@ -24,12 +24,12 @@ export const cookies = {
 <tr><th scope="row"><code>landing-express-borrador</code></th><td>Formulario «Arma tu Landing Express»</td><td>Guardar tu avance en <strong>tu navegador</strong>, para que no lo pierdas. <strong>No se envía a ningún servidor.</strong></td><td>Hasta que lo borres</td><td>Yo</td></tr>
 <tr><th scope="row"><code>tagorq_consent</code></th><td>Este sitio</td><td>Recordar tu decisión sobre las cookies opcionales: qué aceptaste, cuándo y con qué versión de esta política.</td><td>12 meses, o hasta que esta política cambie</td><td>Yo</td></tr>
 <tr><th scope="row"><code>_fbp</code> y <code>_fbc</code></th><td>Este sitio (cookies de Meta)</td><td>Identificar tu navegador y, si llegas desde un anuncio, ese clic, para medir si mis anuncios funcionan. <strong>Solo existen si aceptas la medición de anuncios.</strong></td><td>Hasta 3 meses</td><td>Meta, tercero</td></tr>
-<tr><th scope="row">Verificación de Cloudflare Turnstile</th><td>Solo al enviar tu pedido</td><td>Comprobar que eres una persona y no un robot (seguridad).</td><td>Lo define Cloudflare</td><td>Cloudflare, tercero</td></tr>
+<tr><th scope="row">Verificación de Cloudflare Turnstile</th><td>Al enviar tu pedido y en el formulario del boletín</td><td>Comprobar que eres una persona y no un robot (seguridad).</td><td>Lo define Cloudflare</td><td>Cloudflare, tercero</td></tr>
 <tr><th scope="row">Datos de conexión del alojamiento</th><td>GitHub Pages y Surge</td><td>Entregarte el sitio (por ejemplo, tu IP y tu navegador).</td><td>Según sus políticas</td><td>GitHub y Surge, terceros</td></tr>
 </tbody>
 </table>
 </div>
-<p><strong>No instalo cookies de seguimiento propias.</strong> Las únicas de seguimiento son las de <strong>Meta</strong> (<code>_fbp</code> y <code>_fbc</code>), y <strong>solo después de que aceptes la medición de anuncios</strong>. Cloudflare Turnstile se carga <strong>solo en el paso final del formulario</strong>, no al entrar al sitio.</p>
+<p><strong>No instalo cookies de seguimiento propias.</strong> Las únicas de seguimiento son las de <strong>Meta</strong> (<code>_fbp</code> y <code>_fbc</code>), y <strong>solo después de que aceptes la medición de anuncios</strong>. Cloudflare Turnstile se carga <strong>solo en el paso final del formulario</strong>, no al entrar al sitio. Las páginas del <strong>boletín</strong> (brief.lexmendoza.com/newsletter) <strong>no guardan nada en tu navegador</strong> (ni cookies ni almacenamiento local) y no cargan el píxel de Meta; solo cargan Turnstile para verificar que eres una persona al suscribirte.</p>
 
 <h2>3. Lo que no uso hoy</h2>
 <p>Analítica de visitas, píxeles de plataformas distintas de Meta (Google, TikTok y otras), botones de «compartir» incrustados ni mapas.</p>

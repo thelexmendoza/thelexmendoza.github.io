@@ -7,13 +7,13 @@ export const privacidad = {
   title: 'Aviso de privacidad',
   word: 'privacidad',
   description: 'Quién trata tus datos personales, cuáles recabo, para qué los uso, con quién los comparto y cómo ejercer tus derechos ARCO.',
-  updated: '17 de noviembre de 2026',
+  updated: '18 de noviembre de 2026',
   lead: 'Te explico con claridad qué datos recabo cuando me escribes o armas tu pedido, para qué los uso y cómo puedes pedirme que los corrija o los elimine.',
   body: `
 <h2>1. Quién es el responsable de tus datos</h2>
 <p><strong>Manuel Alejandro Mendoza León</strong>, con nombre comercial <strong>Lex Mendoza</strong> y la marca <strong>Landing Express</strong> (en adelante, «yo»), con domicilio en Fresnos 931, Col. Hacienda Los Morales, San Nicolás de los Garza, Nuevo León, C. P. 66495, es el responsable del tratamiento de tus datos personales.</p>
 <p>Contacto para este aviso y para tus derechos: <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>. Sitio: thelexmendoza.github.io</p>
-<p>Este aviso aplica a lo que me compartes al escribirme por WhatsApp o correo y al formulario «Arma tu Landing Express».</p>
+<p>Este aviso aplica a lo que me compartes al escribirme por WhatsApp o correo y al formulario «Arma tu Landing Express» y al <strong>formulario del boletín</strong> (brief.lexmendoza.com/newsletter).</p>
 
 <h2>2. Qué datos personales recabo</h2>
 <div class="c-legal__scroll">
@@ -24,6 +24,7 @@ export const privacidad = {
 <tr><th scope="row">Tu negocio</th><td>Nombre del negocio, giro y ciudad.</td></tr>
 <tr><th scope="row">Tu marca y tus preferencias</th><td>Los colores y las palabras de voz que eliges, y las marcas, sitios web o perfiles de redes sociales (enlaces, usuarios o nombres) que me compartes como referencia o como cosas que <em>no</em> quieres.</td></tr>
 <tr><th scope="row">Tus archivos</th><td>Tu logotipo, tus imágenes y sus descripciones. Si en ellas aparecen personas, también se tratan sus imágenes (ver sección 8).</td></tr>
+<tr><th scope="row">Boletín (solo si te suscribes)</th><td>Tu correo electrónico, tu nombre (opcional), la página o enlace desde donde llegaste y sus etiquetas de campaña (<code>utm_source</code>, <code>utm_medium</code>, <code>utm_campaign</code>, <code>utm_content</code> y <code>utm_term</code>, sin datos personales), qué casillas marcaste (boletín y, aparte, promociones), la versión del texto que aceptaste, las fechas de tu suscripción, confirmación y baja, y una huella irreversible de tu IP.</td></tr>
 <tr><th scope="row">Tu pedido</th><td>Folio, fecha, estado, cupo reservado y los consentimientos que aceptaste.</td></tr>
 <tr><th scope="row">Datos técnicos</th><td>Una huella irreversible de tu dirección IP (no guardo la IP en sí), el número de intentos de envío para prevenir abusos y la verificación anti-robots de Cloudflare Turnstile, que puede procesar datos de tu navegador y tu IP.</td></tr>
 <tr><th scope="row">Medición de anuncios (solo si aceptas)</th><td>Las páginas que ves, tus clics en WhatsApp, correo o teléfono, datos técnicos de tu navegador y tu IP, y los identificadores de las cookies de Meta (<code>_fbp</code> y <code>_fbc</code>). Solo los recibe Meta si aceptas la «medición de anuncios» en el aviso de cookies.</td></tr>
@@ -51,11 +52,12 @@ export const privacidad = {
 <li>Mostrar tu proyecto terminado como caso de mi trabajo, con tu permiso por escrito.</li>
 <li>Invitarte a dejar una reseña o responder una encuesta de satisfacción.</li>
 <li>Medir si mis anuncios funcionan (píxel de Meta), solo si aceptas la «medición de anuncios» en el aviso de cookies.</li>
+<li>Enviarte mi <strong>boletín</strong> (ideas y guías sobre diseño, páginas web y marca), solo si te suscribes con el formulario del boletín, marcas su casilla y confirmas tu correo.</li>
 </ol>
-<p>Las finalidades 6, 7 y 8 <strong>solo se activan si marcas su casilla</strong>, que <strong>no viene marcada</strong>; la 9, solo si aceptas en el aviso de cookies. Puedes retirar tu consentimiento en cualquier momento escribiendo a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
+<p>Las finalidades 6, 7, 8 y 10 <strong>solo se activan si marcas su casilla</strong>, que <strong>no viene marcada</strong>; la 9, solo si aceptas en el aviso de cookies. En el formulario del boletín, la casilla del boletín y la de promociones son <strong>independientes</strong>: puedes recibir solo el boletín. Ser cliente mío no te suscribe al boletín, ni suscribirte te hace cliente. Puedes retirar tu consentimiento en cualquier momento escribiendo a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
 
 <h2>4. Tu consentimiento</h2>
-<p>Al marcar «Acepto el aviso de privacidad» y enviar tu pedido, aceptas el tratamiento de tus datos para las finalidades necesarias. Para las voluntarias, tu consentimiento es la casilla aparte. Para la medición de anuncios, tu consentimiento es tu elección en el aviso de cookies (Aceptar o Configurar). Si quiero usar tus datos para una finalidad distinta a las de este aviso, te pediré consentimiento de nuevo.</p>
+<p>Al marcar «Acepto el aviso de privacidad» y enviar tu pedido, aceptas el tratamiento de tus datos para las finalidades necesarias. Para las voluntarias, tu consentimiento es la casilla aparte; en el boletín, además, confirmas tu correo con el enlace que te mando (doble confirmación), y sin esa confirmación no recibes el boletín. Para la medición de anuncios, tu consentimiento es tu elección en el aviso de cookies (Aceptar o Configurar). Si quiero usar tus datos para una finalidad distinta a las de este aviso, te pediré consentimiento de nuevo.</p>
 
 <h2>5. Con quién se comparten tus datos</h2>
 <p><strong>No vendo tus datos.</strong> Salvo el píxel de Meta (solo si tú lo aceptas, y Meta lo trata según su propia política), no los comparto con terceros con fines propios. Para poder darte el servicio uso proveedores que tratan datos <strong>por mi cuenta y bajo mis instrucciones</strong>:</p>
@@ -64,7 +66,9 @@ export const privacidad = {
 <thead><tr><th scope="col">Proveedor</th><th scope="col">Para qué</th><th scope="col">Qué datos ve</th></tr></thead>
 <tbody>
 <tr><th scope="row">Supabase</th><td>Base de datos y almacenamiento privado de tu pedido y tus archivos (servidores en Estados Unidos). También responde la consulta de los lugares disponibles de la página de la promo: tu navegador se conecta a Supabase y este puede registrar datos técnicos de la conexión; esa consulta no guarda tu dirección IP en mi base de datos.</td><td>Los de las secciones 2 y 3, y datos técnicos de tu conexión al ver los lugares de la promo.</td></tr>
-<tr><th scope="row">Cloudflare (Turnstile)</th><td>Distinguir personas de robots al enviar el formulario.</td><td>Datos técnicos de tu navegador y tu IP.</td></tr>
+<tr><th scope="row">Resend</th><td>Enviar los correos del boletín y de confirmación de tu suscripción (servidores en Estados Unidos).</td><td>Tu correo, tu nombre si lo diste y el contenido del mensaje.</td></tr>
+<tr><th scope="row">Cloudflare (Pages)</th><td>Alojar las páginas del brief y del formulario del boletín.</td><td>Datos técnicos de conexión de quien visita.</td></tr>
+<tr><th scope="row">Cloudflare (Turnstile)</th><td>Distinguir personas de robots al enviar el formulario o al suscribirte al boletín.</td><td>Datos técnicos de tu navegador y tu IP.</td></tr>
 <tr><th scope="row">Meta (píxel)</th><td>Medir si mis anuncios funcionan, solo si aceptas.</td><td>Las páginas que ves, tus clics de contacto, datos técnicos, tu IP e identificadores de cookies.</td></tr>
 <tr><th scope="row">GitHub Pages y Surge</th><td>Alojar el sitio y las demostraciones.</td><td>Datos técnicos de conexión de quien visita.</td></tr>
 <tr><th scope="row">WhatsApp (Meta)</th><td>Comunicarme contigo.</td><td>Lo que me escribes por ahí.</td></tr>
@@ -87,6 +91,7 @@ export const privacidad = {
 
 <h2>7. Cómo limitar el uso o la divulgación de tus datos</h2>
 <p>Para dejar de recibir promociones escríbeme a <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a> o responde «BAJA» a cualquier mensaje mío por WhatsApp. Te daré de baja y no volveré a mandarte promociones.</p>
+<p>Para dejar de recibir el <strong>boletín</strong>, usa el enlace «Darme de baja» que va en cada correo (es de un clic y no necesitas escribirme) o pídemelo por correo. Tras tu baja conservo únicamente tu correo y la fecha de baja, para no volver a escribirte, hasta que me pidas cancelarlos (sección 6).</p>
 
 <h2>8. Imágenes de personas y de terceros</h2>
 <p>Si subes fotos donde aparecen personas, <strong>confirmas que tienes derecho a usarlas y que esas personas te dieron su permiso</strong> (así lo marcas en el formulario). Si alguien te pide que se quite su imagen, avísame y la retiro de tu página.</p>
@@ -97,6 +102,7 @@ export const privacidad = {
 <li><strong>Pedidos sin pago:</strong> si no pagas en 24 horas, el cupo se libera y el pedido se marca como expirado; sus datos siguen el mismo plazo de 90 días.</li>
 <li><strong>Comprobantes de pago recibidos:</strong> el tiempo que establezcan las disposiciones fiscales aplicables para conservar el registro de mis ingresos.</li>
 <li><strong>Promociones:</strong> hasta que retires tu consentimiento.</li>
+<li><strong>Boletín:</strong> hasta que te des de baja o retires tu consentimiento. Si te suscribes pero nunca confirmas tu correo, el enlace de confirmación vence a los 7 días, no recibes el boletín y tu solicitud pendiente se elimina en un máximo de 90 días.</li>
 <li><strong>Medición de anuncios:</strong> los datos que recibe Meta los conserva Meta según su política; en tu navegador, sus cookies duran hasta 3 meses y tu decisión sobre las cookies, 12 meses.</li>
 </ul>
 
@@ -105,7 +111,8 @@ export const privacidad = {
 <ul>
 <li>Mi sitio guarda en tu navegador <strong>tu preferencia de tema</strong> (claro u oscuro) y <strong>tu decisión sobre las cookies opcionales</strong>.</li>
 <li>El formulario guarda tu <strong>borrador en tu propio navegador</strong> para que no pierdas tu avance. Ese borrador <strong>no se envía a ningún servidor</strong>.</li>
-<li>Al enviar tu pedido, <strong>Cloudflare Turnstile</strong> verifica que eres una persona y puede usar sus propias tecnologías para ello.</li>
+<li>Al enviar tu pedido, <strong>Cloudflare Turnstile</strong> verifica que eres una persona y puede usar sus propias tecnologías para ello. Lo mismo ocurre al abrir el formulario del boletín.</li>
+<li>Las páginas del boletín (suscripción, confirmación y baja) <strong>no guardan nada en tu navegador</strong> y no cargan el píxel de Meta.</li>
 <li><strong>Medición de anuncios (píxel de Meta):</strong> solo se carga si aceptas en el aviso de cookies; con <strong>Rechazar</strong> o sin decidir, no se carga y no se envía nada a Meta. Puedes cambiar tu decisión cuando quieras desde «Preferencias de cookies», en el pie de cada página. No uso analítica de visitas.</li>
 <li>Puedes borrar el almacenamiento de este sitio desde la configuración de tu navegador.</li>
 </ul>

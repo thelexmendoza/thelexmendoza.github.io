@@ -1,3 +1,4 @@
+import { ctaBoletin } from './blog/blog.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -208,6 +209,7 @@ ${capitulos
             <a class="c-button" href="${esc(wa)}" target="_blank" rel="noopener noreferrer">${icon('message')}${esc(cierre.boton)}</a>
             <a class="c-button c-button--ghost" href="#inicio">${icon('arrow-up')}Volver arriba</a>
           </p>
+          ${ctaBoletin('guia-dominio-hosting', 'guia')}
         </div>
       </section>
 

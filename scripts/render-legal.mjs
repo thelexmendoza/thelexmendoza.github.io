@@ -10,18 +10,18 @@ import { tagsHead } from './tags.mjs';
 // cabecera y script del tema salen de index.html, así que cualquier cambio del menú se refleja al regenerarlas.
 // Uso: npm run legal
 
-const PREFIX = '../';
+const PREFIX_DEFAULT = '../';
 
 const esc = (value) => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-const rebase = (html) =>
+const rebase = (html, PREFIX) =>
   html.replace(/\b(href|src)="([^"]*)"/g, (match, attr, url) => {
     if (/^(https?:|mailto:|tel:|data:|\/\/|#)/.test(url)) return match;
     if (url === './') return `${attr}="${PREFIX}"`;
     return `${attr}="${PREFIX}${url}"`;
   });
 
-function extractLayout(layoutPath) {
+function extractLayout(layoutPath, PREFIX) {
   const home = fs.readFileSync(layoutPath, 'utf8');
   const take = (re, label) => {
     const found = home.match(re)?.[0];
@@ -38,7 +38,7 @@ function extractLayout(layoutPath) {
   };
 }
 
-function footer(current) {
+function footer(current, PREFIX) {
   const link = (slug, label) => `<a href="${PREFIX}${slug}/"${current === slug ? ' aria-current="page"' : ''}>${label}</a>`;
   return `<footer class="c-footer">
       <div class="o-container o-stack">
@@ -48,8 +48,9 @@ function footer(current) {
     </footer>`;
 }
 
-export function renderLegal(page, { layoutPath = 'index.html' } = {}) {
-  const layout = extractLayout(layoutPath);
+export function renderLegal(page, { layoutPath = 'index.html', prefix = PREFIX_DEFAULT } = {}) {
+  const PREFIX = prefix;
+  const layout = extractLayout(layoutPath, PREFIX);
   const title = esc(page.title).replace(esc(page.word), `<span class="c-chameleon-title">${esc(page.word)}</span>`);
   return `<!doctype html>
 <html lang="es">
@@ -58,7 +59,8 @@ export function renderLegal(page, { layoutPath = 'index.html' } = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(page.title)} | Lex Mendoza</title>
     <meta name="description" content="${esc(page.description)}">
-${seoTags({ path: `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, description: page.description })}
+${seoTags({ path: page.path ?? `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, description: page.description })}${page.jsonLd ? `
+${page.jsonLd}` : ''}
     ${layout.themeScript}
 ${tagsHead()}
     <link rel="expect" href="#contenido" blocking="render">
@@ -101,13 +103,14 @@ ${tagsHead()}
           <p class="c-eyebrow">// ${esc(page.eyebrow)}</p>
           <h1 data-reveal="title">${title}</h1>
           <p class="c-section__lead">${esc(page.lead)}</p>
-          <p class="c-legal__meta">Última actualización: ${esc(page.updated)}</p>
+          <p class="c-legal__meta">${page.metaHtml ?? `Última actualización: ${esc(page.updated)}`}</p>
         </header>
-        <div class="c-legal__body">${page.body}</div>
+        <div class="c-legal__body">${page.body}</div>${page.after ? `
+        ${page.after}` : ''}
       </article>
     </main>
 
-    ${footer(page.slug)}
+    ${footer(page.slug, PREFIX)}
   </body>
 </html>
 `;

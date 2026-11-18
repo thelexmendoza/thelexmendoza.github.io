@@ -17,7 +17,8 @@
     "seo": "node scripts/build-seo.mjs",
     "promo": "node scripts/render-promo.mjs",
     "guia": "node scripts/render-guia.mjs",
-    "tags": "node scripts/build-tags.mjs"
+    "tags": "node scripts/build-tags.mjs",
+    "blog": "node scripts/render-blog.mjs"
   },
   "keywords": [],
   "author": {

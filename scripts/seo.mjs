@@ -2,6 +2,7 @@
 // Lo usan la home (npm run seo), las paginas de caso (render-case.mjs) y las legales (render-legal.mjs), para que digan lo mismo.
 // El dominio definitivo es lexmendoza.com, sin www (www y thelexmendoza.github.io redirigen ahi).
 
+import { leerPosts } from './blog/posts.mjs';
 import { promo } from './promo/promo.mjs';
 
 export const SITE_URL = 'https://lexmendoza.com';
@@ -112,6 +113,53 @@ export function promoJsonLd(indent) {
   );
 }
 
+// El blog: la portada del blog (migas de pan) y cada artículo (BlogPosting con migas). El autor es la persona de la home (@id), sin datos de contacto.
+export function blogJsonLd(indent) {
+  return ldScript(
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog/` },
+      ],
+    },
+    indent,
+  );
+}
+
+export function postJsonLd({ slug, titulo, descripcion, fecha, actualizado }, indent) {
+  const url = `${SITE_URL}/blog/${slug}/`;
+  return ldScript(
+    [
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: titulo,
+        description: descripcion,
+        datePublished: fecha,
+        dateModified: actualizado || fecha,
+        inLanguage: 'es-MX',
+        mainEntityOfPage: url,
+        url,
+        image: absolute(OG_HOME),
+        author: { '@id': `${SITE_URL}/#persona` },
+        publisher: { '@id': `${SITE_URL}/#persona` },
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog/` },
+          { '@type': 'ListItem', position: 3, name: titulo, item: url },
+        ],
+      },
+    ],
+    indent,
+  );
+}
+
 export const HOME_BLOCK_START = '<!-- seo:inicio -->';
 export const HOME_BLOCK_END = '<!-- seo:fin -->';
 
@@ -125,9 +173,9 @@ export function robotsTxt() {
   return `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
 }
 
-// La home, la promo y cada caso (en el orden de las tarjetas de la home). Las paginas legales y la guia no se listan.
-export function sitemapXml(slugs) {
-  const urls = ['/', '/promo/', ...slugs.map((slug) => `/casos/${slug}/`)];
+// La home, la promo, cada caso (en el orden de las tarjetas de la home) y, si hay, el blog con sus articulos. Las paginas legales y la guia no se listan.
+export function sitemapXml(slugs, posts = leerPosts()) {
+  const urls = ['/', '/promo/', ...slugs.map((slug) => `/casos/${slug}/`), ...(posts.length ? ['/blog/', ...posts.map((p) => `/blog/${p.slug}/`)] : [])];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${absolute(u)}</loc></url>`).join('\n')}\n</urlset>\n`;
 }
 

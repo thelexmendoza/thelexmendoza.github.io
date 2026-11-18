@@ -1,0 +1,89 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// Blog: la lista de artículos y el bloque que invita a suscribirse al boletín (al final de cada artículo y de la portada del blog).
+// El cuerpo del artículo usa el mismo texto largo que las páginas legales (c-legal__body).
+.c-blog {
+  &__list {
+    display: grid;
+    gap: var(--space-3);
+    max-inline-size: fn.rem(704);
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-3);
+    border: 1px solid var(--color-text-muted);
+    color: var(--color-text);
+    text-decoration: none;
+
+    @include m.on-hover {
+      border-color: var(--color-accent);
+      background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    }
+
+    &:focus-visible {
+      border-color: var(--color-accent);
+    }
+  }
+
+  &__fecha {
+    color: var(--color-accent-text);
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  &__titulo {
+    font-size: var(--step-1);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__desc {
+    color: var(--color-text-muted);
+  }
+}
+
+// Las imágenes de un artículo: del ancho del texto, con su pie opcional.
+.c-legal__body figure {
+  margin-inline: 0;
+
+  img {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+}
+
+.c-legal__body pre {
+  overflow-x: auto;
+  padding: var(--space-2);
+  border: 1px solid var(--color-text-muted);
+  font-family: f.$font-mono;
+  font-size: var(--step--1);
+}
+
+.c-legal__body blockquote {
+  padding-inline-start: var(--space-3);
+  border-inline-start: 3px solid var(--color-accent);
+  color: var(--color-text-muted);
+}
+
+.c-blog-cta {
+  max-inline-size: fn.rem(704);
+  margin-block-start: var(--space-5);
+  padding: var(--space-4);
+  border: 1px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 7%, transparent);
+
+  h2 {
+    font-size: var(--step-2);
+  }
+}
