@@ -35,6 +35,7 @@ export function paginaPost(p) {
     lead: p.descripcion,
     metaHtml: `${esc(fechaLarga(p.fecha))} · ${p.minutos} min de lectura${p.actualizado ? ` · Actualizado el ${esc(fechaLarga(p.actualizado))}` : ''}`,
     jsonLd: postJsonLd(p, '    '),
+    noindex: p.noindex,
     body: mdAHtml(p.cuerpo),
     after: ctaBoletin(`blog-${p.slug}`, p.slug),
   };
@@ -61,7 +62,9 @@ export function generar({ dir = BLOG_DIR, salida = 'blog', layoutPath = 'index.h
   const posts = leerPosts(dir);
   const archivos = new Map();
   if (!posts.length) return archivos;
-  archivos.set(path.join(salida, 'index.html'), renderLegal(paginaIndice(posts), { layoutPath, prefix: '../' }));
+  // Los articulos de prueba (noindex) tienen su pagina, pero no salen en la portada; sin articulos publicos no hay portada.
+  const publicos = posts.filter((p) => !p.noindex);
+  if (publicos.length) archivos.set(path.join(salida, 'index.html'), renderLegal(paginaIndice(publicos), { layoutPath, prefix: '../' }));
   for (const p of posts) archivos.set(path.join(salida, p.slug, 'index.html'), renderLegal(paginaPost(p), { layoutPath, prefix: '../../' }));
   return archivos;
 }

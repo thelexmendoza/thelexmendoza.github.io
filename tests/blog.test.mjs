@@ -79,6 +79,23 @@ test('generar: portada y artículos con el molde del sitio, canónica, datos est
   assert.equal(generar({ dir: carpeta({}) }).size, 0, 'sin artículos no se genera nada');
 });
 
+test('un artículo con noindex tiene su página con robots noindex, pero no sale en la portada ni en el sitemap', () => {
+  const prueba = POST.replace('fecha: 2026-11-20', 'fecha: 2026-11-20\nnoindex: si');
+  assert.equal(parsearPost(prueba, 'x.md').noindex, true);
+  assert.equal(parsearPost(POST, 'x.md').noindex, false);
+  const dir = carpeta({ '2026-11-21-prueba.md': prueba, '2026-11-20-real.md': POST });
+  const out = generar({ dir });
+  assert.match(out.get(path.join('blog', 'prueba', 'index.html')), /name="robots" content="noindex"/);
+  assert.doesNotMatch(out.get(path.join('blog', 'real', 'index.html')), /noindex/);
+  const indice = out.get(path.join('blog', 'index.html'));
+  assert.ok(indice.includes('href="real/"') && !indice.includes('href="prueba/"'), 'la portada solo lista los públicos');
+  const soloPrueba = generar({ dir: carpeta({ '2026-11-21-prueba.md': prueba }) });
+  assert.deepEqual([...soloPrueba.keys()].map((k) => k.replaceAll('\\', '/')), ['blog/prueba/index.html'], 'sin artículos públicos no hay portada');
+  const s = sitemapXml(['a'], leerPosts(dir));
+  assert.ok(s.includes('/blog/real/') && !s.includes('/blog/prueba/'));
+  assert.ok(!sitemapXml(['a'], leerPosts(carpeta({ '2026-11-21-prueba.md': prueba }))).includes('/blog/'));
+});
+
 test('el sitemap suma el blog y sus artículos solo cuando hay', () => {
   assert.ok(!sitemapXml(['a'], []).includes('/blog/'));
   const s = sitemapXml(['a'], [{ slug: 'dominio' }]);

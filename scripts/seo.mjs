@@ -174,7 +174,8 @@ export function robotsTxt() {
 }
 
 // La home, la promo, cada caso (en el orden de las tarjetas de la home) y, si hay, el blog con sus articulos. Las paginas legales y la guia no se listan.
-export function sitemapXml(slugs, posts = leerPosts()) {
+export function sitemapXml(slugs, todos = leerPosts()) {
+  const posts = todos.filter((p) => !p.noindex); // las pruebas (noindex) no se listan
   const urls = ['/', '/promo/', ...slugs.map((slug) => `/casos/${slug}/`), ...(posts.length ? ['/blog/', ...posts.map((p) => `/blog/${p.slug}/`)] : [])];
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${absolute(u)}</loc></url>`).join('\n')}\n</urlset>\n`;
 }

@@ -59,7 +59,8 @@ export function renderLegal(page, { layoutPath = 'index.html', prefix = PREFIX_D
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(page.title)} | Lex Mendoza</title>
     <meta name="description" content="${esc(page.description)}">
-${seoTags({ path: page.path ?? `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, description: page.description })}${page.jsonLd ? `
+${seoTags({ path: page.path ?? `/${page.slug}/`, title: `${page.title} | Lex Mendoza`, description: page.description })}${page.noindex ? `
+    <meta name="robots" content="noindex">` : ''}${page.jsonLd ? `
 ${page.jsonLd}` : ''}
     ${layout.themeScript}
 ${tagsHead()}

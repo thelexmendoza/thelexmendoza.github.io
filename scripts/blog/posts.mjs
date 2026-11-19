@@ -6,6 +6,7 @@
 //   fecha: 2026-11-20            (AAAA-MM-DD)
 //   slug: dominio-que-debes-saber   (opcional: si falta sale del nombre del archivo sin la fecha)
 //   actualizado: 2026-12-02      (opcional)
+//   noindex: si                  (opcional: pide a los buscadores no indexarlo; no sale en la portada del blog ni en el sitemap. Para pruebas)
 // Los archivos que empiezan con «_» (como _plantilla.md) no se publican. Los borradores viven en private/blog/.
 
 import fs from 'node:fs';
@@ -33,7 +34,7 @@ export function parsearPost(texto, archivo = '') {
   const cuerpo = m[2].trim();
   if (!cuerpo) errores.push('sin contenido');
   if (errores.length) return { ok: false, error: `${archivo}: ${errores.join('; ')}` };
-  return { ok: true, slug, titulo: meta.titulo, descripcion: meta.descripcion, fecha: meta.fecha, actualizado: meta.actualizado ?? '', cuerpo, minutos: Math.max(1, Math.round(mdAPalabras(cuerpo) / 200)) };
+  return { ok: true, slug, titulo: meta.titulo, descripcion: meta.descripcion, fecha: meta.fecha, actualizado: meta.actualizado ?? '', noindex: /^(si|sí|true)$/i.test(meta.noindex ?? ''), cuerpo, minutos: Math.max(1, Math.round(mdAPalabras(cuerpo) / 200)) };
 }
 
 export function leerPosts(dir = BLOG_DIR) {
