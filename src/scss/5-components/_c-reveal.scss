@@ -6,7 +6,7 @@
 // el contenido aparece, de uno en uno.
 @media (prefers-reduced-motion: no-preference) {
   .has-js:not(.reveal-all) [data-reveal="title"] {
-    transition: opacity 0.6s ease var(--reveal-delay, 0ms), transform 0.6s ease var(--reveal-delay, 0ms);
+    transition: opacity 0.6s var(--ease-out) var(--reveal-delay, 0ms), transform 0.6s var(--ease-out) var(--reveal-delay, 0ms);
   }
 
   .has-js:not(.reveal-all) [data-reveal="title"]:not(.is-revealed) {
@@ -16,7 +16,7 @@
 
   // Tarjetas.
   .has-js:not(.reveal-all) [data-reveal="card"] > * {
-    transition: opacity 0.45s ease calc(var(--reveal-delay, 0ms) + 120ms);
+    transition: opacity 0.45s var(--ease-out) calc(var(--reveal-delay, 0ms) + 120ms);
   }
 
   .has-js:not(.reveal-all) [data-reveal="card"]:not(.is-revealed) > * {
@@ -46,7 +46,7 @@
 
   // Parrafos: lineas de esqueleto del alto real del texto (1lh = alto de linea del propio parrafo).
   .has-js:not(.reveal-all) [data-reveal="text"] {
-    transition: color 0.5s ease var(--reveal-delay, 0ms), -webkit-text-fill-color 0.5s ease var(--reveal-delay, 0ms);
+    transition: color 0.5s var(--ease-out) var(--reveal-delay, 0ms), -webkit-text-fill-color 0.5s var(--ease-out) var(--reveal-delay, 0ms);
   }
 
   .has-js:not(.reveal-all) [data-reveal="text"]:not(.is-revealed) {

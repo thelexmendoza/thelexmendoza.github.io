@@ -76,10 +76,16 @@
     white-space: nowrap;
   }
 
+  // La etiqueta no baja de linea ni se encoge con el dominio, pero con un texto absurdamente largo ya no saca la barra de
+  // la tarjeta: se recorta a 60 % del ancho con puntos suspensivos.
   &__tags {
     flex: none;
+    max-inline-size: 60%;
+    overflow: hidden;
     color: var(--color-accent-text);
+    text-overflow: ellipsis;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   // La vista previa tiene la proporcion de la captura que muestra (escritorio, tablet o movil).
@@ -142,7 +148,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .c-site-card__preview img {
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s var(--ease-move);
   }
 
   .c-site-card:hover .c-site-card__preview img {

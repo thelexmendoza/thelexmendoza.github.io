@@ -27,7 +27,7 @@
 
   ::view-transition-group(*.case-hero) {
     animation-duration: 0.55s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: var(--ease-move);
   }
 
   ::view-transition-old(*.case-hero),
@@ -49,7 +49,7 @@
 
   ::view-transition-group(*.case-title) {
     animation-duration: 0.55s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: var(--ease-move);
   }
 
   ::view-transition-old(*.case-title),
@@ -61,7 +61,7 @@
   }
 
   ::view-transition-old(root) {
-    animation: c-page-out 0.2s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: c-page-out 0.2s var(--ease-out) both;
   }
 
   ::view-transition-new(root) {

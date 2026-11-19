@@ -232,7 +232,7 @@ main[data-lens="disenos"] [data-kind]:not([data-kind="disenos"]) {
   ::view-transition-old(case),
   ::view-transition-new(case) {
     animation-duration: 0.3s;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: var(--ease-move);
   }
 }
 

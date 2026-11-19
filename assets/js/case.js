@@ -22,16 +22,19 @@ function anchored(apply) {
   }
 }
 
+// Devuelve una promesa que se cumple cuando el cambio ya se vio (de inmediato si no hay transicion).
 function smooth(change) {
   const apply = () => anchored(change);
   if (!document.startViewTransition || reduceMotion.matches) {
     apply();
-    return;
+    return Promise.resolve();
   }
   main.style.viewTransitionName = 'case';
-  document.startViewTransition(apply).finished.finally(() => {
-    main.style.viewTransitionName = '';
-  });
+  return document.startViewTransition(apply).finished
+    .catch(() => {})
+    .finally(() => {
+      main.style.viewTransitionName = '';
+    });
 }
 
 // Vistas: solo cambian que galerias se ven; el CSS no toca el texto.
@@ -126,14 +129,18 @@ document.querySelectorAll('.c-gallery').forEach((gallery) => {
     moreButton.hidden = visible >= slides.length;
     lessButton.hidden = visible <= PAGE;
   };
+  // Las piezas que se suman o se pliegan se funden como en el cambio de vista, en vez de aparecer de golpe.
   moreButton.addEventListener('click', () => {
-    visible = showMore(visible, slides.length);
-    sync();
+    smooth(() => {
+      visible = showMore(visible, slides.length);
+      sync();
+    });
   });
   lessButton.addEventListener('click', () => {
-    visible = showLess();
-    sync();
-    gallery.scrollIntoView({ block: 'start', behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    smooth(() => {
+      visible = showLess();
+      sync();
+    }).then(() => gallery.scrollIntoView({ block: 'start', behavior: reduceMotion.matches ? 'auto' : 'smooth' }));
   });
   track.after(more);
   sync();

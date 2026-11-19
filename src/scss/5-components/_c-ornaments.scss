@@ -3,7 +3,7 @@
 
 // Detalles retro y futuristas. Todo lo que se mueve va dentro de `prefers-reduced-motion: no-preference`.
 
-// Cinta de texto entre el hero y los servicios: corre despacio y se detiene al pasar el cursor.
+// Cinta de texto entre el hero y los casos: corre despacio y se detiene al pasar el cursor.
 .c-ticker {
   overflow: hidden;
   border-block: 1px solid var(--color-text-muted);
@@ -112,6 +112,6 @@
 @media (prefers-reduced-motion: no-preference) {
   .c-button {
     translate: var(--mag-x, 0) var(--mag-y, 0);
-    transition: translate 0.18s ease-out, scale 0.16s cubic-bezier(0.23, 1, 0.32, 1), filter 0.2s ease;
+    transition: translate 0.18s ease-out, scale 0.16s var(--ease-out), filter 0.2s ease;
   }
 }

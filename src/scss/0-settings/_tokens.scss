@@ -6,6 +6,11 @@
   }
 
   // Tipografia: razon aurea en escritorio, raiz de phi en movil.
+  // Movimiento: tres curvas compartidas, para no escribir cubic-bezier a mano en cada componente.
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1); // entradas, salidas y respuesta al presionar
+  --ease-move: cubic-bezier(0.4, 0, 0.2, 1); // lo que se mueve o se transforma sobre la pantalla
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1); // despliegues suaves (las preguntas frecuentes)
+
   --step--1: #{fn.rem(13)};
   --step-0: #{fn.rem(16)};
   @for $n from 1 through 4 {

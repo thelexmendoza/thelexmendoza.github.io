@@ -973,7 +973,7 @@
       opacity: 0;
       overflow-y: clip;
       transition:
-        block-size 0.4s cubic-bezier(0.22, 0.61, 0.36, 1),
+        block-size 0.4s var(--ease-soft),
         opacity 0.3s ease,
         content-visibility 0.4s allow-discrete;
     }
@@ -985,12 +985,12 @@
 
     &__pregunta summary::after {
       transition:
-        rotate 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+        rotate 0.35s var(--ease-soft),
         color 0.3s ease;
     }
 
     &__clave {
-      transition: background-size 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+      transition: background-size 0.4s var(--ease-soft);
       transition-delay: calc(var(--k, 0) * 70ms);
     }
 
