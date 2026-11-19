@@ -9,7 +9,8 @@
   padding-block: var(--space-6) var(--space-5);
 
   &__title {
-    font-size: var(--step-4);
+    // El tope en vw solo actua por debajo de ~380 px (baja el titulo unos 3 px como mucho): a 320 px la palabra mas larga («MOTOCICLISMO») ya no cabia en 320 px.
+    font-size: min(var(--step-4), 12vw);
     text-transform: uppercase;
     letter-spacing: 0.02em;
   }
