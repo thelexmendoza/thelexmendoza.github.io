@@ -30,7 +30,9 @@ test('al pasar el cursor, al enfocar o al llegar al centro en movil, aparece la 
   assert.match(css, /\.c-case-card\[data-media\]:hover\s*\{[^}]*--peek:\s*1/);
   assert.match(css, /\.c-case-card\[data-media\]\.is-peek\s*\{[^}]*--peek:\s*1/);
   assert.match(css, /\.c-case-card\[data-media\]:focus-visible\s*\{[^}]*--peek:\s*1/);
-  assert.match(css, /\.c-case-card__media,\s*\.c-case-card\[data-media\] \.c-case-card__veil\s*\{[^}]*opacity:\s*var\(--peek\)|\.c-case-card__media,\s*\.c-case-card__veil\s*\{[^}]*opacity:\s*var\(--peek\)/);
+  // El fondo y el velo parten de una opacidad de reposo (se asoma el primer cuadro) y llegan a 1 con `--peek`.
+  assert.match(css, /\.c-case-card\[data-media\] \.c-case-card__media\s*\{[^}]*opacity:\s*calc\(var\(--rest-media\) \+ \(1 - var\(--rest-media\)\) \* var\(--peek\)\)/);
+  assert.match(css, /\.c-case-card\[data-media\] \.c-case-card__veil\s*\{[^}]*opacity:\s*calc\(var\(--rest-veil\) \+ \(1 - var\(--rest-veil\)\) \* var\(--peek\)\)/);
   assert.match(css, /\.c-case-card__veil\s*\{[^}]*background:/);
 });
 

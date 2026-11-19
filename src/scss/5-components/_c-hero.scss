@@ -3,6 +3,9 @@
 @use "../1-tools/mixins" as m;
 
 .c-hero {
+  // Opacidad de las piezas del collage: en el tema claro (fondo casi blanco) necesitan un poco mas para verse.
+  --tile-a: 0.4;
+
   position: relative;
   display: flex;
   align-items: center;
@@ -43,6 +46,12 @@
     position: absolute;
     inset: 0;
     mask-image: linear-gradient(90deg, transparent 6%, rgb(0 0 0 / 0.5) 40%, #000 78%);
+
+    // En pantallas chicas el texto ocupa casi todo el ancho: el collage se desvanece a media altura, donde van el
+    // titular y los parrafos, y se ve en los extremos de arriba y de abajo.
+    @media (max-width: 47.9375rem) {
+      mask-image: linear-gradient(to bottom, #000 0%, rgb(0 0 0 / 0.35) 28%, rgb(0 0 0 / 0.35) 72%, #000 100%);
+    }
   }
 
   &__tile {
@@ -63,7 +72,7 @@
     }
 
     &.is-in {
-      opacity: 0.3;
+      opacity: var(--tile-a, 0.3);
     }
 
     &.is-hot {
@@ -128,6 +137,20 @@
     font-weight: 300;
     line-height: 1.4;
   }
+
+  // Prueba en una linea: quien es y para quien ha trabajado. Va en el color del texto (no apagada) porque es lo que
+  // responde «¿por que el?» antes de bajar a los casos.
+  &__proof {
+    max-inline-size: fn.rem(544);
+    font-weight: 400;
+  }
+
+  // Los dos caminos del hero: ver el trabajo o ir a la promo.
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
 }
 
 // Parallax: la reticula baja mas despacio que el contenido al hacer scroll.
@@ -146,4 +169,15 @@
   to {
     transform: translateY(18vh);
   }
+}
+
+// Tema oscuro: las piezas ya destacan sobre el fondo casi negro, asi que bastan 0.3.
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .c-hero {
+    --tile-a: 0.3;
+  }
+}
+
+[data-theme="dark"] .c-hero {
+  --tile-a: 0.3;
 }

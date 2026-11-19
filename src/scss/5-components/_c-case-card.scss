@@ -146,6 +146,9 @@
   --bar-h: #{fn.rem(37.8)};
   // Cuanto de la barra que se comprime sube el contenido (el resto se devuelve como relleno abajo).
   --lift: 0.7;
+  // Opacidad del fondo y del velo en reposo (con el efecto llegan a 1).
+  --rest-media: 0.2;
+  --rest-veil: 0.55;
 
   isolation: isolate;
   // La tarjeta no debe cambiar de alto al activarse: el fondo llena la tarjeta con object-fit: cover, y si el contenedor
@@ -209,8 +212,17 @@
     inset: 0;
     z-index: 0;
     overflow: hidden;
-    opacity: var(--peek);
     pointer-events: none;
+  }
+
+  // En reposo se asoma el primer cuadro del fondo, tenue y bajo el velo, para que la tarjeta ensene trabajo sin
+  // esperar al cursor; con el efecto, ambos suben a su opacidad completa (de la que sale `--peek`).
+  .c-case-card__media {
+    opacity: calc(var(--rest-media) + (1 - var(--rest-media)) * var(--peek));
+  }
+
+  .c-case-card__veil {
+    opacity: calc(var(--rest-veil) + (1 - var(--rest-veil)) * var(--peek));
   }
 
   .c-case-card__media .c-sky,
@@ -271,7 +283,7 @@
   .c-case-card[data-media] {
     transition:
       border-color 0.2s ease,
-      --peek 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      --peek 0.35s var(--ease-move);
   }
 
   // Las imagenes se alternan solo mientras dura el efecto.
@@ -280,9 +292,11 @@
   .c-case-card__media img {
     animation: c-card-bg 20s linear infinite both paused;
 
+    // El ciclo arranca 1 s adentro: en pausa, el primer cuadro ya esta visible (es el que se asoma en reposo) y al
+    // activarse la tarjeta el ciclo sigue de ahi, sin parpadeo.
     @for $i from 0 through 4 {
       &:nth-child(#{$i + 1}) {
-        animation-delay: #{$i * 4}s;
+        animation-delay: #{$i * 4 - 1}s;
       }
     }
   }

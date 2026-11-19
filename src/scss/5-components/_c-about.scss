@@ -166,3 +166,10 @@
     opacity: 0.55;
   }
 }
+
+// «Conoce mas de mi» todavia no tiene pagina: se ve como texto apagado, sin subrayado ni apariencia de enlace.
+.c-about a[aria-disabled="true"] {
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+  text-decoration: none;
+}

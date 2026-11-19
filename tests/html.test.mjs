@@ -120,11 +120,16 @@ test('cada tarjeta de caso tiene barra con el archivo, titulo, texto y su etique
   assert.equal((html.match(/class="c-case-card__soon"/g) ?? []).length, 0);
 });
 
-test('el riel de secciones enlaza las seis secciones en orden', () => {
+test('el riel de secciones enlaza las seis secciones en el orden de la página, y el menú sigue el mismo orden', () => {
   const html = fs.readFileSync('index.html', 'utf8');
   const rail = html.match(/<nav class="c-rail"[\s\S]*?<\/nav>/)?.[0] ?? '';
   const hrefs = [...rail.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]);
-  assert.deepEqual(hrefs, ['inicio', 'servicios', 'casos', 'plan', 'sobre-mi', 'contacto']);
+  assert.deepEqual(hrefs, ['inicio', 'casos', 'servicios', 'plan', 'sobre-mi', 'contacto']);
+  // El orden del riel es el de las secciones en el documento (Casos antes que Servicios, como el menú).
+  const enPagina = [...html.matchAll(/<(?:section|footer)[^>]*\sid="([^"]+)"/g)].map((m) => m[1]);
+  assert.deepEqual(enPagina.filter((id) => hrefs.includes(id)), hrefs);
+  const menu = html.match(/<nav class="c-nav__links"[\s\S]*?<\/nav>/)?.[0] ?? '';
+  assert.deepEqual([...menu.matchAll(/href="#([^"]+)"/g)].map((m) => m[1]), ['casos', 'servicios', 'plan', 'sobre-mi', 'contacto']);
 });
 
 test('el script de la cabecera marca has-js y tiene respaldo para mostrar todo', () => {
