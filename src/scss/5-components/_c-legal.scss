@@ -67,7 +67,6 @@
   &__scroll {
     overflow-x: auto;
     border: 1px solid color-mix(in srgb, var(--color-text) 22%, transparent);
-    border-radius: fn.rem(8);
   }
 
   &__table {
