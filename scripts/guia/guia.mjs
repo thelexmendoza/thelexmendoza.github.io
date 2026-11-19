@@ -139,7 +139,7 @@ ${SVG_CASA}`,
       corto: 'Seis palabras que vas a ver en todos lados.',
       encorto: 'Casi todo el misterio es vocabulario. Con estas seis palabras ya lees cualquier panel.',
       html: cards(2, [
-        card('Dominio', 'Tu dirección en internet, como <em>tunegocio.com</em>. Se compra a un registrador y se renueva cada año. No se «compra para siempre»: se renta.', '', 'globe'),
+        card('Dominio', 'Tu dirección en internet, como <em>tunegocio.com</em>. Se renta a un registrador y se renueva cada año.', '', 'globe'),
         card('Registrador', 'La tienda donde compras y administras el dominio. Es independiente del hosting: puedes comprar el dominio en un lugar y publicar el sitio en otro.', '', 'tag'),
         card('Hosting', 'El lugar donde vive tu sitio para que cualquiera lo abra a cualquier hora. En Wix y Squarespace va incluido en tu plan.', '', 'server'),
         card('DNS', 'La libreta que le dice al mundo «este dominio vive en este hosting». Conectar tu dominio es, sobre todo, editar esa libreta.', '', 'book'),
@@ -277,7 +277,7 @@ ${h3('Con o sin <em>www</em>', 'globe')}
       encorto: 'Nunca te pido tus contraseñas. Lo haces tú con mi guía, o me das un acceso propio y temporal que tú creas y quitas.',
       html: `<p>No te pido tus contraseñas ni las guardo, nunca. Cuando necesito entrar a algo tuyo, hay tres formas, de la más segura a la menos:</p>
 <ol class="c-guia__recorrido">
-  <li><strong>Lo haces tú y yo te guío.</strong> Videollamada con pantalla compartida: tú tecleas, yo te dicto cada paso. No queda ningún acceso.</li>
+  <li><strong>Lo haces tú y yo te guío.</strong> Videollamada con pantalla compartida: tú tecleas, yo te dicto cada paso, y al terminar no queda ningún acceso que quitar.</li>
   <li><strong>Me das un acceso propio y temporal.</strong> Me invitas con mi correo como colaborador (<a href="https://support.wix.com/en/article/wix-app-inviting-and-managing-collaborators" rel="noopener">Wix</a>, <a href="https://support.squarespace.com/hc/en-us/articles/206537297" rel="noopener">Squarespace</a>), me creas un usuario (<a href="https://wordpress.org/documentation/article/users-add-new-screen/" rel="noopener">WordPress</a>) o me delegas acceso en el registrador o el hosting (por ejemplo, el <a href="https://www.godaddy.com/es/help/que-es-el-acceso-delegado-12378" rel="noopener">acceso delegado de GoDaddy</a>). Entro con mi cuenta y mi verificación en dos pasos, y tú me quitas cuando terminemos.</li>
   <li><strong>Último recurso:</strong> si una plataforma no permite invitados, me compartes la contraseña con un enlace de un solo uso que caduca (<a href="https://bitwarden.com/es-la/help/about-send/" rel="noopener">Bitwarden Send</a> o <a href="https://support.1password.com/share-items/" rel="noopener">1Password</a>), la cambias al terminar y nunca me la mandas por WhatsApp ni por correo.</li>
 </ol>
@@ -347,7 +347,7 @@ ${h3('Mini guía: cómo crear cada acceso', 'key')}
       <ol class="c-guia__recorrido">
         <li>Abre 1Password, busca el elemento y elige <strong>Compartir</strong> (<em>Share</em>).</li>
         <li>Elige <strong>cuándo caduca</strong> el enlace y, para que solo yo pueda abrirlo, toca <strong>Agregar correo</strong> y escribe el mío.</li>
-        <li>Pulsa <strong>Copiar enlace</strong> y pásamelo. No necesito cuenta de 1Password para abrirlo.</li>
+        <li>Pulsa <strong>Copiar enlace</strong> y pásamelo; yo lo abro sin necesitar cuenta de 1Password.</li>
       </ol>
       <p>Según 1Password, el enlace se puede abrir hasta que caduque: pon una caducidad corta y limítalo a mi correo. <a href="https://support.1password.com/share-items/" rel="noopener">Cómo compartir elementos con 1Password</a>.</p>
     </div>
