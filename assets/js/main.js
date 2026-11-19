@@ -190,6 +190,33 @@ if (guiaTop && guiaIndice) {
   });
 }
 
+// Aviso de cookies (fijo, abajo): mientras esta en pantalla, su alto va en --tagorq-h para que el foco con teclado no quede debajo de
+// el (WCAG 2.2, 2.4.11); _c-consent.scss lo usa como scroll-padding. El aviso lo pone y lo quita el orquestador de tags, asi que se vigila.
+function trackConsentBanner() {
+  const root = document.documentElement;
+  let observer = null;
+  const measure = (banner) => {
+    // Alto que ocupa desde su borde de arriba hasta el pie de la ventana (incluye el margen con el que va despegado).
+    root.style.setProperty('--tagorq-h', `${Math.max(0, Math.round(window.innerHeight - banner.getBoundingClientRect().top))}px`);
+  };
+  const sync = () => {
+    observer?.disconnect();
+    observer = null;
+    const banner = document.querySelector('.tagorq-banner');
+    if (!banner) {
+      root.style.removeProperty('--tagorq-h');
+      return;
+    }
+    measure(banner);
+    observer = new ResizeObserver(() => measure(banner));
+    observer.observe(banner);
+  };
+  new MutationObserver(sync).observe(document.body, { childList: true });
+  window.addEventListener('resize', sync);
+  sync();
+}
+trackConsentBanner();
+
 // Videos de fondo: el del hero se reproduce al cargar; el de la tarjeta, mientras esta activa.
 setupHeroVideos();
 setupCardVideos();

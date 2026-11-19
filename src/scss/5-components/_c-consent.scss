@@ -32,6 +32,17 @@
   }
 }
 
+// El aviso va fijo abajo y puede tapar un control enfocado con Tab (WCAG 2.2, 2.4.11, foco no oculto). Mientras esta en pantalla
+// (main.js pone su alto en --tagorq-h), la pagina deja ese espacio libre al desplazarse a lo enfocado.
+:root:has(.tagorq-banner) {
+  scroll-padding-block-end: calc(var(--tagorq-h, 0px) + var(--space-3));
+
+  // Al final de la pagina ya no hay a donde desplazarse: se le da al documento el alto del aviso para que el pie quede por encima.
+  body {
+    padding-block-end: var(--tagorq-h, 0px);
+  }
+}
+
 .tagorq-title {
   color: var(--color-accent-text);
   font-family: f.$font-mono;
