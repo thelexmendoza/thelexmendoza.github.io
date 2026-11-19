@@ -4,6 +4,13 @@ import { SPACING, smoothSpeed, radiusFor, reticlePoints, pointerOffset, collageS
 // parallax con el mouse y la palabra camaleónica pintada con la identidad del caso que se toca o se destaca.
 // Todo es decorativo (aria-hidden) y vive solo en JavaScript: sin él, el hero queda como siempre.
 
+// Profundidad del parallax de cada capa: cuántos px se mueve con el cursor en x y en y (la maqueta solo existe en /promo/).
+const DEPTH = [
+  ['.c-hero__grid', 10, 7],
+  ['.c-hero__collage', 26, 18],
+  ['.c-promo__maqueta', 14, 10],
+];
+
 const motionOk = () => !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const canHover = () => window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
@@ -179,24 +186,48 @@ export function setupHeroFx() {
   let frame = 0;
   let visible = true;
 
-  const loop = (now) => {
+  // Parallax: cada capa lleva su propio translate a su profundidad (el collage, la más lejana, es la que más se nota).
+  // Se escribe directo en la capa y no en una variable del padre: una variable en el hero recalculaba los estilos de
+  // todo su contenido en cada cuadro.
+  const layers = DEPTH.map(([selector, kx, ky]) => ({ selector, kx, ky, el: null }));
+  const gridShift = { x: 0, y: 0 }; // lo que la cuadrícula lleva aplicado, para ubicar los retículos sin esperar al layout
+  const place = () => {
+    const shift = { x: 0, y: 0 };
+    for (const layer of layers) {
+      layer.el ??= hero.querySelector(layer.selector); // el collage se monta después de la carga
+      if (!layer.el) continue;
+      const x = -eased.x * layer.kx;
+      const y = -eased.y * layer.ky;
+      layer.el.style.translate = `${x.toFixed(2)}px ${y.toFixed(2)}px`;
+      if (layer.el === grid) {
+        shift.x = x;
+        shift.y = y;
+      }
+    }
+    return shift;
+  };
+
+  const loop = () => {
     frame = 0;
-    // Parallax: cada capa se desplaza a su profundidad (el collage, la más lejana, es la que más se nota).
+    // Primero se lee y después se escribe: leer el layout después de escribir estilos lo fuerza en cada cuadro.
+    const heroRect = reticles ? hero.getBoundingClientRect() : null;
+    const gridRect = reticles ? grid.getBoundingClientRect() : null;
+
     eased.x += (target.x - eased.x) * 0.08;
     eased.y += (target.y - eased.y) * 0.08;
-    hero.style.setProperty('--px', eased.x.toFixed(4));
-    hero.style.setProperty('--py', eased.y.toFixed(4));
+    const shift = place();
 
     // Retículos: el alcance sube con la velocidad y baja solo cuando el cursor se queda quieto o se va.
     pointer.speed *= pointer.active ? 0.94 : 0.85;
     const goal = pointer.active ? radiusFor(pointer.speed) : 0;
     pointer.radius += (goal - pointer.radius) * 0.14;
     if (reticles) {
-      const heroRect = hero.getBoundingClientRect();
-      const gridRect = grid.getBoundingClientRect();
-      const origin = { x: gridRect.left - heroRect.left, y: gridRect.top - heroRect.top };
+      // La cuadrícula medida ya trae el desplazamiento del cuadro anterior: se cambia por el nuevo.
+      const origin = { x: gridRect.left - heroRect.left - gridShift.x + shift.x, y: gridRect.top - heroRect.top - gridShift.y + shift.y };
       reticles.draw(pointer.x - heroRect.left, pointer.y - heroRect.top, pointer.radius < 4 ? 0 : pointer.radius, origin);
     }
+    gridShift.x = shift.x;
+    gridShift.y = shift.y;
     const settled = Math.abs(target.x - eased.x) < 0.001 && Math.abs(target.y - eased.y) < 0.001 && pointer.radius < 4 && !pointer.active;
     if (visible && !settled) frame = requestAnimationFrame(loop);
   };

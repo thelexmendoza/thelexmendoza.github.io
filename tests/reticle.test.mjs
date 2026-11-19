@@ -104,9 +104,19 @@ test('el collage y los retículos no reciben el puntero ni tapan el texto', () =
   assert.match(css, /\.c-hero__collage\s*\{[^}]*mask-image:\s*linear-gradient/);
 });
 
-test('el parallax usa translate, para convivir con el parallax del scroll (transform)', () => {
-  assert.match(css, /\.c-hero__grid\s*\{[^}]*translate:\s*calc\(var\(--px, 0\) \* -10px\)/);
-  assert.match(css, /\.c-hero__collage\s*\{[^}]*translate:\s*calc\(var\(--px, 0\) \* -26px\)/);
+test('el parallax usa translate (convive con el parallax del scroll) y se escribe en cada capa, no en una variable del hero', () => {
+  assert.doesNotMatch(css, /var\(--px/, 'ninguna capa lee --px: una variable en el padre recalcula los estilos de todo el hero en cada cuadro');
+  assert.doesNotMatch(fx, /setProperty\('--p[xy]'/);
+  assert.match(fx, /\.style\.translate\s*=/);
+  for (const [capa, kx, ky] of [['.c-hero__grid', 10, 7], ['.c-hero__collage', 26, 18], ['.c-promo__maqueta', 14, 10]]) {
+    assert.ok(fx.includes(`['${capa}', ${kx}, ${ky}]`), `${capa} conserva su profundidad (${kx}, ${ky})`);
+  }
+});
+
+test('el ciclo del hero lee el layout antes de escribir estilos (sin layout forzado por cuadro)', () => {
+  const lectura = fx.indexOf('hero.getBoundingClientRect() : null');
+  const escritura = fx.indexOf('const shift = place()');
+  assert.ok(lectura > 0 && escritura > lectura, 'las lecturas van antes de place()');
 });
 
 test('la pieza destacada recupera el color y la palabra toma la identidad del caso', () => {

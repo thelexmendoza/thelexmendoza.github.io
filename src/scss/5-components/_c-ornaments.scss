@@ -112,6 +112,6 @@
 @media (prefers-reduced-motion: no-preference) {
   .c-button {
     translate: var(--mag-x, 0) var(--mag-y, 0);
-    transition: translate 0.18s ease-out, filter 0.2s ease;
+    transition: translate 0.18s ease-out, scale 0.16s cubic-bezier(0.23, 1, 0.32, 1), filter 0.2s ease;
   }
 }

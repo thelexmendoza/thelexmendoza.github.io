@@ -34,17 +34,14 @@
     opacity: 0.55;
   }
 
-  // Parallax con el mouse: cada capa se mueve (--px y --py, de -1 a 1, los pone hero-fx.js) a su profundidad.
-  &__grid {
-    translate: calc(var(--px, 0) * -10px) calc(var(--py, 0) * -7px);
-  }
+  // Parallax con el mouse: hero-fx.js le pone `translate` a cada capa (la cuadricula, el collage y, en /promo/, la
+  // maqueta) a su profundidad. Es `translate` y no `transform` para convivir con el parallax del scroll.
 
   // Collage de los fondos de cada caso, mezclado en cada visita. Gris y tenue; la pieza destacada recupera su
   // color, se enmarca con el acento de su caso y muestra su nombre de archivo, como la barra de las tarjetas.
   &__collage {
     position: absolute;
     inset: 0;
-    translate: calc(var(--px, 0) * -26px) calc(var(--py, 0) * -18px);
     mask-image: linear-gradient(90deg, transparent 6%, rgb(0 0 0 / 0.5) 40%, #000 78%);
   }
 

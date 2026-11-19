@@ -61,7 +61,7 @@
   }
 
   ::view-transition-old(root) {
-    animation: c-page-out 0.2s cubic-bezier(0.4, 0, 1, 1) both;
+    animation: c-page-out 0.2s cubic-bezier(0.23, 1, 0.32, 1) both;
   }
 
   ::view-transition-new(root) {
