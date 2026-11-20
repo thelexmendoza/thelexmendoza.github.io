@@ -3,7 +3,7 @@ import { decodeFrame } from './decode.js';
 // «Instrumento» (solo la home): la capa de interfaz inspirada en la dirección de arte de Kojima (MGS3, MGS4 y Death Stranding).
 // Arranque ligado a la carga real, lecturas y regla en el margen, corchetes en las tarjetas de caso, fondos por sección con
 // parallax de scroll y de mouse, y retículas alineadas a las columnas del sitio. Todo es decorativo (aria-hidden), no guarda
-// nada en el navegador y no corre en las páginas de lectura (`data-calm`) ni en ninguna página que no sea la home.
+// nada en el navegador y no corre en las páginas de lectura (`data-calm`). Solo la home lleva todo; la promo y la guía llevan únicamente el arranque.
 // La lógica pura vive arriba para probarla con `npm test`; el DOM, abajo.
 
 const NS = 'http://www.w3.org/2000/svg';
@@ -317,11 +317,16 @@ function alignHeroGrid() {
   window.addEventListener('load', align);
 }
 
+// Páginas donde corre el arranque; el resto del instrumento es solo de la home.
+const BOOT_PAGES = ['home', 'promo', 'guia'];
+
 export function setupInstrumento() {
   const root = document.documentElement;
-  if (root.dataset.page !== 'home' || root.hasAttribute('data-calm')) return;
+  const page = root.dataset.page;
+  if (!BOOT_PAGES.includes(page) || root.hasAttribute('data-calm')) return;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   setupBoot();
+  if (page !== 'home') return;
   if (window.matchMedia('(min-width: 64rem)').matches) setupReadout();
   setupBackgrounds(reduce);
   alignHeroGrid();

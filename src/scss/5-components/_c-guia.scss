@@ -32,7 +32,7 @@
     padding: var(--space-2) var(--space-3);
     border: 1px solid var(--color-text-muted);
     border-inline-start: 3px solid var(--color-accent);
-    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    @include m.glass-surface(24px, 72%);
     max-inline-size: fn.rem(680);
   }
 
@@ -378,7 +378,7 @@
       block-size: 100%;
       padding: var(--space-3);
       border: 1px solid var(--color-text-muted);
-      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      @include m.glass-surface(24px, 72%);
       color: var(--color-text);
       text-decoration: none;
 
@@ -448,7 +448,7 @@
     gap: var(--space-2);
     padding: var(--space-2) var(--space-3);
     border: 1px solid var(--color-text-muted);
-    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    @include m.glass-surface(24px, 72%);
     color: var(--color-text);
     text-decoration: none;
 
@@ -550,7 +550,7 @@
   &__card {
     padding: var(--space-3);
     border: 1px solid var(--color-text-muted);
-    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    @include m.glass-surface(24px, 72%);
 
     h3 {
       margin: 0 0 var(--space-1);
@@ -575,7 +575,7 @@
     gap: var(--space-2) var(--space-1);
     padding: var(--space-3);
     border: 1px solid var(--color-text-muted);
-    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    @include m.glass-surface(24px, 72%);
 
     div {
       display: grid;
@@ -612,7 +612,7 @@
   &__tabla {
     overflow-x: auto;
     border: 1px solid var(--color-text-muted);
-    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    @include m.glass-surface(24px, 72%);
 
     &:focus-visible {
       outline: 2px solid var(--color-accent);
@@ -678,7 +678,7 @@
     
     padding: var(--space-3);
     border: 1px solid var(--color-text-muted);
-    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    @include m.glass-surface(24px, 72%);
 
     figcaption {
       margin-block-start: var(--space-2);
@@ -851,7 +851,7 @@
       gap: var(--space-2);
       padding: var(--space-2);
       border: 1px solid color-mix(in srgb, var(--color-text) 28%, transparent);
-      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      @include m.glass-surface(24px, 72%);
       cursor: pointer;
     }
 
@@ -925,7 +925,7 @@
     div {
       padding: var(--space-2) var(--space-3);
       border-inline-start: 3px solid var(--color-accent);
-      background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+      @include m.glass-surface(24px, 72%);
     }
 
     dt {

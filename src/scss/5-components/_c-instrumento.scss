@@ -307,17 +307,18 @@
   border-block-start: 1px solid var(--color-text-muted);
 }
 
-// ---------- 6. Hovers de botones y servicios (home; vienen del brief) ----------
+// ---------- 6. Hovers de botones y servicios (botones: home, promo y guía; servicios: solo la home; vienen del brief) ----------
+$hover-pages: ':is([data-page="home"], [data-page="promo"], [data-page="guia"])';
 // Duraciones de la escala áurea: 144, 233 y 377 ms. El hover sube el botón 2 px y un brillo lo cruza; el pulsado ya lo
 // define c-button (scale); el borde del botón de contorno pasa al acento.
-[data-page="home"] .c-button {
+#{$hover-pages} .c-button {
   position: relative;
   overflow: hidden;
   isolation: isolate;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  [data-page="home"] .c-button {
+  #{$hover-pages} .c-button {
     transition: translate 0.18s ease-out, scale 0.16s var(--ease-out), filter 0.2s ease, transform 0.233s var(--ease-out), border-color 0.144s;
 
     &::after {
@@ -337,7 +338,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  [data-page="home"] .c-button--ghost:hover {
+  #{$hover-pages} .c-button--ghost:hover {
     border-color: var(--color-accent);
   }
 
@@ -347,7 +348,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  [data-page="home"] .c-button:hover {
+  #{$hover-pages} .c-button:hover {
     transform: translateY(-2px);
 
     &::after {

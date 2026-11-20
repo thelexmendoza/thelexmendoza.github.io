@@ -1,3 +1,4 @@
+import { BOOT_HTML } from './boot-html.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -119,7 +120,7 @@ export function renderPromo(content, { layoutPath = 'index.html' } = {}) {
   const lista = (items) => items.map((t) => `<li>${esc(t)}</li>`).join('\n              ');
   const wa = whatsappUrl(hero.whatsappMensaje);
   return `<!doctype html>
-<html lang="es">
+<html lang="es" data-page="promo">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -155,10 +156,11 @@ ${tagsHead()}
     <link rel="modulepreload" href="${PREFIX}assets/js/leave.js">
     <link rel="modulepreload" href="${PREFIX}assets/js/promo.js">
     <link rel="modulepreload" href="${PREFIX}assets/js/cupos.js">
+    <link rel="modulepreload" href="${PREFIX}assets/js/instrumento.js">
     <script type="module" src="${PREFIX}assets/js/main.js"></script>
   </head>
   <body>
-    <a class="u-visually-hidden u-visually-hidden--focusable" href="#contenido">Saltar al contenido</a>
+${BOOT_HTML}    <a class="u-visually-hidden u-visually-hidden--focusable" href="#contenido">Saltar al contenido</a>
     <div class="c-progress" aria-hidden="true"></div>
 
     ${layout.header}

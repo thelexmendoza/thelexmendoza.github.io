@@ -226,6 +226,6 @@ setupHeroFx();
 setupOrnaments();
 setupLeave();
 
-// «Instrumento» (arranque, lecturas, fondos con parallax, corchetes): solo la home. Se pide bajo demanda para que ninguna otra
+// «Instrumento» (arranque, lecturas, fondos con parallax, corchetes): la home lleva todo; la promo y la guía, solo el arranque. Se pide bajo demanda para que ninguna otra
 // página lo descargue ni lo ejecute (las páginas de lectura quedan calmas); la home lo precarga con <link rel="modulepreload">.
-if (document.documentElement.dataset.page === 'home') import('./instrumento.js').then((module) => module.setupInstrumento());
+if (['home', 'promo', 'guia'].includes(document.documentElement.dataset.page)) import('./instrumento.js').then((module) => module.setupInstrumento());

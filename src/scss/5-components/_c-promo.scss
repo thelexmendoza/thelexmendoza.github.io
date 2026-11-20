@@ -40,6 +40,7 @@
   &__terminada {
     padding: var(--space-3);
     border: 1px solid var(--color-accent);
+    @include m.glass-surface(24px, 72%);
     color: var(--color-text);
     font-size: var(--step-1);
     max-inline-size: fn.rem(544);
@@ -413,10 +414,8 @@
     gap: var(--space-1);
     padding: var(--space-3);
     border: 1px solid var(--color-text-muted);
-    // Fondo casi negro (el del tema) con un poco de transparencia: las cifras fantasma de atrás no estorban la lectura.
-    background: color-mix(in srgb, var(--color-bg) 80%, transparent);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    // Vidrio (decisión de Lex; mixin glass-surface al 72 %): el rojo de las cifras fantasma se ve, desenfocado, a través de la tarjeta.
+    @include m.glass-surface(24px, 72%);
 
     &.is-activo {
       @include plan-activo;
@@ -615,7 +614,7 @@
     border: 1px solid var(--color-text-muted);
     color: var(--color-text);
     text-decoration: none;
-    background: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    @include m.glass-surface(24px, 72%);
 
     img {
       inline-size: 100%;
