@@ -67,3 +67,33 @@ $breakpoints: (
     }
   }
 }
+
+// Vidrio: superficie que flota sobre el contenido y deja ver, desenfocado, lo que hay detras (fondo del tema al `$body` % de
+// cuerpo). Es la unica excepcion a «nada flota» de DESIGN.md y se reserva para cajas que van encima de la pagina: el aviso
+// de cookies y las barras y botones fijos. Sin soporte de backdrop-filter, o con «reducir transparencia», queda solido.
+@mixin glass-surface($blur: 24px, $body: 90%) {
+  background: var(--color-bg);
+
+  @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    background: color-mix(in srgb, var(--color-bg) #{$body}, transparent);
+    -webkit-backdrop-filter: blur($blur) saturate(1.5);
+    backdrop-filter: blur($blur) saturate(1.5);
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    background: var(--color-bg);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+// Caja de vidrio completa (la del aviso de cookies): vidrio + contorno de 1 px y texto del tema; contorno, texto y botones solidos.
+@mixin glass($blur: 24px, $body: 90%) {
+  @include glass-surface($blur, $body);
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+
+  a {
+    color: var(--color-accent-text);
+  }
+}

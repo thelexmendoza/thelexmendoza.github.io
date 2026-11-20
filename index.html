@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-page="home">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +59,7 @@
       "mode": "direct",
       "consent": {
         "mode": "basic",
-        "version": "2026-11",
+        "version": "2026-11-20",
         "durationMonths": 12,
         "banner": true,
         "categories": [
@@ -112,9 +112,24 @@
     <link rel="modulepreload" href="assets/js/leave.js">
     <link rel="modulepreload" href="assets/js/promo.js">
     <link rel="modulepreload" href="assets/js/cupos.js">
+    <link rel="modulepreload" href="assets/js/instrumento.js">
     <script type="module" src="assets/js/main.js"></script>
   </head>
   <body>
+    <div class="c-boot" aria-hidden="true" hidden><span class="c-boot__text">enlace establecido</span><span class="c-boot__track"><i class="c-boot__fill"></i></span></div>
+    <script>
+      // Arranque solo al entrar al sitio desde fuera o al recargar (sin guardar nada); cualquier otro caso lo quita. Tope de 4 s por si main.js no llega.
+      (function () {
+        var b = document.querySelector('.c-boot');
+        if (!b) return;
+        var same = false;
+        try { same = !!document.referrer && new URL(document.referrer).origin === location.origin; } catch (e) {}
+        var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+        if (same || (nav && nav.type === 'back_forward') || matchMedia('(prefers-reduced-motion: reduce)').matches) { b.remove(); return; }
+        b.hidden = false;
+        setTimeout(function () { b.remove(); }, 4000);
+      })();
+    </script>
     <a class="u-visually-hidden u-visually-hidden--focusable" href="#contenido">Saltar al contenido</a>
     <div class="c-progress" aria-hidden="true"></div>
 
@@ -337,7 +352,7 @@
         <p class="c-section__lead" data-reveal="text">Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad. Si prefieres a alguien con 15 años de oficio, aquí estoy.</p>
         <p class="c-footer__actions">
           <a class="c-button" href="https://wa.me/528129043592?text=Hola%20Lex%2C%20vi%20tu%20sitio%20y%20me%20gustar%C3%ADa%20hablar%20de%20un%20proyecto." target="_blank" rel="noopener"><span class="c-icon c-icon--message" aria-hidden="true"></span>WhatsApp</a>
-          <a class="c-button c-button--ghost" href="mailto:lex.mendozaleon@gmail.com"><span class="c-icon c-icon--mail" aria-hidden="true"></span>Correo</a>
+          <a class="c-button c-button--ghost" href="mailto:contacto@lexmendoza.com"><span class="c-icon c-icon--mail" aria-hidden="true"></span>Correo</a>
           <a class="c-button c-button--ghost" href="https://www.instagram.com/thelexmendoza/" target="_blank" rel="noopener noreferrer"><span class="c-icon c-icon--instagram" aria-hidden="true"></span>Instagram</a>
           <a class="c-button c-button--ghost" href="https://www.linkedin.com/in/amendozaleon/" target="_blank" rel="noopener noreferrer"><span class="c-icon c-icon--linkedin" aria-hidden="true"></span>LinkedIn</a>
         </p>

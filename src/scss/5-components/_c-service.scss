@@ -1,4 +1,5 @@
 @use "../0-settings/fonts" as f;
+@use "../1-tools/mixins" as m;
 
 .c-service {
   display: grid;
@@ -6,6 +7,9 @@
   gap: var(--space-2);
   padding: var(--space-4);
   border: 1px solid var(--color-text-muted);
+
+  // Vidrio (excepcion de DESIGN.md): se ve, desenfocado, el fondo de la seccion detras de la tarjeta.
+  @include m.glass-surface;
 
   &__tag {
     color: var(--color-accent-text);

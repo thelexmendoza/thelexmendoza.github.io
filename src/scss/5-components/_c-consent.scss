@@ -14,9 +14,8 @@
   gap: var(--space-2);
   max-inline-size: fn.rem(544);
   padding: var(--space-3);
-  border: 1px solid var(--color-text);
-  background: var(--color-bg);
-  color: var(--color-text);
+
+  @include m.glass;
 
   @include m.respond-to(tablet) {
     inset-inline: var(--space-3) auto;
@@ -27,9 +26,6 @@
     margin: 0;
   }
 
-  a {
-    color: var(--color-accent-text);
-  }
 }
 
 // El aviso va fijo abajo y puede tapar un control enfocado con Tab (WCAG 2.2, 2.4.11, foco no oculto). Mientras esta en pantalla

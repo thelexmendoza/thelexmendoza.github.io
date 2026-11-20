@@ -25,7 +25,7 @@ test('no se publica ningún texto de borrador: sin huecos entre corchetes ni not
 
 test('el aviso trae lo que la ley espera: responsable, domicilio, datos, finalidades, derechos ARCO, proveedores y autoridad', () => {
   const html = leer('privacidad/index.html');
-  for (const frase of ['Manuel Alejandro Mendoza León', 'Fresnos 931', 'San Nicolás de los Garza', '66495', 'lex.mendozaleon@gmail.com', 'Finalidades necesarias', 'Finalidades voluntarias', 'acceso, rectificación, cancelación y oposición', '20 días hábiles', 'Supabase', 'Cloudflare', 'Secretaría Anticorrupción y Buen Gobierno', 'no emito facturas', 'comprobante']) {
+  for (const frase of ['Manuel Alejandro Mendoza León', 'Fresnos 931', 'San Nicolás de los Garza', '66495', 'arco@lexmendoza.com', 'Finalidades necesarias', 'Finalidades voluntarias', 'acceso, rectificación, cancelación y oposición', '20 días hábiles', 'Supabase', 'Cloudflare', 'Secretaría Anticorrupción y Buen Gobierno', 'no emito facturas', 'comprobante']) {
     assert.ok(html.includes(frase), `falta «${frase}»`);
   }
 });

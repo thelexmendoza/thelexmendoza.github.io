@@ -90,3 +90,23 @@ test('las tarjetas de servicio llevan marcas de registro y foco de luz sin tapar
   assert.match(css, /\.c-promo__caso a::before/);
   assert.match(css, /\.c-service--featured\s*\{[^}]*--mark:\s*var\(--color-accent\)/s);
 });
+
+test('el titulo principal del hero (solo el h1) se decodifica, sin aria roto y sin tocar h2 ni paginas calmas', () => {
+  const src = fs.readFileSync('assets/js/ornaments.js', 'utf8');
+  assert.match(src, /querySelectorAll\('main h1'\)/);
+  assert.doesNotMatch(src, /main h1, main h2|main h2/);
+  assert.match(src, /title\.setAttribute\('aria-label'/);
+  assert.match(src, /title\.removeAttribute\('aria-label'\)/);
+  assert.match(src, /title\.style\.minBlockSize = ''/);
+  assert.match(src, /const calm = \(\) => document\.documentElement\.hasAttribute\('data-calm'\)/);
+  assert.match(src, /matches \|\| calm\(\)/, 'una pagina calma cuenta como «menos movimiento»');
+});
+
+test('privacidad y cookies son paginas calmas: data-calm y sin revelados', () => {
+  for (const slug of ['privacidad', 'cookies']) {
+    const html = fs.readFileSync(`${slug}/index.html`, 'utf8');
+    assert.match(html, /<html lang="es" data-calm>/, `${slug}: falta data-calm`);
+    assert.doesNotMatch(html, /data-reveal=/, `${slug}: no debe llevar revelados`);
+  }
+  for (const slug of ['guia-dominio-hosting', 'promo']) assert.doesNotMatch(fs.readFileSync(`${slug}/index.html`, 'utf8'), /data-calm/);
+});

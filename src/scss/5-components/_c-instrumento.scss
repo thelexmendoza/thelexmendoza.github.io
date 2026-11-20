@@ -1,0 +1,362 @@
+@use "../0-settings/fonts" as f;
+@use "../1-tools/functions" as fn;
+@use "../1-tools/mixins" as m;
+
+// «Instrumento»: la capa de interfaz inspirada en la dirección de arte de Kojima (MGS3, MGS4 y Death Stranding).
+// Dos alcances, por decisión de Lex:
+//   1. El CURSOR es de todo el sitio (también de las páginas calmas: no es movimiento).
+//   2. Todo lo demás vive solo en la home (`<html data-page="home">`): arranque, regla y lecturas, corchetes de las tarjetas,
+//      fondos por sección y los hovers de botones y servicios. Lo dibuja assets/js/instrumento.js.
+// Todo movimiento va dentro de `prefers-reduced-motion: no-preference`; el vidrio, con los mixins de _mixins.scss.
+
+// ---------- 1. Cursor (todo el sitio) ----------
+// Retícula pequeña (centro vacío y un punto en el acento) y corchetes sobre lo clicable. SVG nativo: sin retraso.
+// Solo con cursor fino; los campos de texto conservan el cursor de texto. Una versión por tema (los colores van fijos en el SVG).
+@function reticle($ink, $accent) {
+  @return url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$ink}' stroke-width='1.5'%3E%3Cpath d='M12 2v6M12 16v6M2 12h6M16 12h6'/%3E%3Crect x='10.5' y='10.5' width='3' height='3' fill='#{$accent}' stroke='none'/%3E%3C/svg%3E");
+}
+
+@function brackets($ink, $accent) {
+  @return url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none' stroke='#{$ink}' stroke-width='1.5'%3E%3Cpath d='M5 11V5h6M21 5h6v6M27 21v6h-6M11 27H5v-6'/%3E%3Crect x='14.5' y='14.5' width='3' height='3' fill='#{$accent}' stroke='none'/%3E%3C/svg%3E");
+}
+
+@mixin cursors($ink, $accent) {
+  cursor: reticle($ink, $accent) 12 12, auto;
+
+  :is(a, button, summary, [role="button"], label, .c-button, .c-case-card) {
+    cursor: brackets($ink, $accent) 16 16, pointer;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :root {
+    @include cursors("%230a0a0a", "%23d90429");
+  }
+
+  :root[data-theme="light"] {
+    @include cursors("%230a0a0a", "%23d90429");
+  }
+
+  :root[data-theme="dark"] {
+    @include cursors("%23fafafa", "%23ff5a4d");
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      @include cursors("%23fafafa", "%23ff5a4d");
+    }
+  }
+
+  input:not([type="checkbox"], [type="radio"], [type="button"], [type="submit"]),
+  textarea {
+    cursor: text;
+  }
+}
+
+// ---------- 2. Arranque (home) ----------
+// Cubre la pantalla hasta que la página está lista (fuentes, carga y titular) y se va con un fundido. instrumento.js lo
+// quita sin mostrarlo si no toca (entras desde otra página del sitio, vuelves con «atrás» o prefieres menos movimiento).
+.c-boot {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: var(--space-2);
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  // Sin JavaScript queda oculto: el script de la home lo muestra solo cuando toca el arranque.
+  &[hidden] {
+    display: none;
+  }
+
+  &.is-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__text {
+    min-block-size: 1.5em;
+    font-family: f.$font-mono;
+    font-size: var(--step--1);
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  &__track {
+    position: relative;
+    display: block;
+    inline-size: min(fn.rem(420), 70vw);
+    block-size: 1px;
+    background: var(--color-text-muted);
+  }
+
+  &__fill {
+    position: absolute;
+    inset-block-start: -4px;
+    inset-inline-start: 0;
+    block-size: 9px;
+    inline-size: 0;
+    border-inline-end: 1px solid var(--color-accent);
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--color-text) 40%, transparent));
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: opacity 0.3s ease;
+
+    &__fill {
+      transition: inline-size 0.25s ease;
+    }
+  }
+}
+
+// ---------- 3. Regla y lecturas en el margen (home, desde 1024 px) ----------
+.c-ruler,
+.c-readout {
+  display: none;
+}
+
+@include m.respond-to(laptop-s) {
+  .c-ruler {
+    position: fixed;
+    display: block;
+    inset-block: fn.rem(34);
+    inset-inline-end: fn.rem(8);
+    inline-size: fn.rem(13);
+    z-index: 6;
+    pointer-events: none;
+    // Marcas menores cada 13 px y mayores cada 65 px, atenuadas: la regla acompaña, no compite.
+    background:
+      repeating-linear-gradient(to bottom, color-mix(in srgb, var(--color-text) 14%, transparent) 0 1px, transparent 1px 13px) right top / 7px 100% no-repeat,
+      repeating-linear-gradient(to bottom, color-mix(in srgb, var(--color-text) 30%, transparent) 0 1px, transparent 1px 65px) right top / 13px 100% no-repeat;
+
+    &__mark {
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-end: 0;
+      inline-size: fn.rem(13);
+      block-size: 1px;
+      background: var(--color-accent);
+      opacity: 0.7;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset-inline-end: fn.rem(15);
+        inset-block-start: -4px;
+        inline-size: 7px;
+        block-size: 7px;
+        background: var(--color-accent);
+        rotate: 45deg;
+      }
+    }
+  }
+
+  // Cuadro de lecturas: vidrio (mixin glass-surface) con borde del tema.
+  .c-readout {
+    position: fixed;
+    display: grid;
+    gap: 3px;
+    inset-inline-end: fn.rem(34);
+    inset-block-end: fn.rem(34);
+    z-index: 6;
+    padding: var(--space-1) var(--space-2);
+    border: 1px solid var(--color-text-muted);
+    pointer-events: none;
+    color: var(--color-text-muted);
+    font-family: f.$font-mono;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    @include m.glass-surface;
+
+    b {
+      color: var(--color-text);
+      font-weight: 500;
+    }
+
+    // La lectura del caso solo aparece mientras el cursor (o el foco) está sobre una tarjeta.
+    &__case {
+      display: none;
+    }
+
+    &.has-case &__case {
+      display: block;
+      color: var(--color-accent-text);
+
+      b {
+        color: var(--color-accent-text);
+      }
+    }
+  }
+}
+
+// ---------- 4. Corchetes de la tarjeta de caso (home) ----------
+// Cuatro esquinas de 1 px en el color del texto, sin cajas ni relleno. Usan --peek (el mismo número del asomo de la tarjeta),
+// así entran y salen con su misma animación.
+.c-case-card__brk {
+  --l: 21px;
+  --c: var(--color-text);
+
+  position: absolute;
+  inset: calc(16px - var(--peek, 0) * 8px);
+  z-index: 4;
+  pointer-events: none;
+  opacity: var(--peek, 0);
+  background:
+    linear-gradient(var(--c), var(--c)) left top / var(--l) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) left top / 1px var(--l) no-repeat,
+    linear-gradient(var(--c), var(--c)) right top / var(--l) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) right top / 1px var(--l) no-repeat,
+    linear-gradient(var(--c), var(--c)) left bottom / var(--l) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) left bottom / 1px var(--l) no-repeat,
+    linear-gradient(var(--c), var(--c)) right bottom / var(--l) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) right bottom / 1px var(--l) no-repeat;
+}
+
+// ---------- 5. Fondos por sección con parallax (home) ----------
+// Tres capas SVG por sección (lejana, media, cercana) y, encima, guías y cruces alineadas a las columnas del sitio
+// (`--grid`). El fondo va detrás del contenido con z-index negativo dentro de la sección aislada: no toca a sus hijos.
+.has-bg {
+  position: relative;
+  isolation: isolate;
+}
+
+.c-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: clip; // `hidden` crearía un contenedor de scroll y el parallax de view() dejaría de moverse
+  pointer-events: none;
+  color: color-mix(in srgb, var(--color-text) 11%, transparent);
+
+  &__layer {
+    position: absolute;
+    inset: -35% 0;
+    inline-size: 100%;
+    block-size: 170%;
+
+    &--far {
+      opacity: 0.55;
+    }
+
+    &--near {
+      color: color-mix(in srgb, var(--color-text) 16%, transparent);
+    }
+  }
+}
+
+[data-theme="light"] .c-bg {
+  color: color-mix(in srgb, var(--color-text) 9%, transparent);
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .c-bg__layer--far {
+      animation: c-bg-far linear both;
+      animation-timeline: view();
+    }
+
+    .c-bg__layer--mid {
+      animation: c-bg-mid linear both;
+      animation-timeline: view();
+    }
+
+    .c-bg__layer--near {
+      animation: c-bg-near linear both;
+      animation-timeline: view();
+    }
+  }
+}
+
+@keyframes c-bg-far {
+  from {
+    translate: 0 -5%;
+  }
+  to {
+    translate: 0 5%;
+  }
+}
+
+@keyframes c-bg-mid {
+  from {
+    translate: 0 -12%;
+  }
+  to {
+    translate: 0 12%;
+  }
+}
+
+@keyframes c-bg-near {
+  from {
+    translate: 0 -20%;
+  }
+  to {
+    translate: 0 20%;
+  }
+}
+
+// Línea de separación entre casos y servicios, igual a las del plan.
+[data-page="home"] #servicios {
+  border-block-start: 1px solid var(--color-text-muted);
+}
+
+// ---------- 6. Hovers de botones y servicios (home; vienen del brief) ----------
+// Duraciones de la escala áurea: 144, 233 y 377 ms. El hover sube el botón 2 px y un brillo lo cruza; el pulsado ya lo
+// define c-button (scale); el borde del botón de contorno pasa al acento.
+[data-page="home"] .c-button {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-page="home"] .c-button {
+    transition: translate 0.18s ease-out, scale 0.16s var(--ease-out), filter 0.2s ease, transform 0.233s var(--ease-out), border-color 0.144s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      transform: translateX(-120%);
+      background: linear-gradient(105deg, transparent 35%, color-mix(in srgb, #fff 38%, transparent) 50%, transparent 65%);
+    }
+  }
+
+  [data-page="home"] .c-service {
+    transition: transform 0.233s var(--ease-out), border-color 0.144s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  [data-page="home"] .c-button--ghost:hover {
+    border-color: var(--color-accent);
+  }
+
+  [data-page="home"] .c-service:hover {
+    border-color: color-mix(in srgb, var(--color-accent) 60%, var(--color-text-muted));
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  [data-page="home"] .c-button:hover {
+    transform: translateY(-2px);
+
+    &::after {
+      transform: translateX(120%);
+      transition: transform 0.55s var(--ease-out);
+    }
+  }
+
+  [data-page="home"] .c-service:hover {
+    transform: translateY(-2px);
+  }
+}

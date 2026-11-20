@@ -3,7 +3,7 @@
 // Después, en cualquier parte:  TagOrq.track('lead', { form_id: 'contacto' });
 
 import { validateConfig, publicConfig, platformId, enabledPlatforms, activeCategories, PLATFORM_CATEGORY, withDefaults } from './config.mjs';
-import { createStore, normalizeCats, toConsentMode, defaultConsentMode, hasAnyConsent, ALL, NONE } from './consent.mjs';
+import { createStore, normalizeCats, toConsentMode, defaultConsentMode, hasAnyConsent, NONE } from './consent.mjs';
 import { resolveEvent } from './events.mjs';
 import { PLATFORMS, ensureGtag, loadGtm } from './platforms.mjs';
 
@@ -132,7 +132,8 @@ export function createTagOrq(input, env) {
     consent: {
       get: () => (cats ? { ...cats } : null),
       set: setConsent,
-      acceptAll: () => setConsent(ALL),
+      // Aceptar concede solo las categorías que el aviso ofrece (no las que ninguna plataforma usa).
+      acceptAll: () => setConsent(Object.fromEntries(activeCategories(config).map((c) => [c, true]))),
       rejectAll: () => setConsent(NONE),
       needsDecision: () => cats === null,
       reset: () => { store.clear(); cats = null; },

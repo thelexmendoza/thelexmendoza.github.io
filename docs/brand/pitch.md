@@ -89,7 +89,7 @@ Quiero estudiar Ingeniería de Desarrollo de Software y convertirme en desarroll
 Escríbeme, cuéntame tu idea y vemos cómo hacerla realidad.
 
 - WhatsApp: 81 2904 3592
-- Correo: lex.mendozaleon@gmail.com
+- Correo: contacto@lexmendoza.com
 
 ### Orden de los llamados a la acción
 

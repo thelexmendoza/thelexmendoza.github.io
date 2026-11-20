@@ -3,14 +3,15 @@
 
 export const cookies = {
   slug: 'cookies',
+  calm: true, // pagina de lectura: sin decodificado ni revelados (CLAUDE.md, «Paginas legales»)
   eyebrow: 'Cookies y almacenamiento',
   title: 'Política de cookies',
   word: 'cookies',
   description: 'Qué guarda este sitio en tu navegador, para qué, por cuánto tiempo y cómo cambiarlo. La medición de anuncios (píxel de Meta) solo se activa si tú la aceptas.',
-  updated: '18 de noviembre de 2026',
+  updated: '20 de noviembre de 2026',
   lead: 'Te cuento exactamente qué guarda este sitio en tu navegador. Lo necesario es muy poco; la medición de anuncios solo se activa si tú la aceptas.',
   body: `
-<p>Responsable: <strong>Manuel Alejandro Mendoza León</strong> (Lex Mendoza), Fresnos 931, Col. Hacienda Los Morales, San Nicolás de los Garza, Nuevo León, C. P. 66495. Contacto: <a href="mailto:lex.mendozaleon@gmail.com">lex.mendozaleon@gmail.com</a>.</p>
+<p>Responsable: <strong>Manuel Alejandro Mendoza León</strong> (Lex Mendoza), Fresnos 931, Col. Hacienda Los Morales, San Nicolás de los Garza, Nuevo León, C. P. 66495. Contacto: <a href="mailto:contacto@lexmendoza.com">contacto@lexmendoza.com</a>; para tus derechos, <a href="mailto:arco@lexmendoza.com">arco@lexmendoza.com</a>.</p>
 
 <h2>1. Qué son</h2>
 <p>Las <strong>cookies</strong> y el <strong>almacenamiento local</strong> del navegador son pequeños archivos o registros que un sitio guarda en tu dispositivo para recordar algo. Aquí uso el término «almacenamiento» para ambos.</p>

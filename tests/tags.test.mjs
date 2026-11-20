@@ -93,7 +93,7 @@ test('Rechazar no carga el pixel, descarta lo pendiente y guarda la decision (12
   assert.equal(scriptsDePixel(e.cabeza).length, 0);
   assert.equal(e.win.fbq, undefined);
   const guardado = JSON.parse(e.almacen.get('tagorq_consent'));
-  assert.equal(guardado.v, '2026-11');
+  assert.equal(guardado.v, '2026-11-20');
   assert.deepEqual(guardado.cats, { analytics: false, marketing: false, functional: false });
   assert.equal(api.consent.needsDecision(), false);
 });

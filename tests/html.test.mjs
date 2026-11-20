@@ -85,7 +85,7 @@ test('cada tarjeta de caso declara su paleta con data-case', () => {
 test('el contacto usa el WhatsApp y el correo de Lex', () => {
   const html = fs.readFileSync('index.html', 'utf8');
   assert.match(html, /href="https:\/\/wa\.me\/528129043592/);
-  assert.match(html, /href="mailto:lex\.mendozaleon@gmail\.com"/);
+  assert.match(html, /href="mailto:contacto@lexmendoza\.com"/);
 });
 
 test('la home no contiene precios', () => {

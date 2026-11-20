@@ -4,7 +4,9 @@ import { decodeFrame, magnetOffset, spotAt } from './decode.js';
 // botones que se acercan al cursor. Todo es opcional: sin JavaScript, con menos movimiento o sin cursor fino
 // el sitio queda igual, solo quieto.
 
-const reduce = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Paginas de lectura (privacidad y cookies) llevan <html data-calm>: sin decodificado, foco ni imanes. Es informacion para leerse con cuidado.
+const calm = () => document.documentElement.hasAttribute('data-calm');
+const reduce = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches || calm();
 const finePointer = () => window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
 // Las etiquetas «// así» se escriben como si una terminal las descifrara. El texto real queda para lectores de
@@ -87,7 +89,56 @@ function setupMagnet() {
   });
 }
 
+// El titulo principal de cada hero (el h1 de <main>; los demas titulos no) se escribe como si una terminal lo descifrara: de
+// izquierda a derecha los simbolos se resuelven en las letras de verdad cuando entra en pantalla. Se opera sobre los nodos de texto para conservar palabras
+// con degradado; el nombre accesible queda fijo con aria-label, la altura se bloquea para que nada se mueva y al terminar
+// se restaura el texto tal cual. Un h1 que llega con la transicion tarjeta-hero no se decodifica (se estaria morfando). Las paginas calmas no lo llevan.
+function setupTitleDecode() {
+  if (reduce() || !('IntersectionObserver' in window)) return;
+  const titles = [...document.querySelectorAll('main h1')].filter((el) => !el.closest('dialog, [aria-hidden="true"]') && !el.closest('.is-revealed'));
+  const FRAMES = 26;
+  const FRAME_MS = 34;
+  const run = (title) => {
+    const nodes = [];
+    const walker = document.createTreeWalker(title, NodeFilter.SHOW_TEXT);
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) if (n.textContent.trim()) nodes.push({ node: n, text: n.textContent });
+    const total = nodes.reduce((sum, { text }) => sum + text.length, 0);
+    if (!total) return;
+    title.setAttribute('aria-label', title.textContent.trim().replace(/\s+/g, ' '));
+    title.style.minBlockSize = `${title.offsetHeight}px`;
+    let frame = 0;
+    const step = () => {
+      let offset = 0;
+      for (const { node, text } of nodes) {
+        const local = Math.min(1, Math.max(0, ((frame / FRAMES) * total - offset) / Math.max(1, text.length)));
+        node.textContent = decodeFrame(text, local);
+        offset += text.length;
+      }
+      frame += 1;
+      if (frame <= FRAMES) setTimeout(step, FRAME_MS);
+      else {
+        nodes.forEach(({ node, text }) => (node.textContent = text));
+        title.removeAttribute('aria-label');
+        title.style.minBlockSize = '';
+      }
+    };
+    step();
+  };
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        setTimeout(() => run(entry.target), 120);
+      });
+    },
+    { threshold: 0.6 },
+  );
+  titles.forEach((title) => observer.observe(title));
+}
+
 export function setupOrnaments() {
+  setupTitleDecode();
   setupDecode();
   setupSpotlight();
   setupMagnet();

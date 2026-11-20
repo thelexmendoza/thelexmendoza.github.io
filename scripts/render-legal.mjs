@@ -53,7 +53,7 @@ export function renderLegal(page, { layoutPath = 'index.html', prefix = PREFIX_D
   const layout = extractLayout(layoutPath, PREFIX);
   const title = esc(page.title).replace(esc(page.word), `<span class="c-chameleon-title">${esc(page.word)}</span>`);
   return `<!doctype html>
-<html lang="es">
+<html lang="es"${page.calm ? ' data-calm' : ''}>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,7 +102,7 @@ ${tagsHead()}
       <article class="c-legal o-container">
         <header class="c-legal__header o-stack">
           <p class="c-eyebrow">// ${esc(page.eyebrow)}</p>
-          <h1 data-reveal="title">${title}</h1>
+          <h1${page.calm ? '' : ' data-reveal="title"'}>${title}</h1>
           <p class="c-section__lead">${esc(page.lead)}</p>
           <p class="c-legal__meta">${page.metaHtml ?? `Última actualización: ${esc(page.updated)}`}</p>
         </header>
