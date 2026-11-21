@@ -192,6 +192,28 @@ main .c-gallery.c-gallery--videos .c-gallery__play img {
   object-fit: cover;
 }
 
+// Prueba (Etic's Live): en movil los videos van en UNA columna, no tres, para que el reproductor tenga espacio y se
+// pueda tocar y ampliar a pantalla completa. Responsivo: 1 columna en movil, 2 desde tableta (768 px) y 3 desde
+// laptop (1024 px).
+.c-gallery--videos[data-format="grid"] .c-gallery__track,
+main[data-format="grid"] .c-gallery--videos .c-gallery__track {
+  grid-template-columns: 1fr;
+}
+
+@include m.respond-to(tablet) {
+  .c-gallery--videos[data-format="grid"] .c-gallery__track,
+  main[data-format="grid"] .c-gallery--videos .c-gallery__track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include m.respond-to(laptop-s) {
+  .c-gallery--videos[data-format="grid"] .c-gallery__track,
+  main[data-format="grid"] .c-gallery--videos .c-gallery__track {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .c-gallery__play-icon {
   position: absolute;
   inset: 50% auto auto 50%;
